@@ -2,7 +2,7 @@
 
 [Open the public map](https://runningroutes.aifurman.com/)
 
-An interactive map of Andrew Furman's recorded running routes and upcoming street targets around Havertown, Pennsylvania. Purple lines represent running GPS tracks from Strava; weekday markers show the current plan. Bike rides and walks are excluded.
+An interactive map of Andrew Furman's recorded running routes and upcoming street targets around Havertown, Pennsylvania. Purple lines represent running GPS tracks from Strava; weekday markers show the current plan. The Runs view excludes bike rides and walks. The upper-left Runs/Bikes switch opens the separate cycling map.
 
 The map contains precise GPS traces and dated future destinations, published with the owner's approval. GPS proximity to a street does not guarantee CityStrides completion.
 
@@ -38,7 +38,7 @@ Restrict browser keys to authorized origins in Google Cloud. Do not commit API k
 
 The plan is selected by `routes/current-plan.json`. After editing the referenced dated plan, run `python3 scripts/planning/build_map.py` to update the visualization. The project does not automatically import new Strava activities or update plans.
 
-Personal calendar event exports, email copies, bike history and the original all-sport Strava ZIP remain private in the Family Newspaper archive. The legacy bulk import utility preserves the entire all-sport export and must be used only in a private working copy; its output contains private data and is ignored in this public repository.
+Personal calendar event exports, email copies and the original all-sport Strava ZIP remain private in the Family Newspaper archive. The selected cycling-map snapshot is public in the Bikes view. The legacy bulk import utility preserves the entire all-sport export and must be used only in a private working copy; its output contains private data and is ignored in this public repository.
 
 ## Havertown 19083 boundary
 
@@ -83,3 +83,8 @@ The current static HTML is deployed to [runningroutes.aifurman.com](https://runn
 Run `npm ci` and then `npm run deploy`. The deployment script reads `GOOGLE_MAPS_API_KEY`, `CLOUDFLARE_API_TOKEN`, and `CLOUDFLARE_ACCOUNT_ID` from the environment or the ignored local `.env`, builds `site/`, and deploys with Wrangler. `wrangler.jsonc` declares the custom domain; Cloudflare manages its DNS record and TLS. The static build contains only public map assets, never the local environment file or Google Workspace credentials.
 
 Cloudflare deployment is currently manual via this command. The GitHub Pages workflow remains available as a separate deployment. Before publishing changes, build the map, check the commit for credentials, use a tracking PR, merge it, and run the Worker deployment. Google Cloud browser-key restrictions must allow `https://runningroutes.aifurman.com/*`.
+
+
+## Runs and bikes
+
+The upper-left segmented switch moves between `visualization/index.html` (1,874 GPS runs through October 30, 2026) and `visualization/bikes.html` (530 GPS bike rides in the existing snapshot through October 17, 2026). The two views keep their histories separate and load the same deployed Google Maps configuration. The cycling snapshot does not yet include rides recorded after October 17.

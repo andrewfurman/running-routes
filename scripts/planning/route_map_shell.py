@@ -37,7 +37,7 @@ def apply_map_shell(html: str, kind: str = 'run') -> str:
         html = html.replace("content.textContent=t.number;content.setAttribute('aria-label',t.street)", "content.textContent=targetWeekday(t);content.setAttribute('aria-label',targetWeekday(t)+' · '+t.street)")
     heading = re.search(r'<h1[^>]*>.*?</h1>', html, re.S)[0]
     nav = '<nav class="view-switch" aria-label="Map view">'
-    for name, label, path in [('run', 'Runs', '/preview.html'), ('bike', 'Bikes', '/bike-preview.html')]:
+    for name, label, path in [('run', 'Runs', './index.html'), ('bike', 'Bikes', './bikes.html')]:
         current = ' aria-current="page"' if kind == name else ''
         nav += f'<a href="{path}"{current}>{label}</a>'
     nav += '</nav>'
