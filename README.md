@@ -75,17 +75,17 @@ All changes, including new drafts, go through a pull request for tracking. Merge
 
 The **Time lapses** tab plays downloadable H.264 MP4 videos stored in the dedicated Cloudflare R2 bucket `running-routes-media`. The Worker binding `TIMELAPSE_MEDIA` streams only explicitly listed video/poster filenames at `/media/`, with byte-range support for seeking. Bucket listing and uploads are not public endpoints. Videos do not load until requested.
 
-The 2026 edition contains all 201 GPS runs dated January 2–October 30 in the current source, ordered by Eastern date/time. The main map builds Havertown coverage while an inset draws every run, including travel outside the area. Rides and activities without GPS are excluded. The video is a snapshot, not an automatic feed.
+The 2026 edition contains all 201 GPS runs dated January 2–October 30 in the current source, ordered by Eastern date/time. Google Maps fills the video. Orange draws the current run, purple preserves earlier runs, and the date/timeline remain at the bottom. The same main map switches locations for travel runs; there is no side map. Google branding and provider attribution stay visible. Rides and activities without GPS are excluded. The video is a snapshot, not an automatic feed.
 
 To reproduce it, from `Tanstack Start App` with Python video dependencies installed in a virtual environment:
 
 ```sh
 pip install -r scripts/videos/requirements.txt
-python scripts/videos/render_year.py --year 2026 --output /private/tmp/running-routes-videos
+python scripts/videos/render_year.py --year 2026 --output /private/tmp/running-routes-videos --basemaps /private/path/to/basemaps.json
 python scripts/videos/publish.py /private/tmp/running-routes-videos --year 2026
 ```
 
-Keep the generated MP4/JPEG in R2, not Git. Commit the audit metadata from the output JSON into `raw-data/videos/` and update `src/components/timelapses.json` (omit activity IDs from the interface manifest). When adding another year, add its filenames to the media route allowlist. Merge the tracking PR and deploy. Metadata records source/video SHA-256, included activity IDs, frame dimensions and duration. Rendering uses locally saved OpenStreetMap street geometry and Census boundaries, with attribution; it does not capture or export Google map tiles.
+Keep the generated MP4/JPEG in R2, not Git. Commit the audit metadata from the output JSON into `raw-data/videos/` and update `src/components/timelapses.json` (omit activity IDs from the interface manifest). The media route allowlist is generated from the checked-in video catalog. Merge the tracking PR and deploy. Metadata records source/video SHA-256, included activity IDs, frame dimensions and duration. Rendering uses five attributed, full-viewport Google Maps background captures made with `/video-map` for this personal recreational video. The local basemaps JSON lists each capture filename, area ID/label, exact center latitude/longitude and integer zoom. Capture at 1280×720 with heading north; do not rotate or tilt. The renderer uses Web Mercator to align GPS tracks, checks every included coordinate fits its area, and leaves the bottom attribution strip intact. No bulk tile download or standalone basemap dataset is included in the repository.
 
 The default app view selects today's scheduled run in America/New_York, or the next scheduled day if today has none. Reopening the app after backgrounding resets to that view; expired target dates are excluded. Large teal/purple arrows page through scheduled days, with separate street chips for combined outings. Navigation remains in Google Calendar, so the map has no Navigate button. All History opens a geographic area chooser, initially fitting the largest recorded area rather than the world. Nearby runs are grouped within roughly 45 km; labels are approximate regional names and coordinates remain the fallback.
 

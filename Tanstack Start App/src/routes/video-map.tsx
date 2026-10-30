@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from 'react'
 import { loadGoogle } from '../components/MapView'
 const areas=[
  {id:'havertown',label:'Havertown',lat:39.981605,lng:-75.30839,zoom:14},
- {id:'bucks',label:'Bucks County',lat:40.490365,lng:-75.39594,zoom:15},
+ {id:'bucks',label:'Pennsylvania north of home',lat:40.490365,lng:-75.39594,zoom:15},
  {id:'new-york',label:'New York harbor',lat:40.63469,lng:-74.053,zoom:16},
  {id:'atlantic',label:'Atlantic GPS activity',lat:34.593325,lng:-74.559055,zoom:12},
  {id:'connecticut',label:'Connecticut',lat:41.28815,lng:-73.49711,zoom:15},
