@@ -1,6 +1,6 @@
 # Running Routes
 
-[Open the public map](https://andrewfurman.github.io/running-routes/)
+[Open the public map](https://runningroutes.aifurman.com/)
 
 An interactive map of Andrew Furman's recorded running routes and upcoming street targets around Havertown, Pennsylvania. Purple lines represent running GPS tracks from Strava; weekday markers show the current plan. Bike rides and walks are excluded.
 
@@ -73,4 +73,13 @@ Install [Google Workspace CLI](https://github.com/googleworkspace/cli) with `bre
 
 Preview updates with `python3 scripts/calendar/sync_plan.py`. Use `--apply` to write the plan and read every event back for verification. The script checks unrelated calendar conflicts, retains existing reminders when updating, and uses numbered navigation addresses. `GOOGLE_CALENDAR_ID` defaults to `primary`. No Workspace API key is needed.
 
-The ignored `.env.sample` also lists optional `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` placeholders for future Wrangler deployments. The site currently deploys to GitHub Pages. Cloudflare tokens, Google OAuth credentials, and Maps browser keys are separate credentials and must stay outside Git.
+The ignored `.env.sample` also lists optional `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` placeholders for future Wrangler deployments. The site is deployed on Cloudflare Workers, with GitHub Pages also available. Cloudflare tokens, Google OAuth credentials, and Maps browser keys are separate credentials and must stay outside Git.
+
+
+## Cloudflare Worker deployment
+
+The current static HTML is deployed to [runningroutes.aifurman.com](https://runningroutes.aifurman.com/) as the `running-routes` Worker with static assets. No frontend framework migration was required.
+
+Run `npm ci` and then `npm run deploy`. The deployment script reads `GOOGLE_MAPS_API_KEY`, `CLOUDFLARE_API_TOKEN`, and `CLOUDFLARE_ACCOUNT_ID` from the environment or the ignored local `.env`, builds `site/`, and deploys with Wrangler. `wrangler.jsonc` declares the custom domain; Cloudflare manages its DNS record and TLS. The static build contains only public map assets, never the local environment file or Google Workspace credentials.
+
+Cloudflare deployment is currently manual via this command. The GitHub Pages workflow remains available as a separate deployment. Before publishing changes, build the map, check the commit for credentials, use a tracking PR, merge it, and run the Worker deployment. Google Cloud browser-key restrictions must allow `https://runningroutes.aifurman.com/*`.
