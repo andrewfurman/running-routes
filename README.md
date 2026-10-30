@@ -52,3 +52,17 @@ Finish unfinished streets within the Census 19083 boundary before expanding outs
 ## Change tracking
 
 All repository changes, including new drafts and research updates, must go through a pull request for tracking purposes. Create each pull request against the latest `main`, then merge it into `main` immediately once the draft is ready and applicable checks pass. Do not leave draft pull requests open; continue iterating through new pull requests.
+
+## Public repository and environment files
+
+**This is a public repository. Before every commit, verify that no environment files or credential values are staged.** Environment variable names may be referenced in code and documentation; their actual values must stay outside Git.
+
+Keep the real browser key in the ignored `.env` file as `GOOGLE_MAPS_API_KEY`. The local preview reads it automatically. An ignored `.env.sample` can document the required variable with a placeholder:
+
+```dotenv
+GOOGLE_MAPS_API_KEY=your_google_maps_browser_key
+```
+
+Neither `.env` nor `.env.sample` should be committed. Run `python3 scripts/checks/check_public_commit.py` before committing; CI also checks the tracked files. GitHub Pages reads `GOOGLE_MAPS_API_KEY` from the repository's Actions secret and generates the map configuration during deployment.
+
+Google Maps JavaScript browser keys are visible to visitors when the map loads, even when stored as an Actions secret and excluded from Git. Restrict the key in Google Cloud to the Maps APIs needed here and to `https://andrewfurman.github.io/*` plus any authorized local preview origins.

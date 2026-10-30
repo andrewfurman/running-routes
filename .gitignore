@@ -1,8 +1,10 @@
 .env
 .env.*
-!.env.example
 runs.geojson
 __pycache__/
 # Raw all-sport exports and credentials are private; never commit them here.
 routes/*strava-history*/
 *.zip
+
+site/
+visualization/maps-config.json
