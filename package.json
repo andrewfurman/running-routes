@@ -1,9 +1,0 @@
-{
-  "name": "running-routes",
-  "private": true,
-  "scripts": {
-    "build": "python3 scripts/planning/build_public_site.py",
-    "deploy": "python3 scripts/deploy/cloudflare.py"
-  },
-  "devDependencies": { "wrangler": "4.156.0" }
-}

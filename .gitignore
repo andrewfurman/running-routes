@@ -3,14 +3,20 @@
 runs.geojson
 __pycache__/
 # Raw all-sport exports and credentials are private; never commit them here.
-routes/*strava-history*/
+raw-data/route-research/*strava-history*/
 *.zip
 
 site/
-visualization/maps-config.json
+Tanstack Start App/legacy/visualization/maps-config.json
 
 credentials*.json
 client_secret*.json
 .dev.vars*
 .wrangler/
 node_modules/
+Tanstack Start App/public/data/
+Tanstack Start App/dist/
+Tanstack Start App/.output/
+Tanstack Start App/.tanstack/
+
+sample.env
