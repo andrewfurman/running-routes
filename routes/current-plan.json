@@ -1,16 +1,16 @@
 {
-  "snapshot": "2026-10-30-19083-priority",
+  "snapshot": "2026-10-30-mixed-19083",
   "as_of_label": "October 30",
   "focus_start": "2026-10-31",
-  "focus_end": "2026-11-03",
-  "heading": "Havertown \u00b7 Next four runs \u00b7 October 31\u2013November 3",
-  "focus_label": "Next 4 runs \u00b7 Oct 31\u2013Nov 3",
+  "focus_end": "2026-11-04",
+  "heading": "Havertown \u00b7 Next five runs \u00b7 October 31\u2013November 4",
+  "focus_label": "Next 5 runs \u00b7 Oct 31\u2013Nov 4",
   "history_heading": "Havertown \u00b7 Plan and history \u00b7 October 17\u2013November 3",
   "track_count": 1874,
-  "summary": "Prioritize unfinished streets inside 19083 before expanding outside the ZIP area. The upcoming plan concentrates on completing Westgate Hills, with Tuesday near Hilltop. Full streets can include previously recorded blocks; cover both halves from the numbered midpoint. GPS proximity does not establish CityStrides credit.",
+  "summary": "Prioritize unfinished streets inside 19083 while mixing neighborhoods. Saturday Westgate Hills, Sunday Gladstone, Monday Walnut Place, Tuesday Covington, Wednesday Grove Place. Full streets can include previously recorded blocks; cover both halves from the numbered midpoint. GPS proximity does not establish CityStrides credit.",
   "planning_priorities": [
     "Finish unfinished streets inside Census ZCTA 19083 before expanding outside it.",
-    "Prioritize completing Westgate Hills and the Hilltop area.",
+    "Mix neighborhoods within 19083; include Westgate Hills without clustering every day there.",
     "Keep full connected streets and numbered midpoint navigation addresses.",
     "Prefer one-way walking approaches under 2 miles unless explicitly approved."
   ]
