@@ -1,0 +1,22 @@
+{
+  "boundary": "Census 2020 ZCTA 19083",
+  "method": "Complete target LineString covered by polygon, including all intermediate segments",
+  "targets": [
+    {
+      "street": "Glen Ridge Road",
+      "fully_inside": true
+    },
+    {
+      "street": "Walnut Hill Lane",
+      "fully_inside": true
+    },
+    {
+      "street": "Greenbriar Lane",
+      "fully_inside": true
+    },
+    {
+      "street": "Nancy Drive",
+      "fully_inside": true
+    }
+  ]
+}

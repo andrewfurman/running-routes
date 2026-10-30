@@ -1,0 +1,422 @@
+[
+  {
+    "date": "2026-10-31",
+    "number": 1,
+    "street": "Chestnut Avenue",
+    "direction": "NE",
+    "bearing": 36.2,
+    "target_label": "Haverford Road to Biddle Street",
+    "target_coordinates": [
+      [
+        -75.2910985,
+        39.9928269
+      ],
+      [
+        -75.2910727,
+        39.9932214
+      ],
+      [
+        -75.2910899,
+        39.9933332
+      ],
+      [
+        -75.2911328,
+        39.9934844
+      ],
+      [
+        -75.292858,
+        39.9954571
+      ],
+      [
+        -75.2937145,
+        39.996422
+      ],
+      [
+        -75.2947016,
+        39.9976516
+      ],
+      [
+        -75.2957591,
+        39.9990012
+      ],
+      [
+        -75.2961441,
+        39.9988261
+      ],
+      [
+        -75.2969092,
+        39.999777
+      ],
+      [
+        -75.2970423,
+        39.999948
+      ],
+      [
+        -75.2971753,
+        40.0001189
+      ],
+      [
+        -75.29733,
+        40.0003169
+      ],
+      [
+        -75.2981863,
+        40.0014125
+      ]
+    ],
+    "target_midpoint": [
+      -75.29445996693786,
+      39.99735061005284
+    ],
+    "target_miles": 0.731,
+    "navigation_address": "2429 Chestnut Ave, Ardmore, PA 19003",
+    "navigation_coordinates": [
+      -75.2942408,
+      39.9974302
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=2429%20Chestnut%20Ave%2C%20Ardmore%2C%20PA%2019003&dirflg=w",
+    "one_way_miles": 1.7,
+    "walking_metres": 2814,
+    "routing_source": "Google Directions walking checked October 26, 2026",
+    "coverage_audit_running": {
+      "length_m": 1176.4,
+      "covered_25m_pct": 33.5,
+      "uncovered_25m_pct": 66.5,
+      "sample_spacing_m": 5,
+      "running_track_count": 1870,
+      "covered_15m_pct": 29.7,
+      "max_nearest_distance_m": 233.9
+    },
+    "citystrides_url": "https://citystrides.com/users/7315/map",
+    "citystrides_status": "October 30: 33.5% of target samples near recorded runs; proximity does not establish CityStrides credit.",
+    "time_label": "5:30\u20136:15 AM",
+    "first_waypoint": {
+      "intersection": "Chestnut Avenue & Haverford Road",
+      "coordinates": [
+        -75.2910985,
+        39.9928269
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9928269,-75.2910985&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Chestnut Avenue & Biddle Street",
+      "coordinates": [
+        -75.2981863,
+        40.0014125
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=40.0014125,-75.2981863&dirflg=w"
+    },
+    "display_date": "Sat Oct 31",
+    "target_scope": "Complete main street; follow the short Lorraine Avenue connection.",
+    "whole_street": true,
+    "distance_limit_exception": false,
+    "connector_note": "Follow the short Lorraine Avenue connection between the staggered Chestnut Avenue blocks. Separate Chestnut Avenue beyond Biddle/County Line is a disconnected namesake, not part of this continuous street."
+  },
+  {
+    "date": "2026-11-01",
+    "number": 2,
+    "street": "Gladstone Road",
+    "direction": "S",
+    "bearing": 187.5,
+    "target_label": "Edmonds Avenue to North Drexel Avenue",
+    "target_coordinates": [
+      [
+        -75.3104673,
+        39.9637641
+      ],
+      [
+        -75.311456,
+        39.9632986
+      ],
+      [
+        -75.3124345,
+        39.9628776
+      ],
+      [
+        -75.3135074,
+        39.9625092
+      ],
+      [
+        -75.3144878,
+        39.9620706
+      ],
+      [
+        -75.3155129,
+        39.9615628
+      ]
+    ],
+    "target_midpoint": [
+      -75.31300431549731,
+      39.96268194506963
+    ],
+    "target_miles": 0.308,
+    "navigation_address": "215a Gladstone Rd, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.3126547,
+      39.96269789999999
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=215a%20Gladstone%20Rd%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "one_way_miles": 1.9,
+    "walking_metres": 2989,
+    "routing_source": "Google Directions walking checked October 28, 2026",
+    "coverage_audit_running": {
+      "length_m": 496.1,
+      "covered_25m_pct": 5.0,
+      "sample_spacing_m": 5,
+      "running_track_count": 1872,
+      "max_nearest_distance_m": 212.8,
+      "covered_15m_pct": 3.0
+    },
+    "citystrides_url": "https://citystrides.com/users/7315/map",
+    "citystrides_status": "October 30: 5.0% of target samples near recorded runs; proximity does not establish CityStrides credit.",
+    "time_label": "4:00\u20134:45 AM",
+    "first_waypoint": {
+      "intersection": "Gladstone Road & Edmonds Avenue",
+      "coordinates": [
+        -75.3104673,
+        39.9637641
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9637641,-75.3104673&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Gladstone Road & North Drexel Avenue",
+      "coordinates": [
+        -75.3155129,
+        39.9615628
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9615628,-75.3155129&dirflg=w"
+    },
+    "display_date": "Sun Nov 1",
+    "target_scope": "Complete connected street.",
+    "whole_street": true,
+    "distance_limit_exception": false
+  },
+  {
+    "date": "2026-11-02",
+    "number": 3,
+    "street": "Dartmouth Lane",
+    "direction": "NW",
+    "bearing": 318.8,
+    "target_label": "Darby Road to West Ardmore Avenue",
+    "target_coordinates": [
+      [
+        -75.325152,
+        39.9961861
+      ],
+      [
+        -75.3252162,
+        39.9961057
+      ],
+      [
+        -75.3256972,
+        39.9940546
+      ],
+      [
+        -75.3257112,
+        39.9939947
+      ],
+      [
+        -75.3257084,
+        39.993971
+      ],
+      [
+        -75.3256854,
+        39.9937777
+      ],
+      [
+        -75.3252331,
+        39.9931201
+      ]
+    ],
+    "target_midpoint": [
+      -75.32556382878337,
+      39.99462333941784
+    ],
+    "target_miles": 0.221,
+    "navigation_address": "22 Dartmouth Ln, Haverford, PA 19041",
+    "navigation_coordinates": [
+      -75.3260633,
+      39.9946494
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=22%20Dartmouth%20Ln%2C%20Haverford%2C%20PA%2019041&dirflg=w",
+    "one_way_miles": 1.6,
+    "walking_metres": 2500,
+    "routing_source": "Google Directions walking checked October 30, 2026",
+    "coverage_audit_running": {
+      "length_m": 355.3,
+      "covered_25m_pct": 8.3,
+      "sample_spacing_m": 5,
+      "running_track_count": 1874,
+      "max_nearest_distance_m": 280.9
+    },
+    "citystrides_url": "https://citystrides.com/users/7315/map",
+    "citystrides_status": "October 30: 8.3% of samples near running GPS tracks; proximity does not establish CityStrides credit.",
+    "time_label": "5:30\u20136:15 AM",
+    "first_waypoint": {
+      "intersection": "Dartmouth Lane & Darby Road",
+      "coordinates": [
+        -75.325152,
+        39.9961861
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9961861,-75.325152&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Dartmouth Lane & West Ardmore Avenue",
+      "coordinates": [
+        -75.3252331,
+        39.9931201
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9931201,-75.3252331&dirflg=w"
+    },
+    "display_date": "Mon Nov 2",
+    "target_scope": "Complete connected street.",
+    "whole_street": true,
+    "distance_limit_exception": false
+  },
+  {
+    "date": "2026-11-03",
+    "number": 4,
+    "street": "Dermond Avenue",
+    "direction": "SE",
+    "bearing": 157.1,
+    "target_label": "Hollywood Avenue to street end",
+    "target_coordinates": [
+      [
+        -75.2968199,
+        39.964971
+      ],
+      [
+        -75.2970597,
+        39.9648685
+      ],
+      [
+        -75.2973737,
+        39.9647344
+      ],
+      [
+        -75.2976984,
+        39.9645956
+      ],
+      [
+        -75.2978819,
+        39.9645172
+      ],
+      [
+        -75.2980281,
+        39.9644547
+      ],
+      [
+        -75.2983328,
+        39.9643245
+      ],
+      [
+        -75.2984255,
+        39.9642848
+      ],
+      [
+        -75.298528,
+        39.964241
+      ],
+      [
+        -75.2988462,
+        39.9641051
+      ],
+      [
+        -75.299234,
+        39.9639393
+      ],
+      [
+        -75.2996363,
+        39.9637674
+      ],
+      [
+        -75.2999985,
+        39.9636126
+      ],
+      [
+        -75.3003782,
+        39.9634503
+      ],
+      [
+        -75.3007285,
+        39.9633006
+      ],
+      [
+        -75.3011057,
+        39.9631368
+      ],
+      [
+        -75.3014714,
+        39.9629831
+      ],
+      [
+        -75.3018716,
+        39.9628121
+      ],
+      [
+        -75.3022382,
+        39.9626554
+      ],
+      [
+        -75.3026048,
+        39.962499
+      ],
+      [
+        -75.3029693,
+        39.9623429
+      ],
+      [
+        -75.3033797,
+        39.9621676
+      ],
+      [
+        -75.3036847,
+        39.9620372
+      ]
+    ],
+    "target_midpoint": [
+      -75.3002523456886,
+      39.96350409573178
+    ],
+    "target_miles": 0.417,
+    "navigation_address": "2785 Dermond Ave, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.30025169999999,
+      39.9635003
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=2785%20Dermond%20Ave%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "one_way_miles": 1.6,
+    "walking_metres": 2553,
+    "routing_source": "Google Directions walking checked October 30, 2026",
+    "coverage_audit_running": {
+      "length_m": 670.7,
+      "covered_25m_pct": 0.0,
+      "sample_spacing_m": 5,
+      "running_track_count": 1874,
+      "max_nearest_distance_m": 247.4
+    },
+    "citystrides_url": "https://citystrides.com/users/7315/map",
+    "citystrides_status": "October 30: 0.0% of samples near running GPS tracks; proximity does not establish CityStrides credit.",
+    "time_label": "5:30\u20136:15 AM",
+    "first_waypoint": {
+      "intersection": "Dermond Avenue & Hollywood Avenue",
+      "coordinates": [
+        -75.2968199,
+        39.964971
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.964971,-75.2968199&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Dermond Avenue & street end",
+      "coordinates": [
+        -75.3036847,
+        39.9620372
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9620372,-75.3036847&dirflg=w"
+    },
+    "display_date": "Tue Nov 3",
+    "target_scope": "Complete connected street.",
+    "whole_street": true,
+    "distance_limit_exception": false
+  }
+]
