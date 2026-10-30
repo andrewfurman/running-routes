@@ -1,13 +1,13 @@
 {
-  "snapshot": "2026-10-30-mixed-19083",
+  "snapshot": "2026-10-30-stacked-monday",
   "as_of_label": "October 30",
   "focus_start": "2026-10-31",
   "focus_end": "2026-11-04",
-  "heading": "Havertown \u00b7 Next five runs \u00b7 October 31\u2013November 4",
-  "focus_label": "Next 5 runs \u00b7 Oct 31\u2013Nov 4",
+  "heading": "Havertown \u00b7 Five outings, six street targets \u00b7 Oct 31\u2013Nov 4",
+  "focus_label": "5 outings \u00b7 Oct 31\u2013Nov 4",
   "history_heading": "Havertown \u00b7 Plan and history \u00b7 October 17\u2013November 3",
   "track_count": 1874,
-  "summary": "Prioritize unfinished streets inside 19083 while mixing neighborhoods. Saturday Westgate Hills, Sunday Gladstone, Monday Walnut Place, Tuesday Covington, Wednesday Grove Place. Full streets can include previously recorded blocks; cover both halves from the numbered midpoint. GPS proximity does not establish CityStrides credit.",
+  "summary": "Monday combines Walnut Place and Covington into one outing with two consecutive calendar entries. Tuesday targets Wilson Drive and its northern loop across Township Line Road, including a requested exception outside the 19083 outline. Wednesday remains Grove Place. GPS proximity does not establish CityStrides completion.",
   "planning_priorities": [
     "Finish unfinished streets inside Census ZCTA 19083 before expanding outside it.",
     "Mix neighborhoods within 19083; include Westgate Hills without clustering every day there.",

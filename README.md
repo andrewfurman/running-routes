@@ -66,3 +66,11 @@ GOOGLE_MAPS_API_KEY=your_google_maps_browser_key
 Neither `.env` nor `.env.sample` should be committed. Run `python3 scripts/checks/check_public_commit.py` before committing; CI also checks the tracked files. GitHub Pages reads `GOOGLE_MAPS_API_KEY` from the repository's Actions secret and generates the map configuration during deployment.
 
 Google Maps JavaScript browser keys are visible to visitors when the map loads, even when stored as an Actions secret and excluded from Git. Restrict the key in Google Cloud to the Maps APIs needed here and to `https://andrewfurman.github.io/*` plus any authorized local preview origins.
+
+## Calendar access on another computer
+
+Install [Google Workspace CLI](https://github.com/googleworkspace/cli) with `brew install googleworkspace-cli`, then authenticate with `gws auth login --services calendar` and verify with `gws auth status`. A new OAuth client can be configured with `gws auth setup` if needed. Alternatively, securely install your authorized-user OAuth JSON at `~/.config/gws/credentials.json`, set file permissions to `600`, and set `GOOGLE_WORKSPACE_CLI_CREDENTIALS_FILE` to that private path. OAuth client secrets and refresh tokens must never be committed to this public repository.
+
+Preview updates with `python3 scripts/calendar/sync_plan.py`. Use `--apply` to write the plan and read every event back for verification. The script checks unrelated calendar conflicts, retains existing reminders when updating, and uses numbered navigation addresses. `GOOGLE_CALENDAR_ID` defaults to `primary`. No Workspace API key is needed.
+
+The ignored `.env.sample` also lists optional `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` placeholders for future Wrangler deployments. The site currently deploys to GitHub Pages. Cloudflare tokens, Google OAuth credentials, and Maps browser keys are separate credentials and must stay outside Git.

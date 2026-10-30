@@ -1,0 +1,479 @@
+{
+  "street": "Wilson Drive",
+  "cross_a": "Marvine Avenue",
+  "cross_b": "northern loop via Township Line Road",
+  "coordinates": [
+    [
+      -75.2977029,
+      39.9625906
+    ],
+    [
+      -75.2988462,
+      39.9641051
+    ],
+    [
+      -75.2992009,
+      39.9645884
+    ],
+    [
+      -75.3000784,
+      39.9657179
+    ],
+    [
+      -75.3001358,
+      39.9657919
+    ],
+    [
+      -75.3002095,
+      39.9658867
+    ],
+    [
+      -75.3002576,
+      39.9659908
+    ],
+    [
+      -75.300286,
+      39.9660527
+    ],
+    [
+      -75.3003999,
+      39.9662078
+    ],
+    [
+      -75.3005316,
+      39.9663873
+    ],
+    [
+      -75.3005565,
+      39.9664133
+    ],
+    [
+      -75.3006106,
+      39.9664824
+    ],
+    [
+      -75.3008303,
+      39.9667294
+    ],
+    [
+      -75.3008766,
+      39.9667766
+    ],
+    [
+      -75.3008504,
+      39.9667218
+    ],
+    [
+      -75.3007625,
+      39.9665381
+    ],
+    [
+      -75.3007243,
+      39.9664739
+    ],
+    [
+      -75.3006085,
+      39.9663356
+    ],
+    [
+      -75.300443,
+      39.9661378
+    ],
+    [
+      -75.3003487,
+      39.9660252
+    ],
+    [
+      -75.3002986,
+      39.9659754
+    ],
+    [
+      -75.3002095,
+      39.9658867
+    ]
+  ],
+  "midpoint": [
+    -75.2996248103211,
+    39.96513405419342
+  ],
+  "bearing": 145,
+  "whole_street": true,
+  "length_m": 653.1,
+  "covered_25m_pct": 14.5,
+  "max_gap_m": 438.2,
+  "fully_inside_19083": false,
+  "navigation_address": "1239 Wilson Dr, Havertown, PA 19083",
+  "navigation_coordinates": [
+    -75.2994607,
+    39.9652397
+  ],
+  "walking_metres": 2619,
+  "one_way_miles": 1.6,
+  "geocode": {
+    "address_components": [
+      {
+        "long_name": "1239",
+        "short_name": "1239",
+        "types": [
+          "street_number"
+        ]
+      },
+      {
+        "long_name": "Wilson Drive",
+        "short_name": "Wilson Dr",
+        "types": [
+          "route"
+        ]
+      },
+      {
+        "long_name": "Havertown",
+        "short_name": "Havertown",
+        "types": [
+          "locality",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Upper Darby Township",
+        "short_name": "Upper Darby Township",
+        "types": [
+          "administrative_area_level_3",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Delaware County",
+        "short_name": "Delaware County",
+        "types": [
+          "administrative_area_level_2",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Pennsylvania",
+        "short_name": "PA",
+        "types": [
+          "administrative_area_level_1",
+          "political"
+        ]
+      },
+      {
+        "long_name": "United States",
+        "short_name": "US",
+        "types": [
+          "country",
+          "political"
+        ]
+      },
+      {
+        "long_name": "19083",
+        "short_name": "19083",
+        "types": [
+          "postal_code"
+        ]
+      },
+      {
+        "long_name": "5218",
+        "short_name": "5218",
+        "types": [
+          "postal_code_suffix"
+        ]
+      }
+    ],
+    "formatted_address": "1239 Wilson Dr, Havertown, PA 19083, USA",
+    "geometry": {
+      "bounds": {
+        "northeast": {
+          "lat": 39.9652857,
+          "lng": -75.29938849999999
+        },
+        "southwest": {
+          "lat": 39.9651937,
+          "lng": -75.2995329
+        }
+      },
+      "location": {
+        "lat": 39.9652397,
+        "lng": -75.2994607
+      },
+      "location_type": "ROOFTOP",
+      "viewport": {
+        "northeast": {
+          "lat": 39.96656358029149,
+          "lng": -75.2981636697085
+        },
+        "southwest": {
+          "lat": 39.96386561970849,
+          "lng": -75.30086163029151
+        }
+      }
+    },
+    "place_id": "ChIJpf6DbqbBxokRZUlfxKFl4TI",
+    "types": [
+      "premise",
+      "street_address"
+    ]
+  },
+  "walking_route": {
+    "distance": {
+      "text": "1.6 mi",
+      "value": 2619
+    },
+    "duration": {
+      "text": "35 mins",
+      "value": 2123
+    },
+    "end_address": "1239 Wilson Dr, Havertown, PA 19083, USA",
+    "end_location": {
+      "lat": 39.9651601,
+      "lng": -75.2995995
+    },
+    "start_address": "1700 Manor Rd, Havertown, PA 19083, USA",
+    "start_location": {
+      "lat": 39.9810607,
+      "lng": -75.30976489999999
+    },
+    "steps": [
+      {
+        "distance": {
+          "text": "0.2 mi",
+          "value": 283
+        },
+        "duration": {
+          "text": "4 mins",
+          "value": 248
+        },
+        "end_location": {
+          "lat": 39.978969,
+          "lng": -75.3080512
+        },
+        "html_instructions": "Head <b>southeast</b> on <b>Manor Rd</b> toward <b>Belvedere Ave</b>/<wbr/><b>Fairfield Rd</b>",
+        "polyline": {
+          "points": "sx_sF~|sjMBAJI@CFGJEBCFKLSDGDGBA@A@C@?FELKj@a@BAPO\\Ub@Yn@c@NMDA?AfBkABC"
+        },
+        "start_location": {
+          "lat": 39.9810607,
+          "lng": -75.30976489999999
+        },
+        "travel_mode": "WALKING"
+      },
+      {
+        "distance": {
+          "text": "344 ft",
+          "value": 105
+        },
+        "duration": {
+          "text": "1 min",
+          "value": 76
+        },
+        "end_location": {
+          "lat": 39.9784444,
+          "lng": -75.30898599999999
+        },
+        "html_instructions": "Turn <b>right</b> onto <b>Princeton Rd</b>",
+        "maneuver": "turn-right",
+        "polyline": {
+          "points": "qk_sFhrsjMBFFR@@Nd@b@pA@@BHBHZF@F"
+        },
+        "start_location": {
+          "lat": 39.978969,
+          "lng": -75.3080512
+        },
+        "travel_mode": "WALKING"
+      },
+      {
+        "distance": {
+          "text": "0.7 mi",
+          "value": 1075
+        },
+        "duration": {
+          "text": "14 mins",
+          "value": 839
+        },
+        "end_location": {
+          "lat": 39.9707662,
+          "lng": -75.3015027
+        },
+        "html_instructions": "Turn <b>left</b> onto <b>Pennsy Trail</b>",
+        "maneuver": "turn-left",
+        "polyline": {
+          "points": "gh_sFdxsjMn@y@b@i@X_@`C{C\\a@@A`@e@Z[d@o@V[HIRWd@i@FGdAeALOX[@AZ]HIVURQHGHIBAHIBC|@u@LK@AFEBA~@s@LKHGBCTOjA{@xAaAvAcAz@g@FE@A^[~@s@p@m@NQHI@C@Ab@q@NOhAqA"
+        },
+        "start_location": {
+          "lat": 39.9784444,
+          "lng": -75.30898599999999
+        },
+        "travel_mode": "WALKING"
+      },
+      {
+        "distance": {
+          "text": "295 ft",
+          "value": 90
+        },
+        "duration": {
+          "text": "1 min",
+          "value": 63
+        },
+        "end_location": {
+          "lat": 39.9700642,
+          "lng": -75.3014185
+        },
+        "html_instructions": "Continue onto <b>Vernon Rd</b>",
+        "polyline": {
+          "points": "ix}rFjirjMHSHMFIBEB@@?@?@?JBZFFBTDFB@?B?D@HB"
+        },
+        "start_location": {
+          "lat": 39.9707662,
+          "lng": -75.3015027
+        },
+        "travel_mode": "WALKING"
+      },
+      {
+        "distance": {
+          "text": "463 ft",
+          "value": 141
+        },
+        "duration": {
+          "text": "2 mins",
+          "value": 113
+        },
+        "end_location": {
+          "lat": 39.96974,
+          "lng": -75.3000789
+        },
+        "html_instructions": "Turn <b>left</b> onto <b>West Chester Pike</b>",
+        "maneuver": "turn-left",
+        "polyline": {
+          "points": "{s}rFzhrjMBSLiABON]@KJ{@Hq@@E"
+        },
+        "start_location": {
+          "lat": 39.9700642,
+          "lng": -75.3014185
+        },
+        "travel_mode": "WALKING"
+      },
+      {
+        "distance": {
+          "text": "0.3 mi",
+          "value": 496
+        },
+        "duration": {
+          "text": "7 mins",
+          "value": 420
+        },
+        "end_location": {
+          "lat": 39.965956,
+          "lng": -75.30033499999999
+        },
+        "html_instructions": "Turn <b>right</b> onto <b>Quarry Center Dr</b>",
+        "maneuver": "turn-right",
+        "polyline": {
+          "points": "{q}rFn`rjMt@JBONFp@NTFLDF@HDFDFBBB@@DDJPBDDFBDDHDJHN\\|@BDBB@BBBBFTRFDHDJDHD^PF?F?D?DAB?@?BAHCDAZOVQPMJGROn@c@d@[RIDCPOVK^e@@AFC?AFE"
+        },
+        "start_location": {
+          "lat": 39.96974,
+          "lng": -75.3000789
+        },
+        "travel_mode": "WALKING"
+      },
+      {
+        "distance": {
+          "text": "312 ft",
+          "value": 95
+        },
+        "duration": {
+          "text": "2 mins",
+          "value": 100
+        },
+        "end_location": {
+          "lat": 39.9662596,
+          "lng": -75.2991326
+        },
+        "html_instructions": "Turn <b>left</b> onto <b>Township Line Rd</b>",
+        "maneuver": "turn-left",
+        "polyline": {
+          "points": "gz|rF`brjMIWDCCE\\S@ACEAEEIAGUw@Um@GQGQIO"
+        },
+        "start_location": {
+          "lat": 39.965956,
+          "lng": -75.30033499999999
+        },
+        "travel_mode": "WALKING"
+      },
+      {
+        "distance": {
+          "text": "0.1 mi",
+          "value": 166
+        },
+        "duration": {
+          "text": "2 mins",
+          "value": 130
+        },
+        "end_location": {
+          "lat": 39.9650405,
+          "lng": -75.2983397
+        },
+        "html_instructions": "Turn <b>right</b> onto <b>Myrtlewood Ave</b>",
+        "maneuver": "turn-right",
+        "polyline": {
+          "points": "c||rFpzqjMFEZSFEFE?ABAZSFPJCj@a@JKrA_A"
+        },
+        "start_location": {
+          "lat": 39.9662596,
+          "lng": -75.2991326
+        },
+        "travel_mode": "WALKING"
+      },
+      {
+        "distance": {
+          "text": "312 ft",
+          "value": 95
+        },
+        "duration": {
+          "text": "1 min",
+          "value": 66
+        },
+        "end_location": {
+          "lat": 39.9646363,
+          "lng": -75.2992043
+        },
+        "html_instructions": "Turn <b>right</b> onto <b>Manor Rd</b>",
+        "maneuver": "turn-right",
+        "polyline": {
+          "points": "ot|rFruqjMFPLZDLJXDL`@fA"
+        },
+        "start_location": {
+          "lat": 39.9650405,
+          "lng": -75.2983397
+        },
+        "travel_mode": "WALKING"
+      },
+      {
+        "distance": {
+          "text": "240 ft",
+          "value": 73
+        },
+        "duration": {
+          "text": "1 min",
+          "value": 68
+        },
+        "end_location": {
+          "lat": 39.9651601,
+          "lng": -75.2995995
+        },
+        "html_instructions": "Turn <b>right</b> onto <b>Wilson Dr</b><div style=\"font-size:0.9em\">Destination will be on the right</div>",
+        "maneuver": "turn-right",
+        "polyline": {
+          "points": "_r|rF~zqjMeAt@a@X"
+        },
+        "start_location": {
+          "lat": 39.9646363,
+          "lng": -75.2992043
+        },
+        "travel_mode": "WALKING"
+      }
+    ],
+    "traffic_speed_entry": [],
+    "via_waypoint": []
+  }
+}
