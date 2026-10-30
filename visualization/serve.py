@@ -28,9 +28,9 @@ class Handler(SimpleHTTPRequestHandler):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--port', type=int, default=8768)
-    parser.add_argument('--env-file', type=Path, help='Optional local file containing GOOGLE_MAPS_API_KEY')
+    parser.add_argument('--env-file', type=Path, default=ROOT.parent / '.env', help='Local environment file (default: repository .env)')
     args = parser.parse_args()
-    if args.env_file and not MAPS_KEY:
+    if args.env_file.exists() and not MAPS_KEY:
         for line in args.env_file.read_text().splitlines():
             name, sep, value = line.strip().partition('=')
             if sep and name.strip() == 'GOOGLE_MAPS_API_KEY':
