@@ -1,5 +1,5 @@
 {
-  "snapshot": "2026-10-30-shorter-plan",
+  "snapshot": "2026-10-30-19083-priority",
   "as_of_label": "October 30",
   "focus_start": "2026-10-31",
   "focus_end": "2026-11-03",
@@ -7,5 +7,11 @@
   "focus_label": "Next 4 runs \u00b7 Oct 31\u2013Nov 3",
   "history_heading": "Havertown \u00b7 Plan and history \u00b7 October 17\u2013November 3",
   "track_count": 1874,
-  "summary": "October 29: 4.52-mile run covered Exeter. October 30: 3.75-mile run covered Fairlamb. Retain your Sunday Gladstone appointment at 4:00 AM and replace the longer Dover and Coopertown targets with closer Dermond and Dartmouth. Whole connected streets where feasible. Running GPS proximity does not establish CityStrides credit."
+  "summary": "Prioritize unfinished streets inside 19083 before expanding outside the ZIP area. The upcoming plan concentrates on completing Westgate Hills, with Tuesday near Hilltop. Full streets can include previously recorded blocks; cover both halves from the numbered midpoint. GPS proximity does not establish CityStrides credit.",
+  "planning_priorities": [
+    "Finish unfinished streets inside Census ZCTA 19083 before expanding outside it.",
+    "Prioritize completing Westgate Hills and the Hilltop area.",
+    "Keep full connected streets and numbered midpoint navigation addresses.",
+    "Prefer one-way walking approaches under 2 miles unless explicitly approved."
+  ]
 }

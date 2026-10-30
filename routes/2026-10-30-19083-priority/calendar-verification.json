@@ -1,0 +1,26 @@
+[
+  {
+    "date": "2026-10-31",
+    "street": "Glen Ridge Road",
+    "location_verified": true,
+    "time_preserved": true
+  },
+  {
+    "date": "2026-11-01",
+    "street": "Walnut Hill Lane",
+    "location_verified": true,
+    "time_preserved": true
+  },
+  {
+    "date": "2026-11-02",
+    "street": "Greenbriar Lane",
+    "location_verified": true,
+    "time_preserved": true
+  },
+  {
+    "date": "2026-11-03",
+    "street": "Nancy Drive",
+    "location_verified": true,
+    "time_preserved": true
+  }
+]

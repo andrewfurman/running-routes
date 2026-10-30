@@ -1,0 +1,1881 @@
+[
+  {
+    "street": "Glen Ridge Road",
+    "cross_a": "Windsor Park Lane",
+    "cross_b": "Windsor Park Lane",
+    "coordinates": [
+      [
+        -75.3345273,
+        39.9727579
+      ],
+      [
+        -75.3329309,
+        39.9732973
+      ],
+      [
+        -75.3318408,
+        39.9737248
+      ],
+      [
+        -75.3314117,
+        39.9740208
+      ],
+      [
+        -75.3309759,
+        39.9743453
+      ],
+      [
+        -75.3305705,
+        39.9747838
+      ]
+    ],
+    "midpoint": [
+      -75.33232409770024,
+      39.97353526906537
+    ],
+    "bearing": 246.81169126195513,
+    "whole_street": true,
+    "length_m": 414.1,
+    "covered_25m_pct": 0.0,
+    "max_gap_m": 107.9,
+    "navigation_address": "310 Glen Ridge Rd, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.3324892,
+      39.9736829
+    ],
+    "walking_metres": 2756,
+    "one_way_miles": 1.7,
+    "geocode": {
+      "address_components": [
+        {
+          "long_name": "310",
+          "short_name": "310",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "Glen Ridge Road",
+          "short_name": "Glen Ridge Rd",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Havertown",
+          "short_name": "Havertown",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Haverford Township",
+          "short_name": "Haverford Township",
+          "types": [
+            "administrative_area_level_3",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Delaware County",
+          "short_name": "Delaware County",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Pennsylvania",
+          "short_name": "PA",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "United States",
+          "short_name": "US",
+          "types": [
+            "country",
+            "political"
+          ]
+        },
+        {
+          "long_name": "19083",
+          "short_name": "19083",
+          "types": [
+            "postal_code"
+          ]
+        },
+        {
+          "long_name": "2717",
+          "short_name": "2717",
+          "types": [
+            "postal_code_suffix"
+          ]
+        }
+      ],
+      "formatted_address": "310 Glen Ridge Rd, Havertown, PA 19083, USA",
+      "geometry": {
+        "bounds": {
+          "northeast": {
+            "lat": 39.9737362,
+            "lng": -75.332411
+          },
+          "southwest": {
+            "lat": 39.9736295,
+            "lng": -75.33256759999999
+          }
+        },
+        "location": {
+          "lat": 39.9736829,
+          "lng": -75.3324892
+        },
+        "location_type": "ROOFTOP",
+        "viewport": {
+          "northeast": {
+            "lat": 39.97497138029149,
+            "lng": -75.3311302197085
+          },
+          "southwest": {
+            "lat": 39.97227341970849,
+            "lng": -75.3338281802915
+          }
+        }
+      },
+      "place_id": "ChIJC-Z0ANHBxokRl_kwcsOP9EE",
+      "types": [
+        "premise",
+        "street_address"
+      ]
+    },
+    "walking_route": {
+      "distance": {
+        "text": "1.7 mi",
+        "value": 2756
+      },
+      "duration": {
+        "text": "39 mins",
+        "value": 2318
+      },
+      "end_address": "310 Glen Ridge Rd, Havertown, PA 19083, USA",
+      "end_location": {
+        "lat": 39.9735086,
+        "lng": -75.3323908
+      },
+      "start_address": "1700 Manor Rd, Havertown, PA 19083, USA",
+      "start_location": {
+        "lat": 39.9810607,
+        "lng": -75.30976489999999
+      },
+      "steps": [
+        {
+          "distance": {
+            "text": "0.2 mi",
+            "value": 283
+          },
+          "duration": {
+            "text": "4 mins",
+            "value": 248
+          },
+          "end_location": {
+            "lat": 39.978969,
+            "lng": -75.3080512
+          },
+          "html_instructions": "Head <b>southeast</b> on <b>Manor Rd</b> toward <b>Belvedere Ave</b>/<wbr/><b>Fairfield Rd</b>",
+          "polyline": {
+            "points": "sx_sF~|sjMBAJI@CFGJEBCFKLSDGDGBA@A@C@?FELKj@a@BAPO\\Ub@Yn@c@NMDA?AfBkABC"
+          },
+          "start_location": {
+            "lat": 39.9810607,
+            "lng": -75.30976489999999
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "0.2 mi",
+            "value": 296
+          },
+          "duration": {
+            "text": "4 mins",
+            "value": 220
+          },
+          "end_location": {
+            "lat": 39.977695,
+            "lng": -75.3107642
+          },
+          "html_instructions": "Turn <b>right</b> onto <b>Princeton Rd</b>",
+          "maneuver": "turn-right",
+          "polyline": {
+            "points": "qk_sFhrsjMBFFR@@Nd@b@pA@@BHBHZF@F?BBN?@@BDL?@@BDLN^Rb@HN@@BBFL`@f@FHFNBD?@DHDJ@H@B?B?F?FCV?H?F@J@D"
+          },
+          "start_location": {
+            "lat": 39.978969,
+            "lng": -75.3080512
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "0.2 mi",
+            "value": 315
+          },
+          "duration": {
+            "text": "5 mins",
+            "value": 294
+          },
+          "end_location": {
+            "lat": 39.9761435,
+            "lng": -75.3140741
+          },
+          "html_instructions": "<b>Princeton Rd</b> turns slightly <b>left</b> and becomes <b>Lincoln Ave</b>",
+          "polyline": {
+            "points": "qc_sFfctjMHLNRDF^dAFPFTDLBD?@f@vAFPJVFRPf@b@nAVv@n@jBN^HT"
+          },
+          "start_location": {
+            "lat": 39.977695,
+            "lng": -75.3107642
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "59 ft",
+            "value": 18
+          },
+          "duration": {
+            "text": "1 min",
+            "value": 17
+          },
+          "end_location": {
+            "lat": 39.9763939,
+            "lng": -75.3142615
+          },
+          "html_instructions": "Turn <b>right</b> onto <b>Shelbourne Rd</b>",
+          "maneuver": "turn-right",
+          "polyline": {
+            "points": "{y~rF|wtjMIDOLWP"
+          },
+          "start_location": {
+            "lat": 39.9761435,
+            "lng": -75.3140741
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "0.3 mi",
+            "value": 478
+          },
+          "duration": {
+            "text": "7 mins",
+            "value": 399
+          },
+          "end_location": {
+            "lat": 39.9751217,
+            "lng": -75.31926
+          },
+          "html_instructions": "Turn <b>left</b> onto <b>Lincoln Ave</b>",
+          "maneuver": "turn-left",
+          "polyline": {
+            "points": "m{~rFbytjMPt@J\\DN@@DLn@lBn@jBJRBFjBtFVx@@FFP@BBJBHAH?DAHEf@Kx@AJ?FCLCVEb@ADALAHI`@"
+          },
+          "start_location": {
+            "lat": 39.9763939,
+            "lng": -75.3142615
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "0.2 mi",
+            "value": 311
+          },
+          "duration": {
+            "text": "5 mins",
+            "value": 272
+          },
+          "end_location": {
+            "lat": 39.9747886,
+            "lng": -75.3224305
+          },
+          "html_instructions": "Continue onto <b>Garfield Ave</b>/<wbr/><b>Shopping Center Dr</b><div style=\"font-size:0.9em\">Continue to follow Shopping Center Dr</div>",
+          "polyline": {
+            "points": "os~rFjxujMNBCN?DGh@ALCNCVGl@Ef@Gd@Eh@Gp@Gd@?Z?PBPJb@Ll@Nr@HRBLDHFDh@H"
+          },
+          "start_location": {
+            "lat": 39.9751217,
+            "lng": -75.31926
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "148 ft",
+            "value": 45
+          },
+          "duration": {
+            "text": "1 min",
+            "value": 36
+          },
+          "end_location": {
+            "lat": 39.9745312,
+            "lng": -75.3226829
+          },
+          "html_instructions": "Turn <b>right</b> to stay on <b>Shopping Center Dr</b>",
+          "maneuver": "turn-right",
+          "polyline": {
+            "points": "mq~rFdlvjMAL?DBFDFDBd@H"
+          },
+          "start_location": {
+            "lat": 39.9747886,
+            "lng": -75.3224305
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "459 ft",
+            "value": 140
+          },
+          "duration": {
+            "text": "2 mins",
+            "value": 111
+          },
+          "end_location": {
+            "lat": 39.9739639,
+            "lng": -75.3237821
+          },
+          "html_instructions": "Turn <b>right</b> toward <b>West Chester Pike</b>",
+          "maneuver": "turn-right",
+          "polyline": {
+            "points": "yo~rFvmvjMCRGt@?F?H?D@D?@?@@B@FN\\N^BD@BBBB?RDZFB@JDD@B?"
+          },
+          "start_location": {
+            "lat": 39.9745312,
+            "lng": -75.3226829
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "0.2 mi",
+            "value": 294
+          },
+          "duration": {
+            "text": "4 mins",
+            "value": 225
+          },
+          "end_location": {
+            "lat": 39.9746173,
+            "lng": -75.3273471
+          },
+          "html_instructions": "Turn <b>right</b> onto <b>West Chester Pike</b>",
+          "maneuver": "turn-right",
+          "polyline": {
+            "points": "gl~rFrtvjMADEf@CLC^It@Ir@_@tDAZE\\CXK~@In@E\\EXCRALKn@"
+          },
+          "start_location": {
+            "lat": 39.9739639,
+            "lng": -75.3237821
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "463 ft",
+            "value": 141
+          },
+          "duration": {
+            "text": "3 mins",
+            "value": 154
+          },
+          "end_location": {
+            "lat": 39.9738484,
+            "lng": -75.32844150000001
+          },
+          "html_instructions": "Turn <b>left</b> onto <b>Glen Gary Dr</b>",
+          "maneuver": "turn-left",
+          "polyline": {
+            "points": "kp~rF|jwjMPDHc@NLERCNLPBKBM@EJP@@d@zAFLDNFNFTJV@F"
+          },
+          "start_location": {
+            "lat": 39.9746173,
+            "lng": -75.3273471
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "0.1 mi",
+            "value": 220
+          },
+          "duration": {
+            "text": "3 mins",
+            "value": 161
+          },
+          "end_location": {
+            "lat": 39.9748572,
+            "lng": -75.3305772
+          },
+          "html_instructions": "Turn <b>right</b> onto <b>Windsor Park Ln</b>",
+          "maneuver": "turn-right",
+          "polyline": {
+            "points": "qk~rFvqwjMEDWNCBC@ABC@CDCBEFABKPGNITGZEVCRELI\\Kd@Ut@IZYx@GT"
+          },
+          "start_location": {
+            "lat": 39.9738484,
+            "lng": -75.32844150000001
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "0.1 mi",
+            "value": 215
+          },
+          "duration": {
+            "text": "3 mins",
+            "value": 181
+          },
+          "end_location": {
+            "lat": 39.9735086,
+            "lng": -75.3323908
+          },
+          "html_instructions": "Turn <b>left</b> onto <b>Glen Ridge Rd</b><div style=\"font-size:0.9em\">Destination will be on the right</div>",
+          "maneuver": "turn-left",
+          "polyline": {
+            "points": "{q~rFb_xjMJFFDPLRRb@`@@@BBHHX\\HL@@@BHLRZNVJPDF?@@@JVDJ@BL\\Rn@"
+          },
+          "start_location": {
+            "lat": 39.9748572,
+            "lng": -75.3305772
+          },
+          "travel_mode": "WALKING"
+        }
+      ],
+      "traffic_speed_entry": [],
+      "via_waypoint": []
+    }
+  },
+  {
+    "street": "Walnut Hill Lane",
+    "cross_a": "Crescent Hill Drive",
+    "cross_b": "Glendale Road",
+    "coordinates": [
+      [
+        -75.3319887,
+        39.9687805
+      ],
+      [
+        -75.3312314,
+        39.9691336
+      ],
+      [
+        -75.3287908,
+        39.9701837
+      ],
+      [
+        -75.3267768,
+        39.9710609
+      ],
+      [
+        -75.3257382,
+        39.9714556
+      ],
+      [
+        -75.3227285,
+        39.9727894
+      ],
+      [
+        -75.3226189,
+        39.9728318
+      ],
+      [
+        -75.3224023,
+        39.9729031
+      ]
+    ],
+    "midpoint": [
+      -75.32721467695602,
+      39.970870187076095
+    ],
+    "bearing": 232.92436980396883,
+    "whole_street": true,
+    "length_m": 938.2,
+    "covered_25m_pct": 47.9,
+    "max_gap_m": 86.9,
+    "navigation_address": "217 Walnut Hill Ln, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.3271173,
+      39.97068609999999
+    ],
+    "walking_metres": 2363,
+    "one_way_miles": 1.5,
+    "geocode": {
+      "address_components": [
+        {
+          "long_name": "217",
+          "short_name": "217",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "Walnut Hill Lane",
+          "short_name": "Walnut Hill Ln",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Havertown",
+          "short_name": "Havertown",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Haverford Township",
+          "short_name": "Haverford Township",
+          "types": [
+            "administrative_area_level_3",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Delaware County",
+          "short_name": "Delaware County",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Pennsylvania",
+          "short_name": "PA",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "United States",
+          "short_name": "US",
+          "types": [
+            "country",
+            "political"
+          ]
+        },
+        {
+          "long_name": "19083",
+          "short_name": "19083",
+          "types": [
+            "postal_code"
+          ]
+        },
+        {
+          "long_name": "2811",
+          "short_name": "2811",
+          "types": [
+            "postal_code_suffix"
+          ]
+        }
+      ],
+      "formatted_address": "217 Walnut Hill Ln, Havertown, PA 19083, USA",
+      "geometry": {
+        "bounds": {
+          "northeast": {
+            "lat": 39.9707494,
+            "lng": -75.32702139999999
+          },
+          "southwest": {
+            "lat": 39.9706229,
+            "lng": -75.3272133
+          }
+        },
+        "location": {
+          "lat": 39.97068609999999,
+          "lng": -75.3271173
+        },
+        "location_type": "ROOFTOP",
+        "viewport": {
+          "northeast": {
+            "lat": 39.9720996302915,
+            "lng": -75.32577666970849
+          },
+          "southwest": {
+            "lat": 39.9694016697085,
+            "lng": -75.32847463029151
+          }
+        }
+      },
+      "place_id": "ChIJUY2jhs_BxokRJTD7GyHS6VA",
+      "types": [
+        "premise",
+        "street_address"
+      ]
+    },
+    "walking_route": {
+      "distance": {
+        "text": "1.5 mi",
+        "value": 2363
+      },
+      "duration": {
+        "text": "33 mins",
+        "value": 1997
+      },
+      "end_address": "217 Walnut Hill Ln, Havertown, PA 19083, USA",
+      "end_location": {
+        "lat": 39.9708333,
+        "lng": -75.32719999999999
+      },
+      "start_address": "1700 Manor Rd, Havertown, PA 19083, USA",
+      "start_location": {
+        "lat": 39.9810607,
+        "lng": -75.30976489999999
+      },
+      "steps": [
+        {
+          "distance": {
+            "text": "0.2 mi",
+            "value": 283
+          },
+          "duration": {
+            "text": "4 mins",
+            "value": 248
+          },
+          "end_location": {
+            "lat": 39.978969,
+            "lng": -75.3080512
+          },
+          "html_instructions": "Head <b>southeast</b> on <b>Manor Rd</b> toward <b>Belvedere Ave</b>/<wbr/><b>Fairfield Rd</b>",
+          "polyline": {
+            "points": "sx_sF~|sjMBAJI@CFGJEBCFKLSDGDGBA@A@C@?FELKj@a@BAPO\\Ub@Yn@c@NMDA?AfBkABC"
+          },
+          "start_location": {
+            "lat": 39.9810607,
+            "lng": -75.30976489999999
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "0.2 mi",
+            "value": 296
+          },
+          "duration": {
+            "text": "4 mins",
+            "value": 220
+          },
+          "end_location": {
+            "lat": 39.977695,
+            "lng": -75.3107642
+          },
+          "html_instructions": "Turn <b>right</b> onto <b>Princeton Rd</b>",
+          "maneuver": "turn-right",
+          "polyline": {
+            "points": "qk_sFhrsjMBFFR@@Nd@b@pA@@BHBHZF@F?BBN?@@BDL?@@BDLN^Rb@HN@@BBFL`@f@FHFNBD?@DHDJ@H@B?B?F?FCV?H?F@J@D"
+          },
+          "start_location": {
+            "lat": 39.978969,
+            "lng": -75.3080512
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "0.2 mi",
+            "value": 315
+          },
+          "duration": {
+            "text": "5 mins",
+            "value": 294
+          },
+          "end_location": {
+            "lat": 39.9761435,
+            "lng": -75.3140741
+          },
+          "html_instructions": "<b>Princeton Rd</b> turns slightly <b>left</b> and becomes <b>Lincoln Ave</b>",
+          "polyline": {
+            "points": "qc_sFfctjMHLNRDF^dAFPFTDLBD?@f@vAFPJVFRPf@b@nAVv@n@jBN^HT"
+          },
+          "start_location": {
+            "lat": 39.977695,
+            "lng": -75.3107642
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "59 ft",
+            "value": 18
+          },
+          "duration": {
+            "text": "1 min",
+            "value": 17
+          },
+          "end_location": {
+            "lat": 39.9763939,
+            "lng": -75.3142615
+          },
+          "html_instructions": "Turn <b>right</b> onto <b>Shelbourne Rd</b>",
+          "maneuver": "turn-right",
+          "polyline": {
+            "points": "{y~rF|wtjMIDOLWP"
+          },
+          "start_location": {
+            "lat": 39.9761435,
+            "lng": -75.3140741
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "0.3 mi",
+            "value": 478
+          },
+          "duration": {
+            "text": "7 mins",
+            "value": 399
+          },
+          "end_location": {
+            "lat": 39.9751217,
+            "lng": -75.31926
+          },
+          "html_instructions": "Turn <b>left</b> onto <b>Lincoln Ave</b>",
+          "maneuver": "turn-left",
+          "polyline": {
+            "points": "m{~rFbytjMPt@J\\DN@@DLn@lBn@jBJRBFjBtFVx@@FFP@BBJBHAH?DAHEf@Kx@AJ?FCLCVEb@ADALAHI`@"
+          },
+          "start_location": {
+            "lat": 39.9763939,
+            "lng": -75.3142615
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "0.1 mi",
+            "value": 172
+          },
+          "duration": {
+            "text": "3 mins",
+            "value": 156
+          },
+          "end_location": {
+            "lat": 39.9735152,
+            "lng": -75.319634
+          },
+          "html_instructions": "Turn <b>left</b> onto <b>N Eagle Rd</b>",
+          "maneuver": "turn-left",
+          "polyline": {
+            "points": "os~rFjxujMNBTB?@F?B@B?D@D?PDRDTARBB@NDFBNBD?PFH@D@H@XDP?b@H"
+          },
+          "start_location": {
+            "lat": 39.9751217,
+            "lng": -75.31926
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "62 ft",
+            "value": 19
+          },
+          "duration": {
+            "text": "1 min",
+            "value": 15
+          },
+          "end_location": {
+            "lat": 39.9735358,
+            "lng": -75.3197685
+          },
+          "html_instructions": "Turn <b>right</b> toward <b>West Chester Pike</b>",
+          "maneuver": "turn-right",
+          "polyline": {
+            "points": "oi~rFtzujM?FAF?DAD"
+          },
+          "start_location": {
+            "lat": 39.9735152,
+            "lng": -75.319634
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "46 ft",
+            "value": 14
+          },
+          "duration": {
+            "text": "1 min",
+            "value": 11
+          },
+          "end_location": {
+            "lat": 39.9734152,
+            "lng": -75.31981999999999
+          },
+          "html_instructions": "Turn <b>left</b> toward <b>West Chester Pike</b>",
+          "maneuver": "turn-left",
+          "polyline": {
+            "points": "si~rFp{ujMVH"
+          },
+          "start_location": {
+            "lat": 39.9735358,
+            "lng": -75.3197685
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "151 ft",
+            "value": 46
+          },
+          "duration": {
+            "text": "1 min",
+            "value": 35
+          },
+          "end_location": {
+            "lat": 39.9733319,
+            "lng": -75.3201517
+          },
+          "html_instructions": "Turn <b>right</b> toward <b>West Chester Pike</b>",
+          "maneuver": "turn-right",
+          "polyline": {
+            "points": "{h~rFz{ujMGj@@JF@NF"
+          },
+          "start_location": {
+            "lat": 39.9734152,
+            "lng": -75.31981999999999
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "0.1 mi",
+            "value": 165
+          },
+          "duration": {
+            "text": "2 mins",
+            "value": 129
+          },
+          "end_location": {
+            "lat": 39.9736985,
+            "lng": -75.3222986
+          },
+          "html_instructions": "Turn <b>right</b> onto <b>West Chester Pike</b>",
+          "maneuver": "turn-right",
+          "polyline": {
+            "points": "ih~rF|}ujMQhBAPKdAIt@EVSjBEp@"
+          },
+          "start_location": {
+            "lat": 39.9733319,
+            "lng": -75.3201517
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "308 ft",
+            "value": 94
+          },
+          "duration": {
+            "text": "2 mins",
+            "value": 92
+          },
+          "end_location": {
+            "lat": 39.9727505,
+            "lng": -75.3225564
+          },
+          "html_instructions": "Turn <b>left</b> onto <b>Glendale Rd</b>",
+          "maneuver": "turn-left",
+          "polyline": {
+            "points": "sj~rFjkvjMTCBSJBANVHBUHDd@RDBXJVJTL"
+          },
+          "start_location": {
+            "lat": 39.9736985,
+            "lng": -75.3222986
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "0.3 mi",
+            "value": 463
+          },
+          "duration": {
+            "text": "6 mins",
+            "value": 381
+          },
+          "end_location": {
+            "lat": 39.9708333,
+            "lng": -75.32719999999999
+          },
+          "html_instructions": "Turn <b>right</b> onto <b>Walnut Hill Ln</b><div style=\"font-size:0.9em\">Destination will be on the right</div>",
+          "maneuver": "turn-right",
+          "polyline": {
+            "points": "ud~rF~lvjM?J?NrAbEDLd@vAHTv@~BPj@HRb@nAJTFRDN@FHZDLDN@D@BDN@BV|@Pf@FTL\\"
+          },
+          "start_location": {
+            "lat": 39.9727505,
+            "lng": -75.3225564
+          },
+          "travel_mode": "WALKING"
+        }
+      ],
+      "traffic_speed_entry": [],
+      "via_waypoint": []
+    }
+  },
+  {
+    "street": "Greenbriar Lane",
+    "cross_a": "Crescent Hill Drive",
+    "cross_b": "Glendale Road",
+    "coordinates": [
+      [
+        -75.3318773,
+        39.9679813
+      ],
+      [
+        -75.3289548,
+        39.9692568
+      ],
+      [
+        -75.3286733,
+        39.969313
+      ],
+      [
+        -75.3284204,
+        39.9694104
+      ],
+      [
+        -75.3279956,
+        39.9695743
+      ],
+      [
+        -75.326691,
+        39.9698506
+      ],
+      [
+        -75.3259977,
+        39.9700106
+      ],
+      [
+        -75.3258756,
+        39.9700676
+      ],
+      [
+        -75.3256524,
+        39.9702913
+      ],
+      [
+        -75.3254378,
+        39.9705544
+      ],
+      [
+        -75.3251852,
+        39.9707527
+      ],
+      [
+        -75.3228554,
+        39.9717641
+      ]
+    ],
+    "midpoint": [
+      -75.32721607553233,
+      39.96973939678153
+    ],
+    "bearing": 229.96345310646439,
+    "whole_street": true,
+    "length_m": 891.1,
+    "covered_25m_pct": 49.2,
+    "max_gap_m": 89.6,
+    "navigation_address": "219 Greenbriar Ln, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.3270364,
+      39.96954789999999
+    ],
+    "walking_metres": 2457,
+    "one_way_miles": 1.5,
+    "geocode": {
+      "address_components": [
+        {
+          "long_name": "219",
+          "short_name": "219",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "Greenbriar Lane",
+          "short_name": "Greenbriar Ln",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Havertown",
+          "short_name": "Havertown",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Haverford Township",
+          "short_name": "Haverford Township",
+          "types": [
+            "administrative_area_level_3",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Delaware County",
+          "short_name": "Delaware County",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Pennsylvania",
+          "short_name": "PA",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "United States",
+          "short_name": "US",
+          "types": [
+            "country",
+            "political"
+          ]
+        },
+        {
+          "long_name": "19083",
+          "short_name": "19083",
+          "types": [
+            "postal_code"
+          ]
+        },
+        {
+          "long_name": "2847",
+          "short_name": "2847",
+          "types": [
+            "postal_code_suffix"
+          ]
+        }
+      ],
+      "formatted_address": "219 Greenbriar Ln, Havertown, PA 19083, USA",
+      "geometry": {
+        "bounds": {
+          "northeast": {
+            "lat": 39.9696222,
+            "lng": -75.3269588
+          },
+          "southwest": {
+            "lat": 39.9694735,
+            "lng": -75.327114
+          }
+        },
+        "location": {
+          "lat": 39.96954789999999,
+          "lng": -75.3270364
+        },
+        "location_type": "ROOFTOP",
+        "viewport": {
+          "northeast": {
+            "lat": 39.9709726802915,
+            "lng": -75.3256929697085
+          },
+          "southwest": {
+            "lat": 39.9682747197085,
+            "lng": -75.3283909302915
+          }
+        }
+      },
+      "place_id": "ChIJHeMzccXBxokRaW-W6ACvRQE",
+      "types": [
+        "premise",
+        "street_address"
+      ]
+    },
+    "walking_route": {
+      "distance": {
+        "text": "1.5 mi",
+        "value": 2457
+      },
+      "duration": {
+        "text": "34 mins",
+        "value": 2069
+      },
+      "end_address": "219 Greenbriar Ln, Havertown, PA 19083, USA",
+      "end_location": {
+        "lat": 39.9697743,
+        "lng": -75.3271231
+      },
+      "start_address": "1700 Manor Rd, Havertown, PA 19083, USA",
+      "start_location": {
+        "lat": 39.9810607,
+        "lng": -75.30976489999999
+      },
+      "steps": [
+        {
+          "distance": {
+            "text": "0.2 mi",
+            "value": 283
+          },
+          "duration": {
+            "text": "4 mins",
+            "value": 248
+          },
+          "end_location": {
+            "lat": 39.978969,
+            "lng": -75.3080512
+          },
+          "html_instructions": "Head <b>southeast</b> on <b>Manor Rd</b> toward <b>Belvedere Ave</b>/<wbr/><b>Fairfield Rd</b>",
+          "polyline": {
+            "points": "sx_sF~|sjMBAJI@CFGJEBCFKLSDGDGBA@A@C@?FELKj@a@BAPO\\Ub@Yn@c@NMDA?AfBkABC"
+          },
+          "start_location": {
+            "lat": 39.9810607,
+            "lng": -75.30976489999999
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "0.2 mi",
+            "value": 296
+          },
+          "duration": {
+            "text": "4 mins",
+            "value": 220
+          },
+          "end_location": {
+            "lat": 39.977695,
+            "lng": -75.3107642
+          },
+          "html_instructions": "Turn <b>right</b> onto <b>Princeton Rd</b>",
+          "maneuver": "turn-right",
+          "polyline": {
+            "points": "qk_sFhrsjMBFFR@@Nd@b@pA@@BHBHZF@F?BBN?@@BDL?@@BDLN^Rb@HN@@BBFL`@f@FHFNBD?@DHDJ@H@B?B?F?FCV?H?F@J@D"
+          },
+          "start_location": {
+            "lat": 39.978969,
+            "lng": -75.3080512
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "0.2 mi",
+            "value": 315
+          },
+          "duration": {
+            "text": "5 mins",
+            "value": 294
+          },
+          "end_location": {
+            "lat": 39.9761435,
+            "lng": -75.3140741
+          },
+          "html_instructions": "<b>Princeton Rd</b> turns slightly <b>left</b> and becomes <b>Lincoln Ave</b>",
+          "polyline": {
+            "points": "qc_sFfctjMHLNRDF^dAFPFTDLBD?@f@vAFPJVFRPf@b@nAVv@n@jBN^HT"
+          },
+          "start_location": {
+            "lat": 39.977695,
+            "lng": -75.3107642
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "59 ft",
+            "value": 18
+          },
+          "duration": {
+            "text": "1 min",
+            "value": 17
+          },
+          "end_location": {
+            "lat": 39.9763939,
+            "lng": -75.3142615
+          },
+          "html_instructions": "Turn <b>right</b> onto <b>Shelbourne Rd</b>",
+          "maneuver": "turn-right",
+          "polyline": {
+            "points": "{y~rF|wtjMIDOLWP"
+          },
+          "start_location": {
+            "lat": 39.9761435,
+            "lng": -75.3140741
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "0.3 mi",
+            "value": 478
+          },
+          "duration": {
+            "text": "7 mins",
+            "value": 399
+          },
+          "end_location": {
+            "lat": 39.9751217,
+            "lng": -75.31926
+          },
+          "html_instructions": "Turn <b>left</b> onto <b>Lincoln Ave</b>",
+          "maneuver": "turn-left",
+          "polyline": {
+            "points": "m{~rFbytjMPt@J\\DN@@DLn@lBn@jBJRBFjBtFVx@@FFP@BBJBHAH?DAHEf@Kx@AJ?FCLCVEb@ADALAHI`@"
+          },
+          "start_location": {
+            "lat": 39.9763939,
+            "lng": -75.3142615
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "0.1 mi",
+            "value": 172
+          },
+          "duration": {
+            "text": "3 mins",
+            "value": 156
+          },
+          "end_location": {
+            "lat": 39.9735152,
+            "lng": -75.319634
+          },
+          "html_instructions": "Turn <b>left</b> onto <b>N Eagle Rd</b>",
+          "maneuver": "turn-left",
+          "polyline": {
+            "points": "os~rFjxujMNBTB?@F?B@B?D@D?PDRDTARBB@NDFBNBD?PFH@D@H@XDP?b@H"
+          },
+          "start_location": {
+            "lat": 39.9751217,
+            "lng": -75.31926
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "62 ft",
+            "value": 19
+          },
+          "duration": {
+            "text": "1 min",
+            "value": 15
+          },
+          "end_location": {
+            "lat": 39.9735358,
+            "lng": -75.3197685
+          },
+          "html_instructions": "Turn <b>right</b> toward <b>West Chester Pike</b>",
+          "maneuver": "turn-right",
+          "polyline": {
+            "points": "oi~rFtzujM?FAF?DAD"
+          },
+          "start_location": {
+            "lat": 39.9735152,
+            "lng": -75.319634
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "46 ft",
+            "value": 14
+          },
+          "duration": {
+            "text": "1 min",
+            "value": 11
+          },
+          "end_location": {
+            "lat": 39.9734152,
+            "lng": -75.31981999999999
+          },
+          "html_instructions": "Turn <b>left</b> toward <b>West Chester Pike</b>",
+          "maneuver": "turn-left",
+          "polyline": {
+            "points": "si~rFp{ujMVH"
+          },
+          "start_location": {
+            "lat": 39.9735358,
+            "lng": -75.3197685
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "151 ft",
+            "value": 46
+          },
+          "duration": {
+            "text": "1 min",
+            "value": 35
+          },
+          "end_location": {
+            "lat": 39.9733319,
+            "lng": -75.3201517
+          },
+          "html_instructions": "Turn <b>right</b> toward <b>West Chester Pike</b>",
+          "maneuver": "turn-right",
+          "polyline": {
+            "points": "{h~rFz{ujMGj@@JF@NF"
+          },
+          "start_location": {
+            "lat": 39.9734152,
+            "lng": -75.31981999999999
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "0.1 mi",
+            "value": 165
+          },
+          "duration": {
+            "text": "2 mins",
+            "value": 129
+          },
+          "end_location": {
+            "lat": 39.9736985,
+            "lng": -75.3222986
+          },
+          "html_instructions": "Turn <b>right</b> onto <b>West Chester Pike</b>",
+          "maneuver": "turn-right",
+          "polyline": {
+            "points": "ih~rF|}ujMQhBAPKdAIt@EVSjBEp@"
+          },
+          "start_location": {
+            "lat": 39.9733319,
+            "lng": -75.3201517
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "0.1 mi",
+            "value": 214
+          },
+          "duration": {
+            "text": "3 mins",
+            "value": 177
+          },
+          "end_location": {
+            "lat": 39.9717987,
+            "lng": -75.3229162
+          },
+          "html_instructions": "Turn <b>left</b> onto <b>Glendale Rd</b>",
+          "maneuver": "turn-left",
+          "polyline": {
+            "points": "sj~rFjkvjMTCBSJBANVHBUHDd@RDBXJVJTLJBHBLDHBVFJBd@LJDF@j@NDB"
+          },
+          "start_location": {
+            "lat": 39.9736985,
+            "lng": -75.3222986
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "0.3 mi",
+            "value": 437
+          },
+          "duration": {
+            "text": "6 mins",
+            "value": 368
+          },
+          "end_location": {
+            "lat": 39.9697743,
+            "lng": -75.3271231
+          },
+          "html_instructions": "Turn <b>right</b> onto <b>Greenbriar Ln</b><div style=\"font-size:0.9em\">Destination will be on the left</div>",
+          "maneuver": "turn-right",
+          "polyline": {
+            "points": "w~}rFfovjMN`@@D?@DJJZ^hA@D@@BFFRRl@@D@@BFFRRl@@DFNJ\\Z|@DLJRDHDJVZB@RLHDRJFD@@B@HLBDBB@B@@HRBJ@DF\\BPPlAHN@HF^BX@?"
+          },
+          "start_location": {
+            "lat": 39.9717987,
+            "lng": -75.3229162
+          },
+          "travel_mode": "WALKING"
+        }
+      ],
+      "traffic_speed_entry": [],
+      "via_waypoint": []
+    }
+  },
+  {
+    "street": "Nancy Drive",
+    "cross_a": "street end",
+    "cross_b": "Glendale Road",
+    "coordinates": [
+      [
+        -75.3276806,
+        39.9663212
+      ],
+      [
+        -75.3274316,
+        39.96642
+      ],
+      [
+        -75.3259957,
+        39.9670944
+      ],
+      [
+        -75.3257726,
+        39.9673378
+      ],
+      [
+        -75.3259185,
+        39.967693
+      ],
+      [
+        -75.3264604,
+        39.9681006
+      ]
+    ],
+    "midpoint": [
+      -75.32613798873399,
+      39.967027572551935
+    ],
+    "bearing": 221.9559277558013,
+    "whole_street": true,
+    "length_m": 306.7,
+    "covered_25m_pct": 0.0,
+    "max_gap_m": 248.8,
+    "navigation_address": "19 Nancy Dr, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.32626859999999,
+      39.96719969999999
+    ],
+    "walking_metres": 2698,
+    "one_way_miles": 1.7,
+    "geocode": {
+      "address_components": [
+        {
+          "long_name": "19",
+          "short_name": "19",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "Nancy Drive",
+          "short_name": "Nancy Dr",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Havertown",
+          "short_name": "Havertown",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Haverford Township",
+          "short_name": "Haverford Township",
+          "types": [
+            "administrative_area_level_3",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Delaware County",
+          "short_name": "Delaware County",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Pennsylvania",
+          "short_name": "PA",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "United States",
+          "short_name": "US",
+          "types": [
+            "country",
+            "political"
+          ]
+        },
+        {
+          "long_name": "19083",
+          "short_name": "19083",
+          "types": [
+            "postal_code"
+          ]
+        },
+        {
+          "long_name": "3101",
+          "short_name": "3101",
+          "types": [
+            "postal_code_suffix"
+          ]
+        }
+      ],
+      "formatted_address": "19 Nancy Dr, Havertown, PA 19083, USA",
+      "geometry": {
+        "bounds": {
+          "northeast": {
+            "lat": 39.9672675,
+            "lng": -75.3261844
+          },
+          "southwest": {
+            "lat": 39.9671307,
+            "lng": -75.3263565
+          }
+        },
+        "location": {
+          "lat": 39.96719969999999,
+          "lng": -75.32626859999999
+        },
+        "location_type": "ROOFTOP",
+        "viewport": {
+          "northeast": {
+            "lat": 39.96850973029149,
+            "lng": -75.3248701197085
+          },
+          "southwest": {
+            "lat": 39.96581176970849,
+            "lng": -75.32756808029151
+          }
+        }
+      },
+      "place_id": "ChIJW2KxUMTBxokROO8d_YOzUXM",
+      "types": [
+        "premise",
+        "street_address"
+      ]
+    },
+    "walking_route": {
+      "distance": {
+        "text": "1.7 mi",
+        "value": 2698
+      },
+      "duration": {
+        "text": "37 mins",
+        "value": 2216
+      },
+      "end_address": "19 Nancy Dr, Havertown, PA 19083, USA",
+      "end_location": {
+        "lat": 39.9670581,
+        "lng": -75.3260739
+      },
+      "start_address": "1700 Manor Rd, Havertown, PA 19083, USA",
+      "start_location": {
+        "lat": 39.9810607,
+        "lng": -75.30976489999999
+      },
+      "steps": [
+        {
+          "distance": {
+            "text": "0.2 mi",
+            "value": 283
+          },
+          "duration": {
+            "text": "4 mins",
+            "value": 248
+          },
+          "end_location": {
+            "lat": 39.978969,
+            "lng": -75.3080512
+          },
+          "html_instructions": "Head <b>southeast</b> on <b>Manor Rd</b> toward <b>Belvedere Ave</b>/<wbr/><b>Fairfield Rd</b>",
+          "polyline": {
+            "points": "sx_sF~|sjMBAJI@CFGJEBCFKLSDGDGBA@A@C@?FELKj@a@BAPO\\Ub@Yn@c@NMDA?AfBkABC"
+          },
+          "start_location": {
+            "lat": 39.9810607,
+            "lng": -75.30976489999999
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "0.2 mi",
+            "value": 296
+          },
+          "duration": {
+            "text": "4 mins",
+            "value": 220
+          },
+          "end_location": {
+            "lat": 39.977695,
+            "lng": -75.3107642
+          },
+          "html_instructions": "Turn <b>right</b> onto <b>Princeton Rd</b>",
+          "maneuver": "turn-right",
+          "polyline": {
+            "points": "qk_sFhrsjMBFFR@@Nd@b@pA@@BHBHZF@F?BBN?@@BDL?@@BDLN^Rb@HN@@BBFL`@f@FHFNBD?@DHDJ@H@B?B?F?FCV?H?F@J@D"
+          },
+          "start_location": {
+            "lat": 39.978969,
+            "lng": -75.3080512
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "0.2 mi",
+            "value": 315
+          },
+          "duration": {
+            "text": "5 mins",
+            "value": 294
+          },
+          "end_location": {
+            "lat": 39.9761435,
+            "lng": -75.3140741
+          },
+          "html_instructions": "<b>Princeton Rd</b> turns slightly <b>left</b> and becomes <b>Lincoln Ave</b>",
+          "polyline": {
+            "points": "qc_sFfctjMHLNRDF^dAFPFTDLBD?@f@vAFPJVFRPf@b@nAVv@n@jBN^HT"
+          },
+          "start_location": {
+            "lat": 39.977695,
+            "lng": -75.3107642
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "59 ft",
+            "value": 18
+          },
+          "duration": {
+            "text": "1 min",
+            "value": 17
+          },
+          "end_location": {
+            "lat": 39.9763939,
+            "lng": -75.3142615
+          },
+          "html_instructions": "Turn <b>right</b> onto <b>Shelbourne Rd</b>",
+          "maneuver": "turn-right",
+          "polyline": {
+            "points": "{y~rF|wtjMIDOLWP"
+          },
+          "start_location": {
+            "lat": 39.9761435,
+            "lng": -75.3140741
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "0.3 mi",
+            "value": 478
+          },
+          "duration": {
+            "text": "7 mins",
+            "value": 399
+          },
+          "end_location": {
+            "lat": 39.9751217,
+            "lng": -75.31926
+          },
+          "html_instructions": "Turn <b>left</b> onto <b>Lincoln Ave</b>",
+          "maneuver": "turn-left",
+          "polyline": {
+            "points": "m{~rFbytjMPt@J\\DN@@DLn@lBn@jBJRBFjBtFVx@@FFP@BBJBHAH?DAHEf@Kx@AJ?FCLCVEb@ADALAHI`@"
+          },
+          "start_location": {
+            "lat": 39.9763939,
+            "lng": -75.3142615
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "0.1 mi",
+            "value": 172
+          },
+          "duration": {
+            "text": "3 mins",
+            "value": 156
+          },
+          "end_location": {
+            "lat": 39.9735152,
+            "lng": -75.319634
+          },
+          "html_instructions": "Turn <b>left</b> onto <b>N Eagle Rd</b>",
+          "maneuver": "turn-left",
+          "polyline": {
+            "points": "os~rFjxujMNBTB?@F?B@B?D@D?PDRDTARBB@NDFBNBD?PFH@D@H@XDP?b@H"
+          },
+          "start_location": {
+            "lat": 39.9751217,
+            "lng": -75.31926
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "62 ft",
+            "value": 19
+          },
+          "duration": {
+            "text": "1 min",
+            "value": 15
+          },
+          "end_location": {
+            "lat": 39.9735358,
+            "lng": -75.3197685
+          },
+          "html_instructions": "Turn <b>right</b> toward <b>West Chester Pike</b>",
+          "maneuver": "turn-right",
+          "polyline": {
+            "points": "oi~rFtzujM?FAF?DAD"
+          },
+          "start_location": {
+            "lat": 39.9735152,
+            "lng": -75.319634
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "46 ft",
+            "value": 14
+          },
+          "duration": {
+            "text": "1 min",
+            "value": 11
+          },
+          "end_location": {
+            "lat": 39.9734152,
+            "lng": -75.31981999999999
+          },
+          "html_instructions": "Turn <b>left</b> toward <b>West Chester Pike</b>",
+          "maneuver": "turn-left",
+          "polyline": {
+            "points": "si~rFp{ujMVH"
+          },
+          "start_location": {
+            "lat": 39.9735358,
+            "lng": -75.3197685
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "151 ft",
+            "value": 46
+          },
+          "duration": {
+            "text": "1 min",
+            "value": 35
+          },
+          "end_location": {
+            "lat": 39.9733319,
+            "lng": -75.3201517
+          },
+          "html_instructions": "Turn <b>right</b> toward <b>West Chester Pike</b>",
+          "maneuver": "turn-right",
+          "polyline": {
+            "points": "{h~rFz{ujMGj@@JF@NF"
+          },
+          "start_location": {
+            "lat": 39.9734152,
+            "lng": -75.31981999999999
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "0.1 mi",
+            "value": 165
+          },
+          "duration": {
+            "text": "2 mins",
+            "value": 129
+          },
+          "end_location": {
+            "lat": 39.9736209,
+            "lng": -75.321913
+          },
+          "html_instructions": "Turn <b>right</b> onto <b>West Chester Pike</b>",
+          "maneuver": "turn-right",
+          "polyline": {
+            "points": "ih~rF|}ujMQhBAPKdAIt@EVOlAD@"
+          },
+          "start_location": {
+            "lat": 39.9733319,
+            "lng": -75.3201517
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "0.5 mi",
+            "value": 740
+          },
+          "duration": {
+            "text": "9 mins",
+            "value": 552
+          },
+          "end_location": {
+            "lat": 39.9681023,
+            "lng": -75.32640669999999
+          },
+          "html_instructions": "Turn <b>left</b> onto <b>Glendale Rd</b>",
+          "maneuver": "turn-left",
+          "polyline": {
+            "points": "cj~rF|hvjMt@XB@AJHBZNNDXJTJRLLFF@FBD@JBTHJBb@JRDl@PP@b@JB@b@LHBJDF@n@PB?h@NHBF@LDRFLFVPDBDDDDHFBBBDHJJLDHDJHPDJ@BBDJ\\Rl@Rn@HVDLDJHL@@FJFHHJHJNNDDFHLLd@h@HJDF@@BDdBpBLN"
+          },
+          "start_location": {
+            "lat": 39.9736209,
+            "lng": -75.321913
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "499 ft",
+            "value": 152
+          },
+          "duration": {
+            "text": "2 mins",
+            "value": 140
+          },
+          "end_location": {
+            "lat": 39.9670581,
+            "lng": -75.3260739
+          },
+          "html_instructions": "Turn <b>left</b> onto <b>Nancy Dr</b><div style=\"font-size:0.9em\">Destination will be on the right</div>",
+          "maneuver": "turn-left",
+          "polyline": {
+            "points": "sg}rF`ewjMHIFG@AHMPYR[@ABCDIPM@?JGJ?FAP@PFNJFF@@LZ"
+          },
+          "start_location": {
+            "lat": 39.9681023,
+            "lng": -75.32640669999999
+          },
+          "travel_mode": "WALKING"
+        }
+      ],
+      "traffic_speed_entry": [],
+      "via_waypoint": []
+    }
+  }
+]
