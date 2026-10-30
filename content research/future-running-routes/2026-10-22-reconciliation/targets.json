@@ -1,0 +1,1326 @@
+[
+  {
+    "date": "2026-10-17",
+    "street": "Joanna Road",
+    "target_label": "Olympic Avenue to Prospect Avenue",
+    "target_miles": 0.09,
+    "target_coordinates": [
+      [
+        -75.3016713,
+        39.9688968
+      ],
+      [
+        -75.3025723,
+        39.9677882
+      ]
+    ],
+    "target_midpoint": [
+      -75.30212180363003,
+      39.968342500888376
+    ],
+    "first_waypoint": {
+      "intersection": "Joanna Road & Olympic Avenue, Havertown, PA",
+      "coordinates": [
+        -75.3016713,
+        39.9688968
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9688968,-75.3016713&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Joanna Road & Prospect Avenue, Havertown, PA",
+      "coordinates": [
+        -75.3025723,
+        39.9677882
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9677882,-75.3025723&dirflg=w"
+    },
+    "citystrides_url": "https://citystrides.com/users/7315/map",
+    "citystrides_status": "Covered by recorded October 17 run.",
+    "number": 1,
+    "one_way_miles": 1.2,
+    "navigation_address": "122 Joanna Rd, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.3023718,
+      39.9684052
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=122%20Joanna%20Rd%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "optional_one_way_miles": 1.2,
+    "coverage_audit": {
+      "street": "Joanna Road",
+      "cross_a": "Olympic Avenue",
+      "cross_b": "Prospect Avenue",
+      "coordinates": [
+        [
+          -75.3016713,
+          39.9688968
+        ],
+        [
+          -75.3025723,
+          39.9677882
+        ]
+      ],
+      "home_straight_m": 1516,
+      "length_m": 145.1,
+      "covered_within_15m_pct": 0.0,
+      "covered_within_25m_pct": 0.0,
+      "core_min_distance_m": 70.5,
+      "midpoint": [
+        -75.30212180363003,
+        39.968342500888376
+      ]
+    },
+    "replaces_street": "Walnut Place",
+    "coverage_audit_latest": {
+      "date": "2026-10-17",
+      "street": "Joanna Road",
+      "covered_15m_pct": 100.0,
+      "covered_25m_pct": 100.0,
+      "max_gap_m": 4.9
+    },
+    "past": true,
+    "completed_activity": "20619126795",
+    "recorded_run_miles": 4.39,
+    "outcome_note": "Covered by recorded October 17 run.",
+    "coverage_audit_running": {
+      "date": "2026-10-17",
+      "street": "Joanna Road",
+      "covered_15m_pct": 100.0,
+      "covered_25m_pct": 100.0,
+      "max_gap_m": 4.9
+    }
+  },
+  {
+    "date": "2026-10-18",
+    "street": "Ellis Road",
+    "target_label": "Garlor Drive to Lawrence Road",
+    "target_miles": 0.282,
+    "target_coordinates": [
+      [
+        -75.3351799,
+        39.9831343
+      ],
+      [
+        -75.3351121,
+        39.9829853
+      ],
+      [
+        -75.3348569,
+        39.9824243
+      ],
+      [
+        -75.3347834,
+        39.9822628
+      ],
+      [
+        -75.3346239,
+        39.9819121
+      ],
+      [
+        -75.3345807,
+        39.9818171
+      ],
+      [
+        -75.3344584,
+        39.9815482
+      ],
+      [
+        -75.3343007,
+        39.981343
+      ],
+      [
+        -75.3342875,
+        39.9813259
+      ],
+      [
+        -75.3342285,
+        39.9812604
+      ],
+      [
+        -75.3341576,
+        39.9812038
+      ],
+      [
+        -75.3341007,
+        39.981171
+      ],
+      [
+        -75.3340379,
+        39.9811479
+      ],
+      [
+        -75.3339644,
+        39.9811273
+      ],
+      [
+        -75.3338917,
+        39.9811193
+      ],
+      [
+        -75.3338063,
+        39.981114
+      ],
+      [
+        -75.3337265,
+        39.981117
+      ],
+      [
+        -75.3335203,
+        39.9811302
+      ],
+      [
+        -75.3327081,
+        39.9812349
+      ],
+      [
+        -75.3326996,
+        39.9812352
+      ],
+      [
+        -75.3325856,
+        39.9812395
+      ],
+      [
+        -75.3324919,
+        39.9812372
+      ],
+      [
+        -75.332407,
+        39.9812333
+      ],
+      [
+        -75.332322,
+        39.981223
+      ],
+      [
+        -75.3322582,
+        39.9812049
+      ],
+      [
+        -75.3321662,
+        39.9811775
+      ],
+      [
+        -75.3320735,
+        39.9811379
+      ],
+      [
+        -75.3319407,
+        39.9810548
+      ],
+      [
+        -75.3318314,
+        39.9809735
+      ],
+      [
+        -75.3317486,
+        39.9808994
+      ]
+    ],
+    "target_midpoint": [
+      -75.3342043018539,
+      39.981241082439084
+    ],
+    "first_waypoint": {
+      "intersection": "Ellis Road & Garlor Drive, Havertown, PA",
+      "coordinates": [
+        -75.3351799,
+        39.9831343
+      ],
+      "apple_maps": "https://maps.apple.com/?q=Ellis%20Road%20%26%20Garlor%20Drive%2C%20Havertown%2C%20PA&daddr=39.9831343,-75.3351799&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Ellis Road & Lawrence Road, Havertown, PA",
+      "coordinates": [
+        -75.3317486,
+        39.9808994
+      ],
+      "apple_maps": "https://maps.apple.com/?q=Ellis%20Road%20%26%20Lawrence%20Road%2C%20Havertown%2C%20PA&daddr=39.9808994,-75.3317486&dirflg=w"
+    },
+    "citystrides_url": "https://citystrides.com/streets/3296289",
+    "citystrides_status": "Ran October 18: 3.55 mi. All target samples within 25 m of this run. CityStrides completion credit is separate.",
+    "number": 2,
+    "one_way_miles": 1.6,
+    "navigation_address": "636 Ellis Rd, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.33452299999999,
+      39.98115689999999
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=636%20Ellis%20Rd%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "optional_one_way_miles": 1.6,
+    "coverage_audit": {
+      "date": "2026-10-17",
+      "street": "Ellis Road",
+      "segment": "Garlor Drive to Lawrence Road",
+      "length_m": 454.6,
+      "covered_within_15m_pct": 3.3,
+      "covered_within_25m_pct": 5.5,
+      "core_min_distance_m": 33.2,
+      "midpoint": [
+        -75.33420167865133,
+        39.981238988333054
+      ]
+    },
+    "coverage_audit_latest": {
+      "date": "2026-10-18",
+      "street": "Ellis Road",
+      "covered_15m_pct": 100.0,
+      "covered_25m_pct": 100.0,
+      "max_gap_m": 6.8
+    },
+    "past": true,
+    "completed_activity": "20633472836",
+    "outcome_note": "Ran October 18: 3.55 mi. All target samples within 25 m of this run. CityStrides completion credit is separate.",
+    "coverage_audit_running": {
+      "date": "2026-10-18",
+      "street": "Ellis Road",
+      "covered_15m_pct": 98.9,
+      "covered_25m_pct": 100.0,
+      "max_gap_m": 15.6
+    }
+  },
+  {
+    "date": "2026-10-19",
+    "street": "Marilyn Drive",
+    "target_label": "Jacalyn Drive to Lawrence Road",
+    "target_miles": 0.255,
+    "target_coordinates": [
+      [
+        -75.3275772,
+        39.983221
+      ],
+      [
+        -75.3278837,
+        39.9830411
+      ],
+      [
+        -75.3282271,
+        39.982903
+      ],
+      [
+        -75.3295746,
+        39.9824032
+      ],
+      [
+        -75.3298235,
+        39.9823243
+      ],
+      [
+        -75.3301754,
+        39.9822322
+      ],
+      [
+        -75.3306475,
+        39.9821467
+      ],
+      [
+        -75.3308363,
+        39.9820809
+      ],
+      [
+        -75.3309736,
+        39.9819823
+      ],
+      [
+        -75.3310423,
+        39.9818573
+      ],
+      [
+        -75.3310251,
+        39.9816929
+      ],
+      [
+        -75.3309736,
+        39.9815482
+      ],
+      [
+        -75.3308135,
+        39.9812344
+      ]
+    ],
+    "target_midpoint": [
+      -75.32970334363112,
+      39.98236238894136
+    ],
+    "first_waypoint": {
+      "intersection": "Marilyn Drive & Jacalyn Drive, Havertown, PA",
+      "coordinates": [
+        -75.3275772,
+        39.983221
+      ],
+      "apple_maps": "https://maps.apple.com/?q=Marilyn%20Drive%20%26%20Jacalyn%20Drive%2C%20Havertown%2C%20PA&daddr=39.983221,-75.3275772&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Marilyn Drive & Lawrence Road, Havertown, PA",
+      "coordinates": [
+        -75.3308135,
+        39.9812344
+      ],
+      "apple_maps": "https://maps.apple.com/?q=Marilyn%20Drive%20%26%20Lawrence%20Road%2C%20Havertown%2C%20PA&daddr=39.9812344,-75.3308135&dirflg=w"
+    },
+    "citystrides_url": "https://citystrides.com/streets/3296377",
+    "citystrides_status": "No October 19 run appears in Strava; target remains mostly unrecorded and available for a later day.",
+    "number": 3,
+    "one_way_miles": 1.3,
+    "navigation_address": "1732 Marilyn Dr, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.3295842,
+      39.9821684
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=1732%20Marilyn%20Dr%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "optional_one_way_miles": 1.3,
+    "coverage_audit": {
+      "date": "2026-10-19",
+      "street": "Marilyn Drive",
+      "segment": "Jacalyn Drive to Lawrence Road",
+      "length_m": 411.0,
+      "covered_within_15m_pct": 4.8,
+      "covered_within_25m_pct": 7.2,
+      "core_min_distance_m": 26.6,
+      "midpoint": [
+        -75.32970224298312,
+        39.98236273793042
+      ]
+    },
+    "coverage_audit_latest": {
+      "date": "2026-10-19",
+      "street": "Marilyn Drive",
+      "covered_15m_pct": 10.8,
+      "covered_25m_pct": 15.7,
+      "max_gap_m": 88.9
+    },
+    "past": true,
+    "outcome_note": "No October 19 run appears in Strava; target remains mostly unrecorded and available for a later day.",
+    "coverage_audit_running": {
+      "date": "2026-10-19",
+      "street": "Marilyn Drive",
+      "covered_15m_pct": 10.8,
+      "covered_25m_pct": 15.7,
+      "max_gap_m": 88.9
+    }
+  },
+  {
+    "date": "2026-10-20",
+    "street": "Fairlamb Avenue",
+    "target_label": "Westgate Road to Rose Tree Lane",
+    "target_miles": 0.176,
+    "target_coordinates": [
+      [
+        -75.326279,
+        39.9721659
+      ],
+      [
+        -75.3291886,
+        39.9709425
+      ]
+    ],
+    "target_midpoint": [
+      -75.32773381301212,
+      39.971554209108945
+    ],
+    "first_waypoint": {
+      "intersection": "Fairlamb Avenue & Westgate Road, Havertown, PA",
+      "coordinates": [
+        -75.326279,
+        39.9721659
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9721659,-75.326279&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Fairlamb Avenue & Rose Tree Lane, Havertown, PA",
+      "coordinates": [
+        -75.3291886,
+        39.9709425
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9709425,-75.3291886&dirflg=w"
+    },
+    "citystrides_url": "https://citystrides.com/users/7315/map",
+    "citystrides_status": "October 20 was explicitly unscheduled for NYC travel. No run; 1.42 mi evening walk in Manhattan.",
+    "number": 4,
+    "one_way_miles": null,
+    "navigation_address": "218 Fairlamb Ave, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.3279177,
+      39.9717556
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=218%20Fairlamb%20Ave%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "optional_one_way_miles": 1.5,
+    "coverage_audit": {
+      "street": "Fairlamb Avenue",
+      "cross_a": "Westgate Road",
+      "cross_b": "Rose Tree Lane",
+      "coordinates": [
+        [
+          -75.326279,
+          39.9721659
+        ],
+        [
+          -75.3291886,
+          39.9709425
+        ]
+      ],
+      "home_straight_m": 1704,
+      "length_m": 283.2,
+      "covered_within_15m_pct": 0.0,
+      "covered_within_25m_pct": 0.0,
+      "core_min_distance_m": 103.3,
+      "midpoint": [
+        -75.32773381301212,
+        39.971554209108945
+      ]
+    },
+    "replaces_street": "Chester Avenue",
+    "coverage_audit_latest": {
+      "date": "2026-10-20",
+      "street": "Fairlamb Avenue",
+      "covered_15m_pct": 0.0,
+      "covered_25m_pct": 0.0,
+      "max_gap_m": 78.9
+    },
+    "past": true,
+    "outcome_note": "October 20 was explicitly unscheduled for NYC travel. No run; 1.42 mi evening walk in Manhattan.",
+    "coverage_audit_running": {
+      "date": "2026-10-20",
+      "street": "Fairlamb Avenue",
+      "covered_15m_pct": 0.0,
+      "covered_25m_pct": 0.0,
+      "max_gap_m": 78.9
+    }
+  },
+  {
+    "date": "2026-10-21",
+    "street": "Oxford Hill Lane",
+    "target_label": "Westgate Road to Rose Tree Lane",
+    "target_miles": 0.174,
+    "target_coordinates": [
+      [
+        -75.3272306,
+        39.9734638
+      ],
+      [
+        -75.3300984,
+        39.9722251
+      ]
+    ],
+    "target_midpoint": [
+      -75.32866451298413,
+      39.97284445884936
+    ],
+    "first_waypoint": {
+      "intersection": "Oxford Hill Lane & Westgate Road, Havertown, PA",
+      "coordinates": [
+        -75.3272306,
+        39.9734638
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9734638,-75.3272306&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Oxford Hill Lane & Rose Tree Lane, Havertown, PA",
+      "coordinates": [
+        -75.3300984,
+        39.9722251
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9722251,-75.3300984&dirflg=w"
+    },
+    "citystrides_url": "https://citystrides.com/users/7315/map",
+    "citystrides_status": "October 21: ran a different route, 2.52 mi; Oxford Hill target was not covered. Rescheduled for October 24.",
+    "number": 5,
+    "one_way_miles": 1.5,
+    "navigation_address": "217 Oxford Hill Ln, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.3285343,
+      39.9726604
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=217%20Oxford%20Hill%20Ln%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "optional_one_way_miles": 1.5,
+    "coverage_audit": {
+      "street": "Oxford Hill Lane",
+      "cross_a": "Westgate Road",
+      "cross_b": "Rose Tree Lane",
+      "coordinates": [
+        [
+          -75.3272306,
+          39.9734638
+        ],
+        [
+          -75.3300984,
+          39.9722251
+        ]
+      ],
+      "home_straight_m": 1695,
+      "length_m": 280.8,
+      "covered_within_15m_pct": 0.0,
+      "covered_within_25m_pct": 0.0,
+      "core_min_distance_m": 138.4,
+      "midpoint": [
+        -75.32866451298413,
+        39.97284445884936
+      ]
+    },
+    "replaces_street": "Pickwick Road",
+    "coverage_audit_latest": {
+      "date": "2026-10-21",
+      "street": "Oxford Hill Lane",
+      "covered_15m_pct": 0.0,
+      "covered_25m_pct": 0.0,
+      "max_gap_m": 78.6
+    },
+    "past": true,
+    "outcome_note": "October 21: ran a different route, 2.52 mi; Oxford Hill target was not covered. Rescheduled for October 24.",
+    "coverage_audit_running": {
+      "date": "2026-10-24",
+      "street": "Oxford Hill Lane",
+      "covered_15m_pct": 0.0,
+      "covered_25m_pct": 0.0,
+      "max_gap_m": 78.6
+    }
+  },
+  {
+    "date": "2026-10-22",
+    "street": "Ivy Rock Lane",
+    "target_label": "Westgate Road to Rose Tree Lane",
+    "target_miles": 0.174,
+    "target_coordinates": [
+      [
+        -75.3267674,
+        39.9728157
+      ],
+      [
+        -75.3296264,
+        39.971574
+      ]
+    ],
+    "target_midpoint": [
+      -75.32819691297483,
+      39.97219485879525
+    ],
+    "first_waypoint": {
+      "intersection": "Ivy Rock Lane & Westgate Road, Havertown, PA",
+      "coordinates": [
+        -75.3267674,
+        39.9728157
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9728157,-75.3267674&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Ivy Rock Lane & Rose Tree Lane, Havertown, PA",
+      "coordinates": [
+        -75.3296264,
+        39.971574
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.971574,-75.3296264&dirflg=w"
+    },
+    "citystrides_url": "https://citystrides.com/users/7315/map",
+    "citystrides_status": "Ran October 22: 3.78 mi, including Ivy Rock and Glen Gary. CityStrides confirmed both streets completed.",
+    "number": 6,
+    "one_way_miles": 1.5,
+    "navigation_address": "219 Ivy Rock Ln, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.3280369,
+      39.9719764
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=219%20Ivy%20Rock%20Ln%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "optional_one_way_miles": 1.5,
+    "coverage_audit": {
+      "street": "Ivy Rock Lane",
+      "cross_a": "Westgate Road",
+      "cross_b": "Rose Tree Lane",
+      "coordinates": [
+        [
+          -75.3267674,
+          39.9728157
+        ],
+        [
+          -75.3296264,
+          39.971574
+        ]
+      ],
+      "home_straight_m": 1698,
+      "length_m": 280.4,
+      "covered_within_15m_pct": 0.0,
+      "covered_within_25m_pct": 0.0,
+      "core_min_distance_m": 182.5,
+      "midpoint": [
+        -75.32819691297483,
+        39.97219485879525
+      ]
+    },
+    "replaces_street": "Garden Avenue",
+    "coverage_audit_latest": {
+      "date": "2026-10-22",
+      "street": "Ivy Rock Lane",
+      "covered_15m_pct": 100.0,
+      "covered_25m_pct": 100.0,
+      "max_gap_m": 4.4
+    },
+    "past": true,
+    "completed_activity": "20685735448",
+    "outcome_note": "Ran October 22: 3.78 mi, including Ivy Rock and Glen Gary. CityStrides confirmed both streets completed.",
+    "coverage_audit_running": {
+      "date": "2026-10-22",
+      "street": "Ivy Rock Lane",
+      "covered_15m_pct": 100.0,
+      "covered_25m_pct": 100.0,
+      "max_gap_m": 4.4
+    }
+  },
+  {
+    "date": "2026-10-23",
+    "street": "Bennington Road",
+    "target_label": "Myrtle Avenue to Grove Place",
+    "target_miles": 0.198,
+    "target_coordinates": [
+      [
+        -75.2865366,
+        39.9737288
+      ],
+      [
+        -75.2862401,
+        39.9738675
+      ],
+      [
+        -75.2861159,
+        39.9739159
+      ],
+      [
+        -75.285814,
+        39.9740336
+      ],
+      [
+        -75.2858326,
+        39.9742403
+      ],
+      [
+        -75.2858377,
+        39.974296
+      ],
+      [
+        -75.2857172,
+        39.9744274
+      ],
+      [
+        -75.2857072,
+        39.9744382
+      ],
+      [
+        -75.2856133,
+        39.9745406
+      ],
+      [
+        -75.2855059,
+        39.9746577
+      ],
+      [
+        -75.2854772,
+        39.974689
+      ],
+      [
+        -75.2853732,
+        39.9747671
+      ],
+      [
+        -75.2852763,
+        39.9748398
+      ],
+      [
+        -75.2851168,
+        39.9749595
+      ],
+      [
+        -75.2850633,
+        39.9749825
+      ],
+      [
+        -75.285021,
+        39.9750006
+      ],
+      [
+        -75.2847403,
+        39.975121
+      ],
+      [
+        -75.2846173,
+        39.975171
+      ],
+      [
+        -75.2844375,
+        39.9752404
+      ],
+      [
+        -75.2841747,
+        39.9753402
+      ],
+      [
+        -75.2838437,
+        39.975469
+      ]
+    ],
+    "target_midpoint": [
+      -75.2854772,
+      39.974689
+    ],
+    "first_waypoint": {
+      "intersection": "Bennington Road & Myrtle Avenue, Havertown, PA",
+      "coordinates": [
+        -75.2865366,
+        39.9737288
+      ],
+      "apple_maps": "https://maps.apple.com/?q=Bennington%20Road%20%26%20Myrtle%20Avenue%2C%20Havertown%2C%20PA&daddr=39.9737288,-75.2865366&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Bennington Road & Grove Place, Havertown, PA",
+      "coordinates": [
+        -75.2838437,
+        39.975469
+      ],
+      "apple_maps": "https://maps.apple.com/?q=Bennington%20Road%20%26%20Grove%20Place%2C%20Havertown%2C%20PA&daddr=39.975469,-75.2838437&dirflg=w"
+    },
+    "citystrides_url": "https://citystrides.com/streets/3296036",
+    "citystrides_status": "October 22 run-only audit: 92.2% of section samples beyond 25 m of 1,867 recorded runs",
+    "number": 7,
+    "one_way_miles": 1.9,
+    "navigation_address": "17 Bennington Rd, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.285653,
+      39.9747892
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=17%20Bennington%20Rd%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "optional_one_way_miles": 1.9,
+    "coverage_audit": {
+      "date": "2026-10-23",
+      "street": "Bennington Road",
+      "segment": "Myrtle Avenue to Grove Place",
+      "length_m": 318.6,
+      "covered_within_15m_pct": 10.9,
+      "covered_within_25m_pct": 17.2,
+      "core_min_distance_m": 29.7,
+      "midpoint": [
+        -75.28542459008396,
+        39.97472850805739
+      ]
+    },
+    "coverage_audit_latest": {
+      "date": "2026-10-23",
+      "street": "Bennington Road",
+      "covered_15m_pct": 10.9,
+      "covered_25m_pct": 17.2,
+      "max_gap_m": 105.5
+    },
+    "past": false,
+    "coverage_audit_running": {
+      "date": "2026-10-23",
+      "street": "Bennington Road",
+      "covered_15m_pct": 4.7,
+      "covered_25m_pct": 7.8,
+      "max_gap_m": 156.7
+    }
+  },
+  {
+    "date": "2026-10-24",
+    "street": "Oxford Hill Lane",
+    "target_label": "Westgate Road to Rose Tree Lane",
+    "target_miles": 0.174,
+    "target_coordinates": [
+      [
+        -75.3272306,
+        39.9734638
+      ],
+      [
+        -75.3300984,
+        39.9722251
+      ]
+    ],
+    "target_midpoint": [
+      -75.32866451298413,
+      39.97284445884936
+    ],
+    "first_waypoint": {
+      "intersection": "Oxford Hill Lane & Westgate Road, Havertown, PA",
+      "coordinates": [
+        -75.3272306,
+        39.9734638
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9734638,-75.3272306&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Oxford Hill Lane & Rose Tree Lane, Havertown, PA",
+      "coordinates": [
+        -75.3300984,
+        39.9722251
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9722251,-75.3300984&dirflg=w"
+    },
+    "citystrides_url": "https://citystrides.com/users/7315/map",
+    "citystrides_status": "October 22 run-only audit: 100.0% of section samples beyond 25 m of 1,867 recorded runs \u00b7 replaces Glen Gary, completed October 22",
+    "number": 8,
+    "one_way_miles": 1.5,
+    "navigation_address": "217 Oxford Hill Ln, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.3285343,
+      39.9726604
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=217%20Oxford%20Hill%20Ln%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "optional_one_way_miles": 1.5,
+    "coverage_audit": {
+      "street": "Oxford Hill Lane",
+      "cross_a": "Westgate Road",
+      "cross_b": "Rose Tree Lane",
+      "coordinates": [
+        [
+          -75.3272306,
+          39.9734638
+        ],
+        [
+          -75.3300984,
+          39.9722251
+        ]
+      ],
+      "home_straight_m": 1695,
+      "length_m": 280.8,
+      "covered_within_15m_pct": 0.0,
+      "covered_within_25m_pct": 0.0,
+      "core_min_distance_m": 138.4,
+      "midpoint": [
+        -75.32866451298413,
+        39.97284445884936
+      ]
+    },
+    "replaces_street": "Glen Gary Drive",
+    "coverage_audit_latest": {
+      "date": "2026-10-21",
+      "street": "Oxford Hill Lane",
+      "covered_15m_pct": 0.0,
+      "covered_25m_pct": 0.0,
+      "max_gap_m": 78.6
+    },
+    "past": false,
+    "coverage_audit_running": {
+      "date": "2026-10-24",
+      "street": "Oxford Hill Lane",
+      "covered_15m_pct": 0.0,
+      "covered_25m_pct": 0.0,
+      "max_gap_m": 78.6
+    }
+  },
+  {
+    "date": "2026-10-25",
+    "street": "Monroe Avenue",
+    "target_label": "South Harwood Avenue to Lansdowne Avenue",
+    "target_miles": 0.177,
+    "target_coordinates": [
+      [
+        -75.2925848,
+        39.966646
+      ],
+      [
+        -75.293794,
+        39.9672842
+      ],
+      [
+        -75.2939529,
+        39.9673681
+      ],
+      [
+        -75.2941828,
+        39.9674838
+      ],
+      [
+        -75.2946158,
+        39.967718
+      ],
+      [
+        -75.2946827,
+        39.9677372
+      ],
+      [
+        -75.2947565,
+        39.9677341
+      ],
+      [
+        -75.2948258,
+        39.9677125
+      ],
+      [
+        -75.2948467,
+        39.9677017
+      ],
+      [
+        -75.294995,
+        39.9676247
+      ],
+      [
+        -75.2951798,
+        39.9675048
+      ],
+      [
+        -75.2953417,
+        39.9673998
+      ]
+    ],
+    "target_midpoint": [
+      -75.29396234208278,
+      39.96737285186094
+    ],
+    "navigation_address": "8536 Monroe Ave, Upper Darby Township, PA 19082",
+    "navigation_coordinates": [
+      -75.2942185,
+      39.9672271
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=8536%20Monroe%20Ave%2C%20Upper%20Darby%20Township%2C%20PA%2019082&dirflg=w",
+    "one_way_miles": 1.4,
+    "citystrides_status": "October 22 run-only audit: 100.0% of section samples beyond 25 m of 1,867 recorded runs",
+    "citystrides_url": "https://citystrides.com/users/7315/map",
+    "coverage_audit": {
+      "street": "Monroe Avenue",
+      "cross_a": "South Harwood Avenue",
+      "cross_b": "Lansdowne Avenue",
+      "coordinates": [
+        [
+          -75.2925848,
+          39.966646
+        ],
+        [
+          -75.293794,
+          39.9672842
+        ],
+        [
+          -75.2939529,
+          39.9673681
+        ],
+        [
+          -75.2941828,
+          39.9674838
+        ],
+        [
+          -75.2946158,
+          39.967718
+        ],
+        [
+          -75.2946827,
+          39.9677372
+        ],
+        [
+          -75.2947565,
+          39.9677341
+        ],
+        [
+          -75.2948258,
+          39.9677125
+        ],
+        [
+          -75.2948467,
+          39.9677017
+        ],
+        [
+          -75.294995,
+          39.9676247
+        ],
+        [
+          -75.2951798,
+          39.9675048
+        ],
+        [
+          -75.2953417,
+          39.9673998
+        ]
+      ],
+      "home_straight_m": 1957,
+      "length_m": 285.3,
+      "covered_within_15m_pct": 0.0,
+      "covered_within_25m_pct": 0.0,
+      "core_min_distance_m": 68.5,
+      "midpoint": [
+        -75.29396234208278,
+        39.96737285186094
+      ],
+      "date": "2026-10-25",
+      "address": "8536 Monroe Ave, Upper Darby Township, PA 19082",
+      "address_coordinates": {
+        "lat": 39.9672271,
+        "lng": -75.2942185
+      },
+      "one_way_miles": 1.4,
+      "walking_meters": 2188,
+      "checked_date": "2026-10-16",
+      "source": "Google Geocoding and Directions APIs"
+    },
+    "first_waypoint": {
+      "intersection": "Monroe Avenue & South Harwood Avenue, Upper Darby Township, PA",
+      "coordinates": [
+        -75.2925848,
+        39.966646
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.966646,-75.2925848&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Monroe Avenue & Lansdowne Avenue, Upper Darby Township, PA",
+      "coordinates": [
+        -75.2953417,
+        39.9673998
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9673998,-75.2953417&dirflg=w"
+    },
+    "number": 9,
+    "coverage_audit_latest": {
+      "date": "2026-10-25",
+      "street": "Monroe Avenue",
+      "covered_15m_pct": 0.0,
+      "covered_25m_pct": 0.0,
+      "max_gap_m": 156.6
+    },
+    "past": false,
+    "coverage_audit_running": {
+      "date": "2026-10-25",
+      "street": "Monroe Avenue",
+      "covered_15m_pct": 0.0,
+      "covered_25m_pct": 0.0,
+      "max_gap_m": 183.4
+    }
+  },
+  {
+    "date": "2026-10-26",
+    "street": "Holbrook Road",
+    "target_label": "Fairhaven Road to Bennington Road",
+    "target_miles": 0.112,
+    "target_coordinates": [
+      [
+        -75.2840281,
+        39.9745279
+      ],
+      [
+        -75.2843272,
+        39.9743715
+      ],
+      [
+        -75.2843889,
+        39.9743393
+      ],
+      [
+        -75.2843945,
+        39.9743364
+      ],
+      [
+        -75.2845296,
+        39.9742658
+      ],
+      [
+        -75.2845989,
+        39.9742295
+      ],
+      [
+        -75.2846204,
+        39.9742183
+      ],
+      [
+        -75.2848195,
+        39.9741142
+      ],
+      [
+        -75.2849005,
+        39.9740719
+      ],
+      [
+        -75.284973,
+        39.9740341
+      ],
+      [
+        -75.2851003,
+        39.9739675
+      ],
+      [
+        -75.2851739,
+        39.973929
+      ],
+      [
+        -75.2851973,
+        39.9739168
+      ],
+      [
+        -75.2852207,
+        39.9739087
+      ],
+      [
+        -75.2853229,
+        39.973873
+      ],
+      [
+        -75.2854557,
+        39.9738714
+      ],
+      [
+        -75.2854825,
+        39.9738764
+      ],
+      [
+        -75.2855225,
+        39.9738838
+      ],
+      [
+        -75.2855903,
+        39.9738963
+      ],
+      [
+        -75.2857035,
+        39.9739483
+      ],
+      [
+        -75.285814,
+        39.9740336
+      ]
+    ],
+    "target_midpoint": [
+      -75.28490117587862,
+      39.97407154761127
+    ],
+    "navigation_address": "12 Holbrook Rd, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.284728,
+      39.9739096
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=12%20Holbrook%20Rd%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "one_way_miles": 1.9,
+    "citystrides_status": "October 22 run-only audit: 100.0% of section samples beyond 25 m of 1,867 recorded runs",
+    "citystrides_url": "https://citystrides.com/users/7315/map",
+    "coverage_audit": {
+      "street": "Holbrook Road",
+      "cross_a": "Fairhaven Road",
+      "cross_b": "Bennington Road",
+      "coordinates": [
+        [
+          -75.2840281,
+          39.9745279
+        ],
+        [
+          -75.2843272,
+          39.9743715
+        ],
+        [
+          -75.2843889,
+          39.9743393
+        ],
+        [
+          -75.2843945,
+          39.9743364
+        ],
+        [
+          -75.2845296,
+          39.9742658
+        ],
+        [
+          -75.2845989,
+          39.9742295
+        ],
+        [
+          -75.2846204,
+          39.9742183
+        ],
+        [
+          -75.2848195,
+          39.9741142
+        ],
+        [
+          -75.2849005,
+          39.9740719
+        ],
+        [
+          -75.284973,
+          39.9740341
+        ],
+        [
+          -75.2851003,
+          39.9739675
+        ],
+        [
+          -75.2851739,
+          39.973929
+        ],
+        [
+          -75.2851973,
+          39.9739168
+        ],
+        [
+          -75.2852207,
+          39.9739087
+        ],
+        [
+          -75.2853229,
+          39.973873
+        ],
+        [
+          -75.2854557,
+          39.9738714
+        ],
+        [
+          -75.2854825,
+          39.9738764
+        ],
+        [
+          -75.2855225,
+          39.9738838
+        ],
+        [
+          -75.2855903,
+          39.9738963
+        ],
+        [
+          -75.2857035,
+          39.9739483
+        ],
+        [
+          -75.285814,
+          39.9740336
+        ]
+      ],
+      "home_straight_m": 2200,
+      "length_m": 180.3,
+      "covered_within_15m_pct": 0.0,
+      "covered_within_25m_pct": 0.0,
+      "core_min_distance_m": 67.3,
+      "midpoint": [
+        -75.28490117587862,
+        39.97407154761127
+      ],
+      "date": "2026-10-26",
+      "address": "12 Holbrook Rd, Havertown, PA 19083",
+      "address_coordinates": {
+        "lat": 39.9739096,
+        "lng": -75.284728
+      },
+      "one_way_miles": 1.9,
+      "walking_meters": 3108,
+      "checked_date": "2026-10-16",
+      "source": "Google Geocoding and Directions APIs"
+    },
+    "first_waypoint": {
+      "intersection": "Holbrook Road & Fairhaven Road, Havertown, PA",
+      "coordinates": [
+        -75.2840281,
+        39.9745279
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9745279,-75.2840281&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Holbrook Road & Bennington Road, Havertown, PA",
+      "coordinates": [
+        -75.285814,
+        39.9740336
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9740336,-75.285814&dirflg=w"
+    },
+    "number": 10,
+    "coverage_audit_latest": {
+      "date": "2026-10-26",
+      "street": "Holbrook Road",
+      "covered_15m_pct": 0.0,
+      "covered_25m_pct": 0.0,
+      "max_gap_m": 112.5
+    },
+    "past": false,
+    "coverage_audit_running": {
+      "date": "2026-10-26",
+      "street": "Holbrook Road",
+      "covered_15m_pct": 0.0,
+      "covered_25m_pct": 0.0,
+      "max_gap_m": 140.5
+    }
+  }
+]

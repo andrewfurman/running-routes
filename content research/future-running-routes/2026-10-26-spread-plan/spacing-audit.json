@@ -1,0 +1,120 @@
+{
+  "minimum_pairwise_section_spacing_m": 1131,
+  "section_pairs": [
+    {
+      "a": "Monroe Avenue",
+      "b": "Golf House Road",
+      "closest_section_distance_m": 3812
+    },
+    {
+      "a": "Monroe Avenue",
+      "b": "Concord Avenue",
+      "closest_section_distance_m": 1478
+    },
+    {
+      "a": "Monroe Avenue",
+      "b": "Chestnut Avenue",
+      "closest_section_distance_m": 2874
+    },
+    {
+      "a": "Monroe Avenue",
+      "b": "Fairlamb Avenue",
+      "closest_section_distance_m": 2694
+    },
+    {
+      "a": "Monroe Avenue",
+      "b": "Dover Road",
+      "closest_section_distance_m": 2121
+    },
+    {
+      "a": "Monroe Avenue",
+      "b": "Williams Road",
+      "closest_section_distance_m": 5043
+    },
+    {
+      "a": "Golf House Road",
+      "b": "Concord Avenue",
+      "closest_section_distance_m": 4384
+    },
+    {
+      "a": "Golf House Road",
+      "b": "Chestnut Avenue",
+      "closest_section_distance_m": 1796
+    },
+    {
+      "a": "Golf House Road",
+      "b": "Fairlamb Avenue",
+      "closest_section_distance_m": 3160
+    },
+    {
+      "a": "Golf House Road",
+      "b": "Dover Road",
+      "closest_section_distance_m": 3002
+    },
+    {
+      "a": "Golf House Road",
+      "b": "Williams Road",
+      "closest_section_distance_m": 1551
+    },
+    {
+      "a": "Concord Avenue",
+      "b": "Chestnut Avenue",
+      "closest_section_distance_m": 4075
+    },
+    {
+      "a": "Concord Avenue",
+      "b": "Fairlamb Avenue",
+      "closest_section_distance_m": 2017
+    },
+    {
+      "a": "Concord Avenue",
+      "b": "Dover Road",
+      "closest_section_distance_m": 3590
+    },
+    {
+      "a": "Concord Avenue",
+      "b": "Williams Road",
+      "closest_section_distance_m": 5221
+    },
+    {
+      "a": "Chestnut Avenue",
+      "b": "Fairlamb Avenue",
+      "closest_section_distance_m": 3821
+    },
+    {
+      "a": "Chestnut Avenue",
+      "b": "Dover Road",
+      "closest_section_distance_m": 1131
+    },
+    {
+      "a": "Chestnut Avenue",
+      "b": "Williams Road",
+      "closest_section_distance_m": 3368
+    },
+    {
+      "a": "Fairlamb Avenue",
+      "b": "Dover Road",
+      "closest_section_distance_m": 3972
+    },
+    {
+      "a": "Fairlamb Avenue",
+      "b": "Williams Road",
+      "closest_section_distance_m": 3443
+    },
+    {
+      "a": "Dover Road",
+      "b": "Williams Road",
+      "closest_section_distance_m": 4557
+    }
+  ],
+  "consecutive_bearing_changes_degrees": [
+    145.1,
+    175.2,
+    131.9,
+    170.3,
+    155.8,
+    117.3
+  ],
+  "walking_approach_overlaps": [],
+  "method": "UTM18N section distances; Google walking-approach step polylines versus 5 m target samples with 25 m tolerance. Freeform return is not predictable."
+}

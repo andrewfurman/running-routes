@@ -1,0 +1,1954 @@
+{
+  "old": [
+    {
+      "date": "2026-10-16",
+      "street": "Charles Drive",
+      "segment": "Frederick Road to David Drive",
+      "length_m": 480.6,
+      "covered_within_15m_pct": 89.7,
+      "covered_within_25m_pct": 93.8,
+      "core_min_distance_m": 0.0,
+      "midpoint": [
+        -75.32776357407027,
+        39.98829425878889
+      ]
+    },
+    {
+      "date": "2026-10-17",
+      "street": "Ellis Road",
+      "segment": "Garlor Drive to Lawrence Road",
+      "length_m": 454.6,
+      "covered_within_15m_pct": 3.3,
+      "covered_within_25m_pct": 5.5,
+      "core_min_distance_m": 33.2,
+      "midpoint": [
+        -75.33420167865133,
+        39.981238988333054
+      ]
+    },
+    {
+      "date": "2026-10-18",
+      "street": "Walnut Place",
+      "segment": "Devon Road to Covington Road",
+      "length_m": 364.0,
+      "covered_within_15m_pct": 100.0,
+      "covered_within_25m_pct": 100.0,
+      "core_min_distance_m": 0.0,
+      "midpoint": [
+        -75.28844571652527,
+        39.97664956646752
+      ]
+    },
+    {
+      "date": "2026-10-19",
+      "street": "Marilyn Drive",
+      "segment": "Jacalyn Drive to Lawrence Road",
+      "length_m": 411.0,
+      "covered_within_15m_pct": 4.8,
+      "covered_within_25m_pct": 7.2,
+      "core_min_distance_m": 26.6,
+      "midpoint": [
+        -75.32970224298312,
+        39.98236273793042
+      ]
+    },
+    {
+      "date": "2026-10-20",
+      "street": "Chester Avenue",
+      "segment": "Warren Avenue to Lawrence Road",
+      "length_m": 101.6,
+      "covered_within_15m_pct": 47.6,
+      "covered_within_25m_pct": 66.7,
+      "core_min_distance_m": 20.4,
+      "midpoint": [
+        -75.31989591229345,
+        39.982306173629105
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "street": "Pickwick Road",
+      "segment": "Devon Road to Covington Road",
+      "length_m": 280.9,
+      "covered_within_15m_pct": 100.0,
+      "covered_within_25m_pct": 100.0,
+      "core_min_distance_m": 0.2,
+      "midpoint": [
+        -75.29087573187763,
+        39.97566843113759
+      ]
+    },
+    {
+      "date": "2026-10-22",
+      "street": "Garden Avenue",
+      "segment": "Kingsley Road to Lawndale Avenue",
+      "length_m": 89.9,
+      "covered_within_15m_pct": 100.0,
+      "covered_within_25m_pct": 100.0,
+      "core_min_distance_m": 0.1,
+      "midpoint": [
+        -75.28597010152595,
+        39.98780285071735
+      ]
+    },
+    {
+      "date": "2026-10-23",
+      "street": "Bennington Road",
+      "segment": "Myrtle Avenue to Grove Place",
+      "length_m": 318.6,
+      "covered_within_15m_pct": 10.9,
+      "covered_within_25m_pct": 17.2,
+      "core_min_distance_m": 29.7,
+      "midpoint": [
+        -75.28542459008396,
+        39.97472850805739
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "street": "Joanna Road",
+      "cross_a": "Olympic Avenue",
+      "cross_b": "Prospect Avenue",
+      "coordinates": [
+        [
+          -75.3016713,
+          39.9688968
+        ],
+        [
+          -75.3025723,
+          39.9677882
+        ]
+      ],
+      "home_straight_m": 1516,
+      "length_m": 145.1,
+      "covered_within_15m_pct": 0.0,
+      "covered_within_25m_pct": 0.0,
+      "core_min_distance_m": 70.5,
+      "midpoint": [
+        -75.30212180363003,
+        39.968342500888376
+      ]
+    },
+    {
+      "street": "Marilyn Drive",
+      "cross_a": "Jacalyn Drive",
+      "cross_b": "Lawrence Road",
+      "coordinates": [
+        [
+          -75.3275772,
+          39.983221
+        ],
+        [
+          -75.3278837,
+          39.9830411
+        ],
+        [
+          -75.3282271,
+          39.982903
+        ],
+        [
+          -75.3295746,
+          39.9824032
+        ],
+        [
+          -75.3298235,
+          39.9823243
+        ],
+        [
+          -75.3301754,
+          39.9822322
+        ],
+        [
+          -75.3306475,
+          39.9821467
+        ],
+        [
+          -75.3308363,
+          39.9820809
+        ],
+        [
+          -75.3309736,
+          39.9819823
+        ],
+        [
+          -75.3310423,
+          39.9818573
+        ],
+        [
+          -75.3310251,
+          39.9816929
+        ],
+        [
+          -75.3309736,
+          39.9815482
+        ],
+        [
+          -75.3308135,
+          39.9812344
+        ]
+      ],
+      "home_straight_m": 1526,
+      "length_m": 411.0,
+      "covered_within_15m_pct": 4.8,
+      "covered_within_25m_pct": 7.2,
+      "core_min_distance_m": 26.6,
+      "midpoint": [
+        -75.32970224298312,
+        39.98236273793042
+      ]
+    },
+    {
+      "street": "Lawrence Road",
+      "cross_a": "Tyson Road",
+      "cross_b": "Marilyn Drive",
+      "coordinates": [
+        [
+          -75.3278944,
+          39.9820458
+        ],
+        [
+          -75.3308135,
+          39.9812344
+        ]
+      ],
+      "home_straight_m": 1537,
+      "length_m": 265.0,
+      "covered_within_15m_pct": 7.4,
+      "covered_within_25m_pct": 11.1,
+      "core_min_distance_m": 25.0,
+      "midpoint": [
+        -75.32935395868707,
+        39.98164010916848
+      ]
+    },
+    {
+      "street": "Oxford Hill Lane",
+      "cross_a": "Westgate Road",
+      "cross_b": "Rose Tree Lane",
+      "coordinates": [
+        [
+          -75.3272306,
+          39.9734638
+        ],
+        [
+          -75.3300984,
+          39.9722251
+        ]
+      ],
+      "home_straight_m": 1695,
+      "length_m": 280.8,
+      "covered_within_15m_pct": 0.0,
+      "covered_within_25m_pct": 0.0,
+      "core_min_distance_m": 138.4,
+      "midpoint": [
+        -75.32866451298413,
+        39.97284445884936
+      ]
+    },
+    {
+      "street": "Ivy Rock Lane",
+      "cross_a": "Westgate Road",
+      "cross_b": "Rose Tree Lane",
+      "coordinates": [
+        [
+          -75.3267674,
+          39.9728157
+        ],
+        [
+          -75.3296264,
+          39.971574
+        ]
+      ],
+      "home_straight_m": 1698,
+      "length_m": 280.4,
+      "covered_within_15m_pct": 0.0,
+      "covered_within_25m_pct": 0.0,
+      "core_min_distance_m": 182.5,
+      "midpoint": [
+        -75.32819691297483,
+        39.97219485879525
+      ]
+    },
+    {
+      "street": "Fairlamb Avenue",
+      "cross_a": "Westgate Road",
+      "cross_b": "Rose Tree Lane",
+      "coordinates": [
+        [
+          -75.326279,
+          39.9721659
+        ],
+        [
+          -75.3291886,
+          39.9709425
+        ]
+      ],
+      "home_straight_m": 1704,
+      "length_m": 283.2,
+      "covered_within_15m_pct": 0.0,
+      "covered_within_25m_pct": 0.0,
+      "core_min_distance_m": 103.3,
+      "midpoint": [
+        -75.32773381301212,
+        39.971554209108945
+      ]
+    },
+    {
+      "street": "Walnut Hill Lane",
+      "cross_a": "Westgate Road",
+      "cross_b": "Rose Tree Lane",
+      "coordinates": [
+        [
+          -75.3257382,
+          39.9714556
+        ],
+        [
+          -75.3267768,
+          39.9710609
+        ],
+        [
+          -75.3287908,
+          39.9701837
+        ]
+      ],
+      "home_straight_m": 1714,
+      "length_m": 296.6,
+      "covered_within_15m_pct": 3.3,
+      "covered_within_25m_pct": 6.7,
+      "core_min_distance_m": 35.3,
+      "midpoint": [
+        -75.32727977382955,
+        39.9708418345529
+      ]
+    },
+    {
+      "street": "Glen Gary Road",
+      "cross_a": "Windsor Park Lane",
+      "cross_b": "Rose Tree Lane",
+      "coordinates": [
+        [
+          -75.3284991,
+          39.9737859
+        ],
+        [
+          -75.3305705,
+          39.9728763
+        ]
+      ],
+      "home_straight_m": 1774,
+      "length_m": 203.7,
+      "covered_within_15m_pct": 0.0,
+      "covered_within_25m_pct": 0.0,
+      "core_min_distance_m": 143.1,
+      "midpoint": [
+        -75.3295348068862,
+        39.97333110461687
+      ]
+    },
+    {
+      "street": "Windsor Park Lane",
+      "cross_a": "Wendover Drive",
+      "cross_b": "Glen Ridge Road",
+      "coordinates": [
+        [
+          -75.3292401,
+          39.9743102
+        ],
+        [
+          -75.3305705,
+          39.9747838
+        ]
+      ],
+      "home_straight_m": 1806,
+      "length_m": 125.2,
+      "covered_within_15m_pct": 0.0,
+      "covered_within_25m_pct": 0.0,
+      "core_min_distance_m": 94.0,
+      "midpoint": [
+        -75.32990529771455,
+        39.974547001922836
+      ]
+    },
+    {
+      "street": "Wendover Drive",
+      "cross_a": "Windsor Park Lane",
+      "cross_b": "Rose Tree Lane",
+      "coordinates": [
+        [
+          -75.3292401,
+          39.9743102
+        ],
+        [
+          -75.3310512,
+          39.9735275
+        ]
+      ],
+      "home_straight_m": 1806,
+      "length_m": 177.4,
+      "covered_within_15m_pct": 0.0,
+      "covered_within_25m_pct": 0.0,
+      "core_min_distance_m": 117.9,
+      "midpoint": [
+        -75.33014565518152,
+        39.97391885352932
+      ]
+    },
+    {
+      "street": "Ellis Road",
+      "cross_a": "Garlor Drive",
+      "cross_b": "Lawrence Road",
+      "coordinates": [
+        [
+          -75.3351799,
+          39.9831343
+        ],
+        [
+          -75.3351121,
+          39.9829853
+        ],
+        [
+          -75.3348569,
+          39.9824243
+        ],
+        [
+          -75.3347834,
+          39.9822628
+        ],
+        [
+          -75.3346239,
+          39.9819121
+        ],
+        [
+          -75.3345807,
+          39.9818171
+        ],
+        [
+          -75.3344584,
+          39.9815482
+        ],
+        [
+          -75.3343007,
+          39.981343
+        ],
+        [
+          -75.3342875,
+          39.9813259
+        ],
+        [
+          -75.3342285,
+          39.9812604
+        ],
+        [
+          -75.3341576,
+          39.9812038
+        ],
+        [
+          -75.3341007,
+          39.981171
+        ],
+        [
+          -75.3340379,
+          39.9811479
+        ],
+        [
+          -75.3339644,
+          39.9811273
+        ],
+        [
+          -75.3338917,
+          39.9811193
+        ],
+        [
+          -75.3338063,
+          39.981114
+        ],
+        [
+          -75.3337265,
+          39.981117
+        ],
+        [
+          -75.3335203,
+          39.9811302
+        ],
+        [
+          -75.3327081,
+          39.9812349
+        ],
+        [
+          -75.3326996,
+          39.9812352
+        ],
+        [
+          -75.3325856,
+          39.9812395
+        ],
+        [
+          -75.3324919,
+          39.9812372
+        ],
+        [
+          -75.332407,
+          39.9812333
+        ],
+        [
+          -75.332322,
+          39.981223
+        ],
+        [
+          -75.3322582,
+          39.9812049
+        ],
+        [
+          -75.3321662,
+          39.9811775
+        ],
+        [
+          -75.3320735,
+          39.9811379
+        ],
+        [
+          -75.3319407,
+          39.9810548
+        ],
+        [
+          -75.3318314,
+          39.9809735
+        ],
+        [
+          -75.3317486,
+          39.9808994
+        ]
+      ],
+      "home_straight_m": 1861,
+      "length_m": 454.6,
+      "covered_within_15m_pct": 3.3,
+      "covered_within_25m_pct": 5.5,
+      "core_min_distance_m": 33.2,
+      "midpoint": [
+        -75.33420167865133,
+        39.981238988333054
+      ]
+    },
+    {
+      "street": "Dartmouth Lane",
+      "cross_a": "West Ardmore Avenue",
+      "cross_b": "path",
+      "coordinates": [
+        [
+          -75.3252331,
+          39.9931201
+        ],
+        [
+          -75.3256854,
+          39.9937777
+        ],
+        [
+          -75.3257084,
+          39.993971
+        ],
+        [
+          -75.3257112,
+          39.9939947
+        ],
+        [
+          -75.3256972,
+          39.9940546
+        ]
+      ],
+      "home_straight_m": 1876,
+      "length_m": 113.5,
+      "covered_within_15m_pct": 17.4,
+      "covered_within_25m_pct": 26.1,
+      "core_min_distance_m": 26.6,
+      "midpoint": [
+        -75.32554398971574,
+        39.993572104827216
+      ]
+    },
+    {
+      "street": "Windsor Park Lane",
+      "cross_a": "Glen Ridge Road",
+      "cross_b": "Rose Tree Lane",
+      "coordinates": [
+        [
+          -75.3305705,
+          39.9747838
+        ],
+        [
+          -75.3311456,
+          39.9750995
+        ],
+        [
+          -75.331446,
+          39.9751982
+        ],
+        [
+          -75.3317378,
+          39.9752442
+        ],
+        [
+          -75.3319867,
+          39.9752179
+        ]
+      ],
+      "home_straight_m": 1891,
+      "length_m": 135.1,
+      "covered_within_15m_pct": 0.0,
+      "covered_within_25m_pct": 0.0,
+      "core_min_distance_m": 92.6,
+      "midpoint": [
+        -75.33122342910684,
+        39.975125071782905
+      ]
+    },
+    {
+      "street": "Glen Ridge Road",
+      "cross_a": "Windsor Park Lane",
+      "cross_b": "Rose Tree Lane",
+      "coordinates": [
+        [
+          -75.3305705,
+          39.9747838
+        ],
+        [
+          -75.3309759,
+          39.9743453
+        ],
+        [
+          -75.3314117,
+          39.9740208
+        ]
+      ],
+      "home_straight_m": 1891,
+      "length_m": 111.5,
+      "covered_within_15m_pct": 0.0,
+      "covered_within_25m_pct": 0.0,
+      "core_min_distance_m": 129.5,
+      "midpoint": [
+        -75.33094896444221,
+        39.97437443500346
+      ]
+    },
+    {
+      "street": "Lawrence Road",
+      "cross_a": "Fairmont Road",
+      "cross_b": "Darby Creek Road",
+      "coordinates": [
+        [
+          -75.3324078,
+          39.9803122
+        ],
+        [
+          -75.3332885,
+          39.9795321
+        ],
+        [
+          -75.3336247,
+          39.9792408
+        ],
+        [
+          -75.3336672,
+          39.9792004
+        ],
+        [
+          -75.3337166,
+          39.9791477
+        ],
+        [
+          -75.3337929,
+          39.9790622
+        ]
+      ],
+      "home_straight_m": 1919,
+      "length_m": 182.4,
+      "covered_within_15m_pct": 0.0,
+      "covered_within_25m_pct": 0.0,
+      "core_min_distance_m": 34.0,
+      "midpoint": [
+        -75.33310821140479,
+        39.97969179670203
+      ]
+    },
+    {
+      "street": "Monroe Avenue",
+      "cross_a": "South Harwood Avenue",
+      "cross_b": "Lansdowne Avenue",
+      "coordinates": [
+        [
+          -75.2925848,
+          39.966646
+        ],
+        [
+          -75.293794,
+          39.9672842
+        ],
+        [
+          -75.2939529,
+          39.9673681
+        ],
+        [
+          -75.2941828,
+          39.9674838
+        ],
+        [
+          -75.2946158,
+          39.967718
+        ],
+        [
+          -75.2946827,
+          39.9677372
+        ],
+        [
+          -75.2947565,
+          39.9677341
+        ],
+        [
+          -75.2948258,
+          39.9677125
+        ],
+        [
+          -75.2948467,
+          39.9677017
+        ],
+        [
+          -75.294995,
+          39.9676247
+        ],
+        [
+          -75.2951798,
+          39.9675048
+        ],
+        [
+          -75.2953417,
+          39.9673998
+        ]
+      ],
+      "home_straight_m": 1957,
+      "length_m": 285.3,
+      "covered_within_15m_pct": 0.0,
+      "covered_within_25m_pct": 0.0,
+      "core_min_distance_m": 68.5,
+      "midpoint": [
+        -75.29396234208278,
+        39.96737285186094
+      ]
+    },
+    {
+      "street": "Dartmouth Lane",
+      "cross_a": "path",
+      "cross_b": "Darby Road",
+      "coordinates": [
+        [
+          -75.3256972,
+          39.9940546
+        ],
+        [
+          -75.3252162,
+          39.9961057
+        ],
+        [
+          -75.325152,
+          39.9961861
+        ]
+      ],
+      "home_straight_m": 1978,
+      "length_m": 241.8,
+      "covered_within_15m_pct": 8.2,
+      "covered_within_25m_pct": 12.2,
+      "core_min_distance_m": 25.9,
+      "midpoint": [
+        -75.32544581606402,
+        39.995126577147815
+      ]
+    },
+    {
+      "street": "Ivy Rock Lane",
+      "cross_a": "Rose Tree Lane",
+      "cross_b": "Windsor Park Lane",
+      "coordinates": [
+        [
+          -75.3296264,
+          39.971574
+        ],
+        [
+          -75.3323181,
+          39.970457
+        ],
+        [
+          -75.3324308,
+          39.9704102
+        ]
+      ],
+      "home_straight_m": 1978,
+      "length_m": 272.1,
+      "covered_within_15m_pct": 0.0,
+      "covered_within_25m_pct": 0.0,
+      "core_min_distance_m": 236.9,
+      "midpoint": [
+        -75.33102861998898,
+        39.97099211995164
+      ]
+    },
+    {
+      "street": "Glen Gary Road",
+      "cross_a": "Rose Tree Lane",
+      "cross_b": "Windsor Park Lane",
+      "coordinates": [
+        [
+          -75.3305705,
+          39.9728763
+        ],
+        [
+          -75.3309653,
+          39.9727251
+        ],
+        [
+          -75.3312057,
+          39.9726724
+        ],
+        [
+          -75.3315576,
+          39.972679
+        ],
+        [
+          -75.3319352,
+          39.9726987
+        ],
+        [
+          -75.3321927,
+          39.9726724
+        ],
+        [
+          -75.3334115,
+          39.9722251
+        ],
+        [
+          -75.3339093,
+          39.9719357
+        ]
+      ],
+      "home_straight_m": 1978,
+      "length_m": 312.2,
+      "covered_within_15m_pct": 0.0,
+      "covered_within_25m_pct": 0.0,
+      "core_min_distance_m": 300.9,
+      "midpoint": [
+        -75.33232496922165,
+        39.972623858053964
+      ]
+    },
+    {
+      "street": "Fairlamb Avenue",
+      "cross_a": "Rose Tree Lane",
+      "cross_b": "Windsor Park Lane",
+      "coordinates": [
+        [
+          -75.3291886,
+          39.9709425
+        ],
+        [
+          -75.3318151,
+          39.9697979
+        ]
+      ],
+      "home_straight_m": 1985,
+      "length_m": 257.8,
+      "covered_within_15m_pct": 0.0,
+      "covered_within_25m_pct": 0.0,
+      "core_min_distance_m": 221.6,
+      "midpoint": [
+        -75.3305018609869,
+        39.97037020742258
+      ]
+    },
+    {
+      "street": "Rose Tree Lane",
+      "cross_a": "Glen Ridge Road",
+      "cross_b": "Windsor Park Lane",
+      "coordinates": [
+        [
+          -75.3314117,
+          39.9740208
+        ],
+        [
+          -75.3319867,
+          39.9752179
+        ]
+      ],
+      "home_straight_m": 1987,
+      "length_m": 141.6,
+      "covered_within_15m_pct": 0.0,
+      "covered_within_25m_pct": 0.0,
+      "core_min_distance_m": 141.0,
+      "midpoint": [
+        -75.33169919747641,
+        39.974619350397724
+      ]
+    },
+    {
+      "street": "Windsor Park Lane",
+      "cross_a": "Rose Tree Lane",
+      "cross_b": "Glen Ridge Road",
+      "coordinates": [
+        [
+          -75.3319867,
+          39.9752179
+        ],
+        [
+          -75.33227,
+          39.9751193
+        ],
+        [
+          -75.332476,
+          39.9749351
+        ],
+        [
+          -75.3327077,
+          39.9746457
+        ],
+        [
+          -75.3328794,
+          39.9743892
+        ],
+        [
+          -75.3330939,
+          39.9742182
+        ],
+        [
+          -75.3342097,
+          39.9737775
+        ],
+        [
+          -75.3344758,
+          39.9736196
+        ],
+        [
+          -75.3346389,
+          39.9734025
+        ],
+        [
+          -75.3346732,
+          39.9731526
+        ],
+        [
+          -75.3345273,
+          39.9727579
+        ]
+      ],
+      "home_straight_m": 1988,
+      "length_m": 386.7,
+      "covered_within_15m_pct": 0.0,
+      "covered_within_25m_pct": 0.0,
+      "core_min_distance_m": 160.5,
+      "midpoint": [
+        -75.33354927505033,
+        39.97403834556837
+      ]
+    },
+    {
+      "street": "Glen Ridge Road",
+      "cross_a": "Rose Tree Lane",
+      "cross_b": "Windsor Park Lane",
+      "coordinates": [
+        [
+          -75.3314117,
+          39.9740208
+        ],
+        [
+          -75.3318408,
+          39.9737248
+        ],
+        [
+          -75.3329309,
+          39.9732973
+        ],
+        [
+          -75.3345273,
+          39.9727579
+        ]
+      ],
+      "home_straight_m": 1989,
+      "length_m": 302.6,
+      "covered_within_15m_pct": 0.0,
+      "covered_within_25m_pct": 0.0,
+      "core_min_distance_m": 236.3,
+      "midpoint": [
+        -75.33290582685552,
+        39.973307133006166
+      ]
+    },
+    {
+      "street": "Walnut Hill Lane",
+      "cross_a": "Rose Tree Lane",
+      "cross_b": "Windsor Park Lane",
+      "coordinates": [
+        [
+          -75.3287908,
+          39.9701837
+        ],
+        [
+          -75.3312314,
+          39.9691336
+        ]
+      ],
+      "home_straight_m": 2006,
+      "length_m": 238.8,
+      "covered_within_15m_pct": 0.0,
+      "covered_within_25m_pct": 0.0,
+      "core_min_distance_m": 214.4,
+      "midpoint": [
+        -75.33001110936682,
+        39.969658656408946
+      ]
+    },
+    {
+      "street": "Darby Creek Road",
+      "cross_a": "Lawrence Road",
+      "cross_b": "Joann Circle",
+      "coordinates": [
+        [
+          -75.3337929,
+          39.9790622
+        ],
+        [
+          -75.333881,
+          39.9791124
+        ],
+        [
+          -75.3342865,
+          39.9793854
+        ],
+        [
+          -75.3344738,
+          39.9795009
+        ],
+        [
+          -75.3346391,
+          39.9795955
+        ],
+        [
+          -75.3347862,
+          39.9796761
+        ]
+      ],
+      "home_straight_m": 2047,
+      "length_m": 108.9,
+      "covered_within_15m_pct": 0.0,
+      "covered_within_25m_pct": 0.0,
+      "core_min_distance_m": 100.2,
+      "midpoint": [
+        -75.33427828930878,
+        39.979379872246206
+      ]
+    },
+    {
+      "street": "South Harwood Avenue",
+      "cross_a": "path",
+      "cross_b": "Monroe Avenue",
+      "coordinates": [
+        [
+          -75.2921797,
+          39.967923
+        ],
+        [
+          -75.2921856,
+          39.9679044
+        ],
+        [
+          -75.2925848,
+          39.966646
+        ]
+      ],
+      "home_straight_m": 2098,
+      "length_m": 145.9,
+      "covered_within_15m_pct": 0.0,
+      "covered_within_25m_pct": 0.0,
+      "core_min_distance_m": 67.7,
+      "midpoint": [
+        -75.29238225160425,
+        39.96728450015597
+      ]
+    },
+    {
+      "street": "North Kirklyn Avenue",
+      "cross_a": "Cunningham Avenue",
+      "cross_b": "Magnolia Terrace",
+      "coordinates": [
+        [
+          -75.2891231,
+          39.9696764
+        ],
+        [
+          -75.2884907,
+          39.9704481
+        ]
+      ],
+      "home_straight_m": 2174,
+      "length_m": 101.3,
+      "covered_within_15m_pct": 0.0,
+      "covered_within_25m_pct": 0.0,
+      "core_min_distance_m": 79.8,
+      "midpoint": [
+        -75.28880690177394,
+        39.97006225043779
+      ]
+    },
+    {
+      "street": "North Kirklyn Avenue",
+      "cross_a": "Foster Avenue",
+      "cross_b": "Cunningham Avenue",
+      "coordinates": [
+        [
+          -75.2897402,
+          39.9687925
+        ],
+        [
+          -75.2896619,
+          39.9689623
+        ],
+        [
+          -75.2896095,
+          39.969059
+        ],
+        [
+          -75.2895528,
+          39.9691451
+        ],
+        [
+          -75.2894911,
+          39.9692251
+        ],
+        [
+          -75.2891231,
+          39.9696764
+        ]
+      ],
+      "home_straight_m": 2176,
+      "length_m": 111.8,
+      "covered_within_15m_pct": 0.0,
+      "covered_within_25m_pct": 0.0,
+      "core_min_distance_m": 60.3,
+      "midpoint": [
+        -75.28947097118306,
+        39.969249785333474
+      ]
+    },
+    {
+      "street": "Bennington Road",
+      "cross_a": "Fairhaven Road",
+      "cross_b": "Holbrook Road",
+      "coordinates": [
+        [
+          -75.2846173,
+          39.975171
+        ],
+        [
+          -75.2847403,
+          39.975121
+        ],
+        [
+          -75.285021,
+          39.9750006
+        ],
+        [
+          -75.2850633,
+          39.9749825
+        ],
+        [
+          -75.2851168,
+          39.9749595
+        ],
+        [
+          -75.2852763,
+          39.9748398
+        ],
+        [
+          -75.2853732,
+          39.9747671
+        ],
+        [
+          -75.2854772,
+          39.974689
+        ],
+        [
+          -75.2855059,
+          39.9746577
+        ],
+        [
+          -75.2856133,
+          39.9745406
+        ],
+        [
+          -75.2857072,
+          39.9744382
+        ],
+        [
+          -75.2857172,
+          39.9744274
+        ],
+        [
+          -75.2858377,
+          39.974296
+        ],
+        [
+          -75.2858326,
+          39.9742403
+        ],
+        [
+          -75.285814,
+          39.9740336
+        ]
+      ],
+      "home_straight_m": 2188,
+      "length_m": 174.3,
+      "covered_within_15m_pct": 0.0,
+      "covered_within_25m_pct": 0.0,
+      "core_min_distance_m": 76.4,
+      "midpoint": [
+        -75.28543906905026,
+        39.97471763490819
+      ]
+    },
+    {
+      "street": "Holbrook Road",
+      "cross_a": "Fairhaven Road",
+      "cross_b": "Bennington Road",
+      "coordinates": [
+        [
+          -75.2840281,
+          39.9745279
+        ],
+        [
+          -75.2843272,
+          39.9743715
+        ],
+        [
+          -75.2843889,
+          39.9743393
+        ],
+        [
+          -75.2843945,
+          39.9743364
+        ],
+        [
+          -75.2845296,
+          39.9742658
+        ],
+        [
+          -75.2845989,
+          39.9742295
+        ],
+        [
+          -75.2846204,
+          39.9742183
+        ],
+        [
+          -75.2848195,
+          39.9741142
+        ],
+        [
+          -75.2849005,
+          39.9740719
+        ],
+        [
+          -75.284973,
+          39.9740341
+        ],
+        [
+          -75.2851003,
+          39.9739675
+        ],
+        [
+          -75.2851739,
+          39.973929
+        ],
+        [
+          -75.2851973,
+          39.9739168
+        ],
+        [
+          -75.2852207,
+          39.9739087
+        ],
+        [
+          -75.2853229,
+          39.973873
+        ],
+        [
+          -75.2854557,
+          39.9738714
+        ],
+        [
+          -75.2854825,
+          39.9738764
+        ],
+        [
+          -75.2855225,
+          39.9738838
+        ],
+        [
+          -75.2855903,
+          39.9738963
+        ],
+        [
+          -75.2857035,
+          39.9739483
+        ],
+        [
+          -75.285814,
+          39.9740336
+        ]
+      ],
+      "home_straight_m": 2200,
+      "length_m": 180.3,
+      "covered_within_15m_pct": 0.0,
+      "covered_within_25m_pct": 0.0,
+      "core_min_distance_m": 67.3,
+      "midpoint": [
+        -75.28490117587862,
+        39.97407154761127
+      ]
+    },
+    {
+      "street": "Windsor Park Lane",
+      "cross_a": "Glen Gary Road",
+      "cross_b": "Ivy Rock Lane",
+      "coordinates": [
+        [
+          -75.3339093,
+          39.9719357
+        ],
+        [
+          -75.3330029,
+          39.9709854
+        ],
+        [
+          -75.3324308,
+          39.9704102
+        ]
+      ],
+      "home_straight_m": 2250,
+      "length_m": 211.2,
+      "covered_within_15m_pct": 0.0,
+      "covered_within_25m_pct": 0.0,
+      "core_min_distance_m": 219.7,
+      "midpoint": [
+        -75.33317761863266,
+        39.9711685834664
+      ]
+    },
+    {
+      "street": "North Linden Avenue",
+      "cross_a": "Maplewood Avenue",
+      "cross_b": "Magnolia Terrace",
+      "coordinates": [
+        [
+          -75.2887696,
+          39.9683475
+        ],
+        [
+          -75.2886427,
+          39.9686853
+        ],
+        [
+          -75.2885697,
+          39.9687992
+        ],
+        [
+          -75.2884709,
+          39.9689058
+        ],
+        [
+          -75.2883411,
+          39.9690136
+        ],
+        [
+          -75.2882303,
+          39.969092
+        ],
+        [
+          -75.2880997,
+          39.9691575
+        ],
+        [
+          -75.2876589,
+          39.9693595
+        ]
+      ],
+      "home_straight_m": 2272,
+      "length_m": 153.9,
+      "covered_within_15m_pct": 0.0,
+      "covered_within_25m_pct": 0.0,
+      "core_min_distance_m": 111.1,
+      "midpoint": [
+        -75.28839673664453,
+        39.96896739335454
+      ]
+    },
+    {
+      "street": "Windsor Park Lane",
+      "cross_a": "Glen Ridge Road",
+      "cross_b": "Glen Gary Road",
+      "coordinates": [
+        [
+          -75.3345273,
+          39.9727579
+        ],
+        [
+          -75.3342784,
+          39.9722909
+        ],
+        [
+          -75.3339093,
+          39.9719357
+        ]
+      ],
+      "home_straight_m": 2279,
+      "length_m": 106.5,
+      "covered_within_15m_pct": 0.0,
+      "covered_within_25m_pct": 0.0,
+      "core_min_distance_m": 262.5,
+      "midpoint": [
+        -75.33429072119496,
+        39.97231401787423
+      ]
+    },
+    {
+      "street": "Maplewood Avenue",
+      "cross_a": "North Linden Avenue",
+      "cross_b": "Magnolia Terrace",
+      "coordinates": [
+        [
+          -75.2887696,
+          39.9683475
+        ],
+        [
+          -75.288157,
+          39.968222
+        ],
+        [
+          -75.287146,
+          39.9686787
+        ]
+      ],
+      "home_straight_m": 2288,
+      "length_m": 154.3,
+      "covered_within_15m_pct": 0.0,
+      "covered_within_25m_pct": 0.0,
+      "core_min_distance_m": 136.6,
+      "midpoint": [
+        -75.28792484599875,
+        39.9683268724676
+      ]
+    },
+    {
+      "street": "Myrtle Avenue",
+      "cross_a": "Fairhaven Road",
+      "cross_b": "Chatham Road",
+      "coordinates": [
+        [
+          -75.2833959,
+          39.9740821
+        ],
+        [
+          -75.2834038,
+          39.9740778
+        ],
+        [
+          -75.2836411,
+          39.9739511
+        ],
+        [
+          -75.2838333,
+          39.9738486
+        ],
+        [
+          -75.2839551,
+          39.9737835
+        ],
+        [
+          -75.2841599,
+          39.9736742
+        ],
+        [
+          -75.284388,
+          39.9735525
+        ],
+        [
+          -75.2846959,
+          39.9733881
+        ],
+        [
+          -75.284757,
+          39.9733555
+        ]
+      ],
+      "home_straight_m": 2312,
+      "length_m": 141.5,
+      "covered_within_15m_pct": 13.8,
+      "covered_within_25m_pct": 20.7,
+      "core_min_distance_m": 27.8,
+      "midpoint": [
+        -75.28407641246116,
+        39.97371875666779
+      ]
+    },
+    {
+      "street": "Aikens Lane",
+      "cross_a": "Dover Road",
+      "cross_b": "Powder Mill Lane",
+      "coordinates": [
+        [
+          -75.2822299,
+          39.9842874
+        ],
+        [
+          -75.2826509,
+          39.9840988
+        ],
+        [
+          -75.2826871,
+          39.9840747
+        ],
+        [
+          -75.2827339,
+          39.9840385
+        ],
+        [
+          -75.2827632,
+          39.9840101
+        ],
+        [
+          -75.2827804,
+          39.9839832
+        ],
+        [
+          -75.2827957,
+          39.98395
+        ],
+        [
+          -75.2828048,
+          39.983911
+        ],
+        [
+          -75.2828072,
+          39.9838767
+        ],
+        [
+          -75.2828036,
+          39.9838391
+        ],
+        [
+          -75.2827924,
+          39.9838033
+        ],
+        [
+          -75.2827739,
+          39.9837644
+        ],
+        [
+          -75.2827218,
+          39.9837062
+        ],
+        [
+          -75.2825955,
+          39.983574
+        ],
+        [
+          -75.2825521,
+          39.9835088
+        ],
+        [
+          -75.2825284,
+          39.9834648
+        ],
+        [
+          -75.2825071,
+          39.9834147
+        ],
+        [
+          -75.2824961,
+          39.9833619
+        ],
+        [
+          -75.2824968,
+          39.9833001
+        ],
+        [
+          -75.2825097,
+          39.9832422
+        ],
+        [
+          -75.2825373,
+          39.9831914
+        ],
+        [
+          -75.2825733,
+          39.9831293
+        ],
+        [
+          -75.2826268,
+          39.98307
+        ],
+        [
+          -75.2826943,
+          39.9830211
+        ],
+        [
+          -75.2827909,
+          39.9829545
+        ],
+        [
+          -75.2829663,
+          39.9828604
+        ]
+      ],
+      "home_straight_m": 2313,
+      "length_m": 207.2,
+      "covered_within_15m_pct": 16.7,
+      "covered_within_25m_pct": 26.2,
+      "core_min_distance_m": 25.2,
+      "midpoint": [
+        -75.28263795382856,
+        39.98361843709686
+      ]
+    },
+    {
+      "street": "Glen Arbor Drive",
+      "cross_a": "Brinton Park Drive",
+      "cross_b": "Twin Oaks Road",
+      "coordinates": [
+        [
+          -75.2829721,
+          39.9902613
+        ],
+        [
+          -75.2832349,
+          39.9903189
+        ],
+        [
+          -75.2834978,
+          39.9903312
+        ],
+        [
+          -75.2838143,
+          39.9902695
+        ],
+        [
+          -75.2840879,
+          39.9901339
+        ],
+        [
+          -75.2842971,
+          39.9899695
+        ],
+        [
+          -75.2844741,
+          39.9897435
+        ],
+        [
+          -75.284737,
+          39.9892256
+        ]
+      ],
+      "home_straight_m": 2339,
+      "length_m": 218.0,
+      "covered_within_15m_pct": 9.1,
+      "covered_within_25m_pct": 13.6,
+      "core_min_distance_m": 25.8,
+      "midpoint": [
+        -75.28414955171272,
+        39.990085451069795
+      ]
+    },
+    {
+      "street": "Parker Avenue",
+      "cross_a": "Meadowbrook Avenue",
+      "cross_b": "North Lynn Boulevard",
+      "coordinates": [
+        [
+          -75.2864597,
+          39.9693798
+        ],
+        [
+          -75.2845953,
+          39.9702484
+        ],
+        [
+          -75.2842064,
+          39.9704296
+        ]
+      ],
+      "home_straight_m": 2384,
+      "length_m": 225.0,
+      "covered_within_15m_pct": 0.0,
+      "covered_within_25m_pct": 0.0,
+      "core_min_distance_m": 82.1,
+      "midpoint": [
+        -75.2853330520037,
+        39.96990469703866
+      ]
+    },
+    {
+      "street": "Myrtle Avenue",
+      "cross_a": "Grove Place",
+      "cross_b": "Fairhaven Road",
+      "coordinates": [
+        [
+          -75.282975,
+          39.9749285
+        ],
+        [
+          -75.2830267,
+          39.9746447
+        ],
+        [
+          -75.2830673,
+          39.9745284
+        ],
+        [
+          -75.283098,
+          39.9744582
+        ],
+        [
+          -75.2831178,
+          39.9744129
+        ],
+        [
+          -75.2831303,
+          39.9743948
+        ],
+        [
+          -75.283198,
+          39.9742968
+        ],
+        [
+          -75.2832444,
+          39.9742296
+        ],
+        [
+          -75.2833959,
+          39.9740821
+        ]
+      ],
+      "home_straight_m": 2393,
+      "length_m": 102.6,
+      "covered_within_15m_pct": 19.0,
+      "covered_within_25m_pct": 28.6,
+      "core_min_distance_m": 25.8,
+      "midpoint": [
+        -75.28309018630775,
+        39.974476067154306
+      ]
+    },
+    {
+      "street": "Brinton Park Drive",
+      "cross_a": "Glen Arbor Drive",
+      "cross_b": "Twin Oaks Road",
+      "coordinates": [
+        [
+          -75.2829721,
+          39.9902613
+        ],
+        [
+          -75.2831115,
+          39.9898791
+        ],
+        [
+          -75.2833529,
+          39.9894845
+        ],
+        [
+          -75.2837016,
+          39.9889626
+        ]
+      ],
+      "home_straight_m": 2410,
+      "length_m": 157.6,
+      "covered_within_15m_pct": 9.4,
+      "covered_within_25m_pct": 15.6,
+      "core_min_distance_m": 31.5,
+      "midpoint": [
+        -75.28328473998847,
+        39.98959591700048
+      ]
+    },
+    {
+      "street": "Crosshill Road",
+      "cross_a": "Hampstead Road",
+      "cross_b": "Remington Road",
+      "coordinates": [
+        [
+          -75.2812566,
+          39.9843256
+        ],
+        [
+          -75.282253,
+          39.985636
+        ]
+      ],
+      "home_straight_m": 2420,
+      "length_m": 168.5,
+      "covered_within_15m_pct": 17.6,
+      "covered_within_25m_pct": 29.4,
+      "core_min_distance_m": 28.5,
+      "midpoint": [
+        -75.28175479522879,
+        39.98498080112428
+      ]
+    },
+    {
+      "street": "Terrace Avenue",
+      "cross_a": "Cloverdale Avenue",
+      "cross_b": "Wadas Avenue",
+      "coordinates": [
+        [
+          -75.2837368,
+          39.9679844
+        ],
+        [
+          -75.2847278,
+          39.9692783
+        ]
+      ],
+      "home_straight_m": 2515,
+      "length_m": 166.7,
+      "covered_within_15m_pct": 0.0,
+      "covered_within_25m_pct": 0.0,
+      "core_min_distance_m": 201.7,
+      "midpoint": [
+        -75.2842322953172,
+        39.96863135111154
+      ]
+    },
+    {
+      "street": "Wadas Avenue",
+      "cross_a": "Terrace Avenue",
+      "cross_b": "North Lynn Boulevard",
+      "coordinates": [
+        [
+          -75.2847278,
+          39.9692783
+        ],
+        [
+          -75.2844022,
+          39.9694322
+        ],
+        [
+          -75.2836911,
+          39.9697686
+        ]
+      ],
+      "home_straight_m": 2515,
+      "length_m": 103.9,
+      "covered_within_15m_pct": 0.0,
+      "covered_within_25m_pct": 0.0,
+      "core_min_distance_m": 167.9,
+      "midpoint": [
+        -75.28420941298295,
+        39.969523402490424
+      ]
+    },
+    {
+      "street": "Rock Glen Drive",
+      "cross_a": "Powder Mill Lane",
+      "cross_b": "Brinton Park Drive",
+      "coordinates": [
+        [
+          -75.2813466,
+          39.9900394
+        ],
+        [
+          -75.2827521,
+          39.9907627
+        ]
+      ],
+      "home_straight_m": 2563,
+      "length_m": 144.4,
+      "covered_within_15m_pct": 20.7,
+      "covered_within_25m_pct": 34.5,
+      "core_min_distance_m": 29.6,
+      "midpoint": [
+        -75.28204934630075,
+        39.99040105215458
+      ]
+    },
+    {
+      "street": "Cloverdale Avenue",
+      "cross_a": "West Chester Pike",
+      "cross_b": "Terrace Avenue",
+      "coordinates": [
+        [
+          -75.2848211,
+          39.9667803
+        ],
+        [
+          -75.2847978,
+          39.9668578
+        ],
+        [
+          -75.2847388,
+          39.9670538
+        ],
+        [
+          -75.284716,
+          39.9671021
+        ],
+        [
+          -75.2846861,
+          39.9671468
+        ],
+        [
+          -75.2841917,
+          39.9677317
+        ],
+        [
+          -75.2841464,
+          39.9677856
+        ],
+        [
+          -75.284087,
+          39.9678287
+        ],
+        [
+          -75.2837368,
+          39.9679844
+        ]
+      ],
+      "home_straight_m": 2646,
+      "length_m": 168.5,
+      "covered_within_15m_pct": 0.0,
+      "covered_within_25m_pct": 0.0,
+      "core_min_distance_m": 223.6,
+      "midpoint": [
+        -75.28441912416633,
+        39.967462647304465
+      ]
+    },
+    {
+      "street": "Cloverdale Avenue",
+      "cross_a": "Terrace Avenue",
+      "cross_b": "North Lynn Boulevard",
+      "coordinates": [
+        [
+          -75.2837368,
+          39.9679844
+        ],
+        [
+          -75.2827117,
+          39.9684399
+        ]
+      ],
+      "home_straight_m": 2663,
+      "length_m": 101.1,
+      "covered_within_15m_pct": 0.0,
+      "covered_within_25m_pct": 0.0,
+      "core_min_distance_m": 330.4,
+      "midpoint": [
+        -75.28322425170538,
+        39.96821215113166
+      ]
+    }
+  ]
+}

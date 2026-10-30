@@ -1,0 +1,252 @@
+{
+  "future_audit": [
+    {
+      "date": "2026-10-17",
+      "street": "Ellis Road",
+      "segment": "Garlor Drive to Lawrence Road",
+      "covered_15m_pct": 7.7,
+      "covered_25m_pct": 12.1,
+      "max_gap_m": 136.0
+    },
+    {
+      "date": "2026-10-18",
+      "street": "Joanna Road",
+      "segment": "Olympic Avenue to Prospect Avenue",
+      "covered_15m_pct": 100.0,
+      "covered_25m_pct": 100.0,
+      "max_gap_m": 4.9
+    },
+    {
+      "date": "2026-10-19",
+      "street": "Marilyn Drive",
+      "segment": "Jacalyn Drive to Lawrence Road",
+      "covered_15m_pct": 10.8,
+      "covered_25m_pct": 15.7,
+      "max_gap_m": 90.2
+    },
+    {
+      "date": "2026-10-20",
+      "street": "Fairlamb Avenue",
+      "segment": "Westgate Road to Rose Tree Lane",
+      "covered_15m_pct": 0.0,
+      "covered_25m_pct": 0.0,
+      "max_gap_m": 254.1
+    },
+    {
+      "date": "2026-10-21",
+      "street": "Oxford Hill Lane",
+      "segment": "Westgate Road to Rose Tree Lane",
+      "covered_15m_pct": 0.0,
+      "covered_25m_pct": 0.0,
+      "max_gap_m": 332.1
+    },
+    {
+      "date": "2026-10-22",
+      "street": "Ivy Rock Lane",
+      "segment": "Westgate Road to Rose Tree Lane",
+      "covered_15m_pct": 0.0,
+      "covered_25m_pct": 0.0,
+      "max_gap_m": 323.0
+    },
+    {
+      "date": "2026-10-23",
+      "street": "Bennington Road",
+      "segment": "Myrtle Avenue to Grove Place",
+      "covered_15m_pct": 10.9,
+      "covered_25m_pct": 17.2,
+      "max_gap_m": 105.5
+    },
+    {
+      "date": "2026-10-24",
+      "street": "Glen Gary Drive",
+      "segment": "Windsor Park Lane to Rose Tree Lane",
+      "covered_15m_pct": 0.0,
+      "covered_25m_pct": 0.0,
+      "max_gap_m": 286.2
+    },
+    {
+      "date": "2026-10-25",
+      "street": "Monroe Avenue",
+      "segment": "South Harwood Avenue to Lansdowne Avenue",
+      "covered_15m_pct": 0.0,
+      "covered_25m_pct": 0.0,
+      "max_gap_m": 156.6
+    },
+    {
+      "date": "2026-10-26",
+      "street": "Holbrook Road",
+      "segment": "Fairhaven Road to Bennington Road",
+      "covered_15m_pct": 0.0,
+      "covered_25m_pct": 0.0,
+      "max_gap_m": 112.5
+    }
+  ],
+  "individual_run_matches": [
+    {
+      "activity_id": "20606504445",
+      "date": "2026-10-16",
+      "matches": [
+        {
+          "street": "Charles Drive",
+          "date_original_plan": "2026-10-16",
+          "covered_15m_pct": 83.5,
+          "covered_25m_pct": 85.6,
+          "max_gap_m": 90.9
+        },
+        {
+          "street": "Ellis Road",
+          "date_original_plan": "2026-10-17",
+          "covered_15m_pct": 0.0,
+          "covered_25m_pct": 0.0,
+          "max_gap_m": 812.0
+        },
+        {
+          "street": "Joanna Road",
+          "date_original_plan": "2026-10-18",
+          "covered_15m_pct": 0.0,
+          "covered_25m_pct": 0.0,
+          "max_gap_m": 1579.2
+        },
+        {
+          "street": "Marilyn Drive",
+          "date_original_plan": "2026-10-19",
+          "covered_15m_pct": 0.0,
+          "covered_25m_pct": 0.0,
+          "max_gap_m": 687.8
+        },
+        {
+          "street": "Fairlamb Avenue",
+          "date_original_plan": "2026-10-20",
+          "covered_15m_pct": 0.0,
+          "covered_25m_pct": 0.0,
+          "max_gap_m": 1724.4
+        },
+        {
+          "street": "Oxford Hill Lane",
+          "date_original_plan": "2026-10-21",
+          "covered_15m_pct": 0.0,
+          "covered_25m_pct": 0.0,
+          "max_gap_m": 1636.7
+        },
+        {
+          "street": "Ivy Rock Lane",
+          "date_original_plan": "2026-10-22",
+          "covered_15m_pct": 0.0,
+          "covered_25m_pct": 0.0,
+          "max_gap_m": 1679.7
+        },
+        {
+          "street": "Bennington Road",
+          "date_original_plan": "2026-10-23",
+          "covered_15m_pct": 0.0,
+          "covered_25m_pct": 0.0,
+          "max_gap_m": 2308.5
+        },
+        {
+          "street": "Glen Gary Drive",
+          "date_original_plan": "2026-10-24",
+          "covered_15m_pct": 0.0,
+          "covered_25m_pct": 0.0,
+          "max_gap_m": 1596.9
+        },
+        {
+          "street": "Monroe Avenue",
+          "date_original_plan": "2026-10-25",
+          "covered_15m_pct": 0.0,
+          "covered_25m_pct": 0.0,
+          "max_gap_m": 2173.0
+        },
+        {
+          "street": "Holbrook Road",
+          "date_original_plan": "2026-10-26",
+          "covered_15m_pct": 0.0,
+          "covered_25m_pct": 0.0,
+          "max_gap_m": 2323.8
+        }
+      ]
+    },
+    {
+      "activity_id": "20619126795",
+      "date": "2026-10-17",
+      "matches": [
+        {
+          "street": "Charles Drive",
+          "date_original_plan": "2026-10-16",
+          "covered_15m_pct": 0.0,
+          "covered_25m_pct": 0.0,
+          "max_gap_m": 1592.9
+        },
+        {
+          "street": "Ellis Road",
+          "date_original_plan": "2026-10-17",
+          "covered_15m_pct": 0.0,
+          "covered_25m_pct": 0.0,
+          "max_gap_m": 1583.7
+        },
+        {
+          "street": "Joanna Road",
+          "date_original_plan": "2026-10-18",
+          "covered_15m_pct": 100.0,
+          "covered_25m_pct": 100.0,
+          "max_gap_m": 4.9
+        },
+        {
+          "street": "Marilyn Drive",
+          "date_original_plan": "2026-10-19",
+          "covered_15m_pct": 0.0,
+          "covered_25m_pct": 0.0,
+          "max_gap_m": 1207.3
+        },
+        {
+          "street": "Fairlamb Avenue",
+          "date_original_plan": "2026-10-20",
+          "covered_15m_pct": 0.0,
+          "covered_25m_pct": 0.0,
+          "max_gap_m": 770.0
+        },
+        {
+          "street": "Oxford Hill Lane",
+          "date_original_plan": "2026-10-21",
+          "covered_15m_pct": 0.0,
+          "covered_25m_pct": 0.0,
+          "max_gap_m": 870.5
+        },
+        {
+          "street": "Ivy Rock Lane",
+          "date_original_plan": "2026-10-22",
+          "covered_15m_pct": 0.0,
+          "covered_25m_pct": 0.0,
+          "max_gap_m": 819.9
+        },
+        {
+          "street": "Bennington Road",
+          "date_original_plan": "2026-10-23",
+          "covered_15m_pct": 0.0,
+          "covered_25m_pct": 0.0,
+          "max_gap_m": 1597.9
+        },
+        {
+          "street": "Glen Gary Drive",
+          "date_original_plan": "2026-10-24",
+          "covered_15m_pct": 0.0,
+          "covered_25m_pct": 0.0,
+          "max_gap_m": 924.3
+        },
+        {
+          "street": "Monroe Avenue",
+          "date_original_plan": "2026-10-25",
+          "covered_15m_pct": 0.0,
+          "covered_25m_pct": 0.0,
+          "max_gap_m": 765.2
+        },
+        {
+          "street": "Holbrook Road",
+          "date_original_plan": "2026-10-26",
+          "covered_15m_pct": 0.0,
+          "covered_25m_pct": 0.0,
+          "max_gap_m": 1552.6
+        }
+      ]
+    }
+  ]
+}

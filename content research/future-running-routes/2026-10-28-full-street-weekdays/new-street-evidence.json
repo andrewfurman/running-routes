@@ -1,0 +1,1381 @@
+[
+  {
+    "street": "Exeter Road",
+    "cross_a": "Golf House Road",
+    "cross_b": "Tunbridge Road",
+    "coordinates": [
+      [
+        -75.3129587,
+        40.0011289
+      ],
+      [
+        -75.3131786,
+        40.0010989
+      ],
+      [
+        -75.3135554,
+        40.0010942
+      ],
+      [
+        -75.313816,
+        40.001032
+      ],
+      [
+        -75.3143163,
+        40.0009107
+      ],
+      [
+        -75.3143362,
+        40.0009058
+      ],
+      [
+        -75.3148227,
+        40.0007851
+      ],
+      [
+        -75.3153917,
+        40.0006626
+      ],
+      [
+        -75.3156168,
+        40.0006227
+      ],
+      [
+        -75.3156983,
+        40.0006082
+      ],
+      [
+        -75.31572,
+        40.0006071
+      ],
+      [
+        -75.3158438,
+        40.0006008
+      ],
+      [
+        -75.3160858,
+        40.0005884
+      ],
+      [
+        -75.3160991,
+        40.0005887
+      ],
+      [
+        -75.3163871,
+        40.0005956
+      ],
+      [
+        -75.3165393,
+        40.0005992
+      ],
+      [
+        -75.3166846,
+        40.0006123
+      ],
+      [
+        -75.316977,
+        40.0006386
+      ],
+      [
+        -75.3171784,
+        40.0006807
+      ],
+      [
+        -75.3174147,
+        40.0007302
+      ],
+      [
+        -75.3176787,
+        40.0007855
+      ],
+      [
+        -75.3181564,
+        40.0008854
+      ],
+      [
+        -75.3186421,
+        40.0009871
+      ],
+      [
+        -75.3189044,
+        40.0010371
+      ]
+    ],
+    "midpoint": [
+      -75.31591953071468,
+      40.000596919638
+    ],
+    "bearing": 347.0205578962964,
+    "whole_street": true,
+    "length_m": 521.9,
+    "covered_25m_pct": 0.0,
+    "max_gap_m": 470.3,
+    "navigation_address": "362 Exeter Rd, Haverford, PA 19041",
+    "navigation_coordinates": [
+      -75.3161523,
+      40.0009477
+    ],
+    "walking_metres": 3258,
+    "one_way_miles": 2.0,
+    "geocode": {
+      "address_components": [
+        {
+          "long_name": "362",
+          "short_name": "362",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "Exeter Road",
+          "short_name": "Exeter Rd",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Haverford",
+          "short_name": "Haverford",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Haverford Township",
+          "short_name": "Haverford Township",
+          "types": [
+            "administrative_area_level_3",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Delaware County",
+          "short_name": "Delaware County",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Pennsylvania",
+          "short_name": "PA",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "United States",
+          "short_name": "US",
+          "types": [
+            "country",
+            "political"
+          ]
+        },
+        {
+          "long_name": "19041",
+          "short_name": "19041",
+          "types": [
+            "postal_code"
+          ]
+        }
+      ],
+      "formatted_address": "362 Exeter Rd, Haverford, PA 19041, USA",
+      "geometry": {
+        "bounds": {
+          "northeast": {
+            "lat": 40.001029,
+            "lng": -75.3159845
+          },
+          "southwest": {
+            "lat": 40.0008642,
+            "lng": -75.31632809999999
+          }
+        },
+        "location": {
+          "lat": 40.0009477,
+          "lng": -75.3161523
+        },
+        "location_type": "ROOFTOP",
+        "viewport": {
+          "northeast": {
+            "lat": 40.00217113029149,
+            "lng": -75.31480731970849
+          },
+          "southwest": {
+            "lat": 39.99947316970849,
+            "lng": -75.3175052802915
+          }
+        }
+      },
+      "place_id": "ChIJ2yeY6GrAxokRy0W7F8KcOBE",
+      "types": [
+        "premise",
+        "street_address"
+      ]
+    },
+    "walking_route": {
+      "distance": {
+        "text": "2.0 mi",
+        "value": 3258
+      },
+      "duration": {
+        "text": "46 mins",
+        "value": 2768
+      },
+      "end_address": "362 Exeter Rd, Haverford, PA 19041, USA",
+      "end_location": {
+        "lat": 40.0006153,
+        "lng": -75.3161365
+      },
+      "start_address": "1700 Manor Rd, Havertown, PA 19083, USA",
+      "start_location": {
+        "lat": 39.9810607,
+        "lng": -75.30976489999999
+      },
+      "steps": [
+        {
+          "distance": {
+            "text": "0.2 mi",
+            "value": 278
+          },
+          "duration": {
+            "text": "4 mins",
+            "value": 247
+          },
+          "end_location": {
+            "lat": 39.9832548,
+            "lng": -75.311136
+          },
+          "html_instructions": "Head <b>northwest</b> on <b>Manor Rd</b> toward <b>Wood Ln</b>",
+          "polyline": {
+            "points": "sx_sF~|sjMIFCDC@SNo@h@UPGFA?QPg@`@}@t@IDC@C?E?E@EAm@QMCE?A@A?EBE@WRSPKFA@IHMP"
+          },
+          "start_location": {
+            "lat": 39.9810607,
+            "lng": -75.30976489999999
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "190 ft",
+            "value": 58
+          },
+          "duration": {
+            "text": "1 min",
+            "value": 46
+          },
+          "end_location": {
+            "lat": 39.9833771,
+            "lng": -75.3104389
+          },
+          "html_instructions": "Turn <b>right</b> onto <b>Wood Ln</b>",
+          "maneuver": "turn-right",
+          "polyline": {
+            "points": "if`sFretjMOUAGAE?EAEC{A"
+          },
+          "start_location": {
+            "lat": 39.9832548,
+            "lng": -75.311136
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "0.2 mi",
+            "value": 383
+          },
+          "duration": {
+            "text": "5 mins",
+            "value": 320
+          },
+          "end_location": {
+            "lat": 39.9865976,
+            "lng": -75.3091063
+          },
+          "html_instructions": "Turn <b>left</b> onto <b>Bellemead Ave</b>",
+          "maneuver": "turn-left",
+          "polyline": {
+            "points": "cg`sFfatjMs@SMC]KiAYSGGCE?SGKCQGUGSEWGe@MMEu@SMEi@MQGA?sA]SIECMKQY"
+          },
+          "start_location": {
+            "lat": 39.9833771,
+            "lng": -75.3104389
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "0.9 mi",
+            "value": 1452
+          },
+          "duration": {
+            "text": "21 mins",
+            "value": 1274
+          },
+          "end_location": {
+            "lat": 39.9943855,
+            "lng": -75.32229219999999
+          },
+          "html_instructions": "Turn <b>left</b> onto <b>Darby Rd</b>",
+          "maneuver": "turn-left",
+          "polyline": {
+            "points": "g{`sF|xsjMEBIFEDMHMJGDCBONQNQPIHABIJCBOLA?CDKLEFCFGXKPINILILSRa@n@QVDFGXGIMR_@h@CFMLGLGDU^GHADc@r@CDOVCDGLCFGNCJSh@[x@CFa@dACHGNKZGL{@zBGNEHOd@Wl@ABENCHQ`@CHELEHm@|AAFKVGLELeApCIREJELEHSf@?@GNELO\\IVWl@ENEJi@tAIRIPELGLITEJELMZ_@`A_AhCWp@GPMZCDIPA@ABEJKPU`@W\\GFEDIHIJCBCDIJCBe@h@ONOPCBKJIJEBED"
+          },
+          "start_location": {
+            "lat": 39.9865976,
+            "lng": -75.3091063
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "0.4 mi",
+            "value": 581
+          },
+          "duration": {
+            "text": "7 mins",
+            "value": 432
+          },
+          "end_location": {
+            "lat": 39.9971071,
+            "lng": -75.31654689999999
+          },
+          "html_instructions": "Turn <b>right</b> onto <b>Ardmore Ave</b>",
+          "maneuver": "turn-right",
+          "polyline": {
+            "points": "}kbsFhkvjMKSKLK[ACKYK]IWK[EOISGQACQg@EKKYg@wAGQEOIWGOEMK[Yw@GUQc@EOGSEIUo@M_@?AM[CIGOKYOa@M]GOGKCI?AKWOa@ACACEKISOg@IQCKEIIUEMKU"
+          },
+          "start_location": {
+            "lat": 39.9943855,
+            "lng": -75.32229219999999
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "489 ft",
+            "value": 149
+          },
+          "duration": {
+            "text": "2 mins",
+            "value": 121
+          },
+          "end_location": {
+            "lat": 39.9983066,
+            "lng": -75.3161968
+          },
+          "html_instructions": "Turn <b>left</b> toward <b>Tunbridge Rd</b>",
+          "maneuver": "turn-left",
+          "polyline": {
+            "points": "}|bsFlgujMSKGDMDQBU@C?YAE?E@GBMJC@C@E@KAECIGKQGGAAMQGSGQ"
+          },
+          "start_location": {
+            "lat": 39.9971071,
+            "lng": -75.31654689999999
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "33 ft",
+            "value": 10
+          },
+          "duration": {
+            "text": "1 min",
+            "value": 9
+          },
+          "end_location": {
+            "lat": 39.99835119999999,
+            "lng": -75.3162964
+          },
+          "html_instructions": "Turn <b>left</b> onto <b>Tunbridge Rd</b>",
+          "maneuver": "turn-left",
+          "polyline": {
+            "points": "mdcsFfeujMGR"
+          },
+          "start_location": {
+            "lat": 39.9983066,
+            "lng": -75.3161968
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "0.2 mi",
+            "value": 281
+          },
+          "duration": {
+            "text": "4 mins",
+            "value": 261
+          },
+          "end_location": {
+            "lat": 40.0006849,
+            "lng": -75.3153701
+          },
+          "html_instructions": "Turn <b>right</b> onto <b>Taylor Ln</b>",
+          "maneuver": "turn-right",
+          "polyline": {
+            "points": "udcsFzeujMMGIGcBeAEEECcBgAGEEGGECAA?IAcA?cBBA?U@"
+          },
+          "start_location": {
+            "lat": 39.99835119999999,
+            "lng": -75.3162964
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "217 ft",
+            "value": 66
+          },
+          "duration": {
+            "text": "1 min",
+            "value": 58
+          },
+          "end_location": {
+            "lat": 40.0006153,
+            "lng": -75.3161365
+          },
+          "html_instructions": "Turn <b>left</b> onto <b>Exeter Rd</b><div style=\"font-size:0.9em\">Destination will be on the right</div>",
+          "maneuver": "turn-left",
+          "polyline": {
+            "points": "gscsF``ujM?R@H@L@N@L?L@R@Z?J?D"
+          },
+          "start_location": {
+            "lat": 40.0006849,
+            "lng": -75.3153701
+          },
+          "travel_mode": "WALKING"
+        }
+      ],
+      "traffic_speed_entry": [],
+      "via_waypoint": []
+    }
+  },
+  {
+    "street": "Gladstone Road",
+    "cross_a": "Edmonds Avenue",
+    "cross_b": "North Drexel Avenue",
+    "coordinates": [
+      [
+        -75.3104673,
+        39.9637641
+      ],
+      [
+        -75.311456,
+        39.9632986
+      ],
+      [
+        -75.3124345,
+        39.9628776
+      ],
+      [
+        -75.3135074,
+        39.9625092
+      ],
+      [
+        -75.3144878,
+        39.9620706
+      ],
+      [
+        -75.3155129,
+        39.9615628
+      ]
+    ],
+    "midpoint": [
+      -75.31300431549731,
+      39.96268194506963
+    ],
+    "bearing": 187.52268703845357,
+    "whole_street": true,
+    "length_m": 496.1,
+    "covered_25m_pct": 5.0,
+    "max_gap_m": 212.8,
+    "navigation_address": "215a Gladstone Rd, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.3126547,
+      39.96269789999999
+    ],
+    "walking_metres": 2989,
+    "one_way_miles": 1.9,
+    "geocode": {
+      "address_components": [
+        {
+          "long_name": "215a",
+          "short_name": "215a",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "Gladstone Road",
+          "short_name": "Gladstone Rd",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Havertown",
+          "short_name": "Havertown",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Haverford Township",
+          "short_name": "Haverford Township",
+          "types": [
+            "administrative_area_level_3",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Delaware County",
+          "short_name": "Delaware County",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Pennsylvania",
+          "short_name": "PA",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "United States",
+          "short_name": "US",
+          "types": [
+            "country",
+            "political"
+          ]
+        },
+        {
+          "long_name": "19083",
+          "short_name": "19083",
+          "types": [
+            "postal_code"
+          ]
+        }
+      ],
+      "formatted_address": "215a Gladstone Rd, Havertown, PA 19083, USA",
+      "geometry": {
+        "location": {
+          "lat": 39.96269789999999,
+          "lng": -75.3126547
+        },
+        "location_type": "ROOFTOP",
+        "viewport": {
+          "northeast": {
+            "lat": 39.9641000302915,
+            "lng": -75.31133676970848
+          },
+          "southwest": {
+            "lat": 39.9614020697085,
+            "lng": -75.3140347302915
+          }
+        }
+      },
+      "place_id": "ChIJS_0opb7BxokRMZk1O3oNAmo",
+      "types": [
+        "street_address",
+        "subpremise"
+      ]
+    },
+    "walking_route": {
+      "distance": {
+        "text": "1.9 mi",
+        "value": 2989
+      },
+      "duration": {
+        "text": "42 mins",
+        "value": 2515
+      },
+      "end_address": "215a Gladstone Rd, Havertown, PA 19083, USA",
+      "end_location": {
+        "lat": 39.96277509999999,
+        "lng": -75.312699
+      },
+      "start_address": "1700 Manor Rd, Havertown, PA 19083, USA",
+      "start_location": {
+        "lat": 39.9810607,
+        "lng": -75.30976489999999
+      },
+      "steps": [
+        {
+          "distance": {
+            "text": "0.2 mi",
+            "value": 283
+          },
+          "duration": {
+            "text": "4 mins",
+            "value": 248
+          },
+          "end_location": {
+            "lat": 39.978969,
+            "lng": -75.3080512
+          },
+          "html_instructions": "Head <b>southeast</b> on <b>Manor Rd</b> toward <b>Belvedere Ave</b>/<wbr/><b>Fairfield Rd</b>",
+          "polyline": {
+            "points": "sx_sF~|sjMBAJI@CFGJEBCFKLSDGDGBA@A@C@?FELKj@a@BAPO\\Ub@Yn@c@NMDA?AfBkABC"
+          },
+          "start_location": {
+            "lat": 39.9810607,
+            "lng": -75.30976489999999
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "0.2 mi",
+            "value": 296
+          },
+          "duration": {
+            "text": "4 mins",
+            "value": 220
+          },
+          "end_location": {
+            "lat": 39.977695,
+            "lng": -75.3107642
+          },
+          "html_instructions": "Turn <b>right</b> onto <b>Princeton Rd</b>",
+          "maneuver": "turn-right",
+          "polyline": {
+            "points": "qk_sFhrsjMBFFR@@Nd@b@pA@@BHBHZF@F?BBN?@@BDL?@@BDLN^Rb@HN@@BBFL`@f@FHFNBD?@DHDJ@H@B?B?F?FCV?H?F@J@D"
+          },
+          "start_location": {
+            "lat": 39.978969,
+            "lng": -75.3080512
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "456 ft",
+            "value": 139
+          },
+          "duration": {
+            "text": "2 mins",
+            "value": 131
+          },
+          "end_location": {
+            "lat": 39.9769952,
+            "lng": -75.31216429999999
+          },
+          "html_instructions": "<b>Princeton Rd</b> turns slightly <b>left</b> and becomes <b>Lincoln Ave</b>",
+          "polyline": {
+            "points": "qc_sFfctjMHLNRDF^dAFPFTDLBD?@f@vAFP"
+          },
+          "start_location": {
+            "lat": 39.977695,
+            "lng": -75.3107642
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "0.3 mi",
+            "value": 428
+          },
+          "duration": {
+            "text": "6 mins",
+            "value": 350
+          },
+          "end_location": {
+            "lat": 39.9737751,
+            "lng": -75.3097014
+          },
+          "html_instructions": "Turn <b>left</b> onto <b>Upland Rd</b>",
+          "maneuver": "turn-left",
+          "polyline": {
+            "points": "g__sF~ktjMNIFEDERMBADEFGVONKBCPKDCNK@AzAeAFETQ@ARMf@_@@ADCBARMVSFEJIBC@?hAw@|@o@DE@?TQNKd@]BC"
+          },
+          "start_location": {
+            "lat": 39.9769952,
+            "lng": -75.31216429999999
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "0.2 mi",
+            "value": 380
+          },
+          "duration": {
+            "text": "6 mins",
+            "value": 343
+          },
+          "end_location": {
+            "lat": 39.9719449,
+            "lng": -75.3137878
+          },
+          "html_instructions": "Turn <b>right</b> onto <b>N Manoa Rd</b>",
+          "maneuver": "turn-right",
+          "polyline": {
+            "points": "ck~rFr|sjMJT@D\\|@FN@DZz@BD?@FPDJb@hAZz@BFJTBD`@hABFBHBDBJJZDH@DHV@FDJDJTp@@FDHDN@D@DFNADDJd@`B"
+          },
+          "start_location": {
+            "lat": 39.9737751,
+            "lng": -75.3097014
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "118 ft",
+            "value": 36
+          },
+          "duration": {
+            "text": "1 min",
+            "value": 40
+          },
+          "end_location": {
+            "lat": 39.9718757,
+            "lng": -75.3139692
+          },
+          "html_instructions": "Slight <b>right</b> onto <b>West Chester Pike</b>",
+          "maneuver": "turn-slight-right",
+          "polyline": {
+            "points": "s_~rFdvtjMCTABJA@?@?@J"
+          },
+          "start_location": {
+            "lat": 39.9719449,
+            "lng": -75.3137878
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "0.3 mi",
+            "value": 440
+          },
+          "duration": {
+            "text": "6 mins",
+            "value": 383
+          },
+          "end_location": {
+            "lat": 39.9698837,
+            "lng": -75.31803169999999
+          },
+          "html_instructions": "Slight <b>left</b> onto <b>S Manoa Rd</b>",
+          "maneuver": "turn-slight-left",
+          "polyline": {
+            "points": "g_~rFhwtjMF?B?JVDNVt@FLPh@\\fA@BBDZ`ABFHV@DVt@Nd@`AtCDJDL@DJV~@rCFNC?DNBF@?AABAPEDA@@"
+          },
+          "start_location": {
+            "lat": 39.9718757,
+            "lng": -75.3139692
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "0.3 mi",
+            "value": 522
+          },
+          "duration": {
+            "text": "7 mins",
+            "value": 420
+          },
+          "end_location": {
+            "lat": 39.96584259999999,
+            "lng": -75.31506159999999
+          },
+          "html_instructions": "Turn <b>left</b> onto <b>Furlong Ave</b>",
+          "maneuver": "turn-left",
+          "polyline": {
+            "points": "wr}rFtpujMHGDCLIzAcABAJG@A`@Ud@[NK^Uf@]JGBCjAu@BCNMFCNM^U^W@ABABCDCLKBABABCFEFELGFEd@[DC@AHGLIBCBA\\Uv@i@BCBANKTODCA?LK"
+          },
+          "start_location": {
+            "lat": 39.9698837,
+            "lng": -75.31803169999999
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "128 ft",
+            "value": 39
+          },
+          "duration": {
+            "text": "1 min",
+            "value": 39
+          },
+          "end_location": {
+            "lat": 39.9659764,
+            "lng": -75.3147558
+          },
+          "html_instructions": "Turn <b>left</b> onto <b>Steel Rd</b>",
+          "maneuver": "turn-left",
+          "polyline": {
+            "points": "oy|rFb~tjMUq@EI"
+          },
+          "start_location": {
+            "lat": 39.96584259999999,
+            "lng": -75.31506159999999
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "0.2 mi",
+            "value": 398
+          },
+          "duration": {
+            "text": "5 mins",
+            "value": 316
+          },
+          "end_location": {
+            "lat": 39.9628642,
+            "lng": -75.3124414
+          },
+          "html_instructions": "Turn <b>right</b> onto <b>Concord Ave</b>",
+          "maneuver": "turn-right",
+          "polyline": {
+            "points": "kz|rFf|tjMJIh@]BCFE@ArA{@LK\\UfAu@HEHGJGRMFGDCBA\\WTODCBAROFEBA\\Wh@]h@_@ZSFGDALKHGJG"
+          },
+          "start_location": {
+            "lat": 39.9659764,
+            "lng": -75.3147558
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "92 ft",
+            "value": 28
+          },
+          "duration": {
+            "text": "1 min",
+            "value": 25
+          },
+          "end_location": {
+            "lat": 39.96277509999999,
+            "lng": -75.312699
+          },
+          "html_instructions": "Turn <b>right</b> onto <b>Gladstone Rd</b><div style=\"font-size:0.9em\">Destination will be on the right</div>",
+          "maneuver": "turn-right",
+          "polyline": {
+            "points": "{f|rFvmtjMBJFZBJ"
+          },
+          "start_location": {
+            "lat": 39.9628642,
+            "lng": -75.3124414
+          },
+          "travel_mode": "WALKING"
+        }
+      ],
+      "traffic_speed_entry": [],
+      "via_waypoint": []
+    }
+  },
+  {
+    "street": "Fairlamb Avenue",
+    "cross_a": "street end",
+    "cross_b": "Windsor Park Lane",
+    "coordinates": [
+      [
+        -75.3235469,
+        39.9736871
+      ],
+      [
+        -75.323581,
+        39.9735677
+      ],
+      [
+        -75.3236309,
+        39.973393
+      ],
+      [
+        -75.3236557,
+        39.973335
+      ],
+      [
+        -75.323694,
+        39.9732872
+      ],
+      [
+        -75.3237402,
+        39.9732481
+      ],
+      [
+        -75.3238,
+        39.9732158
+      ],
+      [
+        -75.326279,
+        39.9721659
+      ],
+      [
+        -75.3291886,
+        39.9709425
+      ],
+      [
+        -75.3318151,
+        39.9697979
+      ]
+    ],
+    "midpoint": [
+      -75.32751593431107,
+      39.97164582027591
+    ],
+    "bearing": 235.5674015115966,
+    "whole_street": true,
+    "length_m": 841.1,
+    "covered_25m_pct": 5.3,
+    "max_gap_m": 84.8,
+    "navigation_address": "214 Fairlamb Ave, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.3276186,
+      39.971875
+    ],
+    "walking_metres": 2364,
+    "one_way_miles": 1.5,
+    "geocode": {
+      "address_components": [
+        {
+          "long_name": "214",
+          "short_name": "214",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "Fairlamb Avenue",
+          "short_name": "Fairlamb Ave",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Havertown",
+          "short_name": "Havertown",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Haverford Township",
+          "short_name": "Haverford Township",
+          "types": [
+            "administrative_area_level_3",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Delaware County",
+          "short_name": "Delaware County",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Pennsylvania",
+          "short_name": "PA",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "United States",
+          "short_name": "US",
+          "types": [
+            "country",
+            "political"
+          ]
+        },
+        {
+          "long_name": "19083",
+          "short_name": "19083",
+          "types": [
+            "postal_code"
+          ]
+        },
+        {
+          "long_name": "2823",
+          "short_name": "2823",
+          "types": [
+            "postal_code_suffix"
+          ]
+        }
+      ],
+      "formatted_address": "214 Fairlamb Ave, Havertown, PA 19083, USA",
+      "geometry": {
+        "bounds": {
+          "northeast": {
+            "lat": 39.9719279,
+            "lng": -75.3275323
+          },
+          "southwest": {
+            "lat": 39.9718128,
+            "lng": -75.3277049
+          }
+        },
+        "location": {
+          "lat": 39.971875,
+          "lng": -75.3276186
+        },
+        "location_type": "ROOFTOP",
+        "viewport": {
+          "northeast": {
+            "lat": 39.9731404302915,
+            "lng": -75.32624201970849
+          },
+          "southwest": {
+            "lat": 39.9704424697085,
+            "lng": -75.32893998029151
+          }
+        }
+      },
+      "place_id": "ChIJnzSzvc_BxokRp0HsavfcNgw",
+      "types": [
+        "premise",
+        "street_address"
+      ]
+    },
+    "walking_route": {
+      "distance": {
+        "text": "1.5 mi",
+        "value": 2364
+      },
+      "duration": {
+        "text": "33 mins",
+        "value": 2007
+      },
+      "end_address": "214 Fairlamb Ave, Havertown, PA 19083, USA",
+      "end_location": {
+        "lat": 39.9717022,
+        "lng": -75.3275117
+      },
+      "start_address": "1700 Manor Rd, Havertown, PA 19083, USA",
+      "start_location": {
+        "lat": 39.9810607,
+        "lng": -75.30976489999999
+      },
+      "steps": [
+        {
+          "distance": {
+            "text": "0.2 mi",
+            "value": 283
+          },
+          "duration": {
+            "text": "4 mins",
+            "value": 248
+          },
+          "end_location": {
+            "lat": 39.978969,
+            "lng": -75.3080512
+          },
+          "html_instructions": "Head <b>southeast</b> on <b>Manor Rd</b> toward <b>Belvedere Ave</b>/<wbr/><b>Fairfield Rd</b>",
+          "polyline": {
+            "points": "sx_sF~|sjMBAJI@CFGJEBCFKLSDGDGBA@A@C@?FELKj@a@BAPO\\Ub@Yn@c@NMDA?AfBkABC"
+          },
+          "start_location": {
+            "lat": 39.9810607,
+            "lng": -75.30976489999999
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "0.2 mi",
+            "value": 296
+          },
+          "duration": {
+            "text": "4 mins",
+            "value": 220
+          },
+          "end_location": {
+            "lat": 39.977695,
+            "lng": -75.3107642
+          },
+          "html_instructions": "Turn <b>right</b> onto <b>Princeton Rd</b>",
+          "maneuver": "turn-right",
+          "polyline": {
+            "points": "qk_sFhrsjMBFFR@@Nd@b@pA@@BHBHZF@F?BBN?@@BDL?@@BDLN^Rb@HN@@BBFL`@f@FHFNBD?@DHDJ@H@B?B?F?FCV?H?F@J@D"
+          },
+          "start_location": {
+            "lat": 39.978969,
+            "lng": -75.3080512
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "0.2 mi",
+            "value": 315
+          },
+          "duration": {
+            "text": "5 mins",
+            "value": 294
+          },
+          "end_location": {
+            "lat": 39.9761941,
+            "lng": -75.3139605
+          },
+          "html_instructions": "<b>Princeton Rd</b> turns slightly <b>left</b> and becomes <b>Lincoln Ave</b>",
+          "polyline": {
+            "points": "qc_sFfctjMHLNRDF^dAFPFTDLBD?@f@vAFPJVFRPf@b@nAVv@n@jBN^"
+          },
+          "start_location": {
+            "lat": 39.977695,
+            "lng": -75.3107642
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "59 ft",
+            "value": 18
+          },
+          "duration": {
+            "text": "1 min",
+            "value": 17
+          },
+          "end_location": {
+            "lat": 39.9764398,
+            "lng": -75.3141562
+          },
+          "html_instructions": "Turn <b>right</b> onto <b>Shelbourne Rd</b>",
+          "maneuver": "turn-right",
+          "polyline": {
+            "points": "ez~rFfwtjMQJSLKL"
+          },
+          "start_location": {
+            "lat": 39.9761941,
+            "lng": -75.3139605
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "0.3 mi",
+            "value": 478
+          },
+          "duration": {
+            "text": "7 mins",
+            "value": 399
+          },
+          "end_location": {
+            "lat": 39.9751217,
+            "lng": -75.31926
+          },
+          "html_instructions": "Turn <b>left</b> onto <b>Lincoln Ave</b>",
+          "maneuver": "turn-left",
+          "polyline": {
+            "points": "w{~rFnxtjMHRPt@J\\DN@@DLn@lBn@jBJRBFjBtFVx@@FFP@BBJBHAH?DAHEf@Kx@AJ?FCLCVEb@ADALAHI`@"
+          },
+          "start_location": {
+            "lat": 39.9764398,
+            "lng": -75.3141562
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "0.1 mi",
+            "value": 172
+          },
+          "duration": {
+            "text": "3 mins",
+            "value": 156
+          },
+          "end_location": {
+            "lat": 39.9735152,
+            "lng": -75.319634
+          },
+          "html_instructions": "Turn <b>left</b> onto <b>N Eagle Rd</b>",
+          "maneuver": "turn-left",
+          "polyline": {
+            "points": "os~rFjxujMNBTB?@F?B@B?D@D?PDRDTARBB@NDFBNBD?PFH@D@H@XDP?b@H"
+          },
+          "start_location": {
+            "lat": 39.9751217,
+            "lng": -75.31926
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "62 ft",
+            "value": 19
+          },
+          "duration": {
+            "text": "1 min",
+            "value": 15
+          },
+          "end_location": {
+            "lat": 39.9735358,
+            "lng": -75.3197685
+          },
+          "html_instructions": "Turn <b>right</b> toward <b>West Chester Pike</b>",
+          "maneuver": "turn-right",
+          "polyline": {
+            "points": "oi~rFtzujM?FAF?DAD"
+          },
+          "start_location": {
+            "lat": 39.9735152,
+            "lng": -75.319634
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "46 ft",
+            "value": 14
+          },
+          "duration": {
+            "text": "1 min",
+            "value": 11
+          },
+          "end_location": {
+            "lat": 39.9734152,
+            "lng": -75.31981999999999
+          },
+          "html_instructions": "Turn <b>left</b> toward <b>West Chester Pike</b>",
+          "maneuver": "turn-left",
+          "polyline": {
+            "points": "si~rFp{ujMVH"
+          },
+          "start_location": {
+            "lat": 39.9735358,
+            "lng": -75.3197685
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "151 ft",
+            "value": 46
+          },
+          "duration": {
+            "text": "1 min",
+            "value": 35
+          },
+          "end_location": {
+            "lat": 39.9733319,
+            "lng": -75.3201517
+          },
+          "html_instructions": "Turn <b>right</b> toward <b>West Chester Pike</b>",
+          "maneuver": "turn-right",
+          "polyline": {
+            "points": "{h~rFz{ujMGj@@JF@NF"
+          },
+          "start_location": {
+            "lat": 39.9734152,
+            "lng": -75.31981999999999
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "0.1 mi",
+            "value": 165
+          },
+          "duration": {
+            "text": "2 mins",
+            "value": 129
+          },
+          "end_location": {
+            "lat": 39.9736974,
+            "lng": -75.3222929
+          },
+          "html_instructions": "Turn <b>right</b> onto <b>West Chester Pike</b>",
+          "maneuver": "turn-right",
+          "polyline": {
+            "points": "ih~rF|}ujMQhBAPKdAIt@EVSjBEn@"
+          },
+          "start_location": {
+            "lat": 39.9733319,
+            "lng": -75.3201517
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "62 ft",
+            "value": 19
+          },
+          "duration": {
+            "text": "1 min",
+            "value": 29
+          },
+          "end_location": {
+            "lat": 39.9734041,
+            "lng": -75.32233
+          },
+          "html_instructions": "Turn <b>left</b> onto <b>Glendale Rd</b>",
+          "maneuver": "turn-left",
+          "polyline": {
+            "points": "sj~rFhkvjMTABSJBANVH"
+          },
+          "start_location": {
+            "lat": 39.9736974,
+            "lng": -75.3222929
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "407 ft",
+            "value": 124
+          },
+          "duration": {
+            "text": "2 mins",
+            "value": 116
+          },
+          "end_location": {
+            "lat": 39.973635,
+            "lng": -75.32362719999999
+          },
+          "html_instructions": "Turn <b>right</b> onto <b>West Chester Pike</b>",
+          "maneuver": "turn-right",
+          "polyline": {
+            "points": "wh~rFpkvjMGd@CZQ~AE\\Gl@CT"
+          },
+          "start_location": {
+            "lat": 39.9734041,
+            "lng": -75.32233
+          },
+          "travel_mode": "WALKING"
+        },
+        {
+          "distance": {
+            "text": "0.3 mi",
+            "value": 415
+          },
+          "duration": {
+            "text": "6 mins",
+            "value": 338
+          },
+          "end_location": {
+            "lat": 39.9717022,
+            "lng": -75.3275117
+          },
+          "html_instructions": "Turn <b>left</b> onto <b>Fairlamb Ave</b><div style=\"font-size:0.9em\">Destination will be on the right</div>",
+          "maneuver": "turn-left",
+          "polyline": {
+            "points": "gj~rFtsvjMNBTFRDDB@BBBBDBFNd@`@lAX~@FP^hATt@@DBDNd@BH@Bb@vABDFVFNPh@Lb@FPNd@?@JV@D@B?B@@?@L\\"
+          },
+          "start_location": {
+            "lat": 39.973635,
+            "lng": -75.32362719999999
+          },
+          "travel_mode": "WALKING"
+        }
+      ],
+      "traffic_speed_entry": [],
+      "via_waypoint": []
+    }
+  }
+]

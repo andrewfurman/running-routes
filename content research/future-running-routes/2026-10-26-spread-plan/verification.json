@@ -1,0 +1,14 @@
+{
+  "run_count": 1870,
+  "bike_count": 530,
+  "calendar_readbacks": 7,
+  "weekday_dates_in_all_titles": true,
+  "numbered_addresses_match_map": true,
+  "minimum_target_separation_m": 1131,
+  "walking_approach_overlaps": 0,
+  "minimum_consecutive_bearing_change_degrees": 117.3,
+  "both_shells_idempotent": true,
+  "run_bike_switcher_verified_in_chrome": true,
+  "info_dialog_verified_in_chrome": true,
+  "google_default_osm_fallback_unchanged": true
+}

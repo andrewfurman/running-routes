@@ -1,0 +1,16 @@
+{
+  "calendar_events_saved_and_read_back": 8,
+  "future_targets": 6,
+  "running_gps_tracks": 1872,
+  "citystrides_confirmed_monroe_complete": true,
+  "monroe_samples_within_15m_pct": 100.0,
+  "sunday_pre_work_and_dst_verified": true,
+  "upcoming_approach_exceptions": [
+    "Dover Road 2.06 mi, previously approved"
+  ],
+  "chestnut_known_previous_coverage_25m_pct": 33.5,
+  "raw_gpx_and_preview_r2_sha_verified": true,
+  "javascript_syntax_and_python_compile": true,
+  "full_map_chrome_rendered": true,
+  "bike_data_unchanged": true
+}

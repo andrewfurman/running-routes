@@ -1,0 +1,2286 @@
+{
+  "id": "02-holmes",
+  "street": "Holmes Avenue",
+  "ends": [
+    109816446,
+    110139289
+  ],
+  "title": "Holmes Avenue circle",
+  "miles": 3.015,
+  "node_ids": [
+    109794370,
+    4108231862,
+    109794359,
+    109794352,
+    109794341,
+    1479127331,
+    1479127315,
+    12852043409,
+    109759206,
+    1479127357,
+    1479127365,
+    1479127372,
+    13270584215,
+    1479127283,
+    12955342526,
+    1479127362,
+    1479127380,
+    1479127414,
+    1479127416,
+    1479127183,
+    1479127419,
+    1479127355,
+    1479127328,
+    1479127249,
+    109816416,
+    531736617,
+    1479127408,
+    1479127368,
+    1479127246,
+    109816421,
+    531736620,
+    109816425,
+    1479127445,
+    531736623,
+    1479127175,
+    531736624,
+    109816429,
+    109816436,
+    109816446,
+    109925609,
+    110139289,
+    531640950,
+    110056216,
+    531640942,
+    109925540,
+    13432759588,
+    109920479,
+    1324867044,
+    1324867035,
+    109815395,
+    6694874865,
+    110057082,
+    531648701,
+    531648697,
+    531648694,
+    531648691,
+    110057115,
+    12214903563,
+    109843742,
+    531737590,
+    1479127391,
+    1479127187,
+    7400670867,
+    109843728,
+    1479127316,
+    531737587,
+    1479127208,
+    6847173493,
+    11307050425,
+    11307050422,
+    109843715,
+    1479127339,
+    1479127377,
+    1479127451,
+    1479127432,
+    1479127260,
+    1479127431,
+    1479127400,
+    5543589823,
+    13556415659,
+    13298143685,
+    10861377024,
+    5543589832,
+    1479127211,
+    9039602198,
+    109833158,
+    109804633,
+    5543589838,
+    5543589562,
+    5543589559,
+    13136756672,
+    109843702,
+    13136756689,
+    531682577,
+    5543589557,
+    531682567,
+    5543589572,
+    5543589566,
+    5277586378,
+    8049734035,
+    8049734030,
+    4234517991,
+    13556415655,
+    13341546031,
+    531682557,
+    13341546030,
+    13361807821,
+    5543589610,
+    4234517992,
+    5543589604,
+    4108233397,
+    13904420767,
+    6902884463,
+    5543589585,
+    6902884468,
+    5543589577,
+    109830873,
+    5543589580,
+    13846287405,
+    5543589576,
+    5543589590,
+    109830864,
+    10565409020,
+    5543589544,
+    5543589545,
+    109830856,
+    846654384,
+    13348064867,
+    5543308890,
+    5543589542,
+    5543308889,
+    5543308887,
+    5543308885,
+    5543308883,
+    5543308873,
+    13348064864,
+    5543308868,
+    109830842,
+    5543308867,
+    5543308876,
+    5543308848,
+    5543308850,
+    5543308846,
+    5543308857,
+    5543308856,
+    5543308860,
+    5543308894,
+    5543308900,
+    5543308903,
+    1211002243,
+    4234517995,
+    1211002389,
+    13136756617,
+    109830832,
+    13136756534,
+    1211002295,
+    5543308914,
+    1211002353,
+    1211002423,
+    5543308919,
+    1211002285,
+    110017456,
+    9882484455,
+    7977687390,
+    109811597,
+    7890685946,
+    918912412,
+    531684896,
+    13432833237,
+    531684891,
+    5543589534,
+    531684887,
+    110046798,
+    110132862,
+    110152106,
+    4108231886,
+    110057926,
+    4108231875,
+    109825183,
+    110151610,
+    110152090,
+    109794370
+  ],
+  "coordinates": [
+    [
+      -75.3095635,
+      39.9809343
+    ],
+    [
+      -75.3093063,
+      39.9807458
+    ],
+    [
+      -75.3089255,
+      39.9802595
+    ],
+    [
+      -75.3084514,
+      39.9796028
+    ],
+    [
+      -75.3079582,
+      39.9789465
+    ],
+    [
+      -75.3088658,
+      39.9785414
+    ],
+    [
+      -75.3088495,
+      39.978487
+    ],
+    [
+      -75.3088731,
+      39.9784769
+    ],
+    [
+      -75.3089722,
+      39.9784347
+    ],
+    [
+      -75.3091309,
+      39.978403
+    ],
+    [
+      -75.3092312,
+      39.9783596
+    ],
+    [
+      -75.3093461,
+      39.9783035
+    ],
+    [
+      -75.3096025,
+      39.978158
+    ],
+    [
+      -75.3096736,
+      39.9781177
+    ],
+    [
+      -75.3099707,
+      39.9779071
+    ],
+    [
+      -75.3102795,
+      39.9777064
+    ],
+    [
+      -75.3103308,
+      39.977686
+    ],
+    [
+      -75.3103672,
+      39.9776834
+    ],
+    [
+      -75.3104023,
+      39.9776797
+    ],
+    [
+      -75.3104399,
+      39.9776836
+    ],
+    [
+      -75.3105498,
+      39.9776898
+    ],
+    [
+      -75.3105954,
+      39.9776874
+    ],
+    [
+      -75.3106357,
+      39.9776854
+    ],
+    [
+      -75.3107242,
+      39.9776998
+    ],
+    [
+      -75.3108172,
+      39.97766
+    ],
+    [
+      -75.3111657,
+      39.978076
+    ],
+    [
+      -75.3112279,
+      39.9781391
+    ],
+    [
+      -75.3112794,
+      39.9781733
+    ],
+    [
+      -75.3113349,
+      39.9782027
+    ],
+    [
+      -75.3115167,
+      39.9782658
+    ],
+    [
+      -75.3137578,
+      39.9788521
+    ],
+    [
+      -75.3140309,
+      39.9789025
+    ],
+    [
+      -75.3145597,
+      39.9789587
+    ],
+    [
+      -75.3148204,
+      39.978987
+    ],
+    [
+      -75.3149236,
+      39.9790033
+    ],
+    [
+      -75.3151139,
+      39.9790428
+    ],
+    [
+      -75.3158247,
+      39.9792233
+    ],
+    [
+      -75.3184237,
+      39.9798524
+    ],
+    [
+      -75.321312,
+      39.9805795
+    ],
+    [
+      -75.3216364,
+      39.9798273
+    ],
+    [
+      -75.3219587,
+      39.979065
+    ],
+    [
+      -75.3226154,
+      39.9792174
+    ],
+    [
+      -75.3228283,
+      39.9792841
+    ],
+    [
+      -75.3229742,
+      39.9793779
+    ],
+    [
+      -75.3234492,
+      39.9798655
+    ],
+    [
+      -75.3235027,
+      39.9799158
+    ],
+    [
+      -75.3240938,
+      39.9804715
+    ],
+    [
+      -75.3244928,
+      39.9808442
+    ],
+    [
+      -75.32458,
+      39.9809189
+    ],
+    [
+      -75.3246441,
+      39.9809528
+    ],
+    [
+      -75.3249734,
+      39.9810805
+    ],
+    [
+      -75.3252058,
+      39.9811076
+    ],
+    [
+      -75.3251801,
+      39.9813049
+    ],
+    [
+      -75.3251801,
+      39.9815153
+    ],
+    [
+      -75.3252316,
+      39.9817192
+    ],
+    [
+      -75.325326,
+      39.9819034
+    ],
+    [
+      -75.3256975,
+      39.9823266
+    ],
+    [
+      -75.3260936,
+      39.9827747
+    ],
+    [
+      -75.3261631,
+      39.9828533
+    ],
+    [
+      -75.3256567,
+      39.9830866
+    ],
+    [
+      -75.3255646,
+      39.9831272
+    ],
+    [
+      -75.32545,
+      39.9831657
+    ],
+    [
+      -75.3253513,
+      39.9831933
+    ],
+    [
+      -75.3253158,
+      39.9832032
+    ],
+    [
+      -75.3251921,
+      39.9832333
+    ],
+    [
+      -75.3250421,
+      39.983255
+    ],
+    [
+      -75.3248821,
+      39.9832756
+    ],
+    [
+      -75.324783,
+      39.9832854
+    ],
+    [
+      -75.3246982,
+      39.9832938
+    ],
+    [
+      -75.324505,
+      39.983313
+    ],
+    [
+      -75.3230609,
+      39.9834564
+    ],
+    [
+      -75.3228456,
+      39.9834638
+    ],
+    [
+      -75.3227663,
+      39.9834634
+    ],
+    [
+      -75.3226745,
+      39.9834615
+    ],
+    [
+      -75.322575,
+      39.9834526
+    ],
+    [
+      -75.3225535,
+      39.9834496
+    ],
+    [
+      -75.3224893,
+      39.9834407
+    ],
+    [
+      -75.3223068,
+      39.983403
+    ],
+    [
+      -75.322068,
+      39.9833416
+    ],
+    [
+      -75.321555,
+      39.9832096
+    ],
+    [
+      -75.3213881,
+      39.9831667
+    ],
+    [
+      -75.3210051,
+      39.9830682
+    ],
+    [
+      -75.3205462,
+      39.9829502
+    ],
+    [
+      -75.3202582,
+      39.9828761
+    ],
+    [
+      -75.3199368,
+      39.9827935
+    ],
+    [
+      -75.3197642,
+      39.9827523
+    ],
+    [
+      -75.3189642,
+      39.9826134
+    ],
+    [
+      -75.3187669,
+      39.9825782
+    ],
+    [
+      -75.318681,
+      39.9825629
+    ],
+    [
+      -75.3184849,
+      39.982528
+    ],
+    [
+      -75.3181998,
+      39.9824772
+    ],
+    [
+      -75.3180335,
+      39.9824475
+    ],
+    [
+      -75.3179709,
+      39.982525
+    ],
+    [
+      -75.3179441,
+      39.9825582
+    ],
+    [
+      -75.3177803,
+      39.9827144
+    ],
+    [
+      -75.317718,
+      39.9827738
+    ],
+    [
+      -75.3176835,
+      39.9828023
+    ],
+    [
+      -75.3175942,
+      39.9828758
+    ],
+    [
+      -75.3175369,
+      39.9829231
+    ],
+    [
+      -75.3172778,
+      39.9831367
+    ],
+    [
+      -75.3170357,
+      39.9833363
+    ],
+    [
+      -75.316884,
+      39.9834614
+    ],
+    [
+      -75.3167584,
+      39.983567
+    ],
+    [
+      -75.3165116,
+      39.9837746
+    ],
+    [
+      -75.3163816,
+      39.9838826
+    ],
+    [
+      -75.3163031,
+      39.9839644
+    ],
+    [
+      -75.3161666,
+      39.9840866
+    ],
+    [
+      -75.3160824,
+      39.9841619
+    ],
+    [
+      -75.3159724,
+      39.9842565
+    ],
+    [
+      -75.315887,
+      39.9843269
+    ],
+    [
+      -75.3158606,
+      39.9843438
+    ],
+    [
+      -75.3157802,
+      39.9844129
+    ],
+    [
+      -75.315635,
+      39.9845377
+    ],
+    [
+      -75.3155654,
+      39.9845962
+    ],
+    [
+      -75.3154759,
+      39.9846714
+    ],
+    [
+      -75.3153612,
+      39.9847677
+    ],
+    [
+      -75.3153372,
+      39.9847878
+    ],
+    [
+      -75.3152404,
+      39.9848722
+    ],
+    [
+      -75.315157,
+      39.9849448
+    ],
+    [
+      -75.3150723,
+      39.9850186
+    ],
+    [
+      -75.31499,
+      39.9850889
+    ],
+    [
+      -75.3146229,
+      39.9853836
+    ],
+    [
+      -75.3144174,
+      39.9855409
+    ],
+    [
+      -75.3142511,
+      39.9856687
+    ],
+    [
+      -75.3139774,
+      39.985873
+    ],
+    [
+      -75.3137903,
+      39.9860071
+    ],
+    [
+      -75.3137038,
+      39.9860698
+    ],
+    [
+      -75.3135736,
+      39.9861739
+    ],
+    [
+      -75.3134604,
+      39.9862622
+    ],
+    [
+      -75.3134032,
+      39.9863117
+    ],
+    [
+      -75.3132513,
+      39.9864162
+    ],
+    [
+      -75.3131459,
+      39.9864992
+    ],
+    [
+      -75.3130336,
+      39.9865854
+    ],
+    [
+      -75.3129146,
+      39.9866766
+    ],
+    [
+      -75.3128707,
+      39.9867105
+    ],
+    [
+      -75.3128349,
+      39.9867368
+    ],
+    [
+      -75.3126413,
+      39.986879
+    ],
+    [
+      -75.3125522,
+      39.9869432
+    ],
+    [
+      -75.3124143,
+      39.9870369
+    ],
+    [
+      -75.3123574,
+      39.9870857
+    ],
+    [
+      -75.3122185,
+      39.9871932
+    ],
+    [
+      -75.3121131,
+      39.9872767
+    ],
+    [
+      -75.3119999,
+      39.9873659
+    ],
+    [
+      -75.3119145,
+      39.9874351
+    ],
+    [
+      -75.3118836,
+      39.9874565
+    ],
+    [
+      -75.3117961,
+      39.9875228
+    ],
+    [
+      -75.3116341,
+      39.9876392
+    ],
+    [
+      -75.3115306,
+      39.9877224
+    ],
+    [
+      -75.3113826,
+      39.9878412
+    ],
+    [
+      -75.3112795,
+      39.987924
+    ],
+    [
+      -75.3112621,
+      39.987938
+    ],
+    [
+      -75.3111564,
+      39.9880135
+    ],
+    [
+      -75.3110113,
+      39.9881138
+    ],
+    [
+      -75.3108947,
+      39.9881875
+    ],
+    [
+      -75.3108199,
+      39.9881345
+    ],
+    [
+      -75.3105442,
+      39.9879389
+    ],
+    [
+      -75.3102561,
+      39.9877455
+    ],
+    [
+      -75.3102214,
+      39.9877208
+    ],
+    [
+      -75.3100452,
+      39.9876056
+    ],
+    [
+      -75.3099805,
+      39.9875656
+    ],
+    [
+      -75.3098772,
+      39.9874966
+    ],
+    [
+      -75.3097476,
+      39.9874031
+    ],
+    [
+      -75.3095617,
+      39.9871998
+    ],
+    [
+      -75.3092428,
+      39.9868511
+    ],
+    [
+      -75.309125,
+      39.9867035
+    ],
+    [
+      -75.3090675,
+      39.9866262
+    ],
+    [
+      -75.3090255,
+      39.9865781
+    ],
+    [
+      -75.3091685,
+      39.9864723
+    ],
+    [
+      -75.3092165,
+      39.9864273
+    ],
+    [
+      -75.309265,
+      39.9863819
+    ],
+    [
+      -75.3092972,
+      39.986319
+    ],
+    [
+      -75.309324,
+      39.9862668
+    ],
+    [
+      -75.3095903,
+      39.9855269
+    ],
+    [
+      -75.3098295,
+      39.9848193
+    ],
+    [
+      -75.3102597,
+      39.9836651
+    ],
+    [
+      -75.3103604,
+      39.9834104
+    ],
+    [
+      -75.3103657,
+      39.9833174
+    ],
+    [
+      -75.3103374,
+      39.9832085
+    ],
+    [
+      -75.3100261,
+      39.9828188
+    ],
+    [
+      -75.3094516,
+      39.9820628
+    ],
+    [
+      -75.3088465,
+      39.9812786
+    ],
+    [
+      -75.3095635,
+      39.9809343
+    ]
+  ],
+  "roads": [
+    [
+      "Manor Road",
+      0.162208253366283
+    ],
+    [
+      "Princeton Road",
+      0.055610378344368105
+    ],
+    [
+      "path",
+      0.12179018724427321
+    ],
+    [
+      "Lincoln Avenue",
+      0.005639817535447234
+    ],
+    [
+      "Virginia Avenue",
+      0.6007521143744559
+    ],
+    [
+      "Holmes Avenue",
+      0.11010159652704074
+    ],
+    [
+      "Maryland Avenue",
+      0.23098846203092668
+    ],
+    [
+      "Mount Pleasant Road",
+      0.13545350187392152
+    ],
+    [
+      "Lawrence Road",
+      0.4481890042399903
+    ],
+    [
+      "West Eagle Road",
+      0.5485280717528896
+    ],
+    [
+      "West Darby Road",
+      0.08141110685672556
+    ],
+    [
+      "Darby Road",
+      0.06866986234976774
+    ],
+    [
+      "Bellemead Avenue",
+      0.4010577230920329
+    ],
+    [
+      "Fairfield Road",
+      0.044798397391885694
+    ]
+  ],
+  "target_coordinates": [
+    [
+      -75.321312,
+      39.9805795
+    ],
+    [
+      -75.3216364,
+      39.9798273
+    ],
+    [
+      -75.3219587,
+      39.979065
+    ]
+  ],
+  "status": "planned-unused",
+  "last_used": null,
+  "minimum_reuse_days": 31,
+  "start_finish": "1700 Manor Road, corner of Manor and Fairfield, Havertown",
+  "distance_basis": "OpenStreetMap street geometry; estimated miles, not GPS measurement",
+  "coverage_checked": "2026-10-03",
+  "coverage_method": "Visual inspection of the signed-in CityStrides LifeMap; node completion not verified",
+  "target_label": "Holmes \u00b7 Virginia to Maryland",
+  "coverage_observation": "The middle Holmes section appears uncovered; the north end near Harrington has a purple track.",
+  "evidence": "../evidence/citystrides-west.jpg",
+  "edges": [
+    {
+      "way_id": 78287892,
+      "name": "Manor Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 78287892,
+      "name": "Manor Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 78287892,
+      "name": "Manor Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 78287892,
+      "name": "Manor Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12151988,
+      "name": "Princeton Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 134546169,
+      "name": null,
+      "highway": "path",
+      "access": null,
+      "foot": "yes"
+    },
+    {
+      "way_id": 134546169,
+      "name": null,
+      "highway": "path",
+      "access": null,
+      "foot": "yes"
+    },
+    {
+      "way_id": 134546169,
+      "name": null,
+      "highway": "path",
+      "access": null,
+      "foot": "yes"
+    },
+    {
+      "way_id": 134546169,
+      "name": null,
+      "highway": "path",
+      "access": null,
+      "foot": "yes"
+    },
+    {
+      "way_id": 134546169,
+      "name": null,
+      "highway": "path",
+      "access": null,
+      "foot": "yes"
+    },
+    {
+      "way_id": 134546169,
+      "name": null,
+      "highway": "path",
+      "access": null,
+      "foot": "yes"
+    },
+    {
+      "way_id": 134546169,
+      "name": null,
+      "highway": "path",
+      "access": null,
+      "foot": "yes"
+    },
+    {
+      "way_id": 134546169,
+      "name": null,
+      "highway": "path",
+      "access": null,
+      "foot": "yes"
+    },
+    {
+      "way_id": 134546169,
+      "name": null,
+      "highway": "path",
+      "access": null,
+      "foot": "yes"
+    },
+    {
+      "way_id": 134546169,
+      "name": null,
+      "highway": "path",
+      "access": null,
+      "foot": "yes"
+    },
+    {
+      "way_id": 134546169,
+      "name": null,
+      "highway": "path",
+      "access": null,
+      "foot": "yes"
+    },
+    {
+      "way_id": 134546169,
+      "name": null,
+      "highway": "path",
+      "access": null,
+      "foot": "yes"
+    },
+    {
+      "way_id": 134546169,
+      "name": null,
+      "highway": "path",
+      "access": null,
+      "foot": "yes"
+    },
+    {
+      "way_id": 134546169,
+      "name": null,
+      "highway": "path",
+      "access": null,
+      "foot": "yes"
+    },
+    {
+      "way_id": 134546167,
+      "name": null,
+      "highway": "path",
+      "access": null,
+      "foot": "yes"
+    },
+    {
+      "way_id": 134546170,
+      "name": null,
+      "highway": "path",
+      "access": null,
+      "foot": "yes"
+    },
+    {
+      "way_id": 134546170,
+      "name": null,
+      "highway": "path",
+      "access": null,
+      "foot": "yes"
+    },
+    {
+      "way_id": 134546170,
+      "name": null,
+      "highway": "path",
+      "access": null,
+      "foot": "yes"
+    },
+    {
+      "way_id": 12125191,
+      "name": "Lincoln Avenue",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12115452,
+      "name": "Virginia Avenue",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12115452,
+      "name": "Virginia Avenue",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12115452,
+      "name": "Virginia Avenue",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12115452,
+      "name": "Virginia Avenue",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12115452,
+      "name": "Virginia Avenue",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12115452,
+      "name": "Virginia Avenue",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12115452,
+      "name": "Virginia Avenue",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12115452,
+      "name": "Virginia Avenue",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12115452,
+      "name": "Virginia Avenue",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12115452,
+      "name": "Virginia Avenue",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12115452,
+      "name": "Virginia Avenue",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12115452,
+      "name": "Virginia Avenue",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12115452,
+      "name": "Virginia Avenue",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12115452,
+      "name": "Virginia Avenue",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12150327,
+      "name": "Holmes Avenue",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12150327,
+      "name": "Holmes Avenue",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12158413,
+      "name": "Maryland Avenue",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12158413,
+      "name": "Maryland Avenue",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12158413,
+      "name": "Maryland Avenue",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12158413,
+      "name": "Maryland Avenue",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12158413,
+      "name": "Maryland Avenue",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12158413,
+      "name": "Maryland Avenue",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12158413,
+      "name": "Maryland Avenue",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12158413,
+      "name": "Maryland Avenue",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12158413,
+      "name": "Maryland Avenue",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12158413,
+      "name": "Maryland Avenue",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12158413,
+      "name": "Maryland Avenue",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12143776,
+      "name": "Mount Pleasant Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12143776,
+      "name": "Mount Pleasant Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12143776,
+      "name": "Mount Pleasant Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12143776,
+      "name": "Mount Pleasant Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12143776,
+      "name": "Mount Pleasant Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12143776,
+      "name": "Mount Pleasant Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12143776,
+      "name": "Mount Pleasant Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 42565027,
+      "name": "Lawrence Road",
+      "highway": "tertiary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 42565027,
+      "name": "Lawrence Road",
+      "highway": "tertiary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 42565027,
+      "name": "Lawrence Road",
+      "highway": "tertiary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 42565027,
+      "name": "Lawrence Road",
+      "highway": "tertiary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 42565027,
+      "name": "Lawrence Road",
+      "highway": "tertiary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 42565027,
+      "name": "Lawrence Road",
+      "highway": "tertiary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 42565027,
+      "name": "Lawrence Road",
+      "highway": "tertiary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 42565027,
+      "name": "Lawrence Road",
+      "highway": "tertiary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 42565027,
+      "name": "Lawrence Road",
+      "highway": "tertiary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 42565027,
+      "name": "Lawrence Road",
+      "highway": "tertiary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 42565027,
+      "name": "Lawrence Road",
+      "highway": "tertiary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 42565027,
+      "name": "Lawrence Road",
+      "highway": "tertiary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 42565027,
+      "name": "Lawrence Road",
+      "highway": "tertiary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 42565027,
+      "name": "Lawrence Road",
+      "highway": "tertiary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 42565027,
+      "name": "Lawrence Road",
+      "highway": "tertiary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 42565027,
+      "name": "Lawrence Road",
+      "highway": "tertiary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 42565027,
+      "name": "Lawrence Road",
+      "highway": "tertiary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 42565027,
+      "name": "Lawrence Road",
+      "highway": "tertiary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 1477851813,
+      "name": "Lawrence Road",
+      "highway": "tertiary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 1477851813,
+      "name": "Lawrence Road",
+      "highway": "tertiary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 1477851813,
+      "name": "Lawrence Road",
+      "highway": "tertiary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 1477851813,
+      "name": "Lawrence Road",
+      "highway": "tertiary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 1477851813,
+      "name": "Lawrence Road",
+      "highway": "tertiary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 1477851813,
+      "name": "Lawrence Road",
+      "highway": "tertiary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 1477851813,
+      "name": "Lawrence Road",
+      "highway": "tertiary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 1477851813,
+      "name": "Lawrence Road",
+      "highway": "tertiary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 1477851813,
+      "name": "Lawrence Road",
+      "highway": "tertiary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 1477851813,
+      "name": "Lawrence Road",
+      "highway": "tertiary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 1477851813,
+      "name": "Lawrence Road",
+      "highway": "tertiary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 1477851813,
+      "name": "Lawrence Road",
+      "highway": "tertiary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 1477851813,
+      "name": "Lawrence Road",
+      "highway": "tertiary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 1477851813,
+      "name": "Lawrence Road",
+      "highway": "tertiary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 1477851813,
+      "name": "Lawrence Road",
+      "highway": "tertiary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 423948717,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 423948717,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 423948717,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 423948717,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 423948717,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 423948717,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 423948717,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 423948717,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 423948717,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 423948717,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 423948716,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 423948716,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 423948716,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 423948714,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 423948714,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 423948714,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 423948714,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 546354639,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 546354639,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 685524540,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 685524540,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 685524540,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 685524540,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 685524540,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 685524540,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12116344,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12116344,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12116344,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12116344,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12116344,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12116344,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12116344,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12116344,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12116344,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12116344,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12116344,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12116344,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12116344,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12116344,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12116344,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12116344,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12116344,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12116344,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12116344,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12116344,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12116344,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12116344,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12116344,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12116344,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12116344,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12116344,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12116344,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12116344,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12116344,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12116344,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12116344,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12116344,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12116344,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12116344,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 423948715,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 423948715,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 423948715,
+      "name": "West Eagle Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 423948713,
+      "name": "West Darby Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 423948713,
+      "name": "West Darby Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 423948713,
+      "name": "West Darby Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 423948713,
+      "name": "West Darby Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 423948713,
+      "name": "West Darby Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 423948713,
+      "name": "West Darby Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 423948713,
+      "name": "West Darby Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 423948713,
+      "name": "West Darby Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 423948706,
+      "name": "Darby Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 423948706,
+      "name": "Darby Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 423948706,
+      "name": "Darby Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 423948706,
+      "name": "Darby Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 423948706,
+      "name": "Darby Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 581214972,
+      "name": "Bellemead Avenue",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 581214972,
+      "name": "Bellemead Avenue",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 581214972,
+      "name": "Bellemead Avenue",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 581214972,
+      "name": "Bellemead Avenue",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 581214972,
+      "name": "Bellemead Avenue",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 581214972,
+      "name": "Bellemead Avenue",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12151443,
+      "name": "Bellemead Avenue",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12151443,
+      "name": "Bellemead Avenue",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12151443,
+      "name": "Bellemead Avenue",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12151443,
+      "name": "Bellemead Avenue",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12151443,
+      "name": "Bellemead Avenue",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 1476878180,
+      "name": "Bellemead Avenue",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 1476878179,
+      "name": "Bellemead Avenue",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 1476878179,
+      "name": "Bellemead Avenue",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12155793,
+      "name": "Fairfield Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    }
+  ],
+  "validation": {
+    "closed_at_home": true,
+    "repeated_edges": 0,
+    "repeated_nodes_except_finish": 0,
+    "target_segments_on_route": true,
+    "private_or_foot_prohibited_edges": 0
+  },
+  "google_walking_check": {
+    "status": "not-requested",
+    "reason": "Precise home route egress rejected by automatic approval review; distances use OSM geometry."
+  }
+}

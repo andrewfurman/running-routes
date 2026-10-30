@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-22",
+  "raw_gpx_sha256_verified": 9,
+  "archive_gps_all_sports": 3225,
+  "running_map_gps": 1867,
+  "display_activity_types": [
+    "Run"
+  ],
+  "excluded_activity_counts": {
+    "Ride": 534,
+    "Walk": 816,
+    "Hike": 7,
+    "Snowboard": 1
+  },
+  "calendar_readback_count": 5,
+  "next_dates": [
+    "2026-10-23",
+    "2026-10-24",
+    "2026-10-25"
+  ],
+  "map_calendar_addresses_match": true,
+  "current_plan_update_idempotent": true,
+  "bike_preview_unchanged": true,
+  "browser_provider": "Google Maps",
+  "citystrides_today_completed": [
+    "Ivy Rock Lane",
+    "Glen Gary Road"
+  ],
+  "citystrides_activity": "101948125"
+}

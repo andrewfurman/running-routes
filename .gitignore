@@ -3,3 +3,6 @@
 !.env.example
 runs.geojson
 __pycache__/
+# Raw all-sport exports and credentials are private; never commit them here.
+content research/future-running-routes/*strava-history*/
+*.zip

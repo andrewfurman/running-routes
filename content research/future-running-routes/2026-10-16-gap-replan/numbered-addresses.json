@@ -1,0 +1,138 @@
+[
+  {
+    "street": "Joanna Road",
+    "cross_a": "Olympic Avenue",
+    "cross_b": "Prospect Avenue",
+    "coordinates": [
+      [
+        -75.3016713,
+        39.9688968
+      ],
+      [
+        -75.3025723,
+        39.9677882
+      ]
+    ],
+    "home_straight_m": 1516,
+    "length_m": 145.1,
+    "covered_within_15m_pct": 0.0,
+    "covered_within_25m_pct": 0.0,
+    "core_min_distance_m": 70.5,
+    "midpoint": [
+      -75.30212180363003,
+      39.968342500888376
+    ],
+    "date": "2026-10-18",
+    "address": "122 Joanna Rd, Havertown, PA 19083",
+    "address_coordinates": {
+      "lat": 39.9684052,
+      "lng": -75.3023718
+    },
+    "one_way_miles": 1.2,
+    "walking_meters": 1923,
+    "checked_date": "2026-10-16",
+    "source": "Google Geocoding and Directions APIs"
+  },
+  {
+    "street": "Fairlamb Avenue",
+    "cross_a": "Westgate Road",
+    "cross_b": "Rose Tree Lane",
+    "coordinates": [
+      [
+        -75.326279,
+        39.9721659
+      ],
+      [
+        -75.3291886,
+        39.9709425
+      ]
+    ],
+    "home_straight_m": 1704,
+    "length_m": 283.2,
+    "covered_within_15m_pct": 0.0,
+    "covered_within_25m_pct": 0.0,
+    "core_min_distance_m": 103.3,
+    "midpoint": [
+      -75.32773381301212,
+      39.971554209108945
+    ],
+    "date": "2026-10-20",
+    "address": "218 Fairlamb Ave, Havertown, PA 19083",
+    "address_coordinates": {
+      "lat": 39.9717556,
+      "lng": -75.3279177
+    },
+    "one_way_miles": 1.5,
+    "walking_meters": 2394,
+    "checked_date": "2026-10-16",
+    "source": "Google Geocoding and Directions APIs"
+  },
+  {
+    "street": "Oxford Hill Lane",
+    "cross_a": "Westgate Road",
+    "cross_b": "Rose Tree Lane",
+    "coordinates": [
+      [
+        -75.3272306,
+        39.9734638
+      ],
+      [
+        -75.3300984,
+        39.9722251
+      ]
+    ],
+    "home_straight_m": 1695,
+    "length_m": 280.8,
+    "covered_within_15m_pct": 0.0,
+    "covered_within_25m_pct": 0.0,
+    "core_min_distance_m": 138.4,
+    "midpoint": [
+      -75.32866451298413,
+      39.97284445884936
+    ],
+    "date": "2026-10-21",
+    "address": "217 Oxford Hill Ln, Havertown, PA 19083",
+    "address_coordinates": {
+      "lat": 39.9726604,
+      "lng": -75.3285343
+    },
+    "one_way_miles": 1.5,
+    "walking_meters": 2455,
+    "checked_date": "2026-10-16",
+    "source": "Google Geocoding and Directions APIs"
+  },
+  {
+    "street": "Ivy Rock Lane",
+    "cross_a": "Westgate Road",
+    "cross_b": "Rose Tree Lane",
+    "coordinates": [
+      [
+        -75.3267674,
+        39.9728157
+      ],
+      [
+        -75.3296264,
+        39.971574
+      ]
+    ],
+    "home_straight_m": 1698,
+    "length_m": 280.4,
+    "covered_within_15m_pct": 0.0,
+    "covered_within_25m_pct": 0.0,
+    "core_min_distance_m": 182.5,
+    "midpoint": [
+      -75.32819691297483,
+      39.97219485879525
+    ],
+    "date": "2026-10-22",
+    "address": "219 Ivy Rock Ln, Havertown, PA 19083",
+    "address_coordinates": {
+      "lat": 39.9719764,
+      "lng": -75.3280369
+    },
+    "one_way_miles": 1.5,
+    "walking_meters": 2416,
+    "checked_date": "2026-10-16",
+    "source": "Google Geocoding and Directions APIs"
+  }
+]

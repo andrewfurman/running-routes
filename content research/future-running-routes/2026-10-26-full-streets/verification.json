@@ -1,0 +1,21 @@
+{
+  "running_tracks": 1870,
+  "bike_tracks": 530,
+  "all_seven_events_read_back": true,
+  "calendar_map_agree": true,
+  "under_two_mile_exact_destinations": 6,
+  "approved_dover_exception_miles": 2.0604668734589993,
+  "chestnut_target_miles": 0.731,
+  "chestnut_covered_25m_pct": 33.5,
+  "minimum_target_spacing_m": 904,
+  "walking_approach_overlaps": [],
+  "map_viewport_area_percent": 87.5,
+  "map_transformation_idempotent": true,
+  "browser_checks": [
+    "route drawer",
+    "collapsed details",
+    "full Chestnut target and midpoint",
+    "bike switch",
+    "Google map rendering"
+  ]
+}

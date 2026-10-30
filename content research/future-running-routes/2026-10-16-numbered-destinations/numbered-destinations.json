@@ -1,0 +1,170 @@
+[
+  {
+    "date": "2026-10-16",
+    "street": "Charles Drive",
+    "segment": "Frederick Road to David Drive",
+    "midpoint": [
+      -75.32776450363919,
+      39.98829347177181
+    ],
+    "address": "148 Charles Dr, Havertown, PA 19083, USA",
+    "address_coordinates": {
+      "lat": 39.9883923,
+      "lng": -75.3281512
+    },
+    "place_id": "ChIJM1f7NTDAxokRCRWV8X6QmsQ",
+    "source": "Google Geocoding API and Google Directions API",
+    "checked_date": "2026-10-16",
+    "directions_status": "OK",
+    "walking_meters": 2207,
+    "one_way_miles": 1.4,
+    "walking_duration_minutes": 31
+  },
+  {
+    "date": "2026-10-17",
+    "street": "Ellis Road",
+    "segment": "Garlor Drive to Lawrence Road",
+    "midpoint": [
+      -75.3342043018539,
+      39.981241082439084
+    ],
+    "address": "636 Ellis Rd, Havertown, PA 19083, USA",
+    "address_coordinates": {
+      "lat": 39.98115689999999,
+      "lng": -75.33452299999999
+    },
+    "place_id": "ChIJSanETdPBxokR-jYE16B2dFU",
+    "source": "Google Geocoding API and Google Directions API",
+    "checked_date": "2026-10-16",
+    "directions_status": "OK",
+    "walking_meters": 2540,
+    "one_way_miles": 1.6,
+    "walking_duration_minutes": 35
+  },
+  {
+    "date": "2026-10-18",
+    "street": "Walnut Place",
+    "segment": "Devon Road to Covington Road",
+    "midpoint": [
+      -75.2884456788628,
+      39.9766495089442
+    ],
+    "address": "219 Walnut Pl, Havertown, PA 19083, USA",
+    "address_coordinates": {
+      "lat": 39.9766122,
+      "lng": -75.2881771
+    },
+    "place_id": "ChIJjTmc5_3AxokR3xlO7jnLlqI",
+    "source": "Google Geocoding API and Google Directions API",
+    "checked_date": "2026-10-16",
+    "directions_status": "OK",
+    "walking_meters": 2481,
+    "one_way_miles": 1.5,
+    "walking_duration_minutes": 34
+  },
+  {
+    "date": "2026-10-19",
+    "street": "Marilyn Drive",
+    "segment": "Jacalyn Drive to Lawrence Road",
+    "midpoint": [
+      -75.32970334363112,
+      39.98236238894136
+    ],
+    "address": "1732 Marilyn Dr, Havertown, PA 19083, USA",
+    "address_coordinates": {
+      "lat": 39.9821684,
+      "lng": -75.3295842
+    },
+    "place_id": "ChIJ3aHSnzLAxokR8nC7wh0SNKc",
+    "source": "Google Geocoding API and Google Directions API",
+    "checked_date": "2026-10-16",
+    "directions_status": "OK",
+    "walking_meters": 2154,
+    "one_way_miles": 1.3,
+    "walking_duration_minutes": 30
+  },
+  {
+    "date": "2026-10-20",
+    "street": "Chester Avenue",
+    "segment": "Warren Avenue to Lawrence Road",
+    "midpoint": [
+      -75.3198959054207,
+      39.982306196025334
+    ],
+    "address": "713 Chester Ave, Havertown, PA 19083, USA",
+    "address_coordinates": {
+      "lat": 39.9823099,
+      "lng": -75.3196631
+    },
+    "place_id": "ChIJg9viozXAxokRqBpQwAFjhc0",
+    "source": "Google Geocoding API and Google Directions API",
+    "checked_date": "2026-10-16",
+    "directions_status": "OK",
+    "walking_meters": 1254,
+    "one_way_miles": 0.8,
+    "walking_duration_minutes": 18
+  },
+  {
+    "date": "2026-10-21",
+    "street": "Pickwick Road",
+    "segment": "Devon Road to Covington Road",
+    "midpoint": [
+      -75.29087545525422,
+      39.97566799178857
+    ],
+    "address": "215 Pickwick Rd, Havertown, PA 19083, USA",
+    "address_coordinates": {
+      "lat": 39.9757657,
+      "lng": -75.290649
+    },
+    "place_id": "ChIJk41dJ_7AxokRD3VLTxG3wCg",
+    "source": "Google Geocoding API and Google Directions API",
+    "checked_date": "2026-10-16",
+    "directions_status": "OK",
+    "walking_meters": 2290,
+    "one_way_miles": 1.4,
+    "walking_duration_minutes": 31
+  },
+  {
+    "date": "2026-10-22",
+    "street": "Garden Avenue",
+    "segment": "Kingsley Road to Lawndale Avenue",
+    "midpoint": [
+      -75.2859701,
+      39.98780285
+    ],
+    "address": "825 Garden Ave, Havertown, PA 19083, USA",
+    "address_coordinates": {
+      "lat": 39.9876684,
+      "lng": -75.2858402
+    },
+    "place_id": "ChIJ461MVfDAxokRiipsDSxxz5E",
+    "source": "Google Geocoding API and Google Directions API",
+    "checked_date": "2026-10-16",
+    "directions_status": "OK",
+    "walking_meters": 2624,
+    "one_way_miles": 1.6,
+    "walking_duration_minutes": 36
+  },
+  {
+    "date": "2026-10-23",
+    "street": "Bennington Road",
+    "segment": "Myrtle Avenue to Grove Place",
+    "midpoint": [
+      -75.2854772,
+      39.974689
+    ],
+    "address": "17 Bennington Rd, Havertown, PA 19083, USA",
+    "address_coordinates": {
+      "lat": 39.9747892,
+      "lng": -75.285653
+    },
+    "place_id": "ChIJ7yMtgQLBxokRjcPf8nfQwSs",
+    "source": "Google Geocoding API and Google Directions API",
+    "checked_date": "2026-10-16",
+    "directions_status": "OK",
+    "walking_meters": 3131,
+    "one_way_miles": 1.9,
+    "walking_duration_minutes": 42
+  }
+]

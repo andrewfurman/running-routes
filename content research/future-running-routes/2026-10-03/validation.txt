@@ -1,0 +1,7 @@
+01-charles: 3.175 mi; zero repeated edges; Google check: {'status': 'not-requested', 'reason': 'Precise home route egress rejected by automatic approval review; distances use OSM geometry.'}
+02-holmes: 3.015 mi; zero repeated edges; Google check: {'status': 'not-requested', 'reason': 'Precise home route egress rejected by automatic approval review; distances use OSM geometry.'}
+03-annabella: 2.963 mi; zero repeated edges; Google check: {'status': 'not-requested', 'reason': 'Precise home route egress rejected by automatic approval review; distances use OSM geometry.'}
+04-dorchester: 2.873 mi; zero repeated edges; Google check: {'status': 'not-requested', 'reason': 'Precise home route egress rejected by automatic approval review; distances use OSM geometry.'}
+05-howell: 3.026 mi; zero repeated edges; Google check: {'status': 'not-requested', 'reason': 'Precise home route egress rejected by automatic approval review; distances use OSM geometry.'}
+06-st-albans: 3.264 mi; zero repeated edges; Google check: {'status': 'not-requested', 'reason': 'Precise home route egress rejected by automatic approval review; distances use OSM geometry.'}
+07-canterbury: 3.343 mi; zero repeated edges; Google check: {'status': 'not-requested', 'reason': 'Precise home route egress rejected by automatic approval review; distances use OSM geometry.'}

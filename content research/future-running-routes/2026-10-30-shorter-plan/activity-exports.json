@@ -1,0 +1,18 @@
+[
+  {
+    "activity_id": "20775891975",
+    "start": "2026-10-29T05:08:29-04:00",
+    "file": "20775891975.gpx",
+    "bytes": 814588,
+    "sha256": "14ae28467acfa233eb179778368ae0192c1377c5682f64cb84551797b3cefb11",
+    "source_url": "https://www.strava.com/activities/20775891975"
+  },
+  {
+    "activity_id": "20788741058",
+    "start": "2026-10-30T05:22:23-04:00",
+    "file": "20788741058.gpx",
+    "bytes": 689226,
+    "sha256": "26874968bd7c322e2e06beef638fbb45fc505a57544c29582e1ee2f5c5799dc3",
+    "source_url": "https://www.strava.com/activities/20788741058"
+  }
+]

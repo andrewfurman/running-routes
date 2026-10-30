@@ -1,0 +1,786 @@
+[
+  {
+    "date": "2026-10-27",
+    "street": "Monroe Avenue",
+    "target_label": "South Harwood Avenue to Lansdowne Avenue",
+    "target_miles": 0.177,
+    "target_coordinates": [
+      [
+        -75.2925848,
+        39.966646
+      ],
+      [
+        -75.293794,
+        39.9672842
+      ],
+      [
+        -75.2939529,
+        39.9673681
+      ],
+      [
+        -75.2941828,
+        39.9674838
+      ],
+      [
+        -75.2946158,
+        39.967718
+      ],
+      [
+        -75.2946827,
+        39.9677372
+      ],
+      [
+        -75.2947565,
+        39.9677341
+      ],
+      [
+        -75.2948258,
+        39.9677125
+      ],
+      [
+        -75.2948467,
+        39.9677017
+      ],
+      [
+        -75.294995,
+        39.9676247
+      ],
+      [
+        -75.2951798,
+        39.9675048
+      ],
+      [
+        -75.2953417,
+        39.9673998
+      ]
+    ],
+    "target_midpoint": [
+      -75.29396234208278,
+      39.96737285186094
+    ],
+    "navigation_address": "8536 Monroe Ave, Upper Darby Township, PA 19082",
+    "navigation_coordinates": [
+      -75.2942185,
+      39.9672271
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=8536%20Monroe%20Ave%2C%20Upper%20Darby%20Township%2C%20PA%2019082&dirflg=w",
+    "one_way_miles": 1.4,
+    "citystrides_status": "October 26 run-only audit: 100.0% of samples more than 25 m from 1,870 recorded runs",
+    "citystrides_url": "https://citystrides.com/users/7315/map",
+    "coverage_audit": {
+      "street": "Monroe Avenue",
+      "cross_a": "South Harwood Avenue",
+      "cross_b": "Lansdowne Avenue",
+      "coordinates": [
+        [
+          -75.2925848,
+          39.966646
+        ],
+        [
+          -75.293794,
+          39.9672842
+        ],
+        [
+          -75.2939529,
+          39.9673681
+        ],
+        [
+          -75.2941828,
+          39.9674838
+        ],
+        [
+          -75.2946158,
+          39.967718
+        ],
+        [
+          -75.2946827,
+          39.9677372
+        ],
+        [
+          -75.2947565,
+          39.9677341
+        ],
+        [
+          -75.2948258,
+          39.9677125
+        ],
+        [
+          -75.2948467,
+          39.9677017
+        ],
+        [
+          -75.294995,
+          39.9676247
+        ],
+        [
+          -75.2951798,
+          39.9675048
+        ],
+        [
+          -75.2953417,
+          39.9673998
+        ]
+      ],
+      "home_straight_m": 1957,
+      "length_m": 285.3,
+      "covered_within_15m_pct": 0.0,
+      "covered_within_25m_pct": 0.0,
+      "core_min_distance_m": 68.5,
+      "midpoint": [
+        -75.29396234208278,
+        39.96737285186094
+      ],
+      "date": "2026-10-25",
+      "address": "8536 Monroe Ave, Upper Darby Township, PA 19082",
+      "address_coordinates": {
+        "lat": 39.9672271,
+        "lng": -75.2942185
+      },
+      "one_way_miles": 1.4,
+      "walking_meters": 2188,
+      "checked_date": "2026-10-16",
+      "source": "Google Geocoding and Directions APIs"
+    },
+    "first_waypoint": {
+      "intersection": "Monroe Avenue & South Harwood Avenue, Upper Darby Township, PA",
+      "coordinates": [
+        -75.2925848,
+        39.966646
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.966646,-75.2925848&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Monroe Avenue & Lansdowne Avenue, Upper Darby Township, PA",
+      "coordinates": [
+        -75.2953417,
+        39.9673998
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9673998,-75.2953417&dirflg=w"
+    },
+    "number": 1,
+    "coverage_audit_latest": {
+      "date": "2026-10-25",
+      "street": "Monroe Avenue",
+      "covered_15m_pct": 0.0,
+      "covered_25m_pct": 0.0,
+      "max_gap_m": 156.6
+    },
+    "coverage_audit_running": {
+      "date": "2026-10-25",
+      "street": "Monroe Avenue",
+      "length_m": 285.3,
+      "covered_15m_pct": 0.0,
+      "covered_25m_pct": 0.0,
+      "max_gap_m": 183.4,
+      "core_min_distance_m": 68.5
+    },
+    "routing_source": "Google Directions walking checked 2026-10-26",
+    "walking_metres": 2188,
+    "time_label": "5:30\u20136:15 AM"
+  },
+  {
+    "date": "2026-10-28",
+    "street": "Fairlamb Avenue",
+    "target_label": "Westgate Road to Rose Tree Lane",
+    "target_miles": 0.176,
+    "target_coordinates": [
+      [
+        -75.326279,
+        39.9721659
+      ],
+      [
+        -75.3291886,
+        39.9709425
+      ]
+    ],
+    "target_midpoint": [
+      -75.32773381301212,
+      39.971554209108945
+    ],
+    "first_waypoint": {
+      "intersection": "Fairlamb Avenue & Westgate Road, Havertown, PA",
+      "coordinates": [
+        -75.326279,
+        39.9721659
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9721659,-75.326279&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Fairlamb Avenue & Rose Tree Lane, Havertown, PA",
+      "coordinates": [
+        -75.3291886,
+        39.9709425
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9709425,-75.3291886&dirflg=w"
+    },
+    "citystrides_url": "https://citystrides.com/users/7315/map",
+    "citystrides_status": "October 26 run-only audit: 100.0% of samples more than 25 m from 1,870 recorded runs",
+    "number": 2,
+    "one_way_miles": 1.5,
+    "navigation_address": "218 Fairlamb Ave, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.3279177,
+      39.9717556
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=218%20Fairlamb%20Ave%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "optional_one_way_miles": 1.5,
+    "coverage_audit": {
+      "street": "Fairlamb Avenue",
+      "cross_a": "Westgate Road",
+      "cross_b": "Rose Tree Lane",
+      "coordinates": [
+        [
+          -75.326279,
+          39.9721659
+        ],
+        [
+          -75.3291886,
+          39.9709425
+        ]
+      ],
+      "home_straight_m": 1704,
+      "length_m": 283.2,
+      "covered_within_15m_pct": 0.0,
+      "covered_within_25m_pct": 0.0,
+      "core_min_distance_m": 103.3,
+      "midpoint": [
+        -75.32773381301212,
+        39.971554209108945
+      ]
+    },
+    "coverage_audit_latest": {
+      "date": "2026-10-20",
+      "street": "Fairlamb Avenue",
+      "covered_15m_pct": 0.0,
+      "covered_25m_pct": 0.0,
+      "max_gap_m": 78.9
+    },
+    "coverage_audit_running": {
+      "date": "2026-10-20",
+      "street": "Fairlamb Avenue",
+      "length_m": 283.2,
+      "covered_15m_pct": 0.0,
+      "covered_25m_pct": 0.0,
+      "max_gap_m": 78.9,
+      "core_min_distance_m": 78.5
+    },
+    "routing_source": "Google Directions walking checked 2026-10-26",
+    "walking_metres": 2394,
+    "time_label": "5:30\u20136:15 AM"
+  },
+  {
+    "date": "2026-10-29",
+    "street": "Marilyn Drive",
+    "target_label": "Jacalyn Drive to Lawrence Road",
+    "target_miles": 0.255,
+    "target_coordinates": [
+      [
+        -75.3275772,
+        39.983221
+      ],
+      [
+        -75.3278837,
+        39.9830411
+      ],
+      [
+        -75.3282271,
+        39.982903
+      ],
+      [
+        -75.3295746,
+        39.9824032
+      ],
+      [
+        -75.3298235,
+        39.9823243
+      ],
+      [
+        -75.3301754,
+        39.9822322
+      ],
+      [
+        -75.3306475,
+        39.9821467
+      ],
+      [
+        -75.3308363,
+        39.9820809
+      ],
+      [
+        -75.3309736,
+        39.9819823
+      ],
+      [
+        -75.3310423,
+        39.9818573
+      ],
+      [
+        -75.3310251,
+        39.9816929
+      ],
+      [
+        -75.3309736,
+        39.9815482
+      ],
+      [
+        -75.3308135,
+        39.9812344
+      ]
+    ],
+    "target_midpoint": [
+      -75.32970334363112,
+      39.98236238894136
+    ],
+    "first_waypoint": {
+      "intersection": "Marilyn Drive & Jacalyn Drive, Havertown, PA",
+      "coordinates": [
+        -75.3275772,
+        39.983221
+      ],
+      "apple_maps": "https://maps.apple.com/?q=Marilyn%20Drive%20%26%20Jacalyn%20Drive%2C%20Havertown%2C%20PA&daddr=39.983221,-75.3275772&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Marilyn Drive & Lawrence Road, Havertown, PA",
+      "coordinates": [
+        -75.3308135,
+        39.9812344
+      ],
+      "apple_maps": "https://maps.apple.com/?q=Marilyn%20Drive%20%26%20Lawrence%20Road%2C%20Havertown%2C%20PA&daddr=39.9812344,-75.3308135&dirflg=w"
+    },
+    "citystrides_url": "https://citystrides.com/streets/3296377",
+    "citystrides_status": "October 26 run-only audit: 84.3% of samples more than 25 m from 1,870 recorded runs",
+    "number": 3,
+    "one_way_miles": 1.3,
+    "navigation_address": "1732 Marilyn Dr, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.3295842,
+      39.9821684
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=1732%20Marilyn%20Dr%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "optional_one_way_miles": 1.3,
+    "coverage_audit": {
+      "date": "2026-10-19",
+      "street": "Marilyn Drive",
+      "segment": "Jacalyn Drive to Lawrence Road",
+      "length_m": 411.0,
+      "covered_within_15m_pct": 4.8,
+      "covered_within_25m_pct": 7.2,
+      "core_min_distance_m": 26.6,
+      "midpoint": [
+        -75.32970224298312,
+        39.98236273793042
+      ]
+    },
+    "coverage_audit_latest": {
+      "date": "2026-10-19",
+      "street": "Marilyn Drive",
+      "covered_15m_pct": 10.8,
+      "covered_25m_pct": 15.7,
+      "max_gap_m": 88.9
+    },
+    "coverage_audit_running": {
+      "date": "2026-10-19",
+      "street": "Marilyn Drive",
+      "length_m": 411.0,
+      "covered_15m_pct": 10.8,
+      "covered_25m_pct": 15.7,
+      "max_gap_m": 88.9,
+      "core_min_distance_m": 22.1
+    },
+    "routing_source": "Google Directions walking checked 2026-10-26",
+    "walking_metres": 2154,
+    "time_label": "5:30\u20136:15 AM"
+  },
+  {
+    "street": "Walnut Hill Lane",
+    "target_label": "Westgate Road to Rose Tree Lane",
+    "target_coordinates": [
+      [
+        -75.3257382,
+        39.9714556
+      ],
+      [
+        -75.3267768,
+        39.9710609
+      ],
+      [
+        -75.3287908,
+        39.9701837
+      ]
+    ],
+    "target_miles": 0.184,
+    "target_midpoint": [
+      -75.32727977382955,
+      39.9708418345529
+    ],
+    "navigation_address": "217 Walnut Hill Ln, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.3271173,
+      39.97068609999999
+    ],
+    "citystrides_url": "https://citystrides.com/users/7315/map",
+    "coverage_audit_running": {
+      "street": "Walnut Hill Lane",
+      "cross_a": "Westgate Road",
+      "cross_b": "Rose Tree Lane",
+      "coordinates": [
+        [
+          -75.3257382,
+          39.9714556
+        ],
+        [
+          -75.3267768,
+          39.9710609
+        ],
+        [
+          -75.3287908,
+          39.9701837
+        ]
+      ],
+      "home_straight_m": 1714,
+      "midpoint": [
+        -75.32727977382955,
+        39.9708418345529
+      ],
+      "length_m": 296.6,
+      "covered_15m_pct": 3.3,
+      "covered_25m_pct": 6.7,
+      "max_gap_m": 168.6,
+      "core_min_distance_m": 35.3
+    },
+    "first_waypoint": {
+      "intersection": "Walnut Hill Lane & Westgate Road, Havertown, PA",
+      "coordinates": [
+        -75.3257382,
+        39.9714556
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9714556,-75.3257382&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Walnut Hill Lane & Rose Tree Lane, Havertown, PA",
+      "coordinates": [
+        -75.3287908,
+        39.9701837
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9701837,-75.3287908&dirflg=w"
+    },
+    "date": "2026-10-30",
+    "number": 4,
+    "one_way_miles": 1.5,
+    "navigation_url": "https://maps.apple.com/?daddr=217%20Walnut%20Hill%20Ln%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "routing_source": "Google Directions walking checked 2026-10-26",
+    "walking_metres": 2363,
+    "citystrides_status": "October 26 run-only audit: 93.3% of samples more than 25 m from 1,870 recorded runs",
+    "time_label": "5:30\u20136:15 AM"
+  },
+  {
+    "street": "Rose Tree Lane",
+    "target_label": "Glen Ridge Road to Windsor Park Lane",
+    "target_coordinates": [
+      [
+        -75.3314117,
+        39.9740208
+      ],
+      [
+        -75.3319867,
+        39.9752179
+      ]
+    ],
+    "target_miles": 0.088,
+    "target_midpoint": [
+      -75.33169919747641,
+      39.974619350397724
+    ],
+    "navigation_address": "1837 Rose Tree Ln, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.33147679999999,
+      39.9746612
+    ],
+    "citystrides_url": "https://citystrides.com/users/7315/map",
+    "coverage_audit_running": {
+      "street": "Rose Tree Lane",
+      "cross_a": "Glen Ridge Road",
+      "cross_b": "Windsor Park Lane",
+      "coordinates": [
+        [
+          -75.3314117,
+          39.9740208
+        ],
+        [
+          -75.3319867,
+          39.9752179
+        ]
+      ],
+      "home_straight_m": 1987,
+      "midpoint": [
+        -75.33169919747641,
+        39.974619350397724
+      ],
+      "length_m": 141.6,
+      "covered_15m_pct": 0.0,
+      "covered_25m_pct": 0.0,
+      "max_gap_m": 150.8,
+      "core_min_distance_m": 92.4
+    },
+    "first_waypoint": {
+      "intersection": "Rose Tree Lane & Glen Ridge Road, Havertown, PA",
+      "coordinates": [
+        -75.3314117,
+        39.9740208
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9740208,-75.3314117&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Rose Tree Lane & Windsor Park Lane, Havertown, PA",
+      "coordinates": [
+        -75.3319867,
+        39.9752179
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9752179,-75.3319867&dirflg=w"
+    },
+    "date": "2026-10-31",
+    "number": 5,
+    "one_way_miles": 1.7,
+    "navigation_url": "https://maps.apple.com/?daddr=1837%20Rose%20Tree%20Ln%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "routing_source": "Google Directions walking checked 2026-10-26",
+    "walking_metres": 2733,
+    "citystrides_status": "October 26 run-only audit: 100.0% of samples more than 25 m from 1,870 recorded runs",
+    "time_label": "5:30\u20136:15 AM"
+  },
+  {
+    "street": "Windsor Park Lane",
+    "target_label": "Rose Tree Lane to Glen Ridge Road",
+    "target_coordinates": [
+      [
+        -75.3319867,
+        39.9752179
+      ],
+      [
+        -75.33227,
+        39.9751193
+      ],
+      [
+        -75.332476,
+        39.9749351
+      ],
+      [
+        -75.3327077,
+        39.9746457
+      ],
+      [
+        -75.3328794,
+        39.9743892
+      ],
+      [
+        -75.3330939,
+        39.9742182
+      ],
+      [
+        -75.3342097,
+        39.9737775
+      ],
+      [
+        -75.3344758,
+        39.9736196
+      ],
+      [
+        -75.3346389,
+        39.9734025
+      ],
+      [
+        -75.3346732,
+        39.9731526
+      ],
+      [
+        -75.3345273,
+        39.9727579
+      ]
+    ],
+    "target_miles": 0.24,
+    "target_midpoint": [
+      -75.33354927505033,
+      39.97403834556837
+    ],
+    "navigation_address": "342 Windsor Park Ln, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.3334058,
+      39.9738577
+    ],
+    "citystrides_url": "https://citystrides.com/users/7315/map",
+    "coverage_audit_running": {
+      "street": "Windsor Park Lane",
+      "cross_a": "Rose Tree Lane",
+      "cross_b": "Glen Ridge Road",
+      "coordinates": [
+        [
+          -75.3319867,
+          39.9752179
+        ],
+        [
+          -75.33227,
+          39.9751193
+        ],
+        [
+          -75.332476,
+          39.9749351
+        ],
+        [
+          -75.3327077,
+          39.9746457
+        ],
+        [
+          -75.3328794,
+          39.9743892
+        ],
+        [
+          -75.3330939,
+          39.9742182
+        ],
+        [
+          -75.3342097,
+          39.9737775
+        ],
+        [
+          -75.3344758,
+          39.9736196
+        ],
+        [
+          -75.3346389,
+          39.9734025
+        ],
+        [
+          -75.3346732,
+          39.9731526
+        ],
+        [
+          -75.3345273,
+          39.9727579
+        ]
+      ],
+      "home_straight_m": 1988,
+      "midpoint": [
+        -75.33354927505033,
+        39.97403834556837
+      ],
+      "length_m": 386.7,
+      "covered_15m_pct": 0.0,
+      "covered_25m_pct": 0.0,
+      "max_gap_m": 197.4,
+      "core_min_distance_m": 136.4
+    },
+    "first_waypoint": {
+      "intersection": "Windsor Park Lane & Rose Tree Lane, Havertown, PA",
+      "coordinates": [
+        -75.3319867,
+        39.9752179
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9752179,-75.3319867&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Windsor Park Lane & Glen Ridge Road, Havertown, PA",
+      "coordinates": [
+        -75.3345273,
+        39.9727579
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9727579,-75.3345273&dirflg=w"
+    },
+    "date": "2026-11-01",
+    "number": 6,
+    "one_way_miles": 1.8,
+    "navigation_url": "https://maps.apple.com/?daddr=342%20Windsor%20Park%20Ln%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "routing_source": "Google Directions walking checked 2026-10-26",
+    "walking_metres": 2864,
+    "citystrides_status": "October 26 run-only audit: 100.0% of samples more than 25 m from 1,870 recorded runs",
+    "time_label": "5:00\u20135:45 AM"
+  },
+  {
+    "street": "Glen Ridge Road",
+    "target_label": "Rose Tree Lane to Windsor Park Lane",
+    "target_coordinates": [
+      [
+        -75.3314117,
+        39.9740208
+      ],
+      [
+        -75.3318408,
+        39.9737248
+      ],
+      [
+        -75.3329309,
+        39.9732973
+      ],
+      [
+        -75.3345273,
+        39.9727579
+      ]
+    ],
+    "target_miles": 0.188,
+    "target_midpoint": [
+      -75.33290582685552,
+      39.973307133006166
+    ],
+    "navigation_address": "317 Glen Ridge Rd, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.33287899999999,
+      39.9731006
+    ],
+    "citystrides_url": "https://citystrides.com/users/7315/map",
+    "coverage_audit_running": {
+      "street": "Glen Ridge Road",
+      "cross_a": "Rose Tree Lane",
+      "cross_b": "Windsor Park Lane",
+      "coordinates": [
+        [
+          -75.3314117,
+          39.9740208
+        ],
+        [
+          -75.3318408,
+          39.9737248
+        ],
+        [
+          -75.3329309,
+          39.9732973
+        ],
+        [
+          -75.3345273,
+          39.9727579
+        ]
+      ],
+      "home_straight_m": 1989,
+      "midpoint": [
+        -75.33290582685552,
+        39.973307133006166
+      ],
+      "length_m": 302.6,
+      "covered_15m_pct": 0.0,
+      "covered_25m_pct": 0.0,
+      "max_gap_m": 107.9,
+      "core_min_distance_m": 71.4
+    },
+    "first_waypoint": {
+      "intersection": "Glen Ridge Road & Rose Tree Lane, Havertown, PA",
+      "coordinates": [
+        -75.3314117,
+        39.9740208
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9740208,-75.3314117&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Glen Ridge Road & Windsor Park Lane, Havertown, PA",
+      "coordinates": [
+        -75.3345273,
+        39.9727579
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9727579,-75.3345273&dirflg=w"
+    },
+    "date": "2026-11-02",
+    "number": 7,
+    "one_way_miles": 1.7,
+    "navigation_url": "https://maps.apple.com/?daddr=317%20Glen%20Ridge%20Rd%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "routing_source": "Google Directions walking checked 2026-10-26",
+    "walking_metres": 2813,
+    "citystrides_status": "October 26 run-only audit: 100.0% of samples more than 25 m from 1,870 recorded runs",
+    "time_label": "5:30\u20136:15 AM"
+  }
+]

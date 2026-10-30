@@ -1,0 +1,221 @@
+[
+  {
+    "street": "Glen Gary Drive",
+    "cross_a": "Windsor Park Lane",
+    "cross_b": "Rose Tree Lane",
+    "coordinates": [
+      [
+        -75.3284991,
+        39.9737859
+      ],
+      [
+        -75.3305705,
+        39.9728763
+      ]
+    ],
+    "home_straight_m": 1774,
+    "length_m": 203.7,
+    "covered_within_15m_pct": 0.0,
+    "covered_within_25m_pct": 0.0,
+    "core_min_distance_m": 143.1,
+    "midpoint": [
+      -75.3295348068862,
+      39.97333110461687
+    ],
+    "date": "2026-10-24",
+    "osm_street_name": "Glen Gary Road",
+    "address": "229 Glen Gary Dr, Havertown, PA 19083",
+    "address_coordinates": {
+      "lat": 39.9731052,
+      "lng": -75.3294646
+    },
+    "one_way_miles": 1.5,
+    "walking_meters": 2432,
+    "checked_date": "2026-10-16",
+    "source": "Google Geocoding and Directions APIs"
+  },
+  {
+    "street": "Monroe Avenue",
+    "cross_a": "South Harwood Avenue",
+    "cross_b": "Lansdowne Avenue",
+    "coordinates": [
+      [
+        -75.2925848,
+        39.966646
+      ],
+      [
+        -75.293794,
+        39.9672842
+      ],
+      [
+        -75.2939529,
+        39.9673681
+      ],
+      [
+        -75.2941828,
+        39.9674838
+      ],
+      [
+        -75.2946158,
+        39.967718
+      ],
+      [
+        -75.2946827,
+        39.9677372
+      ],
+      [
+        -75.2947565,
+        39.9677341
+      ],
+      [
+        -75.2948258,
+        39.9677125
+      ],
+      [
+        -75.2948467,
+        39.9677017
+      ],
+      [
+        -75.294995,
+        39.9676247
+      ],
+      [
+        -75.2951798,
+        39.9675048
+      ],
+      [
+        -75.2953417,
+        39.9673998
+      ]
+    ],
+    "home_straight_m": 1957,
+    "length_m": 285.3,
+    "covered_within_15m_pct": 0.0,
+    "covered_within_25m_pct": 0.0,
+    "core_min_distance_m": 68.5,
+    "midpoint": [
+      -75.29396234208278,
+      39.96737285186094
+    ],
+    "date": "2026-10-25",
+    "address": "8536 Monroe Ave, Upper Darby Township, PA 19082",
+    "address_coordinates": {
+      "lat": 39.9672271,
+      "lng": -75.2942185
+    },
+    "one_way_miles": 1.4,
+    "walking_meters": 2188,
+    "checked_date": "2026-10-16",
+    "source": "Google Geocoding and Directions APIs"
+  },
+  {
+    "street": "Holbrook Road",
+    "cross_a": "Fairhaven Road",
+    "cross_b": "Bennington Road",
+    "coordinates": [
+      [
+        -75.2840281,
+        39.9745279
+      ],
+      [
+        -75.2843272,
+        39.9743715
+      ],
+      [
+        -75.2843889,
+        39.9743393
+      ],
+      [
+        -75.2843945,
+        39.9743364
+      ],
+      [
+        -75.2845296,
+        39.9742658
+      ],
+      [
+        -75.2845989,
+        39.9742295
+      ],
+      [
+        -75.2846204,
+        39.9742183
+      ],
+      [
+        -75.2848195,
+        39.9741142
+      ],
+      [
+        -75.2849005,
+        39.9740719
+      ],
+      [
+        -75.284973,
+        39.9740341
+      ],
+      [
+        -75.2851003,
+        39.9739675
+      ],
+      [
+        -75.2851739,
+        39.973929
+      ],
+      [
+        -75.2851973,
+        39.9739168
+      ],
+      [
+        -75.2852207,
+        39.9739087
+      ],
+      [
+        -75.2853229,
+        39.973873
+      ],
+      [
+        -75.2854557,
+        39.9738714
+      ],
+      [
+        -75.2854825,
+        39.9738764
+      ],
+      [
+        -75.2855225,
+        39.9738838
+      ],
+      [
+        -75.2855903,
+        39.9738963
+      ],
+      [
+        -75.2857035,
+        39.9739483
+      ],
+      [
+        -75.285814,
+        39.9740336
+      ]
+    ],
+    "home_straight_m": 2200,
+    "length_m": 180.3,
+    "covered_within_15m_pct": 0.0,
+    "covered_within_25m_pct": 0.0,
+    "core_min_distance_m": 67.3,
+    "midpoint": [
+      -75.28490117587862,
+      39.97407154761127
+    ],
+    "date": "2026-10-26",
+    "address": "12 Holbrook Rd, Havertown, PA 19083",
+    "address_coordinates": {
+      "lat": 39.9739096,
+      "lng": -75.284728
+    },
+    "one_way_miles": 1.9,
+    "walking_meters": 3108,
+    "checked_date": "2026-10-16",
+    "source": "Google Geocoding and Directions APIs"
+  }
+]

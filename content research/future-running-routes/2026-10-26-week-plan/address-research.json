@@ -1,0 +1,1761 @@
+{
+  "Walnut Hill Lane": {
+    "candidate": {
+      "street": "Walnut Hill Lane",
+      "cross_a": "Westgate Road",
+      "cross_b": "Rose Tree Lane",
+      "coordinates": [
+        [
+          -75.3257382,
+          39.9714556
+        ],
+        [
+          -75.3267768,
+          39.9710609
+        ],
+        [
+          -75.3287908,
+          39.9701837
+        ]
+      ],
+      "home_straight_m": 1714,
+      "midpoint": [
+        -75.32727977382955,
+        39.9708418345529
+      ],
+      "length_m": 296.6,
+      "covered_15m_pct": 3.3,
+      "covered_25m_pct": 6.7,
+      "max_gap_m": 168.6,
+      "core_min_distance_m": 35.3
+    },
+    "geocode": {
+      "plus_code": {
+        "compound_code": "XMCF+83 West Gate Hills, PA, USA",
+        "global_code": "87F6XMCF+83"
+      },
+      "results": [
+        {
+          "address_components": [
+            {
+              "long_name": "217",
+              "short_name": "217",
+              "types": [
+                "street_number"
+              ]
+            },
+            {
+              "long_name": "Walnut Hill Lane",
+              "short_name": "Walnut Hill Ln",
+              "types": [
+                "route"
+              ]
+            },
+            {
+              "long_name": "Havertown",
+              "short_name": "Havertown",
+              "types": [
+                "locality",
+                "political"
+              ]
+            },
+            {
+              "long_name": "Haverford Township",
+              "short_name": "Haverford Township",
+              "types": [
+                "administrative_area_level_3",
+                "political"
+              ]
+            },
+            {
+              "long_name": "Delaware County",
+              "short_name": "Delaware County",
+              "types": [
+                "administrative_area_level_2",
+                "political"
+              ]
+            },
+            {
+              "long_name": "Pennsylvania",
+              "short_name": "PA",
+              "types": [
+                "administrative_area_level_1",
+                "political"
+              ]
+            },
+            {
+              "long_name": "United States",
+              "short_name": "US",
+              "types": [
+                "country",
+                "political"
+              ]
+            },
+            {
+              "long_name": "19083",
+              "short_name": "19083",
+              "types": [
+                "postal_code"
+              ]
+            },
+            {
+              "long_name": "2811",
+              "short_name": "2811",
+              "types": [
+                "postal_code_suffix"
+              ]
+            }
+          ],
+          "formatted_address": "217 Walnut Hill Ln, Havertown, PA 19083, USA",
+          "geometry": {
+            "bounds": {
+              "northeast": {
+                "lat": 39.9707494,
+                "lng": -75.32702139999999
+              },
+              "southwest": {
+                "lat": 39.9706229,
+                "lng": -75.3272133
+              }
+            },
+            "location": {
+              "lat": 39.97068609999999,
+              "lng": -75.3271173
+            },
+            "location_type": "ROOFTOP",
+            "viewport": {
+              "northeast": {
+                "lat": 39.9720996302915,
+                "lng": -75.32577666970849
+              },
+              "southwest": {
+                "lat": 39.9694016697085,
+                "lng": -75.32847463029151
+              }
+            }
+          },
+          "place_id": "ChIJUY2jhs_BxokRJTD7GyHS6VA",
+          "types": [
+            "premise",
+            "street_address"
+          ]
+        },
+        {
+          "address_components": [
+            {
+              "long_name": "227",
+              "short_name": "227",
+              "types": [
+                "street_number"
+              ]
+            },
+            {
+              "long_name": "Walnut Hill Lane",
+              "short_name": "Walnut Hill Ln",
+              "types": [
+                "route"
+              ]
+            },
+            {
+              "long_name": "Havertown",
+              "short_name": "Havertown",
+              "types": [
+                "locality",
+                "political"
+              ]
+            },
+            {
+              "long_name": "Haverford Township",
+              "short_name": "Haverford Township",
+              "types": [
+                "administrative_area_level_3",
+                "political"
+              ]
+            },
+            {
+              "long_name": "Delaware County",
+              "short_name": "Delaware County",
+              "types": [
+                "administrative_area_level_2",
+                "political"
+              ]
+            },
+            {
+              "long_name": "Pennsylvania",
+              "short_name": "PA",
+              "types": [
+                "administrative_area_level_1",
+                "political"
+              ]
+            },
+            {
+              "long_name": "United States",
+              "short_name": "US",
+              "types": [
+                "country",
+                "political"
+              ]
+            },
+            {
+              "long_name": "19083",
+              "short_name": "19083",
+              "types": [
+                "postal_code"
+              ]
+            },
+            {
+              "long_name": "2811",
+              "short_name": "2811",
+              "types": [
+                "postal_code_suffix"
+              ]
+            }
+          ],
+          "formatted_address": "227 Walnut Hill Ln, Havertown, PA 19083, USA",
+          "geometry": {
+            "location": {
+              "lat": 39.9704412,
+              "lng": -75.327666
+            },
+            "location_type": "ROOFTOP",
+            "viewport": {
+              "northeast": {
+                "lat": 39.97187648029149,
+                "lng": -75.3263988697085
+              },
+              "southwest": {
+                "lat": 39.96917851970849,
+                "lng": -75.3290968302915
+              }
+            }
+          },
+          "place_id": "ChIJmQwcYsXBxokRI5HbavcoUzs",
+          "types": [
+            "street_address",
+            "subpremise"
+          ]
+        },
+        {
+          "address_components": [
+            {
+              "long_name": "206 1/2",
+              "short_name": "206 1/2",
+              "types": [
+                "street_number"
+              ]
+            },
+            {
+              "long_name": "Greenbriar Lane",
+              "short_name": "Greenbriar Ln",
+              "types": [
+                "route"
+              ]
+            },
+            {
+              "long_name": "Havertown",
+              "short_name": "Havertown",
+              "types": [
+                "locality",
+                "political"
+              ]
+            },
+            {
+              "long_name": "Haverford Township",
+              "short_name": "Haverford Township",
+              "types": [
+                "administrative_area_level_3",
+                "political"
+              ]
+            },
+            {
+              "long_name": "Delaware County",
+              "short_name": "Delaware County",
+              "types": [
+                "administrative_area_level_2",
+                "political"
+              ]
+            },
+            {
+              "long_name": "Pennsylvania",
+              "short_name": "PA",
+              "types": [
+                "administrative_area_level_1",
+                "political"
+              ]
+            },
+            {
+              "long_name": "United States",
+              "short_name": "US",
+              "types": [
+                "country",
+                "political"
+              ]
+            },
+            {
+              "long_name": "19083",
+              "short_name": "19083",
+              "types": [
+                "postal_code"
+              ]
+            },
+            {
+              "long_name": "2848",
+              "short_name": "2848",
+              "types": [
+                "postal_code_suffix"
+              ]
+            }
+          ],
+          "formatted_address": "206 1/2 Greenbriar Ln, Havertown, PA 19083, USA",
+          "geometry": {
+            "location": {
+              "lat": 39.970331,
+              "lng": -75.326374
+            },
+            "location_type": "ROOFTOP",
+            "viewport": {
+              "northeast": {
+                "lat": 39.9715006802915,
+                "lng": -75.32495641970849
+              },
+              "southwest": {
+                "lat": 39.9688027197085,
+                "lng": -75.3276543802915
+              }
+            }
+          },
+          "place_id": "ChIJi78ifs_BxokRjmPokVlIP_g",
+          "plus_code": {
+            "compound_code": "XMCF+4F Havertown, PA, USA",
+            "global_code": "87F6XMCF+4F"
+          },
+          "types": [
+            "street_address"
+          ]
+        },
+        {
+          "address_components": [
+            {
+              "long_name": "217",
+              "short_name": "217",
+              "types": [
+                "street_number"
+              ]
+            },
+            {
+              "long_name": "Walnut Hill Lane",
+              "short_name": "Walnut Hill Ln",
+              "types": [
+                "route"
+              ]
+            },
+            {
+              "long_name": "Havertown",
+              "short_name": "Havertown",
+              "types": [
+                "locality",
+                "political"
+              ]
+            },
+            {
+              "long_name": "Haverford Township",
+              "short_name": "Haverford Township",
+              "types": [
+                "administrative_area_level_3",
+                "political"
+              ]
+            },
+            {
+              "long_name": "Delaware County",
+              "short_name": "Delaware County",
+              "types": [
+                "administrative_area_level_2",
+                "political"
+              ]
+            },
+            {
+              "long_name": "Pennsylvania",
+              "short_name": "PA",
+              "types": [
+                "administrative_area_level_1",
+                "political"
+              ]
+            },
+            {
+              "long_name": "United States",
+              "short_name": "US",
+              "types": [
+                "country",
+                "political"
+              ]
+            },
+            {
+              "long_name": "19083",
+              "short_name": "19083",
+              "types": [
+                "postal_code"
+              ]
+            },
+            {
+              "long_name": "2811",
+              "short_name": "2811",
+              "types": [
+                "postal_code_suffix"
+              ]
+            }
+          ],
+          "formatted_address": "217 Walnut Hill Ln, Havertown, PA 19083, USA",
+          "geometry": {
+            "location": {
+              "lat": 39.9706836,
+              "lng": -75.327085
+            },
+            "location_type": "RANGE_INTERPOLATED",
+            "viewport": {
+              "northeast": {
+                "lat": 39.97212998029151,
+                "lng": -75.3258084697085
+              },
+              "southwest": {
+                "lat": 39.96943201970851,
+                "lng": -75.32850643029151
+              }
+            }
+          },
+          "place_id": "EiwyMTcgV2FsbnV0IEhpbGwgTG4sIEhhdmVydG93biwgUEEgMTkwODMsIFVTQSIbEhkKFAoSCR11vYXPwcaJERpPLwZjSMbqENkB",
+          "types": [
+            "street_address"
+          ]
+        }
+      ],
+      "status": "OK"
+    },
+    "verified_address": {
+      "formatted_address": "217 Walnut Hill Ln, Havertown, PA 19083",
+      "location": {
+        "lat": 39.97068609999999,
+        "lng": -75.3271173
+      },
+      "place_id": "ChIJUY2jhs_BxokRJTD7GyHS6VA"
+    },
+    "walking": {
+      "metres": 2363,
+      "seconds": 1997,
+      "start_address": "1700 Manor Rd, Havertown, PA 19083, USA",
+      "end_address": "217 Walnut Hill Ln, Havertown, PA 19083, USA",
+      "checked": "2026-10-26"
+    }
+  },
+  "Rose Tree Lane": {
+    "candidate": {
+      "street": "Rose Tree Lane",
+      "cross_a": "Glen Ridge Road",
+      "cross_b": "Windsor Park Lane",
+      "coordinates": [
+        [
+          -75.3314117,
+          39.9740208
+        ],
+        [
+          -75.3319867,
+          39.9752179
+        ]
+      ],
+      "home_straight_m": 1987,
+      "midpoint": [
+        -75.33169919747641,
+        39.974619350397724
+      ],
+      "length_m": 141.6,
+      "covered_15m_pct": 0.0,
+      "covered_25m_pct": 0.0,
+      "max_gap_m": 150.8,
+      "core_min_distance_m": 92.4
+    },
+    "geocode": {
+      "plus_code": {
+        "compound_code": "XMF9+R8 Havertown, PA, USA",
+        "global_code": "87F6XMF9+R8"
+      },
+      "results": [
+        {
+          "address_components": [
+            {
+              "long_name": "1837",
+              "short_name": "1837",
+              "types": [
+                "street_number"
+              ]
+            },
+            {
+              "long_name": "Rose Tree Lane",
+              "short_name": "Rose Tree Ln",
+              "types": [
+                "route"
+              ]
+            },
+            {
+              "long_name": "Havertown",
+              "short_name": "Havertown",
+              "types": [
+                "locality",
+                "political"
+              ]
+            },
+            {
+              "long_name": "Haverford Township",
+              "short_name": "Haverford Township",
+              "types": [
+                "administrative_area_level_3",
+                "political"
+              ]
+            },
+            {
+              "long_name": "Delaware County",
+              "short_name": "Delaware County",
+              "types": [
+                "administrative_area_level_2",
+                "political"
+              ]
+            },
+            {
+              "long_name": "Pennsylvania",
+              "short_name": "PA",
+              "types": [
+                "administrative_area_level_1",
+                "political"
+              ]
+            },
+            {
+              "long_name": "United States",
+              "short_name": "US",
+              "types": [
+                "country",
+                "political"
+              ]
+            },
+            {
+              "long_name": "19083",
+              "short_name": "19083",
+              "types": [
+                "postal_code"
+              ]
+            },
+            {
+              "long_name": "2841",
+              "short_name": "2841",
+              "types": [
+                "postal_code_suffix"
+              ]
+            }
+          ],
+          "formatted_address": "1837 Rose Tree Ln, Havertown, PA 19083, USA",
+          "geometry": {
+            "bounds": {
+              "northeast": {
+                "lat": 39.9747255,
+                "lng": -75.3313943
+              },
+              "southwest": {
+                "lat": 39.9745955,
+                "lng": -75.3315631
+              }
+            },
+            "location": {
+              "lat": 39.9746612,
+              "lng": -75.33147679999999
+            },
+            "location_type": "ROOFTOP",
+            "viewport": {
+              "northeast": {
+                "lat": 39.97599488029149,
+                "lng": -75.3301926197085
+              },
+              "southwest": {
+                "lat": 39.9732969197085,
+                "lng": -75.33289058029152
+              }
+            }
+          },
+          "place_id": "ChIJqRuSvdHBxokRmj-4tVP-3tQ",
+          "types": [
+            "premise",
+            "street_address"
+          ]
+        },
+        {
+          "address_components": [
+            {
+              "long_name": "1837",
+              "short_name": "1837",
+              "types": [
+                "street_number"
+              ]
+            },
+            {
+              "long_name": "Windsor Park Lane",
+              "short_name": "Windsor Park Ln",
+              "types": [
+                "route"
+              ]
+            },
+            {
+              "long_name": "Havertown",
+              "short_name": "Havertown",
+              "types": [
+                "locality",
+                "political"
+              ]
+            },
+            {
+              "long_name": "Haverford Township",
+              "short_name": "Haverford Township",
+              "types": [
+                "administrative_area_level_3",
+                "political"
+              ]
+            },
+            {
+              "long_name": "Delaware County",
+              "short_name": "Delaware County",
+              "types": [
+                "administrative_area_level_2",
+                "political"
+              ]
+            },
+            {
+              "long_name": "Pennsylvania",
+              "short_name": "PA",
+              "types": [
+                "administrative_area_level_1",
+                "political"
+              ]
+            },
+            {
+              "long_name": "United States",
+              "short_name": "US",
+              "types": [
+                "country",
+                "political"
+              ]
+            },
+            {
+              "long_name": "19083",
+              "short_name": "19083",
+              "types": [
+                "postal_code"
+              ]
+            },
+            {
+              "long_name": "2809",
+              "short_name": "2809",
+              "types": [
+                "postal_code_suffix"
+              ]
+            }
+          ],
+          "formatted_address": "1837 Windsor Park Ln, Havertown, PA 19083, USA",
+          "geometry": {
+            "location": {
+              "lat": 39.9750612,
+              "lng": -75.3305938
+            },
+            "location_type": "ROOFTOP",
+            "viewport": {
+              "northeast": {
+                "lat": 39.9763113302915,
+                "lng": -75.3292914697085
+              },
+              "southwest": {
+                "lat": 39.9736133697085,
+                "lng": -75.3319894302915
+              }
+            }
+          },
+          "place_id": "ChIJw-SN7tHBxokRrUm0_A2PDYk",
+          "types": [
+            "street_address",
+            "subpremise"
+          ]
+        },
+        {
+          "address_components": [
+            {
+              "long_name": "1839",
+              "short_name": "1839",
+              "types": [
+                "street_number"
+              ]
+            },
+            {
+              "long_name": "Rose Tree Lane",
+              "short_name": "Rose Tree Ln",
+              "types": [
+                "route"
+              ]
+            },
+            {
+              "long_name": "Havertown",
+              "short_name": "Havertown",
+              "types": [
+                "locality",
+                "political"
+              ]
+            },
+            {
+              "long_name": "Haverford Township",
+              "short_name": "Haverford Township",
+              "types": [
+                "administrative_area_level_3",
+                "political"
+              ]
+            },
+            {
+              "long_name": "Delaware County",
+              "short_name": "Delaware County",
+              "types": [
+                "administrative_area_level_2",
+                "political"
+              ]
+            },
+            {
+              "long_name": "Pennsylvania",
+              "short_name": "PA",
+              "types": [
+                "administrative_area_level_1",
+                "political"
+              ]
+            },
+            {
+              "long_name": "United States",
+              "short_name": "US",
+              "types": [
+                "country",
+                "political"
+              ]
+            },
+            {
+              "long_name": "19083",
+              "short_name": "19083",
+              "types": [
+                "postal_code"
+              ]
+            },
+            {
+              "long_name": "2841",
+              "short_name": "2841",
+              "types": [
+                "postal_code_suffix"
+              ]
+            }
+          ],
+          "formatted_address": "1839 Rose Tree Ln, Havertown, PA 19083, USA",
+          "geometry": {
+            "location": {
+              "lat": 39.974709,
+              "lng": -75.3315112
+            },
+            "location_type": "RANGE_INTERPOLATED",
+            "viewport": {
+              "northeast": {
+                "lat": 39.9760242802915,
+                "lng": -75.3302692197085
+              },
+              "southwest": {
+                "lat": 39.9733263197085,
+                "lng": -75.3329671802915
+              }
+            }
+          },
+          "place_id": "EisxODM5IFJvc2UgVHJlZSBMbiwgSGF2ZXJ0b3duLCBQQSAxOTA4MywgVVNBIhsSGQoUChIJr0I6vdHBxokR5xR_nRTiRhcQrw4",
+          "types": [
+            "street_address"
+          ]
+        },
+        {
+          "address_components": [
+            {
+              "long_name": "2628",
+              "short_name": "2628",
+              "types": [
+                "street_number"
+              ]
+            },
+            {
+              "long_name": "Old West Chester Pike",
+              "short_name": "Old West Chester Pike",
+              "types": [
+                "route"
+              ]
+            },
+            {
+              "long_name": "Havertown",
+              "short_name": "Havertown",
+              "types": [
+                "locality",
+                "political"
+              ]
+            },
+            {
+              "long_name": "Haverford Township",
+              "short_name": "Haverford Township",
+              "types": [
+                "administrative_area_level_3",
+                "political"
+              ]
+            },
+            {
+              "long_name": "Delaware County",
+              "short_name": "Delaware County",
+              "types": [
+                "administrative_area_level_2",
+                "political"
+              ]
+            },
+            {
+              "long_name": "Pennsylvania",
+              "short_name": "PA",
+              "types": [
+                "administrative_area_level_1",
+                "political"
+              ]
+            },
+            {
+              "long_name": "United States",
+              "short_name": "US",
+              "types": [
+                "country",
+                "political"
+              ]
+            },
+            {
+              "long_name": "19083",
+              "short_name": "19083",
+              "types": [
+                "postal_code"
+              ]
+            }
+          ],
+          "formatted_address": "2628 Old West Chester Pike, Havertown, PA 19083, USA",
+          "geometry": {
+            "location": {
+              "lat": 39.9760622,
+              "lng": -75.3319427
+            },
+            "location_type": "ROOFTOP",
+            "viewport": {
+              "northeast": {
+                "lat": 39.9774372802915,
+                "lng": -75.33069351970849
+              },
+              "southwest": {
+                "lat": 39.9747393197085,
+                "lng": -75.3333914802915
+              }
+            }
+          },
+          "place_id": "ChIJP1cmKtLBxokR7yLvLZ5NCrs",
+          "plus_code": {
+            "compound_code": "XMG9+C6 Havertown, PA, USA",
+            "global_code": "87F6XMG9+C6"
+          },
+          "types": [
+            "street_address"
+          ]
+        }
+      ],
+      "status": "OK"
+    },
+    "verified_address": {
+      "formatted_address": "1837 Rose Tree Ln, Havertown, PA 19083",
+      "location": {
+        "lat": 39.9746612,
+        "lng": -75.33147679999999
+      },
+      "place_id": "ChIJqRuSvdHBxokRmj-4tVP-3tQ"
+    },
+    "walking": {
+      "metres": 2733,
+      "seconds": 2302,
+      "start_address": "1700 Manor Rd, Havertown, PA 19083, USA",
+      "end_address": "1837 Rose Tree Ln, Havertown, PA 19083, USA",
+      "checked": "2026-10-26"
+    }
+  },
+  "Windsor Park Lane": {
+    "candidate": {
+      "street": "Windsor Park Lane",
+      "cross_a": "Rose Tree Lane",
+      "cross_b": "Glen Ridge Road",
+      "coordinates": [
+        [
+          -75.3319867,
+          39.9752179
+        ],
+        [
+          -75.33227,
+          39.9751193
+        ],
+        [
+          -75.332476,
+          39.9749351
+        ],
+        [
+          -75.3327077,
+          39.9746457
+        ],
+        [
+          -75.3328794,
+          39.9743892
+        ],
+        [
+          -75.3330939,
+          39.9742182
+        ],
+        [
+          -75.3342097,
+          39.9737775
+        ],
+        [
+          -75.3344758,
+          39.9736196
+        ],
+        [
+          -75.3346389,
+          39.9734025
+        ],
+        [
+          -75.3346732,
+          39.9731526
+        ],
+        [
+          -75.3345273,
+          39.9727579
+        ]
+      ],
+      "home_straight_m": 1988,
+      "midpoint": [
+        -75.33354927505033,
+        39.97403834556837
+      ],
+      "length_m": 386.7,
+      "covered_15m_pct": 0.0,
+      "covered_25m_pct": 0.0,
+      "max_gap_m": 197.4,
+      "core_min_distance_m": 136.4
+    },
+    "geocode": {
+      "plus_code": {
+        "compound_code": "XMF8+JH Broomall, PA, USA",
+        "global_code": "87F6XMF8+JH"
+      },
+      "results": [
+        {
+          "address_components": [
+            {
+              "long_name": "342",
+              "short_name": "342",
+              "types": [
+                "street_number"
+              ]
+            },
+            {
+              "long_name": "Windsor Park Lane",
+              "short_name": "Windsor Park Ln",
+              "types": [
+                "route"
+              ]
+            },
+            {
+              "long_name": "Havertown",
+              "short_name": "Havertown",
+              "types": [
+                "locality",
+                "political"
+              ]
+            },
+            {
+              "long_name": "Haverford Township",
+              "short_name": "Haverford Township",
+              "types": [
+                "administrative_area_level_3",
+                "political"
+              ]
+            },
+            {
+              "long_name": "Delaware County",
+              "short_name": "Delaware County",
+              "types": [
+                "administrative_area_level_2",
+                "political"
+              ]
+            },
+            {
+              "long_name": "Pennsylvania",
+              "short_name": "PA",
+              "types": [
+                "administrative_area_level_1",
+                "political"
+              ]
+            },
+            {
+              "long_name": "United States",
+              "short_name": "US",
+              "types": [
+                "country",
+                "political"
+              ]
+            },
+            {
+              "long_name": "19083",
+              "short_name": "19083",
+              "types": [
+                "postal_code"
+              ]
+            },
+            {
+              "long_name": "2705",
+              "short_name": "2705",
+              "types": [
+                "postal_code_suffix"
+              ]
+            }
+          ],
+          "formatted_address": "342 Windsor Park Ln, Havertown, PA 19083, USA",
+          "geometry": {
+            "bounds": {
+              "northeast": {
+                "lat": 39.9739263,
+                "lng": -75.333309
+              },
+              "southwest": {
+                "lat": 39.973789,
+                "lng": -75.3335026
+              }
+            },
+            "location": {
+              "lat": 39.9738577,
+              "lng": -75.3334058
+            },
+            "location_type": "ROOFTOP",
+            "viewport": {
+              "northeast": {
+                "lat": 39.9752683802915,
+                "lng": -75.33206816970849
+              },
+              "southwest": {
+                "lat": 39.9725704197085,
+                "lng": -75.3347661302915
+              }
+            }
+          },
+          "place_id": "ChIJl5BUHNHBxokRes-5qZUa5TU",
+          "types": [
+            "premise",
+            "street_address"
+          ]
+        },
+        {
+          "address_components": [
+            {
+              "long_name": "360",
+              "short_name": "360",
+              "types": [
+                "street_number"
+              ]
+            },
+            {
+              "long_name": "Windsor Park Lane",
+              "short_name": "Windsor Park Ln",
+              "types": [
+                "route"
+              ]
+            },
+            {
+              "long_name": "Havertown",
+              "short_name": "Havertown",
+              "types": [
+                "locality",
+                "political"
+              ]
+            },
+            {
+              "long_name": "Haverford Township",
+              "short_name": "Haverford Township",
+              "types": [
+                "administrative_area_level_3",
+                "political"
+              ]
+            },
+            {
+              "long_name": "Delaware County",
+              "short_name": "Delaware County",
+              "types": [
+                "administrative_area_level_2",
+                "political"
+              ]
+            },
+            {
+              "long_name": "Pennsylvania",
+              "short_name": "PA",
+              "types": [
+                "administrative_area_level_1",
+                "political"
+              ]
+            },
+            {
+              "long_name": "United States",
+              "short_name": "US",
+              "types": [
+                "country",
+                "political"
+              ]
+            },
+            {
+              "long_name": "19083",
+              "short_name": "19083",
+              "types": [
+                "postal_code"
+              ]
+            },
+            {
+              "long_name": "2705",
+              "short_name": "2705",
+              "types": [
+                "postal_code_suffix"
+              ]
+            }
+          ],
+          "formatted_address": "360 Windsor Park Ln, Havertown, PA 19083, USA",
+          "geometry": {
+            "location": {
+              "lat": 39.97351949999999,
+              "lng": -75.33423189999999
+            },
+            "location_type": "ROOFTOP",
+            "viewport": {
+              "northeast": {
+                "lat": 39.9749443802915,
+                "lng": -75.3329832197085
+              },
+              "southwest": {
+                "lat": 39.9722464197085,
+                "lng": -75.3356811802915
+              }
+            }
+          },
+          "place_id": "ChIJdeaX3tDBxokRiyGJn7yzAz4",
+          "types": [
+            "street_address",
+            "subpremise"
+          ]
+        },
+        {
+          "address_components": [
+            {
+              "long_name": "342",
+              "short_name": "342",
+              "types": [
+                "street_number"
+              ]
+            },
+            {
+              "long_name": "Windsor Park Lane",
+              "short_name": "Windsor Park Ln",
+              "types": [
+                "route"
+              ]
+            },
+            {
+              "long_name": "Havertown",
+              "short_name": "Havertown",
+              "types": [
+                "locality",
+                "political"
+              ]
+            },
+            {
+              "long_name": "Haverford Township",
+              "short_name": "Haverford Township",
+              "types": [
+                "administrative_area_level_3",
+                "political"
+              ]
+            },
+            {
+              "long_name": "Delaware County",
+              "short_name": "Delaware County",
+              "types": [
+                "administrative_area_level_2",
+                "political"
+              ]
+            },
+            {
+              "long_name": "Pennsylvania",
+              "short_name": "PA",
+              "types": [
+                "administrative_area_level_1",
+                "political"
+              ]
+            },
+            {
+              "long_name": "United States",
+              "short_name": "US",
+              "types": [
+                "country",
+                "political"
+              ]
+            },
+            {
+              "long_name": "19083",
+              "short_name": "19083",
+              "types": [
+                "postal_code"
+              ]
+            },
+            {
+              "long_name": "2705",
+              "short_name": "2705",
+              "types": [
+                "postal_code_suffix"
+              ]
+            }
+          ],
+          "formatted_address": "342 Windsor Park Ln, Havertown, PA 19083, USA",
+          "geometry": {
+            "location": {
+              "lat": 39.9738506,
+              "lng": -75.3334014
+            },
+            "location_type": "RANGE_INTERPOLATED",
+            "viewport": {
+              "northeast": {
+                "lat": 39.9752991802915,
+                "lng": -75.33211436970849
+              },
+              "southwest": {
+                "lat": 39.9726012197085,
+                "lng": -75.3348123302915
+              }
+            }
+          },
+          "place_id": "Ei0zNDIgV2luZHNvciBQYXJrIExuLCBIYXZlcnRvd24sIFBBIDE5MDgzLCBVU0EiGxIZChQKEgmrFoMc0cHGiRHexaHiy2-rAxDWAg",
+          "types": [
+            "street_address"
+          ]
+        },
+        {
+          "address_components": [
+            {
+              "long_name": "2628",
+              "short_name": "2628",
+              "types": [
+                "street_number"
+              ]
+            },
+            {
+              "long_name": "Old West Chester Pike",
+              "short_name": "Old West Chester Pike",
+              "types": [
+                "route"
+              ]
+            },
+            {
+              "long_name": "Havertown",
+              "short_name": "Havertown",
+              "types": [
+                "locality",
+                "political"
+              ]
+            },
+            {
+              "long_name": "Haverford Township",
+              "short_name": "Haverford Township",
+              "types": [
+                "administrative_area_level_3",
+                "political"
+              ]
+            },
+            {
+              "long_name": "Delaware County",
+              "short_name": "Delaware County",
+              "types": [
+                "administrative_area_level_2",
+                "political"
+              ]
+            },
+            {
+              "long_name": "Pennsylvania",
+              "short_name": "PA",
+              "types": [
+                "administrative_area_level_1",
+                "political"
+              ]
+            },
+            {
+              "long_name": "United States",
+              "short_name": "US",
+              "types": [
+                "country",
+                "political"
+              ]
+            },
+            {
+              "long_name": "19083",
+              "short_name": "19083",
+              "types": [
+                "postal_code"
+              ]
+            }
+          ],
+          "formatted_address": "2628 Old West Chester Pike, Havertown, PA 19083, USA",
+          "geometry": {
+            "location": {
+              "lat": 39.9760622,
+              "lng": -75.3319427
+            },
+            "location_type": "ROOFTOP",
+            "viewport": {
+              "northeast": {
+                "lat": 39.9774372802915,
+                "lng": -75.33069351970849
+              },
+              "southwest": {
+                "lat": 39.9747393197085,
+                "lng": -75.3333914802915
+              }
+            }
+          },
+          "place_id": "ChIJP1cmKtLBxokR7yLvLZ5NCrs",
+          "plus_code": {
+            "compound_code": "XMG9+C6 Havertown, PA, USA",
+            "global_code": "87F6XMG9+C6"
+          },
+          "types": [
+            "street_address"
+          ]
+        }
+      ],
+      "status": "OK"
+    },
+    "verified_address": {
+      "formatted_address": "342 Windsor Park Ln, Havertown, PA 19083",
+      "location": {
+        "lat": 39.9738577,
+        "lng": -75.3334058
+      },
+      "place_id": "ChIJl5BUHNHBxokRes-5qZUa5TU"
+    },
+    "walking": {
+      "metres": 2864,
+      "seconds": 2388,
+      "start_address": "1700 Manor Rd, Havertown, PA 19083, USA",
+      "end_address": "342 Windsor Park Ln, Havertown, PA 19083, USA",
+      "checked": "2026-10-26"
+    }
+  },
+  "Glen Ridge Road": {
+    "candidate": {
+      "street": "Glen Ridge Road",
+      "cross_a": "Rose Tree Lane",
+      "cross_b": "Windsor Park Lane",
+      "coordinates": [
+        [
+          -75.3314117,
+          39.9740208
+        ],
+        [
+          -75.3318408,
+          39.9737248
+        ],
+        [
+          -75.3329309,
+          39.9732973
+        ],
+        [
+          -75.3345273,
+          39.9727579
+        ]
+      ],
+      "home_straight_m": 1989,
+      "midpoint": [
+        -75.33290582685552,
+        39.973307133006166
+      ],
+      "length_m": 302.6,
+      "covered_15m_pct": 0.0,
+      "covered_25m_pct": 0.0,
+      "max_gap_m": 107.9,
+      "core_min_distance_m": 71.4
+    },
+    "geocode": {
+      "plus_code": {
+        "compound_code": "XMF8+8R Havertown, PA, USA",
+        "global_code": "87F6XMF8+8R"
+      },
+      "results": [
+        {
+          "address_components": [
+            {
+              "long_name": "317",
+              "short_name": "317",
+              "types": [
+                "street_number"
+              ]
+            },
+            {
+              "long_name": "Glen Ridge Road",
+              "short_name": "Glen Ridge Rd",
+              "types": [
+                "route"
+              ]
+            },
+            {
+              "long_name": "Havertown",
+              "short_name": "Havertown",
+              "types": [
+                "locality",
+                "political"
+              ]
+            },
+            {
+              "long_name": "Haverford Township",
+              "short_name": "Haverford Township",
+              "types": [
+                "administrative_area_level_3",
+                "political"
+              ]
+            },
+            {
+              "long_name": "Delaware County",
+              "short_name": "Delaware County",
+              "types": [
+                "administrative_area_level_2",
+                "political"
+              ]
+            },
+            {
+              "long_name": "Pennsylvania",
+              "short_name": "PA",
+              "types": [
+                "administrative_area_level_1",
+                "political"
+              ]
+            },
+            {
+              "long_name": "United States",
+              "short_name": "US",
+              "types": [
+                "country",
+                "political"
+              ]
+            },
+            {
+              "long_name": "19083",
+              "short_name": "19083",
+              "types": [
+                "postal_code"
+              ]
+            },
+            {
+              "long_name": "2716",
+              "short_name": "2716",
+              "types": [
+                "postal_code_suffix"
+              ]
+            }
+          ],
+          "formatted_address": "317 Glen Ridge Rd, Havertown, PA 19083, USA",
+          "geometry": {
+            "bounds": {
+              "northeast": {
+                "lat": 39.9731573,
+                "lng": -75.3328003
+              },
+              "southwest": {
+                "lat": 39.9730438,
+                "lng": -75.3329578
+              }
+            },
+            "location": {
+              "lat": 39.9731006,
+              "lng": -75.33287899999999
+            },
+            "location_type": "ROOFTOP",
+            "viewport": {
+              "northeast": {
+                "lat": 39.97451148029149,
+                "lng": -75.3315467697085
+              },
+              "southwest": {
+                "lat": 39.9718135197085,
+                "lng": -75.3342447302915
+              }
+            }
+          },
+          "place_id": "ChIJj8QZ-tDBxokR7lmYutITxUc",
+          "types": [
+            "premise",
+            "street_address"
+          ]
+        },
+        {
+          "address_components": [
+            {
+              "long_name": "318",
+              "short_name": "318",
+              "types": [
+                "street_number"
+              ]
+            },
+            {
+              "long_name": "Glen Ridge Road",
+              "short_name": "Glen Ridge Rd",
+              "types": [
+                "route"
+              ]
+            },
+            {
+              "long_name": "Havertown",
+              "short_name": "Havertown",
+              "types": [
+                "locality",
+                "political"
+              ]
+            },
+            {
+              "long_name": "Haverford Township",
+              "short_name": "Haverford Township",
+              "types": [
+                "administrative_area_level_3",
+                "political"
+              ]
+            },
+            {
+              "long_name": "Delaware County",
+              "short_name": "Delaware County",
+              "types": [
+                "administrative_area_level_2",
+                "political"
+              ]
+            },
+            {
+              "long_name": "Pennsylvania",
+              "short_name": "PA",
+              "types": [
+                "administrative_area_level_1",
+                "political"
+              ]
+            },
+            {
+              "long_name": "United States",
+              "short_name": "US",
+              "types": [
+                "country",
+                "political"
+              ]
+            },
+            {
+              "long_name": "19083",
+              "short_name": "19083",
+              "types": [
+                "postal_code"
+              ]
+            },
+            {
+              "long_name": "2717",
+              "short_name": "2717",
+              "types": [
+                "postal_code_suffix"
+              ]
+            }
+          ],
+          "formatted_address": "318 Glen Ridge Rd, Havertown, PA 19083, USA",
+          "geometry": {
+            "location": {
+              "lat": 39.9734456,
+              "lng": -75.3331553
+            },
+            "location_type": "RANGE_INTERPOLATED",
+            "viewport": {
+              "northeast": {
+                "lat": 39.9747029302915,
+                "lng": -75.3317490197085
+              },
+              "southwest": {
+                "lat": 39.9720049697085,
+                "lng": -75.33444698029152
+              }
+            }
+          },
+          "place_id": "EiszMTggR2xlbiBSaWRnZSBSZCwgSGF2ZXJ0b3duLCBQQSAxOTA4MywgVVNBIhsSGQoUChIJT-9p_NDBxokRX5P_k7_tqzIQvgI",
+          "types": [
+            "street_address"
+          ]
+        },
+        {
+          "address_components": [
+            {
+              "long_name": "360",
+              "short_name": "360",
+              "types": [
+                "street_number"
+              ]
+            },
+            {
+              "long_name": "Windsor Park Lane",
+              "short_name": "Windsor Park Ln",
+              "types": [
+                "route"
+              ]
+            },
+            {
+              "long_name": "Havertown",
+              "short_name": "Havertown",
+              "types": [
+                "locality",
+                "political"
+              ]
+            },
+            {
+              "long_name": "Haverford Township",
+              "short_name": "Haverford Township",
+              "types": [
+                "administrative_area_level_3",
+                "political"
+              ]
+            },
+            {
+              "long_name": "Delaware County",
+              "short_name": "Delaware County",
+              "types": [
+                "administrative_area_level_2",
+                "political"
+              ]
+            },
+            {
+              "long_name": "Pennsylvania",
+              "short_name": "PA",
+              "types": [
+                "administrative_area_level_1",
+                "political"
+              ]
+            },
+            {
+              "long_name": "United States",
+              "short_name": "US",
+              "types": [
+                "country",
+                "political"
+              ]
+            },
+            {
+              "long_name": "19083",
+              "short_name": "19083",
+              "types": [
+                "postal_code"
+              ]
+            },
+            {
+              "long_name": "2705",
+              "short_name": "2705",
+              "types": [
+                "postal_code_suffix"
+              ]
+            }
+          ],
+          "formatted_address": "360 Windsor Park Ln, Havertown, PA 19083, USA",
+          "geometry": {
+            "location": {
+              "lat": 39.97351949999999,
+              "lng": -75.33423189999999
+            },
+            "location_type": "ROOFTOP",
+            "viewport": {
+              "northeast": {
+                "lat": 39.9749443802915,
+                "lng": -75.3329832197085
+              },
+              "southwest": {
+                "lat": 39.9722464197085,
+                "lng": -75.3356811802915
+              }
+            }
+          },
+          "place_id": "ChIJdeaX3tDBxokRiyGJn7yzAz4",
+          "types": [
+            "street_address",
+            "subpremise"
+          ]
+        }
+      ],
+      "status": "OK"
+    },
+    "verified_address": {
+      "formatted_address": "317 Glen Ridge Rd, Havertown, PA 19083",
+      "location": {
+        "lat": 39.9731006,
+        "lng": -75.33287899999999
+      },
+      "place_id": "ChIJj8QZ-tDBxokR7lmYutITxUc"
+    },
+    "walking": {
+      "metres": 2813,
+      "seconds": 2360,
+      "start_address": "1700 Manor Rd, Havertown, PA 19083, USA",
+      "end_address": "317 Glen Ridge Rd, Havertown, PA 19083, USA",
+      "checked": "2026-10-26"
+    }
+  },
+  "Monroe Avenue": {
+    "verified_address": {
+      "formatted_address": "8536 Monroe Ave, Upper Darby Township, PA 19082",
+      "location": {
+        "lat": 39.9672271,
+        "lng": -75.2942185
+      },
+      "place_id": "ChIJTxZ_9AfBxokRBGSeUFCcTYg"
+    },
+    "walking": {
+      "metres": 2188,
+      "seconds": 1809,
+      "start_address": "1700 Manor Rd, Havertown, PA 19083, USA",
+      "end_address": "8536 Monroe Ave, Upper Darby Township, PA 19082, USA",
+      "checked": "2026-10-26"
+    }
+  },
+  "Fairlamb Avenue": {
+    "verified_address": {
+      "formatted_address": "218 Fairlamb Ave, Havertown, PA 19083",
+      "location": {
+        "lat": 39.9717556,
+        "lng": -75.3279177
+      },
+      "place_id": "ChIJf0vVv8_BxokRyS0vDZ-7--U"
+    },
+    "walking": {
+      "metres": 2394,
+      "seconds": 2029,
+      "start_address": "1700 Manor Rd, Havertown, PA 19083, USA",
+      "end_address": "218 Fairlamb Ave, Havertown, PA 19083, USA",
+      "checked": "2026-10-26"
+    }
+  },
+  "Marilyn Drive": {
+    "verified_address": {
+      "formatted_address": "1732 Marilyn Dr, Havertown, PA 19083",
+      "location": {
+        "lat": 39.9821684,
+        "lng": -75.3295842
+      },
+      "place_id": "ChIJ3aHSnzLAxokR8nC7wh0SNKc"
+    },
+    "walking": {
+      "metres": 2154,
+      "seconds": 1775,
+      "start_address": "1700 Manor Rd, Havertown, PA 19083, USA",
+      "end_address": "1732 Marilyn Dr, Havertown, PA 19083, USA",
+      "checked": "2026-10-26"
+    }
+  }
+}

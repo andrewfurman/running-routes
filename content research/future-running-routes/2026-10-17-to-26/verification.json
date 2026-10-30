@@ -1,0 +1,15 @@
+{
+  "checked_date": "2026-10-16",
+  "end_date": "2026-10-26",
+  "calendar_events_confirmed": 9,
+  "new_calendar_events_inserted_and_read_back": 3,
+  "october_20_unscheduled": true,
+  "default_visible_cards_and_pins": 3,
+  "full_plan_visible_cards_and_pins": 10,
+  "google_ranges_verified": true,
+  "openstreetmap_ranges_verified": true,
+  "provider_switching_verified_after_fix": true,
+  "holbrook_address_link_verified": true,
+  "gps_tracks": 3211,
+  "new_targets_have_zero_samples_within_25m": true
+}

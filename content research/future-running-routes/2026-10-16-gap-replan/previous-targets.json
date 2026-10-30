@@ -1,0 +1,662 @@
+[
+  {
+    "date": "2026-10-16",
+    "street": "Charles Drive",
+    "target_label": "Frederick Road to David Drive",
+    "target_miles": 0.299,
+    "target_coordinates": [
+      [
+        -75.3257911,
+        39.989831
+      ],
+      [
+        -75.3259568,
+        39.9896486
+      ],
+      [
+        -75.3271542,
+        39.9888086
+      ],
+      [
+        -75.3280327,
+        39.9880671
+      ],
+      [
+        -75.3286864,
+        39.9874812
+      ],
+      [
+        -75.3287935,
+        39.9873093
+      ],
+      [
+        -75.3288389,
+        39.9871471
+      ],
+      [
+        -75.3289961,
+        39.9864282
+      ]
+    ],
+    "target_midpoint": [
+      -75.32776450363919,
+      39.98829347177181
+    ],
+    "first_waypoint": {
+      "intersection": "Charles Drive & Frederick Road, Havertown, PA",
+      "coordinates": [
+        -75.3257911,
+        39.989831
+      ],
+      "apple_maps": "https://maps.apple.com/?q=Charles%20Drive%20%26%20Frederick%20Road%2C%20Havertown%2C%20PA&daddr=39.989831,-75.3257911&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Charles Drive & David Drive, Havertown, PA",
+      "coordinates": [
+        -75.3289961,
+        39.9864282
+      ],
+      "apple_maps": "https://maps.apple.com/?q=Charles%20Drive%20%26%20David%20Drive%2C%20Havertown%2C%20PA&daddr=39.9864282,-75.3289961&dirflg=w"
+    },
+    "citystrides_url": "https://citystrides.com/streets/3296373",
+    "citystrides_status": "8/8 nodes credited (CityStrides snapshot October 15)",
+    "number": 1,
+    "one_way_miles": 1.4,
+    "navigation_address": "148 Charles Dr, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.3281512,
+      39.9883923
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=148%20Charles%20Dr%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "optional_one_way_miles": 1.4
+  },
+  {
+    "date": "2026-10-17",
+    "street": "Ellis Road",
+    "target_label": "Garlor Drive to Lawrence Road",
+    "target_miles": 0.282,
+    "target_coordinates": [
+      [
+        -75.3351799,
+        39.9831343
+      ],
+      [
+        -75.3351121,
+        39.9829853
+      ],
+      [
+        -75.3348569,
+        39.9824243
+      ],
+      [
+        -75.3347834,
+        39.9822628
+      ],
+      [
+        -75.3346239,
+        39.9819121
+      ],
+      [
+        -75.3345807,
+        39.9818171
+      ],
+      [
+        -75.3344584,
+        39.9815482
+      ],
+      [
+        -75.3343007,
+        39.981343
+      ],
+      [
+        -75.3342875,
+        39.9813259
+      ],
+      [
+        -75.3342285,
+        39.9812604
+      ],
+      [
+        -75.3341576,
+        39.9812038
+      ],
+      [
+        -75.3341007,
+        39.981171
+      ],
+      [
+        -75.3340379,
+        39.9811479
+      ],
+      [
+        -75.3339644,
+        39.9811273
+      ],
+      [
+        -75.3338917,
+        39.9811193
+      ],
+      [
+        -75.3338063,
+        39.981114
+      ],
+      [
+        -75.3337265,
+        39.981117
+      ],
+      [
+        -75.3335203,
+        39.9811302
+      ],
+      [
+        -75.3327081,
+        39.9812349
+      ],
+      [
+        -75.3326996,
+        39.9812352
+      ],
+      [
+        -75.3325856,
+        39.9812395
+      ],
+      [
+        -75.3324919,
+        39.9812372
+      ],
+      [
+        -75.332407,
+        39.9812333
+      ],
+      [
+        -75.332322,
+        39.981223
+      ],
+      [
+        -75.3322582,
+        39.9812049
+      ],
+      [
+        -75.3321662,
+        39.9811775
+      ],
+      [
+        -75.3320735,
+        39.9811379
+      ],
+      [
+        -75.3319407,
+        39.9810548
+      ],
+      [
+        -75.3318314,
+        39.9809735
+      ],
+      [
+        -75.3317486,
+        39.9808994
+      ]
+    ],
+    "target_midpoint": [
+      -75.3342043018539,
+      39.981241082439084
+    ],
+    "first_waypoint": {
+      "intersection": "Ellis Road & Garlor Drive, Havertown, PA",
+      "coordinates": [
+        -75.3351799,
+        39.9831343
+      ],
+      "apple_maps": "https://maps.apple.com/?q=Ellis%20Road%20%26%20Garlor%20Drive%2C%20Havertown%2C%20PA&daddr=39.9831343,-75.3351799&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Ellis Road & Lawrence Road, Havertown, PA",
+      "coordinates": [
+        -75.3317486,
+        39.9808994
+      ],
+      "apple_maps": "https://maps.apple.com/?q=Ellis%20Road%20%26%20Lawrence%20Road%2C%20Havertown%2C%20PA&daddr=39.9808994,-75.3317486&dirflg=w"
+    },
+    "citystrides_url": "https://citystrides.com/streets/3296289",
+    "citystrides_status": "61/89 nodes credited (CityStrides snapshot October 15)",
+    "number": 2,
+    "one_way_miles": 1.6,
+    "navigation_address": "636 Ellis Rd, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.33452299999999,
+      39.98115689999999
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=636%20Ellis%20Rd%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "optional_one_way_miles": 1.6
+  },
+  {
+    "date": "2026-10-18",
+    "street": "Walnut Place",
+    "target_label": "Devon Road to Covington Road",
+    "target_miles": 0.226,
+    "target_coordinates": [
+      [
+        -75.2894054,
+        39.9781138
+      ],
+      [
+        -75.2884441,
+        39.9766471
+      ],
+      [
+        -75.2875343,
+        39.9751672
+      ]
+    ],
+    "target_midpoint": [
+      -75.2884456788628,
+      39.9766495089442
+    ],
+    "first_waypoint": {
+      "intersection": "Walnut Place & Devon Road, Havertown, PA",
+      "coordinates": [
+        -75.2894054,
+        39.9781138
+      ],
+      "apple_maps": "https://maps.apple.com/?q=Walnut%20Place%20%26%20Devon%20Road%2C%20Havertown%2C%20PA&daddr=39.9781138,-75.2894054&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Walnut Place & Covington Road, Havertown, PA",
+      "coordinates": [
+        -75.2875343,
+        39.9751672
+      ],
+      "apple_maps": "https://maps.apple.com/?q=Walnut%20Place%20%26%20Covington%20Road%2C%20Havertown%2C%20PA&daddr=39.9751672,-75.2875343&dirflg=w"
+    },
+    "citystrides_url": "https://citystrides.com/streets/3296277",
+    "citystrides_status": "9/9 nodes credited (CityStrides snapshot October 15)",
+    "number": 3,
+    "one_way_miles": 1.5,
+    "navigation_address": "219 Walnut Pl, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.2881771,
+      39.9766122
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=219%20Walnut%20Pl%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "optional_one_way_miles": 1.5
+  },
+  {
+    "date": "2026-10-19",
+    "street": "Marilyn Drive",
+    "target_label": "Jacalyn Drive to Lawrence Road",
+    "target_miles": 0.255,
+    "target_coordinates": [
+      [
+        -75.3275772,
+        39.983221
+      ],
+      [
+        -75.3278837,
+        39.9830411
+      ],
+      [
+        -75.3282271,
+        39.982903
+      ],
+      [
+        -75.3295746,
+        39.9824032
+      ],
+      [
+        -75.3298235,
+        39.9823243
+      ],
+      [
+        -75.3301754,
+        39.9822322
+      ],
+      [
+        -75.3306475,
+        39.9821467
+      ],
+      [
+        -75.3308363,
+        39.9820809
+      ],
+      [
+        -75.3309736,
+        39.9819823
+      ],
+      [
+        -75.3310423,
+        39.9818573
+      ],
+      [
+        -75.3310251,
+        39.9816929
+      ],
+      [
+        -75.3309736,
+        39.9815482
+      ],
+      [
+        -75.3308135,
+        39.9812344
+      ]
+    ],
+    "target_midpoint": [
+      -75.32970334363112,
+      39.98236238894136
+    ],
+    "first_waypoint": {
+      "intersection": "Marilyn Drive & Jacalyn Drive, Havertown, PA",
+      "coordinates": [
+        -75.3275772,
+        39.983221
+      ],
+      "apple_maps": "https://maps.apple.com/?q=Marilyn%20Drive%20%26%20Jacalyn%20Drive%2C%20Havertown%2C%20PA&daddr=39.983221,-75.3275772&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Marilyn Drive & Lawrence Road, Havertown, PA",
+      "coordinates": [
+        -75.3308135,
+        39.9812344
+      ],
+      "apple_maps": "https://maps.apple.com/?q=Marilyn%20Drive%20%26%20Lawrence%20Road%2C%20Havertown%2C%20PA&daddr=39.9812344,-75.3308135&dirflg=w"
+    },
+    "citystrides_url": "https://citystrides.com/streets/3296377",
+    "citystrides_status": "1/13 nodes credited (CityStrides snapshot October 15)",
+    "number": 4,
+    "one_way_miles": 1.3,
+    "navigation_address": "1732 Marilyn Dr, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.3295842,
+      39.9821684
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=1732%20Marilyn%20Dr%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "optional_one_way_miles": 1.3
+  },
+  {
+    "date": "2026-10-20",
+    "street": "Chester Avenue",
+    "target_label": "Warren Avenue to Lawrence Road",
+    "target_miles": 0.063,
+    "target_coordinates": [
+      [
+        -75.3200572,
+        39.9818661
+      ],
+      [
+        -75.3199352,
+        39.9821731
+      ],
+      [
+        -75.3197642,
+        39.9827523
+      ]
+    ],
+    "target_midpoint": [
+      -75.3198959054207,
+      39.982306196025334
+    ],
+    "first_waypoint": {
+      "intersection": "Chester Avenue & Warren Avenue, Havertown, PA",
+      "coordinates": [
+        -75.3200572,
+        39.9818661
+      ],
+      "apple_maps": "https://maps.apple.com/?q=Chester%20Avenue%20%26%20Warren%20Avenue%2C%20Havertown%2C%20PA&daddr=39.9818661,-75.3200572&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Chester Avenue & Lawrence Road, Havertown, PA",
+      "coordinates": [
+        -75.3197642,
+        39.9827523
+      ],
+      "apple_maps": "https://maps.apple.com/?q=Chester%20Avenue%20%26%20Lawrence%20Road%2C%20Havertown%2C%20PA&daddr=39.9827523,-75.3197642&dirflg=w"
+    },
+    "citystrides_url": "https://citystrides.com/streets/3295994",
+    "citystrides_status": "2/3 nodes credited (CityStrides snapshot October 15)",
+    "number": 5,
+    "one_way_miles": null,
+    "navigation_address": "713 Chester Ave, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.3196631,
+      39.9823099
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=713%20Chester%20Ave%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "optional_one_way_miles": 0.8
+  },
+  {
+    "date": "2026-10-21",
+    "street": "Pickwick Road",
+    "target_label": "Devon Road to Covington Road",
+    "target_miles": 0.175,
+    "target_coordinates": [
+      [
+        -75.2917572,
+        39.9767128
+      ],
+      [
+        -75.2914911,
+        39.9765484
+      ],
+      [
+        -75.2913624,
+        39.97643
+      ],
+      [
+        -75.290547,
+        39.975154
+      ],
+      [
+        -75.2904697,
+        39.9750027
+      ],
+      [
+        -75.2904526,
+        39.9748252
+      ],
+      [
+        -75.2905126,
+        39.9744765
+      ]
+    ],
+    "target_midpoint": [
+      -75.29087545525422,
+      39.97566799178857
+    ],
+    "first_waypoint": {
+      "intersection": "Pickwick Road & Devon Road, Havertown, PA",
+      "coordinates": [
+        -75.2917572,
+        39.9767128
+      ],
+      "apple_maps": "https://maps.apple.com/?q=Pickwick%20Road%20%26%20Devon%20Road%2C%20Havertown%2C%20PA&daddr=39.9767128,-75.2917572&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Pickwick Road & Covington Road, Havertown, PA",
+      "coordinates": [
+        -75.2905126,
+        39.9744765
+      ],
+      "apple_maps": "https://maps.apple.com/?q=Pickwick%20Road%20%26%20Covington%20Road%2C%20Havertown%2C%20PA&daddr=39.9744765,-75.2905126&dirflg=w"
+    },
+    "citystrides_url": "https://citystrides.com/streets/3296284",
+    "citystrides_status": "7/7 nodes credited (CityStrides snapshot October 15)",
+    "number": 6,
+    "one_way_miles": 1.4,
+    "navigation_address": "215 Pickwick Rd, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.290649,
+      39.9757657
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=215%20Pickwick%20Rd%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "optional_one_way_miles": 1.4
+  },
+  {
+    "date": "2026-10-22",
+    "street": "Garden Avenue",
+    "target_label": "Kingsley Road to Lawndale Avenue",
+    "target_miles": 0.056,
+    "target_coordinates": [
+      [
+        -75.2863778,
+        39.9875464
+      ],
+      [
+        -75.2855624,
+        39.9880593
+      ]
+    ],
+    "target_midpoint": [
+      -75.2859701,
+      39.98780285
+    ],
+    "first_waypoint": {
+      "intersection": "Garden Avenue & Kingsley Road, Havertown, PA",
+      "coordinates": [
+        -75.2863778,
+        39.9875464
+      ],
+      "apple_maps": "https://maps.apple.com/?q=Garden%20Avenue%20%26%20Kingsley%20Road%2C%20Havertown%2C%20PA&daddr=39.9875464,-75.2863778&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Garden Avenue & Lawndale Avenue, Havertown, PA",
+      "coordinates": [
+        -75.2855624,
+        39.9880593
+      ],
+      "apple_maps": "https://maps.apple.com/?q=Garden%20Avenue%20%26%20Lawndale%20Avenue%2C%20Havertown%2C%20PA&daddr=39.9880593,-75.2855624&dirflg=w"
+    },
+    "citystrides_url": "https://citystrides.com/streets/3296166",
+    "citystrides_status": "2/3 nodes credited (CityStrides snapshot October 15)",
+    "number": 7,
+    "one_way_miles": 1.6,
+    "navigation_address": "825 Garden Ave, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.2858402,
+      39.9876684
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=825%20Garden%20Ave%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "optional_one_way_miles": 1.6
+  },
+  {
+    "date": "2026-10-23",
+    "street": "Bennington Road",
+    "target_label": "Myrtle Avenue to Grove Place",
+    "target_miles": 0.198,
+    "target_coordinates": [
+      [
+        -75.2865366,
+        39.9737288
+      ],
+      [
+        -75.2862401,
+        39.9738675
+      ],
+      [
+        -75.2861159,
+        39.9739159
+      ],
+      [
+        -75.285814,
+        39.9740336
+      ],
+      [
+        -75.2858326,
+        39.9742403
+      ],
+      [
+        -75.2858377,
+        39.974296
+      ],
+      [
+        -75.2857172,
+        39.9744274
+      ],
+      [
+        -75.2857072,
+        39.9744382
+      ],
+      [
+        -75.2856133,
+        39.9745406
+      ],
+      [
+        -75.2855059,
+        39.9746577
+      ],
+      [
+        -75.2854772,
+        39.974689
+      ],
+      [
+        -75.2853732,
+        39.9747671
+      ],
+      [
+        -75.2852763,
+        39.9748398
+      ],
+      [
+        -75.2851168,
+        39.9749595
+      ],
+      [
+        -75.2850633,
+        39.9749825
+      ],
+      [
+        -75.285021,
+        39.9750006
+      ],
+      [
+        -75.2847403,
+        39.975121
+      ],
+      [
+        -75.2846173,
+        39.975171
+      ],
+      [
+        -75.2844375,
+        39.9752404
+      ],
+      [
+        -75.2841747,
+        39.9753402
+      ],
+      [
+        -75.2838437,
+        39.975469
+      ]
+    ],
+    "target_midpoint": [
+      -75.2854772,
+      39.974689
+    ],
+    "first_waypoint": {
+      "intersection": "Bennington Road & Myrtle Avenue, Havertown, PA",
+      "coordinates": [
+        -75.2865366,
+        39.9737288
+      ],
+      "apple_maps": "https://maps.apple.com/?q=Bennington%20Road%20%26%20Myrtle%20Avenue%2C%20Havertown%2C%20PA&daddr=39.9737288,-75.2865366&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Bennington Road & Grove Place, Havertown, PA",
+      "coordinates": [
+        -75.2838437,
+        39.975469
+      ],
+      "apple_maps": "https://maps.apple.com/?q=Bennington%20Road%20%26%20Grove%20Place%2C%20Havertown%2C%20PA&daddr=39.975469,-75.2838437&dirflg=w"
+    },
+    "citystrides_url": "https://citystrides.com/streets/3296036",
+    "citystrides_status": "2/22 nodes credited (CityStrides snapshot October 15)",
+    "number": 8,
+    "one_way_miles": 1.9,
+    "navigation_address": "17 Bennington Rd, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.285653,
+      39.9747892
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=17%20Bennington%20Rd%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "optional_one_way_miles": 1.9
+  }
+]

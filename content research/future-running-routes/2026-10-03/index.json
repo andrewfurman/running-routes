@@ -1,0 +1,102 @@
+{
+  "created": "2026-10-03",
+  "start_finish": [
+    -75.3095635,
+    39.9809343
+  ],
+  "minimum_reuse_days": 31,
+  "coverage_refresh_required_before_use": true,
+  "routes": [
+    {
+      "id": "01-charles",
+      "title": "Charles Drive circle",
+      "estimated_miles": 3.175,
+      "target": "Charles Drive · Frederick to Paddock",
+      "map": "01-charles/map.jpg",
+      "spec": "01-charles/map.json",
+      "route": "01-charles/route.json",
+      "geojson": "01-charles/route.geojson",
+      "gpx": "01-charles/route.gpx",
+      "last_used": "2026-10-04",
+      "status": "used"
+    },
+    {
+      "id": "02-holmes",
+      "title": "Holmes Avenue circle",
+      "estimated_miles": 3.015,
+      "target": "Holmes · Virginia to Maryland",
+      "map": "02-holmes/map.jpg",
+      "spec": "02-holmes/map.json",
+      "route": "02-holmes/route.json",
+      "geojson": "02-holmes/route.geojson",
+      "gpx": "02-holmes/route.gpx",
+      "last_used": "2026-10-07",
+      "status": "scheduled"
+    },
+    {
+      "id": "03-annabella",
+      "title": "Annabella circle",
+      "estimated_miles": 2.963,
+      "target": "Annabella · Roosevelt to Holmes",
+      "map": "03-annabella/map.jpg",
+      "spec": "03-annabella/map.json",
+      "route": "03-annabella/route.json",
+      "geojson": "03-annabella/route.geojson",
+      "gpx": "03-annabella/route.gpx",
+      "last_used": "2026-10-05",
+      "status": "scheduled"
+    },
+    {
+      "id": "04-dorchester",
+      "title": "Dorchester circle",
+      "estimated_miles": 2.873,
+      "target": "Dorchester · Annabella to Stanton",
+      "map": "04-dorchester/map.jpg",
+      "spec": "04-dorchester/map.json",
+      "route": "04-dorchester/route.json",
+      "geojson": "04-dorchester/route.geojson",
+      "gpx": "04-dorchester/route.gpx",
+      "last_used": "2026-10-08",
+      "status": "scheduled"
+    },
+    {
+      "id": "05-howell",
+      "title": "Howell middle-section circle",
+      "estimated_miles": 3.026,
+      "target": "Howell · Melrose to Robinson",
+      "map": "05-howell/map.jpg",
+      "spec": "05-howell/map.json",
+      "route": "05-howell/route.json",
+      "geojson": "05-howell/route.geojson",
+      "gpx": "05-howell/route.gpx",
+      "last_used": "2026-10-09",
+      "status": "scheduled"
+    },
+    {
+      "id": "06-st-albans",
+      "title": "St Albans circle",
+      "estimated_miles": 3.264,
+      "target": "St Albans · Earlington to Canterbury",
+      "map": "06-st-albans/map.jpg",
+      "spec": "06-st-albans/map.json",
+      "route": "06-st-albans/route.json",
+      "geojson": "06-st-albans/route.geojson",
+      "gpx": "06-st-albans/route.gpx",
+      "last_used": "2026-10-06",
+      "status": "scheduled"
+    },
+    {
+      "id": "07-canterbury",
+      "title": "Canterbury circle",
+      "estimated_miles": 3.343,
+      "target": "Canterbury · St Albans to Covington",
+      "map": "07-canterbury/map.jpg",
+      "spec": "07-canterbury/map.json",
+      "route": "07-canterbury/route.json",
+      "geojson": "07-canterbury/route.geojson",
+      "gpx": "07-canterbury/route.gpx",
+      "last_used": null,
+      "status": "planned-unused"
+    }
+  ]
+}

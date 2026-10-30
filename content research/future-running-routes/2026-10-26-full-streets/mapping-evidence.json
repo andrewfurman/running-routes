@@ -1,0 +1,1293 @@
+[
+  {
+    "street": "Monroe Avenue",
+    "geocode": {
+      "address": "8536 Monroe Ave, Upper Darby Township, PA 19082",
+      "place_id": "ChIJTxZ_9AfBxokRBGSeUFCcTYg",
+      "geometry": {
+        "bounds": {
+          "northeast": {
+            "lat": 39.967402,
+            "lng": -75.2940177
+          },
+          "southwest": {
+            "lat": 39.9670522,
+            "lng": -75.2944193
+          }
+        },
+        "location": {
+          "lat": 39.9672271,
+          "lng": -75.2942185
+        },
+        "location_type": "ROOFTOP",
+        "viewport": {
+          "northeast": {
+            "lat": 39.9685796802915,
+            "lng": -75.29286951970849
+          },
+          "southwest": {
+            "lat": 39.9658817197085,
+            "lng": -75.29556748029151
+          }
+        }
+      }
+    },
+    "walking_route": {
+      "metres": 2188,
+      "seconds": 1809,
+      "overview_polyline": {
+        "points": "sx_sF~|sjMPORMJO\\e@LKrEaD`C_Bp@i@DI`@gCFo@zAgJJq@A[WkApB_AhCiA`@Uj@S|@a@RO^O`CiAfCkAxAcAn@g@rCmB|BcBpAiAJUFARUr@u@bCiCpByBd@g@`BiBb@_@JMbBwAL[NiAr@u@n@q@VYNOAC^c@BFLOj@m@PQJGCEKQg@kA?Qt@eBFO"
+      },
+      "steps": [
+        {
+          "start_location": {
+            "lat": 39.9810607,
+            "lng": -75.30976489999999
+          },
+          "end_location": {
+            "lat": 39.9780021,
+            "lng": -75.3042366
+          },
+          "polyline": {
+            "points": "sx_sF~|sjMBAJI@CFGJEBCFKLSDGDGBA@A@C@?FELKj@a@BAPO\\U`@Yn@c@RMBCfBkABCPKDC^YFGBC@C@?@E@G^_C@WDWXeBBI@Mz@iF@GBKDU?G@C?E?ICGAEOs@CGAI"
+          }
+        },
+        {
+          "start_location": {
+            "lat": 39.9780021,
+            "lng": -75.3042366
+          },
+          "end_location": {
+            "lat": 39.9678546,
+            "lng": -75.29569889999999
+          },
+          "polyline": {
+            "points": "oe_sFnzrjMDCFEl@Wt@]RGtBaAPINKVKRG|@a@TKACJERI~Au@BCVKDC`Bw@HEJGNEDEz@i@HGLKLIBCJGPQp@c@BEFCDCh@_@HGPMHEXSRM@ADEHGDEb@[ROHGNKr@o@BEJUFAJMFGPQLODCLOp@u@b@e@RSXYBChAmAJOVWDGDCJMLMBCBCHMnAsANKRSHK@ATQJK?@`A{@L[NiAn@q@BC@ATWLMHIDEFIBCDEBC@C@?FGAC^c@BF"
+          }
+        },
+        {
+          "start_location": {
+            "lat": 39.9678546,
+            "lng": -75.29569889999999
+          },
+          "end_location": {
+            "lat": 39.9674133,
+            "lng": -75.295265
+          },
+          "polyline": {
+            "points": "af}rFbeqjMLOd@g@DEDEJKJG"
+          }
+        },
+        {
+          "start_location": {
+            "lat": 39.9674133,
+            "lng": -75.295265
+          },
+          "end_location": {
+            "lat": 39.9673764,
+            "lng": -75.2940768
+          },
+          "polyline": {
+            "points": "ic}rFjbqjMCEIMACEGCEEIWs@AG@IBIp@{A@C@CBG"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "street": "Golf House Road",
+    "geocode": {
+      "address": "20 Golf House Rd, Haverford, PA 19041",
+      "place_id": "ChIJI1X4QGrAxokRn2x9LsiqV3A",
+      "geometry": {
+        "bounds": {
+          "northeast": {
+            "lat": 40.0003444,
+            "lng": -75.3135152
+          },
+          "southwest": {
+            "lat": 40.0000388,
+            "lng": -75.31375899999999
+          }
+        },
+        "location": {
+          "lat": 40.0001886,
+          "lng": -75.3136365
+        },
+        "location_type": "ROOFTOP",
+        "viewport": {
+          "northeast": {
+            "lat": 40.0015167802915,
+            "lng": -75.31206261970848
+          },
+          "southwest": {
+            "lat": 39.9988188197085,
+            "lng": -75.31476058029149
+          }
+        }
+      }
+    },
+    "walking_route": {
+      "metres": 3067,
+      "seconds": 2576,
+      "overview_polyline": {
+        "points": "sx_sF~|sjMuBbBaCnBSBs@SSCID}@n@MJMPMUCMAKC{As@Sk@OkBe@gA[_FqAoBk@_@g@OLi@`@w@t@[\\OLQTK^OXU\\[`@q@fABFGXGICDOY@CWw@u@yBQc@K[OBo@Lg@FaA?k@C}@Oa@MaAa@}@g@cG_DaDeBs@i@KIEJQXm@~@w@t@iDjCs@Po@?s@SOKGEk@y@sAwCa@{@Wa@_AcAKGUEKAc@FMD[TWZ]h@sBdDeBbCoBlCc@l@OPBLFRFNDL\\bAn@tB^hAnAxDp@nBkAn@_AY{CgA"
+      },
+      "steps": [
+        {
+          "start_location": {
+            "lat": 39.9810607,
+            "lng": -75.30976489999999
+          },
+          "end_location": {
+            "lat": 39.9832553,
+            "lng": -75.3111359
+          },
+          "polyline": {
+            "points": "sx_sF~|sjMIFCDC@SNo@h@UPGFA?QPg@`@}@t@IDC@C?E?E@EAm@QMCE?A@A?EBE@WRSPKFA@KHMP"
+          }
+        },
+        {
+          "start_location": {
+            "lat": 39.9832553,
+            "lng": -75.3111359
+          },
+          "end_location": {
+            "lat": 39.98337799999999,
+            "lng": -75.3104386
+          },
+          "polyline": {
+            "points": "kf`sFretjMMUAGAEAE?EC{A"
+          }
+        },
+        {
+          "start_location": {
+            "lat": 39.98337799999999,
+            "lng": -75.3104386
+          },
+          "end_location": {
+            "lat": 39.9865976,
+            "lng": -75.309105
+          },
+          "polyline": {
+            "points": "cg`sFfatjMs@SMC]KiAYSGGCE?SGKCQGUGQEYGe@MMEu@SOEg@MQGA?sA]QIGCKKS["
+          }
+        },
+        {
+          "start_location": {
+            "lat": 39.9865976,
+            "lng": -75.309105
+          },
+          "end_location": {
+            "lat": 39.9882042,
+            "lng": -75.31105869999999
+          },
+          "polyline": {
+            "points": "g{`sFzxsjMEDIFEBMJMJGDCBONQNQPIHABIJEBMLA?CDMNK^OXINKLGLSRa@n@OVBFGXGICD"
+          }
+        },
+        {
+          "start_location": {
+            "lat": 39.9882042,
+            "lng": -75.31105869999999
+          },
+          "end_location": {
+            "lat": 39.9888072,
+            "lng": -75.309699
+          },
+          "polyline": {
+            "points": "geasFbetjMOY@CI[M[EKYy@Qk@CGAEO]K["
+          }
+        },
+        {
+          "start_location": {
+            "lat": 39.9888072,
+            "lng": -75.309699
+          },
+          "end_location": {
+            "lat": 39.9934271,
+            "lng": -75.3077212
+          },
+          "polyline": {
+            "points": "aiasFr|sjMOB]HQBG@_@D]@I?YAI?a@Ce@GWGEACAKEKCYKIE[MAAGEUMKESMg@Ws@_@c@Ua@Ua@SAA_@S]Qa@U_@QkAo@SMAAQKUQIIKI"
+          }
+        },
+        {
+          "start_location": {
+            "lat": 39.9934271,
+            "lng": -75.3077212
+          },
+          "end_location": {
+            "lat": 39.9960124,
+            "lng": -75.3088147
+          },
+          "polyline": {
+            "points": "}ebsFfpsjMEJCDMROT]h@QRe@`@MJ}AlA]X_@VYJYDY@UAYGYKMIAAAAECMM]k@"
+          }
+        },
+        {
+          "start_location": {
+            "lat": 39.9960124,
+            "lng": -75.3088147
+          },
+          "end_location": {
+            "lat": 39.99984269999999,
+            "lng": -75.3102139
+          },
+          "polyline": {
+            "points": "avbsF`wsjMUe@[q@GOYo@Q_@CGIOACEICEKOAAGIACAAs@s@ECECKCIAE?EAS@ODE@A?CBA?A@A@KFKHABIHCBGHEDCFSZINkAlBIJSZCDs@`AGJe@n@EDKNe@p@UXMPMPCBABGH[b@OP"
+          }
+        },
+        {
+          "start_location": {
+            "lat": 39.99984269999999,
+            "lng": -75.3102139
+          },
+          "end_location": {
+            "lat": 39.9985122,
+            "lng": -75.31332379999999
+          },
+          "polyline": {
+            "points": "_ncsFx_tjMBLDL@DFN@D@D@@L^@FBBHVNf@DLDNRn@FR@BPf@BHFPDLJ\\HPFVRh@HXDLFL?BFNHVFPBH@BHT"
+          }
+        },
+        {
+          "start_location": {
+            "lat": 39.9985122,
+            "lng": -75.31332379999999
+          },
+          "end_location": {
+            "lat": 39.9999873,
+            "lng": -75.3130661
+          },
+          "polyline": {
+            "points": "uecsFfstjMKFQJc@TIDUIUGOECAA?AA}By@YK"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "street": "Rodmor Road",
+    "geocode": {
+      "formatted_address": "77 Rodmor Rd, Havertown, PA 19083, USA",
+      "place_id": "ChIJ42YToL_BxokRhOb_z1PwuR8",
+      "geometry": {
+        "bounds": {
+          "northeast": {
+            "lat": 39.9614685,
+            "lng": -75.3162457
+          },
+          "southwest": {
+            "lat": 39.9613491,
+            "lng": -75.31646549999999
+          }
+        },
+        "location": {
+          "lat": 39.96141129999999,
+          "lng": -75.3163581
+        },
+        "location_type": "ROOFTOP",
+        "viewport": {
+          "northeast": {
+            "lat": 39.9627577802915,
+            "lng": -75.31508621970849
+          },
+          "southwest": {
+            "lat": 39.9600598197085,
+            "lng": -75.3177841802915
+          }
+        }
+      },
+      "address_components": [
+        {
+          "long_name": "77",
+          "short_name": "77",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "Rodmor Road",
+          "short_name": "Rodmor Rd",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Havertown",
+          "short_name": "Havertown",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Haverford Township",
+          "short_name": "Haverford Township",
+          "types": [
+            "administrative_area_level_3",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Delaware County",
+          "short_name": "Delaware County",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Pennsylvania",
+          "short_name": "PA",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "United States",
+          "short_name": "US",
+          "types": [
+            "country",
+            "political"
+          ]
+        },
+        {
+          "long_name": "19083",
+          "short_name": "19083",
+          "types": [
+            "postal_code"
+          ]
+        },
+        {
+          "long_name": "4922",
+          "short_name": "4922",
+          "types": [
+            "postal_code_suffix"
+          ]
+        }
+      ]
+    },
+    "walking_route": {
+      "metres": 3056,
+      "seconds": 2555,
+      "steps": [
+        {
+          "start_location": {
+            "lat": 39.9810607,
+            "lng": -75.30976489999999
+          },
+          "end_location": {
+            "lat": 39.9789687,
+            "lng": -75.3080518
+          },
+          "polyline": {
+            "points": "sx_sF~|sjMBAJI@CFGJEBCFKLSDGDGBA@A@C@?FELKj@a@BAPO\\U`@Yn@c@RMBCfBkABC"
+          }
+        },
+        {
+          "start_location": {
+            "lat": 39.9789687,
+            "lng": -75.3080518
+          },
+          "end_location": {
+            "lat": 39.977695,
+            "lng": -75.3107642
+          },
+          "polyline": {
+            "points": "qk_sFhrsjMBFFR@@Nd@b@pA@@BHBHZF@F?BBN?@@BDL?@@BDLN^Rb@HN@@BBFL`@f@FHFNBD?@DHDJ@H@B?B?F?FCV?H?F@J@D"
+          }
+        },
+        {
+          "start_location": {
+            "lat": 39.977695,
+            "lng": -75.3107642
+          },
+          "end_location": {
+            "lat": 39.9761934,
+            "lng": -75.3139599
+          },
+          "polyline": {
+            "points": "qc_sFfctjMHLNRDF^dAFPFTDLBD?@f@vAFPJVFRPf@b@nAXv@n@jBL^"
+          }
+        },
+        {
+          "start_location": {
+            "lat": 39.9761934,
+            "lng": -75.3139599
+          },
+          "end_location": {
+            "lat": 39.97644,
+            "lng": -75.3141563
+          },
+          "polyline": {
+            "points": "ez~rFfwtjMQJSLKL"
+          }
+        },
+        {
+          "start_location": {
+            "lat": 39.97644,
+            "lng": -75.3141563
+          },
+          "end_location": {
+            "lat": 39.9751217,
+            "lng": -75.31926
+          },
+          "polyline": {
+            "points": "w{~rFnxtjMHRPt@J\\DN@@DLn@lBn@jBJRBFjBtFVx@BLDNDLBHAF?DAHGf@Ix@AJ?FCLALAHEb@ADALAHI`@"
+          }
+        },
+        {
+          "start_location": {
+            "lat": 39.9751217,
+            "lng": -75.31926
+          },
+          "end_location": {
+            "lat": 39.9647306,
+            "lng": -75.3175735
+          },
+          "polyline": {
+            "points": "os~rFjxujMNBTBF@B@D?B?D@PDRBT?NBF@NDFBNBD?PFH@D@H@XDP?b@HPBTDJ@AL|@HBMF?B@D@D?J@B@L@JBN@F@B@h@FH@FBH@LBPBB?PBF@LBB?J@HBTBPBXDJ?HDD@F@T?DDP@@@\\D`@FNBF?f@HVB@@XNB?D@LGNBD@l@HN?PBh@HJ@B?B@VBL@NKDC^WBCHEPMDAXSPKNOFEPMBAHGHEfD}BFEJIDCFEFEJIFEfBmAPKJILIf@]LGzAcALIJI^WJGLGBFHKCG"
+          }
+        },
+        {
+          "start_location": {
+            "lat": 39.9647306,
+            "lng": -75.3175735
+          },
+          "end_location": {
+            "lat": 39.9630212,
+            "lng": -75.3166839
+          },
+          "polyline": {
+            "points": "qr|rFxmujMHEdBs@HE@?DAHENI@?t@[xB}@FE"
+          }
+        },
+        {
+          "start_location": {
+            "lat": 39.9630212,
+            "lng": -75.3166839
+          },
+          "end_location": {
+            "lat": 39.962574,
+            "lng": -75.3174468
+          },
+          "polyline": {
+            "points": "{g|rFfhujMHPdAxBHL"
+          }
+        },
+        {
+          "start_location": {
+            "lat": 39.962574,
+            "lng": -75.3174468
+          },
+          "end_location": {
+            "lat": 39.961353,
+            "lng": -75.3165479
+          },
+          "polyline": {
+            "points": "ae|rF`mujMLWFEFEXOh@_@`@[^WHGHEPK`@OFA"
+          }
+        }
+      ]
+    },
+    "target_scope": "Complete street."
+  },
+  {
+    "street": "Chestnut Avenue",
+    "geocode": {
+      "formatted_address": "2429 Chestnut Ave, Ardmore, PA 19003, USA",
+      "place_id": "ChIJy-6EoYrAxokRvGON12j__Ik",
+      "geometry": {
+        "bounds": {
+          "northeast": {
+            "lat": 39.9974988,
+            "lng": -75.29416970000001
+          },
+          "southwest": {
+            "lat": 39.9973633,
+            "lng": -75.2943214
+          }
+        },
+        "location": {
+          "lat": 39.9974302,
+          "lng": -75.2942408
+        },
+        "location_type": "ROOFTOP",
+        "viewport": {
+          "northeast": {
+            "lat": 39.9987513302915,
+            "lng": -75.2929444197085
+          },
+          "southwest": {
+            "lat": 39.9960533697085,
+            "lng": -75.29564238029151
+          }
+        }
+      },
+      "address_components": [
+        {
+          "long_name": "2429",
+          "short_name": "2429",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "Chestnut Avenue",
+          "short_name": "Chestnut Ave",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Ardmore",
+          "short_name": "Ardmore",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Haverford Township",
+          "short_name": "Haverford Township",
+          "types": [
+            "administrative_area_level_3",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Delaware County",
+          "short_name": "Delaware County",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Pennsylvania",
+          "short_name": "PA",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "United States",
+          "short_name": "US",
+          "types": [
+            "country",
+            "political"
+          ]
+        },
+        {
+          "long_name": "19003",
+          "short_name": "19003",
+          "types": [
+            "postal_code"
+          ]
+        },
+        {
+          "long_name": "3013",
+          "short_name": "3013",
+          "types": [
+            "postal_code_suffix"
+          ]
+        }
+      ]
+    },
+    "walking_route": {
+      "metres": 2814,
+      "seconds": 2396,
+      "steps": [
+        {
+          "start_location": {
+            "lat": 39.9810607,
+            "lng": -75.30976489999999
+          },
+          "end_location": {
+            "lat": 39.9832553,
+            "lng": -75.3111359
+          },
+          "polyline": {
+            "points": "sx_sF~|sjMIFCDC@SNo@h@UPGFA?QPg@`@}@t@IDC@C?E?E@EAm@QMCE?A@A?EBE@WRSPKFA@KHMP"
+          }
+        },
+        {
+          "start_location": {
+            "lat": 39.9832553,
+            "lng": -75.3111359
+          },
+          "end_location": {
+            "lat": 39.98337799999999,
+            "lng": -75.3104386
+          },
+          "polyline": {
+            "points": "kf`sFretjMMUAGAEAE?EC{A"
+          }
+        },
+        {
+          "start_location": {
+            "lat": 39.98337799999999,
+            "lng": -75.3104386
+          },
+          "end_location": {
+            "lat": 39.9865976,
+            "lng": -75.309105
+          },
+          "polyline": {
+            "points": "cg`sFfatjMs@SMC]KiAYSGGCE?SGKCQGUGQEYGe@MMEu@SOEg@MQGA?sA]QIGCKKS["
+          }
+        },
+        {
+          "start_location": {
+            "lat": 39.9865976,
+            "lng": -75.309105
+          },
+          "end_location": {
+            "lat": 39.9881005,
+            "lng": -75.31087959999999
+          },
+          "polyline": {
+            "points": "g{`sFzxsjMEDIFEBMJMJGDCBONQNQPIHABIJEBMLA?CDMNK^OXINKLGLSRa@n@KP"
+          }
+        },
+        {
+          "start_location": {
+            "lat": 39.9881005,
+            "lng": -75.31087959999999
+          },
+          "end_location": {
+            "lat": 39.9939168,
+            "lng": -75.2983074
+          },
+          "polyline": {
+            "points": "sdasF~ctjMM_@CDCKIUGa@M[Sg@ISSUGQGQEMGOIUUk@ACCIGMSi@IMCGAEIQEMACEKc@mAGQGSm@gBUs@EOg@wAOJ_@iAAEEMM[Y}@c@qAKY]eAKYQi@GOEKAEAEC@GS@ACGAECI_@mACEK[mAoDEOEKAGEKIQGOIWGQEKGSEUEKCIK[A@IW@AGQK[KYCGAGWs@EOCGAG?ACICI?C?AACAE?CACAGESGSCKAEAEAGCOEME[GSACCEEKWi@CEO]ACEIEICEQ]OYCEOSABA?QUDG"
+          }
+        },
+        {
+          "start_location": {
+            "lat": 39.9939168,
+            "lng": -75.2983074
+          },
+          "end_location": {
+            "lat": 39.9964685,
+            "lng": -75.29373890000001
+          },
+          "polyline": {
+            "points": "_ibsFluqjMKUCEACGICEEIAAEMGOMMEIIOIMWc@EKCCMYACCEEGGO[q@c@}@M[MWEKKUCCUk@Wk@KUYu@GMEIAEa@aACGIQCGACO_@w@kBCEEK"
+          }
+        },
+        {
+          "start_location": {
+            "lat": 39.9964685,
+            "lng": -75.29373890000001
+          },
+          "end_location": {
+            "lat": 39.9973123,
+            "lng": -75.2944227
+          },
+          "polyline": {
+            "points": "}xbsFzxpjMC@]XWP?@SNIFA?g@`@SNQL"
+          }
+        }
+      ]
+    },
+    "target_scope": "Complete main street; follow the short Lorraine Avenue connection."
+  },
+  {
+    "street": "Fairlamb Avenue",
+    "geocode": {
+      "address": "218 Fairlamb Ave, Havertown, PA 19083",
+      "place_id": "ChIJf0vVv8_BxokRyS0vDZ-7--U",
+      "geometry": {
+        "bounds": {
+          "northeast": {
+            "lat": 39.9718241,
+            "lng": -75.3278318
+          },
+          "southwest": {
+            "lat": 39.971687,
+            "lng": -75.3280037
+          }
+        },
+        "location": {
+          "lat": 39.9717556,
+          "lng": -75.3279177
+        },
+        "location_type": "ROOFTOP",
+        "viewport": {
+          "northeast": {
+            "lat": 39.9730247802915,
+            "lng": -75.32654166970849
+          },
+          "southwest": {
+            "lat": 39.9703268197085,
+            "lng": -75.3292396302915
+          }
+        }
+      }
+    },
+    "walking_route": {
+      "metres": 2394,
+      "seconds": 2029,
+      "overview_polyline": {
+        "points": "sx_sF~|sjMPORMJO\\e@LKrEaDjBoABCBFHTr@vBDJBHZF@JBPHVr@`Bn@z@R`@Nb@Cj@Bb@X`@d@lAXz@z@bCvAbE|@jCHTIDg@^\\rA|@lCz@~BnB|Ff@dB@PANStBMhAO~@`ALd@Hd@Bn@Nf@JxAPCZVHGj@@JF@NFQhBMvAOlASjBEn@TABSJBANVHIr@SlBMjACTNBh@LDBLTrAdEtBvGlBbGVt@"
+      },
+      "steps": [
+        {
+          "start_location": {
+            "lat": 39.9810607,
+            "lng": -75.30976489999999
+          },
+          "end_location": {
+            "lat": 39.9789687,
+            "lng": -75.3080518
+          },
+          "polyline": {
+            "points": "sx_sF~|sjMBAJI@CFGJEBCFKLSDGDGBA@A@C@?FELKj@a@BAPO\\U`@Yn@c@RMBCfBkABC"
+          }
+        },
+        {
+          "start_location": {
+            "lat": 39.9789687,
+            "lng": -75.3080518
+          },
+          "end_location": {
+            "lat": 39.977695,
+            "lng": -75.3107642
+          },
+          "polyline": {
+            "points": "qk_sFhrsjMBFFR@@Nd@b@pA@@BHBHZF@F?BBN?@@BDL?@@BDLN^Rb@HN@@BBFL`@f@FHFNBD?@DHDJ@H@B?B?F?FCV?H?F@J@D"
+          }
+        },
+        {
+          "start_location": {
+            "lat": 39.977695,
+            "lng": -75.3107642
+          },
+          "end_location": {
+            "lat": 39.9761427,
+            "lng": -75.3140738
+          },
+          "polyline": {
+            "points": "qc_sFfctjMHLNRDF^dAFPFTDLBD?@f@vAFPJVFRPf@b@nAXv@n@jBL^HT"
+          }
+        },
+        {
+          "start_location": {
+            "lat": 39.9761427,
+            "lng": -75.3140738
+          },
+          "end_location": {
+            "lat": 39.9763941,
+            "lng": -75.3142617
+          },
+          "polyline": {
+            "points": "{y~rF|wtjMIDOLWP"
+          }
+        },
+        {
+          "start_location": {
+            "lat": 39.9763941,
+            "lng": -75.3142617
+          },
+          "end_location": {
+            "lat": 39.9751217,
+            "lng": -75.31926
+          },
+          "polyline": {
+            "points": "m{~rFbytjMPt@J\\DN@@DLn@lBn@jBJRBFjBtFVx@BLDNDLBHAF?DAHGf@Ix@AJ?FCLALAHEb@ADALAHI`@"
+          }
+        },
+        {
+          "start_location": {
+            "lat": 39.9751217,
+            "lng": -75.31926
+          },
+          "end_location": {
+            "lat": 39.9735153,
+            "lng": -75.3196342
+          },
+          "polyline": {
+            "points": "os~rFjxujMNBTBF@B@D?B?D@PDRBT?NBF@NDFBNBD?PFH@D@H@XDP?b@H"
+          }
+        },
+        {
+          "start_location": {
+            "lat": 39.9735153,
+            "lng": -75.3196342
+          },
+          "end_location": {
+            "lat": 39.9735358,
+            "lng": -75.3197685
+          },
+          "polyline": {
+            "points": "oi~rFtzujM?FAF?DAD"
+          }
+        },
+        {
+          "start_location": {
+            "lat": 39.9735358,
+            "lng": -75.3197685
+          },
+          "end_location": {
+            "lat": 39.9734152,
+            "lng": -75.31981999999999
+          },
+          "polyline": {
+            "points": "si~rFp{ujMVH"
+          }
+        },
+        {
+          "start_location": {
+            "lat": 39.9734152,
+            "lng": -75.31981999999999
+          },
+          "end_location": {
+            "lat": 39.9733319,
+            "lng": -75.3201517
+          },
+          "polyline": {
+            "points": "{h~rFz{ujMGj@@JF@NF"
+          }
+        },
+        {
+          "start_location": {
+            "lat": 39.9733319,
+            "lng": -75.3201517
+          },
+          "end_location": {
+            "lat": 39.9736974,
+            "lng": -75.3222929
+          },
+          "polyline": {
+            "points": "ih~rF|}ujMQhBAPKdAIt@EVSjBEn@"
+          }
+        },
+        {
+          "start_location": {
+            "lat": 39.9736974,
+            "lng": -75.3222929
+          },
+          "end_location": {
+            "lat": 39.9734041,
+            "lng": -75.32233
+          },
+          "polyline": {
+            "points": "sj~rFhkvjMTABSJBANVH"
+          }
+        },
+        {
+          "start_location": {
+            "lat": 39.9734041,
+            "lng": -75.32233
+          },
+          "end_location": {
+            "lat": 39.9736355,
+            "lng": -75.32362789999999
+          },
+          "polyline": {
+            "points": "wh~rFpkvjMIr@AFQdBE\\Gl@CT"
+          }
+        },
+        {
+          "start_location": {
+            "lat": 39.9736355,
+            "lng": -75.32362789999999
+          },
+          "end_location": {
+            "lat": 39.9715748,
+            "lng": -75.32781220000001
+          },
+          "polyline": {
+            "points": "gj~rFtsvjMNBTFRDDB@BBBBDBFNd@`@lAX~@FP^hATt@@DBDNd@BH@Db@tABDFVFNPh@Lb@FPNd@?@JV@D@B?B@@?@Nb@Rp@BB"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "street": "Dover Road",
+    "geocode": {
+      "formatted_address": "812 Dover Rd, Wynnewood, PA 19096, USA",
+      "place_id": "ChIJW1aJReXAxokRC3GMFpJTOAc",
+      "geometry": {
+        "bounds": {
+          "northeast": {
+            "lat": 39.9839092,
+            "lng": -75.2820777
+          },
+          "southwest": {
+            "lat": 39.9837806,
+            "lng": -75.2822467
+          }
+        },
+        "location": {
+          "lat": 39.9838435,
+          "lng": -75.2821622
+        },
+        "location_type": "ROOFTOP",
+        "viewport": {
+          "northeast": {
+            "lat": 39.9852083802915,
+            "lng": -75.2807547697085
+          },
+          "southwest": {
+            "lat": 39.9825104197085,
+            "lng": -75.28345273029151
+          }
+        }
+      },
+      "address_components": [
+        {
+          "long_name": "812",
+          "short_name": "812",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "Dover Road",
+          "short_name": "Dover Rd",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Wynnewood",
+          "short_name": "Wynnewood",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Haverford Township",
+          "short_name": "Haverford Township",
+          "types": [
+            "administrative_area_level_3",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Delaware County",
+          "short_name": "Delaware County",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Pennsylvania",
+          "short_name": "PA",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "United States",
+          "short_name": "US",
+          "types": [
+            "country",
+            "political"
+          ]
+        },
+        {
+          "long_name": "19096",
+          "short_name": "19096",
+          "types": [
+            "postal_code"
+          ]
+        },
+        {
+          "long_name": "4028",
+          "short_name": "4028",
+          "types": [
+            "postal_code_suffix"
+          ]
+        }
+      ]
+    },
+    "walking_route": {
+      "metres": 3316,
+      "seconds": 2711,
+      "steps": [
+        {
+          "start_location": {
+            "lat": 39.9810607,
+            "lng": -75.30976489999999
+          },
+          "end_location": {
+            "lat": 39.9780021,
+            "lng": -75.3042366
+          },
+          "polyline": {
+            "points": "sx_sF~|sjMBAJI@CFGJEBCFKLSDGDGBA@A@C@?FELKj@a@BAPO\\U`@Yn@c@RMBCfBkABCPKDC^YFGBC@C@?@E@G^_C@WDWXeBBI@Mz@iF@GBKDU?G@C?E?ICGAEOs@CGAI"
+          }
+        },
+        {
+          "start_location": {
+            "lat": 39.9780021,
+            "lng": -75.3042366
+          },
+          "end_location": {
+            "lat": 39.9760671,
+            "lng": -75.30318
+          },
+          "polyline": {
+            "points": "oe_sFnzrjMDCFEl@Wt@]RGtBaAPINKVKRGv@_@"
+          }
+        },
+        {
+          "start_location": {
+            "lat": 39.9760671,
+            "lng": -75.30318
+          },
+          "end_location": {
+            "lat": 39.980805,
+            "lng": -75.2919399
+          },
+          "polyline": {
+            "points": "my~rFzsrjMY_ABACIAECICCSo@ACESEMa@oAOe@ISOc@GWAGg@aBCIOe@CEGUCIAE]eAWy@CG?AEKCMCKCCq@_CIUACC@EUAE@AACEKGWCEg@gBGUQk@CKIYAMCw@CgAAm@CeAC}@?YAg@A_@Ai@Am@AY?A?A?C?CAO?W?IAO?I?E?A?E?GAE?ECKEGEEGEGGMI][o@i@KIWUWWQOCCQMc@]EEGESQKIMKYWIG][GECACCGEEEA?KW@?"
+          }
+        },
+        {
+          "start_location": {
+            "lat": 39.980805,
+            "lng": -75.2919399
+          },
+          "end_location": {
+            "lat": 39.9814422,
+            "lng": -75.2813664
+          },
+          "polyline": {
+            "points": "_w_sFrmpjMAI@E?E@O@m@?G@O?[?G?E@[?G@_@@mA?E?I@_@?G@aABgA?ECY?E@]?K@_@?K@Y?I@g@Bc@HgB?K@SBi@?I?A@C@Y@]?C?C?I@M?a@AE?MASAWAECg@?EAUAUAKEU?EAO?IAQ?EEi@?I?GCe@AGAUAI@?CWA??EAICc@?WAOAUAQA]A_@AUAY?OE[?IAMAKAI?GAEAQAEAGC]CKAMAGA@AQ@AESCOESCIAICIEOGSCMK]EKCGCBGQ"
+          }
+        },
+        {
+          "start_location": {
+            "lat": 39.9814422,
+            "lng": -75.2813664
+          },
+          "end_location": {
+            "lat": 39.9819453,
+            "lng": -75.2819312
+          },
+          "polyline": {
+            "points": "_{_sFpknjMEDON?@KLGFABEDa@d@EFKH"
+          }
+        },
+        {
+          "start_location": {
+            "lat": 39.9819453,
+            "lng": -75.2819312
+          },
+          "end_location": {
+            "lat": 39.9825339,
+            "lng": -75.2809484
+          },
+          "polyline": {
+            "points": "e~_sF`onjMAEACCCAA?AAAAEm@kAw@}A"
+          }
+        },
+        {
+          "start_location": {
+            "lat": 39.9825339,
+            "lng": -75.2809484
+          },
+          "end_location": {
+            "lat": 39.9839221,
+            "lng": -75.28199889999999
+          },
+          "polyline": {
+            "points": "ya`sF|hnjMIDOLIFUN]TEBA@GDKFGFg@\\SLEDC@IFEBQLk@`@EB"
+          }
+        }
+      ]
+    },
+    "target_scope": "Complete street."
+  },
+  {
+    "street": "Coopertown Road",
+    "geocode": {
+      "formatted_address": "10 Coopertown Rd, Haverford, PA 19041, USA",
+      "place_id": "ChIJMwZN-z3AxokRQAE594ckFNA",
+      "geometry": {
+        "location": {
+          "lat": 39.9992674,
+          "lng": -75.3243171
+        },
+        "location_type": "ROOFTOP",
+        "viewport": {
+          "northeast": {
+            "lat": 40.0005933802915,
+            "lng": -75.3232719697085
+          },
+          "southwest": {
+            "lat": 39.9978954197085,
+            "lng": -75.3259699302915
+          }
+        }
+      },
+      "address_components": [
+        {
+          "long_name": "10",
+          "short_name": "10",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "Coopertown Road",
+          "short_name": "Coopertown Rd",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Haverford",
+          "short_name": "Haverford",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Haverford Township",
+          "short_name": "Haverford Township",
+          "types": [
+            "administrative_area_level_3",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Delaware County",
+          "short_name": "Delaware County",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Pennsylvania",
+          "short_name": "PA",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "United States",
+          "short_name": "US",
+          "types": [
+            "country",
+            "political"
+          ]
+        },
+        {
+          "long_name": "19041",
+          "short_name": "19041",
+          "types": [
+            "postal_code"
+          ]
+        },
+        {
+          "long_name": "1013",
+          "short_name": "1013",
+          "types": [
+            "postal_code_suffix"
+          ]
+        }
+      ]
+    },
+    "walking_route": {
+      "metres": 2780,
+      "seconds": 2407,
+      "steps": [
+        {
+          "start_location": {
+            "lat": 39.9810607,
+            "lng": -75.30976489999999
+          },
+          "end_location": {
+            "lat": 39.9832553,
+            "lng": -75.3111359
+          },
+          "polyline": {
+            "points": "sx_sF~|sjMIFCDC@SNo@h@UPGFA?QPg@`@}@t@IDC@C?E?E@EAm@QMCE?A@A?EBE@WRSPKFA@KHMP"
+          }
+        },
+        {
+          "start_location": {
+            "lat": 39.9832553,
+            "lng": -75.3111359
+          },
+          "end_location": {
+            "lat": 39.98337799999999,
+            "lng": -75.3104386
+          },
+          "polyline": {
+            "points": "kf`sFretjMMUAGAEAE?EC{A"
+          }
+        },
+        {
+          "start_location": {
+            "lat": 39.98337799999999,
+            "lng": -75.3104386
+          },
+          "end_location": {
+            "lat": 39.9865976,
+            "lng": -75.309105
+          },
+          "polyline": {
+            "points": "cg`sFfatjMs@SMC]KiAYSGGCE?SGKCQGUGQEYGe@MMEu@SOEg@MQGA?sA]QIGCKKS["
+          }
+        },
+        {
+          "start_location": {
+            "lat": 39.9865976,
+            "lng": -75.309105
+          },
+          "end_location": {
+            "lat": 39.9955524,
+            "lng": -75.3238819
+          },
+          "polyline": {
+            "points": "g{`sFzxsjMEDIFEBMJMJGDCBONQNQPIHABIJEBMLA?CDMNK^OXINKLGLSRa@n@OVBFGXGIMR_@h@CFMLGLGDU^GHADe@t@OVCDABEHITGPUh@Yx@CFa@dACHGLM\\EL{@zBGNEHOd@Wl@ABENCHQ`@CHGLCHm@|AAFKVEJGNeApCIREJELEHSf@?@GNELO\\IVWp@CBELADi@tAIRIPELGLITEJELMZ_@`A_AhCWp@GRMXCDIP?@CBEJKPU`@W\\GFEDIHIJCBCDIJCBe@h@ONOPCBKJIJEBQRFNBHOLEICKSTKLCBIJEDCDEDILC@CFGHEFKLGJEFCDEJGHCDGNABKRCDCDKLABCDO\\"
+          }
+        },
+        {
+          "start_location": {
+            "lat": 39.9955524,
+            "lng": -75.3238819
+          },
+          "end_location": {
+            "lat": 39.99888600000001,
+            "lng": -75.32472179999999
+          },
+          "polyline": {
+            "points": "esbsFfuvjMOEU?M?A?EAC@o@BE?]@S@I@W@A?q@BY@A?S@W@K@I?c@BG@[@M?C?C@C?A@C?E@E@A@C?C@A@GBKDMFSLc@Xa@Ts@d@A?MH"
+          }
+        },
+        {
+          "start_location": {
+            "lat": 39.99888600000001,
+            "lng": -75.32472179999999
+          },
+          "end_location": {
+            "lat": 39.9991032,
+            "lng": -75.32419879999999
+          },
+          "polyline": {
+            "points": "ahcsFnzvjMEOCKCGQk@IW"
+          }
+        }
+      ]
+    },
+    "target_scope": "Southern stretch from Darby Road to College Avenue; the separate continuation north of College Avenue is outside this target."
+  }
+]

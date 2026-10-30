@@ -1,0 +1,157 @@
+{
+  "review_window": "2026-10-09 to 2026-10-15 inclusive, America/New_York",
+  "method": "Local equirectangular projection. Sample lines at <=5m intervals and match to opposite track sampled at <=2m. Report length-weighted proximity within 20m, with 10m and 30m target sensitivity. GPS proximity is not CityStrides node credit, a street-level map-match, or proof of sidewalk choice. Exported GPS may omit map-hidden portions. Distances use displayed Strava values versus saved OSM estimates.",
+  "sync_recovery": {
+    "activities_before": 4313,
+    "activities_after": 4404,
+    "recovered_activities": 91,
+    "runs_before": 1842,
+    "runs_after": 1868,
+    "recovered_runs": 26,
+    "backfill_window": "2026-09-19 to 2026-10-15",
+    "automatic_uploads": "on; toggled off then on",
+    "background_app_refresh": "on",
+    "cellular_data": "on",
+    "health_workouts": "Full Access",
+    "health_workout_routes": "Full Access",
+    "future_workout_auto_upload": "not yet tested with a newly recorded workout"
+  },
+  "runs": [
+    {
+      "date": "2026-10-09",
+      "session": "morning",
+      "strava_url": "https://www.strava.com/activities/20595944023",
+      "actual_miles": 4.14,
+      "moving_time": "44:04",
+      "gps_points": 2659,
+      "street": "Kingsley Road",
+      "target_label": "Delmont/Lakeside to Garden Avenue",
+      "planned_miles": 3.91,
+      "distance_delta_miles": 0.23,
+      "target_length_m": 175,
+      "target_coverage_pct": {
+        "10": 100.0,
+        "20": 100.0,
+        "30": 100.0
+      },
+      "planned_loop_coverage_pct_20m": 65.4,
+      "actual_on_planned_loop_pct_20m": 68.2,
+      "target_endpoint_distance_m": [
+        8.2,
+        8.2
+      ]
+    },
+    {
+      "date": "2026-10-11",
+      "session": "morning",
+      "strava_url": "https://www.strava.com/activities/20595942975",
+      "actual_miles": 3.77,
+      "moving_time": "40:31",
+      "gps_points": 2697,
+      "street": "Myrtle Avenue",
+      "target_label": "Warwick Road to Bennington Road",
+      "planned_miles": 3.6,
+      "distance_delta_miles": 0.17,
+      "target_length_m": 299,
+      "target_coverage_pct": {
+        "10": 0.0,
+        "20": 0.0,
+        "30": 0.0
+      },
+      "planned_loop_coverage_pct_20m": 25.3,
+      "actual_on_planned_loop_pct_20m": 24.0,
+      "target_endpoint_distance_m": [
+        755.6,
+        489.2
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "session": "morning",
+      "strava_url": "https://www.strava.com/activities/20595942972",
+      "actual_miles": 3.84,
+      "moving_time": "39:53",
+      "gps_points": 2439
+    },
+    {
+      "date": "2026-10-13",
+      "session": "evening",
+      "strava_url": "https://www.strava.com/activities/20595939594",
+      "actual_miles": 0.35,
+      "moving_time": "4:17",
+      "gps_points": 292
+    },
+    {
+      "date": "2026-10-13",
+      "session": "morning",
+      "strava_url": "https://www.strava.com/activities/20595940684",
+      "actual_miles": 3.34,
+      "moving_time": "34:42",
+      "gps_points": 2158,
+      "street": "Ashton Road",
+      "target_label": "Holmes/Annabella to North Brierwood Road",
+      "planned_miles": 3.3,
+      "distance_delta_miles": 0.04,
+      "target_length_m": 183,
+      "target_coverage_pct": {
+        "10": 100.0,
+        "20": 100.0,
+        "30": 100.0
+      },
+      "planned_loop_coverage_pct_20m": 26.7,
+      "actual_on_planned_loop_pct_20m": 29.7,
+      "target_endpoint_distance_m": [
+        8.8,
+        5.2
+      ]
+    },
+    {
+      "date": "2026-10-14",
+      "session": "morning",
+      "strava_url": "https://www.strava.com/activities/20595929845",
+      "actual_miles": 3.53,
+      "moving_time": "36:47",
+      "gps_points": 2376,
+      "street": "Wyndmoor Road",
+      "target_label": "South Eagle Road to Oak Way",
+      "planned_miles": 3.21,
+      "distance_delta_miles": 0.32,
+      "target_length_m": 322,
+      "target_coverage_pct": {
+        "10": 100.0,
+        "20": 100.0,
+        "30": 100.0
+      },
+      "planned_loop_coverage_pct_20m": 47.9,
+      "actual_on_planned_loop_pct_20m": 54.5,
+      "target_endpoint_distance_m": [
+        7.6,
+        2.2
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "session": "morning",
+      "strava_url": "https://www.strava.com/activities/20595926176",
+      "actual_miles": 3.98,
+      "moving_time": "43:50",
+      "gps_points": 2684,
+      "street": "Powder Mill Lane",
+      "target_label": "Delmont Avenue to Remington Road",
+      "planned_miles": 3.9,
+      "distance_delta_miles": 0.08,
+      "target_length_m": 195,
+      "target_coverage_pct": {
+        "10": 100.0,
+        "20": 100.0,
+        "30": 100.0
+      },
+      "planned_loop_coverage_pct_20m": 91.9,
+      "actual_on_planned_loop_pct_20m": 90.9,
+      "target_endpoint_distance_m": [
+        7.2,
+        5.2
+      ]
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "running_track_count": 1874,
+  "as_of": "2026-10-30",
+  "method": "5-metre target samples, nearest running GPS track in UTM18N; 15m and 25m tolerances; not CityStrides credit.",
+  "targets": [
+    {
+      "date": "2026-10-29",
+      "street": "Exeter Road",
+      "full_running_history": {
+        "length_m": 521.9,
+        "covered_15m_pct": 100.0,
+        "covered_25m_pct": 100.0,
+        "max_nearest_distance_m": 8.0
+      },
+      "oct29_run": {
+        "length_m": 521.9,
+        "covered_15m_pct": 100.0,
+        "covered_25m_pct": 100.0,
+        "max_nearest_distance_m": 8.0
+      },
+      "oct30_run": {
+        "length_m": 521.9,
+        "covered_15m_pct": 0.0,
+        "covered_25m_pct": 0.0,
+        "max_nearest_distance_m": 2344.9
+      }
+    },
+    {
+      "date": "2026-10-30",
+      "street": "Gladstone Road",
+      "full_running_history": {
+        "length_m": 496.1,
+        "covered_15m_pct": 3.0,
+        "covered_25m_pct": 5.0,
+        "max_nearest_distance_m": 212.8
+      },
+      "oct29_run": {
+        "length_m": 496.1,
+        "covered_15m_pct": 0.0,
+        "covered_25m_pct": 0.0,
+        "max_nearest_distance_m": 2208.1
+      },
+      "oct30_run": {
+        "length_m": 496.1,
+        "covered_15m_pct": 0.0,
+        "covered_25m_pct": 0.0,
+        "max_nearest_distance_m": 1332.8
+      }
+    },
+    {
+      "date": "2026-10-31",
+      "street": "Chestnut Avenue",
+      "full_running_history": {
+        "length_m": 1176.4,
+        "covered_15m_pct": 29.7,
+        "covered_25m_pct": 33.5,
+        "max_nearest_distance_m": 233.9
+      },
+      "oct29_run": {
+        "length_m": 1176.4,
+        "covered_15m_pct": 0.0,
+        "covered_25m_pct": 0.0,
+        "max_nearest_distance_m": 1414.3
+      },
+      "oct30_run": {
+        "length_m": 1176.4,
+        "covered_15m_pct": 0.0,
+        "covered_25m_pct": 0.0,
+        "max_nearest_distance_m": 2465.6
+      }
+    },
+    {
+      "date": "2026-11-01",
+      "street": "Fairlamb Avenue",
+      "full_running_history": {
+        "length_m": 841.1,
+        "covered_15m_pct": 100.0,
+        "covered_25m_pct": 100.0,
+        "max_nearest_distance_m": 8.6
+      },
+      "oct29_run": {
+        "length_m": 841.1,
+        "covered_15m_pct": 0.0,
+        "covered_25m_pct": 0.0,
+        "max_nearest_distance_m": 2239.6
+      },
+      "oct30_run": {
+        "length_m": 841.1,
+        "covered_15m_pct": 100.0,
+        "covered_25m_pct": 100.0,
+        "max_nearest_distance_m": 9.1
+      }
+    },
+    {
+      "date": "2026-11-02",
+      "street": "Dover Road",
+      "full_running_history": {
+        "length_m": 369.3,
+        "covered_15m_pct": 0.0,
+        "covered_25m_pct": 0.0,
+        "max_nearest_distance_m": 147.4
+      },
+      "oct29_run": {
+        "length_m": 369.3,
+        "covered_15m_pct": 0.0,
+        "covered_25m_pct": 0.0,
+        "max_nearest_distance_m": 2369.4
+      },
+      "oct30_run": {
+        "length_m": 369.3,
+        "covered_15m_pct": 0.0,
+        "covered_25m_pct": 0.0,
+        "max_nearest_distance_m": 2350.5
+      }
+    },
+    {
+      "date": "2026-11-03",
+      "street": "Coopertown Road",
+      "full_running_history": {
+        "length_m": 895.9,
+        "covered_15m_pct": 0.0,
+        "covered_25m_pct": 0.0,
+        "max_nearest_distance_m": 766.5
+      },
+      "oct29_run": {
+        "length_m": 895.9,
+        "covered_15m_pct": 0.0,
+        "covered_25m_pct": 0.0,
+        "max_nearest_distance_m": 766.5
+      },
+      "oct30_run": {
+        "length_m": 895.9,
+        "covered_15m_pct": 0.0,
+        "covered_25m_pct": 0.0,
+        "max_nearest_distance_m": 2856.8
+      }
+    }
+  ]
+}

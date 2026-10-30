@@ -1,0 +1,14 @@
+{
+  "checked_date": "2026-10-16",
+  "audit_recomputed_matches": true,
+  "new_sections_with_no_samples_within_25_metres": 4,
+  "future_events_updated_and_read_back": 6,
+  "tuesday_unscheduled": true,
+  "past_charles_run_unchanged": true,
+  "raw_archive_unchanged": true,
+  "new_gpx_supplements": 3,
+  "total_gps_tracks": 3211,
+  "google_maps_rendering_verified_in_chrome": true,
+  "new_oxford_address_link_verified": true,
+  "geographic_zoom_observed": 18
+}

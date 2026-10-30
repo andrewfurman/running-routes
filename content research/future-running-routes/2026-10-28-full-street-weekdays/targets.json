@@ -1,0 +1,682 @@
+[
+  {
+    "date": "2026-10-29",
+    "number": 1,
+    "street": "Exeter Road",
+    "direction": "N",
+    "bearing": 347.0,
+    "target_label": "Golf House Road to Tunbridge Road",
+    "target_coordinates": [
+      [
+        -75.3129587,
+        40.0011289
+      ],
+      [
+        -75.3131786,
+        40.0010989
+      ],
+      [
+        -75.3135554,
+        40.0010942
+      ],
+      [
+        -75.313816,
+        40.001032
+      ],
+      [
+        -75.3143163,
+        40.0009107
+      ],
+      [
+        -75.3143362,
+        40.0009058
+      ],
+      [
+        -75.3148227,
+        40.0007851
+      ],
+      [
+        -75.3153917,
+        40.0006626
+      ],
+      [
+        -75.3156168,
+        40.0006227
+      ],
+      [
+        -75.3156983,
+        40.0006082
+      ],
+      [
+        -75.31572,
+        40.0006071
+      ],
+      [
+        -75.3158438,
+        40.0006008
+      ],
+      [
+        -75.3160858,
+        40.0005884
+      ],
+      [
+        -75.3160991,
+        40.0005887
+      ],
+      [
+        -75.3163871,
+        40.0005956
+      ],
+      [
+        -75.3165393,
+        40.0005992
+      ],
+      [
+        -75.3166846,
+        40.0006123
+      ],
+      [
+        -75.316977,
+        40.0006386
+      ],
+      [
+        -75.3171784,
+        40.0006807
+      ],
+      [
+        -75.3174147,
+        40.0007302
+      ],
+      [
+        -75.3176787,
+        40.0007855
+      ],
+      [
+        -75.3181564,
+        40.0008854
+      ],
+      [
+        -75.3186421,
+        40.0009871
+      ],
+      [
+        -75.3189044,
+        40.0010371
+      ]
+    ],
+    "target_midpoint": [
+      -75.31591953071468,
+      40.000596919638
+    ],
+    "target_miles": 0.324,
+    "navigation_address": "362 Exeter Rd, Haverford, PA 19041",
+    "navigation_coordinates": [
+      -75.3161523,
+      40.0009477
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=362%20Exeter%20Rd%2C%20Haverford%2C%20PA%2019041&dirflg=w",
+    "one_way_miles": 2.0,
+    "walking_metres": 3258,
+    "routing_source": "Google Directions walking checked October 28, 2026",
+    "coverage_audit_running": {
+      "length_m": 521.9,
+      "covered_25m_pct": 0.0,
+      "sample_spacing_m": 5,
+      "running_track_count": 1872,
+      "max_nearest_distance_m": 470.3
+    },
+    "citystrides_url": "https://citystrides.com/users/7315/map",
+    "citystrides_status": "October 28: 0.0% of target samples near recorded runs; GPS proximity does not establish CityStrides credit.",
+    "time_label": "5:30\u20136:15 AM",
+    "first_waypoint": {
+      "intersection": "Exeter Road & Golf House Road",
+      "coordinates": [
+        -75.3129587,
+        40.0011289
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=40.0011289,-75.3129587&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Exeter Road & Tunbridge Road",
+      "coordinates": [
+        -75.3189044,
+        40.0010371
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=40.0010371,-75.3189044&dirflg=w"
+    },
+    "display_date": "Thu Oct 29",
+    "target_scope": "Complete street; numbered address is at the midpoint.",
+    "whole_street": true,
+    "distance_limit_exception": true
+  },
+  {
+    "date": "2026-10-30",
+    "number": 2,
+    "street": "Gladstone Road",
+    "direction": "S",
+    "bearing": 187.5,
+    "target_label": "Edmonds Avenue to North Drexel Avenue",
+    "target_coordinates": [
+      [
+        -75.3104673,
+        39.9637641
+      ],
+      [
+        -75.311456,
+        39.9632986
+      ],
+      [
+        -75.3124345,
+        39.9628776
+      ],
+      [
+        -75.3135074,
+        39.9625092
+      ],
+      [
+        -75.3144878,
+        39.9620706
+      ],
+      [
+        -75.3155129,
+        39.9615628
+      ]
+    ],
+    "target_midpoint": [
+      -75.31300431549731,
+      39.96268194506963
+    ],
+    "target_miles": 0.308,
+    "navigation_address": "215a Gladstone Rd, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.3126547,
+      39.96269789999999
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=215a%20Gladstone%20Rd%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "one_way_miles": 1.9,
+    "walking_metres": 2989,
+    "routing_source": "Google Directions walking checked October 28, 2026",
+    "coverage_audit_running": {
+      "length_m": 496.1,
+      "covered_25m_pct": 5.0,
+      "sample_spacing_m": 5,
+      "running_track_count": 1872,
+      "max_nearest_distance_m": 212.8
+    },
+    "citystrides_url": "https://citystrides.com/users/7315/map",
+    "citystrides_status": "October 28: 5.0% of target samples near recorded runs; GPS proximity does not establish CityStrides credit.",
+    "time_label": "5:30\u20136:15 AM",
+    "first_waypoint": {
+      "intersection": "Gladstone Road & Edmonds Avenue",
+      "coordinates": [
+        -75.3104673,
+        39.9637641
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9637641,-75.3104673&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Gladstone Road & North Drexel Avenue",
+      "coordinates": [
+        -75.3155129,
+        39.9615628
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9615628,-75.3155129&dirflg=w"
+    },
+    "display_date": "Fri Oct 30",
+    "target_scope": "Complete connected street.",
+    "whole_street": true,
+    "distance_limit_exception": false
+  },
+  {
+    "date": "2026-10-31",
+    "number": 3,
+    "street": "Chestnut Avenue",
+    "direction": "NE",
+    "bearing": 36.2,
+    "target_label": "Haverford Road to Biddle Street",
+    "target_coordinates": [
+      [
+        -75.2910985,
+        39.9928269
+      ],
+      [
+        -75.2910727,
+        39.9932214
+      ],
+      [
+        -75.2910899,
+        39.9933332
+      ],
+      [
+        -75.2911328,
+        39.9934844
+      ],
+      [
+        -75.292858,
+        39.9954571
+      ],
+      [
+        -75.2937145,
+        39.996422
+      ],
+      [
+        -75.2947016,
+        39.9976516
+      ],
+      [
+        -75.2957591,
+        39.9990012
+      ],
+      [
+        -75.2961441,
+        39.9988261
+      ],
+      [
+        -75.2969092,
+        39.999777
+      ],
+      [
+        -75.2970423,
+        39.999948
+      ],
+      [
+        -75.2971753,
+        40.0001189
+      ],
+      [
+        -75.29733,
+        40.0003169
+      ],
+      [
+        -75.2981863,
+        40.0014125
+      ]
+    ],
+    "target_midpoint": [
+      -75.29445996693786,
+      39.99735061005284
+    ],
+    "target_miles": 0.731,
+    "navigation_address": "2429 Chestnut Ave, Ardmore, PA 19003",
+    "navigation_coordinates": [
+      -75.2942408,
+      39.9974302
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=2429%20Chestnut%20Ave%2C%20Ardmore%2C%20PA%2019003&dirflg=w",
+    "one_way_miles": 1.7,
+    "walking_metres": 2814,
+    "routing_source": "Google Directions walking checked October 26, 2026",
+    "coverage_audit_running": {
+      "length_m": 1176.4,
+      "covered_25m_pct": 33.5,
+      "uncovered_25m_pct": 66.5,
+      "sample_spacing_m": 5,
+      "running_track_count": 1870,
+      "covered_15m_pct": 29.7,
+      "max_nearest_distance_m": 233.9
+    },
+    "citystrides_url": "https://citystrides.com/users/7315/map",
+    "citystrides_status": "NE from home \u00b7 October 28: 33.5% near recorded runs; full-road target includes previously covered blocks",
+    "time_label": "5:30\u20136:15 AM",
+    "first_waypoint": {
+      "intersection": "Chestnut Avenue & Haverford Road",
+      "coordinates": [
+        -75.2910985,
+        39.9928269
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9928269,-75.2910985&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Chestnut Avenue & Biddle Street",
+      "coordinates": [
+        -75.2981863,
+        40.0014125
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=40.0014125,-75.2981863&dirflg=w"
+    },
+    "display_date": "Sat Oct 31",
+    "target_scope": "Complete main street; follow the short Lorraine Avenue connection.",
+    "whole_street": true,
+    "distance_limit_exception": false,
+    "connector_note": "Follow the short Lorraine Avenue connection between the staggered Chestnut Avenue blocks. Separate Chestnut Avenue beyond Biddle/County Line is a disconnected namesake, not part of this continuous street."
+  },
+  {
+    "date": "2026-11-01",
+    "number": 4,
+    "street": "Fairlamb Avenue",
+    "direction": "SW",
+    "bearing": 235.6,
+    "target_label": "street end to Windsor Park Lane",
+    "target_coordinates": [
+      [
+        -75.3235469,
+        39.9736871
+      ],
+      [
+        -75.323581,
+        39.9735677
+      ],
+      [
+        -75.3236309,
+        39.973393
+      ],
+      [
+        -75.3236557,
+        39.973335
+      ],
+      [
+        -75.323694,
+        39.9732872
+      ],
+      [
+        -75.3237402,
+        39.9732481
+      ],
+      [
+        -75.3238,
+        39.9732158
+      ],
+      [
+        -75.326279,
+        39.9721659
+      ],
+      [
+        -75.3291886,
+        39.9709425
+      ],
+      [
+        -75.3318151,
+        39.9697979
+      ]
+    ],
+    "target_midpoint": [
+      -75.32751593431107,
+      39.97164582027591
+    ],
+    "target_miles": 0.523,
+    "navigation_address": "218 Fairlamb Ave, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.3279177,
+      39.9717556
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=218%20Fairlamb%20Ave%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "one_way_miles": 1.5,
+    "walking_metres": 2394,
+    "routing_source": "Google Directions walking checked October 26, 2026",
+    "coverage_audit_running": {
+      "length_m": 841.1,
+      "covered_25m_pct": 5.3,
+      "sample_spacing_m": 5,
+      "running_track_count": 1872,
+      "max_nearest_distance_m": 84.8
+    },
+    "citystrides_url": "https://citystrides.com/users/7315/map",
+    "citystrides_status": "October 28: 5.3% of target samples near recorded runs; GPS proximity does not establish CityStrides credit.",
+    "time_label": "5:00\u20135:45 AM",
+    "first_waypoint": {
+      "intersection": "Fairlamb Avenue & street end",
+      "coordinates": [
+        -75.3235469,
+        39.9736871
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9736871,-75.3235469&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Fairlamb Avenue & Windsor Park Lane",
+      "coordinates": [
+        -75.3318151,
+        39.9697979
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9697979,-75.3318151&dirflg=w"
+    },
+    "display_date": "Sun Nov 1",
+    "target_scope": "Complete connected street.",
+    "whole_street": true,
+    "distance_limit_exception": false
+  },
+  {
+    "date": "2026-11-02",
+    "number": 5,
+    "street": "Dover Road",
+    "direction": "E",
+    "bearing": 82.3,
+    "target_label": "Crest Road to Remington Road",
+    "target_coordinates": [
+      [
+        -75.2808838,
+        39.982535
+      ],
+      [
+        -75.2813371,
+        39.9830938
+      ],
+      [
+        -75.2814691,
+        39.9832871
+      ],
+      [
+        -75.2819876,
+        39.9839783
+      ],
+      [
+        -75.2822299,
+        39.9842874
+      ],
+      [
+        -75.2830625,
+        39.9854087
+      ]
+    ],
+    "target_midpoint": [
+      -75.28198020016184,
+      39.98396843556739
+    ],
+    "target_miles": 0.229,
+    "navigation_address": "812 Dover Rd, Wynnewood, PA 19096",
+    "navigation_coordinates": [
+      -75.2821622,
+      39.9838435
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=812%20Dover%20Rd%2C%20Wynnewood%2C%20PA%2019096&dirflg=w",
+    "one_way_miles": 2.1,
+    "walking_metres": 3316,
+    "routing_source": "Google Directions walking checked October 26, 2026",
+    "coverage_audit_running": {
+      "length_m": 369.3,
+      "covered_25m_pct": 0.0,
+      "uncovered_25m_pct": 100.0,
+      "sample_spacing_m": 5,
+      "running_track_count": 1870,
+      "covered_15m_pct": 0.0,
+      "max_nearest_distance_m": 147.4
+    },
+    "citystrides_url": "https://citystrides.com/users/7315/map",
+    "citystrides_status": "E from home \u00b7 October 28: no target samples within 25 m of recorded runs",
+    "time_label": "5:30\u20136:15 AM",
+    "first_waypoint": {
+      "intersection": "Dover Road & Crest Road",
+      "coordinates": [
+        -75.2808838,
+        39.982535
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.982535,-75.2808838&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Dover Road & Remington Road",
+      "coordinates": [
+        -75.2830625,
+        39.9854087
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9854087,-75.2830625&dirflg=w"
+    },
+    "display_date": "Mon Nov 2",
+    "target_scope": "Complete street.",
+    "whole_street": true,
+    "distance_limit_exception": true
+  },
+  {
+    "date": "2026-11-03",
+    "number": 6,
+    "street": "Coopertown Road",
+    "direction": "NW",
+    "bearing": 327.9,
+    "target_label": "Darby Road to College Avenue",
+    "target_coordinates": [
+      [
+        -75.3238854,
+        39.9955842
+      ],
+      [
+        -75.3238242,
+        39.9956684
+      ],
+      [
+        -75.3238844,
+        39.9964641
+      ],
+      [
+        -75.3239375,
+        39.9969867
+      ],
+      [
+        -75.3239528,
+        39.9971189
+      ],
+      [
+        -75.3239642,
+        39.997217
+      ],
+      [
+        -75.3239969,
+        39.9974998
+      ],
+      [
+        -75.3240166,
+        39.9976812
+      ],
+      [
+        -75.3240204,
+        39.997716
+      ],
+      [
+        -75.3241179,
+        39.9980064
+      ],
+      [
+        -75.3241431,
+        39.9980434
+      ],
+      [
+        -75.3247076,
+        39.9988701
+      ],
+      [
+        -75.3247636,
+        39.9989521
+      ],
+      [
+        -75.3250605,
+        39.999387
+      ],
+      [
+        -75.325123,
+        39.9994785
+      ],
+      [
+        -75.3251367,
+        39.9994987
+      ],
+      [
+        -75.3254058,
+        39.9998928
+      ],
+      [
+        -75.3254677,
+        39.9999834
+      ],
+      [
+        -75.3255006,
+        40.0000316
+      ],
+      [
+        -75.3256628,
+        40.0002691
+      ],
+      [
+        -75.325711,
+        40.0003438
+      ],
+      [
+        -75.3261017,
+        40.0009489
+      ],
+      [
+        -75.3262004,
+        40.0011017
+      ],
+      [
+        -75.3265072,
+        40.0015304
+      ],
+      [
+        -75.3267059,
+        40.0018215
+      ],
+      [
+        -75.3268457,
+        40.0020655
+      ],
+      [
+        -75.3274585,
+        40.0030064
+      ]
+    ],
+    "target_midpoint": [
+      -75.32507680817037,
+      39.9994108751885
+    ],
+    "target_miles": 0.557,
+    "navigation_address": "10 Coopertown Rd, Haverford, PA 19041",
+    "navigation_coordinates": [
+      -75.3243171,
+      39.9992674
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=10%20Coopertown%20Rd%2C%20Haverford%2C%20PA%2019041&dirflg=w",
+    "one_way_miles": 1.7,
+    "walking_metres": 2780,
+    "routing_source": "Google Directions walking checked October 26, 2026",
+    "coverage_audit_running": {
+      "length_m": 895.9,
+      "covered_25m_pct": 0.0,
+      "uncovered_25m_pct": 100.0,
+      "sample_spacing_m": 5,
+      "running_track_count": 1870,
+      "covered_15m_pct": 0.0,
+      "max_nearest_distance_m": 1028.6
+    },
+    "citystrides_url": "https://citystrides.com/users/7315/map",
+    "citystrides_status": "NW from home \u00b7 October 28: no target samples within 25 m of recorded runs",
+    "time_label": "5:30\u20136:15 AM",
+    "first_waypoint": {
+      "intersection": "Coopertown Road & Darby Road",
+      "coordinates": [
+        -75.3238854,
+        39.9955842
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9955842,-75.3238854&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Coopertown Road & College Avenue",
+      "coordinates": [
+        -75.3274585,
+        40.0030064
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=40.0030064,-75.3274585&dirflg=w"
+    },
+    "display_date": "Tue Nov 3",
+    "target_scope": "Southern stretch from Darby Road to College Avenue; the separate continuation north of College Avenue is outside this target.",
+    "whole_street": false,
+    "distance_limit_exception": false,
+    "connector_note": "Coopertown continues separately north of College Avenue, about 283 m away; this plan covers the complete southern connected stretch. The northern continuation is over two miles away and is not included."
+  }
+]

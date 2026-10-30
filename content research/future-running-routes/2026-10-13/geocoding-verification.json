@@ -1,0 +1,572 @@
+[
+  {
+    "street": "Marilyn Drive",
+    "status": "OK",
+    "error": null,
+    "results": [
+      {
+        "address": "1732 Marilyn Dr, Havertown, PA 19083, USA",
+        "location": {
+          "lat": 39.9821684,
+          "lng": -75.3295842
+        },
+        "location_type": "ROOFTOP",
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "place_id": "ChIJ3aHSnzLAxokR8nC7wh0SNKc"
+      },
+      {
+        "address": "1732 Marilyn Dr, Havertown, PA 19083, USA",
+        "location": {
+          "lat": 39.9821582,
+          "lng": -75.3295791
+        },
+        "location_type": "RANGE_INTERPOLATED",
+        "types": [
+          "street_address"
+        ],
+        "place_id": "EikxNzMyIE1hcmlseW4gRHIsIEhhdmVydG93biwgUEEgMTkwODMsIFVTQSIbEhkKFAoSCZmdlZ4ywMaJERhl3qT4rzP8EMQN"
+      },
+      {
+        "address": "1614 Tyson Rd, Havertown, PA 19083, USA",
+        "location": {
+          "lat": 39.9818966,
+          "lng": -75.32757550000001
+        },
+        "location_type": "ROOFTOP",
+        "types": [
+          "street_address",
+          "subpremise"
+        ],
+        "place_id": "ChIJ0wcA6TLAxokR4IRzQ0khmtA"
+      },
+      {
+        "address": "521 Harriet Ln, Havertown, PA 19083, USA",
+        "location": {
+          "lat": 39.98027870000001,
+          "lng": -75.33145669999999
+        },
+        "location_type": "ROOFTOP",
+        "types": [
+          "street_address"
+        ],
+        "place_id": "ChIJl47OxdLBxokRGobkkmTSbLg"
+      }
+    ]
+  },
+  {
+    "street": "Maple Hill Road",
+    "status": "OK",
+    "error": null,
+    "results": [
+      {
+        "address": "511 Maple Hill Rd, Havertown, PA 19083, USA",
+        "location": {
+          "lat": 39.9800676,
+          "lng": -75.3297992
+        },
+        "location_type": "ROOFTOP",
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "place_id": "ChIJibJFptLBxokRUrJmnlaEcKI"
+      },
+      {
+        "address": "511 Maple Hill Rd, Havertown, PA 19083, USA",
+        "location": {
+          "lat": 39.9800794,
+          "lng": -75.32978659999999
+        },
+        "location_type": "RANGE_INTERPOLATED",
+        "types": [
+          "street_address"
+        ],
+        "place_id": "Eis1MTEgTWFwbGUgSGlsbCBSZCwgSGF2ZXJ0b3duLCBQQSAxOTA4MywgVVNBIhsSGQoUChIJX6XoptLBxokRpBZ9OYSCpBwQ_wM"
+      },
+      {
+        "address": "602 Harriet Ln, Havertown, PA 19083, USA",
+        "location": {
+          "lat": 39.98,
+          "lng": -75.33162399999999
+        },
+        "location_type": "ROOFTOP",
+        "types": [
+          "street_address",
+          "subpremise"
+        ],
+        "place_id": "ChIJV1MYxNLBxokR3ENAAqPsH18"
+      },
+      {
+        "address": "521 Harriet Ln, Havertown, PA 19083, USA",
+        "location": {
+          "lat": 39.98027870000001,
+          "lng": -75.33145669999999
+        },
+        "location_type": "ROOFTOP",
+        "types": [
+          "street_address"
+        ],
+        "place_id": "ChIJl47OxdLBxokRGobkkmTSbLg"
+      }
+    ]
+  },
+  {
+    "street": "Ellis Road",
+    "status": "OK",
+    "error": null,
+    "results": [
+      {
+        "address": "636 Ellis Rd, Havertown, PA 19083, USA",
+        "location": {
+          "lat": 39.98115689999999,
+          "lng": -75.33452299999999
+        },
+        "location_type": "ROOFTOP",
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "place_id": "ChIJSanETdPBxokR-jYE16B2dFU"
+      },
+      {
+        "address": "638 Ellis Rd, Havertown, PA 19083, USA",
+        "location": {
+          "lat": 39.9809818,
+          "lng": -75.3345282
+        },
+        "location_type": "RANGE_INTERPOLATED",
+        "types": [
+          "street_address"
+        ],
+        "place_id": "EiY2MzggRWxsaXMgUmQsIEhhdmVydG93biwgUEEgMTkwODMsIFVTQSIbEhkKFAoSCeVnx80swMaJETNnba38DuFMEP4E"
+      },
+      {
+        "address": "2109 Darby Rd, Havertown, PA 19083, USA",
+        "location": {
+          "lat": 39.9796889,
+          "lng": -75.33418080000001
+        },
+        "location_type": "ROOFTOP",
+        "types": [
+          "street_address",
+          "subpremise"
+        ],
+        "place_id": "ChIJC_ZAbNPBxokRtrxpxwUaJbI"
+      },
+      {
+        "address": "521 Harriet Ln, Havertown, PA 19083, USA",
+        "location": {
+          "lat": 39.98027870000001,
+          "lng": -75.33145669999999
+        },
+        "location_type": "ROOFTOP",
+        "types": [
+          "street_address"
+        ],
+        "place_id": "ChIJl47OxdLBxokRGobkkmTSbLg"
+      }
+    ]
+  },
+  {
+    "street": "Wyndmoor Road",
+    "status": "OK",
+    "error": null,
+    "results": [
+      {
+        "address": "138 Wyndmoor Rd, Havertown, PA 19083, USA",
+        "location": {
+          "lat": 39.9704799,
+          "lng": -75.3219361
+        },
+        "location_type": "ROOFTOP",
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "place_id": "ChIJbY0ul8jBxokRcz25Tw6E_2I"
+      },
+      {
+        "address": "135 Wyndmoor Rd, Havertown, PA 19083, USA",
+        "location": {
+          "lat": 39.9702283,
+          "lng": -75.32137929999999
+        },
+        "location_type": "ROOFTOP",
+        "types": [
+          "street_address",
+          "subpremise"
+        ],
+        "place_id": "ChIJhboPhcjBxokRDB__p1BbbrM"
+      },
+      {
+        "address": "163 Wyndmoor Rd, Havertown, PA 19083, USA",
+        "location": {
+          "lat": 39.969683,
+          "lng": -75.322487
+        },
+        "location_type": "ROOFTOP",
+        "types": [
+          "street_address"
+        ],
+        "place_id": "ChIJ47ZPHsbBxokR2LiIo-Yh2gs"
+      },
+      {
+        "address": "136 Wyndmoor Rd, Havertown, PA 19083, USA",
+        "location": {
+          "lat": 39.9705841,
+          "lng": -75.3219258
+        },
+        "location_type": "RANGE_INTERPOLATED",
+        "types": [
+          "street_address"
+        ],
+        "place_id": "EikxMzYgV3luZG1vb3IgUmQsIEhhdmVydG93biwgUEEgMTkwODMsIFVTQSIbEhkKFAoSCRFhdprIwcaJEYfg0H-f_zaxEIgB"
+      }
+    ]
+  },
+  {
+    "street": "Fairview Avenue",
+    "status": "OK",
+    "error": null,
+    "results": [
+      {
+        "address": "1435 Fairview Ave, Havertown, PA 19083, USA",
+        "location": {
+          "lat": 39.9634848,
+          "lng": -75.3295938
+        },
+        "location_type": "ROOFTOP",
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "place_id": "ChIJhS9f09zBxokRkIl_ePjMF9w"
+      },
+      {
+        "address": "1508 Fairview Ave, Havertown, PA 19083, USA",
+        "location": {
+          "lat": 39.9636283,
+          "lng": -75.3309604
+        },
+        "location_type": "ROOFTOP",
+        "types": [
+          "street_address",
+          "subpremise"
+        ],
+        "place_id": "ChIJPxPgRUnBxokRdfQ96lYFic4"
+      },
+      {
+        "address": "1436 Fairview Ave, Havertown, PA 19083, USA",
+        "location": {
+          "lat": 39.9639162,
+          "lng": -75.3300806
+        },
+        "location_type": "RANGE_INTERPOLATED",
+        "types": [
+          "street_address"
+        ],
+        "place_id": "EisxNDM2IEZhaXJ2aWV3IEF2ZSwgSGF2ZXJ0b3duLCBQQSAxOTA4MywgVVNBIhsSGQoUChIJaVXXMsPBxokRZHZeyOW8kuQQnAs"
+      },
+      {
+        "address": "5 Jack's Wy, Havertown, PA 19083, USA",
+        "location": {
+          "lat": 39.964609,
+          "lng": -75.329067
+        },
+        "location_type": "ROOFTOP",
+        "types": [
+          "street_address"
+        ],
+        "place_id": "ChIJDVg8ScPBxokR1r-GwnPel1c"
+      }
+    ]
+  },
+  {
+    "street": "Brookhaven Road",
+    "status": "OK",
+    "error": null,
+    "results": [
+      {
+        "address": "1603 Brookhaven Rd, Penn Wynne, PA 19096, USA",
+        "location": {
+          "lat": 39.9883146,
+          "lng": -75.28227989999999
+        },
+        "location_type": "ROOFTOP",
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "place_id": "ChIJC08cI-7AxokR0-9TgWufw9M"
+      },
+      {
+        "address": "1539 Powder Mill Ln, Penn Wynne, PA 19096, USA",
+        "location": {
+          "lat": 39.9885195,
+          "lng": -75.28330849999999
+        },
+        "location_type": "ROOFTOP",
+        "types": [
+          "street_address"
+        ],
+        "place_id": "ChIJjxfd3fHAxokRAO3jO1PuyI4"
+      },
+      {
+        "address": "1601 Brookhaven Rd, Penn Wynne, PA 19096, USA",
+        "location": {
+          "lat": 39.9882748,
+          "lng": -75.28199339999999
+        },
+        "location_type": "RANGE_INTERPOLATED",
+        "types": [
+          "street_address"
+        ],
+        "place_id": "Ei0xNjAxIEJyb29raGF2ZW4gUmQsIFBlbm4gV3lubmUsIFBBIDE5MDk2LCBVU0EiGxIZChQKEgkZ_X5t7sDGiRHWM2Wj5cWLUhDBDA"
+      },
+      {
+        "address": "1456 Remington Rd, Penn Wynne, PA 19096, USA",
+        "location": {
+          "lat": 39.9868306,
+          "lng": -75.2808591
+        },
+        "location_type": "ROOFTOP",
+        "types": [
+          "street_address",
+          "subpremise"
+        ],
+        "place_id": "ChIJ_UtJsu_AxokRymzyEFYert4"
+      }
+    ]
+  },
+  {
+    "street": "Powder Mill Lane",
+    "status": "OK",
+    "error": null,
+    "results": [
+      {
+        "address": "911 Powder Mill Ln, Wynnewood, PA 19096, USA",
+        "location": {
+          "lat": 39.9856507,
+          "lng": -75.2851467
+        },
+        "location_type": "ROOFTOP",
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "place_id": "ChIJFzG7evDAxokR_e4rL5hhhwY"
+      },
+      {
+        "address": "913 Powder Mill Ln, Wynnewood, PA 19096, USA",
+        "location": {
+          "lat": 39.9858395,
+          "lng": -75.285399
+        },
+        "location_type": "ROOFTOP",
+        "types": [
+          "street_address",
+          "subpremise"
+        ],
+        "place_id": "ChIJMzGiZPDAxokRSfk5Mlm023A"
+      },
+      {
+        "address": "948 Powder Mill Ln, Wynnewood, PA 19096, USA",
+        "location": {
+          "lat": 39.9854681,
+          "lng": -75.2852479
+        },
+        "location_type": "RANGE_INTERPOLATED",
+        "types": [
+          "street_address"
+        ],
+        "place_id": "Eiw5NDggUG93ZGVyIE1pbGwgTG4sIFd5bm5ld29vZCwgUEEgMTkwOTYsIFVTQSIbEhkKFAoSCaXvX3nwwMaJEVFAWRBqhhAOELQH"
+      },
+      {
+        "address": "827 Remington Rd, Wynnewood, PA 19096, USA",
+        "location": {
+          "lat": 39.9854083,
+          "lng": -75.2826702
+        },
+        "location_type": "ROOFTOP",
+        "types": [
+          "street_address"
+        ],
+        "place_id": "ChIJ074x4-_AxokRioUAloRbRMs"
+      }
+    ]
+  },
+  {
+    "street": "Brinton Park Drive",
+    "status": "OK",
+    "error": null,
+    "results": [
+      {
+        "address": "918 Brinton Park Dr, Wynnewood, PA 19096, USA",
+        "location": {
+          "lat": 39.9869152,
+          "lng": -75.28416639999999
+        },
+        "location_type": "ROOFTOP",
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "place_id": "ChIJPV5xN_DAxokRUmPk8F-FpGU"
+      },
+      {
+        "address": "1715 Powder Mill Ln, Havertown, PA 19083, USA",
+        "location": {
+          "lat": 39.9871641,
+          "lng": -75.2849463
+        },
+        "location_type": "ROOFTOP",
+        "types": [
+          "street_address",
+          "subpremise"
+        ],
+        "place_id": "ChIJjatcTvDAxokRdMUf-LQ4Rr8"
+      },
+      {
+        "address": "375 Brinton Park Dr, Penn Wynne, PA 19096, USA",
+        "location": {
+          "lat": 39.9871756,
+          "lng": -75.2838046
+        },
+        "location_type": "RANGE_INTERPOLATED",
+        "types": [
+          "street_address"
+        ],
+        "place_id": "Ei4zNzUgQnJpbnRvbiBQYXJrIERyLCBQZW5uIFd5bm5lLCBQQSAxOTA5NiwgVVNBIhsSGQoUChIJt-qsNvDAxokRQ7MBTtBRp8IQ9wI"
+      },
+      {
+        "address": "1539 Powder Mill Ln, Penn Wynne, PA 19096, USA",
+        "location": {
+          "lat": 39.9885195,
+          "lng": -75.28330849999999
+        },
+        "location_type": "ROOFTOP",
+        "types": [
+          "street_address"
+        ],
+        "place_id": "ChIJjxfd3fHAxokRAO3jO1PuyI4"
+      }
+    ]
+  },
+  {
+    "street": "Twin Oaks Road",
+    "status": "OK",
+    "error": null,
+    "results": [
+      {
+        "address": "516 Twin Oaks Dr, Penn Wynne, PA 19096, USA",
+        "location": {
+          "lat": 39.9892342,
+          "lng": -75.28537419999999
+        },
+        "location_type": "ROOFTOP",
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "place_id": "ChIJ7-fnm_HAxokRRdrHAyQbFoM"
+      },
+      {
+        "address": "517 Twin Oaks Dr, Penn Wynne, PA 19096, USA",
+        "location": {
+          "lat": 39.9896482,
+          "lng": -75.2851932
+        },
+        "location_type": "RANGE_INTERPOLATED",
+        "types": [
+          "street_address"
+        ],
+        "place_id": "Eis1MTcgVHdpbiBPYWtzIERyLCBQZW5uIFd5bm5lLCBQQSAxOTA5NiwgVVNBIhsSGQoUChIJZQYphfHAxokRcEDdr_Ni91QQhQQ"
+      },
+      {
+        "address": "1428 Lawndale Ave, Havertown, PA 19083, USA",
+        "location": {
+          "lat": 39.9888249,
+          "lng": -75.2865484
+        },
+        "location_type": "ROOFTOP",
+        "types": [
+          "street_address",
+          "subpremise"
+        ],
+        "place_id": "ChIJZQH2DfHAxokRbjErDKIHZzk"
+      },
+      {
+        "address": "1539 Powder Mill Ln, Penn Wynne, PA 19096, USA",
+        "location": {
+          "lat": 39.9885195,
+          "lng": -75.28330849999999
+        },
+        "location_type": "ROOFTOP",
+        "types": [
+          "street_address"
+        ],
+        "place_id": "ChIJjxfd3fHAxokRAO3jO1PuyI4"
+      }
+    ]
+  },
+  {
+    "street": "St Albans Road",
+    "status": "OK",
+    "error": null,
+    "results": [
+      {
+        "address": "610 Covington Rd, Havertown, PA 19083, USA",
+        "location": {
+          "lat": 39.9771918,
+          "lng": -75.28730259999999
+        },
+        "location_type": "ROOFTOP",
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "place_id": "ChIJESv-t_3AxokRwUcGnppsSgw"
+      },
+      {
+        "address": "215 St Albans Rd, Havertown, PA 19083, USA",
+        "location": {
+          "lat": 39.9770186,
+          "lng": -75.28751419999999
+        },
+        "location_type": "ROOFTOP",
+        "types": [
+          "street_address",
+          "subpremise"
+        ],
+        "place_id": "ChIJmwnvxv3AxokRPZ5uz1n2rdQ"
+      },
+      {
+        "address": "503 St Albans Rd, Havertown, PA 19083, USA",
+        "location": {
+          "lat": 39.9771527,
+          "lng": -75.2873738
+        },
+        "location_type": "RANGE_INTERPOLATED",
+        "types": [
+          "street_address"
+        ],
+        "place_id": "Eio1MDMgU3QgQWxiYW5zIFJkLCBIYXZlcnRvd24sIFBBIDE5MDgzLCBVU0EiGxIZChQKEglx_JzI_cDGiRE0vLRyLJSqHBD3Aw"
+      },
+      {
+        "address": "204 Canterbury Rd, Havertown, PA 19083, USA",
+        "location": {
+          "lat": 39.976003,
+          "lng": -75.287395
+        },
+        "location_type": "ROOFTOP",
+        "types": [
+          "street_address"
+        ],
+        "place_id": "ChIJiQJs7f3AxokRmgsB6jOT4y0"
+      }
+    ]
+  }
+]

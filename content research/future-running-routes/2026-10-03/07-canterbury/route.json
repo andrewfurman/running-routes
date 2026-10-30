@@ -1,0 +1,1430 @@
+{
+  "id": "07-canterbury",
+  "street": "Canterbury Road",
+  "ends": [
+    109850823,
+    110013463
+  ],
+  "title": "Canterbury circle",
+  "miles": 3.343,
+  "node_ids": [
+    109794370,
+    4108231862,
+    109794359,
+    109794352,
+    109794341,
+    109794333,
+    531735208,
+    109794324,
+    109793816,
+    109793807,
+    919280943,
+    3155672451,
+    3155672455,
+    3155672453,
+    919280942,
+    109801930,
+    109811695,
+    919280946,
+    5543742423,
+    13138803288,
+    109811686,
+    13138803290,
+    7977687403,
+    4234515410,
+    109811680,
+    8554491959,
+    110198174,
+    13119584668,
+    109866997,
+    110196786,
+    109843103,
+    110198159,
+    110123744,
+    2003487087,
+    530282260,
+    530282259,
+    530282258,
+    530282257,
+    530282256,
+    2178909179,
+    2178909181,
+    2178909187,
+    2178909185,
+    2178909184,
+    2178909180,
+    110013488,
+    110013495,
+    530285737,
+    530285738,
+    530285740,
+    109853882,
+    109853893,
+    530282392,
+    110013445,
+    530282393,
+    110013455,
+    530282394,
+    110013463,
+    109850823,
+    110256810,
+    530284410,
+    530284411,
+    110157223,
+    530283549,
+    530283547,
+    110157213,
+    110157199,
+    110154201,
+    10572064494,
+    10572064495,
+    109996515,
+    110248829,
+    109896909,
+    109981572,
+    13268985360,
+    110017862,
+    13268985344,
+    109894129,
+    109859958,
+    13268949880,
+    110165483,
+    13543160894,
+    109823560,
+    109893396,
+    531731007,
+    110121059,
+    9177498732,
+    109980924,
+    110165474,
+    110165462,
+    5543589490,
+    5543589495,
+    109898231,
+    13270588001,
+    13572797387,
+    5543589499,
+    110165456,
+    110185288,
+    110174209,
+    13556415642,
+    109861011,
+    5543589498,
+    12888622636,
+    13136749826,
+    109811737,
+    109811520,
+    3101505529,
+    109811525,
+    110152090,
+    109794370
+  ],
+  "coordinates": [
+    [
+      -75.3095635,
+      39.9809343
+    ],
+    [
+      -75.3093063,
+      39.9807458
+    ],
+    [
+      -75.3089255,
+      39.9802595
+    ],
+    [
+      -75.3084514,
+      39.9796028
+    ],
+    [
+      -75.3079582,
+      39.9789465
+    ],
+    [
+      -75.3077668,
+      39.9787074
+    ],
+    [
+      -75.3076552,
+      39.9786284
+    ],
+    [
+      -75.3069787,
+      39.97846
+    ],
+    [
+      -75.3047073,
+      39.9778833
+    ],
+    [
+      -75.3041758,
+      39.9780626
+    ],
+    [
+      -75.3041179,
+      39.9780482
+    ],
+    [
+      -75.3040741,
+      39.9780345
+    ],
+    [
+      -75.3040456,
+      39.9780144
+    ],
+    [
+      -75.3040033,
+      39.9779793
+    ],
+    [
+      -75.3039211,
+      39.9778968
+    ],
+    [
+      -75.3037329,
+      39.9777485
+    ],
+    [
+      -75.3034272,
+      39.977173
+    ],
+    [
+      -75.3032604,
+      39.9768256
+    ],
+    [
+      -75.3030529,
+      39.9764133
+    ],
+    [
+      -75.3029263,
+      39.9761552
+    ],
+    [
+      -75.3028889,
+      39.976079
+    ],
+    [
+      -75.3028522,
+      39.97601
+    ],
+    [
+      -75.3028141,
+      39.9759386
+    ],
+    [
+      -75.3026743,
+      39.9756758
+    ],
+    [
+      -75.3025021,
+      39.9753424
+    ],
+    [
+      -75.3019871,
+      39.975552
+    ],
+    [
+      -75.301755,
+      39.9756464
+    ],
+    [
+      -75.3010932,
+      39.9754752
+    ],
+    [
+      -75.3001207,
+      39.9752235
+    ],
+    [
+      -75.2985414,
+      39.9748157
+    ],
+    [
+      -75.2969707,
+      39.974421
+    ],
+    [
+      -75.2956119,
+      39.9740932
+    ],
+    [
+      -75.2953115,
+      39.9748627
+    ],
+    [
+      -75.2947257,
+      39.9747686
+    ],
+    [
+      -75.2938941,
+      39.9745526
+    ],
+    [
+      -75.2936319,
+      39.9744934
+    ],
+    [
+      -75.2934173,
+      39.9745263
+    ],
+    [
+      -75.2932113,
+      39.974592
+    ],
+    [
+      -75.2930568,
+      39.9746973
+    ],
+    [
+      -75.2929595,
+      39.9748522
+    ],
+    [
+      -75.2923109,
+      39.9746373
+    ],
+    [
+      -75.2921714,
+      39.974588
+    ],
+    [
+      -75.2920856,
+      39.9745798
+    ],
+    [
+      -75.2919973,
+      39.9745843
+    ],
+    [
+      -75.2918496,
+      39.9746003
+    ],
+    [
+      -75.291371,
+      39.9746804
+    ],
+    [
+      -75.2905126,
+      39.9744765
+    ],
+    [
+      -75.2896114,
+      39.9742398
+    ],
+    [
+      -75.2894655,
+      39.9742463
+    ],
+    [
+      -75.2892939,
+      39.974299
+    ],
+    [
+      -75.2891565,
+      39.9744042
+    ],
+    [
+      -75.2890364,
+      39.9746739
+    ],
+    [
+      -75.2887587,
+      39.9747198
+    ],
+    [
+      -75.2882811,
+      39.9747988
+    ],
+    [
+      -75.2879034,
+      39.9749238
+    ],
+    [
+      -75.2875343,
+      39.9751672
+    ],
+    [
+      -75.2872511,
+      39.9754105
+    ],
+    [
+      -75.2869593,
+      39.9757855
+    ],
+    [
+      -75.2877317,
+      39.9769891
+    ],
+    [
+      -75.2879806,
+      39.9774363
+    ],
+    [
+      -75.2880579,
+      39.9776271
+    ],
+    [
+      -75.2880922,
+      39.9778507
+    ],
+    [
+      -75.2880751,
+      39.9781796
+    ],
+    [
+      -75.288693,
+      39.9782256
+    ],
+    [
+      -75.2889334,
+      39.9782059
+    ],
+    [
+      -75.2894054,
+      39.9781138
+    ],
+    [
+      -75.2902047,
+      39.9778413
+    ],
+    [
+      -75.2914162,
+      39.9797934
+    ],
+    [
+      -75.2917241,
+      39.9803197
+    ],
+    [
+      -75.2918101,
+      39.9804673
+    ],
+    [
+      -75.2919516,
+      39.9807102
+    ],
+    [
+      -75.292208,
+      39.9810634
+    ],
+    [
+      -75.2927524,
+      39.9817862
+    ],
+    [
+      -75.2932809,
+      39.9824884
+    ],
+    [
+      -75.293816,
+      39.9832116
+    ],
+    [
+      -75.2938696,
+      39.983284
+    ],
+    [
+      -75.2939377,
+      39.9833726
+    ],
+    [
+      -75.2944665,
+      39.9840771
+    ],
+    [
+      -75.2949952,
+      39.9847777
+    ],
+    [
+      -75.295475,
+      39.985419
+    ],
+    [
+      -75.2955118,
+      39.9854682
+    ],
+    [
+      -75.2955823,
+      39.985436
+    ],
+    [
+      -75.2963393,
+      39.9850907
+    ],
+    [
+      -75.2970774,
+      39.984825
+    ],
+    [
+      -75.2972506,
+      39.9847667
+    ],
+    [
+      -75.2980473,
+      39.9844897
+    ],
+    [
+      -75.2985828,
+      39.9843075
+    ],
+    [
+      -75.2990267,
+      39.9841344
+    ],
+    [
+      -75.2993828,
+      39.983935
+    ],
+    [
+      -75.2997821,
+      39.9837447
+    ],
+    [
+      -75.3002769,
+      39.9835192
+    ],
+    [
+      -75.300523,
+      39.9834168
+    ],
+    [
+      -75.3016573,
+      39.982852
+    ],
+    [
+      -75.3017249,
+      39.9828192
+    ],
+    [
+      -75.3020078,
+      39.9826819
+    ],
+    [
+      -75.3024392,
+      39.9824724
+    ],
+    [
+      -75.3025139,
+      39.9824338
+    ],
+    [
+      -75.3031749,
+      39.9832717
+    ],
+    [
+      -75.304063,
+      39.9828928
+    ],
+    [
+      -75.3043516,
+      39.9827663
+    ],
+    [
+      -75.3048357,
+      39.982554
+    ],
+    [
+      -75.3053225,
+      39.9823621
+    ],
+    [
+      -75.3054198,
+      39.9823247
+    ],
+    [
+      -75.3054973,
+      39.9822998
+    ],
+    [
+      -75.3056387,
+      39.9822503
+    ],
+    [
+      -75.3057755,
+      39.9821931
+    ],
+    [
+      -75.305879,
+      39.9823807
+    ],
+    [
+      -75.3059901,
+      39.982531
+    ],
+    [
+      -75.3088465,
+      39.9812786
+    ],
+    [
+      -75.3095635,
+      39.9809343
+    ]
+  ],
+  "roads": [
+    [
+      "Manor Road",
+      0.41727357660857106
+    ],
+    [
+      "Darby Road",
+      0.17857700702506085
+    ],
+    [
+      "Valley Road",
+      0.3873109570426452
+    ],
+    [
+      "Llandillo Road",
+      0.05549560585903863
+    ],
+    [
+      "Twin Oaks Drive",
+      0.13888438560197047
+    ],
+    [
+      "footway",
+      0.0886489209838272
+    ],
+    [
+      "Covington Road",
+      0.12583687046643316
+    ],
+    [
+      "Brentwood Road",
+      0.019689655556864517
+    ],
+    [
+      "Covington Road",
+      0.1411720059258202
+    ],
+    [
+      "Canterbury Road",
+      0.1783664284210743
+    ],
+    [
+      "Devon Road",
+      0.11777631667924698
+    ],
+    [
+      "Earlington Road",
+      0.5977010460439194
+    ],
+    [
+      "Mill Road",
+      0.42681963562290864
+    ],
+    [
+      "Leedom Avenue",
+      0.0676481010271398
+    ],
+    [
+      "Golf Road",
+      0.15662323150088917
+    ],
+    [
+      "Darby Road",
+      0.026007351606508505
+    ],
+    [
+      "Fairfield Road",
+      0.2190310310631382
+    ]
+  ],
+  "target_coordinates": [
+    [
+      -75.2877317,
+      39.9769891
+    ],
+    [
+      -75.2869593,
+      39.9757855
+    ]
+  ],
+  "status": "planned-unused",
+  "last_used": null,
+  "minimum_reuse_days": 31,
+  "start_finish": "1700 Manor Road, corner of Manor and Fairfield, Havertown",
+  "distance_basis": "OpenStreetMap street geometry; estimated miles, not GPS measurement",
+  "coverage_checked": "2026-10-03",
+  "coverage_method": "Visual inspection of the signed-in CityStrides LifeMap; node completion not verified",
+  "target_label": "Canterbury \u00b7 St Albans to Covington",
+  "coverage_observation": "No purple track is visible on this Canterbury section.",
+  "evidence": "../evidence/citystrides-east.jpg",
+  "edges": [
+    {
+      "way_id": 78287892,
+      "name": "Manor Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 78287892,
+      "name": "Manor Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 78287892,
+      "name": "Manor Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 78287892,
+      "name": "Manor Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 78287892,
+      "name": "Manor Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 78287892,
+      "name": "Manor Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 78287892,
+      "name": "Manor Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 78287892,
+      "name": "Manor Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 78287892,
+      "name": "Manor Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12113948,
+      "name": "Manor Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12113948,
+      "name": "Manor Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12113948,
+      "name": "Manor Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12113948,
+      "name": "Manor Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12113948,
+      "name": "Manor Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12113948,
+      "name": "Manor Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 627037176,
+      "name": "Darby Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 627037176,
+      "name": "Darby Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 627037176,
+      "name": "Darby Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 627037176,
+      "name": "Darby Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 627037176,
+      "name": "Darby Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 423948326,
+      "name": "Darby Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 423948326,
+      "name": "Darby Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 423948326,
+      "name": "Darby Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 1076828960,
+      "name": "Darby Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12155729,
+      "name": "Valley Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12155729,
+      "name": "Valley Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12155729,
+      "name": "Valley Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12155729,
+      "name": "Valley Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12155729,
+      "name": "Valley Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12155729,
+      "name": "Valley Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12155729,
+      "name": "Valley Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12156799,
+      "name": "Llandillo Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12149214,
+      "name": "Twin Oaks Drive",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12149214,
+      "name": "Twin Oaks Drive",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12149214,
+      "name": "Twin Oaks Drive",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12149214,
+      "name": "Twin Oaks Drive",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12149214,
+      "name": "Twin Oaks Drive",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12149214,
+      "name": "Twin Oaks Drive",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12149214,
+      "name": "Twin Oaks Drive",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 207640167,
+      "name": null,
+      "highway": "footway",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 207640167,
+      "name": null,
+      "highway": "footway",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 207640167,
+      "name": null,
+      "highway": "footway",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 207640167,
+      "name": null,
+      "highway": "footway",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 207640167,
+      "name": null,
+      "highway": "footway",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 207640167,
+      "name": null,
+      "highway": "footway",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12138289,
+      "name": "Covington Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12138289,
+      "name": "Covington Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12138289,
+      "name": "Covington Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12138289,
+      "name": "Covington Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12138289,
+      "name": "Covington Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12118025,
+      "name": "Brentwood Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12138284,
+      "name": "Covington Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12138284,
+      "name": "Covington Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12138284,
+      "name": "Covington Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12138284,
+      "name": "Covington Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12138284,
+      "name": "Covington Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12138284,
+      "name": "Covington Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12161556,
+      "name": "Canterbury Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12161556,
+      "name": "Canterbury Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12161556,
+      "name": "Canterbury Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12161556,
+      "name": "Canterbury Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12161556,
+      "name": "Canterbury Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12151892,
+      "name": "Devon Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12151892,
+      "name": "Devon Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12151892,
+      "name": "Devon Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12151892,
+      "name": "Devon Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12160684,
+      "name": "Earlington Road",
+      "highway": "tertiary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12160684,
+      "name": "Earlington Road",
+      "highway": "tertiary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 1133974199,
+      "name": "Earlington Road",
+      "highway": "tertiary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 1133974199,
+      "name": "Earlington Road",
+      "highway": "tertiary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 1133974200,
+      "name": "Earlington Road",
+      "highway": "tertiary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 1133974197,
+      "name": "Earlington Road",
+      "highway": "tertiary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 627037178,
+      "name": "Earlington Road",
+      "highway": "tertiary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 627037178,
+      "name": "Earlington Road",
+      "highway": "tertiary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 627037178,
+      "name": "Earlington Road",
+      "highway": "tertiary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 591757404,
+      "name": "Earlington Road",
+      "highway": "tertiary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 591757404,
+      "name": "Earlington Road",
+      "highway": "tertiary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 591757404,
+      "name": "Earlington Road",
+      "highway": "tertiary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 591757404,
+      "name": "Earlington Road",
+      "highway": "tertiary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 591757404,
+      "name": "Earlington Road",
+      "highway": "tertiary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12152608,
+      "name": "Mill Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12152608,
+      "name": "Mill Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12152608,
+      "name": "Mill Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12152608,
+      "name": "Mill Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12152608,
+      "name": "Mill Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12152608,
+      "name": "Mill Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12152608,
+      "name": "Mill Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12152608,
+      "name": "Mill Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12152608,
+      "name": "Mill Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12152608,
+      "name": "Mill Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12152608,
+      "name": "Mill Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12152608,
+      "name": "Mill Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12152608,
+      "name": "Mill Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12152608,
+      "name": "Mill Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12152608,
+      "name": "Mill Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12152608,
+      "name": "Mill Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12154499,
+      "name": "Leedom Avenue",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12161199,
+      "name": "Golf Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12161199,
+      "name": "Golf Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12161199,
+      "name": "Golf Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12161199,
+      "name": "Golf Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12161199,
+      "name": "Golf Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12161199,
+      "name": "Golf Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12161199,
+      "name": "Golf Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 1016186293,
+      "name": "Golf Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 423948708,
+      "name": "Darby Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 423948708,
+      "name": "Darby Road",
+      "highway": "primary",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12155793,
+      "name": "Fairfield Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    },
+    {
+      "way_id": 12155793,
+      "name": "Fairfield Road",
+      "highway": "residential",
+      "access": null,
+      "foot": null
+    }
+  ],
+  "validation": {
+    "closed_at_home": true,
+    "repeated_edges": 0,
+    "repeated_nodes_except_finish": 0,
+    "target_segments_on_route": true,
+    "private_or_foot_prohibited_edges": 0
+  },
+  "google_walking_check": {
+    "status": "not-requested",
+    "reason": "Precise home route egress rejected by automatic approval review; distances use OSM geometry."
+  }
+}

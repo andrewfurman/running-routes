@@ -1,0 +1,42 @@
+{
+  "minimum_pairwise_section_spacing_m": 610,
+  "section_pairs": [
+    {
+      "a": "Chestnut Avenue",
+      "b": "Gladstone Road",
+      "closest_section_distance_m": 3625
+    },
+    {
+      "a": "Chestnut Avenue",
+      "b": "Dartmouth Lane",
+      "closest_section_distance_m": 2374
+    },
+    {
+      "a": "Chestnut Avenue",
+      "b": "Dermond Avenue",
+      "closest_section_distance_m": 3130
+    },
+    {
+      "a": "Gladstone Road",
+      "b": "Dartmouth Lane",
+      "closest_section_distance_m": 3494
+    },
+    {
+      "a": "Gladstone Road",
+      "b": "Dermond Avenue",
+      "closest_section_distance_m": 610
+    },
+    {
+      "a": "Dartmouth Lane",
+      "b": "Dermond Avenue",
+      "closest_section_distance_m": 3909
+    }
+  ],
+  "consecutive_bearing_changes_degrees": [
+    151.3,
+    131.3,
+    161.7
+  ],
+  "walking_approach_overlaps": [],
+  "method": "UTM18N section distances; Google walking-approach step polylines versus 5 m target samples with 25 m tolerance. Freeform return is not predictable."
+}

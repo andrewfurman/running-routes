@@ -1,0 +1,74 @@
+[
+  {
+    "street": "Charles Drive",
+    "citystrides_url": "https://citystrides.com/streets/3296373",
+    "nodes": 8,
+    "completed_nodes": 8,
+    "missing_nodes": 0,
+    "percent": 100,
+    "checked_on": "2026-10-15"
+  },
+  {
+    "street": "Ellis Road",
+    "citystrides_url": "https://citystrides.com/streets/3296289",
+    "nodes": 89,
+    "completed_nodes": 61,
+    "missing_nodes": 28,
+    "percent": 68.54,
+    "checked_on": "2026-10-15"
+  },
+  {
+    "street": "Walnut Place",
+    "citystrides_url": "https://citystrides.com/streets/3296277",
+    "nodes": 9,
+    "completed_nodes": 9,
+    "missing_nodes": 0,
+    "percent": 100,
+    "checked_on": "2026-10-15"
+  },
+  {
+    "street": "Marilyn Drive",
+    "citystrides_url": "https://citystrides.com/streets/3296377",
+    "nodes": 13,
+    "completed_nodes": 1,
+    "missing_nodes": 12,
+    "percent": 7.69,
+    "checked_on": "2026-10-15"
+  },
+  {
+    "street": "Chester Avenue",
+    "citystrides_url": "https://citystrides.com/streets/3295994",
+    "nodes": 3,
+    "completed_nodes": 2,
+    "missing_nodes": 1,
+    "percent": 66.67,
+    "checked_on": "2026-10-15"
+  },
+  {
+    "street": "Pickwick Road",
+    "citystrides_url": "https://citystrides.com/streets/3296284",
+    "nodes": 7,
+    "completed_nodes": 7,
+    "missing_nodes": 0,
+    "percent": 100,
+    "checked_on": "2026-10-15"
+  },
+  {
+    "street": "Garden Avenue",
+    "citystrides_url": "https://citystrides.com/streets/3296166",
+    "nodes": 3,
+    "completed_nodes": 2,
+    "missing_nodes": 1,
+    "percent": 66.67,
+    "checked_on": "2026-10-15"
+  },
+  {
+    "street": "Bennington Road",
+    "citystrides_url": "https://citystrides.com/streets/3296036",
+    "nodes": 22,
+    "completed_nodes": 2,
+    "missing_nodes": 20,
+    "percent": 9.09,
+    "checked_on": "2026-10-15"
+  }
+]
