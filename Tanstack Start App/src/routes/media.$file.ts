@@ -1,6 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router'
 import videos from '../components/timelapses.json'
-const allowed = new Set([...videos.flatMap(v=>[v.videoUrl.split('/').pop()!,v.posterUrl.split('/').pop()!]), 'runs-2026.mp4', 'runs-2026.jpg'])
+const allowed = new Set([...videos.flatMap(v=>[v.videoUrl.split('/').pop()!,v.posterUrl.split('/').pop()!]), 'runs-2026.mp4', 'runs-2026.jpg', 'runs-2026-google.mp4', 'runs-2026-google.jpg'])
 export const Route = createFileRoute('/media/$file')({
  server: { handlers: { GET: async ({ request, params }) => {
   if (!allowed.has(params.file)) return new Response('Not found', {status:404})

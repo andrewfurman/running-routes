@@ -1,57 +1,26 @@
 [
   {
-    "id": "runs-2026-google",
-    "title": "2026 running year to date",
+    "id": "runs-2026-story-v1",
+    "title": "2026 running year to date \u00b7 Story",
     "year": 2026,
     "runCount": 201,
+    "dayCount": 199,
+    "totalMiles": 668.5298,
+    "stravaDistanceRecords": 189,
+    "gpsEstimatedRecords": 12,
     "firstDate": "2026-01-02",
     "lastDate": "2026-10-30",
-    "durationSeconds": 71.0,
-    "width": 1280,
-    "height": 720,
+    "durationSeconds": 54.25,
+    "width": 1080,
+    "height": 1920,
+    "aspectRatio": "9:16",
     "sourceSha256": "58d1afbe247207faee1a5ccef4aaf538f4ac9ccfce5d8a36d57fe470224f0d59",
-    "videoSha256": "a35a96a05bedab92a357a0f533410ebb77d3cbfcabc28c0574d704ec88f631cf",
-    "videoBytes": 5032867,
+    "distanceSourceSha256": "914d5f61932712e4e8d83f85ec8063ed3af79e21eb29c1f17acbb669e383a5ae",
+    "videoSha256": "73d206380525a01054755378324696551ca13f77afccb9cb7151b99e3b9e6e90",
+    "videoBytes": 6184710,
     "basemapProvider": "Google Maps",
-    "areas": [
-      {
-        "id": "havertown",
-        "label": "Havertown",
-        "lat": 39.981605,
-        "lng": -75.30839,
-        "zoom": 14
-      },
-      {
-        "id": "bucks",
-        "label": "Pennsylvania \u00b7 north of home",
-        "lat": 40.490365,
-        "lng": -75.39594,
-        "zoom": 15
-      },
-      {
-        "id": "new-york",
-        "label": "New York harbor",
-        "lat": 40.63469,
-        "lng": -74.053,
-        "zoom": 16
-      },
-      {
-        "id": "atlantic",
-        "label": "Atlantic GPS activity",
-        "lat": 34.593325,
-        "lng": -74.559055,
-        "zoom": 12
-      },
-      {
-        "id": "connecticut",
-        "label": "Connecticut",
-        "lat": 41.28815,
-        "lng": -73.49711,
-        "zoom": 15
-      }
-    ],
-    "description": "Full-screen Google Maps. Orange draws the active run; purple preserves earlier runs. The date and timeline appear along the bottom. Includes every 2026 GPS run, with the main map switching locations for travel.",
-    "videoUrl": "/media/runs-2026-google.mp4",
-    "posterUrl": "/media/runs-2026-google.jpg"
+    "description": "Vertical 9:16 Story: daily miles and runs above Google Maps, orange active routes, purple history, year progress, an animated cumulative mileage counter and a growing line graph below. Distances use Strava records where available and GPS estimates for newer runs.",
+    "videoUrl": "/media/runs-2026-story-v1.mp4",
+    "posterUrl": "/media/runs-2026-story-v1.jpg"
   }
 ]

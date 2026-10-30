@@ -1,0 +1,1217 @@
+{
+  "year": 2026,
+  "units": "meters",
+  "stravaDistanceRecords": 189,
+  "gpsEstimatedRecords": 12,
+  "trackSourceSha256": "58d1afbe247207faee1a5ccef4aaf538f4ac9ccfce5d8a36d57fe470224f0d59",
+  "stravaSource": "Official account export activities.csv, October 16, 2026; numeric Distance field in meters",
+  "gpsMethod": "Great-circle distance within each saved GPS line; never bridge separate lines. Saved tracks may be simplified.",
+  "records": [
+    {
+      "activityId": "16913298821",
+      "date": "2026-01-02",
+      "distanceMeters": 3753.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16935933275",
+      "date": "2026-01-04",
+      "distanceMeters": 6045.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16949204061",
+      "date": "2026-01-05",
+      "distanceMeters": 5226.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16956086834",
+      "date": "2026-01-06",
+      "distanceMeters": 5444.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16968264422",
+      "date": "2026-01-07",
+      "distanceMeters": 5656.7,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16977549005",
+      "date": "2026-01-08",
+      "distanceMeters": 5171.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16988547080",
+      "date": "2026-01-09",
+      "distanceMeters": 5711.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16998791326",
+      "date": "2026-01-10",
+      "distanceMeters": 5557.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17021649869",
+      "date": "2026-01-12",
+      "distanceMeters": 5650.7,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17032864944",
+      "date": "2026-01-13",
+      "distanceMeters": 5892.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17045146013",
+      "date": "2026-01-14",
+      "distanceMeters": 5298.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17056947435",
+      "date": "2026-01-15",
+      "distanceMeters": 5602.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17079468678",
+      "date": "2026-01-17",
+      "distanceMeters": 5669.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17451058332",
+      "date": "2026-02-19",
+      "distanceMeters": 5335.7,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17470432113",
+      "date": "2026-02-21",
+      "distanceMeters": 4156.5,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17482631280",
+      "date": "2026-02-22",
+      "distanceMeters": 5797.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17563849410",
+      "date": "2026-03-01",
+      "distanceMeters": 4297.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17586153594",
+      "date": "2026-03-03",
+      "distanceMeters": 5592.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17599012289",
+      "date": "2026-03-04",
+      "distanceMeters": 5801.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17611906257",
+      "date": "2026-03-05",
+      "distanceMeters": 6608.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17634578334",
+      "date": "2026-03-07",
+      "distanceMeters": 5515.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17647154919",
+      "date": "2026-03-08",
+      "distanceMeters": 6230.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17670057175",
+      "date": "2026-03-10",
+      "distanceMeters": 5505.0,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17685283307",
+      "date": "2026-03-11",
+      "distanceMeters": 6084.0,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17698826499",
+      "date": "2026-03-12",
+      "distanceMeters": 4575.0,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17752977292",
+      "date": "2026-03-17",
+      "distanceMeters": 5458.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17779354893",
+      "date": "2026-03-19",
+      "distanceMeters": 5699.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17789048265",
+      "date": "2026-03-20",
+      "distanceMeters": 5821.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17800806063",
+      "date": "2026-03-21",
+      "distanceMeters": 5436.5,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17817294053",
+      "date": "2026-03-22",
+      "distanceMeters": 6048.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17825404686",
+      "date": "2026-03-23",
+      "distanceMeters": 5463.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17837992961",
+      "date": "2026-03-24",
+      "distanceMeters": 5676.7,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17851059633",
+      "date": "2026-03-25",
+      "distanceMeters": 6024.0,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17863454443",
+      "date": "2026-03-26",
+      "distanceMeters": 6743.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17892150371",
+      "date": "2026-03-28",
+      "distanceMeters": 6868.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17899237943",
+      "date": "2026-03-29",
+      "distanceMeters": 5992.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17910168984",
+      "date": "2026-03-30",
+      "distanceMeters": 5621.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17922580472",
+      "date": "2026-03-31",
+      "distanceMeters": 5744.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17936943287",
+      "date": "2026-04-01",
+      "distanceMeters": 5401.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17947601413",
+      "date": "2026-04-02",
+      "distanceMeters": 5643.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17959865459",
+      "date": "2026-04-03",
+      "distanceMeters": 5178.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17992118074",
+      "date": "2026-04-04",
+      "distanceMeters": 5910.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17992118092",
+      "date": "2026-04-05",
+      "distanceMeters": 6783.5,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18002779306",
+      "date": "2026-04-06",
+      "distanceMeters": 4846.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18013096381",
+      "date": "2026-04-07",
+      "distanceMeters": 4826.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18024505495",
+      "date": "2026-04-08",
+      "distanceMeters": 5765.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18051694655",
+      "date": "2026-04-10",
+      "distanceMeters": 6074.0,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18077858094",
+      "date": "2026-04-12",
+      "distanceMeters": 6058.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18092695467",
+      "date": "2026-04-13",
+      "distanceMeters": 5819.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18104960689",
+      "date": "2026-04-14",
+      "distanceMeters": 5551.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18145018363",
+      "date": "2026-04-17",
+      "distanceMeters": 4755.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18172858103",
+      "date": "2026-04-19",
+      "distanceMeters": 6012.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18181839196",
+      "date": "2026-04-20",
+      "distanceMeters": 5658.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18225333454",
+      "date": "2026-04-23",
+      "distanceMeters": 4755.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18265557517",
+      "date": "2026-04-26",
+      "distanceMeters": 4739.5,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18276135218",
+      "date": "2026-04-27",
+      "distanceMeters": 4753.0,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18290161692",
+      "date": "2026-04-28",
+      "distanceMeters": 5824.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18303544608",
+      "date": "2026-04-29",
+      "distanceMeters": 5072.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18316782041",
+      "date": "2026-04-30",
+      "distanceMeters": 4182.5,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18329928756",
+      "date": "2026-05-01",
+      "distanceMeters": 5806.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18412647048",
+      "date": "2026-05-07",
+      "distanceMeters": 5686.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18423028801",
+      "date": "2026-05-08",
+      "distanceMeters": 5472.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18436471245",
+      "date": "2026-05-09",
+      "distanceMeters": 5956.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18450255826",
+      "date": "2026-05-10",
+      "distanceMeters": 6206.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18461922795",
+      "date": "2026-05-11",
+      "distanceMeters": 5545.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18474932561",
+      "date": "2026-05-12",
+      "distanceMeters": 5601.0,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18504614329",
+      "date": "2026-05-13",
+      "distanceMeters": 6024.0,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18504615273",
+      "date": "2026-05-14",
+      "distanceMeters": 5168.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18514913709",
+      "date": "2026-05-15",
+      "distanceMeters": 5540.7,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18545443797",
+      "date": "2026-05-16",
+      "distanceMeters": 6297.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18545444521",
+      "date": "2026-05-17",
+      "distanceMeters": 6004.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18598063018",
+      "date": "2026-05-21",
+      "distanceMeters": 5593.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18608749313",
+      "date": "2026-05-22",
+      "distanceMeters": 6178.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18645353975",
+      "date": "2026-05-25",
+      "distanceMeters": 5958.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18658720375",
+      "date": "2026-05-26",
+      "distanceMeters": 4642.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18672689746",
+      "date": "2026-05-27",
+      "distanceMeters": 4925.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18686936351",
+      "date": "2026-05-28",
+      "distanceMeters": 5287.5,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18707587274",
+      "date": "2026-05-29",
+      "distanceMeters": 4057.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18726527883",
+      "date": "2026-05-31",
+      "distanceMeters": 6267.7,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18739814461",
+      "date": "2026-06-01",
+      "distanceMeters": 6057.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18756138020",
+      "date": "2026-06-02",
+      "distanceMeters": 5804.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18770294245",
+      "date": "2026-06-03",
+      "distanceMeters": 3956.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18781307167",
+      "date": "2026-06-04",
+      "distanceMeters": 4245.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18794997309",
+      "date": "2026-06-05",
+      "distanceMeters": 4005.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18807344511",
+      "date": "2026-06-06",
+      "distanceMeters": 3959.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18821507860",
+      "date": "2026-06-07",
+      "distanceMeters": 4102.7,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18834303197",
+      "date": "2026-06-08",
+      "distanceMeters": 4002.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18848134783",
+      "date": "2026-06-09",
+      "distanceMeters": 4026.5,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18862354595",
+      "date": "2026-06-10",
+      "distanceMeters": 4802.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18875885749",
+      "date": "2026-06-11",
+      "distanceMeters": 4893.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18888580263",
+      "date": "2026-06-12",
+      "distanceMeters": 3991.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18901383023",
+      "date": "2026-06-13",
+      "distanceMeters": 4662.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18927183705",
+      "date": "2026-06-15",
+      "distanceMeters": 4028.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18941161007",
+      "date": "2026-06-16",
+      "distanceMeters": 4068.7,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18955536632",
+      "date": "2026-06-17",
+      "distanceMeters": 4197.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18969356402",
+      "date": "2026-06-18",
+      "distanceMeters": 3996.0,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18982331536",
+      "date": "2026-06-19",
+      "distanceMeters": 3932.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19013417047",
+      "date": "2026-06-21",
+      "distanceMeters": 5684.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19022111143",
+      "date": "2026-06-22",
+      "distanceMeters": 5693.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19033634758",
+      "date": "2026-06-23",
+      "distanceMeters": 5367.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19048250609",
+      "date": "2026-06-24",
+      "distanceMeters": 5503.5,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19060942402",
+      "date": "2026-06-25",
+      "distanceMeters": 3996.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19071949047",
+      "date": "2026-06-26",
+      "distanceMeters": 4137.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19108298935",
+      "date": "2026-06-29",
+      "distanceMeters": 5315.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19123410150",
+      "date": "2026-06-30",
+      "distanceMeters": 5359.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19137132527",
+      "date": "2026-07-01",
+      "distanceMeters": 3942.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19168958804",
+      "date": "2026-07-02",
+      "distanceMeters": 3988.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19176136162",
+      "date": "2026-07-04",
+      "distanceMeters": 4996.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19199080501",
+      "date": "2026-07-06",
+      "distanceMeters": 5668.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19212314943",
+      "date": "2026-07-07",
+      "distanceMeters": 6008.7,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19228981801",
+      "date": "2026-07-08",
+      "distanceMeters": 4100.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19240525264",
+      "date": "2026-07-09",
+      "distanceMeters": 5547.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19253906754",
+      "date": "2026-07-10",
+      "distanceMeters": 5678.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19266671258",
+      "date": "2026-07-11",
+      "distanceMeters": 6076.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19279845354",
+      "date": "2026-07-12",
+      "distanceMeters": 5367.5,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19306572881",
+      "date": "2026-07-14",
+      "distanceMeters": 5586.0,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19334142351",
+      "date": "2026-07-16",
+      "distanceMeters": 5288.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19374260236",
+      "date": "2026-07-19",
+      "distanceMeters": 6142.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19386649304",
+      "date": "2026-07-20",
+      "distanceMeters": 5560.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19400289215",
+      "date": "2026-07-21",
+      "distanceMeters": 5382.5,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19415594595",
+      "date": "2026-07-22",
+      "distanceMeters": 6453.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19429478604",
+      "date": "2026-07-23",
+      "distanceMeters": 5897.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19443351887",
+      "date": "2026-07-24",
+      "distanceMeters": 3942.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19470665243",
+      "date": "2026-07-25",
+      "distanceMeters": 5109.0,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19485825108",
+      "date": "2026-07-27",
+      "distanceMeters": 4945.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19497521458",
+      "date": "2026-07-28",
+      "distanceMeters": 5391.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19512445202",
+      "date": "2026-07-29",
+      "distanceMeters": 5667.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19526448352",
+      "date": "2026-07-30",
+      "distanceMeters": 6569.7,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19553644811",
+      "date": "2026-08-01",
+      "distanceMeters": 5099.0,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19567577095",
+      "date": "2026-08-02",
+      "distanceMeters": 6010.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19580353617",
+      "date": "2026-08-03",
+      "distanceMeters": 5797.5,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19609879276",
+      "date": "2026-08-05",
+      "distanceMeters": 5434.5,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19624301196",
+      "date": "2026-08-06",
+      "distanceMeters": 5923.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19638347632",
+      "date": "2026-08-07",
+      "distanceMeters": 5282.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19654035985",
+      "date": "2026-08-08",
+      "distanceMeters": 5088.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19671267006",
+      "date": "2026-08-09",
+      "distanceMeters": 4865.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19681680166",
+      "date": "2026-08-10",
+      "distanceMeters": 5327.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19710576236",
+      "date": "2026-08-11",
+      "distanceMeters": 5690.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19710576531",
+      "date": "2026-08-12",
+      "distanceMeters": 5079.7,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19725445671",
+      "date": "2026-08-13",
+      "distanceMeters": 5469.0,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19739180729",
+      "date": "2026-08-14",
+      "distanceMeters": 4840.0,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19779815708",
+      "date": "2026-08-17",
+      "distanceMeters": 5116.7,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19794439659",
+      "date": "2026-08-18",
+      "distanceMeters": 5752.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19823963004",
+      "date": "2026-08-20",
+      "distanceMeters": 5665.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19837539804",
+      "date": "2026-08-21",
+      "distanceMeters": 5073.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19855820692",
+      "date": "2026-08-22",
+      "distanceMeters": 6023.0,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19878500311",
+      "date": "2026-08-23",
+      "distanceMeters": 5974.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19878500527",
+      "date": "2026-08-24",
+      "distanceMeters": 5548.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19909173325",
+      "date": "2026-08-25",
+      "distanceMeters": 5421.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19909173851",
+      "date": "2026-08-26",
+      "distanceMeters": 6172.7,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19922744254",
+      "date": "2026-08-27",
+      "distanceMeters": 5182.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19946710265",
+      "date": "2026-08-29",
+      "distanceMeters": 6655.7,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19960582211",
+      "date": "2026-08-30",
+      "distanceMeters": 5716.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20061162662",
+      "date": "2026-09-05",
+      "distanceMeters": 5231.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20061162605",
+      "date": "2026-09-06",
+      "distanceMeters": 446.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20117150586",
+      "date": "2026-09-10",
+      "distanceMeters": 4845.0,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20129882421",
+      "date": "2026-09-11",
+      "distanceMeters": 5397.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20141421875",
+      "date": "2026-09-12",
+      "distanceMeters": 5715.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20156125970",
+      "date": "2026-09-13",
+      "distanceMeters": 6336.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20168478478",
+      "date": "2026-09-14",
+      "distanceMeters": 6083.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20197321118",
+      "date": "2026-09-16",
+      "distanceMeters": 6540.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20211209530",
+      "date": "2026-09-17",
+      "distanceMeters": 5988.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20224804764",
+      "date": "2026-09-18",
+      "distanceMeters": 5602.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20595977037",
+      "date": "2026-09-19",
+      "distanceMeters": 4239.0,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20595972171",
+      "date": "2026-09-21",
+      "distanceMeters": 5288.0,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20595972167",
+      "date": "2026-09-22",
+      "distanceMeters": 5446.5,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20595966132",
+      "date": "2026-09-23",
+      "distanceMeters": 5681.7,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20595966111",
+      "date": "2026-09-24",
+      "distanceMeters": 5244.0,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20595963726",
+      "date": "2026-09-25",
+      "distanceMeters": 4690.7,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20595961046",
+      "date": "2026-09-26",
+      "distanceMeters": 5189.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20595961049",
+      "date": "2026-09-27",
+      "distanceMeters": 5821.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20595961052",
+      "date": "2026-09-28",
+      "distanceMeters": 4351.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20595958323",
+      "date": "2026-09-29",
+      "distanceMeters": 6527.0,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20595956003",
+      "date": "2026-09-30",
+      "distanceMeters": 5288.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20595953328",
+      "date": "2026-10-01",
+      "distanceMeters": 5714.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20595950287",
+      "date": "2026-10-02",
+      "distanceMeters": 5065.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20595950266",
+      "date": "2026-10-03",
+      "distanceMeters": 4916.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20595947745",
+      "date": "2026-10-04",
+      "distanceMeters": 6163.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20595947681",
+      "date": "2026-10-05",
+      "distanceMeters": 5513.0,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20595946144",
+      "date": "2026-10-06",
+      "distanceMeters": 6101.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20595945998",
+      "date": "2026-10-07",
+      "distanceMeters": 4719.5,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20595945100",
+      "date": "2026-10-08",
+      "distanceMeters": 5493.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20595944023",
+      "date": "2026-10-09",
+      "distanceMeters": 6664.7,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20595942975",
+      "date": "2026-10-11",
+      "distanceMeters": 6067.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20595942972",
+      "date": "2026-10-12",
+      "distanceMeters": 6193.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20595939594",
+      "date": "2026-10-13",
+      "distanceMeters": 565.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20595940684",
+      "date": "2026-10-13",
+      "distanceMeters": 5376.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20595929845",
+      "date": "2026-10-14",
+      "distanceMeters": 5686.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20595926176",
+      "date": "2026-10-15",
+      "distanceMeters": 6407.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20606504445",
+      "date": "2026-10-16",
+      "distanceMeters": 5701.34,
+      "distanceSource": "gps_estimate"
+    },
+    {
+      "activityId": "20619126795",
+      "date": "2026-10-17",
+      "distanceMeters": 6895.173,
+      "distanceSource": "gps_estimate"
+    },
+    {
+      "activityId": "20633472836",
+      "date": "2026-10-18",
+      "distanceMeters": 5580.909,
+      "distanceSource": "gps_estimate"
+    },
+    {
+      "activityId": "20672292602",
+      "date": "2026-10-21",
+      "distanceMeters": 4009.521,
+      "distanceSource": "gps_estimate"
+    },
+    {
+      "activityId": "20685735448",
+      "date": "2026-10-22",
+      "distanceMeters": 5996.593,
+      "distanceSource": "gps_estimate"
+    },
+    {
+      "activityId": "20698250814",
+      "date": "2026-10-23",
+      "distanceMeters": 5898.219,
+      "distanceSource": "gps_estimate"
+    },
+    {
+      "activityId": "20710360282",
+      "date": "2026-10-24",
+      "distanceMeters": 1535.112,
+      "distanceSource": "gps_estimate"
+    },
+    {
+      "activityId": "20710360307",
+      "date": "2026-10-24",
+      "distanceMeters": 3954.554,
+      "distanceSource": "gps_estimate"
+    },
+    {
+      "activityId": "20739791044",
+      "date": "2026-10-26",
+      "distanceMeters": 6833.169,
+      "distanceSource": "gps_estimate"
+    },
+    {
+      "activityId": "20762546856",
+      "date": "2026-10-28",
+      "distanceMeters": 5805.507,
+      "distanceSource": "gps_estimate"
+    },
+    {
+      "activityId": "20775891975",
+      "date": "2026-10-29",
+      "distanceMeters": 7207.2,
+      "distanceSource": "gps_estimate"
+    },
+    {
+      "activityId": "20788741058",
+      "date": "2026-10-30",
+      "distanceMeters": 5951.198,
+      "distanceSource": "gps_estimate"
+    }
+  ]
+}
