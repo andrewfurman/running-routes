@@ -4,7 +4,7 @@ import type { FeatureCollection, MapProvider, Position, Target } from './types'
 
 declare global { interface Window { google?: any; runningMapReady?: () => void; gm_authFailure?: () => void } }
 let googlePromise: Promise<any> | undefined
-function loadGoogle(key: string) {
+export function loadGoogle(key: string) {
   if (window.google?.maps) return Promise.resolve(window.google.maps)
   if (!googlePromise) googlePromise = new Promise((resolve, reject) => {
     window.runningMapReady = () => resolve(window.google.maps)
@@ -25,7 +25,7 @@ function points(collection?: FeatureCollection): Position[] {
   }
   return result
 }
-interface Props { provider: MapProvider; mapsKey: string; tracks?: FeatureCollection; targets: Target[]; boundary?: any; selected: number; focusRequest: number; fitRequest: number; historyRequest: number; showTracks: boolean; showBoundary: boolean; activityId?: string; onSelect: (index: number) => void; onProviderFailure: (reason: string) => void }
+interface Props { provider: MapProvider; mapsKey: string; tracks?: FeatureCollection; targets: Target[]; boundary?: any; selected: number; focusRequest: number; fitRequest: number; historyRequest: number; historyArea?: Position[]; showTracks: boolean; showBoundary: boolean; activityId?: string; onSelect: (index: number) => void; onProviderFailure: (reason: string) => void }
 export function MapView(props: Props) {
   const host = useRef<HTMLDivElement>(null)
   const engine = useRef<any>(null)
@@ -47,7 +47,7 @@ export function MapView(props: Props) {
           if (stopped || !host.current) return
           const map = new g.Map(host.current, { center: {lat: 39.979, lng: -75.31}, zoom: 14, gestureHandling: 'greedy', streetViewControl: false, mapTypeControl: false, fullscreenControl: false })
           const e: any = { map, type: 'google', trackLayer: new g.Data(), boundaryLayer: new g.Data(), routeLines: [], markers: [] }
-          e.fit = (ps: Position[], padding = 55) => { if (!ps.length) return; const b = new g.LatLngBounds(); for (const [lng, lat] of ps) b.extend({lat,lng}); map.fitBounds(b,padding); g.event.addListenerOnce(map,'idle',()=>{if(map.getZoom()>17)map.setZoom(17)}) }
+          e.fit = (ps: Position[], padding = 55, context = false) => { if (!ps.length) return; const b = new g.LatLngBounds(); for (const [lng, lat] of ps) b.extend({lat,lng}); map.fitBounds(b,padding); g.event.addListenerOnce(map,'idle',()=>{if(context)map.setZoom(Math.max(12,Math.min(16,map.getZoom()-1)));else if(map.getZoom()>17)map.setZoom(17)}) }
           engine.current = e
           cleanup = () => { e.trackLayer.setMap(null);e.boundaryLayer.setMap(null);for(const line of e.routeLines)line.setMap(null);for(const marker of e.markers)marker.setMap(null);g.event.clearInstanceListeners(map) }
         } else {
@@ -57,7 +57,7 @@ export function MapView(props: Props) {
           L.control.zoom({position:'bottomright'}).addTo(map)
           L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© OpenStreetMap contributors'}).addTo(map)
           const e: any = {map,L,type:'osm',routeLines:[],markers:[]}
-          e.fit = (ps: Position[], padding = 40) => {if(ps.length)map.fitBounds(L.latLngBounds(ps.map(([lng,lat])=>[lat,lng])),{padding:[padding,padding],maxZoom:17})}
+          e.fit = (ps: Position[], padding = 40, context = false) => {if(!ps.length)return;const bounds=L.latLngBounds(ps.map(([lng,lat])=>[lat,lng]));if(context){const zoom=map.getBoundsZoom(bounds,false,L.point(padding*2,padding*2));map.setView(bounds.getCenter(),Math.max(12,Math.min(16,zoom-1)))}else map.fitBounds(bounds,{padding:[padding,padding],maxZoom:17})}
           engine.current=e;cleanup=()=>map.remove()
         }
         if (stopped) {cleanup();return}
@@ -99,9 +99,9 @@ export function MapView(props: Props) {
     else e.fit(points(props.tracks).filter(([lng,lat])=>lng>-75.39&&lng< -75.24&&lat>39.92&&lat<40.04))
   },[ready,props.targets])
   useEffect(()=>{const e=engine.current;if(!e)return;e.routeLines.forEach((line:any,i:number)=>e.type==='google'?line.setOptions({strokeColor:i===props.selected?'#e96b1d':'#e8a364',strokeWeight:i===props.selected?7:4}):line.setStyle({color:i===props.selected?'#e96b1d':'#e8a364',weight:i===props.selected?7:4}))},[ready,props.selected,props.targets])
-  useEffect(()=>{if(props.focusRequest&&props.targets[props.selected])engine.current?.fit(props.targets[props.selected].target_coordinates,70)},[props.focusRequest,ready])
+  useEffect(()=>{if(props.focusRequest&&props.targets[props.selected])engine.current?.fit(props.targets.filter(t=>t.date===props.targets[props.selected].date).flatMap(t=>t.target_coordinates),100,true)},[props.focusRequest,ready,props.targets,props.selected])
   useEffect(()=>{if(props.fitRequest){const e=engine.current;if(!e)return;const f=props.boundary;const rings=f?.geometry?.coordinates||f?.features?.[0]?.geometry?.coordinates;const ps=rings?.flat?.(1);if(ps?.[0]&&typeof ps[0][0]==='number')e.fit(ps);else e.fit(props.targets.flatMap(t=>t.target_coordinates))}},[props.fitRequest,ready])
-  useEffect(()=>{if(props.historyRequest)engine.current?.fit(points(props.tracks))},[props.historyRequest,ready])
+  useEffect(()=>{if(props.historyRequest&&props.historyArea?.length)engine.current?.fit(props.historyArea)},[props.historyRequest,props.historyArea,ready])
   useEffect(()=>{if(!props.activityId||!props.tracks)return;const feature=props.tracks.features.find(f=>String(f.properties.activity_id)===props.activityId);if(feature)engine.current?.fit(points({type:'FeatureCollection',features:[feature]}),60)},[props.activityId,props.tracks,ready])
   return <div className="map-surface"><div className="map-canvas" ref={host} aria-label="Interactive route map"/>{loading?<div className="map-loading"><span className="spinner"/>Loading street map</div>:null}{error?<div className="map-error" role="alert">{error}</div>:null}<div className="map-credit">{props.provider==='google'?'Google Maps':'OpenStreetMap'}<span>•</span>Purple: recorded tracks<span>•</span>Teal: 19083</div></div>
 }

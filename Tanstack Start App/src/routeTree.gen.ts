@@ -10,12 +10,18 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as VideoMapRouteImport } from './routes/video-map'
 import { Route as ApiMapsConfigRouteImport } from './routes/api.maps-config'
 import { Route as MediaFileRouteImport } from './routes/media.$file'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VideoMapRoute = VideoMapRouteImport.update({
+  id: '/video-map',
+  path: '/video-map',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ApiMapsConfigRoute = ApiMapsConfigRouteImport.update({
@@ -31,30 +37,34 @@ const MediaFileRoute = MediaFileRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/video-map': typeof VideoMapRoute
   '/api/maps-config': typeof ApiMapsConfigRoute
   '/media/$file': typeof MediaFileRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/video-map': typeof VideoMapRoute
   '/api/maps-config': typeof ApiMapsConfigRoute
   '/media/$file': typeof MediaFileRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/video-map': typeof VideoMapRoute
   '/api/maps-config': typeof ApiMapsConfigRoute
   '/media/$file': typeof MediaFileRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/api/maps-config' | '/media/$file'
+  fullPaths: '/' | '/video-map' | '/api/maps-config' | '/media/$file'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/api/maps-config' | '/media/$file'
-  id: '__root__' | '/' | '/api/maps-config' | '/media/$file'
+  to: '/' | '/video-map' | '/api/maps-config' | '/media/$file'
+  id: '__root__' | '/' | '/video-map' | '/api/maps-config' | '/media/$file'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  VideoMapRoute: typeof VideoMapRoute
   ApiMapsConfigRoute: typeof ApiMapsConfigRoute
   MediaFileRoute: typeof MediaFileRoute
 }
@@ -66,6 +76,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/video-map': {
+      id: '/video-map'
+      path: '/video-map'
+      fullPath: '/video-map'
+      preLoaderRoute: typeof VideoMapRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/api/maps-config': {
@@ -87,6 +104,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  VideoMapRoute: VideoMapRoute,
   ApiMapsConfigRoute: ApiMapsConfigRoute,
   MediaFileRoute: MediaFileRoute,
 }
