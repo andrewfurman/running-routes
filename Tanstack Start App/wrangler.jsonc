@@ -7,5 +7,6 @@
   "routes": [
     { "pattern": "runningroutes.aifurman.com", "custom_domain": true }
   ],
+  "r2_buckets": [{ "binding": "TIMELAPSE_MEDIA", "bucket_name": "running-routes-media" }],
   "observability": { "enabled": true }
 }
