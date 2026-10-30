@@ -37,3 +37,7 @@ Restrict browser keys to authorized origins in Google Cloud. Do not commit API k
 The plan is selected by `routes/current-plan.json`. After editing the referenced dated plan, run `python3 scripts/planning/build_map.py` to update the visualization. The project does not automatically import new Strava activities or update plans.
 
 Personal calendar event exports, email copies, bike history and the original all-sport Strava ZIP remain private in the Family Newspaper archive. The legacy bulk import utility preserves the entire all-sport export and must be used only in a private working copy; its output contains private data and is ignored in this public repository.
+
+## Havertown 19083 boundary
+
+The optional teal outline is the [U.S. Census Bureau 2020 ZIP Code Tabulation Area](https://www.census.gov/programs-surveys/geography/guidance/geo-areas/zctas.html) for 19083, retrieved from [TIGERweb](https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/tigerWMS_Current/MapServer/2). ZCTAs are statistical approximations of ZIP Code areas, not exact USPS delivery boundaries. The checked-in `visualization/19083.geojson` allows either map provider to display the same boundary without another data service.
