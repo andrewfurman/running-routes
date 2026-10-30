@@ -1,34 +1,39 @@
-# Running map
+# Running Routes
 
 An interactive map of Andrew Furman's recorded running routes and upcoming street targets around Havertown, Pennsylvania. Purple lines represent running GPS tracks from Strava; weekday markers show the current plan. Bike rides and walks are excluded.
 
-The map contains precise GPS traces and dated future destinations. It is public by the owner's choice. These are raw recorded paths, and GPS proximity to a street does not guarantee CityStrides completion.
+The map contains precise GPS traces and dated future destinations, published with the owner's approval. GPS proximity to a street does not guarantee CityStrides completion.
+
+## Project layout
+
+- `visualization/` — the interactive map and a local preview server.
+- `routes/` — the current plan and dated route research, GPX files, geometry, and older map visualizations.
+- `scripts/imports/` — scripts for extracting the map's GeoJSON or importing Strava history, plus import tests.
+- `scripts/planning/` — tools for applying the current plan and rebuilding the map.
 
 ## Run locally
 
 Python 3 is the only server dependency:
 
 ```sh
-python3 serve.py
+python3 visualization/serve.py
 ```
 
-Open http://127.0.0.1:8768/ in a browser. The map uses OpenStreetMap and Leaflet by default. To use Google Maps instead, provide a Google Maps JavaScript browser key with the appropriate APIs enabled:
+Open http://127.0.0.1:8768/ in a browser. The map uses OpenStreetMap and Leaflet by default. To use Google Maps, provide a Google Maps JavaScript browser key with the appropriate APIs enabled:
 
 ```sh
 export GOOGLE_MAPS_API_KEY='your-browser-key'
-python3 serve.py
+python3 visualization/serve.py
 ```
 
-Restrict browser keys to authorized origins in Google Cloud. Do not commit API keys. Google Maps may incur charges under your Google Cloud account. The key is sent to the local browser, which loads Google Maps; it is not written into the HTML or this repository.
+Alternatively, use `python3 visualization/serve.py --env-file /path/to/local.env` to read a key from an existing local environment file.
+
+Restrict browser keys to authorized origins in Google Cloud. Do not commit API keys. Google Maps may incur charges. The key is sent to the local browser and Google Maps; it is not written into the repository.
 
 ## Data and updates
 
-`index.html` is a self-contained snapshot of the map and its embedded GeoJSON running tracks and target metadata. It contains 1,874 GPS runs through October 30, 2026, and plans through November 3, 2026. Use `python3 export_tracks.py` to extract the track collection as `runs.geojson`. The file is generated locally and ignored by Git to avoid duplicating the embedded data.
+`visualization/index.html` is a self-contained snapshot with embedded GeoJSON running tracks and target metadata: 1,874 GPS runs through October 30, 2026, and plans through November 3. Run `python3 scripts/imports/export_tracks.py` to extract the collection as `runs.geojson` (ignored by Git to avoid duplication).
 
-This repository is independent of the private Family Newspaper repository and its Cloudflare archive. It does not automatically import new Strava activities or update plans: refresh the snapshot when new runs or targets are available. Calendar details and the separate bike history are not copied here.
+The plan is selected by `routes/current-plan.json`. After editing the referenced dated plan, run `python3 scripts/planning/build_map.py` to update the visualization. The project does not automatically import new Strava activities or update plans.
 
-## Running research and planning
-
-The original folder structure is under `content research/future-running-routes/`, including dated plans, street geometry, route GPX files, research and older visualizations. `tools/running_route_updates.py` and `tools/route_map_shell.py` apply the plan named by `current-plan.json`; run `python3 build_map.py` after updating the plan to rebuild `index.html`. The map snapshot and running research are versioned in this repository and do not require Cloudflare.
-
-Personal calendar event exports, email copies, bike history and the original all-sport Strava ZIP remain private in Family Newspaper's archive. The legacy bulk import utility under `tools/` was copied for reference and is intended for a private working copy: it preserves the original all-sport archive, which must not be published in this public repository.
+Personal calendar event exports, email copies, bike history and the original all-sport Strava ZIP remain private in the Family Newspaper archive. The legacy bulk import utility preserves the entire all-sport export and must be used only in a private working copy; its output contains private data and is ignored in this public repository.

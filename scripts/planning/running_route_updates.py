@@ -8,7 +8,7 @@ import json
 import re
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 
 
 def running_collection(collection: dict) -> dict:
@@ -22,7 +22,7 @@ def _inline_json(value) -> str:
 
 
 def apply_current_plan(html: str) -> str:
-    folder = ROOT / 'content research/future-running-routes'
+    folder = ROOT / 'routes'
     config_path = folder / 'current-plan.json'
     if not config_path.exists():
         return html

@@ -4,8 +4,8 @@ from pathlib import Path
 import json
 import re
 
-root = Path(__file__).resolve().parent
-html = (root / 'index.html').read_text(encoding='utf-8')
+root = Path(__file__).resolve().parents[2]
+html = (root / 'visualization/index.html').read_text(encoding='utf-8')
 match = re.search(r'const recentTracks=(.*);\n', html)
 if not match:
     raise SystemExit('Could not find embedded running tracks')
