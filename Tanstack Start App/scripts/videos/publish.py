@@ -8,9 +8,9 @@ def main():
  for line in (ROOT/'.env').read_text().splitlines() if (ROOT/'.env').exists() else []:
   key,sep,value=line.partition('=')
   if sep and key in {'CLOUDFLARE_API_TOKEN','CLOUDFLARE_ACCOUNT_ID'}:env.setdefault(key,value.strip().strip('\"\''))
- meta=json.loads((args.directory/f'runs-{args.year}.json').read_text());video=args.directory/f'runs-{args.year}.mp4'
+ meta=json.loads((args.directory/f'runs-{args.year}-google.json').read_text());video=args.directory/Path(meta['videoUrl']).name
  if hashlib.sha256(video.read_bytes()).hexdigest()!=meta['videoSha256']:raise SystemExit('Video hash does not match metadata')
  for suffix,mime in [('mp4','video/mp4'),('jpg','image/jpeg')]:
-  filename=f'runs-{args.year}.{suffix}';subprocess.run([str(APP/'node_modules/.bin/wrangler'),'r2','object','put','running-routes-media/'+filename,'--file',str((args.directory/filename).resolve()),'--content-type',mime,'--remote'],cwd=APP,env=env,check=True)
+  filename=Path(meta['videoUrl'] if suffix=='mp4' else meta['posterUrl']).name;subprocess.run([str(APP/'node_modules/.bin/wrangler'),'r2','object','put','running-routes-media/'+filename,'--file',str((args.directory/filename).resolve()),'--content-type',mime,'--remote'],cwd=APP,env=env,check=True)
  print('Uploaded video and poster. Update the checked-in video metadata, use a PR, then deploy the app.')
 if __name__=='__main__':main()
