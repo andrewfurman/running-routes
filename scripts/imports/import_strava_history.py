@@ -2,7 +2,7 @@
 """Preserve a Strava bulk ZIP unchanged and embed its GPS tracks in the map.
 
 Install FIT support: python3 -m pip install fitdecode
-Run: python3 tools/import_strava_history.py /path/to/export.zip --date YYYY-MM-DD
+Run: python3 scripts/imports/import_strava_history.py /path/to/export.zip --date YYYY-MM-DD
 Raw archives are split into 8 MiB parts to stay below GitHub's file limit.
 Concatenating the parts in manifest order restores the exact original ZIP.
 No credentials or download URLs are recorded. Run only in the private repo.
@@ -20,8 +20,8 @@ import sys
 import xml.etree.ElementTree as ET
 from zipfile import ZipFile
 
-ROOT = Path(__file__).resolve().parents[1]
-LIBRARY = ROOT / 'content research/future-running-routes'
+ROOT = Path(__file__).resolve().parents[2]
+LIBRARY = ROOT / 'routes'
 
 
 def simplify(points, tolerance=2.0):
@@ -159,14 +159,14 @@ def import_archive(archive, date):
         raise ValueError(f'{destination} already exists; choose a new dated export directory')
     collection, inventory, activity_count, csv_summary = extract_tracks(archive)
     preview = LIBRARY / 'preview.html'
-    if not preview.exists():  # big route pages live in R2, not git
-        from media_store import ensure_paths
-        ensure_paths(preview)
+    if not preview.exists():
+        preview = ROOT / 'visualization/index.html'
     html = preview.read_text()
     if len(re.findall(r'const recentTracks=.*?;\n', html)) != 1:
         raise ValueError('Expected exactly one inline track collection in preview.html')
     # Escape < so activity metadata cannot terminate the inline script.
     encoded = json.dumps(collection, separators=(',', ':'), ensure_ascii=True).replace('<', '\\u003c')
+    sys.path.insert(0, str(ROOT / 'scripts/planning'))
     from running_route_updates import running_collection
     runs = running_collection(collection)
     encoded_runs = json.dumps(runs, separators=(',', ':'), ensure_ascii=True).replace('<', '\\u003c')
