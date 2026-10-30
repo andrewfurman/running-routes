@@ -48,3 +48,7 @@ The optional teal outline is the [U.S. Census Bureau 2020 ZIP Code Tabulation Ar
 ## Planning priority
 
 Finish unfinished streets within the Census 19083 boundary before expanding outside it. Prioritize Westgate Hills and the Hilltop area, retain numbered midpoint navigation addresses, and prefer approaches under two miles. The current neighborhood-focused plan supersedes spreading targets in different directions.
+
+## Change tracking
+
+All repository changes, including new drafts and research updates, must go through a pull request for tracking purposes. Create each pull request against the latest `main`, then merge it into `main` immediately once the draft is ready and applicable checks pass. Do not leave draft pull requests open; continue iterating through new pull requests.
