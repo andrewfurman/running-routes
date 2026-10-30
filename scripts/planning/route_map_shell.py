@@ -14,7 +14,7 @@ def apply_map_shell(html: str, kind: str = 'run') -> str:
     else:
         tracks = json.loads(re.search(r'const recentTracks=(.*);\n', html)[1])
         targets = json.loads(re.search(r'const targets=(.*);\n', html)[1])
-        days = sum(not t.get('past') and t.get('one_way_miles') is not None for t in targets)
+        days = len({t['date'] for t in targets if not t.get('past') and t.get('one_way_miles') is not None})
         stats = '<div class="summary"><div><strong id="run-track-count">'+format(len(tracks['features']),',')+'</strong><span>GPS runs</span></div><div><strong id="planned-target-count">'+str(days)+'</strong><span>planned days</span></div></div>'
     patterns = [r'<div class="intro">.*?</div>', r'<div class="foot">.*?</div>',
                 r'<details id="key-panel">.*?</details>'] if kind == 'run' else [

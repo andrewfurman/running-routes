@@ -8,3 +8,8 @@ routes/*strava-history*/
 
 site/
 visualization/maps-config.json
+
+credentials*.json
+client_secret*.json
+.dev.vars*
+.wrangler/
