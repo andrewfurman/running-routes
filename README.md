@@ -1,5 +1,7 @@
 # Running Routes
 
+[Open the public map](https://andrewfurman.github.io/running-routes/)
+
 An interactive map of Andrew Furman's recorded running routes and upcoming street targets around Havertown, Pennsylvania. Purple lines represent running GPS tracks from Strava; weekday markers show the current plan. Bike rides and walks are excluded.
 
 The map contains precise GPS traces and dated future destinations, published with the owner's approval. GPS proximity to a street does not guarantee CityStrides completion.
@@ -41,3 +43,8 @@ Personal calendar event exports, email copies, bike history and the original all
 ## Havertown 19083 boundary
 
 The optional teal outline is the [U.S. Census Bureau 2020 ZIP Code Tabulation Area](https://www.census.gov/programs-surveys/geography/guidance/geo-areas/zctas.html) for 19083, retrieved from [TIGERweb](https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/tigerWMS_Current/MapServer/2). ZCTAs are statistical approximations of ZIP Code areas, not exact USPS delivery boundaries. The checked-in `visualization/19083.geojson` allows either map provider to display the same boundary without another data service.
+
+
+## Planning priority
+
+Finish unfinished streets within the Census 19083 boundary before expanding outside it. Prioritize Westgate Hills and the Hilltop area, retain numbered midpoint navigation addresses, and prefer approaches under two miles. The current neighborhood-focused plan supersedes spreading targets in different directions.
