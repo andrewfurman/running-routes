@@ -70,3 +70,19 @@ The tool checks unrelated conflicts and preserves existing event reminders. `GOO
 This repository is public and includes precise GPS traces and dated destinations with the owner's approval. Never commit environment files, OAuth credentials, refresh tokens or Cloudflare tokens. Run `python3 "Tanstack Start App/scripts/checks/check_public_commit.py"` before every commit; CI checks tracked content too. The ignored `sample.env` uses placeholders only.
 
 All changes, including new drafts, go through a pull request for tracking. Merge each PR into `main` as soon as the draft works and applicable checks pass, then continue through new PRs. Do not leave draft PRs open. Deploy the merged app with the command above.
+
+## Time-lapse videos
+
+The **Time lapses** tab plays downloadable H.264 MP4 videos stored in the dedicated Cloudflare R2 bucket `running-routes-media`. The Worker binding `TIMELAPSE_MEDIA` streams only explicitly listed video/poster filenames at `/media/`, with byte-range support for seeking. Bucket listing and uploads are not public endpoints. Videos do not load until requested.
+
+The 2026 edition contains all 201 GPS runs dated January 2–October 30 in the current source, ordered by Eastern date/time. The main map builds Havertown coverage while an inset draws every run, including travel outside the area. Rides and activities without GPS are excluded. The video is a snapshot, not an automatic feed.
+
+To reproduce it, from `Tanstack Start App` with Python video dependencies installed in a virtual environment:
+
+```sh
+pip install -r scripts/videos/requirements.txt
+python scripts/videos/render_year.py --year 2026 --output /private/tmp/running-routes-videos
+python scripts/videos/publish.py /private/tmp/running-routes-videos --year 2026
+```
+
+Keep the generated MP4/JPEG in R2, not Git. Commit the audit metadata from the output JSON into `raw-data/videos/` and update `src/components/timelapses.json` (omit activity IDs from the interface manifest). When adding another year, add its filenames to the media route allowlist. Merge the tracking PR and deploy. Metadata records source/video SHA-256, included activity IDs, frame dimensions and duration. Rendering uses locally saved OpenStreetMap street geometry and Census boundaries, with attribution; it does not capture or export Google map tiles.

@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ApiMapsConfigRouteImport } from './routes/api.maps-config'
+import { Route as MediaFileRouteImport } from './routes/media.$file'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -22,31 +23,40 @@ const ApiMapsConfigRoute = ApiMapsConfigRouteImport.update({
   path: '/api/maps-config',
   getParentRoute: () => rootRouteImport,
 } as any)
+const MediaFileRoute = MediaFileRouteImport.update({
+  id: '/media/$file',
+  path: '/media/$file',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/api/maps-config': typeof ApiMapsConfigRoute
+  '/media/$file': typeof MediaFileRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/api/maps-config': typeof ApiMapsConfigRoute
+  '/media/$file': typeof MediaFileRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/api/maps-config': typeof ApiMapsConfigRoute
+  '/media/$file': typeof MediaFileRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/api/maps-config'
+  fullPaths: '/' | '/api/maps-config' | '/media/$file'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/api/maps-config'
-  id: '__root__' | '/' | '/api/maps-config'
+  to: '/' | '/api/maps-config' | '/media/$file'
+  id: '__root__' | '/' | '/api/maps-config' | '/media/$file'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ApiMapsConfigRoute: typeof ApiMapsConfigRoute
+  MediaFileRoute: typeof MediaFileRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -65,12 +75,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ApiMapsConfigRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/media/$file': {
+      id: '/media/$file'
+      path: '/media/$file'
+      fullPath: '/media/$file'
+      preLoaderRoute: typeof MediaFileRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ApiMapsConfigRoute: ApiMapsConfigRoute,
+  MediaFileRoute: MediaFileRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
