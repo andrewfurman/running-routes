@@ -1,90 +1,72 @@
 # Running Routes
 
-[Open the public map](https://runningroutes.aifurman.com/)
+[Open the map](https://runningroutes.aifurman.com/)
 
-An interactive map of Andrew Furman's recorded running routes and upcoming street targets around Havertown, Pennsylvania. Purple lines represent running GPS tracks from Strava; weekday markers show the current plan. The Runs view excludes bike rides and walks. The upper-left Runs/Bikes switch opens the separate cycling map.
+A mobile-friendly TanStack Start app for Andrew Furman's running history, upcoming full-street targets and cycling history around Havertown. Switch between Runs and Bikes, explore the full map, page through upcoming destinations, or browse recorded and planned runs in the calendar. Info contains map-provider and iPhone installation options.
 
-The map contains precise GPS traces and dated future destinations, published with the owner's approval. GPS proximity to a street does not guarantee CityStrides completion.
+## Layout
 
-## Project layout
+- `Tanstack Start App/` contains the entire web app: source, icons, manifest, dependencies and lockfile, Vite/TypeScript/Wrangler configuration, deployment and import/planning/calendar scripts. `legacy/` preserves the earlier HTML visualizations and tools.
+- `raw-data/` contains public GPS tracks, original recent ride GPX exports, boundaries, current targets and dated research.
+- Local `sample.env` documents credential placeholders; local `.env` contains real deployment credentials. Both are ignored and must remain uncommitted.
 
-- `visualization/` — the interactive map and a local preview server.
-- `routes/` — the current plan and dated route research, GPX files, geometry, and older map visualizations.
-- `scripts/imports/` — scripts for extracting the map's GeoJSON or importing Strava history, plus import tests.
-- `scripts/planning/` — tools for applying the current plan and rebuilding the map.
+`.nojekyll` was a GitHub Pages marker, unrelated to npm packages. It is no longer needed: this app runs on a Cloudflare Worker.
 
-## Run locally
+## Development and deployment
 
-Python 3 is the only server dependency:
-
-```sh
-python3 visualization/serve.py
-```
-
-Open http://127.0.0.1:8768/ in a browser. The map uses OpenStreetMap and Leaflet by default. To use Google Maps, provide a Google Maps JavaScript browser key with the appropriate APIs enabled:
+Use Node.js 22.12 or newer and Python 3. From the repository root:
 
 ```sh
-export GOOGLE_MAPS_API_KEY='your-browser-key'
-python3 visualization/serve.py
+cd "Tanstack Start App"
+npm ci
+npm run dev
 ```
 
-Alternatively, use `python3 visualization/serve.py --env-file /path/to/local.env` to read a key from an existing local environment file.
+`predev` and `prebuild` generate separate public data assets from `raw-data`. GPS history is fetched by sport rather than embedded in the HTML. To check and deploy:
 
-Restrict browser keys to authorized origins in Google Cloud. Do not commit API keys. Google Maps may incur charges. The key is sent to the local browser and Google Maps; it is not written into the repository.
-
-## Data and updates
-
-`visualization/index.html` is a self-contained snapshot with embedded GeoJSON running tracks and target metadata: 1,874 GPS runs through October 30, 2026, and plans through November 3. Run `python3 scripts/imports/export_tracks.py` to extract the collection as `runs.geojson` (ignored by Git to avoid duplication).
-
-The plan is selected by `routes/current-plan.json`. After editing the referenced dated plan, run `python3 scripts/planning/build_map.py` to update the visualization. The project does not automatically import new Strava activities or update plans.
-
-Personal calendar event exports, email copies and the original all-sport Strava ZIP remain private in the Family Newspaper archive. The selected cycling-map snapshot is public in the Bikes view. The legacy bulk import utility preserves the entire all-sport export and must be used only in a private working copy; its output contains private data and is ignored in this public repository.
-
-## Havertown 19083 boundary
-
-The optional teal outline is the [U.S. Census Bureau 2020 ZIP Code Tabulation Area](https://www.census.gov/programs-surveys/geography/guidance/geo-areas/zctas.html) for 19083, retrieved from [TIGERweb](https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/tigerWMS_Current/MapServer/2). ZCTAs are statistical approximations of ZIP Code areas, not exact USPS delivery boundaries. The checked-in `visualization/19083.geojson` allows either map provider to display the same boundary without another data service.
-
-
-## Planning priority
-
-Finish unfinished streets within the Census 19083 boundary before expanding outside it. Mix neighborhoods within 19083, including Westgate Hills, retain numbered midpoint navigation addresses, and prefer approaches under two miles.
-
-## Change tracking
-
-All repository changes, including new drafts and research updates, must go through a pull request for tracking purposes. Create each pull request against the latest `main`, then merge it into `main` immediately once the draft is ready and applicable checks pass. Do not leave draft pull requests open; continue iterating through new pull requests.
-
-## Public repository and environment files
-
-**This is a public repository. Before every commit, verify that no environment files or credential values are staged.** Environment variable names may be referenced in code and documentation; their actual values must stay outside Git.
-
-Keep the real browser key in the ignored `.env` file as `GOOGLE_MAPS_API_KEY`. The local preview reads it automatically. An ignored `.env.sample` can document the required variable with a placeholder:
-
-```dotenv
-GOOGLE_MAPS_API_KEY=your_google_maps_browser_key
+```sh
+npm run typecheck
+npm run build
+npm run deploy
 ```
 
-Neither `.env` nor `.env.sample` should be committed. Run `python3 scripts/checks/check_public_commit.py` before committing; CI also checks the tracked files. GitHub Pages reads `GOOGLE_MAPS_API_KEY` from the repository's Actions secret and generates the map configuration during deployment.
+Deployment reads `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID` and optional `GOOGLE_MAPS_API_KEY` from the environment or the ignored root `.env`. It deploys the `running-routes` Worker at runningroutes.aifurman.com and sets the Maps runtime secret. For local Google Maps, put `GOOGLE_MAPS_API_KEY` in ignored `Tanstack Start App/.dev.vars`; otherwise OpenStreetMap works without a key. Info switches providers without a key input field. Browser Maps keys are visible to visitors when used; restrict the key to the required Maps APIs and authorized origins.
 
-Google Maps JavaScript browser keys are visible to visitors when the map loads, even when stored as an Actions secret and excluded from Git. Restrict the key in Google Cloud to the Maps APIs needed here and to `https://andrewfurman.github.io/*` plus any authorized local preview origins.
+On iPhone, open the site in Safari, tap Share, then Add to Home Screen. The app includes an icon and standalone manifest. Maps require an internet connection; this is not an offline navigation app.
 
-## Calendar access on another computer
+## Data updates
 
-Install [Google Workspace CLI](https://github.com/googleworkspace/cli) with `brew install googleworkspace-cli`, then authenticate with `gws auth login --services calendar` and verify with `gws auth status`. A new OAuth client can be configured with `gws auth setup` if needed. Alternatively, securely install your authorized-user OAuth JSON at `~/.config/gws/credentials.json`, set file permissions to `600`, and set `GOOGLE_WORKSPACE_CLI_CREDENTIALS_FILE` to that private path. OAuth client secrets and refresh tokens must never be committed to this public repository.
+The current public dataset contains 1,874 GPS runs and 547 GPS rides through October 30, 2026. The cycling source has 1,445 records; 898 have no drawable GPS track. Runs exclude rides and walks. Recorded calendar entries represent GPS runs; times and distances unavailable in the export are not invented.
 
-Preview updates with `python3 scripts/calendar/sync_plan.py`. Use `--apply` to write the plan and read every event back for verification. The script checks unrelated calendar conflicts, retains existing reminders when updating, and uses numbered navigation addresses. `GOOGLE_CALENDAR_ID` defaults to `primary`. No Workspace API key is needed.
+From the app folder, update cycling data using an official Strava export or a manifest of signed-in GPX downloads:
 
-The ignored `.env.sample` also lists optional `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` placeholders for future Wrangler deployments. The site is deployed on Cloudflare Workers, with GitHub Pages also available. Cloudflare tokens, Google OAuth credentials, and Maps browser keys are separate credentials and must stay outside Git.
+```sh
+python3 scripts/imports/import_bike_history.py --help
+python3 scripts/planning/build_app_data.py
+```
 
+`raw-data/bikes/2026-10-30/` preserves the newer original GPX files and a hash manifest. Imports deduplicate by activity ID. Browser login cookies and session tokens are not stored. Optional `STRAVA_ACCESS_TOKEN` is reserved for an official API token; the current import uses files and does not require it. The full all-sport export remains private in the Family Newspaper archive.
 
-## Cloudflare Worker deployment
+`raw-data/plans/current-targets.json` supplies upcoming app targets; `history-targets.json` preserves older targets. The calendar synchronization tool uses the dated plan selected by `raw-data/route-research/current-plan.json`. Keep these views consistent when editing a plan, then rebuild app data.
 
-The current static HTML is deployed to [runningroutes.aifurman.com](https://runningroutes.aifurman.com/) as the `running-routes` Worker with static assets. No frontend framework migration was required.
+## Planning and Google Calendar
 
-Run `npm ci` and then `npm run deploy`. The deployment script reads `GOOGLE_MAPS_API_KEY`, `CLOUDFLARE_API_TOKEN`, and `CLOUDFLARE_ACCOUNT_ID` from the environment or the ignored local `.env`, builds `site/`, and deploys with Wrangler. `wrangler.jsonc` declares the custom domain; Cloudflare manages its DNS record and TLS. The static build contains only public map assets, never the local environment file or Google Workspace credentials.
+Prioritize unfinished streets within 19083, vary neighborhoods, target entire connected streets, and generally keep the one-way walking approach under two miles unless an exception was approved. GPS proximity does not guarantee CityStrides completion. The boundary is a Census ZCTA approximation, not exact USPS delivery coverage.
 
-Cloudflare deployment is currently manual via this command. The GitHub Pages workflow remains available as a separate deployment. Before publishing changes, build the map, check the commit for credentials, use a tracking PR, merge it, and run the Worker deployment. Google Cloud browser-key restrictions must allow `https://runningroutes.aifurman.com/*`.
+**Calendar locations must be numbered street addresses near each segment's midpoint.** Keep cross streets, weekday/date and one-way mileage in the title; preserve the exact navigation address in the location field for Apple Watch navigation. Combined outings may have consecutive events for separate streets.
 
+Authenticate Google Workspace CLI privately with `gws auth login --services calendar` and check `gws auth status`. Alternatively set `GOOGLE_WORKSPACE_CLI_CREDENTIALS_FILE` to a private OAuth credentials file outside this repository. No Workspace API key is required. From the app folder:
 
-## Runs and bikes
+```sh
+python3 scripts/calendar/sync_plan.py          # preview
+python3 scripts/calendar/sync_plan.py --apply  # write and read back
+python3 scripts/calendar/sync_plan.py --verify
+```
 
-The upper-left segmented switch moves between `visualization/index.html` (1,874 GPS runs through October 30, 2026) and `visualization/bikes.html` (530 GPS bike rides in the existing snapshot through October 17, 2026). The two views keep their histories separate and load the same deployed Google Maps configuration. The cycling snapshot does not yet include rides recorded after October 17.
+The tool checks unrelated conflicts and preserves existing event reminders. `GOOGLE_CALENDAR_ID` defaults to `primary`.
+
+## Public repository and change tracking
+
+This repository is public and includes precise GPS traces and dated destinations with the owner's approval. Never commit environment files, OAuth credentials, refresh tokens or Cloudflare tokens. Run `python3 "Tanstack Start App/scripts/checks/check_public_commit.py"` before every commit; CI checks tracked content too. The ignored `sample.env` uses placeholders only.
+
+All changes, including new drafts, go through a pull request for tracking. Merge each PR into `main` as soon as the draft works and applicable checks pass, then continue through new PRs. Do not leave draft PRs open. Deploy the merged app with the command above.

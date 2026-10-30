@@ -1,0 +1,20 @@
+name: Check app
+on: [push, pull_request]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: Tanstack Start App/package-lock.json
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python3 "Tanstack Start App/scripts/checks/check_public_commit.py" --all
+      - run: npm ci
+        working-directory: Tanstack Start App
+      - run: npm run typecheck && npm run build
+        working-directory: Tanstack Start App
