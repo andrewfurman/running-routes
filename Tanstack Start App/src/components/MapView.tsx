@@ -25,7 +25,7 @@ function points(collection?: FeatureCollection): Position[] {
   }
   return result
 }
-interface Props { provider: MapProvider; mapsKey: string; tracks?: FeatureCollection; targets: Target[]; boundary?: any; selected: number; focusRequest: number; fitRequest: number; historyRequest: number; historyArea?: Position[]; showTracks: boolean; showBoundary: boolean; activityId?: string; onSelect: (index: number) => void; onProviderFailure: (reason: string) => void }
+interface Props { provider: MapProvider; mapsKey: string; tracks?: FeatureCollection; targets: Target[]; boundary?: any; selected: number; focusRequest: number; historyRequest: number; historyArea?: Position[]; activityId?: string; onSelect: (index: number) => void; onProviderFailure: (reason: string) => void }
 export function MapView(props: Props) {
   const host = useRef<HTMLDivElement>(null)
   const engine = useRef<any>(null)
@@ -69,14 +69,14 @@ export function MapView(props: Props) {
   }, [props.provider, props.mapsKey])
   useEffect(() => {
     const e=engine.current;if(!e)return
-    if(e.type==='google') {e.trackLayer.forEach((f:any)=>e.trackLayer.remove(f));if(props.tracks)e.trackLayer.addGeoJson(props.tracks);e.trackLayer.setStyle({strokeColor:'#7442bb',strokeWeight:3,strokeOpacity:.62});e.trackLayer.setMap(props.showTracks?e.map:null)}
-    else {if(e.trackLayer)e.map.removeLayer(e.trackLayer);e.trackLayer=props.tracks?e.L.geoJSON(props.tracks,{style:{color:'#7442bb',weight:3,opacity:.62}}):null;if(e.trackLayer&&props.showTracks)e.trackLayer.addTo(e.map)}
-  },[ready,props.tracks,props.showTracks])
+    if(e.type==='google') {e.trackLayer.forEach((f:any)=>e.trackLayer.remove(f));if(props.tracks)e.trackLayer.addGeoJson(props.tracks);e.trackLayer.setStyle({strokeColor:'#7442bb',strokeWeight:3,strokeOpacity:.62});e.trackLayer.setMap(e.map)}
+    else {if(e.trackLayer)e.map.removeLayer(e.trackLayer);e.trackLayer=props.tracks?e.L.geoJSON(props.tracks,{style:{color:'#7442bb',weight:3,opacity:.62}}):null;if(e.trackLayer)e.trackLayer.addTo(e.map)}
+  },[ready,props.tracks])
   useEffect(() => {
     const e=engine.current;if(!e)return
-    if(e.type==='google'){e.boundaryLayer.forEach((f:any)=>e.boundaryLayer.remove(f));if(props.boundary)e.boundaryLayer.addGeoJson(props.boundary);e.boundaryLayer.setStyle({strokeColor:'#078f8a',strokeWeight:3,fillColor:'#0caba2',fillOpacity:.035,zIndex:20});e.boundaryLayer.setMap(props.showBoundary?e.map:null)}
-    else {if(e.boundaryLayer)e.map.removeLayer(e.boundaryLayer);e.boundaryLayer=props.boundary?e.L.geoJSON(props.boundary,{style:{color:'#078f8a',weight:3,fillOpacity:.035}}):null;if(e.boundaryLayer&&props.showBoundary)e.boundaryLayer.addTo(e.map)}
-  },[ready,props.boundary,props.showBoundary])
+    if(e.type==='google'){e.boundaryLayer.forEach((f:any)=>e.boundaryLayer.remove(f));if(props.boundary)e.boundaryLayer.addGeoJson(props.boundary);e.boundaryLayer.setStyle({strokeColor:'#078f8a',strokeWeight:3,fillColor:'#0caba2',fillOpacity:.035,zIndex:20});e.boundaryLayer.setMap(e.map)}
+    else {if(e.boundaryLayer)e.map.removeLayer(e.boundaryLayer);e.boundaryLayer=props.boundary?e.L.geoJSON(props.boundary,{style:{color:'#078f8a',weight:3,fillOpacity:.035}}):null;if(e.boundaryLayer)e.boundaryLayer.addTo(e.map)}
+  },[ready,props.boundary])
   useEffect(() => {
     const e=engine.current;if(!e)return
     for(const l of e.routeLines)e.type==='google'?l.setMap(null):e.map.removeLayer(l)
@@ -100,7 +100,6 @@ export function MapView(props: Props) {
   },[ready,props.targets])
   useEffect(()=>{const e=engine.current;if(!e)return;e.routeLines.forEach((line:any,i:number)=>e.type==='google'?line.setOptions({strokeColor:i===props.selected?'#e96b1d':'#e8a364',strokeWeight:i===props.selected?7:4}):line.setStyle({color:i===props.selected?'#e96b1d':'#e8a364',weight:i===props.selected?7:4}))},[ready,props.selected,props.targets])
   useEffect(()=>{if(props.focusRequest&&props.targets[props.selected])engine.current?.fit(props.targets.filter(t=>t.date===props.targets[props.selected].date).flatMap(t=>t.target_coordinates),100,true)},[props.focusRequest,ready,props.targets,props.selected])
-  useEffect(()=>{if(props.fitRequest){const e=engine.current;if(!e)return;const f=props.boundary;const rings=f?.geometry?.coordinates||f?.features?.[0]?.geometry?.coordinates;const ps=rings?.flat?.(1);if(ps?.[0]&&typeof ps[0][0]==='number')e.fit(ps);else e.fit(props.targets.flatMap(t=>t.target_coordinates))}},[props.fitRequest,ready])
   useEffect(()=>{if(props.historyRequest&&props.historyArea?.length)engine.current?.fit(props.historyArea)},[props.historyRequest,props.historyArea,ready])
   useEffect(()=>{if(!props.activityId||!props.tracks)return;const feature=props.tracks.features.find(f=>String(f.properties.activity_id)===props.activityId);if(feature)engine.current?.fit(points({type:'FeatureCollection',features:[feature]}),60)},[props.activityId,props.tracks,ready])
   return <div className="map-surface"><div className="map-canvas" ref={host} aria-label="Interactive route map"/>{loading?<div className="map-loading"><span className="spinner"/>Loading street map</div>:null}{error?<div className="map-error" role="alert">{error}</div>:null}<div className="map-credit">{props.provider==='google'?'Google Maps':'OpenStreetMap'}<span>•</span>Purple: recorded tracks<span>•</span>Teal: 19083</div></div>
