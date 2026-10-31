@@ -513,6 +513,121 @@
   {
     "date": "2026-11-04",
     "number": 6,
+    "street": "Rodmor Road",
+    "direction": "S",
+    "bearing": 190,
+    "target_label": "Belfield Avenue to Steel Road",
+    "target_coordinates": [
+      [
+        -75.3179276,
+        39.9590619
+      ],
+      [
+        -75.3176979,
+        39.9591233
+      ],
+      [
+        -75.3174747,
+        39.9591891
+      ],
+      [
+        -75.3172344,
+        39.9592286
+      ],
+      [
+        -75.3168633,
+        39.9592725
+      ],
+      [
+        -75.3166079,
+        39.9593141
+      ],
+      [
+        -75.3164362,
+        39.959426
+      ],
+      [
+        -75.3163075,
+        39.9595904
+      ],
+      [
+        -75.3162216,
+        39.9598207
+      ],
+      [
+        -75.316213,
+        39.9599917
+      ],
+      [
+        -75.3165993,
+        39.9613338
+      ],
+      [
+        -75.3167194,
+        39.9615904
+      ],
+      [
+        -75.3168911,
+        39.9618075
+      ],
+      [
+        -75.3174556,
+        39.9625092
+      ],
+      [
+        -75.3186738,
+        39.9642757
+      ]
+    ],
+    "target_midpoint": [
+      -75.31663267005152,
+      39.96140509708705
+    ],
+    "target_miles": 0.452,
+    "navigation_address": "77 Rodmor Rd, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.3163581,
+      39.96141129999999
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=77%20Rodmor%20Rd%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "one_way_miles": 1.9,
+    "walking_metres": 3056,
+    "routing_source": "Google walking directions checked October 31, 2026",
+    "coverage_audit_running": {
+      "length_m": 727.2,
+      "covered_25m_pct": 0.0,
+      "sample_spacing_m": 5,
+      "running_track_count": 1875
+    },
+    "citystrides_url": "https://citystrides.com/users/7315/map",
+    "citystrides_status": "0.0% near recorded runs; cover the full street. GPS proximity is not official CityStrides credit.",
+    "time_label": "5:30\u20136:15 AM",
+    "first_waypoint": {
+      "intersection": "Rodmor Road & Belfield Avenue",
+      "coordinates": [
+        -75.3179276,
+        39.9590619
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9590619,-75.3179276&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Rodmor Road & Steel Road",
+      "coordinates": [
+        -75.3186738,
+        39.9642757
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9642757,-75.3186738&dirflg=w"
+    },
+    "display_date": "Wed Nov 4",
+    "target_scope": "Complete connected Rodmor Road from Belfield Avenue to Steel Road; numbered midpoint navigation address.",
+    "whole_street": true,
+    "distance_limit_exception": false,
+    "start_time": "05:30",
+    "end_time": "06:15"
+  },
+  {
+    "date": "2026-11-05",
+    "number": 7,
     "street": "Grove Place",
     "direction": "E",
     "bearing": 106.3,
@@ -666,7 +781,7 @@
       ],
       "apple_maps": "https://maps.apple.com/?daddr=39.9743216,-75.2817664&dirflg=w"
     },
-    "display_date": "Wed Nov 4",
+    "display_date": "Thu Nov 5",
     "target_scope": "Complete southern connected Grove Place section; the separate northern section near East Manoa is already 100% near saved runs.",
     "whole_street": true,
     "distance_limit_exception": false,
