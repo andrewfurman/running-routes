@@ -14,11 +14,18 @@ def main():
  from zoneinfo import ZoneInfo
  from datetime import datetime
  rows=[{'activityId':row['activityId'],'date':row['date'],'localDate':datetime.fromisoformat(row['date'].replace('Z','+00:00')).astimezone(ZoneInfo('America/New_York')).date().isoformat(),**{k:v for k,v in row.items() if k not in {'activityId','date'}}} for row in rows]
- tracks['features']=sorted(features.values(),key=lambda f:(f['properties']['date'],str(f['properties']['activity_id'])))
+ # Retain baseline order so geographic clustering stays stable as new runs append.
+ tracks['features']=list(features.values())
  # Keep the existing GPS serialization unchanged if no new activities were added.
  if len(features)!=len(json.loads(source.read_text())['features']) and args.write:source.write_text(json.dumps(tracks,separators=(',',':'))+'\n')
  snapshot={'asOf':(data['updatedAt'] or '')[:10],'timeZone':'America/New_York','recordCount':len(rows),'gpsRecordCount':sum(bool(r['hasGps']) for r in rows),'source':'Cloudflare D1 selected public run records','trackSourceSha256':hashlib.sha256(source.read_bytes()).hexdigest(),'runs':rows,'updatedAt':data['updatedAt']}
  if not snapshot['updatedAt']:raise SystemExit('No successful runtime snapshot to save')
- if args.write:(ROOT/'raw-data/runs/activities.json').write_text(json.dumps(snapshot,indent=2)+'\n')
+ if args.write:
+  destination=ROOT/'raw-data/runs/activities.json'
+  previous={r['activityId']:r for r in json.loads(destination.read_text()).get('runs',[])} if destination.exists() else {}
+  for row in rows:
+   for key,value in row.items():
+    if key in previous.get(row['activityId'],{}) and previous[row['activityId']][key]==value:row[key]=previous[row['activityId']][key]
+  destination.write_text(json.dumps(snapshot,indent=2)+'\n')
  print(f"{'Saved' if args.write else 'Found'} {len(rows)} runs / {snapshot['gpsRecordCount']} GPS. Review and commit using a tracking PR.")
 if __name__=='__main__':main()

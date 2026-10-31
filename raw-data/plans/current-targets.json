@@ -76,7 +76,16 @@
     "whole_street": true,
     "distance_limit_exception": false,
     "start_time": "05:30",
-    "end_time": "06:15"
+    "end_time": "06:15",
+    "past": true,
+    "completed_activity": "20800939076",
+    "recorded_run_miles": 3.9371,
+    "completion_review": {
+      "review": "docs/run-reviews/2026-10-31-glen-ridge-road.md",
+      "sampled_target_near_gps_pct": 100.0,
+      "proximity_m": 25,
+      "official_citystrides_credit_verified": false
+    }
   },
   {
     "date": "2026-11-01",
