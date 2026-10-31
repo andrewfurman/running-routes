@@ -9,7 +9,8 @@
     "build": "vite build",
     "typecheck": "tsc --noEmit",
     "preview": "vite preview --host 127.0.0.1",
-    "deploy": "python3 scripts/deploy.py"
+    "deploy": "python3 scripts/deploy.py",
+    "test": "node --experimental-strip-types --test src/sync/*.test.ts"
   },
   "dependencies": {
     "@tanstack/react-router": "1.170.46",
