@@ -21,7 +21,9 @@ def with_recorded_distances(tracks,metadata):
     distances={r['activityId']:r for r in metadata}
     for feature in tracks['features']:
         row=distances.get(str(feature['properties']['activity_id']))
-        if row:feature['properties'].update(distance_meters=row['distanceMeters'],distance_source=row['distanceSource'])
+        if row:
+            feature['properties'].update(distance_meters=row['distanceMeters'],distance_source=row['distanceSource'])
+            if row.get('date'):feature['properties']['date']=row['date']
     return tracks
 write('runs.geojson',with_recorded_distances(runs,read('raw-data/runs/activities.json')['runs']))
 bikepath=ROOT/'raw-data/bikes/tracks.geojson'
@@ -31,6 +33,7 @@ else:
     bike=json.loads(re.search(r'const bikes=(.*);\n',(ROOT/'Tanstack Start App/legacy/visualization/bikes.html').read_text())[1]);write('bikes.geojson',bike)
 shutil.copyfile(ROOT/'raw-data/boundaries/19083.geojson',PUBLIC/'boundary19083.geojson')
 targets=read('raw-data/plans/current-targets.json');write('targets.json',targets)
+pending_targets=[t for t in targets if not t.get('past')]
 events=[]
 for f in runs['features']:
     p=f['properties'];day=day_of(p['date']);aid=str(p['activity_id']);events.append({'id':'strava-'+aid,'title':'Recorded run','start':day,'end':(date.fromisoformat(day)+timedelta(days=1)).isoformat(),'allDay':True,'type':'past','activityId':aid,'street':'','url':'https://www.strava.com/activities/'+aid})
@@ -39,5 +42,5 @@ for i,t in enumerate(targets):
 write('calendar.json',events)
 bikes=json.loads((PUBLIC/'bikes.geojson').read_text());bike_summary=read('raw-data/bikes/summary.json') if (ROOT/'raw-data/bikes/summary.json').exists() else {'gps_ride_count':len(bikes['features']),'total_ride_count':1428,'without_gps_count':898,'as_of':'2026-10-17'}
 bike_summary=dict(bike_summary,gps_ride_count=len(bikes['features']),total_ride_count=bike_summary.get('cycling_records',1428),without_gps_count=bike_summary.get('records_without_drawable_gps',898))
-write('summary.json',{'runCount':len(runs['features']),'bikeCount':len(bikes['features']),'gpsRuns':len(runs['features']),'gpsRides':len(bikes['features']),'plannedTargets':len(targets),'plannedOutings':len({t['date'] for t in targets}),'asOf':'2026-10-30','bikes':bike_summary});write('bikes-summary.json',bike_summary)
+write('summary.json',{'runCount':len(runs['features']),'bikeCount':len(bikes['features']),'gpsRuns':len(runs['features']),'gpsRides':len(bikes['features']),'plannedTargets':len(pending_targets),'plannedOutings':len({t['date'] for t in pending_targets}),'asOf':max(r['localDate'] for r in read('raw-data/runs/activities.json')['runs']),'bikes':bike_summary});write('bikes-summary.json',bike_summary)
 print(f'Prepared {len(runs["features"])} runs, {len(bikes["features"])} rides and {len(events)} calendar events')

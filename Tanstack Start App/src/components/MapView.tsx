@@ -99,8 +99,15 @@ export function MapView(props: Props) {
     else e.fit(points(props.tracks).filter(([lng,lat])=>lng>-75.39&&lng< -75.24&&lat>39.92&&lat<40.04))
   },[ready,props.targets])
   useEffect(()=>{const e=engine.current;if(!e)return;e.routeLines.forEach((line:any,i:number)=>e.type==='google'?line.setOptions({strokeColor:i===props.selected?'#e96b1d':'#e8a364',strokeWeight:i===props.selected?7:4}):line.setStyle({color:i===props.selected?'#e96b1d':'#e8a364',weight:i===props.selected?7:4}))},[ready,props.selected,props.targets])
-  useEffect(()=>{if(!props.historyArea&&props.focusRequest&&props.targets[props.selected])engine.current?.fit(props.targets.filter(t=>t.date===props.targets[props.selected].date).flatMap(t=>t.target_coordinates),100,true)},[props.focusRequest,ready,props.targets,props.selected,props.historyArea])
+  useEffect(()=>{if(!props.historyArea&&!props.activityId&&props.focusRequest&&props.targets[props.selected])engine.current?.fit(props.targets.filter(t=>t.date===props.targets[props.selected].date).flatMap(t=>t.target_coordinates),100,true)},[props.focusRequest,ready,props.targets,props.selected,props.historyArea,props.activityId])
   useEffect(()=>{if(props.historyRequest&&props.historyArea?.length)engine.current?.fit(props.historyArea)},[props.historyRequest,props.historyArea,ready])
-  useEffect(()=>{if(!props.activityId||!props.tracks)return;const feature=props.tracks.features.find(f=>String(f.properties.activity_id)===props.activityId);if(feature)engine.current?.fit(points({type:'FeatureCollection',features:[feature]}),60)},[props.activityId,props.tracks,ready])
+  useEffect(()=>{
+    const e=engine.current;if(!e||!props.activityId||!props.tracks)return
+    const feature=props.tracks.features.find(f=>String(f.properties.activity_id)===props.activityId);if(!feature)return
+    let cleanup=()=>{}
+    if(e.type==='google'){const layer=new window.google.maps.Data({map:e.map});layer.addGeoJson(feature);layer.setStyle({strokeColor:'#d53f8c',strokeWeight:5,strokeOpacity:1,zIndex:25});cleanup=()=>layer.setMap(null)}
+    else{const layer=e.L.geoJSON(feature,{style:{color:'#d53f8c',weight:5,opacity:1}}).addTo(e.map);cleanup=()=>{if(e.map.hasLayer(layer))e.map.removeLayer(layer)}}
+    e.fit(points({type:'FeatureCollection',features:[feature]}),60);return cleanup
+  },[props.activityId,props.tracks,ready])
   return <div className="map-surface"><div className="map-canvas" ref={host} aria-label="Interactive route map"/>{loading?<div className="map-loading"><span className="spinner"/>Loading street map</div>:null}{error?<div className="map-error" role="alert">{error}</div>:null}<div className="map-credit">{props.provider==='google'?'Google Maps':'OpenStreetMap'}<span>•</span>Purple: recorded tracks<span>•</span>Teal: 19083</div></div>
 }
