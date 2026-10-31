@@ -6,7 +6,7 @@ export interface CityStatsRow {label:string;runs:number;runMiles:number;rides:nu
 export function CityStatsTable({rows,onSelect}:{rows:CityStatsRow[];onSelect:(label:string,sport:Sport)=>void}){
  const [sorting,setSorting]=useState<SortingState>([{id:'runs',desc:true}])
  const columns=useMemo<ColumnDef<CityStatsRow>[]>(()=>[
-  {accessorKey:'label',header:'City',cell:({row})=><button className="city-name-button" title={row.original.label} onClick={()=>onSelect(row.original.label,row.original.runs?'runs':'bikes')}>{row.original.label}</button>},
+  {accessorKey:'label',header:'City',cell:({row})=><button className="city-name-button" title={row.original.label} aria-label={row.original.label} onClick={()=>onSelect(row.original.label,row.original.runs?'runs':'bikes')}>{row.original.label.length>17?row.original.label.slice(0,16)+'…':row.original.label}</button>},
   ...(['runs','rides'] as const).map(key=>({accessorKey:key,header:key==='runs'?'Runs':'Bike rides',sortDescFirst:true,cell:({row}:{row:{original:CityStatsRow}})=>{const city=row.original;return <button className="city-activity-button" disabled={!city[key]} aria-label={`View ${city.label} ${key==='runs'?'runs':'bike rides'}`} onClick={()=>onSelect(city.label,key==='runs'?'runs':'bikes')}><strong>{city[key].toLocaleString()}</strong><small>{(key==='runs'?city.runMiles:city.rideMiles).toLocaleString('en-US',{maximumFractionDigits:1})} mi</small></button>}}))
  ],[onSelect])
  const table=useReactTable({data:rows,columns,state:{sorting},onSortingChange:setSorting,getCoreRowModel:getCoreRowModel(),getSortedRowModel:getSortedRowModel(),enableSortingRemoval:false})
