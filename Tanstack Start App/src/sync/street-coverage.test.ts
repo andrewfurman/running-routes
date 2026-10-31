@@ -11,3 +11,22 @@ test('perpendicular intersection crossings do not complete or touch the street',
 test('bike rides never contribute running coverage',()=>{const r=calculateStreetCoverage(inventory,track([p(0,0),p(100,0)],'Ride'));assert.equal(r.runOn,0);assert.equal(r.gpsRuns,0)})
 test('disconnected GPS segments and large recording gaps are not bridged',()=>{const r=calculateStreetCoverage(inventory,track([[p(-400,0),p(-350,0)],[p(350,0),p(400,0)]],'Run','MultiLineString'));assert.equal(r.runOn,0);const gap=calculateStreetCoverage(inventory,track([p(-100,0),p(300,0)]));assert.equal(gap.runOn,0)})
 test('nearby traces outside the 20 metre tolerance are excluded',()=>{const r=calculateStreetCoverage(inventory,track([p(0,25),p(100,25)]));assert.equal(r.runOn,0)})
+
+test('unfinished map excludes completed streets and the covered part of a partial street',()=>{
+ const r=calculateStreetCoverage(inventory,track([[p(0,0),p(100,0)],[p(0,100),p(35,100)]],'Run','MultiLineString'))
+ assert.deepEqual(r.missingRoads.features.map(f=>f.properties.name),['Second','Third'])
+ const partial=r.missingRoads.features.find(f=>f.properties.name==='Second')!
+ assert.equal(partial.properties.status,'partial')
+ // With the 20m GPS tolerance, the uncovered part starts at 60m.
+ assert.ok(Math.abs(partial.geometry.coordinates[0][0][0]-p(60,100)[0])<1e-8)
+ assert.deepEqual(partial.geometry.coordinates[0].at(-1),p(100,100))
+ assert.equal(r.missingRoads.features.some(f=>f.properties.name==='First'),false)
+})
+test('missing sections do not bridge covered gaps or disconnected street lines',()=>{
+ const streets:StreetInventory={...inventory,streets:[{name:'Split',lengthMeters:200,lines:[[p(0,0),p(100,0)],[p(200,0),p(300,0)]]}]}
+ const r=calculateStreetCoverage(streets,track([p(40,0),p(60,0)]))
+ const lines=r.missingRoads.features[0].geometry.coordinates
+ assert.equal(lines.length,3)
+ assert.deepEqual(lines[2][0],p(200,0))
+ assert.ok(lines.every((line:Position[])=>line.at(-1)![0]-line[0][0]<=p(100,0)[0]-p(0,0)[0]+1e-9))
+})
