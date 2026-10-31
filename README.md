@@ -2,7 +2,7 @@
 
 [Open the map](https://runningroutes.aifurman.com/)
 
-A mobile-friendly TanStack Start app for Andrew Furman's running history, upcoming full-street targets and cycling history around Havertown. Use the Runs / Bikes / Videos switch, explore the full map, page through upcoming destinations, or watch the year-to-date time-lapse. Info contains map-provider and iPhone installation options.
+A mobile-friendly TanStack Start app for Andrew Furman's running history, upcoming full-street targets and cycling history around Havertown. Use the Runs / Bikes / Videos switch, explore the full map, page through upcoming destinations, or watch the year-to-date time-lapse. Purple GPS history and the 19083 outline are always displayed; there are no visibility checkboxes or Fit area button. All History remains available to explore recorded areas. Info contains map-provider and iPhone installation options.
 
 ## Layout
 
