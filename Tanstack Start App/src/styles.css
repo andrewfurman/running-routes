@@ -24,3 +24,10 @@
 /* Keep the header below the iPhone status area when viewport-fit=cover is active.
    Browsers without a top inset retain the existing header and map dimensions. */
 .app-shell{padding-top:env(safe-area-inset-top,0px);background:#fff}
+
+/* Compact vector branding; leave the full map below the header. */
+.app-header .brand{min-width:44px;width:44px;justify-content:center}.brand-mark{width:42px;height:42px;border-radius:13px}.brand-mark svg{width:27px;height:27px}.sport-switch svg{width:20px;height:20px;flex-shrink:0}.city-explore-summary{position:absolute;top:14px;left:14px;z-index:5;display:flex;align-items:center;gap:16px;max-width:calc(100% - 28px);background:#fff;border:1px solid #e4dcec;box-shadow:0 4px 18px #39224a18;border-radius:12px;padding:12px 14px}.city-explore-summary>div{display:flex;flex-direction:column;gap:4px}.city-explore-summary strong{font-size:14px}.city-explore-summary span{font-size:12px;color:#70617e}.city-explore-summary button{border:0;border-left:1px solid #e4dcec;padding:10px 0 10px 14px;background:white;color:#68409c;font-size:12px;font-weight:650}.city-data-note,.map-provider-note{font-size:13px;line-height:1.6;color:#70617e}
+@media(max-width:700px){.app-header .brand{width:40px;min-width:40px}.brand-mark{width:38px;height:38px}.sport-switch button{font-size:14px;gap:7px}.sport-switch svg{width:19px;height:19px}.city-selector-button{font-size:12px}.city-explore-summary{gap:10px;padding:10px 12px}.city-explore-summary strong{font-size:13px}.city-explore-summary button{font-size:11px}.header-stat strong{font-size:17px}.header-stat span{font-size:10px}}
+
+@media(max-width:700px){.app-header{grid-template-columns:auto minmax(0,1fr) auto auto}.app-header>.header-stat:not(.outing-stat){justify-self:start;align-items:flex-start;margin-left:3px}}
+@media(max-width:380px){.app-header>.header-stat:not(.outing-stat){display:flex}}

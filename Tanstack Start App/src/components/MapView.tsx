@@ -40,7 +40,7 @@ export function MapView(props: Props) {
     setLoading(true); setError('')
     async function initialize() {
       try {
-        if (!host.current) return
+        if (!host.current || (props.provider==='google'&&!props.mapsKey)) return
         if (props.provider === 'google' && props.mapsKey) {
           const g = await loadGoogle(props.mapsKey)
           window.gm_authFailure = () => { if(!stopped)props.onProviderFailure('Google Maps is unavailable for this site. Showing OpenStreetMap.') }
@@ -99,7 +99,7 @@ export function MapView(props: Props) {
     else e.fit(points(props.tracks).filter(([lng,lat])=>lng>-75.39&&lng< -75.24&&lat>39.92&&lat<40.04))
   },[ready,props.targets])
   useEffect(()=>{const e=engine.current;if(!e)return;e.routeLines.forEach((line:any,i:number)=>e.type==='google'?line.setOptions({strokeColor:i===props.selected?'#e96b1d':'#e8a364',strokeWeight:i===props.selected?7:4}):line.setStyle({color:i===props.selected?'#e96b1d':'#e8a364',weight:i===props.selected?7:4}))},[ready,props.selected,props.targets])
-  useEffect(()=>{if(props.focusRequest&&props.targets[props.selected])engine.current?.fit(props.targets.filter(t=>t.date===props.targets[props.selected].date).flatMap(t=>t.target_coordinates),100,true)},[props.focusRequest,ready,props.targets,props.selected])
+  useEffect(()=>{if(!props.historyArea&&props.focusRequest&&props.targets[props.selected])engine.current?.fit(props.targets.filter(t=>t.date===props.targets[props.selected].date).flatMap(t=>t.target_coordinates),100,true)},[props.focusRequest,ready,props.targets,props.selected,props.historyArea])
   useEffect(()=>{if(props.historyRequest&&props.historyArea?.length)engine.current?.fit(props.historyArea)},[props.historyRequest,props.historyArea,ready])
   useEffect(()=>{if(!props.activityId||!props.tracks)return;const feature=props.tracks.features.find(f=>String(f.properties.activity_id)===props.activityId);if(feature)engine.current?.fit(points({type:'FeatureCollection',features:[feature]}),60)},[props.activityId,props.tracks,ready])
   return <div className="map-surface"><div className="map-canvas" ref={host} aria-label="Interactive route map"/>{loading?<div className="map-loading"><span className="spinner"/>Loading street map</div>:null}{error?<div className="map-error" role="alert">{error}</div>:null}<div className="map-credit">{props.provider==='google'?'Google Maps':'OpenStreetMap'}<span>•</span>Purple: recorded tracks<span>•</span>Teal: 19083</div></div>
