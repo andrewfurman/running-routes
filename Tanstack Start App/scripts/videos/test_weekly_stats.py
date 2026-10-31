@@ -1,5 +1,5 @@
 import unittest
-from weekly_stats import weekly_stats
+from weekly_stats import weekly_stats,calendar_week
 class WeeklyStatsTests(unittest.TestCase):
  def record(self,id,date,miles,seconds):return {'activityId':id,'date':date,'distanceMeters':miles*1609.344,'movingSeconds':seconds,'elapsedSeconds':seconds+60}
  def test_inclusive_eastern_week_and_weighted_pace(self):
@@ -11,4 +11,8 @@ class WeeklyStatsTests(unittest.TestCase):
   rows=[self.record('a','2026-10-31T09:00:00Z',1,600),self.record('b','2026-11-01T10:00:00Z',1,600)];self.assertEqual(weekly_stats(rows,'2026-11-01')['averageStartLabel'],'5:00 AM')
  def test_missing_time_cannot_produce_false_pace(self):
   with self.assertRaises(ValueError):weekly_stats([self.record('a','2026-10-31T09:00:00Z',3,0)],'2026-10-31')
+class CalendarWeekTests(unittest.TestCase):
+ def test_calendar_always_starts_sunday_and_ends_saturday(self):
+  for value in ['2026-10-25','2026-10-28','2026-10-31']:
+   start,end=calendar_week(value);self.assertEqual(start.isoformat(),'2026-10-25');self.assertEqual(end.isoformat(),'2026-10-31')
 if __name__=='__main__':unittest.main()

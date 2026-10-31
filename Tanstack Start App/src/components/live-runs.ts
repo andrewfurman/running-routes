@@ -3,7 +3,7 @@ import type {SyncedRun} from '../sync/types'
 import {easternDay} from './scheduled-days.ts'
 export function mergeSyncedTracks(base:FeatureCollection,runs:SyncedRun[]):FeatureCollection {
  const features=new Map(base.features.map(f=>[String(f.properties.activity_id),f]))
- for(const run of runs){const existing=features.get(run.activityId);if(!existing&&!run.geometry)continue;features.set(run.activityId,{type:'Feature',geometry:existing?.geometry||run.geometry!,properties:{...existing?.properties,activity_id:run.activityId,date:run.date,activity_type:'Run',distance_meters:run.distanceMeters,source:run.distanceSource,strava_url:`https://www.strava.com/activities/${run.activityId}`}})}
+ for(const run of runs){const existing=features.get(run.activityId);if(!existing&&!run.geometry)continue;features.set(run.activityId,{type:'Feature',geometry:existing?.geometry||run.geometry!,properties:{...existing?.properties,activity_id:run.activityId,date:run.date,activity_type:'Run',distance_meters:run.distanceMeters,moving_seconds:run.movingSeconds,source:run.distanceSource,strava_url:`https://www.strava.com/activities/${run.activityId}`}})}
  return {type:'FeatureCollection',features:[...features.values()]}
 }
 export function mergeSyncedEvents(base:CalendarEvent[],runs:SyncedRun[]):CalendarEvent[]{

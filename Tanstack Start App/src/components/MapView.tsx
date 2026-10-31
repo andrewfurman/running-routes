@@ -105,8 +105,8 @@ export function MapView(props: Props) {
     const e=engine.current;if(!e||!props.activityId||!props.tracks)return
     const feature=props.tracks.features.find(f=>String(f.properties.activity_id)===props.activityId);if(!feature)return
     let cleanup=()=>{}
-    if(e.type==='google'){const layer=new window.google.maps.Data({map:e.map});layer.addGeoJson(feature);layer.setStyle({strokeColor:'#d53f8c',strokeWeight:5,strokeOpacity:1,zIndex:25});cleanup=()=>layer.setMap(null)}
-    else{const layer=e.L.geoJSON(feature,{style:{color:'#d53f8c',weight:5,opacity:1}}).addTo(e.map);cleanup=()=>{if(e.map.hasLayer(layer))e.map.removeLayer(layer)}}
+    if(e.type==='google'){const layers=[{color:'#20263a',width:11,z:25},{color:'#ffd54a',width:6,z:26}].map(style=>{const layer=new window.google.maps.Data({map:e.map});layer.addGeoJson(feature);layer.setStyle({strokeColor:style.color,strokeWeight:style.width,strokeOpacity:1,zIndex:style.z});return layer});cleanup=()=>layers.forEach(layer=>layer.setMap(null))}
+    else{const layers=[{color:'#20263a',weight:11},{color:'#ffd54a',weight:6}].map(style=>e.L.geoJSON(feature,{style:{...style,opacity:1},interactive:false}).addTo(e.map));cleanup=()=>layers.forEach(layer=>{if(e.map.hasLayer(layer))e.map.removeLayer(layer)})}
     e.fit(points({type:'FeatureCollection',features:[feature]}),60);return cleanup
   },[props.activityId,props.tracks,ready])
   return <div className="map-surface"><div className="map-canvas" ref={host} aria-label="Interactive route map"/>{loading?<div className="map-loading"><span className="spinner"/>Loading street map</div>:null}{error?<div className="map-error" role="alert">{error}</div>:null}<div className="map-credit">{props.provider==='google'?'Google Maps':'OpenStreetMap'}<span>•</span>Purple: recorded tracks<span>•</span>Teal: 19083</div></div>

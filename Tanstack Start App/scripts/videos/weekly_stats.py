@@ -19,3 +19,7 @@ def weekly_stats(records,as_of):
 def duration(seconds):
  seconds=round(seconds);h,remainder=divmod(seconds,3600);m,s=divmod(remainder,60);return f'{h}:{m:02d}:{s:02d}' if h else f'{m}:{s:02d}'
 def pace(seconds):return duration(seconds)+' /mi' if seconds is not None else '—'
+
+def calendar_week(as_of):
+ day=date.fromisoformat(as_of);end=day+timedelta(days=(5-day.weekday())%7)
+ return end-timedelta(days=6),end

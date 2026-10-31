@@ -15,3 +15,5 @@ export function gpsActivitySummary(tracks?:FeatureCollection){
 
 export function activityTimestamp(properties:Record<string,any>){const value=properties.start_time_utc||(properties.source_csv_date_utc?properties.source_csv_date_utc+' UTC':properties.date);return Date.parse(/^\d{4}-\d{2}-\d{2}$/.test(value||'')?value+'T12:00:00Z':value)}
 export function latestBikeId(tracks?:FeatureCollection){return [...(tracks?.features||[])].filter(f=>/Ride/.test(f.properties.activity_type)||['Handcycle','Velomobile'].includes(f.properties.activity_type)).sort((a,b)=>activityTimestamp(b.properties)-activityTimestamp(a.properties)||Number(b.properties.activity_id)-Number(a.properties.activity_id))[0]?.properties.activity_id?.toString()}
+
+export function averagePaceLabel(properties:Record<string,any>){const miles=properties.distance_meters/1609.344,seconds=properties.moving_seconds;if(!Number.isFinite(miles)||miles<=0||!Number.isFinite(seconds)||seconds<=0)return 'Unavailable';const pace=Math.round(seconds/miles);return `${Math.floor(pace/60)}:${String(pace%60).padStart(2,'0')} /mi`}
