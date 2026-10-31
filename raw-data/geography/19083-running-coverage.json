@@ -1,0 +1,2348 @@
+{
+  "total": 333,
+  "runOn": 278,
+  "untouched": 55,
+  "complete": 236,
+  "partial": 42,
+  "outstanding": 97,
+  "streetPercent": 83.48348348348348,
+  "lengthPercent": 82.16860180067984,
+  "coveredMiles": 85.65419307738122,
+  "totalMiles": 104.24199901217322,
+  "gpsRuns": 1876,
+  "latestDate": "2026-10-31T09:23:48.000Z",
+  "sourceTimestamp": "2026-10-31T15:22:30Z",
+  "streets": [
+    {
+      "name": "Academy Lane",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 312.44392019310897,
+      "lengthMeters": 312.44392019310914
+    },
+    {
+      "name": "Achille Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 514.7978757747479,
+      "lengthMeters": 514.797875774748
+    },
+    {
+      "name": "Agnew Drive",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 22.721169240475863
+    },
+    {
+      "name": "Allston Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 881.0831109591421,
+      "lengthMeters": 881.0831109591425
+    },
+    {
+      "name": "Annabella Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 469.61700409207043,
+      "lengthMeters": 469.6170040920698
+    },
+    {
+      "name": "Anthony Drive",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 62.018224636718564
+    },
+    {
+      "name": "Ashton Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 578.0829784285532,
+      "lengthMeters": 578.0829784285536
+    },
+    {
+      "name": "Ashurst Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 413.757955691466,
+      "lengthMeters": 413.7579556914661
+    },
+    {
+      "name": "Ashwood Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 257.5498440248915,
+      "lengthMeters": 257.54984402489146
+    },
+    {
+      "name": "Avondale Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 122.54887095733811,
+      "lengthMeters": 122.54887095733812
+    },
+    {
+      "name": "Barbara Lane",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 396.8793752975932,
+      "lengthMeters": 396.87937529759307
+    },
+    {
+      "name": "Beck Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 91.53976343792847,
+      "lengthMeters": 91.53976343792847
+    },
+    {
+      "name": "Beechwood Drive",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 778.2994947961798,
+      "lengthMeters": 778.2994947961797
+    },
+    {
+      "name": "Beechwood Road",
+      "percent": 55.3,
+      "status": "partial",
+      "coveredMeters": 311.205586791664,
+      "lengthMeters": 563.2161213137995
+    },
+    {
+      "name": "Belfield Avenue",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 632.1155276787956
+    },
+    {
+      "name": "Bellemead Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 645.4140407914389,
+      "lengthMeters": 645.4140407914384
+    },
+    {
+      "name": "Belvedere Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 630.7900869213178,
+      "lengthMeters": 630.7900869213178
+    },
+    {
+      "name": "Bennington Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 401.85619430892916,
+      "lengthMeters": 401.8561943089295
+    },
+    {
+      "name": "Beverly Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 394.38459116464725,
+      "lengthMeters": 394.3845911646475
+    },
+    {
+      "name": "Bewley Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 582.5452361782483,
+      "lengthMeters": 582.5452361782485
+    },
+    {
+      "name": "Bon Air Road",
+      "percent": 54.4,
+      "status": "partial",
+      "coveredMeters": 477.9527689710724,
+      "lengthMeters": 878.7698257270446
+    },
+    {
+      "name": "Bon Air Terrace",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 224.7614951889587
+    },
+    {
+      "name": "Braeburn Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 285.0415614625785,
+      "lengthMeters": 285.0415614625785
+    },
+    {
+      "name": "Brentwood Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 870.9283806096578,
+      "lengthMeters": 870.9283806096577
+    },
+    {
+      "name": "Brierwood Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 642.1078094014632,
+      "lengthMeters": 642.1078094014637
+    },
+    {
+      "name": "Brookline Boulevard",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 1307.9710791758578,
+      "lengthMeters": 1307.971079175856
+    },
+    {
+      "name": "Brookview Lane",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 186.09821991077177,
+      "lengthMeters": 186.09821991077177
+    },
+    {
+      "name": "Bryan Street",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 507.9035597490441,
+      "lengthMeters": 507.9035597490437
+    },
+    {
+      "name": "Burmont Road",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 509.33451696371503
+    },
+    {
+      "name": "Campbell Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 1011.9934708987422,
+      "lengthMeters": 1011.9934708987419
+    },
+    {
+      "name": "Canterbury Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 365.2502275534159,
+      "lengthMeters": 365.25022755341615
+    },
+    {
+      "name": "Castle Rock Drive",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 234.2039118326029
+    },
+    {
+      "name": "Cedar Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 90.63092714365226,
+      "lengthMeters": 90.63092714365226
+    },
+    {
+      "name": "Center Road",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 389.7704070541922
+    },
+    {
+      "name": "Central Avenue",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 418.15850021015734
+    },
+    {
+      "name": "Charles Drive",
+      "percent": 85,
+      "status": "partial",
+      "coveredMeters": 408.69064869640135,
+      "lengthMeters": 480.73671820059093
+    },
+    {
+      "name": "Chatham Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 40.65492424757436,
+      "lengthMeters": 40.65492424757436
+    },
+    {
+      "name": "Chelten Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 218.4342459872692,
+      "lengthMeters": 218.43424598726924
+    },
+    {
+      "name": "Cherry Lane",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 454.0884590666003,
+      "lengthMeters": 454.0884590666004
+    },
+    {
+      "name": "Chester Avenue",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 101.71432783033532
+    },
+    {
+      "name": "Circle Drive",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 335.05046178505256,
+      "lengthMeters": 335.0504617850527
+    },
+    {
+      "name": "Clamar Avenue",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 420.249483381867
+    },
+    {
+      "name": "Claremont Boulevard",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 343.182583474085,
+      "lengthMeters": 343.18258347408494
+    },
+    {
+      "name": "Clover Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 176.39056462135346,
+      "lengthMeters": 176.3905646213535
+    },
+    {
+      "name": "Colfax Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 1284.5795504591008,
+      "lengthMeters": 1284.5795504591013
+    },
+    {
+      "name": "Colonial Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 300.9055428899854,
+      "lengthMeters": 300.90554288998527
+    },
+    {
+      "name": "Colony Lane",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 254.81343764295866,
+      "lengthMeters": 254.81343764295852
+    },
+    {
+      "name": "Columbia Road",
+      "percent": 96.7,
+      "status": "complete",
+      "coveredMeters": 284.90786907166523,
+      "lengthMeters": 294.6803989300296
+    },
+    {
+      "name": "Columbus Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 410.338459242166,
+      "lengthMeters": 410.3384592421658
+    },
+    {
+      "name": "Country Club Lane",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 388.653767940265,
+      "lengthMeters": 388.65376794026514
+    },
+    {
+      "name": "Covington Road",
+      "percent": 80.2,
+      "status": "partial",
+      "coveredMeters": 509.32076264510926,
+      "lengthMeters": 634.7597046726895
+    },
+    {
+      "name": "Crescent Hill Drive",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 689.5863244493854,
+      "lengthMeters": 689.5863244493847
+    },
+    {
+      "name": "Cumberland Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 175.93283208826554,
+      "lengthMeters": 175.93283208826557
+    },
+    {
+      "name": "Darby Creek Road",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 1450.8192231287999
+    },
+    {
+      "name": "Darby Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 5548.944966825303,
+      "lengthMeters": 5548.944966825316
+    },
+    {
+      "name": "David Drive",
+      "percent": 89.7,
+      "status": "partial",
+      "coveredMeters": 899.5081987752477,
+      "lengthMeters": 1002.7297731413639
+    },
+    {
+      "name": "Davis Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 241.62043954701332,
+      "lengthMeters": 241.6204395470134
+    },
+    {
+      "name": "Decatur Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 481.83605598950294,
+      "lengthMeters": 481.8360559895033
+    },
+    {
+      "name": "Delaware Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 198.81839623082197,
+      "lengthMeters": 198.81839623082186
+    },
+    {
+      "name": "Delchester Drive",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 57.36761521930357
+    },
+    {
+      "name": "Delmont Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 535.976076726988,
+      "lengthMeters": 535.9760767269876
+    },
+    {
+      "name": "Dermond Avenue",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 380.57607054841816
+    },
+    {
+      "name": "Derwen Drive",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 230.27211927779592,
+      "lengthMeters": 230.27211927779595
+    },
+    {
+      "name": "Devon Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 440.72011860690355,
+      "lengthMeters": 440.72011860690355
+    },
+    {
+      "name": "Dickinson Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 84.44676755556588,
+      "lengthMeters": 84.44676755556588
+    },
+    {
+      "name": "Dill Road",
+      "percent": 38.6,
+      "status": "partial",
+      "coveredMeters": 507.9898699962074,
+      "lengthMeters": 1317.6932783626003
+    },
+    {
+      "name": "Dogwood Circle",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 44.70986247129429
+    },
+    {
+      "name": "Dorchester Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 544.9328599754232,
+      "lengthMeters": 544.9328599754234
+    },
+    {
+      "name": "Eagle Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 16.810550229197528,
+      "lengthMeters": 16.810550229197528
+    },
+    {
+      "name": "Earlington Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 2605.350962604891,
+      "lengthMeters": 2605.3509626048926
+    },
+    {
+      "name": "East Benedict Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 663.43844814288,
+      "lengthMeters": 663.4384481428804
+    },
+    {
+      "name": "East Clearfield Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 291.25454334954475,
+      "lengthMeters": 291.25454334954463
+    },
+    {
+      "name": "East Eagle Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 1209.648883239401,
+      "lengthMeters": 1209.6488832393995
+    },
+    {
+      "name": "East Hathaway Lane",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 833.3265540214887,
+      "lengthMeters": 833.32655402149
+    },
+    {
+      "name": "East Hillcrest Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 174.83297980818946,
+      "lengthMeters": 174.83297980818944
+    },
+    {
+      "name": "East Langhorne Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 366.3750152098307,
+      "lengthMeters": 366.37501520983085
+    },
+    {
+      "name": "East Manoa Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 755.2037922844121,
+      "lengthMeters": 755.2037922844123
+    },
+    {
+      "name": "East Marthart Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 662.0028656941283,
+      "lengthMeters": 662.002865694129
+    },
+    {
+      "name": "East Mercer Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 284.7839355342995,
+      "lengthMeters": 284.7839355342995
+    },
+    {
+      "name": "East Park Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 779.5617919521377,
+      "lengthMeters": 779.5617919521378
+    },
+    {
+      "name": "East Turnbull Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 649.6690733452834,
+      "lengthMeters": 649.6690733452832
+    },
+    {
+      "name": "East Wilmot Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 276.63303935778964,
+      "lengthMeters": 276.63303935778964
+    },
+    {
+      "name": "Edgehill Drive",
+      "percent": 94.8,
+      "status": "partial",
+      "coveredMeters": 285.5421878454679,
+      "lengthMeters": 301.2802110065817
+    },
+    {
+      "name": "Edgewood Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 632.2918289827692,
+      "lengthMeters": 632.2918289827697
+    },
+    {
+      "name": "Edmonds Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 634.8721669855784,
+      "lengthMeters": 634.872166985578
+    },
+    {
+      "name": "Eleanor Circle",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 61.08615625036213
+    },
+    {
+      "name": "Ellis Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 2628.940134609218,
+      "lengthMeters": 2628.9401346092163
+    },
+    {
+      "name": "Ellston Road",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 293.85876034866124
+    },
+    {
+      "name": "Euclid Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 78.04791152454737,
+      "lengthMeters": 78.04791152454737
+    },
+    {
+      "name": "Fairfield Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 433.3725051573084,
+      "lengthMeters": 433.37250515730847
+    },
+    {
+      "name": "Fairhaven Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 160.56746377292427,
+      "lengthMeters": 160.5674637729242
+    },
+    {
+      "name": "Fairlamb Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 839.9958642108421,
+      "lengthMeters": 839.995864210842
+    },
+    {
+      "name": "Fairmont Road",
+      "percent": 91.9,
+      "status": "partial",
+      "coveredMeters": 401.2165352289096,
+      "lengthMeters": 436.4151861002583
+    },
+    {
+      "name": "Fairview Avenue",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 1016.5257234517726
+    },
+    {
+      "name": "Farnham Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 314.91848876966924,
+      "lengthMeters": 314.9184887696693
+    },
+    {
+      "name": "Florence Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 210.6569746540352,
+      "lengthMeters": 210.6569746540352
+    },
+    {
+      "name": "Forest Avenue",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 148.83987659031368
+    },
+    {
+      "name": "Foster Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 394.410719914375,
+      "lengthMeters": 394.41071991437525
+    },
+    {
+      "name": "Francis Drive",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 240.26416939332336
+    },
+    {
+      "name": "Frederick Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 415.28448439983106,
+      "lengthMeters": 415.28448439983094
+    },
+    {
+      "name": "Fulmer Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 173.37483854329108,
+      "lengthMeters": 173.37483854329108
+    },
+    {
+      "name": "Furlong Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 518.8358724912589,
+      "lengthMeters": 518.8358724912595
+    },
+    {
+      "name": "Garden Avenue",
+      "percent": 56,
+      "status": "partial",
+      "coveredMeters": 101.56587651491691,
+      "lengthMeters": 181.45112247269492
+    },
+    {
+      "name": "Garfield Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 572.0163223520207,
+      "lengthMeters": 572.0163223520209
+    },
+    {
+      "name": "Garlor Drive",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 541.2849720037844,
+      "lengthMeters": 541.2849720037846
+    },
+    {
+      "name": "Gilmore Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 484.9513747378256,
+      "lengthMeters": 484.95137473782563
+    },
+    {
+      "name": "Gladstone Road",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 495.2923173735076
+    },
+    {
+      "name": "Glen Arbor Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 522.9746025407775,
+      "lengthMeters": 522.9746025407775
+    },
+    {
+      "name": "Glen Gary Road",
+      "percent": 66.5,
+      "status": "partial",
+      "coveredMeters": 437.5961561308087,
+      "lengthMeters": 658.177544374742
+    },
+    {
+      "name": "Glen Ridge Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 413.64083976026404,
+      "lengthMeters": 413.64083976026427
+    },
+    {
+      "name": "Glendale Road",
+      "percent": 27,
+      "status": "partial",
+      "coveredMeters": 546.7119876094937,
+      "lengthMeters": 2023.7491307289517
+    },
+    {
+      "name": "Glenn Terrace",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 131.5231030016462
+    },
+    {
+      "name": "Golf Hills Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 1066.9397639655,
+      "lengthMeters": 1066.9397639655015
+    },
+    {
+      "name": "Golf Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 252.0111866147552,
+      "lengthMeters": 252.01118661475525
+    },
+    {
+      "name": "Grand Avenue",
+      "percent": 51.2,
+      "status": "partial",
+      "coveredMeters": 268.0058491980173,
+      "lengthMeters": 523.8217613000612
+    },
+    {
+      "name": "Grant Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 105.755256628318,
+      "lengthMeters": 105.75525662831797
+    },
+    {
+      "name": "Grasslyn Avenue",
+      "percent": 95.6,
+      "status": "complete",
+      "coveredMeters": 615.1192948502068,
+      "lengthMeters": 643.6737226802976
+    },
+    {
+      "name": "Grasslyn Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 283.029895635817,
+      "lengthMeters": 283.02989563581696
+    },
+    {
+      "name": "Green Valley Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 440.13972897444387,
+      "lengthMeters": 440.13972897444387
+    },
+    {
+      "name": "Greenbriar Lane",
+      "percent": 45.9,
+      "status": "partial",
+      "coveredMeters": 408.1821610188798,
+      "lengthMeters": 889.7821908209377
+    },
+    {
+      "name": "Greenview Lane",
+      "percent": 98.2,
+      "status": "complete",
+      "coveredMeters": 901.8723825808801,
+      "lengthMeters": 918.1793585401693
+    },
+    {
+      "name": "Greenway Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 115.11702055902784,
+      "lengthMeters": 115.11702055902782
+    },
+    {
+      "name": "Grove Place",
+      "percent": 63.3,
+      "status": "partial",
+      "coveredMeters": 307.6393914557495,
+      "lengthMeters": 486.2001885315523
+    },
+    {
+      "name": "Hampton Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 260.24617041939547,
+      "lengthMeters": 260.24617041939536
+    },
+    {
+      "name": "Harding Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 200.88977249854753,
+      "lengthMeters": 200.88977249854753
+    },
+    {
+      "name": "Harding Drive",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 421.5554792682776
+    },
+    {
+      "name": "Harriet Lane",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 210.3463643294068,
+      "lengthMeters": 210.34636432940678
+    },
+    {
+      "name": "Harrington Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 818.9544510961678,
+      "lengthMeters": 818.9544510961678
+    },
+    {
+      "name": "Harvard Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 549.7600687029357,
+      "lengthMeters": 549.7600687029357
+    },
+    {
+      "name": "Hastings Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 971.7282314138686,
+      "lengthMeters": 971.7282314138704
+    },
+    {
+      "name": "Havcrest Circle",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 104.37597559265532
+    },
+    {
+      "name": "Haverford Road",
+      "percent": 37.8,
+      "status": "partial",
+      "coveredMeters": 104.81768580975745,
+      "lengthMeters": 277.6624882401956
+    },
+    {
+      "name": "Hawthorne Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 447.0950894136532,
+      "lengthMeters": 447.09508941365334
+    },
+    {
+      "name": "Heatherwood Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 816.4911991089888,
+      "lengthMeters": 816.4911991089893
+    },
+    {
+      "name": "Hermosa Lane",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 388.8865389068924,
+      "lengthMeters": 388.8865389068924
+    },
+    {
+      "name": "Hill Road",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 402.5655481183621
+    },
+    {
+      "name": "Hillside Avenue",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 219.33724830875903
+    },
+    {
+      "name": "Hilltop Road",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 450.6723197376918
+    },
+    {
+      "name": "Hirst Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 402.1916004575037,
+      "lengthMeters": 402.1916004575036
+    },
+    {
+      "name": "Hirst Terrace",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 436.20030534183644,
+      "lengthMeters": 436.2003053418368
+    },
+    {
+      "name": "Holbrook Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 180.0347867568417,
+      "lengthMeters": 180.03478675684173
+    },
+    {
+      "name": "Hollis Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 232.69588305414743,
+      "lengthMeters": 232.69588305414757
+    },
+    {
+      "name": "Hollywood Avenue",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 407.85385163236054
+    },
+    {
+      "name": "Holmes Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 353.57291349560984,
+      "lengthMeters": 353.57291349561007
+    },
+    {
+      "name": "Homestead Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 441.7759380558779,
+      "lengthMeters": 441.775938055878
+    },
+    {
+      "name": "Howard Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 110.70150169226541,
+      "lengthMeters": 110.7015016922654
+    },
+    {
+      "name": "Howell Lane",
+      "percent": 55.1,
+      "status": "partial",
+      "coveredMeters": 265.3178679406206,
+      "lengthMeters": 481.2199423591136
+    },
+    {
+      "name": "Ivy Rock Lane",
+      "percent": 14.9,
+      "status": "partial",
+      "coveredMeters": 113.47897571546915,
+      "lengthMeters": 760.4997799525472
+    },
+    {
+      "name": "Jacalyn Drive",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 345.91862061316243,
+      "lengthMeters": 345.91862061316243
+    },
+    {
+      "name": "Jacks Way",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 67.97812145298705
+    },
+    {
+      "name": "James Drive",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 568.3464943078557
+    },
+    {
+      "name": "Joann Circle",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 101.12018872351084
+    },
+    {
+      "name": "Joanna Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 145.20970087766068,
+      "lengthMeters": 145.20970087766065
+    },
+    {
+      "name": "Johnson Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 82.3826109876826,
+      "lengthMeters": 82.3826109876826
+    },
+    {
+      "name": "Josie Lane",
+      "percent": 49.8,
+      "status": "partial",
+      "coveredMeters": 267.3684546696052,
+      "lengthMeters": 537.2419856411839
+    },
+    {
+      "name": "Juniper Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 558.467333634455,
+      "lengthMeters": 558.4673336344547
+    },
+    {
+      "name": "Karakung Drive",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 641.5585839237605,
+      "lengthMeters": 641.5585839237608
+    },
+    {
+      "name": "Kathleen Court",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 126.91391884592709,
+      "lengthMeters": 126.91391884592713
+    },
+    {
+      "name": "Kathmere Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 1298.271789996118,
+      "lengthMeters": 1298.2717899961194
+    },
+    {
+      "name": "Kenmore Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 841.5004354869424,
+      "lengthMeters": 841.500435486942
+    },
+    {
+      "name": "Kingsley Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 174.85175363008779,
+      "lengthMeters": 174.85175363008784
+    },
+    {
+      "name": "Lakeside Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 401.79657716429494,
+      "lengthMeters": 401.796577164295
+    },
+    {
+      "name": "Langhorne Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 132.22279033562305,
+      "lengthMeters": 132.22279033562307
+    },
+    {
+      "name": "Lansdowne Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 371.4944617009842,
+      "lengthMeters": 371.4944617009837
+    },
+    {
+      "name": "Larchmont Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 446.8410103328591,
+      "lengthMeters": 446.8410103328591
+    },
+    {
+      "name": "Laurel Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 181.47430935632843,
+      "lengthMeters": 181.47430935632838
+    },
+    {
+      "name": "Lawndale Avenue",
+      "percent": 39.4,
+      "status": "partial",
+      "coveredMeters": 127.22194974318214,
+      "lengthMeters": 322.6481613880684
+    },
+    {
+      "name": "Lawrence Road",
+      "percent": 67,
+      "status": "partial",
+      "coveredMeters": 1504.7221017035984,
+      "lengthMeters": 2246.673703401187
+    },
+    {
+      "name": "Lawson Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 850.4193359081418,
+      "lengthMeters": 850.4193359081412
+    },
+    {
+      "name": "Leedom Avenue",
+      "percent": 95.2,
+      "status": "complete",
+      "coveredMeters": 489.53239488376045,
+      "lengthMeters": 514.3899353971517
+    },
+    {
+      "name": "Leedom Road",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 659.6056766032386
+    },
+    {
+      "name": "Lenox Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 307.4133124529375,
+      "lengthMeters": 307.41331245293765
+    },
+    {
+      "name": "Lewis Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 191.42089700465272,
+      "lengthMeters": 191.42089700465274
+    },
+    {
+      "name": "Lincoln Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 804.9016833129779,
+      "lengthMeters": 804.9016833129766
+    },
+    {
+      "name": "Linden Drive",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 429.94062017157324,
+      "lengthMeters": 429.94062017157313
+    },
+    {
+      "name": "Llandaff Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 350.93777357450375,
+      "lengthMeters": 350.9377735745037
+    },
+    {
+      "name": "Llandillo Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 549.6295113888733,
+      "lengthMeters": 549.6295113888732
+    },
+    {
+      "name": "Llanerch Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 697.7005182151084,
+      "lengthMeters": 697.7005182151078
+    },
+    {
+      "name": "Lynnewood Drive",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 511.11700099284474,
+      "lengthMeters": 511.1170009928441
+    },
+    {
+      "name": "Manoa Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 1266.4564831656028,
+      "lengthMeters": 1266.4564831656035
+    },
+    {
+      "name": "Manor Avenue",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 271.61486741331896
+    },
+    {
+      "name": "Manor Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 1010.6478599595392,
+      "lengthMeters": 1010.6478599595397
+    },
+    {
+      "name": "Maple Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 362.2423369368362,
+      "lengthMeters": 362.2423369368362
+    },
+    {
+      "name": "Maple Hill Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 228.72655067211667,
+      "lengthMeters": 228.7265506721167
+    },
+    {
+      "name": "Marilyn Drive",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 410.65691729853995
+    },
+    {
+      "name": "Marple Road",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 114.72992288917699
+    },
+    {
+      "name": "Marvine Avenue",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 108.93266663507697
+    },
+    {
+      "name": "Maryland Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 1333.2546596625286,
+      "lengthMeters": 1333.2546596625293
+    },
+    {
+      "name": "Meadowbrook Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 98.78189920352632,
+      "lengthMeters": 98.78189920352634
+    },
+    {
+      "name": "Media Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 142.13556686428032,
+      "lengthMeters": 142.13556686428032
+    },
+    {
+      "name": "Melrose Avenue",
+      "percent": 64.7,
+      "status": "partial",
+      "coveredMeters": 434.96328005894065,
+      "lengthMeters": 672.5854760212355
+    },
+    {
+      "name": "Merion Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 377.5799905368395,
+      "lengthMeters": 377.57999053683966
+    },
+    {
+      "name": "Merrybrook Drive",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 676.3767331319153,
+      "lengthMeters": 676.3767331319157
+    },
+    {
+      "name": "Merwood Lane",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 388.80701139736277,
+      "lengthMeters": 388.8070113973629
+    },
+    {
+      "name": "Michael Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 176.6533479848609,
+      "lengthMeters": 176.65334798486086
+    },
+    {
+      "name": "Mifflin Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 115.70413694452924,
+      "lengthMeters": 115.70413694452925
+    },
+    {
+      "name": "Milard Lane",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 130.04042469894716,
+      "lengthMeters": 130.04042469894713
+    },
+    {
+      "name": "Mill Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 1345.603679872631,
+      "lengthMeters": 1345.60367987263
+    },
+    {
+      "name": "Moewyn Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 91.93811569505637,
+      "lengthMeters": 91.93811569505635
+    },
+    {
+      "name": "Mount Pleasant Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 753.6318994776078,
+      "lengthMeters": 753.6318994776075
+    },
+    {
+      "name": "Myrtle Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 1051.2789008465936,
+      "lengthMeters": 1051.2789008465934
+    },
+    {
+      "name": "Myrtlewood Avenue",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 231.70437348047977
+    },
+    {
+      "name": "Nancy Drive",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 306.52152660515594
+    },
+    {
+      "name": "Naylors Run Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 529.0899496245999,
+      "lengthMeters": 529.0899496245994
+    },
+    {
+      "name": "Norman Road",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 344.04320484065903
+    },
+    {
+      "name": "North Brierwood Road",
+      "percent": 84,
+      "status": "partial",
+      "coveredMeters": 386.89609118557235,
+      "lengthMeters": 460.50886219614273
+    },
+    {
+      "name": "North Concord Avenue",
+      "percent": 10.8,
+      "status": "partial",
+      "coveredMeters": 68.5367709846186,
+      "lengthMeters": 634.8459634850799
+    },
+    {
+      "name": "North Drexel Avenue",
+      "percent": 35.6,
+      "status": "partial",
+      "coveredMeters": 227.1666736245285,
+      "lengthMeters": 638.7383571902901
+    },
+    {
+      "name": "North Eagle Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 1042.6921295015893,
+      "lengthMeters": 1042.692129501589
+    },
+    {
+      "name": "North Lexington Avenue",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 633.9100644503712
+    },
+    {
+      "name": "North Manoa Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 771.3343963936485,
+      "lengthMeters": 771.3343963936485
+    },
+    {
+      "name": "North Morgan Avenue",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 639.8662527848293
+    },
+    {
+      "name": "Oak Lane",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 157.33975036086034,
+      "lengthMeters": 157.33975036086034
+    },
+    {
+      "name": "Oak Way",
+      "percent": 89.5,
+      "status": "partial",
+      "coveredMeters": 227.14156741379978,
+      "lengthMeters": 253.6851505941467
+    },
+    {
+      "name": "Oakmont Avenue",
+      "percent": 96.6,
+      "status": "complete",
+      "coveredMeters": 412.2462718284892,
+      "lengthMeters": 426.6746864361969
+    },
+    {
+      "name": "Old Manoa Road",
+      "percent": 94.7,
+      "status": "partial",
+      "coveredMeters": 132.3453525595475,
+      "lengthMeters": 139.765500608818
+    },
+    {
+      "name": "Old West Chester Pike",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 18.358602678801297
+    },
+    {
+      "name": "Olympic Avenue",
+      "percent": 57.3,
+      "status": "partial",
+      "coveredMeters": 308.1473356861283,
+      "lengthMeters": 537.8948356589822
+    },
+    {
+      "name": "Orchard Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 236.5413618443917,
+      "lengthMeters": 236.5413618443916
+    },
+    {
+      "name": "Ormond Avenue",
+      "percent": 13.4,
+      "status": "partial",
+      "coveredMeters": 85.02884910232676,
+      "lengthMeters": 636.5741984878985
+    },
+    {
+      "name": "Oxford Hill Lane",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 429.94683389010873,
+      "lengthMeters": 429.94683389010856
+    },
+    {
+      "name": "Oxford Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 709.409534075272,
+      "lengthMeters": 709.4095340752717
+    },
+    {
+      "name": "Paddock Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 1359.789361974347,
+      "lengthMeters": 1359.7893619743465
+    },
+    {
+      "name": "Parkside Drive",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 216.80816320039685
+    },
+    {
+      "name": "Peach Lane",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 227.97130544765434
+    },
+    {
+      "name": "Pearson Lane",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 96.46062280172264
+    },
+    {
+      "name": "Pelham Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 148.0611480938254,
+      "lengthMeters": 148.06114809382535
+    },
+    {
+      "name": "Pembroke Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 1049.898420286035,
+      "lengthMeters": 1049.8984202860347
+    },
+    {
+      "name": "Penfield Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 440.66012554810845,
+      "lengthMeters": 440.660125548108
+    },
+    {
+      "name": "Pennsylvania Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 537.7373479786555,
+      "lengthMeters": 537.7373479786552
+    },
+    {
+      "name": "Pennview Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 313.56181188777066,
+      "lengthMeters": 313.56181188777055
+    },
+    {
+      "name": "Pickwick Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 281.19083971288615,
+      "lengthMeters": 281.19083971288626
+    },
+    {
+      "name": "Pine Ridge Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 304.4859303231619,
+      "lengthMeters": 304.48593032316177
+    },
+    {
+      "name": "Pinzon Avenue",
+      "percent": 94.6,
+      "status": "partial",
+      "coveredMeters": 164.40686103660886,
+      "lengthMeters": 173.85198036969226
+    },
+    {
+      "name": "Poplar Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 555.2359122769388,
+      "lengthMeters": 555.2359122769388
+    },
+    {
+      "name": "Prescott Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 524.7049636323852,
+      "lengthMeters": 524.704963632385
+    },
+    {
+      "name": "Princeton Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 377.58911227098,
+      "lengthMeters": 377.58911227097985
+    },
+    {
+      "name": "Prospect Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 77.04640444835485,
+      "lengthMeters": 77.04640444835485
+    },
+    {
+      "name": "Ralston Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 611.7925718330581,
+      "lengthMeters": 611.7925718330577
+    },
+    {
+      "name": "Raymond Drive",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 260.56074651493304
+    },
+    {
+      "name": "Richland Avenue",
+      "percent": 79.5,
+      "status": "partial",
+      "coveredMeters": 172.45558796932525,
+      "lengthMeters": 216.90290128288257
+    },
+    {
+      "name": "Ridgeway Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 654.549332011399,
+      "lengthMeters": 654.5493320113984
+    },
+    {
+      "name": "Rittenhouse Circle",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 547.3435512343395,
+      "lengthMeters": 547.3435512343394
+    },
+    {
+      "name": "Robin Lane",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 397.38034047716957,
+      "lengthMeters": 397.3803404771695
+    },
+    {
+      "name": "Robinson Avenue",
+      "percent": 99.3,
+      "status": "complete",
+      "coveredMeters": 1251.665540008515,
+      "lengthMeters": 1260.3923556275272
+    },
+    {
+      "name": "Rockland Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 228.83755779208627,
+      "lengthMeters": 228.83755779208641
+    },
+    {
+      "name": "Rockwood Drive",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 271.9307680328946,
+      "lengthMeters": 271.93076803289466
+    },
+    {
+      "name": "Rodman Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 184.20534011874025,
+      "lengthMeters": 184.20534011874025
+    },
+    {
+      "name": "Rodmor Road",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 727.5929489442368
+    },
+    {
+      "name": "Roosevelt Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 1099.852850536524,
+      "lengthMeters": 1099.852850536524
+    },
+    {
+      "name": "Roosevelt Drive",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 422.4281706462203
+    },
+    {
+      "name": "Rose Glen Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 453.5505425392508,
+      "lengthMeters": 453.5505425392509
+    },
+    {
+      "name": "Rose Lane",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 132.5543671566234,
+      "lengthMeters": 132.55436715662339
+    },
+    {
+      "name": "Rose Tree Lane",
+      "percent": 25.3,
+      "status": "partial",
+      "coveredMeters": 198.02140171109227,
+      "lengthMeters": 784.1602485659
+    },
+    {
+      "name": "Rosewood Lane",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 111.96974510313082,
+      "lengthMeters": 111.96974510313082
+    },
+    {
+      "name": "Royal Avenue",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 271.24335706834256
+    },
+    {
+      "name": "Sagamore Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 873.8686873774091,
+      "lengthMeters": 873.8686873774092
+    },
+    {
+      "name": "Sarah Avenue",
+      "percent": 87.2,
+      "status": "partial",
+      "coveredMeters": 103.01097912711634,
+      "lengthMeters": 118.14676878926784
+    },
+    {
+      "name": "Shelbourne Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 893.1597582105254,
+      "lengthMeters": 893.1597582105251
+    },
+    {
+      "name": "South Eagle Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 987.454061333069,
+      "lengthMeters": 987.4540613330694
+    },
+    {
+      "name": "South Manoa Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 966.7106997603175,
+      "lengthMeters": 966.7106997603183
+    },
+    {
+      "name": "Spring Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 175.572791669194,
+      "lengthMeters": 175.57279166919395
+    },
+    {
+      "name": "Springhouse Lane",
+      "percent": 90.3,
+      "status": "partial",
+      "coveredMeters": 189.80297447122197,
+      "lengthMeters": 210.08475373770196
+    },
+    {
+      "name": "St Albans Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 284.72106381532046,
+      "lengthMeters": 284.7210638153205
+    },
+    {
+      "name": "St Denis Lane",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 572.5881000558926,
+      "lengthMeters": 572.5881000558926
+    },
+    {
+      "name": "Stanley Avenue",
+      "percent": 45.5,
+      "status": "partial",
+      "coveredMeters": 181.89132083970782,
+      "lengthMeters": 399.7667470624357
+    },
+    {
+      "name": "Stanton Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 479.11009519307936,
+      "lengthMeters": 479.11009519307953
+    },
+    {
+      "name": "Steel Road",
+      "percent": 52.1,
+      "status": "partial",
+      "coveredMeters": 1373.9393452787535,
+      "lengthMeters": 2638.3312251189136
+    },
+    {
+      "name": "Strathmore Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 1311.4619298087666,
+      "lengthMeters": 1311.461929808767
+    },
+    {
+      "name": "Stump Lane",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 296.2339598507639
+    },
+    {
+      "name": "Sue Ellen Drive",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 333.5116881788849,
+      "lengthMeters": 333.511688178885
+    },
+    {
+      "name": "Sunnyhill Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 1061.2431246031292,
+      "lengthMeters": 1061.2431246031292
+    },
+    {
+      "name": "Surrey Lane",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 458.0817434190474,
+      "lengthMeters": 458.0817434190473
+    },
+    {
+      "name": "Sycamore Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 566.9343430848515,
+      "lengthMeters": 566.9343430848513
+    },
+    {
+      "name": "Tenby Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 436.7447289737563,
+      "lengthMeters": 436.74472897375654
+    },
+    {
+      "name": "Terra Alta Circle",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 221.2358020594064
+    },
+    {
+      "name": "Terry Circle",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 51.11204858814738
+    },
+    {
+      "name": "Thompson Drive",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 94.6424069656467,
+      "lengthMeters": 94.6424069656467
+    },
+    {
+      "name": "Twin Oaks Drive",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 580.5346013952503,
+      "lengthMeters": 580.5346013952504
+    },
+    {
+      "name": "Tyson Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 469.9838235287945,
+      "lengthMeters": 469.9838235287943
+    },
+    {
+      "name": "Upland Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 1337.8799160983656,
+      "lengthMeters": 1337.8799160983665
+    },
+    {
+      "name": "Valley Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 930.6512090548886,
+      "lengthMeters": 930.6512090548875
+    },
+    {
+      "name": "Vernon Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 81.20998836571354,
+      "lengthMeters": 81.20998836571354
+    },
+    {
+      "name": "Vincent Road",
+      "percent": 79.5,
+      "status": "partial",
+      "coveredMeters": 99.22909843175621,
+      "lengthMeters": 124.81024484730918
+    },
+    {
+      "name": "Virginia Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 1210.1414141422144,
+      "lengthMeters": 1210.141414142212
+    },
+    {
+      "name": "Wales Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 240.54279577804616,
+      "lengthMeters": 240.54279577804607
+    },
+    {
+      "name": "Walnut Hill Lane",
+      "percent": 46.1,
+      "status": "partial",
+      "coveredMeters": 431.97863561108926,
+      "lengthMeters": 936.7720391120292
+    },
+    {
+      "name": "Walnut Place",
+      "percent": 77.8,
+      "status": "partial",
+      "coveredMeters": 503.13113261709606,
+      "lengthMeters": 646.7306380014769
+    },
+    {
+      "name": "Warren Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 249.48858757870929,
+      "lengthMeters": 249.48858757870923
+    },
+    {
+      "name": "Warwick Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 79.5864462298175,
+      "lengthMeters": 79.5864462298175
+    },
+    {
+      "name": "Washington Avenue",
+      "percent": 99.4,
+      "status": "complete",
+      "coveredMeters": 1454.495933990109,
+      "lengthMeters": 1463.100379733171
+    },
+    {
+      "name": "Waterview Circle",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 77.24183126333892
+    },
+    {
+      "name": "Waverly Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 225.00455878554232,
+      "lengthMeters": 225.00455878554223
+    },
+    {
+      "name": "Weller Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 196.79290681929314,
+      "lengthMeters": 196.79290681929308
+    },
+    {
+      "name": "Wendover Drive",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 177.12672901345803,
+      "lengthMeters": 177.1267290134581
+    },
+    {
+      "name": "Wendy Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 248.90516029056914,
+      "lengthMeters": 248.90516029056917
+    },
+    {
+      "name": "West Ardmore Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 389.17963152819834,
+      "lengthMeters": 389.17963152819823
+    },
+    {
+      "name": "West Benedict Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 158.57857912070725,
+      "lengthMeters": 158.57857912070725
+    },
+    {
+      "name": "West Clearfield Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 439.11232076534986,
+      "lengthMeters": 439.1123207653494
+    },
+    {
+      "name": "West Darby Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 622.8840696138546,
+      "lengthMeters": 622.8840696138552
+    },
+    {
+      "name": "West Eagle Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 882.682167319598,
+      "lengthMeters": 882.682167319598
+    },
+    {
+      "name": "West Golf View Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 402.75791715955324,
+      "lengthMeters": 402.75791715955296
+    },
+    {
+      "name": "West Hathaway Lane",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 522.8297544581628,
+      "lengthMeters": 522.8297544581629
+    },
+    {
+      "name": "West Hillcrest Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 799.359528059443,
+      "lengthMeters": 799.3595280594429
+    },
+    {
+      "name": "West Langhorne Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 174.79550697219983,
+      "lengthMeters": 174.79550697219983
+    },
+    {
+      "name": "West Llandaff Road",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 71.86838842203383
+    },
+    {
+      "name": "West Manoa Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 210.9472476822604,
+      "lengthMeters": 210.94724768226035
+    },
+    {
+      "name": "West Marthart Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 286.59982386710755,
+      "lengthMeters": 286.5998238671077
+    },
+    {
+      "name": "West Mercer Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 189.57977759052295,
+      "lengthMeters": 189.57977759052304
+    },
+    {
+      "name": "West Park Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 66.03770864037882,
+      "lengthMeters": 66.03770864037884
+    },
+    {
+      "name": "West Turnbull Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 256.33796804971996,
+      "lengthMeters": 256.3379680497199
+    },
+    {
+      "name": "West Wilmot Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 174.7214643870342,
+      "lengthMeters": 174.72146438703416
+    },
+    {
+      "name": "Westgate Road",
+      "percent": 28.8,
+      "status": "partial",
+      "coveredMeters": 100.39950086154094,
+      "lengthMeters": 348.2247678821541
+    },
+    {
+      "name": "Westwood Park Drive",
+      "percent": 98.6,
+      "status": "complete",
+      "coveredMeters": 611.0601293184865,
+      "lengthMeters": 619.4297510710695
+    },
+    {
+      "name": "Wexford Road",
+      "percent": 87.2,
+      "status": "partial",
+      "coveredMeters": 495.2124702213817,
+      "lengthMeters": 567.6755570859191
+    },
+    {
+      "name": "Whitby Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 294.9185436225075,
+      "lengthMeters": 294.9185436225076
+    },
+    {
+      "name": "Whitney Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 181.05161062288803,
+      "lengthMeters": 181.051610622888
+    },
+    {
+      "name": "Wickford Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 263.85216828615796,
+      "lengthMeters": 263.8521682861581
+    },
+    {
+      "name": "Willowbrook Road",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 287.9212988006351
+    },
+    {
+      "name": "Wilson Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 245.71844740651426,
+      "lengthMeters": 245.71844740651431
+    },
+    {
+      "name": "Wilson Drive",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 652.7641154385586
+    },
+    {
+      "name": "Windsor Park Lane",
+      "percent": 94.3,
+      "status": "partial",
+      "coveredMeters": 1159.952946363381,
+      "lengthMeters": 1229.6684247877604
+    },
+    {
+      "name": "Winton Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 713.6222322008405,
+      "lengthMeters": 713.6222322008413
+    },
+    {
+      "name": "Wood Lane",
+      "percent": 93.1,
+      "status": "partial",
+      "coveredMeters": 226.56680327063071,
+      "lengthMeters": 243.27721503874753
+    },
+    {
+      "name": "Woodbine Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 717.3594686063473,
+      "lengthMeters": 717.359468606347
+    },
+    {
+      "name": "Woodcroft Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 441.4809036218289,
+      "lengthMeters": 441.4809036218288
+    },
+    {
+      "name": "Woodland Drive",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 477.4988056069984,
+      "lengthMeters": 477.49880560699796
+    },
+    {
+      "name": "Woodleigh Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 574.3547852735855,
+      "lengthMeters": 574.3547852735852
+    },
+    {
+      "name": "Woodmere Way",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 524.8203074117313,
+      "lengthMeters": 524.8203074117309
+    },
+    {
+      "name": "Wyndmoor Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 321.5062302711864,
+      "lengthMeters": 321.5062302711864
+    },
+    {
+      "name": "Wynne Avenue",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 409.9512195543492,
+      "lengthMeters": 409.9512195543492
+    },
+    {
+      "name": "Wynnefield Drive",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 344.3168126474679,
+      "lengthMeters": 344.316812647468
+    },
+    {
+      "name": "Yale Road",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 415.2590838553314,
+      "lengthMeters": 415.25908385533154
+    }
+  ]
+}

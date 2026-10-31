@@ -1,14 +1,14 @@
 {
   "asOf": "2026-10-31",
-  "method": "Each mapped activity assigned once by median GPS coordinate; whole recorded mileage, not polygon-clipped mileage.",
+  "method": "Each activity is assigned once by median GPS point. Named postal/city boundaries are applied first, remaining Philadelphia-region points use the nearest GeoNames town within 12 km. Mileage is the whole recorded activity.",
   "runs": {
-    "activityCount": 1875,
-    "recordedMiles": 5627.513303557226,
+    "activityCount": 1876,
+    "recordedMiles": 5630.505274198679,
     "areas": [
       {
         "label": "Havertown, PA",
-        "count": 834,
-        "miles": 2583.624538942575,
+        "count": 835,
+        "miles": 2586.616509584028,
         "distanceMissing": 0
       },
       {
@@ -19,8 +19,8 @@
       },
       {
         "label": "Horsham, PA",
-        "count": 209,
-        "miles": 661.6343677920946,
+        "count": 227,
+        "miles": 690.339852759883,
         "distanceMissing": 0
       },
       {
@@ -42,12 +42,6 @@
         "distanceMissing": 0
       },
       {
-        "label": "Other Havertown / Philadelphia area",
-        "count": 24,
-        "miles": 46.14252763859063,
-        "distanceMissing": 0
-      },
-      {
         "label": "St. Louis",
         "count": 22,
         "miles": 61.627222023383446,
@@ -55,8 +49,8 @@
       },
       {
         "label": "Narberth, PA",
-        "count": 17,
-        "miles": 42.41858794639307,
+        "count": 19,
+        "miles": 49.78090451761712,
         "distanceMissing": 0
       },
       {
@@ -96,6 +90,12 @@
         "distanceMissing": 0
       },
       {
+        "label": "Ardmore, PA",
+        "count": 6,
+        "miles": 21.265882247673584,
+        "distanceMissing": 0
+      },
+      {
         "label": "Hartford, CT",
         "count": 6,
         "miles": 14.811687246480552,
@@ -123,12 +123,6 @@
         "label": "London",
         "count": 4,
         "miles": 12.369822735226279,
-        "distanceMissing": 0
-      },
-      {
-        "label": "Ardmore, PA",
-        "count": 4,
-        "miles": 15.71796955778255,
         "distanceMissing": 0
       },
       {
@@ -210,6 +204,12 @@
         "distanceMissing": 0
       },
       {
+        "label": "Maple Glen, PA",
+        "count": 1,
+        "miles": 2.5215242980991013,
+        "distanceMissing": 0
+      },
+      {
         "label": "Portland",
         "count": 1,
         "miles": 3.1264291537421456,
@@ -252,6 +252,12 @@
         "distanceMissing": 0
       },
       {
+        "label": "West Conshohocken, PA",
+        "count": 1,
+        "miles": 2.005289111588324,
+        "distanceMissing": 0
+      },
+      {
         "label": "Other New York / New Jersey area",
         "count": 1,
         "miles": 4.385451463453432,
@@ -291,30 +297,42 @@
   },
   "bikes": {
     "activityCount": 547,
-    "recordedMiles": 2027.5461927344315,
+    "recordedMiles": 2027.546192734431,
     "areas": [
       {
         "label": "Havertown, PA",
-        "count": 337,
-        "miles": 1134.8738989302476,
+        "count": 341,
+        "miles": 1153.397346993558,
         "distanceMissing": 0
       },
       {
         "label": "Ardmore, PA",
-        "count": 155,
-        "miles": 697.1861205559536,
+        "count": 159,
+        "miles": 715.2587016821765,
         "distanceMissing": 0
       },
       {
-        "label": "Other Havertown / Philadelphia area",
-        "count": 35,
-        "miles": 168.8187236538614,
+        "label": "Penn Wynne, PA",
+        "count": 20,
+        "miles": 90.30859778891275,
         "distanceMissing": 0
       },
       {
         "label": "New York City, NY",
         "count": 13,
         "miles": 13.217248767199557,
+        "distanceMissing": 0
+      },
+      {
+        "label": "Bryn Mawr, PA",
+        "count": 3,
+        "miles": 17.96607810387338,
+        "distanceMissing": 0
+      },
+      {
+        "label": "Broomall, PA",
+        "count": 2,
+        "miles": 6.701861130994989,
         "distanceMissing": 0
       },
       {
@@ -330,9 +348,21 @@
         "distanceMissing": 0
       },
       {
+        "label": "Drexel Hill, PA",
+        "count": 1,
+        "miles": 9.445960590153502,
+        "distanceMissing": 0
+      },
+      {
         "label": "Philadelphia, PA",
         "count": 1,
         "miles": 6.448093136085262,
+        "distanceMissing": 0
+      },
+      {
+        "label": "Narberth, PA",
+        "count": 1,
+        "miles": 7.800196850393701,
         "distanceMissing": 0
       },
       {

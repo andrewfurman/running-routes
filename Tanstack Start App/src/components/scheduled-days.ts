@@ -1,3 +1,4 @@
+import localTowns from './local-towns.json' with {type:'json'}
 import cityRegions from './city-regions.json' with {type:'json'}
 import cityNames from './city-names.json' with {type:'json'}
 import type { Target, FeatureCollection, Position } from './types'
@@ -24,7 +25,9 @@ export function historyAreas(tracks?:FeatureCollection) {
   if(!points.length)continue
   const xs=points.map(p=>p[0]).sort((a,b)=>a-b),ys=points.map(p=>p[1]).sort((a,b)=>a-b)
   const center:Position=[xs[Math.floor(xs.length/2)],ys[Math.floor(ys.length/2)]]
-  const region=regionFor(center)
+  const boundaryRegion=regionFor(center)
+  const nearbyTown=!boundaryRegion&&distance(center,[-75.3,39.98])<90?[...localTowns].sort((a,b)=>distance(a.center as Position,center)-distance(b.center as Position,center))[0]:undefined
+  const region=boundaryRegion||(nearbyTown&&distance(nearbyTown.center as Position,center)<12?nearbyTown.label:undefined)
   let area=areas.find(a=>region?a.region===region:!a.region&&distance(a.center,center)<45)
   if(!area){area={center,region,points:[],count:0,label:'',fallbackLabel:'',miles:0,distanceMissing:0};areas.push(area)}
   area.center=[(area.center[0]*area.count+center[0])/(area.count+1),(area.center[1]*area.count+center[1])/(area.count+1)]
