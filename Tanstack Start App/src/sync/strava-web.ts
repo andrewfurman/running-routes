@@ -14,7 +14,7 @@ export function normalizeWebRun(a:any):SyncedRun|null{
 }
 export async function fetchWebRuns(env:SyncEnv,since:number,fetcher:typeof fetch):Promise<SyncedRun[]>{
  const headers={Cookie:env.STRAVA_WEB_COOKIE!,Accept:'application/json','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0'}
- const get=async(path:string,accept='application/json')=>{const response=await fetcher('https://www.strava.com'+path,{headers:{...headers,Accept:accept},redirect:'manual'});if(response.status===301||response.status===302||response.status===401||response.status===403)throw Error('browser_login_required');if(!response.ok)throw Error(`strava_web_${response.status}`);return response}
+ const get=async(path:string,accept='application/json')=>{const requestHeaders:Record<string,string>={...headers,Accept:accept};if(accept==='text/html')delete requestHeaders['X-Requested-With'];const response=await fetcher('https://www.strava.com'+path,{headers:requestHeaders,redirect:'manual'});if(response.status===301||response.status===302||response.status===401||response.status===403)throw Error('browser_login_required');if(!response.ok)throw Error(`strava_web_${response.status}`);return response}
  const profile=await (await get('/athlete/training','text/html')).text();const owner=profile.match(/\bathlete_id:\s*(\d+)/)?.[1];if(!owner)throw Error('browser_login_required');if(owner!==(env.STRAVA_ATHLETE_ID||'14049141'))throw Error('athlete_mismatch')
  const result:SyncedRun[]=[]
  for(let page=1;page<=100;page++){
