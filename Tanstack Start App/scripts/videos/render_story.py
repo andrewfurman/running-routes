@@ -21,7 +21,7 @@ def draw_track(draw,lines,area,color,width,fraction=1):
  return head
 def label(draw,pos,text,size=24,color=MUTED):draw.text(pos,text,fill=color,font=font(size))
 def main():
- ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('--year',type=int,default=2026);ap.add_argument('--output',type=Path,required=True);ap.add_argument('--basemaps',type=Path,required=True);ap.add_argument('--stats',type=Path,default=ROOT/'raw-data/runs/2026-distances.json');args=ap.parse_args();args.output.mkdir(parents=True,exist_ok=True)
+ ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('--year',type=int,default=2026);ap.add_argument('--version',default='v2');ap.add_argument('--output',type=Path,required=True);ap.add_argument('--basemaps',type=Path,required=True);ap.add_argument('--stats',type=Path,default=ROOT/'raw-data/runs/2026-distances.json');args=ap.parse_args();args.output.mkdir(parents=True,exist_ok=True)
  areas=json.loads(args.basemaps.read_text());backgrounds={}
  for a in areas:
   image=Image.open(args.basemaps.parent/a['file']).convert('RGBA');assert image.size==(W,MAP_H),'Capture Google Maps at exactly 1080×810, with full attribution';backgrounds[a['id']]=image
@@ -40,7 +40,7 @@ def main():
  daily=collections.defaultdict(lambda:{'miles':0,'runs':0,'estimated':False})
  for t,aid,lines,area,miles,estimated in runs:
   day=daily[t.date().isoformat()];day['miles']+=miles;day['runs']+=1;day['estimated']|=estimated
- total=sum(r[4] for r in runs);ceiling=math.ceil(total/100)*100;year_start=datetime(args.year,1,1,tzinfo=runs[0][0].tzinfo);year_end=datetime(args.year+1,1,1,tzinfo=runs[0][0].tzinfo);year_seconds=(year_end-year_start).total_seconds();name=f'runs-{args.year}-story-v1';video=args.output/(name+'.mp4')
+ total=sum(r[4] for r in runs);ceiling=math.ceil(total/100)*100;year_start=datetime(args.year,1,1,tzinfo=runs[0][0].tzinfo);year_end=datetime(args.year+1,1,1,tzinfo=runs[0][0].tzinfo);year_seconds=(year_end-year_start).total_seconds();name=f'runs-{args.year}-story-{args.version}';video=args.output/(name+'.mp4')
  encoder=subprocess.Popen([imageio_ffmpeg.get_ffmpeg_exe(),'-y','-loglevel','error','-f','rawvideo','-vcodec','rawvideo','-s',f'{W}x{H}','-pix_fmt','rgb24','-r',str(FPS),'-i','-','-an','-c:v','libx264','-preset','fast','-crf','20','-pix_fmt','yuv420p','-movflags','+faststart',str(video)],stdin=subprocess.PIPE);frames=0
  def emit(image,n=1):
   nonlocal frames
@@ -63,12 +63,12 @@ def main():
    for amount in [0,ceiling/2,ceiling]:
     y=y1-(y1-y0)*amount/ceiling;draw.line((x0,y,x1,y),fill='#3c314f',width=1);label(draw,(60,y-10),f'{amount:.0f}',17,MUTED)
    curve=graph+[(date_fraction,value)];points=[(x0+(x1-x0)*x,y1-(y1-y0)*y/ceiling) for x,y in curve];fill=Image.new('RGBA',(W,H));fd=ImageDraw.Draw(fill);fd.polygon([(x0,y1),*points,(points[-1][0],y1)],fill=(178,138,240,35));image=Image.alpha_composite(image.convert('RGBA'),fill).convert('RGB');draw=ImageDraw.Draw(image);draw.line(points,fill=PURPLE,width=4,joint='curve');px,py=points[-1];draw.ellipse((px-6,py-6,px+6,py+6),fill=ORANGE);label(draw,(x0,1654),'JAN',17,MUTED);label(draw,(x1-38,1654),'DEC',17,MUTED)
-   label(draw,(60,1704),'~ Includes GPS-estimated distances. Recorded GPS runs only.',19,MUTED)
+   label(draw,(60,1704),'~ Includes GPS-estimated distances.' if stats['gpsEstimatedRecords'] else 'Recorded mileage from Strava',19,MUTED)
    if index==0 and step==0:emit(image,24)
    emit(image)
   cumulative+=miles;has_estimate|=estimated;graph.append((date_fraction,cumulative));draw_track(ImageDraw.Draw(layers[area['id']]),lines,area,(117,75,176,205),3)
   if index%30==0:print(f'Rendered {index+1}/{len(runs)} · {cumulative:.2f} mi',flush=True)
  emit(image,72);encoder.stdin.close();assert encoder.wait()==0;image.save(args.output/(name+'.jpg'),quality=93)
- metadata={'id':name,'title':f'{args.year} running year to date · Story','year':args.year,'runCount':len(runs),'dayCount':len(daily),'totalMiles':round(total,4),'stravaDistanceRecords':stats['stravaDistanceRecords'],'gpsEstimatedRecords':stats['gpsEstimatedRecords'],'firstDate':runs[0][0].date().isoformat(),'lastDate':runs[-1][0].date().isoformat(),'durationSeconds':frames/FPS,'width':W,'height':H,'aspectRatio':'9:16','activityIds':[r[1] for r in runs],'sourceSha256':hashlib.sha256(source.read_bytes()).hexdigest(),'distanceSourceSha256':hashlib.sha256(args.stats.read_bytes()).hexdigest(),'videoSha256':hashlib.sha256(video.read_bytes()).hexdigest(),'videoBytes':video.stat().st_size,'basemapProvider':'Google Maps','description':'Vertical 9:16 Story: daily miles and runs above Google Maps, orange active routes, purple history, year progress, an animated cumulative mileage counter and a growing line graph below. Distances use Strava records where available and GPS estimates for newer runs.','videoUrl':f'/media/{name}.mp4','posterUrl':f'/media/{name}.jpg'}
+ metadata={'id':name,'title':f'{args.year} running year to date · Story','year':args.year,'runCount':len(runs),'dayCount':len(daily),'totalMiles':round(total,4),'stravaDistanceRecords':stats['stravaDistanceRecords'],'gpsEstimatedRecords':stats['gpsEstimatedRecords'],'firstDate':runs[0][0].date().isoformat(),'lastDate':runs[-1][0].date().isoformat(),'durationSeconds':frames/FPS,'width':W,'height':H,'aspectRatio':'9:16','activityIds':[r[1] for r in runs],'sourceSha256':hashlib.sha256(source.read_bytes()).hexdigest(),'distanceSourceSha256':hashlib.sha256(args.stats.read_bytes()).hexdigest(),'videoSha256':hashlib.sha256(video.read_bytes()).hexdigest(),'videoBytes':video.stat().st_size,'basemapProvider':'Google Maps','description':'Vertical 9:16 Story: daily miles and runs above Google Maps, orange active routes, purple history, year progress, an animated cumulative mileage counter and a growing line graph below. Mileage uses recorded Strava distances; no GPS-geometry estimates.','videoUrl':f'/media/{name}.mp4','posterUrl':f'/media/{name}.jpg'}
  (args.output/(name+'.json')).write_text(json.dumps(metadata,indent=2)+'\n');print(f'Created {video}: {frames/FPS:.2f}s · {total:.2f} mi · {len(daily)} days')
 if __name__=='__main__':main()
