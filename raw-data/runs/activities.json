@@ -1,9 +1,9 @@
 {
-  "asOf": "2026-10-30",
+  "asOf": "2026-10-31",
   "timeZone": "America/New_York",
   "recordCount": 1880,
   "gpsRecordCount": 1874,
-  "source": "Strava bulk account export plus signed-in website activity records",
+  "source": "Cloudflare D1 selected public run records",
   "trackSourceSha256": "58d1afbe247207faee1a5ccef4aaf538f4ac9ccfce5d8a36d57fe470224f0d59",
   "runs": [
     {
@@ -22496,7 +22496,7 @@
     },
     {
       "activityId": "20710360307",
-      "date": "2026-10-24T09:33:18Z",
+      "date": "2026-10-24T09:33:18.000Z",
       "localDate": "2026-10-24",
       "distanceMeters": 4035.81,
       "movingSeconds": 1539,
@@ -22508,7 +22508,7 @@
     },
     {
       "activityId": "20710360282",
-      "date": "2026-10-24T09:59:25Z",
+      "date": "2026-10-24T09:59:25.000Z",
       "localDate": "2026-10-24",
       "distanceMeters": 1565.27,
       "movingSeconds": 608,
@@ -22520,7 +22520,7 @@
     },
     {
       "activityId": "20739791044",
-      "date": "2026-10-26T09:24:45Z",
+      "date": "2026-10-26T09:24:45.000Z",
       "localDate": "2026-10-26",
       "distanceMeters": 6950.84,
       "movingSeconds": 2773,
@@ -22532,7 +22532,7 @@
     },
     {
       "activityId": "20762546856",
-      "date": "2026-10-28T09:28:18Z",
+      "date": "2026-10-28T09:28:18.000Z",
       "localDate": "2026-10-28",
       "distanceMeters": 5918.03,
       "movingSeconds": 2253,
@@ -22544,7 +22544,7 @@
     },
     {
       "activityId": "20775891975",
-      "date": "2026-10-29T09:08:29Z",
+      "date": "2026-10-29T09:08:29.000Z",
       "localDate": "2026-10-29",
       "distanceMeters": 7285.12,
       "movingSeconds": 2814,
@@ -22556,7 +22556,7 @@
     },
     {
       "activityId": "20788741058",
-      "date": "2026-10-30T09:22:23Z",
+      "date": "2026-10-30T09:22:23.000Z",
       "localDate": "2026-10-30",
       "distanceMeters": 6035.69,
       "movingSeconds": 2467,
@@ -22567,5 +22567,5 @@
       "geometryKey": "runs/history.geojson"
     }
   ],
-  "updatedAt": "2026-10-30T12:00:00.000Z"
+  "updatedAt": "2026-10-31T00:39:53.548Z"
 }
