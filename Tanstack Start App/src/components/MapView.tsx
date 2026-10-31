@@ -96,7 +96,7 @@ export function MapView(props: Props) {
     })
     const ps=props.targets.flatMap(t=>t.target_coordinates)
     if(ps.length)e.fit(ps)
-    else if(props.coverageMode)e.fit(points(props.boundary),35)
+    else if(props.coverageMode){const outline=props.boundary?.type==='FeatureCollection'?props.boundary:{type:'FeatureCollection',features:props.boundary?[props.boundary]:[]};e.fit(points(outline),35)}
     else e.fit(points(props.tracks).filter(([lng,lat])=>lng>-75.39&&lng< -75.24&&lat>39.92&&lat<40.04))
   },[ready,props.targets,props.coverageMode,props.boundary])
   useEffect(()=>{
