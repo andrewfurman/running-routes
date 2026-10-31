@@ -53,7 +53,7 @@ python3 scripts/planning/build_app_data.py
 
 Prioritize unfinished streets within 19083, vary neighborhoods, target entire connected streets, and generally keep the one-way walking approach under two miles unless an exception was approved. GPS proximity does not guarantee CityStrides completion. The boundary is a Census ZCTA approximation, not exact USPS delivery coverage.
 
-**Calendar locations must be numbered street addresses near each segment's midpoint.** Keep cross streets, weekday/date and one-way mileage in the title; preserve the exact navigation address in the location field for Apple Watch navigation. Combined outings may have consecutive events for separate streets.
+**Calendar locations must be numbered street addresses near each segment's midpoint.** Keep cross streets and one-way mileage in the title, without a weekday/date prefix (the event date is already on the calendar); preserve the exact navigation address in the location field for Apple Watch navigation. Combined outings may have consecutive events for separate streets.
 
 Authenticate Google Workspace CLI privately with `gws auth login --services calendar` and check `gws auth status`. Alternatively set `GOOGLE_WORKSPACE_CLI_CREDENTIALS_FILE` to a private OAuth credentials file outside this repository. No Workspace API key is required. From the app folder:
 
