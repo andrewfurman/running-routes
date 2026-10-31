@@ -1,3 +1,5 @@
+import {fetchWebRuns} from './strava-web.ts'
+import {saveRuns} from './database.ts'
 import type {SyncEnv,SyncStorage,SyncStatus,SyncedRun,RunSnapshot} from './types'
 const SCHEDULE='08:00 America/New_York'
 export function easternClock(time:number) {
@@ -19,7 +21,7 @@ export function normalizeRun(activity:any):SyncedRun|null {
  if(activity.map?.summary_polyline){try{coordinates=decodePolyline(activity.map.summary_polyline)}catch{/* Preserve recorded mileage even when a GPS route is unavailable. */}}
  return {activityId:String(activity.id),date:new Date(activity.start_date).toISOString(),distanceMeters:activity.distance,distanceSource:'strava_api',sportType:activity.sport_type||activity.type,movingSeconds:activity.moving_time||0,elapsedSeconds:activity.elapsed_time||0,geometry:coordinates.length>1?{type:'LineString',coordinates}:null}
 }
-export function configured(env:SyncEnv){return Boolean(env.STRAVA_CLIENT_ID&&env.STRAVA_CLIENT_SECRET&&env.STRAVA_REFRESH_TOKEN)}
+export function configured(env:SyncEnv){return Boolean(env.STRAVA_WEB_COOKIE||(env.STRAVA_CLIENT_ID&&env.STRAVA_CLIENT_SECRET&&env.STRAVA_REFRESH_TOKEN))}
 interface Auth {accessToken:string;refreshToken:string;expiresAt:number}
 export class StravaSync {
  private storage:SyncStorage;private env:SyncEnv;private queue:Promise<unknown>=Promise.resolve()
@@ -34,6 +36,8 @@ export class StravaSync {
   if(!configured(this.env)){const status:SyncStatus={...before,state:'needs_connection',schedule:SCHEDULE,lastAttemptAt:attempted};await this.storage.put('status',status);return status}
   if(!force&&before?.state==='synced'&&before.lastSuccessDay===day)return before
   try{
+   let fetched:SyncedRun[]=[]
+   if(this.env.STRAVA_WEB_COOKIE){fetched=await fetchWebRuns(this.env,before?.lastSuccessAt?Date.parse(before.lastSuccessAt)-86400000:now-7*86400000,fetcher)}else{
    let auth=await this.storage.get<Auth>('auth')
    if(!auth||auth.expiresAt<now/1000+60){
     const response=await fetcher('https://www.strava.com/oauth/token',{method:'POST',body:new URLSearchParams({client_id:this.env.STRAVA_CLIENT_ID!,client_secret:this.env.STRAVA_CLIENT_SECRET!,grant_type:'refresh_token',refresh_token:auth?.refreshToken||this.env.STRAVA_REFRESH_TOKEN!})})
@@ -45,16 +49,19 @@ export class StravaSync {
    }
    const get=async(url:string)=>{const r=await fetcher(url,{headers:{Authorization:`Bearer ${auth!.accessToken}`}});if(!r.ok)throw Error(`strava_api_${r.status}`);return r.json() as Promise<any>}
    const athlete=await get('https://www.strava.com/api/v3/athlete');if(String(athlete.id)!==(this.env.STRAVA_ATHLETE_ID||'14049141'))throw Error('athlete_mismatch')
-   const last=before?.lastSuccessAt?Date.parse(before.lastSuccessAt)-86400000:now-7*86400000;const after=Math.floor(last/1000);const fetched:SyncedRun[]=[]
+   const last=before?.lastSuccessAt?Date.parse(before.lastSuccessAt)-86400000:now-7*86400000;const after=Math.floor(last/1000);const apiRuns:SyncedRun[]=[]
    for(let page=1;page<=10;page++){
     const activities=await get(`https://www.strava.com/api/v3/athlete/activities?after=${after}&per_page=100&page=${page}`);if(!Array.isArray(activities))throw Error('invalid_activity_page')
-    for(const activity of activities){if(activity.athlete?.id&&String(activity.athlete.id)!==String(athlete.id))throw Error('activity_owner_mismatch');const run=normalizeRun(activity);if(run)fetched.push(run)}
+    for(const activity of activities){if(activity.athlete?.id&&String(activity.athlete.id)!==String(athlete.id))throw Error('activity_owner_mismatch');const run=normalizeRun(activity);if(run)apiRuns.push(run)}
     if(activities.length<100)break
     if(page===10)throw Error('pagination_limit')
    }
-   const object=await this.env.TIMELAPSE_MEDIA.get('strava/latest-runs.json');const old=object?await object.json<RunSnapshot>():null;const byId=new Map((old?.runs||[]).map(r=>[r.activityId,r]));for(const run of fetched)byId.set(run.activityId,run)
+   fetched=apiRuns
+   }
+   const object=await this.env.TIMELAPSE_MEDIA.get('strava/latest-runs.json');const old=object?await object.json<RunSnapshot>():null;const byId=new Map((old?.runs||[]).map(r=>[r.activityId,r]));for(const run of fetched)byId.set(run.activityId,{...run,geometry:run.geometry||byId.get(run.activityId)?.geometry||null})
    const runs=[...byId.values()].sort((a,b)=>a.date.localeCompare(b.date)||a.activityId.localeCompare(b.activityId));await this.env.TIMELAPSE_MEDIA.put('strava/latest-runs.json',JSON.stringify({updatedAt:attempted,runs}),{httpMetadata:{contentType:'application/json'}})
-   const status:SyncStatus={state:'synced',schedule:SCHEDULE,lastAttemptAt:attempted,lastSuccessAt:attempted,lastSuccessDay:day,importedRuns:runs.length};await this.storage.put('status',status);return status
-  }catch(e){const code=e instanceof Error?e.message:'sync_failed';const status:SyncStatus={...before,state:'error',schedule:SCHEDULE,lastAttemptAt:attempted,errorCode:/^(strava_(oauth|api)_\d{3}|invalid_[a-z_]+|athlete_mismatch|activity_owner_mismatch|pagination_limit)$/.test(code)?code:'sync_failed'};await this.storage.put('status',status);return status}
+   await saveRuns(this.env,fetched,attempted)
+   const status:SyncStatus={authMode:this.env.STRAVA_WEB_COOKIE?'browser_session':'oauth',state:'synced',schedule:SCHEDULE,lastAttemptAt:attempted,lastSuccessAt:attempted,lastSuccessDay:day,importedRuns:runs.length};await this.storage.put('status',status);return status
+  }catch(e){const code=e instanceof Error?e.message:'sync_failed';const status:SyncStatus={...before,state:code==='browser_login_required'?'needs_browser_login':'error',schedule:SCHEDULE,lastAttemptAt:attempted,errorCode:/^(strava_(oauth|api|web)_\d{3}|invalid_[a-z_]+|athlete_mismatch|activity_owner_mismatch|pagination_limit|browser_login_required)$/.test(code)?code:'sync_failed'};await this.storage.put('status',status);return status}
  }
 }

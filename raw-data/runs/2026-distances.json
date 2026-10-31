@@ -3,7 +3,8 @@
   "units": "meters",
   "stravaDistanceRecords": 201,
   "stravaCsvRecords": 189,
-  "stravaDisplayedRecords": 12,
+  "stravaDisplayedRecords": 0,
+  "stravaWebRecords": 12,
   "gpsEstimatedRecords": 0,
   "trackSourceSha256": "58d1afbe247207faee1a5ccef4aaf538f4ac9ccfce5d8a36d57fe470224f0d59",
   "stravaSource": "Official account export activities.csv; numeric Distance field in meters",
@@ -1146,74 +1147,74 @@
     {
       "activityId": "20606504445",
       "date": "2026-10-16",
-      "distanceMeters": 5777.545,
-      "distanceSource": "strava_displayed"
+      "distanceMeters": 5777.13,
+      "distanceSource": "strava_web"
     },
     {
       "activityId": "20619126795",
       "date": "2026-10-17",
-      "distanceMeters": 7065.02,
-      "distanceSource": "strava_displayed"
+      "distanceMeters": 7078.06,
+      "distanceSource": "strava_web"
     },
     {
       "activityId": "20633472836",
       "date": "2026-10-18",
-      "distanceMeters": 5713.171,
-      "distanceSource": "strava_displayed"
+      "distanceMeters": 5717.22,
+      "distanceSource": "strava_web"
     },
     {
       "activityId": "20672292602",
       "date": "2026-10-21",
-      "distanceMeters": 4055.547,
-      "distanceSource": "strava_displayed"
+      "distanceMeters": 4056.19,
+      "distanceSource": "strava_web"
     },
     {
       "activityId": "20685735448",
       "date": "2026-10-22",
-      "distanceMeters": 6083.32,
-      "distanceSource": "strava_displayed"
+      "distanceMeters": 6094.68,
+      "distanceSource": "strava_web"
     },
     {
       "activityId": "20698250814",
       "date": "2026-10-23",
-      "distanceMeters": 5970.666,
-      "distanceSource": "strava_displayed"
+      "distanceMeters": 5979.75,
+      "distanceSource": "strava_web"
     },
     {
       "activityId": "20710360282",
       "date": "2026-10-24",
-      "distanceMeters": 1561.064,
-      "distanceSource": "strava_displayed"
+      "distanceMeters": 1565.27,
+      "distanceSource": "strava_web"
     },
     {
       "activityId": "20710360307",
       "date": "2026-10-24",
-      "distanceMeters": 4023.36,
-      "distanceSource": "strava_displayed"
+      "distanceMeters": 4035.81,
+      "distanceSource": "strava_web"
     },
     {
       "activityId": "20739791044",
       "date": "2026-10-26",
-      "distanceMeters": 6936.273,
-      "distanceSource": "strava_displayed"
+      "distanceMeters": 6950.84,
+      "distanceSource": "strava_web"
     },
     {
       "activityId": "20762546856",
       "date": "2026-10-28",
-      "distanceMeters": 5906.292,
-      "distanceSource": "strava_displayed"
+      "distanceMeters": 5918.03,
+      "distanceSource": "strava_web"
     },
     {
       "activityId": "20775891975",
       "date": "2026-10-29",
-      "distanceMeters": 7274.235,
-      "distanceSource": "strava_displayed"
+      "distanceMeters": 7285.12,
+      "distanceSource": "strava_web"
     },
     {
       "activityId": "20788741058",
       "date": "2026-10-30",
-      "distanceMeters": 6035.04,
-      "distanceSource": "strava_displayed"
+      "distanceMeters": 6035.69,
+      "distanceSource": "strava_web"
     }
   ]
 }

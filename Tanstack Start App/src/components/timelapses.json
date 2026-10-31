@@ -1,11 +1,14 @@
 [
   {
-    "id": "runs-2026-story-v2",
+    "id": "runs-2026-story-v3",
     "title": "2026 running year to date \u00b7 Story",
     "year": 2026,
     "runCount": 201,
+    "mappedRunCount": 194,
+    "awayRunCount": 7,
+    "mapArea": "Havertown",
     "dayCount": 199,
-    "totalMiles": 669.1717,
+    "totalMiles": 669.229,
     "stravaDistanceRecords": 201,
     "gpsEstimatedRecords": 0,
     "firstDate": "2026-01-02",
@@ -15,12 +18,12 @@
     "height": 1920,
     "aspectRatio": "9:16",
     "sourceSha256": "58d1afbe247207faee1a5ccef4aaf538f4ac9ccfce5d8a36d57fe470224f0d59",
-    "distanceSourceSha256": "5132e4c3d7b0629ad418203ed764abf999f1a4fdd6ad4b63e907bf3361c3ad20",
-    "videoSha256": "070793e5b119f6c17c7f4979dfbecb017e58129c5bb7ffd631cdbdf50de3a1cc",
-    "videoBytes": 6167115,
+    "distanceSourceSha256": "8f20cadee24a06e1eaa6cc26a472070daad9cb49a5be655fa4b8caadb5a085a0",
+    "videoSha256": "24e4dbdd6999503f24937c5f8ad82ded858e1e57f0b07dc14ccefc81adfe98b0",
+    "videoBytes": 4754424,
     "basemapProvider": "Google Maps",
-    "description": "Vertical 9:16 Story: daily miles and runs above Google Maps, orange active routes, purple history, year progress, an animated cumulative mileage counter and a growing line graph below. Mileage uses recorded Strava distances; no GPS-geometry estimates.",
-    "videoUrl": "/media/runs-2026-story-v2.mp4",
-    "posterUrl": "/media/runs-2026-story-v2.jpg"
+    "description": "Vertical 9:16 Story with a fixed Havertown map. All runs, including travel, contribute to daily and cumulative mileage and the line graph. Daily miles and runs above Google Maps, orange active routes, purple history, year progress, an animated cumulative mileage counter and a growing line graph below. Mileage uses recorded Strava distances; no GPS-geometry estimates.",
+    "videoUrl": "/media/runs-2026-story-v3.mp4",
+    "posterUrl": "/media/runs-2026-story-v3.jpg"
   }
 ]
