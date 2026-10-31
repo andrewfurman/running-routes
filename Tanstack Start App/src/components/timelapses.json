@@ -21,12 +21,13 @@
       "20788741058",
       "20800939076"
     ],
-    "id": "runs-2026-10-31-week-v3",
+    "id": "runs-2026-10-31-week-v4",
     "title": "Week ending October 31st",
     "period": "calendar-week",
     "asOf": "2026-10-31",
     "width": 1080,
     "height": 1920,
+    "mapHeight": 1200,
     "aspectRatio": "9:16",
     "durationSeconds": 19.0,
     "finalStatsHoldSeconds": 4,
@@ -44,11 +45,11 @@
     },
     "sourceSha256": "d0618c45855304358d9fa58b66fc4e83768a4f42c539d5412379200a60c1651a",
     "metadataSourceSha256": "02319af914c086a1abe3e9f31974db44e931e8c3f2c63971858e804dd6cfe196",
-    "videoSha256": "be83aa77920773321bd38bf4ac7a3ce68e76f08ba07d0d3a05ae1a2ba492438e",
-    "videoBytes": 1072770,
-    "videoUrl": "/media/runs-2026-10-31-week-v3.mp4",
-    "posterUrl": "/media/runs-2026-10-31-week-v3.jpg",
-    "description": "Sunday\u2013Saturday calendar snapshot: older GPS history stays light purple, each active run draws in gold then turns dark blue. The active day card highlights its start time, recorded mileage and average moving pace. Final weekly statistics linger for four seconds. Mileage and pace use recorded Strava distance and moving time; average start is the circular mean in America/New_York. All weekly mileage is counted even if a run is outside the fixed Havertown map."
+    "videoSha256": "383321da981950a6098fce1352dfd49c958d3f71136519beede824ca8d80fc70",
+    "videoBytes": 1177805,
+    "videoUrl": "/media/runs-2026-10-31-week-v4.mp4",
+    "posterUrl": "/media/runs-2026-10-31-week-v4.jpg",
+    "description": "Sunday\u2013Saturday calendar snapshot: older GPS history stays light purple, each active run draws in gold then turns dark blue. The active day card highlights its start time, recorded mileage and average moving pace. Weekly mileage, total running time and average start linger for four seconds below the taller map. Mileage and pace use recorded Strava distance and moving time; average start is the circular mean in America/New_York. All weekly mileage is counted even if a run is outside the fixed Havertown map."
   },
   {
     "id": "runs-2026-story-v4",
