@@ -1,0 +1,345 @@
+[
+  {
+    "center": [
+      -75.2688343699005,
+      40.01989398005437
+    ],
+    "label": "Havertown / Philadelphia"
+  },
+  {
+    "center": [
+      -73.98017651270214,
+      40.71652288683608
+    ],
+    "label": "New York / New Jersey"
+  },
+  {
+    "center": [
+      -122.35017070796461,
+      47.61788592920353
+    ],
+    "label": "Seattle"
+  },
+  {
+    "center": [
+      -96.87936850000003,
+      46.848830250000006
+    ],
+    "label": "Fargo"
+  },
+  {
+    "center": [
+      -86.1647245,
+      39.76994575
+    ],
+    "label": "Indianapolis"
+  },
+  {
+    "center": [
+      -90.2361868181818,
+      38.63691545454546
+    ],
+    "label": "St. Louis"
+  },
+  {
+    "center": [
+      -77.56293133333332,
+      43.131690666666664
+    ],
+    "label": "Rochester, NY"
+  },
+  {
+    "center": [
+      -73.49165642857143,
+      41.27502071428571
+    ],
+    "label": "New York / New Jersey"
+  },
+  {
+    "center": [
+      -121.97780999999999,
+      37.30927857142857
+    ],
+    "label": "San Francisco Bay Area"
+  },
+  {
+    "center": [
+      -75.40042777777776,
+      40.49680555555556
+    ],
+    "label": "Havertown / Philadelphia"
+  },
+  {
+    "center": [
+      -87.70091833333333,
+      41.96051666666666
+    ],
+    "label": "Chicago / Milwaukee"
+  },
+  {
+    "center": [
+      -72.66717833333334,
+      41.68487833333332
+    ],
+    "label": "Hartford, CT"
+  },
+  {
+    "center": [
+      -79.941028,
+      32.783711999999994
+    ],
+    "label": "Charleston"
+  },
+  {
+    "center": [
+      -87.451285,
+      20.204790000000003
+    ],
+    "label": "Cancún / Riviera Maya"
+  },
+  {
+    "center": [
+      -74.33395,
+      42.1603125
+    ],
+    "label": "Tannersville, NY"
+  },
+  {
+    "center": [
+      -0.118285,
+      51.5011125
+    ],
+    "label": "London"
+  },
+  {
+    "center": [
+      55.42639666666667,
+      -4.61433
+    ],
+    "label": "Seychelles"
+  },
+  {
+    "center": [
+      -81.09266333333333,
+      32.076843333333336
+    ],
+    "label": "Savannah"
+  },
+  {
+    "center": [
+      135.78935666666666,
+      35.00752000000001
+    ],
+    "label": "Japan"
+  },
+  {
+    "center": [
+      -122.68463000000001,
+      38.45504
+    ],
+    "label": "San Francisco Bay Area"
+  },
+  {
+    "center": [
+      -77.42019,
+      38.9543
+    ],
+    "label": "Washington, DC"
+  },
+  {
+    "center": [
+      -81.38173499999999,
+      19.33824
+    ],
+    "label": "Grand Cayman"
+  },
+  {
+    "center": [
+      -91.09381,
+      30.388215000000002
+    ],
+    "label": "New Orleans / Louisiana"
+  },
+  {
+    "center": [
+      -78.491965,
+      38.031365
+    ],
+    "label": "Charlottesville, VA"
+  },
+  {
+    "center": [
+      -92.041645,
+      30.16216
+    ],
+    "label": "Lafayette, LA"
+  },
+  {
+    "center": [
+      -72.16444999999999,
+      41.045795
+    ],
+    "label": "Springs, NY"
+  },
+  {
+    "center": [
+      -68.21553,
+      44.39081
+    ],
+    "label": "Bar Harbor, ME"
+  },
+  {
+    "center": [
+      -74.81937,
+      38.9826
+    ],
+    "label": "Wildwood, NJ"
+  },
+  {
+    "center": [
+      -83.04205,
+      42.32971
+    ],
+    "label": "Detroit, MI"
+  },
+  {
+    "center": [
+      -122.55359,
+      45.42495
+    ],
+    "label": "Portland"
+  },
+  {
+    "center": [
+      -120.26201,
+      39.20335
+    ],
+    "label": "Lake Tahoe"
+  },
+  {
+    "center": [
+      -123.37039,
+      48.41813
+    ],
+    "label": "Victoria, Canada"
+  },
+  {
+    "center": [
+      -116.19814,
+      43.60795
+    ],
+    "label": "Boise"
+  },
+  {
+    "center": [
+      -117.24514,
+      32.89911
+    ],
+    "label": "San Diego"
+  },
+  {
+    "center": [
+      -80.12273,
+      25.80722
+    ],
+    "label": "Miami Beach, FL"
+  },
+  {
+    "center": [
+      -119.81904,
+      39.52571
+    ],
+    "label": "Lake Tahoe"
+  },
+  {
+    "center": [
+      -76.4836,
+      42.44386
+    ],
+    "label": "Ithaca, NY"
+  },
+  {
+    "center": [
+      -93.44126,
+      44.96394
+    ],
+    "label": "Minneapolis"
+  },
+  {
+    "center": [
+      -109.57503,
+      38.60471
+    ],
+    "label": "Moab, UT"
+  },
+  {
+    "center": [
+      126.45829,
+      37.44044
+    ],
+    "label": "South Korea"
+  },
+  {
+    "center": [
+      -74.55631,
+      34.59351
+    ],
+    "label": "Atlantic Ocean · Outer Banks coast, NC"
+  },
+  {
+    "center": [
+      9.223,
+      45.478
+    ],
+    "label": "Milan"
+  },
+  {
+    "center": [
+      -70.6196,
+      40.41556
+    ],
+    "label": "Atlantic Ocean · Martha’s Vineyard coast, MA"
+  },
+  {
+    "center": [
+      -75.30183128787873,
+      39.99171323863638
+    ],
+    "label": "Havertown / Philadelphia"
+  },
+  {
+    "center": [
+      -73.98855230769229,
+      40.73693076923078
+    ],
+    "label": "New York / New Jersey"
+  },
+  {
+    "center": [
+      9.21263,
+      45.469015
+    ],
+    "label": "Milan"
+  },
+  {
+    "center": [
+      -87.62282,
+      41.884585
+    ],
+    "label": "Chicago / Milwaukee"
+  },
+  {
+    "center": [
+      -77.01526,
+      38.89495
+    ],
+    "label": "Washington, DC"
+  },
+  {
+    "center": [
+      -111.94009,
+      33.42294
+    ],
+    "label": "Tempe, AZ"
+  }
+]

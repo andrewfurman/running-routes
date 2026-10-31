@@ -17,9 +17,15 @@ def day_of(value):
         return datetime.strptime(value,'%b %d, %Y, %I:%M:%S %p').replace(tzinfo=timezone.utc).astimezone(ZoneInfo('America/New_York')).date().isoformat()
 runs=read('raw-data/runs/tracks.geojson')
 assert all(f['properties'].get('activity_type') in {'Run','TrailRun','Trail Run','VirtualRun','Virtual Run'} for f in runs['features'])
-shutil.copyfile(ROOT/'raw-data/runs/tracks.geojson',PUBLIC/'runs.geojson')
+def with_recorded_distances(tracks,metadata):
+    distances={r['activityId']:r for r in metadata}
+    for feature in tracks['features']:
+        row=distances.get(str(feature['properties']['activity_id']))
+        if row:feature['properties'].update(distance_meters=row['distanceMeters'],distance_source=row['distanceSource'])
+    return tracks
+write('runs.geojson',with_recorded_distances(runs,read('raw-data/runs/activities.json')['runs']))
 bikepath=ROOT/'raw-data/bikes/tracks.geojson'
-if bikepath.exists():shutil.copyfile(bikepath,PUBLIC/'bikes.geojson')
+if bikepath.exists():write('bikes.geojson',with_recorded_distances(read('raw-data/bikes/tracks.geojson'),read('raw-data/bikes/recorded-distances.json')['records']))
 else:
     import re
     bike=json.loads(re.search(r'const bikes=(.*);\n',(ROOT/'Tanstack Start App/legacy/visualization/bikes.html').read_text())[1]);write('bikes.geojson',bike)

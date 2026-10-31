@@ -1,0 +1,11 @@
+import test from 'node:test'
+import assert from 'node:assert/strict'
+import {historyAreas} from '../components/scheduled-days.ts'
+import type {FeatureCollection} from '../components/types'
+const feature=(id:string,center:[number,number],meters?:number)=>({type:'Feature' as const,properties:{activity_id:id,...meters===undefined?{}:{distance_meters:meters}},geometry:{type:'LineString',coordinates:[center,[center[0]+.001,center[1]+.001]]}})
+test('city mileage sums recorded activity distances, deduplicates IDs and preserves separate areas',()=>{const collection:FeatureCollection={type:'FeatureCollection',features:[feature('a',[-75.3,40],1609.344),feature('b',[-75.31,40],3218.688),feature('a',[-75.3,40],1609.344),feature('c',[-122.3,47.6],8046.72)]};const areas=historyAreas(collection);assert.equal(areas.length,2);assert.equal(areas[0].count,2);assert.equal(areas[0].miles,3);assert.equal(areas[1].miles,5);assert.ok(areas.every(a=>a.distanceMissing===0));assert.equal(collection.features.length,4)})
+test('missing mileage is marked incomplete rather than fabricated from simplified GPS',()=>{const areas=historyAreas({type:'FeatureCollection',features:[feature('a',[-75.3,40],1609.344),feature('b',[-75.31,40])]});assert.equal(areas[0].miles,1);assert.equal(areas[0].distanceMissing,1)})
+test('previously coordinate-only regions use cached place names',()=>{const areas=historyAreas({type:'FeatureCollection',features:[feature('a',[-77.56,43.13],1000),feature('b',[-109.58,38.6],2000)]});assert.ok(areas.some(a=>a.label==='Rochester, NY'));assert.ok(areas.some(a=>a.label==='Moab, UT'));assert.ok(areas.every(a=>!a.label.includes('°')))})
+
+test('separate clusters with the same named region show one combined city total',()=>{const areas=historyAreas({type:'FeatureCollection',features:[feature('a',[-74,40.7],1609.344),feature('b',[-73.76,41.3],3218.688)]});assert.equal(areas.length,1);assert.equal(areas[0].count,2);assert.equal(areas[0].miles,3)})
+test('unresolved distant regions stay separate instead of fitting the whole world',()=>{const areas=historyAreas({type:'FeatureCollection',features:[feature('a',[-30,0],1000),feature('b',[80,0],2000)]});assert.equal(areas.length,2)})

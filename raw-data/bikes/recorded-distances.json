@@ -1,0 +1,2741 @@
+{
+  "source": "Selected numeric Strava distance fields; no sensor data or private notes",
+  "archiveSha256": "17f0376308d890b7322b2c1a2d8908a34873c5b4048b1cc24a77a3e67b89d570",
+  "records": [
+    {
+      "activityId": "10354661407",
+      "distanceMeters": 10761.0,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "10369842675",
+      "distanceMeters": 4691.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "10370613428",
+      "distanceMeters": 5549.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "10379507311",
+      "distanceMeters": 1070.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "10385641122",
+      "distanceMeters": 8544.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "10391401781",
+      "distanceMeters": 7231.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "10441268260",
+      "distanceMeters": 6111.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "10456824755",
+      "distanceMeters": 9437.5,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "10470669903",
+      "distanceMeters": 5107.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "10470669916",
+      "distanceMeters": 7364.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "10478966814",
+      "distanceMeters": 11418.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "10478967332",
+      "distanceMeters": 4357.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "10478968385",
+      "distanceMeters": 10110.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "10564298229",
+      "distanceMeters": 5668.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "10689952829",
+      "distanceMeters": 8562.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "10690327214",
+      "distanceMeters": 2352.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "10690327233",
+      "distanceMeters": 1677.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "10698041688",
+      "distanceMeters": 4395.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "10793818339",
+      "distanceMeters": 4526.5,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "10974086973",
+      "distanceMeters": 15681.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "11082825705",
+      "distanceMeters": 11221.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "11536546281",
+      "distanceMeters": 14180.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "11563321507",
+      "distanceMeters": 6056.0,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "11579605673",
+      "distanceMeters": 3699.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "11650122643",
+      "distanceMeters": 4101.5,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "11650414435",
+      "distanceMeters": 3668.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "11680905094",
+      "distanceMeters": 4413.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "11680905107",
+      "distanceMeters": 5429.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "11688676692",
+      "distanceMeters": 3826.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "11689006997",
+      "distanceMeters": 3335.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "11707310010",
+      "distanceMeters": 6964.0,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "11751841525",
+      "distanceMeters": 9284.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "11777942067",
+      "distanceMeters": 13271.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "11814459332",
+      "distanceMeters": 4194.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "11858319378",
+      "distanceMeters": 8005.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "11864489889",
+      "distanceMeters": 1654.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "11869788104",
+      "distanceMeters": 6146.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "11901089039",
+      "distanceMeters": 4001.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "11901554238",
+      "distanceMeters": 4022.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "12935122187",
+      "distanceMeters": 9681.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "12935122257",
+      "distanceMeters": 2329.5,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "12935123111",
+      "distanceMeters": 11210.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "12935123559",
+      "distanceMeters": 9840.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "12935124048",
+      "distanceMeters": 6181.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "12935124295",
+      "distanceMeters": 6614.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "12935124599",
+      "distanceMeters": 6534.7,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "12935124846",
+      "distanceMeters": 6787.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "12935124856",
+      "distanceMeters": 10989.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "12935125457",
+      "distanceMeters": 8262.7,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "12935126039",
+      "distanceMeters": 6679.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "12935126177",
+      "distanceMeters": 12168.0,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "12935126232",
+      "distanceMeters": 3007.0,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "12935126667",
+      "distanceMeters": 6768.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "12935126796",
+      "distanceMeters": 3330.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "12944160478",
+      "distanceMeters": 5474.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "13035954903",
+      "distanceMeters": 1672.5,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "13343423343",
+      "distanceMeters": 2174.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "13468240604",
+      "distanceMeters": 16497.0,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "13485565946",
+      "distanceMeters": 12553.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "13486980613",
+      "distanceMeters": 8484.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "13503297430",
+      "distanceMeters": 7573.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "13744203614",
+      "distanceMeters": 10694.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "13781355615",
+      "distanceMeters": 1578.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "13798555931",
+      "distanceMeters": 10473.7,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "13865502927",
+      "distanceMeters": 6447.7,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "13875543199",
+      "distanceMeters": 6397.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "13910786017",
+      "distanceMeters": 6407.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "13921060896",
+      "distanceMeters": 5797.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "13930347002",
+      "distanceMeters": 6255.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "13956981786",
+      "distanceMeters": 3677.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "13986953687",
+      "distanceMeters": 6220.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "14042613577",
+      "distanceMeters": 6360.7,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "14166875008",
+      "distanceMeters": 5659.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "14174509596",
+      "distanceMeters": 10141.0,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "14184270838",
+      "distanceMeters": 6454.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "14207140702",
+      "distanceMeters": 6189.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "14217603036",
+      "distanceMeters": 6656.7,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "14246165811",
+      "distanceMeters": 6895.5,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "14252005471",
+      "distanceMeters": 11161.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "14276333393",
+      "distanceMeters": 6793.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "14293532497",
+      "distanceMeters": 1982.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "14294512551",
+      "distanceMeters": 1594.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "14311289139",
+      "distanceMeters": 6471.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "14321797348",
+      "distanceMeters": 6278.0,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "14353997421",
+      "distanceMeters": 10014.0,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "14384773688",
+      "distanceMeters": 10100.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "14409787300",
+      "distanceMeters": 6525.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "14420042342",
+      "distanceMeters": 5769.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "14460529625",
+      "distanceMeters": 6553.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "14482428799",
+      "distanceMeters": 6077.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "14539784822",
+      "distanceMeters": 10302.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "14544344468",
+      "distanceMeters": 4266.7,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "14611017047",
+      "distanceMeters": 9765.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "14631389745",
+      "distanceMeters": 6025.5,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "14635343777",
+      "distanceMeters": 7009.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "14652930714",
+      "distanceMeters": 3593.0,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "14656742942",
+      "distanceMeters": 3425.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "14683650897",
+      "distanceMeters": 9840.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "14693985102",
+      "distanceMeters": 5399.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "14697857528",
+      "distanceMeters": 5040.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "14704434116",
+      "distanceMeters": 10613.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "14704929707",
+      "distanceMeters": 7984.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "14714017834",
+      "distanceMeters": 10507.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "14737358327",
+      "distanceMeters": 4460.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "14744029398",
+      "distanceMeters": 6962.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "14748747533",
+      "distanceMeters": 2267.5,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "14748748349",
+      "distanceMeters": 6131.7,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "14765698707",
+      "distanceMeters": 5156.7,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "14776758731",
+      "distanceMeters": 10248.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "14850679489",
+      "distanceMeters": 5983.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "14873777555",
+      "distanceMeters": 6283.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15071898088",
+      "distanceMeters": 5900.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15078641663",
+      "distanceMeters": 6218.0,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15141340627",
+      "distanceMeters": 2827.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15141340645",
+      "distanceMeters": 4818.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15191035273",
+      "distanceMeters": 6562.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15216237882",
+      "distanceMeters": 6101.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15226071359",
+      "distanceMeters": 2070.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15226857636",
+      "distanceMeters": 3823.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15227153537",
+      "distanceMeters": 1870.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15279571310",
+      "distanceMeters": 5829.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15308460935",
+      "distanceMeters": 5431.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15308461238",
+      "distanceMeters": 4035.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15345875625",
+      "distanceMeters": 6361.5,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15364595058",
+      "distanceMeters": 10134.7,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15377329288",
+      "distanceMeters": 6494.0,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15391829615",
+      "distanceMeters": 5395.7,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15401273227",
+      "distanceMeters": 4886.0,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15407630309",
+      "distanceMeters": 5065.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15421596871",
+      "distanceMeters": 7300.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15425512650",
+      "distanceMeters": 4097.5,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15430116113",
+      "distanceMeters": 1875.7,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15433299021",
+      "distanceMeters": 11436.0,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15460530583",
+      "distanceMeters": 5713.7,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15477999109",
+      "distanceMeters": 3472.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15512695623",
+      "distanceMeters": 6819.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15540397391",
+      "distanceMeters": 6511.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15540969205",
+      "distanceMeters": 1977.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15546462780",
+      "distanceMeters": 6291.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15550295288",
+      "distanceMeters": 6082.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15550295479",
+      "distanceMeters": 10377.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15599892594",
+      "distanceMeters": 2116.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15604424127",
+      "distanceMeters": 7107.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15608745220",
+      "distanceMeters": 5145.7,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15615857593",
+      "distanceMeters": 6976.7,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15660909624",
+      "distanceMeters": 4075.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15660909707",
+      "distanceMeters": 785.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15660909709",
+      "distanceMeters": 2139.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15660910049",
+      "distanceMeters": 1042.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15660910066",
+      "distanceMeters": 2046.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15660910273",
+      "distanceMeters": 3606.5,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15660910278",
+      "distanceMeters": 2750.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15670476615",
+      "distanceMeters": 8068.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15682360821",
+      "distanceMeters": 7471.7,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15700147357",
+      "distanceMeters": 8200.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15705203829",
+      "distanceMeters": 10119.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15739147069",
+      "distanceMeters": 3552.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15763614059",
+      "distanceMeters": 7109.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15763614773",
+      "distanceMeters": 6878.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15763615355",
+      "distanceMeters": 8264.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15774909895",
+      "distanceMeters": 10969.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15780133740",
+      "distanceMeters": 8213.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15785752383",
+      "distanceMeters": 9236.7,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15790139338",
+      "distanceMeters": 8049.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15800482814",
+      "distanceMeters": 1983.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15819202731",
+      "distanceMeters": 2723.5,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15819202743",
+      "distanceMeters": 5890.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15819202770",
+      "distanceMeters": 9249.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15819203115",
+      "distanceMeters": 9608.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15823739722",
+      "distanceMeters": 7963.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15831047542",
+      "distanceMeters": 8125.0,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15842137081",
+      "distanceMeters": 7940.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15853870309",
+      "distanceMeters": 10165.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15858885861",
+      "distanceMeters": 7531.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15864910801",
+      "distanceMeters": 7672.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15895955952",
+      "distanceMeters": 2428.5,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15895955970",
+      "distanceMeters": 7899.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15895955994",
+      "distanceMeters": 9671.0,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15943780857",
+      "distanceMeters": 7721.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15971382806",
+      "distanceMeters": 5827.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15971382829",
+      "distanceMeters": 3524.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15975608276",
+      "distanceMeters": 8337.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15986419946",
+      "distanceMeters": 8153.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15987098313",
+      "distanceMeters": 4643.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15987582776",
+      "distanceMeters": 3677.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "15991758694",
+      "distanceMeters": 3465.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16009830491",
+      "distanceMeters": 10985.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16014080625",
+      "distanceMeters": 8018.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16019862320",
+      "distanceMeters": 8483.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16020918486",
+      "distanceMeters": 4564.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16023378590",
+      "distanceMeters": 3921.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16030130074",
+      "distanceMeters": 5040.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16043371812",
+      "distanceMeters": 5658.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16044868948",
+      "distanceMeters": 5648.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16056795057",
+      "distanceMeters": 4944.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16062482269",
+      "distanceMeters": 7606.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16086188760",
+      "distanceMeters": 8235.0,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16086188767",
+      "distanceMeters": 9995.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16089594577",
+      "distanceMeters": 8702.7,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16108406724",
+      "distanceMeters": 4127.5,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16126145334",
+      "distanceMeters": 13446.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16148068445",
+      "distanceMeters": 8280.5,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16157426614",
+      "distanceMeters": 8176.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16159735718",
+      "distanceMeters": 7097.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16165701580",
+      "distanceMeters": 7841.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16186201172",
+      "distanceMeters": 1011.5,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16186201174",
+      "distanceMeters": 3651.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16186201177",
+      "distanceMeters": 3706.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16186201337",
+      "distanceMeters": 10244.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16186201404",
+      "distanceMeters": 6030.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16224056849",
+      "distanceMeters": 9606.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16224056852",
+      "distanceMeters": 8827.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16232359124",
+      "distanceMeters": 5524.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16237863409",
+      "distanceMeters": 8103.0,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16241946701",
+      "distanceMeters": 8532.0,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16263029444",
+      "distanceMeters": 3677.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16263029716",
+      "distanceMeters": 3809.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16263029897",
+      "distanceMeters": 1522.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16263029955",
+      "distanceMeters": 6456.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16282630474",
+      "distanceMeters": 2090.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16285950633",
+      "distanceMeters": 8668.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16292518932",
+      "distanceMeters": 3738.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16298118962",
+      "distanceMeters": 7945.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16312068467",
+      "distanceMeters": 8593.5,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16324654408",
+      "distanceMeters": 9973.5,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16324654421",
+      "distanceMeters": 4755.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16324654582",
+      "distanceMeters": 6417.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16335793510",
+      "distanceMeters": 1457.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16336962633",
+      "distanceMeters": 3644.5,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16346606854",
+      "distanceMeters": 7876.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16352249585",
+      "distanceMeters": 4617.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16357261741",
+      "distanceMeters": 3935.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16363756698",
+      "distanceMeters": 11240.7,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16368721260",
+      "distanceMeters": 8566.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16378285077",
+      "distanceMeters": 8067.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16395079511",
+      "distanceMeters": 11280.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16397247761",
+      "distanceMeters": 2308.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16399116417",
+      "distanceMeters": 9091.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16440015443",
+      "distanceMeters": 8026.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16450065858",
+      "distanceMeters": 8122.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16455877816",
+      "distanceMeters": 10508.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16479805590",
+      "distanceMeters": 689.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16485512604",
+      "distanceMeters": 2771.5,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16489429956",
+      "distanceMeters": 7695.0,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16509144416",
+      "distanceMeters": 3321.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16509144423",
+      "distanceMeters": 4608.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16515142811",
+      "distanceMeters": 9110.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16518998228",
+      "distanceMeters": 7857.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16534869518",
+      "distanceMeters": 5046.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16537329186",
+      "distanceMeters": 5291.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16547191700",
+      "distanceMeters": 1254.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16556417538",
+      "distanceMeters": 8064.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16562283040",
+      "distanceMeters": 10506.7,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16566639695",
+      "distanceMeters": 7863.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16572608992",
+      "distanceMeters": 9557.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16603609248",
+      "distanceMeters": 9142.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16618476611",
+      "distanceMeters": 898.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16623274714",
+      "distanceMeters": 8094.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "16989931054",
+      "distanceMeters": 6814.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17017133213",
+      "distanceMeters": 11987.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17052324810",
+      "distanceMeters": 7001.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17138956035",
+      "distanceMeters": 6789.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17411973414",
+      "distanceMeters": 12068.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17451058638",
+      "distanceMeters": 11665.7,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17475718317",
+      "distanceMeters": 1663.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17476645652",
+      "distanceMeters": 8550.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17569551777",
+      "distanceMeters": 13148.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17588628327",
+      "distanceMeters": 13482.0,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17594331078",
+      "distanceMeters": 7046.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17613411207",
+      "distanceMeters": 8062.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17618867131",
+      "distanceMeters": 7149.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17625026830",
+      "distanceMeters": 10925.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17667218774",
+      "distanceMeters": 3594.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17672379267",
+      "distanceMeters": 9908.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17677708295",
+      "distanceMeters": 5654.5,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17680059716",
+      "distanceMeters": 3578.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17685283151",
+      "distanceMeters": 5983.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17698826615",
+      "distanceMeters": 4003.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17742079367",
+      "distanceMeters": 10348.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17752977297",
+      "distanceMeters": 5477.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17761681539",
+      "distanceMeters": 1539.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17761681546",
+      "distanceMeters": 2395.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17779354901",
+      "distanceMeters": 1251.7,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17779354976",
+      "distanceMeters": 11000.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17784407124",
+      "distanceMeters": 6680.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17794694001",
+      "distanceMeters": 1796.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17817294431",
+      "distanceMeters": 1029.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17817599401",
+      "distanceMeters": 7371.7,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17820579232",
+      "distanceMeters": 15201.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17822436178",
+      "distanceMeters": 2748.0,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17832590388",
+      "distanceMeters": 4233.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17840052590",
+      "distanceMeters": 11120.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17845749429",
+      "distanceMeters": 6346.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17853389448",
+      "distanceMeters": 11016.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17859133559",
+      "distanceMeters": 3871.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17859133579",
+      "distanceMeters": 6917.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17865083421",
+      "distanceMeters": 6562.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17869944436",
+      "distanceMeters": 6558.7,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17912212407",
+      "distanceMeters": 13920.5,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17924615111",
+      "distanceMeters": 6376.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17930195203",
+      "distanceMeters": 4664.0,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17943263268",
+      "distanceMeters": 6845.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "17959865353",
+      "distanceMeters": 4447.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18013096443",
+      "distanceMeters": 4802.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18013096476",
+      "distanceMeters": 8452.0,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18013096507",
+      "distanceMeters": 3289.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18024503047",
+      "distanceMeters": 7051.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18046023171",
+      "distanceMeters": 4004.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18046703078",
+      "distanceMeters": 2140.5,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18082563904",
+      "distanceMeters": 3771.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18082564169",
+      "distanceMeters": 3082.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18082564173",
+      "distanceMeters": 2713.7,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18098823384",
+      "distanceMeters": 7449.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18104960846",
+      "distanceMeters": 11316.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18115439487",
+      "distanceMeters": 2081.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18132644198",
+      "distanceMeters": 6821.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18145018413",
+      "distanceMeters": 7346.0,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18145018741",
+      "distanceMeters": 11505.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18152164959",
+      "distanceMeters": 3585.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18231259896",
+      "distanceMeters": 6626.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18239560094",
+      "distanceMeters": 6832.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18251747798",
+      "distanceMeters": 10430.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18278400426",
+      "distanceMeters": 11525.0,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18283612754",
+      "distanceMeters": 3185.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18285784142",
+      "distanceMeters": 2024.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18294313325",
+      "distanceMeters": 7502.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18297738559",
+      "distanceMeters": 10024.5,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18306450531",
+      "distanceMeters": 6165.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18311345220",
+      "distanceMeters": 4007.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18319011137",
+      "distanceMeters": 5817.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18319344665",
+      "distanceMeters": 4657.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18324108480",
+      "distanceMeters": 9755.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18332358667",
+      "distanceMeters": 6834.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18412647214",
+      "distanceMeters": 12300.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18422436158",
+      "distanceMeters": 6246.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18425765287",
+      "distanceMeters": 1355.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18437514506",
+      "distanceMeters": 4722.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18438979389",
+      "distanceMeters": 2662.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18463788396",
+      "distanceMeters": 9896.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18469727216",
+      "distanceMeters": 5831.5,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18477122118",
+      "distanceMeters": 6027.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18504615251",
+      "distanceMeters": 6633.0,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18504615258",
+      "distanceMeters": 2060.7,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18504615271",
+      "distanceMeters": 6521.0,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18504615296",
+      "distanceMeters": 4715.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18504615317",
+      "distanceMeters": 8511.0,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18514913951",
+      "distanceMeters": 6731.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18545444217",
+      "distanceMeters": 5010.5,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18545444256",
+      "distanceMeters": 2781.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18598061560",
+      "distanceMeters": 6064.7,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18608749247",
+      "distanceMeters": 6352.5,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18661372578",
+      "distanceMeters": 11806.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18677497600",
+      "distanceMeters": 5376.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18694338392",
+      "distanceMeters": 5994.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18730783293",
+      "distanceMeters": 856.5,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18730783319",
+      "distanceMeters": 4771.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18732273921",
+      "distanceMeters": 4864.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18741242847",
+      "distanceMeters": 9222.5,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18749354959",
+      "distanceMeters": 6072.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18756138407",
+      "distanceMeters": 8737.7,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18770294201",
+      "distanceMeters": 2772.5,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18770294278",
+      "distanceMeters": 5387.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18828856354",
+      "distanceMeters": 6087.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18830584486",
+      "distanceMeters": 5523.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18836166399",
+      "distanceMeters": 6652.5,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18842181279",
+      "distanceMeters": 8954.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18856633822",
+      "distanceMeters": 5964.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18864482343",
+      "distanceMeters": 3105.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18907787941",
+      "distanceMeters": 8052.5,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18928585686",
+      "distanceMeters": 6183.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18934798434",
+      "distanceMeters": 5313.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18942993928",
+      "distanceMeters": 6491.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18950322101",
+      "distanceMeters": 6403.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18957671657",
+      "distanceMeters": 6272.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18969356410",
+      "distanceMeters": 3885.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18969356417",
+      "distanceMeters": 4150.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18971839469",
+      "distanceMeters": 6133.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "18977552789",
+      "distanceMeters": 10535.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19022111167",
+      "distanceMeters": 9158.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19033634678",
+      "distanceMeters": 6015.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19035816765",
+      "distanceMeters": 4298.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19060942288",
+      "distanceMeters": 3625.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19074111187",
+      "distanceMeters": 5351.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19110739192",
+      "distanceMeters": 10377.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19132195284",
+      "distanceMeters": 568.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19137132589",
+      "distanceMeters": 6352.0,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19176136235",
+      "distanceMeters": 11357.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19221323991",
+      "distanceMeters": 6467.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19242050346",
+      "distanceMeters": 4936.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19242952367",
+      "distanceMeters": 4700.7,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19282199512",
+      "distanceMeters": 12582.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19294960272",
+      "distanceMeters": 4138.0,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19294960285",
+      "distanceMeters": 4556.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19300070740",
+      "distanceMeters": 6474.5,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19308460218",
+      "distanceMeters": 6578.0,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19322701574",
+      "distanceMeters": 5545.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19324773825",
+      "distanceMeters": 4795.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19379133489",
+      "distanceMeters": 8708.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19388559654",
+      "distanceMeters": 10281.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19400289181",
+      "distanceMeters": 1634.7,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19423460417",
+      "distanceMeters": 6562.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19437820099",
+      "distanceMeters": 4742.0,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19445403704",
+      "distanceMeters": 9307.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19485825075",
+      "distanceMeters": 4150.7,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19485825087",
+      "distanceMeters": 4761.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19499316111",
+      "distanceMeters": 4975.0,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19500420348",
+      "distanceMeters": 2740.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19520562335",
+      "distanceMeters": 1152.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19528584375",
+      "distanceMeters": 5858.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19530508497",
+      "distanceMeters": 5279.0,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19534509175",
+      "distanceMeters": 4855.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19556855646",
+      "distanceMeters": 3605.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19556855740",
+      "distanceMeters": 6491.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19596805582",
+      "distanceMeters": 5304.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19599019508",
+      "distanceMeters": 5787.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19604291719",
+      "distanceMeters": 6607.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19628028547",
+      "distanceMeters": 5126.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19640184781",
+      "distanceMeters": 5397.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19642041810",
+      "distanceMeters": 5046.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19681678784",
+      "distanceMeters": 3813.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19681680449",
+      "distanceMeters": 5128.5,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19710576284",
+      "distanceMeters": 6995.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19710576422",
+      "distanceMeters": 8717.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19710576445",
+      "distanceMeters": 6527.7,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19725446108",
+      "distanceMeters": 4447.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19725446162",
+      "distanceMeters": 4815.0,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19739180543",
+      "distanceMeters": 2753.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19739180578",
+      "distanceMeters": 3255.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19739180991",
+      "distanceMeters": 4890.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19739191966",
+      "distanceMeters": 3458.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19779815902",
+      "distanceMeters": 10171.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19794437760",
+      "distanceMeters": 5231.0,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19794439660",
+      "distanceMeters": 5036.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19823962919",
+      "distanceMeters": 4532.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19823962923",
+      "distanceMeters": 3894.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19837539812",
+      "distanceMeters": 4484.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19837539854",
+      "distanceMeters": 5146.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19878500306",
+      "distanceMeters": 4119.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19878500422",
+      "distanceMeters": 3429.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19878500629",
+      "distanceMeters": 5118.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19909173017",
+      "distanceMeters": 3458.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19909173254",
+      "distanceMeters": 4752.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19909173283",
+      "distanceMeters": 4934.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19909173476",
+      "distanceMeters": 4322.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19909173925",
+      "distanceMeters": 6042.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19920163448",
+      "distanceMeters": 6070.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19926690833",
+      "distanceMeters": 2744.7,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19928859696",
+      "distanceMeters": 6408.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19935468153",
+      "distanceMeters": 4166.5,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "19938045276",
+      "distanceMeters": 3715.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20117150611",
+      "distanceMeters": 8058.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20129882932",
+      "distanceMeters": 13127.0,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20165605061",
+      "distanceMeters": 5318.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20171025535",
+      "distanceMeters": 8644.0,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20176939567",
+      "distanceMeters": 1184.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20176939612",
+      "distanceMeters": 3810.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20181880301",
+      "distanceMeters": 4507.5,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20185264010",
+      "distanceMeters": 5856.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20193694183",
+      "distanceMeters": 1692.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20193694248",
+      "distanceMeters": 4337.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20214243571",
+      "distanceMeters": 10158.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20220714477",
+      "distanceMeters": 6714.0,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20226658121",
+      "distanceMeters": 3860.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20227270846",
+      "distanceMeters": 4127.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20595976614",
+      "distanceMeters": 4699.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20595976734",
+      "distanceMeters": 5432.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20595976735",
+      "distanceMeters": 6134.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20595976889",
+      "distanceMeters": 4690.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20595976898",
+      "distanceMeters": 7420.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20595980829",
+      "distanceMeters": 6593.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20595980923",
+      "distanceMeters": 6812.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20595980932",
+      "distanceMeters": 6250.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20595983839",
+      "distanceMeters": 2492.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20595983845",
+      "distanceMeters": 5226.7,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20595983961",
+      "distanceMeters": 3088.7,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20595983978",
+      "distanceMeters": 4237.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20595987011",
+      "distanceMeters": 2688.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20595987019",
+      "distanceMeters": 3757.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20595987041",
+      "distanceMeters": 7437.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20595987177",
+      "distanceMeters": 4906.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20595989518",
+      "distanceMeters": 3893.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20595989536",
+      "distanceMeters": 4079.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20595989540",
+      "distanceMeters": 3930.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20595989842",
+      "distanceMeters": 2976.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20595992015",
+      "distanceMeters": 574.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20595992133",
+      "distanceMeters": 5428.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20595992299",
+      "distanceMeters": 1828.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20595992331",
+      "distanceMeters": 3128.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20595996195",
+      "distanceMeters": 1604.5,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20595996237",
+      "distanceMeters": 5578.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20595996251",
+      "distanceMeters": 5719.2,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20595996441",
+      "distanceMeters": 4634.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20596005301",
+      "distanceMeters": 5700.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20596005327",
+      "distanceMeters": 3882.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20596005513",
+      "distanceMeters": 9973.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20596011687",
+      "distanceMeters": 6351.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20596011812",
+      "distanceMeters": 3249.7,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20596011816",
+      "distanceMeters": 3110.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20596012014",
+      "distanceMeters": 9877.5,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20596016342",
+      "distanceMeters": 2858.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20596016413",
+      "distanceMeters": 3543.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20596016437",
+      "distanceMeters": 6479.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20596019955",
+      "distanceMeters": 3179.5,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20596020013",
+      "distanceMeters": 3312.3,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20596020161",
+      "distanceMeters": 4984.5,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20596020163",
+      "distanceMeters": 4539.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20596020319",
+      "distanceMeters": 3823.7,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20596023868",
+      "distanceMeters": 4470.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20596023893",
+      "distanceMeters": 4522.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20596023902",
+      "distanceMeters": 6401.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20596025227",
+      "distanceMeters": 5515.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20596025233",
+      "distanceMeters": 3835.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20596025403",
+      "distanceMeters": 763.7,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20596028120",
+      "distanceMeters": 5389.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20596028147",
+      "distanceMeters": 5518.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20596031081",
+      "distanceMeters": 6666.4,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "20601369992",
+      "distanceMeters": 1848.4,
+      "distanceSource": "strava_web"
+    },
+    {
+      "activityId": "20620280126",
+      "distanceMeters": 4803.4,
+      "distanceSource": "strava_web"
+    },
+    {
+      "activityId": "20620938024",
+      "distanceMeters": 5347.5,
+      "distanceSource": "strava_web"
+    },
+    {
+      "activityId": "20622203462",
+      "distanceMeters": 3803.1,
+      "distanceSource": "strava_web"
+    },
+    {
+      "activityId": "20623177553",
+      "distanceMeters": 5739.3,
+      "distanceSource": "strava_web"
+    },
+    {
+      "activityId": "20638120102",
+      "distanceMeters": 3907.5,
+      "distanceSource": "strava_web"
+    },
+    {
+      "activityId": "20639091877",
+      "distanceMeters": 4019.5,
+      "distanceSource": "strava_web"
+    },
+    {
+      "activityId": "20652316608",
+      "distanceMeters": 5141.2,
+      "distanceSource": "strava_web"
+    },
+    {
+      "activityId": "20653274491",
+      "distanceMeters": 2590.7,
+      "distanceSource": "strava_web"
+    },
+    {
+      "activityId": "20704370486",
+      "distanceMeters": 1903.5,
+      "distanceSource": "strava_web"
+    },
+    {
+      "activityId": "20713685624",
+      "distanceMeters": 4479.5,
+      "distanceSource": "strava_web"
+    },
+    {
+      "activityId": "20728456779",
+      "distanceMeters": 2837.8,
+      "distanceSource": "strava_web"
+    },
+    {
+      "activityId": "20731624020",
+      "distanceMeters": 3468.2,
+      "distanceSource": "strava_web"
+    },
+    {
+      "activityId": "20739791014",
+      "distanceMeters": 4874.7,
+      "distanceSource": "strava_web"
+    },
+    {
+      "activityId": "20739791082",
+      "distanceMeters": 4359.7,
+      "distanceSource": "strava_web"
+    },
+    {
+      "activityId": "20750979354",
+      "distanceMeters": 10725.8,
+      "distanceSource": "strava_web"
+    },
+    {
+      "activityId": "20756463010",
+      "distanceMeters": 4580.2,
+      "distanceSource": "strava_web"
+    },
+    {
+      "activityId": "20757539815",
+      "distanceMeters": 3241.3,
+      "distanceSource": "strava_web"
+    },
+    {
+      "activityId": "20770355491",
+      "distanceMeters": 4593.2,
+      "distanceSource": "strava_web"
+    },
+    {
+      "activityId": "20771518831",
+      "distanceMeters": 3440.2,
+      "distanceSource": "strava_web"
+    },
+    {
+      "activityId": "20778560830",
+      "distanceMeters": 9785.5,
+      "distanceSource": "strava_web"
+    },
+    {
+      "activityId": "20785144559",
+      "distanceMeters": 3283.7,
+      "distanceSource": "strava_web"
+    },
+    {
+      "activityId": "7843884834",
+      "distanceMeters": 2287.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "7966717996",
+      "distanceMeters": 0.6,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "8791781599",
+      "distanceMeters": 1039.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "8798726832",
+      "distanceMeters": 3.1,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "8798726835",
+      "distanceMeters": 2.9,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "8892090808",
+      "distanceMeters": 2116.7,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "8892090867",
+      "distanceMeters": 2526.8,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "9051469670",
+      "distanceMeters": 585.5,
+      "distanceSource": "strava_export"
+    },
+    {
+      "activityId": "9051469682",
+      "distanceMeters": 749.5,
+      "distanceSource": "strava_export"
+    }
+  ]
+}

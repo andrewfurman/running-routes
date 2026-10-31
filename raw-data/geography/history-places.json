@@ -1,0 +1,696 @@
+{
+  "source": "GeoNames cities500",
+  "sourceUrl": "https://download.geonames.org/export/dump/",
+  "license": "CC BY 4.0",
+  "sourceSha256": "fc89c44c54a66fe05d1d0060209bb1dd5090ee1cc86f0bd92c198a606c81103e",
+  "resolvedOn": "2026-10-31",
+  "notes": "Approximate activity-area labels, not municipal boundaries. Distant coastal or rural tracks use a nearby named area, not a claimed exact city.",
+  "areas": [
+    {
+      "sport": "runs",
+      "center": [
+        -75.2688343699005,
+        40.01989398005437
+      ],
+      "label": "Havertown / Philadelphia",
+      "geonamesId": "4558523",
+      "nearestPlace": "Havertown",
+      "country": "US",
+      "region": "PA",
+      "nearestPlaceKm": 5.48,
+      "method": "regional anchor"
+    },
+    {
+      "sport": "runs",
+      "center": [
+        -73.98017651270214,
+        40.71652288683608
+      ],
+      "label": "New York / New Jersey",
+      "geonamesId": "5112540",
+      "nearestPlace": "Chinatown",
+      "country": "US",
+      "region": "NY",
+      "nearestPlaceKm": 1.35,
+      "method": "regional anchor"
+    },
+    {
+      "sport": "runs",
+      "center": [
+        -122.35017070796461,
+        47.61788592920353
+      ],
+      "label": "Seattle",
+      "geonamesId": "5809844",
+      "nearestPlace": "Seattle",
+      "country": "US",
+      "region": "WA",
+      "nearestPlaceKm": 1.87,
+      "method": "regional anchor"
+    },
+    {
+      "sport": "runs",
+      "center": [
+        -96.87936850000003,
+        46.848830250000006
+      ],
+      "label": "Fargo",
+      "geonamesId": "5059163",
+      "nearestPlace": "Fargo",
+      "country": "US",
+      "region": "ND",
+      "nearestPlaceKm": 7.49,
+      "method": "regional anchor"
+    },
+    {
+      "sport": "runs",
+      "center": [
+        -86.1647245,
+        39.76994575
+      ],
+      "label": "Indianapolis",
+      "geonamesId": "4259418",
+      "nearestPlace": "Indianapolis",
+      "country": "US",
+      "region": "IN",
+      "nearestPlaceKm": 0.6,
+      "method": "regional anchor"
+    },
+    {
+      "sport": "runs",
+      "center": [
+        -90.2361868181818,
+        38.63691545454546
+      ],
+      "label": "St. Louis",
+      "geonamesId": "4407066",
+      "nearestPlace": "St. Louis",
+      "country": "US",
+      "region": "MO",
+      "nearestPlaceKm": 3.49,
+      "method": "regional anchor"
+    },
+    {
+      "sport": "runs",
+      "center": [
+        -77.56293133333332,
+        43.131690666666664
+      ],
+      "label": "Rochester, NY",
+      "geonamesId": "5134086",
+      "nearestPlace": "Rochester",
+      "country": "US",
+      "region": "NY",
+      "nearestPlaceKm": 4.97,
+      "method": "nearest GeoNames populated place"
+    },
+    {
+      "sport": "runs",
+      "center": [
+        -73.49165642857143,
+        41.27502071428571
+      ],
+      "label": "New York / New Jersey",
+      "geonamesId": "4832353",
+      "nearestPlace": "Danbury",
+      "country": "US",
+      "region": "CT",
+      "nearestPlaceKm": 13.66,
+      "method": "regional anchor"
+    },
+    {
+      "sport": "runs",
+      "center": [
+        -121.97780999999999,
+        37.30927857142857
+      ],
+      "label": "San Francisco Bay Area",
+      "geonamesId": "5341145",
+      "nearestPlace": "Cupertino",
+      "country": "US",
+      "region": "CA",
+      "nearestPlaceKm": 5.04,
+      "method": "regional anchor"
+    },
+    {
+      "sport": "runs",
+      "center": [
+        -75.40042777777776,
+        40.49680555555556
+      ],
+      "label": "Havertown / Philadelphia",
+      "geonamesId": "5178127",
+      "nearestPlace": "Allentown",
+      "country": "US",
+      "region": "PA",
+      "nearestPlaceKm": 14.52,
+      "method": "regional anchor"
+    },
+    {
+      "sport": "runs",
+      "center": [
+        -87.70091833333333,
+        41.96051666666666
+      ],
+      "label": "Chicago / Milwaukee",
+      "geonamesId": "4883012",
+      "nearestPlace": "Albany Park",
+      "country": "US",
+      "region": "IL",
+      "nearestPlaceKm": 2.05,
+      "method": "regional anchor"
+    },
+    {
+      "sport": "runs",
+      "center": [
+        -72.66717833333334,
+        41.68487833333332
+      ],
+      "label": "Hartford, CT",
+      "geonamesId": "4835797",
+      "nearestPlace": "Hartford",
+      "country": "US",
+      "region": "CT",
+      "nearestPlaceKm": 8.88,
+      "method": "nearest GeoNames populated place"
+    },
+    {
+      "sport": "runs",
+      "center": [
+        -79.941028,
+        32.783711999999994
+      ],
+      "label": "Charleston",
+      "geonamesId": "4574324",
+      "nearestPlace": "Charleston",
+      "country": "US",
+      "region": "SC",
+      "nearestPlaceKm": 1.13,
+      "method": "regional anchor"
+    },
+    {
+      "sport": "runs",
+      "center": [
+        -87.451285,
+        20.204790000000003
+      ],
+      "label": "Cancún / Riviera Maya",
+      "geonamesId": "3515040",
+      "nearestPlace": "Tulum",
+      "country": "MX",
+      "region": "23",
+      "nearestPlaceKm": 1.47,
+      "method": "regional anchor"
+    },
+    {
+      "sport": "runs",
+      "center": [
+        -74.33395,
+        42.1603125
+      ],
+      "label": "Tannersville, NY",
+      "geonamesId": "5140511",
+      "nearestPlace": "Tannersville",
+      "country": "US",
+      "region": "NY",
+      "nearestPlaceKm": 16.93,
+      "method": "nearest GeoNames populated place"
+    },
+    {
+      "sport": "runs",
+      "center": [
+        -0.118285,
+        51.5011125
+      ],
+      "label": "London",
+      "geonamesId": "2643743",
+      "nearestPlace": "London",
+      "country": "GB",
+      "region": "ENG",
+      "nearestPlaceKm": 0.97,
+      "method": "regional anchor"
+    },
+    {
+      "sport": "runs",
+      "center": [
+        55.42639666666667,
+        -4.61433
+      ],
+      "label": "Seychelles",
+      "geonamesId": "241427",
+      "nearestPlace": "Beau Vallon",
+      "country": "SC",
+      "region": "08",
+      "nearestPlaceKm": 0.84,
+      "method": "regional anchor"
+    },
+    {
+      "sport": "runs",
+      "center": [
+        -81.09266333333333,
+        32.076843333333336
+      ],
+      "label": "Savannah",
+      "geonamesId": "4221552",
+      "nearestPlace": "Savannah",
+      "country": "US",
+      "region": "GA",
+      "nearestPlaceKm": 1.0,
+      "method": "regional anchor"
+    },
+    {
+      "sport": "runs",
+      "center": [
+        135.78935666666666,
+        35.00752000000001
+      ],
+      "label": "Japan",
+      "geonamesId": "1857910",
+      "nearestPlace": "Kyoto",
+      "country": "JP",
+      "region": "22",
+      "nearestPlaceKm": 3.56,
+      "method": "regional anchor"
+    },
+    {
+      "sport": "runs",
+      "center": [
+        -122.68463000000001,
+        38.45504
+      ],
+      "label": "San Francisco Bay Area",
+      "geonamesId": "5393287",
+      "nearestPlace": "Santa Rosa",
+      "country": "US",
+      "region": "CA",
+      "nearestPlaceKm": 3.05,
+      "method": "regional anchor"
+    },
+    {
+      "sport": "runs",
+      "center": [
+        -77.42019,
+        38.9543
+      ],
+      "label": "Washington, DC",
+      "geonamesId": "4781530",
+      "nearestPlace": "Reston",
+      "country": "US",
+      "region": "VA",
+      "nearestPlaceKm": 7.01,
+      "method": "regional anchor"
+    },
+    {
+      "sport": "runs",
+      "center": [
+        -81.38173499999999,
+        19.33824
+      ],
+      "label": "Grand Cayman",
+      "geonamesId": "11205015",
+      "nearestPlace": "Seven Miles",
+      "country": "KY",
+      "region": "",
+      "nearestPlaceKm": 0.52,
+      "method": "regional anchor"
+    },
+    {
+      "sport": "runs",
+      "center": [
+        -91.09381,
+        30.388215000000002
+      ],
+      "label": "New Orleans / Louisiana",
+      "geonamesId": "4315588",
+      "nearestPlace": "Baton Rouge",
+      "country": "US",
+      "region": "LA",
+      "nearestPlaceKm": 10.85,
+      "method": "regional anchor"
+    },
+    {
+      "sport": "runs",
+      "center": [
+        -78.491965,
+        38.031365
+      ],
+      "label": "Charlottesville, VA",
+      "geonamesId": "4752031",
+      "nearestPlace": "Charlottesville",
+      "country": "US",
+      "region": "VA",
+      "nearestPlaceKm": 1.36,
+      "method": "nearest GeoNames populated place"
+    },
+    {
+      "sport": "runs",
+      "center": [
+        -92.041645,
+        30.16216
+      ],
+      "label": "Lafayette, LA",
+      "geonamesId": "4330145",
+      "nearestPlace": "Lafayette",
+      "country": "US",
+      "region": "LA",
+      "nearestPlaceKm": 7.19,
+      "method": "nearest GeoNames populated place"
+    },
+    {
+      "sport": "runs",
+      "center": [
+        -72.16444999999999,
+        41.045795
+      ],
+      "label": "Springs, NY",
+      "geonamesId": "5139294",
+      "nearestPlace": "Springs",
+      "country": "US",
+      "region": "NY",
+      "nearestPlaceKm": 3.31,
+      "method": "nearest GeoNames populated place"
+    },
+    {
+      "sport": "runs",
+      "center": [
+        -68.21553,
+        44.39081
+      ],
+      "label": "Bar Harbor, ME",
+      "geonamesId": "4957320",
+      "nearestPlace": "Bar Harbor",
+      "country": "US",
+      "region": "ME",
+      "nearestPlaceKm": 0.99,
+      "method": "nearest GeoNames populated place"
+    },
+    {
+      "sport": "runs",
+      "center": [
+        -74.81937,
+        38.9826
+      ],
+      "label": "Wildwood, NJ",
+      "geonamesId": "4504856",
+      "nearestPlace": "Wildwood",
+      "country": "US",
+      "region": "NJ",
+      "nearestPlaceKm": 1.09,
+      "method": "nearest GeoNames populated place"
+    },
+    {
+      "sport": "runs",
+      "center": [
+        -83.04205,
+        42.32971
+      ],
+      "label": "Detroit, MI",
+      "geonamesId": "4990729",
+      "nearestPlace": "Detroit",
+      "country": "US",
+      "region": "MI",
+      "nearestPlaceKm": 0.36,
+      "method": "nearest GeoNames populated place"
+    },
+    {
+      "sport": "runs",
+      "center": [
+        -122.55359,
+        45.42495
+      ],
+      "label": "Portland",
+      "geonamesId": "5729485",
+      "nearestPlace": "Gresham",
+      "country": "US",
+      "region": "OR",
+      "nearestPlaceKm": 12.51,
+      "method": "regional anchor"
+    },
+    {
+      "sport": "runs",
+      "center": [
+        -120.26201,
+        39.20335
+      ],
+      "label": "Lake Tahoe",
+      "geonamesId": "7262635",
+      "nearestPlace": "Sunnyside-Tahoe City",
+      "country": "US",
+      "region": "CA",
+      "nearestPlaceKm": 10.49,
+      "method": "regional anchor"
+    },
+    {
+      "sport": "runs",
+      "center": [
+        -123.37039,
+        48.41813
+      ],
+      "label": "Victoria, Canada",
+      "geonamesId": "6174041",
+      "nearestPlace": "Victoria",
+      "country": "CA",
+      "region": "02",
+      "nearestPlaceKm": 2.41,
+      "method": "nearest GeoNames populated place"
+    },
+    {
+      "sport": "runs",
+      "center": [
+        -116.19814,
+        43.60795
+      ],
+      "label": "Boise",
+      "geonamesId": "5586437",
+      "nearestPlace": "Boise",
+      "country": "US",
+      "region": "ID",
+      "nearestPlaceKm": 0.75,
+      "method": "regional anchor"
+    },
+    {
+      "sport": "runs",
+      "center": [
+        -117.24514,
+        32.89911
+      ],
+      "label": "San Diego",
+      "geonamesId": "5373497",
+      "nearestPlace": "Mira Mesa",
+      "country": "US",
+      "region": "CA",
+      "nearestPlaceKm": 9.61,
+      "method": "regional anchor"
+    },
+    {
+      "sport": "runs",
+      "center": [
+        -80.12273,
+        25.80722
+      ],
+      "label": "Miami Beach, FL",
+      "geonamesId": "4164143",
+      "nearestPlace": "Miami Beach",
+      "country": "US",
+      "region": "FL",
+      "nearestPlaceKm": 1.98,
+      "method": "nearest GeoNames populated place"
+    },
+    {
+      "sport": "runs",
+      "center": [
+        -119.81904,
+        39.52571
+      ],
+      "label": "Lake Tahoe",
+      "geonamesId": "5511077",
+      "nearestPlace": "Reno",
+      "country": "US",
+      "region": "NV",
+      "nearestPlaceKm": 0.62,
+      "method": "regional anchor"
+    },
+    {
+      "sport": "runs",
+      "center": [
+        -76.4836,
+        42.44386
+      ],
+      "label": "Ithaca, NY",
+      "geonamesId": "5122432",
+      "nearestPlace": "Ithaca",
+      "country": "US",
+      "region": "NY",
+      "nearestPlaceKm": 1.12,
+      "method": "nearest GeoNames populated place"
+    },
+    {
+      "sport": "runs",
+      "center": [
+        -93.44126,
+        44.96394
+      ],
+      "label": "Minneapolis",
+      "geonamesId": "5037790",
+      "nearestPlace": "Minnetonka Mills",
+      "country": "US",
+      "region": "MN",
+      "nearestPlaceKm": 2.54,
+      "method": "regional anchor"
+    },
+    {
+      "sport": "runs",
+      "center": [
+        -109.57503,
+        38.60471
+      ],
+      "label": "Moab, UT",
+      "geonamesId": "5543307",
+      "nearestPlace": "Moab",
+      "country": "US",
+      "region": "UT",
+      "nearestPlaceKm": 4.11,
+      "method": "nearest GeoNames populated place"
+    },
+    {
+      "sport": "runs",
+      "center": [
+        126.45829,
+        37.44044
+      ],
+      "label": "South Korea",
+      "geonamesId": "1843564",
+      "nearestPlace": "Incheon",
+      "country": "KR",
+      "region": "12",
+      "nearestPlaceKm": 21.83,
+      "method": "regional anchor"
+    },
+    {
+      "sport": "runs",
+      "center": [
+        -74.55631,
+        34.59351
+      ],
+      "label": "Atlantic Ocean · Outer Banks coast, NC",
+      "geonamesId": "4458391",
+      "nearestPlace": "Buxton",
+      "country": "US",
+      "region": "NC",
+      "nearestPlaceKm": 116.84,
+      "method": "nearest GeoNames populated place"
+    },
+    {
+      "sport": "runs",
+      "center": [
+        9.223,
+        45.478
+      ],
+      "label": "Milan",
+      "geonamesId": "3173435",
+      "nearestPlace": "Milan",
+      "country": "IT",
+      "region": "09",
+      "nearestPlaceKm": 3.02,
+      "method": "regional anchor"
+    },
+    {
+      "sport": "runs",
+      "center": [
+        -70.6196,
+        40.41556
+      ],
+      "label": "Atlantic Ocean · Martha’s Vineyard coast, MA",
+      "geonamesId": "4933082",
+      "nearestPlace": "Chilmark",
+      "country": "US",
+      "region": "MA",
+      "nearestPlaceKm": 103.5,
+      "method": "nearest GeoNames populated place"
+    },
+    {
+      "sport": "bikes",
+      "center": [
+        -75.30183128787873,
+        39.99171323863638
+      ],
+      "label": "Havertown / Philadelphia",
+      "geonamesId": "4558523",
+      "nearestPlace": "Havertown",
+      "country": "US",
+      "region": "PA",
+      "nearestPlaceKm": 1.32,
+      "method": "regional anchor"
+    },
+    {
+      "sport": "bikes",
+      "center": [
+        -73.98855230769229,
+        40.73693076923078
+      ],
+      "label": "New York / New Jersey",
+      "geonamesId": "5116093",
+      "nearestPlace": "East Village",
+      "country": "US",
+      "region": "NY",
+      "nearestPlaceKm": 0.86,
+      "method": "regional anchor"
+    },
+    {
+      "sport": "bikes",
+      "center": [
+        9.21263,
+        45.469015
+      ],
+      "label": "Milan",
+      "geonamesId": "3173435",
+      "nearestPlace": "Milan",
+      "country": "IT",
+      "region": "09",
+      "nearestPlaceKm": 1.88,
+      "method": "regional anchor"
+    },
+    {
+      "sport": "bikes",
+      "center": [
+        -87.62282,
+        41.884585
+      ],
+      "label": "Chicago / Milwaukee",
+      "geonamesId": "4903360",
+      "nearestPlace": "Near North Side",
+      "country": "US",
+      "region": "IL",
+      "nearestPlaceKm": 1.97,
+      "method": "regional anchor"
+    },
+    {
+      "sport": "bikes",
+      "center": [
+        -77.01526,
+        38.89495
+      ],
+      "label": "Washington, DC",
+      "geonamesId": "13526890",
+      "nearestPlace": "Downtown DC",
+      "country": "US",
+      "region": "DC",
+      "nearestPlaceKm": 0.43,
+      "method": "regional anchor"
+    },
+    {
+      "sport": "bikes",
+      "center": [
+        -111.94009,
+        33.42294
+      ],
+      "label": "Tempe, AZ",
+      "geonamesId": "5317071",
+      "nearestPlace": "Tempe Junction",
+      "country": "US",
+      "region": "AZ",
+      "nearestPlaceKm": 1.02,
+      "method": "nearest GeoNames populated place"
+    }
+  ]
+}
