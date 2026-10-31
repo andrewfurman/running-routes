@@ -1,0 +1,137 @@
+{
+  "description": "Official mileage read from each Strava activity page, at its displayed precision of 0.01 miles. Original FIT session distance cross-checks every record within 0.02 mi. Original FIT files remain private because they contain additional sensor data. Distances are not estimated from route geometry.",
+  "records": [
+    {
+      "activityId": "20606504445",
+      "distanceMeters": 5777.54496,
+      "displayedMiles": 3.59,
+      "displayPrecisionMiles": 0.01,
+      "distanceSource": "strava_displayed",
+      "sourceUrl": "https://www.strava.com/activities/20606504445",
+      "originalFitSessionDistanceMeters": 5777.13,
+      "originalFileSha256": "4af19c0566b42e67a36cb1a839abef3bf6595223343d249ebcf251964d658741",
+      "retrievedDate": "2026-10-30"
+    },
+    {
+      "activityId": "20619126795",
+      "distanceMeters": 7065.02016,
+      "displayedMiles": 4.39,
+      "displayPrecisionMiles": 0.01,
+      "distanceSource": "strava_displayed",
+      "sourceUrl": "https://www.strava.com/activities/20619126795",
+      "originalFitSessionDistanceMeters": 7078.06,
+      "originalFileSha256": "9abec5ad332646fa538e755eca8d614d67f7262775431f4dec5045a82c066c4a",
+      "retrievedDate": "2026-10-30"
+    },
+    {
+      "activityId": "20633472836",
+      "distanceMeters": 5713.1712,
+      "displayedMiles": 3.55,
+      "displayPrecisionMiles": 0.01,
+      "distanceSource": "strava_displayed",
+      "sourceUrl": "https://www.strava.com/activities/20633472836",
+      "originalFitSessionDistanceMeters": 5717.22,
+      "originalFileSha256": "c5b202a22f9ee1b93d3560e811793db74389ee4977ca2e3752f2935ce9c8de5c",
+      "retrievedDate": "2026-10-30"
+    },
+    {
+      "activityId": "20672292602",
+      "distanceMeters": 4055.54688,
+      "displayedMiles": 2.52,
+      "displayPrecisionMiles": 0.01,
+      "distanceSource": "strava_displayed",
+      "sourceUrl": "https://www.strava.com/activities/20672292602",
+      "originalFitSessionDistanceMeters": 4056.19,
+      "originalFileSha256": "926f8ab7db42f8fdc11ee22c1c0e725e200b68ab24eccee64882f850be233aac",
+      "retrievedDate": "2026-10-30"
+    },
+    {
+      "activityId": "20685735448",
+      "distanceMeters": 6083.32032,
+      "displayedMiles": 3.78,
+      "displayPrecisionMiles": 0.01,
+      "distanceSource": "strava_displayed",
+      "sourceUrl": "https://www.strava.com/activities/20685735448",
+      "originalFitSessionDistanceMeters": 6094.68,
+      "originalFileSha256": "16e0e6c54cdaa05a49022237adfd0f772e5a6780e9bf1a37805f38a489feeb44",
+      "retrievedDate": "2026-10-30"
+    },
+    {
+      "activityId": "20698250814",
+      "distanceMeters": 5970.66624,
+      "displayedMiles": 3.71,
+      "displayPrecisionMiles": 0.01,
+      "distanceSource": "strava_displayed",
+      "sourceUrl": "https://www.strava.com/activities/20698250814",
+      "originalFitSessionDistanceMeters": 5979.75,
+      "originalFileSha256": "0b72b6bb6a2c9c6645d36bec9e544e9ecf648f0d640aaea5d48f95653862a1bc",
+      "retrievedDate": "2026-10-30"
+    },
+    {
+      "activityId": "20710360282",
+      "distanceMeters": 1561.06368,
+      "displayedMiles": 0.97,
+      "displayPrecisionMiles": 0.01,
+      "distanceSource": "strava_displayed",
+      "sourceUrl": "https://www.strava.com/activities/20710360282",
+      "originalFitSessionDistanceMeters": 1565.27,
+      "originalFileSha256": "9467505116dacf60878c76e26a917666cf02da4a8b7404e9a5c1916594917899",
+      "retrievedDate": "2026-10-30"
+    },
+    {
+      "activityId": "20710360307",
+      "distanceMeters": 4023.36,
+      "displayedMiles": 2.5,
+      "displayPrecisionMiles": 0.01,
+      "distanceSource": "strava_displayed",
+      "sourceUrl": "https://www.strava.com/activities/20710360307",
+      "originalFitSessionDistanceMeters": 4035.81,
+      "originalFileSha256": "f8b8ca01fbcd514b9068b28ba06a02268706f913906a0013dc48e27a65f8b9d7",
+      "retrievedDate": "2026-10-30"
+    },
+    {
+      "activityId": "20739791044",
+      "distanceMeters": 6936.27264,
+      "displayedMiles": 4.31,
+      "displayPrecisionMiles": 0.01,
+      "distanceSource": "strava_displayed",
+      "sourceUrl": "https://www.strava.com/activities/20739791044",
+      "originalFitSessionDistanceMeters": 6950.84,
+      "originalFileSha256": "c33d178bacd768bb23e42e3b1ad0279490d6030d89963f4c1a219935d14b89cb",
+      "retrievedDate": "2026-10-30"
+    },
+    {
+      "activityId": "20762546856",
+      "distanceMeters": 5906.29248,
+      "displayedMiles": 3.67,
+      "displayPrecisionMiles": 0.01,
+      "distanceSource": "strava_displayed",
+      "sourceUrl": "https://www.strava.com/activities/20762546856",
+      "originalFitSessionDistanceMeters": 5918.03,
+      "originalFileSha256": "5a5c4ef6540c5316c2c732165f817cdd91bf8d1fa4b1b4530c993556616d04a2",
+      "retrievedDate": "2026-10-30"
+    },
+    {
+      "activityId": "20775891975",
+      "distanceMeters": 7274.23488,
+      "displayedMiles": 4.52,
+      "displayPrecisionMiles": 0.01,
+      "distanceSource": "strava_displayed",
+      "sourceUrl": "https://www.strava.com/activities/20775891975",
+      "originalFitSessionDistanceMeters": 7285.12,
+      "originalFileSha256": "477e4e9b2b5a4ba64486ef0a378c3000710a1def98ae16ccf19403aea8ba2900",
+      "retrievedDate": "2026-10-30"
+    },
+    {
+      "activityId": "20788741058",
+      "distanceMeters": 6035.04,
+      "displayedMiles": 3.75,
+      "displayPrecisionMiles": 0.01,
+      "distanceSource": "strava_displayed",
+      "sourceUrl": "https://www.strava.com/activities/20788741058",
+      "originalFitSessionDistanceMeters": 6035.69,
+      "originalFileSha256": "419330ac40aac86bb27b1bba476819b08738244dc9536081d578e83567ea748f",
+      "retrievedDate": "2026-10-30"
+    }
+  ]
+}
