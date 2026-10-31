@@ -174,3 +174,5 @@ Runs → Info shows estimated street coverage, streets run on, partial/untouched
 The app uses five bottom tabs: Runs (default), Bikes, Time Lapses, City Stats and Havertown coverage. City Stats combines run count/miles and ride count/miles; city names open running maps when available, while ride-count links open cycling maps. The large route arrows move backward from the first upcoming day through recorded GPS activities and forward into scheduled days. Recorded activity navigation highlights the full saved route. Missing recording days are skipped rather than inventing routes.
 
 City Stats uses TanStack Table with three columns: City, Runs and Bike rides. Counts appear above mileage; Runs and Bike rides sort by count in either direction. The table fills the tab, keeps column headers pinned, truncates long city names and retains full accessible names. City maps offer Back to City Stats for both sports.
+
+The Running Routes header remains visible on every tab, including City Stats. Sort controls use Lucide arrow icons; the table header’s accessible sort state continues to indicate ascending or descending order.
