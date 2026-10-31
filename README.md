@@ -182,3 +182,5 @@ Bikes opens on the latest imported ride. Large arrows browse saved cycling activ
 Historical run cards show the recorded Eastern start time and average moving pace. Header mileage totals round to whole miles. Atlantic Ocean clusters share one city entry with their combined counts and recorded mileage.
 
 The weekly video uses Sunday–Saturday calendar boxes showing each run’s start time, miles and pace. The active day highlights in gold while its route draws; completed routes turn dark blue over light-purple earlier history. The October 31 revision includes all six imported runs, including the recovered Tuesday workout.
+
+The Havertown tab fills the available space with a map of unfinished road sections in orange, inside the teal 19083 outline. Its overlay shows the percentage of named streets fully covered and the remaining count, including partial streets. Covered portions and historical purple tracks are hidden on this tab; the Runs tab retains the running history. Click an orange road to see its name and coverage percentage. This uses the same GPS estimate as Info, not official CityStrides completion. The cycling tab is labeled **Rides**.

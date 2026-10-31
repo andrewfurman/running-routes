@@ -25,7 +25,7 @@ function points(collection?: FeatureCollection): Position[] {
   }
   return result
 }
-interface Props { provider: MapProvider; mapsKey: string; tracks?: FeatureCollection; targets: Target[]; boundary?: any; selected: number; focusRequest: number; historyRequest: number; historyArea?: Position[]; activityId?: string; onSelect: (index: number) => void; onProviderFailure: (reason: string) => void }
+interface Props { missingRoads?: FeatureCollection; coverageMode?: boolean; provider: MapProvider; mapsKey: string; tracks?: FeatureCollection; targets: Target[]; boundary?: any; selected: number; focusRequest: number; historyRequest: number; historyArea?: Position[]; activityId?: string; onSelect: (index: number) => void; onProviderFailure: (reason: string) => void }
 export function MapView(props: Props) {
   const host = useRef<HTMLDivElement>(null)
   const engine = useRef<any>(null)
@@ -96,8 +96,21 @@ export function MapView(props: Props) {
     })
     const ps=props.targets.flatMap(t=>t.target_coordinates)
     if(ps.length)e.fit(ps)
+    else if(props.coverageMode){const outline=props.boundary?.type==='FeatureCollection'?props.boundary:{type:'FeatureCollection',features:props.boundary?[props.boundary]:[]};e.fit(points(outline),35)}
     else e.fit(points(props.tracks).filter(([lng,lat])=>lng>-75.39&&lng< -75.24&&lat>39.92&&lat<40.04))
-  },[ready,props.targets])
+  },[ready,props.targets,props.coverageMode,props.boundary])
+  useEffect(()=>{
+    const e=engine.current;if(!e||!props.missingRoads)return
+    if(e.type==='google'){
+      const layer=new window.google.maps.Data({map:e.map});layer.addGeoJson(props.missingRoads)
+      layer.setStyle({strokeColor:'#e96b1d',strokeWeight:5,strokeOpacity:1,zIndex:30})
+      const popup=new window.google.maps.InfoWindow()
+      const listener=layer.addListener('click',(event:any)=>{const text=document.createElement('div');text.textContent=`${event.feature.getProperty('name')} · ${event.feature.getProperty('percent')}% covered`;popup.setContent(text);popup.setPosition(event.latLng);popup.open(e.map)})
+      return()=>{listener.remove();popup.close();layer.setMap(null)}
+    }
+    const layer=e.L.geoJSON(props.missingRoads,{style:{color:'#e96b1d',weight:5,opacity:1},onEachFeature:(feature:any,line:any)=>{const text=document.createElement('span');text.textContent=`${feature.properties.name} · ${feature.properties.percent}% covered`;line.bindTooltip(text)}}).addTo(e.map)
+    return()=>{e.map.removeLayer(layer)}
+  },[ready,props.missingRoads])
   useEffect(()=>{const e=engine.current;if(!e)return;e.routeLines.forEach((line:any,i:number)=>e.type==='google'?line.setOptions({strokeColor:i===props.selected?'#e96b1d':'#e8a364',strokeWeight:i===props.selected?7:4}):line.setStyle({color:i===props.selected?'#e96b1d':'#e8a364',weight:i===props.selected?7:4}))},[ready,props.selected,props.targets])
   useEffect(()=>{if(!props.historyArea&&!props.activityId&&props.focusRequest&&props.targets[props.selected])engine.current?.fit(props.targets.filter(t=>t.date===props.targets[props.selected].date).flatMap(t=>t.target_coordinates),100,true)},[props.focusRequest,ready,props.targets,props.selected,props.historyArea,props.activityId])
   useEffect(()=>{if(props.historyRequest&&props.historyArea?.length)engine.current?.fit(props.historyArea)},[props.historyRequest,props.historyArea,ready])
@@ -109,5 +122,5 @@ export function MapView(props: Props) {
     else{const layers=[{color:'#20263a',weight:11},{color:'#ffd54a',weight:6}].map(style=>e.L.geoJSON(feature,{style:{...style,opacity:1},interactive:false}).addTo(e.map));cleanup=()=>layers.forEach(layer=>{if(e.map.hasLayer(layer))e.map.removeLayer(layer)})}
     e.fit(points({type:'FeatureCollection',features:[feature]}),60);return cleanup
   },[props.activityId,props.tracks,ready])
-  return <div className="map-surface"><div className="map-canvas" ref={host} aria-label="Interactive route map"/>{loading?<div className="map-loading"><span className="spinner"/>Loading street map</div>:null}{error?<div className="map-error" role="alert">{error}</div>:null}<div className="map-credit">{props.provider==='google'?'Google Maps':'OpenStreetMap'}<span>•</span>Purple: recorded tracks<span>•</span>Teal: 19083</div></div>
+  return <div className="map-surface"><div className="map-canvas" ref={host} aria-label="Interactive route map"/>{loading?<div className="map-loading"><span className="spinner"/>Loading street map</div>:null}{error?<div className="map-error" role="alert">{error}</div>:null}<div className="map-credit">{props.provider==='google'?'Google Maps':'OpenStreetMap'}<span>•</span>{props.coverageMode?'Orange: unfinished road sections':'Purple: recorded tracks'}<span>•</span>Teal: 19083</div></div>
 }
