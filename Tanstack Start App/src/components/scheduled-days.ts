@@ -1,3 +1,4 @@
+import cityRegions from './city-regions.json' with {type:'json'}
 import cityNames from './city-names.json' with {type:'json'}
 import type { Target, FeatureCollection, Position } from './types'
 export function easternDay(now = new Date()) {
@@ -10,8 +11,11 @@ export function upcomingTargets(targets:Target[], today:string) {
 }
 const anchors:[string,number,number][]=[['Havertown / Philadelphia',-75.3,39.98],['New York / New Jersey',-74,40.7],['Seattle',-122.3,47.6],['Fargo',-96.8,46.9],['Indianapolis',-86.16,39.77],['St. Louis',-90.2,38.63],['Toronto / Niagara',-79.1,43.2],['San Francisco Bay Area',-122.3,37.7],['Chicago / Milwaukee',-87.8,42.1],['Charleston',-79.93,32.78],['Savannah',-81.1,32.08],['Cancún / Riviera Maya',-87,20.5],['Grand Cayman',-81.3,19.3],['Seychelles',55.45,-4.6],['London',-.1,51.5],['Japan',136,35],['South Korea',126.98,37.5],['Milan',9.19,45.46],['Portland',-122.68,45.52],['Lake Tahoe',-120,39.1],['Boise',-116.2,43.6],['San Diego',-117.16,32.7],['Washington, DC',-77,38.9],['Boston / New England',-71.1,42.3],['Minneapolis',-93.3,45],['New Orleans / Louisiana',-91,30]]
 const distance=(a:Position,b:Position)=>Math.hypot((a[0]-b[0])*Math.cos((a[1]+b[1])*Math.PI/360),a[1]-b[1])*111
+// Postal boundaries match suburban place names; city limits distinguish NYC and Philadelphia.
+function inRing(point:Position,ring:number[][]){let inside=false;for(let i=0,j=ring.length-1;i<ring.length;j=i++){const a=ring[i],b=ring[j];if((a[1]>point[1])!==(b[1]>point[1])&&point[0]<(b[0]-a[0])*(point[1]-a[1])/(b[1]-a[1])+a[0])inside=!inside}return inside}
+function regionFor(point:Position){return cityRegions.find(region=>{const polygons=region.geometry.type==='MultiPolygon'?region.geometry.coordinates:[region.geometry.coordinates];return (polygons as number[][][][]).some(p=>inRing(point,p[0])&&!p.slice(1).some(hole=>inRing(point,hole)))})?.label}
 export function historyAreas(tracks?:FeatureCollection) {
- const areas:{center:Position;points:Position[];count:number;label:string;fallbackLabel:string;miles:number;distanceMissing:number}[]=[]
+ const areas:{center:Position;points:Position[];count:number;label:string;fallbackLabel:string;miles:number;distanceMissing:number;region?:string}[]=[]
  const seen=new Set<string>()
  for(const feature of tracks?.features||[]) {
   const id=feature.properties.activity_id;if(id!=null){if(seen.has(String(id)))continue;seen.add(String(id))}
@@ -20,12 +24,14 @@ export function historyAreas(tracks?:FeatureCollection) {
   if(!points.length)continue
   const xs=points.map(p=>p[0]).sort((a,b)=>a-b),ys=points.map(p=>p[1]).sort((a,b)=>a-b)
   const center:Position=[xs[Math.floor(xs.length/2)],ys[Math.floor(ys.length/2)]]
-  let area=areas.find(a=>distance(a.center,center)<45)
-  if(!area){area={center,points:[],count:0,label:'',fallbackLabel:'',miles:0,distanceMissing:0};areas.push(area)}
+  const region=regionFor(center)
+  let area=areas.find(a=>region?a.region===region:!a.region&&distance(a.center,center)<45)
+  if(!area){area={center,region,points:[],count:0,label:'',fallbackLabel:'',miles:0,distanceMissing:0};areas.push(area)}
   area.center=[(area.center[0]*area.count+center[0])/(area.count+1),(area.center[1]*area.count+center[1])/(area.count+1)]
   area.count++;area.points.push(...points);const meters=feature.properties.distance_meters;if(typeof meters==='number'&&Number.isFinite(meters)&&meters>=0)area.miles+=meters/1609.344;else area.distanceMissing++
  }
- for(const area of areas){const nearest=[...anchors].sort((a,b)=>distance([a[1],a[2]],area.center)-distance([b[1],b[2]],area.center))[0];area.fallbackLabel=distance([nearest[1],nearest[2]],area.center)<100?nearest[0]:`${area.center[1].toFixed(2)}°, ${area.center[0].toFixed(2)}°`;const named=[...cityNames].sort((a,b)=>distance(a.center as Position,area.center)-distance(b.center as Position,area.center))[0];area.label=named&&distance(named.center as Position,area.center)<15?named.label:area.fallbackLabel.includes('°')?'New activity area':area.fallbackLabel}
+ for(const area of areas){if(area.region){area.label=area.region;area.fallbackLabel=area.region;continue}const nearest=[...anchors].sort((a,b)=>distance([a[1],a[2]],area.center)-distance([b[1],b[2]],area.center))[0];area.fallbackLabel=distance([nearest[1],nearest[2]],area.center)<100?nearest[0]:`${area.center[1].toFixed(2)}°, ${area.center[0].toFixed(2)}°`;const named=[...cityNames].sort((a,b)=>distance(a.center as Position,area.center)-distance(b.center as Position,area.center))[0];area.label=named&&distance(named.center as Position,area.center)<15?named.label:area.fallbackLabel.includes('°')?'New activity area':area.fallbackLabel}
+ for(const area of areas)if(!area.region&&['Havertown / Philadelphia','New York / New Jersey'].includes(area.label))area.label='Other '+area.label+' area'
  const combined=new Map<string,(typeof areas)[number]>()
  for(const [index,area] of areas.entries()){
   const key=area.label==='New activity area'?`unresolved-${index}`:area.label;const existing=combined.get(key)

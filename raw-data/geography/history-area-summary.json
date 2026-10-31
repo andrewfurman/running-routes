@@ -1,0 +1,352 @@
+{
+  "asOf": "2026-10-31",
+  "method": "Each mapped activity assigned once by median GPS coordinate; whole recorded mileage, not polygon-clipped mileage.",
+  "runs": {
+    "activityCount": 1875,
+    "recordedMiles": 5627.513303557226,
+    "areas": [
+      {
+        "label": "Havertown, PA",
+        "count": 834,
+        "miles": 2583.624538942575,
+        "distanceMissing": 0
+      },
+      {
+        "label": "New York City, NY",
+        "count": 433,
+        "miles": 1244.303455320926,
+        "distanceMissing": 0
+      },
+      {
+        "label": "Horsham, PA",
+        "count": 209,
+        "miles": 661.6343677920946,
+        "distanceMissing": 0
+      },
+      {
+        "label": "Seattle",
+        "count": 113,
+        "miles": 356.19469796389086,
+        "distanceMissing": 0
+      },
+      {
+        "label": "Fargo",
+        "count": 40,
+        "miles": 105.38933876163209,
+        "distanceMissing": 0
+      },
+      {
+        "label": "Indianapolis",
+        "count": 40,
+        "miles": 113.39676290463693,
+        "distanceMissing": 0
+      },
+      {
+        "label": "Other Havertown / Philadelphia area",
+        "count": 24,
+        "miles": 46.14252763859063,
+        "distanceMissing": 0
+      },
+      {
+        "label": "St. Louis",
+        "count": 22,
+        "miles": 61.627222023383446,
+        "distanceMissing": 0
+      },
+      {
+        "label": "Narberth, PA",
+        "count": 17,
+        "miles": 42.41858794639307,
+        "distanceMissing": 0
+      },
+      {
+        "label": "San Francisco Bay Area",
+        "count": 17,
+        "miles": 48.87513173069276,
+        "distanceMissing": 0
+      },
+      {
+        "label": "Philadelphia, PA",
+        "count": 16,
+        "miles": 40.61779209417004,
+        "distanceMissing": 0
+      },
+      {
+        "label": "Rochester, NY",
+        "count": 15,
+        "miles": 41.08562246480554,
+        "distanceMissing": 0
+      },
+      {
+        "label": "Ridgefield, CT",
+        "count": 13,
+        "miles": 38.05115624751452,
+        "distanceMissing": 0
+      },
+      {
+        "label": "Coopersburg, PA",
+        "count": 9,
+        "miles": 25.95883788674143,
+        "distanceMissing": 0
+      },
+      {
+        "label": "Chicago / Milwaukee",
+        "count": 6,
+        "miles": 17.656262427423844,
+        "distanceMissing": 0
+      },
+      {
+        "label": "Hartford, CT",
+        "count": 6,
+        "miles": 14.811687246480552,
+        "distanceMissing": 0
+      },
+      {
+        "label": "Charleston",
+        "count": 5,
+        "miles": 12.913211842837825,
+        "distanceMissing": 0
+      },
+      {
+        "label": "Cancún / Riviera Maya",
+        "count": 4,
+        "miles": 15.04047611946234,
+        "distanceMissing": 0
+      },
+      {
+        "label": "Tannersville, NY",
+        "count": 4,
+        "miles": 27.738569255547603,
+        "distanceMissing": 0
+      },
+      {
+        "label": "London",
+        "count": 4,
+        "miles": 12.369822735226279,
+        "distanceMissing": 0
+      },
+      {
+        "label": "Ardmore, PA",
+        "count": 4,
+        "miles": 15.71796955778255,
+        "distanceMissing": 0
+      },
+      {
+        "label": "Seychelles",
+        "count": 3,
+        "miles": 3.813852103714308,
+        "distanceMissing": 0
+      },
+      {
+        "label": "Savannah",
+        "count": 3,
+        "miles": 9.565388133301518,
+        "distanceMissing": 0
+      },
+      {
+        "label": "Japan",
+        "count": 3,
+        "miles": 6.868264336276146,
+        "distanceMissing": 0
+      },
+      {
+        "label": "Washington, DC",
+        "count": 2,
+        "miles": 5.353547780959198,
+        "distanceMissing": 0
+      },
+      {
+        "label": "Lake Tahoe",
+        "count": 2,
+        "miles": 5.499259325538853,
+        "distanceMissing": 0
+      },
+      {
+        "label": "Grand Cayman",
+        "count": 2,
+        "miles": 6.292874612264376,
+        "distanceMissing": 0
+      },
+      {
+        "label": "New Orleans / Louisiana",
+        "count": 2,
+        "miles": 5.315830549590392,
+        "distanceMissing": 0
+      },
+      {
+        "label": "Charlottesville, VA",
+        "count": 2,
+        "miles": 3.499748966038336,
+        "distanceMissing": 0
+      },
+      {
+        "label": "Lafayette, LA",
+        "count": 2,
+        "miles": 5.66547611946234,
+        "distanceMissing": 0
+      },
+      {
+        "label": "Springs, NY",
+        "count": 2,
+        "miles": 6.601820369044778,
+        "distanceMissing": 0
+      },
+      {
+        "label": "Bar Harbor, ME",
+        "count": 2,
+        "miles": 5.014154835759166,
+        "distanceMissing": 0
+      },
+      {
+        "label": "Wildwood, NJ",
+        "count": 1,
+        "miles": 1.8747390240992603,
+        "distanceMissing": 0
+      },
+      {
+        "label": "Detroit, MI",
+        "count": 1,
+        "miles": 2.093648095124473,
+        "distanceMissing": 0
+      },
+      {
+        "label": "Portland",
+        "count": 1,
+        "miles": 3.1264291537421456,
+        "distanceMissing": 0
+      },
+      {
+        "label": "Victoria, Canada",
+        "count": 1,
+        "miles": 4.3477963692038495,
+        "distanceMissing": 0
+      },
+      {
+        "label": "Boise",
+        "count": 1,
+        "miles": 2.473119482223813,
+        "distanceMissing": 0
+      },
+      {
+        "label": "San Diego",
+        "count": 1,
+        "miles": 1.1586087250457329,
+        "distanceMissing": 0
+      },
+      {
+        "label": "Miami Beach, FL",
+        "count": 1,
+        "miles": 3.153210252127575,
+        "distanceMissing": 0
+      },
+      {
+        "label": "Ithaca, NY",
+        "count": 1,
+        "miles": 2.1913897836634053,
+        "distanceMissing": 0
+      },
+      {
+        "label": "Minneapolis",
+        "count": 1,
+        "miles": 2.423782609560168,
+        "distanceMissing": 0
+      },
+      {
+        "label": "Other New York / New Jersey area",
+        "count": 1,
+        "miles": 4.385451463453432,
+        "distanceMissing": 0
+      },
+      {
+        "label": "Moab, UT",
+        "count": 1,
+        "miles": 2.434594468305098,
+        "distanceMissing": 0
+      },
+      {
+        "label": "South Korea",
+        "count": 1,
+        "miles": 2.151249204644874,
+        "distanceMissing": 0
+      },
+      {
+        "label": "Atlantic Ocean · Outer Banks coast, NC",
+        "count": 1,
+        "miles": 3.250454843712718,
+        "distanceMissing": 0
+      },
+      {
+        "label": "Milan",
+        "count": 1,
+        "miles": 2.011130000795355,
+        "distanceMissing": 0
+      },
+      {
+        "label": "Atlantic Ocean · Martha’s Vineyard coast, MA",
+        "count": 1,
+        "miles": 1.3794440467668814,
+        "distanceMissing": 0
+      }
+    ]
+  },
+  "bikes": {
+    "activityCount": 547,
+    "recordedMiles": 2027.5461927344315,
+    "areas": [
+      {
+        "label": "Havertown, PA",
+        "count": 337,
+        "miles": 1134.8738989302476,
+        "distanceMissing": 0
+      },
+      {
+        "label": "Ardmore, PA",
+        "count": 155,
+        "miles": 697.1861205559536,
+        "distanceMissing": 0
+      },
+      {
+        "label": "Other Havertown / Philadelphia area",
+        "count": 35,
+        "miles": 168.8187236538614,
+        "distanceMissing": 0
+      },
+      {
+        "label": "New York City, NY",
+        "count": 13,
+        "miles": 13.217248767199557,
+        "distanceMissing": 0
+      },
+      {
+        "label": "Milan",
+        "count": 2,
+        "miles": 4.751066272965879,
+        "distanceMissing": 0
+      },
+      {
+        "label": "Chicago / Milwaukee",
+        "count": 2,
+        "miles": 0.8295305416368408,
+        "distanceMissing": 0
+      },
+      {
+        "label": "Philadelphia, PA",
+        "count": 1,
+        "miles": 6.448093136085262,
+        "distanceMissing": 0
+      },
+      {
+        "label": "Washington, DC",
+        "count": 1,
+        "miles": 0.00037282271534240036,
+        "distanceMissing": 0
+      },
+      {
+        "label": "Tempe, AZ",
+        "count": 1,
+        "miles": 1.4211380537660063,
+        "distanceMissing": 0
+      }
+    ]
+  }
+}

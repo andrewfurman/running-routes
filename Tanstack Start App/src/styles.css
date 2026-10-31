@@ -40,3 +40,6 @@
 /* Installed iOS apps can draw a status-bar fade below a reported zero safe-area inset. */
 @supports (-webkit-touch-callout:none){@media(display-mode:standalone){.app-shell{padding-top:calc(env(safe-area-inset-top,0px) + 16px)}}}
 html,body{background:#fff}
+
+/* Keep the activity switcher fixed when Videos hides the metrics. */
+.header-metrics.metrics-hidden{visibility:hidden;pointer-events:none}
