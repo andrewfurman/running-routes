@@ -44,5 +44,13 @@
         "StravaSync"
       ]
     }
+  ],
+  "d1_databases": [
+    {
+      "binding": "RUNS_DB",
+      "database_name": "running-routes",
+      "database_id": "5d9730c1-601c-4c76-ac4c-8c4e83f93706",
+      "migrations_dir": "migrations"
+    }
   ]
 }

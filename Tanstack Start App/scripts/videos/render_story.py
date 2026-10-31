@@ -22,7 +22,7 @@ def draw_track(draw,lines,area,color,width,fraction=1):
 def label(draw,pos,text,size=24,color=MUTED):draw.text(pos,text,fill=color,font=font(size))
 def main():
  ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('--year',type=int,default=2026);ap.add_argument('--version',default='v2');ap.add_argument('--output',type=Path,required=True);ap.add_argument('--basemaps',type=Path,required=True);ap.add_argument('--stats',type=Path,default=ROOT/'raw-data/runs/2026-distances.json');args=ap.parse_args();args.output.mkdir(parents=True,exist_ok=True)
- areas=json.loads(args.basemaps.read_text());backgrounds={}
+ areas=[a for a in json.loads(args.basemaps.read_text()) if a['id']=='havertown'];assert len(areas)==1;backgrounds={}
  for a in areas:
   image=Image.open(args.basemaps.parent/a['file']).convert('RGBA');assert image.size==(W,MAP_H),'Capture Google Maps at exactly 1080×810, with full attribution';backgrounds[a['id']]=image
  layers={a['id']:Image.new('RGBA',(W,MAP_H)) for a in areas}
@@ -34,7 +34,8 @@ def main():
   assert p['activity_type'] in {'Run','TrailRun','Trail Run','VirtualRun','Virtual Run'}
   aid=str(p['activity_id']);r=distances[aid];assert r['date']==t.date().isoformat() and math.isfinite(r['distanceMeters']) and r['distanceMeters']>=0
   lines=feature['geometry']['coordinates'] if feature['geometry']['type']=='MultiLineString' else [feature['geometry']['coordinates']];points=[p for line in lines for p in line];xs=sorted(p[0] for p in points);ys=sorted(p[1] for p in points);center=(xs[len(xs)//2],ys[len(ys)//2]);area=min(areas,key=lambda a:math.hypot((center[0]-a['lng'])*math.cos(math.radians(center[1])),center[1]-a['lat']))
-  assert all(0<=xy(area,p)[0]<W and 0<=xy(area,p)[1]<MAP_H-24 for p in points),(aid,area['id'])
+  # Keep the camera fixed; travel runs still contribute every mile to the stats.
+  if not all(0<=xy(area,p)[0]<W and 0<=xy(area,p)[1]<MAP_H-24 for p in points):lines=[]
   runs.append((t,aid,lines,area,r['distanceMeters']/1609.344,r['distanceSource']=='gps_estimate'))
  runs.sort(key=lambda r:(r[0],r[1]));assert len(runs)==len(distances)==len({r[1] for r in runs})
  daily=collections.defaultdict(lambda:{'miles':0,'runs':0,'estimated':False})
@@ -63,12 +64,12 @@ def main():
    for amount in [0,ceiling/2,ceiling]:
     y=y1-(y1-y0)*amount/ceiling;draw.line((x0,y,x1,y),fill='#3c314f',width=1);label(draw,(60,y-10),f'{amount:.0f}',17,MUTED)
    curve=graph+[(date_fraction,value)];points=[(x0+(x1-x0)*x,y1-(y1-y0)*y/ceiling) for x,y in curve];fill=Image.new('RGBA',(W,H));fd=ImageDraw.Draw(fill);fd.polygon([(x0,y1),*points,(points[-1][0],y1)],fill=(178,138,240,35));image=Image.alpha_composite(image.convert('RGBA'),fill).convert('RGB');draw=ImageDraw.Draw(image);draw.line(points,fill=PURPLE,width=4,joint='curve');px,py=points[-1];draw.ellipse((px-6,py-6,px+6,py+6),fill=ORANGE);label(draw,(x0,1654),'JAN',17,MUTED);label(draw,(x1-38,1654),'DEC',17,MUTED)
-   label(draw,(60,1704),'~ Includes GPS-estimated distances.' if stats['gpsEstimatedRecords'] else 'Recorded mileage from Strava',19,MUTED)
+   label(draw,(60,1704),'~ Includes GPS-estimated distances.' if stats['gpsEstimatedRecords'] else 'All Strava mileage · Map: Havertown only',19,MUTED)
    if index==0 and step==0:emit(image,24)
    emit(image)
   cumulative+=miles;has_estimate|=estimated;graph.append((date_fraction,cumulative));draw_track(ImageDraw.Draw(layers[area['id']]),lines,area,(117,75,176,205),3)
   if index%30==0:print(f'Rendered {index+1}/{len(runs)} · {cumulative:.2f} mi',flush=True)
  emit(image,72);encoder.stdin.close();assert encoder.wait()==0;image.save(args.output/(name+'.jpg'),quality=93)
- metadata={'id':name,'title':f'{args.year} running year to date · Story','year':args.year,'runCount':len(runs),'dayCount':len(daily),'totalMiles':round(total,4),'stravaDistanceRecords':stats['stravaDistanceRecords'],'gpsEstimatedRecords':stats['gpsEstimatedRecords'],'firstDate':runs[0][0].date().isoformat(),'lastDate':runs[-1][0].date().isoformat(),'durationSeconds':frames/FPS,'width':W,'height':H,'aspectRatio':'9:16','activityIds':[r[1] for r in runs],'sourceSha256':hashlib.sha256(source.read_bytes()).hexdigest(),'distanceSourceSha256':hashlib.sha256(args.stats.read_bytes()).hexdigest(),'videoSha256':hashlib.sha256(video.read_bytes()).hexdigest(),'videoBytes':video.stat().st_size,'basemapProvider':'Google Maps','description':'Vertical 9:16 Story: daily miles and runs above Google Maps, orange active routes, purple history, year progress, an animated cumulative mileage counter and a growing line graph below. Mileage uses recorded Strava distances; no GPS-geometry estimates.','videoUrl':f'/media/{name}.mp4','posterUrl':f'/media/{name}.jpg'}
+ metadata={'id':name,'title':f'{args.year} running year to date · Story','year':args.year,'runCount':len(runs),'mappedRunCount':sum(bool(r[2]) for r in runs),'awayRunCount':sum(not bool(r[2]) for r in runs),'mapArea':'Havertown','dayCount':len(daily),'totalMiles':round(total,4),'stravaDistanceRecords':stats['stravaDistanceRecords'],'gpsEstimatedRecords':stats['gpsEstimatedRecords'],'firstDate':runs[0][0].date().isoformat(),'lastDate':runs[-1][0].date().isoformat(),'durationSeconds':frames/FPS,'width':W,'height':H,'aspectRatio':'9:16','activityIds':[r[1] for r in runs],'sourceSha256':hashlib.sha256(source.read_bytes()).hexdigest(),'distanceSourceSha256':hashlib.sha256(args.stats.read_bytes()).hexdigest(),'videoSha256':hashlib.sha256(video.read_bytes()).hexdigest(),'videoBytes':video.stat().st_size,'basemapProvider':'Google Maps','description':'Vertical 9:16 Story with a fixed Havertown map. All runs, including travel, contribute to daily and cumulative mileage and the line graph. Daily miles and runs above Google Maps, orange active routes, purple history, year progress, an animated cumulative mileage counter and a growing line graph below. Mileage uses recorded Strava distances; no GPS-geometry estimates.','videoUrl':f'/media/{name}.mp4','posterUrl':f'/media/{name}.jpg'}
  (args.output/(name+'.json')).write_text(json.dumps(metadata,indent=2)+'\n');print(f'Created {video}: {frames/FPS:.2f}s · {total:.2f} mi · {len(daily)} days')
 if __name__=='__main__':main()

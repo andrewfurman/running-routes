@@ -2,7 +2,7 @@
 
 [Open the map](https://runningroutes.aifurman.com/)
 
-A mobile-friendly TanStack Start app for Andrew Furman's running history, upcoming full-street targets and cycling history around Havertown. Switch between Runs and Bikes, explore the full map, page through upcoming destinations, or browse recorded and planned runs in the calendar. Info contains map-provider and iPhone installation options.
+A mobile-friendly TanStack Start app for Andrew Furman's running history, upcoming full-street targets and cycling history around Havertown. Use the Runs / Bikes / Videos switch, explore the full map, page through upcoming destinations, or watch the year-to-date time-lapse. Info contains map-provider and iPhone installation options.
 
 ## Layout
 
@@ -36,7 +36,7 @@ On iPhone, open the site in Safari, tap Share, then Add to Home Screen. The app 
 
 ## Data updates
 
-The current public dataset contains 1,874 GPS runs and 547 GPS rides through October 30, 2026. The cycling source has 1,445 records; 898 have no drawable GPS track. Runs exclude rides and walks. Recorded calendar entries represent GPS runs; times and distances unavailable in the export are not invented.
+The current public dataset contains 1,874 GPS runs and 547 GPS rides through October 30, 2026. The cycling source has 1,445 records; 898 have no drawable GPS track. Runs exclude rides and walks. Selected D1 metadata also preserves six runs without GPS; unavailable times and distances are not invented.
 
 From the app folder, update cycling data using an official Strava export or a manifest of signed-in GPX downloads:
 
@@ -45,7 +45,7 @@ python3 scripts/imports/import_bike_history.py --help
 python3 scripts/planning/build_app_data.py
 ```
 
-`raw-data/bikes/2026-10-30/` preserves the newer original GPX files and a hash manifest. Imports deduplicate by activity ID. Browser login cookies and session tokens are not stored. Optional `STRAVA_ACCESS_TOKEN` is reserved for an official API token; the current import uses files and does not require it. The full all-sport export remains private in the Family Newspaper archive.
+`raw-data/bikes/2026-10-30/` preserves the newer original GPX files and a hash manifest. Imports deduplicate by activity ID. Browser login cookies and session tokens never enter the repository. Optional `STRAVA_ACCESS_TOKEN` is reserved for an official API token; the current import uses files and does not require it. The full all-sport export remains private in the Family Newspaper archive.
 
 `raw-data/plans/current-targets.json` supplies upcoming app targets; `history-targets.json` preserves older targets. The calendar synchronization tool uses the dated plan selected by `raw-data/route-research/current-plan.json`. Keep these views consistent when editing a plan, then rebuild app data.
 
@@ -92,37 +92,39 @@ The default app view selects today's scheduled run in America/New_York, or the n
 
 `/video-map` is a full-viewport Google Maps capture helper for the personal time-lapse. Choose an area, wait for Map ready, then hide controls. Escape restores them. Capture only the handful of area backgrounds needed for the video, preserving the full map, Google logo and provider attribution. Recreational video attribution guidance: https://about.google/brand-resource-center/products-and-services/geo-guidelines/ .
 
-The Story mileage source is `raw-data/runs/2026-distances.json`: 189 recorded Strava distances from the numeric meter field in the private account-export CSV, plus 12 recorded distances read from the Strava activity pages and cross-checked against downloaded original FIT sessions. The backfill preserves the displayed precision of 0.01 miles rather than deriving mileage from simplified route geometry. Separate GPS lines are never bridged. The raw private CSV/ZIP and original FIT sensor files stay outside Git; only the selected public run IDs, distances and provenance are retained here. Daily totals group by America/New_York date. The current video contains no geometry-estimated distances, so its totals have no tilde. The cumulative curve uses calendar dates on its x axis and starts from zero on January 1; year progress is measured against the full year rather than ending at 100% in October. Final totals are 201 GPS runs on 199 days, 669.17 miles through October 30. The renderer validates source hashes, complete activity coverage and distances before encoding.
+The Story mileage source is `raw-data/runs/2026-distances.json`: 189 recorded Strava distances from the numeric meter field in the private account-export CSV, plus 12 recorded numeric meter distances read from the signed-in Strava website and cross-checked against downloaded original FIT sessions. The backfill now uses the website numeric meter field, cross-checked against original FIT session distances, rather than rounded display miles or simplified GPS geometry. Separate GPS lines are never bridged. The raw private CSV/ZIP and original FIT sensor files stay outside Git; only the selected public run IDs, distances and provenance are retained here. Daily totals group by America/New_York date. The current video contains no geometry-estimated distances, so its totals have no tilde. The cumulative curve uses calendar dates on its x axis and starts from zero on January 1; year progress is measured against the full year rather than ending at 100% in October. Final totals are 201 GPS runs on 199 days, 669.23 miles through October 30. The renderer validates source hashes, complete activity coverage and distances before encoding.
 
 `raw-data/runs/2026-strava-recorded-backfill.json` records the 12 activity URLs, displayed mileage precision and original FIT hashes. `prepare_distances.py` automatically applies this recorded backfill when present.
 
-## Daily Strava import on Cloudflare
+## Daily Strava import and D1 storage
 
-The Worker has a daily **08:00 America/New_York** cron. Cloudflare schedules run in UTC, so `0 12,13 * * *` invokes the handler at both candidate hours; the handler acts only when Eastern time is 08:00. This covers daylight-saving changes. One named Durable Object serializes imports, stores rotating OAuth tokens privately and prevents repeated successful scheduled imports for the same day.
+The Worker imports at **08:00 America/New_York**. Cloudflare cron `0 12,13 * * *` covers both UTC offsets; the handler acts only at 08:00 Eastern, including DST transitions. One Durable Object serializes imports and skips a second successful scheduled import on the same day.
 
-**Installing the cron is separate from connecting Strava.** `/api/strava-sync/status` reports `needs_connection` until the OAuth client/refresh token are configured and a real import succeeds. Strava currently requires a subscription to create an API app: [official getting-started documentation](https://developers.strava.com/docs/getting-started/). A Chrome login or browser session cookie is not an API connection.
+The current connection uses the owner's explicitly authorized **private browser session** with Strava's signed-in website, not the official OAuth API. Set `STRAVA_WEB_COOKIE` and `STRAVA_SYNC_ADMIN_TOKEN` only in the ignored root `.env` (blank placeholders in ignored `sample.env`), then run `npm run deploy` inside the app. The deploy helper installs them as private Worker secrets. The session is limited to requests to `www.strava.com`; redirects are not followed. Its signed-in athlete ID must match `STRAVA_ATHLETE_ID=14049141`. Cookies never enter D1, public JSON, Git or logs. When Strava expires the session, status becomes `needs_browser_login`; replace the private secret after signing in again. OAuth remains an optional alternative using private `STRAVA_CLIENT_ID`, `STRAVA_CLIENT_SECRET`, and `STRAVA_REFRESH_TOKEN`.
 
-Set these in the ignored root `.env` on your computer, then deploy; never commit their values:
+The first import checks seven days; later imports overlap the previous success by one day. All pages of matching running activities are read until the cutoff, and IDs are upserted. Numeric recorded distances are used, bikes are excluded, and newly discovered GPS runs download their original GPX. Disconnected GPX segments stay separate. Failures preserve the previous success checkpoint. Website changes or expired sessions can interrupt this integration; check `/api/strava-sync/status` for the last successful import.
 
-```dotenv
-STRAVA_CLIENT_ID=your_strava_app_id
-STRAVA_CLIENT_SECRET=your_private_client_secret
-STRAVA_REFRESH_TOKEN=your_authorized_refresh_token
-STRAVA_SYNC_ADMIN_TOKEN=your_private_random_admin_token
-```
+Storage is intentionally duplicated for now:
 
-Authorize only your own athlete, with read-only activity access. Private activities require `activity:read_all`; no write scope is needed. The deploy helper installs these as Worker secrets. The refreshed token is persisted in Durable Object storage before API reads, so rotation survives a later request failure. `STRAVA_ATHLETE_ID=14049141` pins the expected account. OAuth authorization is a required setup step and has not been completed on the current Free Strava account.
+- **D1 `running-routes` / binding `RUNS_DB`:** indexed activity metadata, dates, recorded distance and GPS object references. Initial snapshot: 1,880 runs, 1,874 with GPS, six without GPS.
+- **R2 `running-routes-media`:** baseline `runs/history.geojson`, new `strava/tracks/<id>.geojson`, normalized incremental `strava/latest-runs.json`, and videos.
+- **Repo `raw-data/runs`:** retained GPS files, selected activity metadata in `activities.json`, distance provenance and explicit snapshots. The original private all-sport export and FIT sensor files remain outside Git.
 
-The import fetches all pages of recent activities, filters running sports, deduplicates activity IDs and keeps Strava's recorded distance. Its first run checks seven days; subsequent imports overlap the last success by one day to catch delayed syncs. A failed API read preserves the previous checkpoint. Only normalized run distance/time/GPS fields are written to the private R2 bucket at `strava/latest-runs.json`; tokens, heart rate and private notes are not returned by the public run endpoint. The map merges new GPS runs and the app calendar adds recorded activities, including runs without GPS. Existing detailed tracks are preserved when a summary polyline is available. Reopening the app refreshes runtime data.
-
-From the app folder:
+The public run endpoint reads D1 metadata and merges incremental GPS with the detailed checked-in tracks. Only selected distance, time and GPS fields are exposed. Heart rate, notes and authentication data are excluded. The runtime importer does not push to GitHub: refresh repo snapshots explicitly and use a tracking PR, immediately merged after validation. This keeps runtime updates separate from versioned snapshots while retaining both copies.
 
 ```sh
+# From Tanstack Start App
 npm run test
-python3 scripts/imports/strava_sync.py              # connection and last-success status
-python3 scripts/imports/strava_sync.py --run        # protected manual import
-python3 scripts/imports/strava_sync.py --save /private/tmp/strava-runtime-runs.json
+python3 scripts/imports/strava_sync.py                  # status
+python3 scripts/imports/strava_sync.py --run            # protected manual import
+python3 scripts/imports/snapshot_run_database.py --write # update repo files for a PR
+python3 scripts/imports/seed_run_database.py --sql /private/tmp/runs.sql
+# wrangler d1 execute running-routes --remote --file /private/tmp/runs.sql
 npm run deploy
 ```
 
-The daily job refreshes recorded-run data on the map and app calendar. Future-street planning, Google Calendar changes, checked-in snapshots and new video editions continue through the explicit update workflow and tracking PRs. Runtime imports are stored in R2; videos remain dated snapshots. The public status endpoint exposes no credentials, and manual POST imports require the private admin bearer token.
+The schema is in `Tanstack Start App/migrations/0001_runs.sql`. Seeding upserts by ID and rejects older snapshot timestamps. Runtime sync does not change future targets or Google Calendar. Those remain an explicit planning workflow. The header now has one Runs / Bikes / Videos switch; Calendar and the Routes header control are removed.
+
+## Fixed Havertown Story edition
+
+The v3 portrait video keeps one Havertown Google Maps background for the entire year, eliminating travel-map jumps. Only local tracks are drawn; **all 201 runs still count toward daily miles, cumulative miles, the line graph and year progress**, including seven runs away from the fixed map. The 2026 total is 669.23 recorded miles through October 30. This is a dated rendered snapshot, not automatically regenerated by the daily importer. Video and poster live in R2; their hashes and full activity coverage are recorded in `raw-data/videos/runs-2026-story-v3.json`.
