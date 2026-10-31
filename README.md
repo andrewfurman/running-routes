@@ -176,3 +176,5 @@ The app uses five bottom tabs: Runs (default), Bikes, Time Lapses, City Stats an
 City Stats uses TanStack Table with three columns: City, Runs and Bike rides. Counts appear above mileage; Runs and Bike rides sort by count in either direction. The table fills the tab, keeps column headers pinned, truncates long city names and retains full accessible names. City maps offer Back to City Stats for both sports.
 
 The Running Routes header remains visible on every tab, including City Stats. Sort controls use Lucide arrow icons; the table header’s accessible sort state continues to indicate ascending or descending order.
+
+Bikes opens on the latest imported ride. Large arrows browse saved cycling activities in recording order, highlighting each full GPS route; the newest ride has no forward planning action. The 8 AM Eastern cloud importer currently handles runs; cycling remains an explicitly refreshed snapshot.
