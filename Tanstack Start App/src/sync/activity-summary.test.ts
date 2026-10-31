@@ -1,0 +1,9 @@
+import test from 'node:test'
+import assert from 'node:assert/strict'
+import {latestRunId,requestedRun,gpsActivitySummary} from '../components/activity-summary.ts'
+import {freshDocument} from './document-cache.ts'
+import type {FeatureCollection} from '../components/types'
+const tracks:FeatureCollection={type:'FeatureCollection',features:[{type:'Feature',properties:{activity_id:'1',activity_type:'Run',date:'2026-10-30T09:00:00Z',distance_meters:1609.344},geometry:{type:'LineString',coordinates:[]}},{type:'Feature',properties:{activity_id:'2',activity_type:'Run',date:'2026-10-31T09:00:00Z',distance_meters:3218.688},geometry:{type:'LineString',coordinates:[]}},{type:'Feature',properties:{activity_id:'3',activity_type:'Ride',date:'2026-11-01T09:00:00Z',distance_meters:1609.344},geometry:{type:'LineString',coordinates:[]}}]}
+test('latest run intent uses the newest running activity and never a newer bike ride',()=>{assert.equal(latestRunId(tracks),'2');assert.equal(requestedRun('?activity=latest'),'latest');assert.equal(requestedRun('?activity=20800939076'),'20800939076');assert.equal(requestedRun('?activity=invalid'),undefined)})
+test('header mileage totals recorded GPS activity meters without duplicate IDs',()=>{const result=gpsActivitySummary({...tracks,features:[...tracks.features,tracks.features[0]]});assert.deepEqual(result,{count:3,miles:4,missing:0});assert.equal(gpsActivitySummary(),null)})
+test('whole-document reload receives fresh HTML while media/cache headers remain intact',async()=>{const html=freshDocument(new Response('new app',{headers:{'Content-Type':'text/html; charset=utf-8','ETag':'version-2'}}));assert.equal(html.headers.get('Cache-Control'),'no-store');assert.equal(html.headers.get('ETag'),'version-2');assert.equal(await html.text(),'new app');const media=new Response('video',{status:206,headers:{'Content-Type':'video/mp4','Cache-Control':'public,max-age=3600'}});assert.equal(freshDocument(media),media)})

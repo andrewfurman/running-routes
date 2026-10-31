@@ -10,7 +10,9 @@ ROOT=Path(__file__).resolve().parents[3]
 W,H,FPS=1280,720,24
 PURPLE='#754bb0'; ACTIVE='#f58124'
 def timestamp(value):
-    try:return datetime.fromisoformat(value).replace(tzinfo=ZoneInfo('America/New_York'))
+    try:
+        parsed=datetime.fromisoformat(value)
+        return parsed.astimezone(ZoneInfo('America/New_York')) if parsed.tzinfo else parsed.replace(tzinfo=ZoneInfo('America/New_York'))
     except ValueError:return datetime.strptime(value,'%b %d, %Y, %I:%M:%S %p').replace(tzinfo=timezone.utc).astimezone(ZoneInfo('America/New_York'))
 def font(size):
     for path in ['/System/Library/Fonts/Supplemental/Arial.ttf','/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf']:

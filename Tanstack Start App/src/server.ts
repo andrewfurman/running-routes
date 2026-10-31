@@ -1,3 +1,4 @@
+import {freshDocument} from './sync/document-cache'
 import {readRuns} from './sync/database'
 import handler from '@tanstack/react-start/server-entry'
 import {isEightAMEastern} from './sync/strava-sync'
@@ -13,7 +14,7 @@ export default {
    if(!env.STRAVA_SYNC_ADMIN_TOKEN||request.headers.get('Authorization')!==`Bearer ${env.STRAVA_SYNC_ADMIN_TOKEN}`)return new Response('Unauthorized',{status:401})
    return sync(env).fetch('https://internal/sync?force=1',{method:'POST'})
   }
-  return handler.fetch(request)
+  return freshDocument(await handler.fetch(request))
  },
  async scheduled(event:{scheduledTime:number},env:SyncEnv){
   if(!isEightAMEastern(event.scheduledTime))return

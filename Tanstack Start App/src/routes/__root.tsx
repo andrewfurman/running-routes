@@ -8,9 +8,8 @@ export const Route = createRootRoute({
       { name: 'viewport', content: 'width=device-width, initial-scale=1, viewport-fit=cover' },
       { title: 'Running Routes · Havertown' },
       { name: 'description', content: 'Running and cycling history, upcoming street targets, and a run calendar for Havertown.' },
-      { name: 'theme-color', content: '#5b37a5' },
+      { name: 'theme-color', content: '#ffffff' },
       { name: 'apple-mobile-web-app-capable', content: 'yes' },
-      { name: 'apple-mobile-web-app-status-bar-style', content: 'default' },
       { name: 'apple-mobile-web-app-title', content: 'Running Routes' },
     ],
     links: [

@@ -133,7 +133,7 @@ The v3 portrait video keeps one Havertown Google Maps background for the entire 
 
 ## City explorer and mileage
 
-The header uses a compact vector icon and illustrated Runs / Bikes / Videos controls. City selector opens the recorded areas for the active sport. Selecting a city enters exploration mode: closing X dismisses only the picker, preserves that city and viewport, and leaves the route card hidden. **Upcoming run** explicitly returns to the scheduled plan. Opening the picker again keeps the selected area.
+The header uses a map-pin icon, Running Routes title, illustrated Runs / Bikes / Videos controls, mapped-activity counts and total recorded GPS miles. Video mode hides those activity metrics. City selector opens the recorded areas for the active sport. Selecting a city enters exploration mode: closing X dismisses only the picker, preserves that city and viewport, and leaves the route card hidden. **Upcoming run** explicitly returns to the scheduled plan. Opening the picker again keeps the selected area.
 
 Each option shows the total recorded miles and activity count. Clusters sharing the same named region are combined into one city-selector entry and mileage total. Whole activities are assigned to a GPS area; these are regional clusters (roughly 45 km), not mileage clipped to legal city boundaries. GPS-less activities cannot be assigned to a city. Recorded distances are attached to the generated map assets from `raw-data/runs/activities.json` and `raw-data/bikes/recorded-distances.json`; runtime Strava data can update them. Missing mileage is marked as a partial subtotal rather than estimated from simplified geometry. All 1,875 current GPS runs and 547 GPS rides currently have recorded distances.
 
@@ -148,3 +148,17 @@ npm run build
 ```
 
 The selected GeoNames names used by the browser are generated into `src/components/city-names.json`. Keep the metadata and browser cache in the same tracking PR. Do not commit the private all-sport archive or authentication cookies.
+
+## Home Screen refresh and latest-run review
+
+The header’s circular-arrow **Refresh** button reloads the entire document, not just map data. HTML is served with `Cache-Control: no-store`, so a Home Screen launch/refresh picks up current code and its versioned JS/CSS URLs. Hashed assets and saved videos retain their own caching. Reopen the app once to receive the release that adds the button.
+
+[Open the latest recorded run](https://runningroutes.aifurman.com/?activity=latest), or use **Info → Show latest run**. The requested run is fitted and highlighted in pink; a linked planned street is orange. Upcoming run returns to the schedule. Numeric `?activity=<id>` links select a particular imported activity. Cold launches without an activity query still open today’s upcoming plan.
+
+See [iPhone Home Screen blur research](docs/ios-home-screen-blur.md) for the distinction between the app’s layout and iOS’s status-area fade. The iPhone-only extra 16px clearance is a mitigation requiring a native-device check; Chrome emulation is not proof that the iOS compositor blur is gone.
+
+## Current video editions
+
+Videos contains two current snapshots: the year-to-date Story through October 31 (202 runs, 673.17 recorded miles), and a rolling seven-day Story for October 25–31 (five runs, 20.21 miles). The week draws each run in gold, converts completed runs to dark blue, and keeps older history light purple. Final stats linger for four seconds: moving time, circular-mean Eastern start time, average distance and total-moving-time pace. There is no redundant introductory heading above the players.
+
+Videos remain dated rendered snapshots; the daily Worker imports GPS/metadata but does not encode MP4s. See [video generation](docs/video-generation.md) for reproducing and rolling the seven-day window forward.
