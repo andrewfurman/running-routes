@@ -2,6 +2,9 @@ import {fetchWebRuns} from './strava-web.ts'
 import {saveRuns} from './database.ts'
 import type {SyncEnv,SyncStorage,SyncStatus,SyncedRun,RunSnapshot} from './types'
 const SCHEDULE='08:00 America/New_York'
+const LOOKBACK_MS=30*86400000
+// Apple Health can upload older workouts later; keep reconciling its full import window.
+export function syncSince(now:number,lastSuccessAt?:string){return Math.min(now-LOOKBACK_MS,lastSuccessAt?Date.parse(lastSuccessAt)-LOOKBACK_MS:now-LOOKBACK_MS)}
 export function easternClock(time:number) {
  const p=new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).formatToParts(new Date(time))
  const get=(t:string)=>p.find(x=>x.type===t)!.value
@@ -37,7 +40,7 @@ export class StravaSync {
   if(!force&&before?.state==='synced'&&before.lastSuccessDay===day)return before
   try{
    let fetched:SyncedRun[]=[]
-   if(this.env.STRAVA_WEB_COOKIE){fetched=await fetchWebRuns(this.env,before?.lastSuccessAt?Date.parse(before.lastSuccessAt)-86400000:now-7*86400000,fetcher)}else{
+   if(this.env.STRAVA_WEB_COOKIE){fetched=await fetchWebRuns(this.env,syncSince(now,before?.lastSuccessAt),fetcher)}else{
    let auth=await this.storage.get<Auth>('auth')
    if(!auth||auth.expiresAt<now/1000+60){
     const response=await fetcher('https://www.strava.com/oauth/token',{method:'POST',body:new URLSearchParams({client_id:this.env.STRAVA_CLIENT_ID!,client_secret:this.env.STRAVA_CLIENT_SECRET!,grant_type:'refresh_token',refresh_token:auth?.refreshToken||this.env.STRAVA_REFRESH_TOKEN!})})
@@ -49,7 +52,7 @@ export class StravaSync {
    }
    const get=async(url:string)=>{const r=await fetcher(url,{headers:{Authorization:`Bearer ${auth!.accessToken}`}});if(!r.ok)throw Error(`strava_api_${r.status}`);return r.json() as Promise<any>}
    const athlete=await get('https://www.strava.com/api/v3/athlete');if(String(athlete.id)!==(this.env.STRAVA_ATHLETE_ID||'14049141'))throw Error('athlete_mismatch')
-   const last=before?.lastSuccessAt?Date.parse(before.lastSuccessAt)-86400000:now-7*86400000;const after=Math.floor(last/1000);const apiRuns:SyncedRun[]=[]
+   const last=syncSince(now,before?.lastSuccessAt);const after=Math.floor(last/1000);const apiRuns:SyncedRun[]=[]
    for(let page=1;page<=10;page++){
     const activities=await get(`https://www.strava.com/api/v3/athlete/activities?after=${after}&per_page=100&page=${page}`);if(!Array.isArray(activities))throw Error('invalid_activity_page')
     for(const activity of activities){if(activity.athlete?.id&&String(activity.athlete.id)!==String(athlete.id))throw Error('activity_owner_mismatch');const run=normalizeRun(activity);if(run)apiRuns.push(run)}
