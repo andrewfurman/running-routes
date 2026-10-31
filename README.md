@@ -166,3 +166,7 @@ Videos remain dated rendered snapshots; the daily Worker imports GPS/metadata bu
 The October 31 weekly video revision uses a taller, unscaled 1080×1000 Google Maps Static API capture (540×500 at scale 2), with the full attribution footer preserved. Its single heading is “Week ending October 31st”; miles display to one decimal, running time to whole minutes, and the final stats linger for four seconds. The Runs/Bikes/Videos switcher reserves the same metrics space in Videos so its size and position stay stable.
 
 The November 4–5 adjustment is logged in `raw-data/route-research/2026-10-31-rodmor-thursday/`: full Rodmor Road on Wednesday, then Grove Place Thursday. Both calendar entries retain numbered midpoint addresses.
+
+## 19083 street progress
+
+Runs → Info shows estimated street coverage, streets run on, partial/untouched counts and streets outstanding. It recalculates in a background worker using the map's latest running GPS, including delayed runtime imports. See [coverage method and reproducible source](docs/19083-street-coverage.md); the result is separate from official CityStrides completion. The remaining Philadelphia-region bucket is split into nearby towns using offline public place names, while preserving single-run destinations elsewhere.

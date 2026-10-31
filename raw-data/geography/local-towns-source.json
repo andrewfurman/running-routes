@@ -1,0 +1,8 @@
+{
+  "source": "GeoNames cities500",
+  "sourceUrl": "https://download.geonames.org/export/dump/",
+  "license": "CC BY 4.0",
+  "sourceSha256": "fc89c44c54a66fe05d1d0060209bb1dd5090ee1cc86f0bd92c198a606c81103e",
+  "placeCount": 675,
+  "method": "Offline populated-place anchors within 90 km of Havertown. Used only when no named Census region contains an activity median; closest town must be within 12 km. Approximate activity labels, not municipal-clipped mileage. No GPS sent to GeoNames."
+}

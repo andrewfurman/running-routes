@@ -32,6 +32,7 @@ else:
     import re
     bike=json.loads(re.search(r'const bikes=(.*);\n',(ROOT/'Tanstack Start App/legacy/visualization/bikes.html').read_text())[1]);write('bikes.geojson',bike)
 shutil.copyfile(ROOT/'raw-data/boundaries/19083.geojson',PUBLIC/'boundary19083.geojson')
+shutil.copyfile(ROOT/'raw-data/geography/19083-streets.json',PUBLIC/'streets19083.json')
 targets=read('raw-data/plans/current-targets.json');write('targets.json',targets)
 pending_targets=[t for t in targets if not t.get('past')]
 events=[]
