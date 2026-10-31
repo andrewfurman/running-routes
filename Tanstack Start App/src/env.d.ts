@@ -6,5 +6,5 @@ interface VideoObject {
  writeHttpMetadata(headers: Headers): void
 }
 declare module 'cloudflare:workers' {
- export const env: { GOOGLE_MAPS_API_KEY?: string; TIMELAPSE_MEDIA: { get(key:string, options?:{range:Headers}):Promise<VideoObject|null> } }
+ export const env: import('./sync/types').SyncEnv & { GOOGLE_MAPS_API_KEY?: string; TIMELAPSE_MEDIA: { get(key:string, options?:{range:Headers}):Promise<VideoObject|null> } }
 }

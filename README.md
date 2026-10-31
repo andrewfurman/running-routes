@@ -95,3 +95,34 @@ The default app view selects today's scheduled run in America/New_York, or the n
 The Story mileage source is `raw-data/runs/2026-distances.json`: 189 recorded Strava distances from the numeric meter field in the private account-export CSV, plus 12 recorded distances read from the Strava activity pages and cross-checked against downloaded original FIT sessions. The backfill preserves the displayed precision of 0.01 miles rather than deriving mileage from simplified route geometry. Separate GPS lines are never bridged. The raw private CSV/ZIP and original FIT sensor files stay outside Git; only the selected public run IDs, distances and provenance are retained here. Daily totals group by America/New_York date. The current video contains no geometry-estimated distances, so its totals have no tilde. The cumulative curve uses calendar dates on its x axis and starts from zero on January 1; year progress is measured against the full year rather than ending at 100% in October. Final totals are 201 GPS runs on 199 days, 669.17 miles through October 30. The renderer validates source hashes, complete activity coverage and distances before encoding.
 
 `raw-data/runs/2026-strava-recorded-backfill.json` records the 12 activity URLs, displayed mileage precision and original FIT hashes. `prepare_distances.py` automatically applies this recorded backfill when present.
+
+## Daily Strava import on Cloudflare
+
+The Worker has a daily **08:00 America/New_York** cron. Cloudflare schedules run in UTC, so `0 12,13 * * *` invokes the handler at both candidate hours; the handler acts only when Eastern time is 08:00. This covers daylight-saving changes. One named Durable Object serializes imports, stores rotating OAuth tokens privately and prevents repeated successful scheduled imports for the same day.
+
+**Installing the cron is separate from connecting Strava.** `/api/strava-sync/status` reports `needs_connection` until the OAuth client/refresh token are configured and a real import succeeds. Strava currently requires a subscription to create an API app: [official getting-started documentation](https://developers.strava.com/docs/getting-started/). A Chrome login or browser session cookie is not an API connection.
+
+Set these in the ignored root `.env` on your computer, then deploy; never commit their values:
+
+```dotenv
+STRAVA_CLIENT_ID=your_strava_app_id
+STRAVA_CLIENT_SECRET=your_private_client_secret
+STRAVA_REFRESH_TOKEN=your_authorized_refresh_token
+STRAVA_SYNC_ADMIN_TOKEN=your_private_random_admin_token
+```
+
+Authorize only your own athlete, with read-only activity access. Private activities require `activity:read_all`; no write scope is needed. The deploy helper installs these as Worker secrets. The refreshed token is persisted in Durable Object storage before API reads, so rotation survives a later request failure. `STRAVA_ATHLETE_ID=14049141` pins the expected account. OAuth authorization is a required setup step and has not been completed on the current Free Strava account.
+
+The import fetches all pages of recent activities, filters running sports, deduplicates activity IDs and keeps Strava's recorded distance. Its first run checks seven days; subsequent imports overlap the last success by one day to catch delayed syncs. A failed API read preserves the previous checkpoint. Only normalized run distance/time/GPS fields are written to the private R2 bucket at `strava/latest-runs.json`; tokens, heart rate and private notes are not returned by the public run endpoint. The map merges new GPS runs and the app calendar adds recorded activities, including runs without GPS. Existing detailed tracks are preserved when a summary polyline is available. Reopening the app refreshes runtime data.
+
+From the app folder:
+
+```sh
+npm run test
+python3 scripts/imports/strava_sync.py              # connection and last-success status
+python3 scripts/imports/strava_sync.py --run        # protected manual import
+python3 scripts/imports/strava_sync.py --save /private/tmp/strava-runtime-runs.json
+npm run deploy
+```
+
+The daily job refreshes recorded-run data on the map and app calendar. Future-street planning, Google Calendar changes, checked-in snapshots and new video editions continue through the explicit update workflow and tracking PRs. Runtime imports are stored in R2; videos remain dated snapshots. The public status endpoint exposes no credentials, and manual POST imports require the private admin bearer token.

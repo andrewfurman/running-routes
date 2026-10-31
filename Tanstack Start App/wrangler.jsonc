@@ -2,11 +2,47 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "running-routes",
   "compatibility_date": "2026-10-30",
-  "compatibility_flags": ["nodejs_compat"],
-  "main": "@tanstack/react-start/server-entry",
-  "routes": [
-    { "pattern": "runningroutes.aifurman.com", "custom_domain": true }
+  "compatibility_flags": [
+    "nodejs_compat"
   ],
-  "r2_buckets": [{ "binding": "TIMELAPSE_MEDIA", "bucket_name": "running-routes-media" }],
-  "observability": { "enabled": true }
+  "main": "src/server.ts",
+  "routes": [
+    {
+      "pattern": "runningroutes.aifurman.com",
+      "custom_domain": true
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "TIMELAPSE_MEDIA",
+      "bucket_name": "running-routes-media"
+    }
+  ],
+  "observability": {
+    "enabled": true
+  },
+  "triggers": {
+    "crons": [
+      "0 12,13 * * *"
+    ]
+  },
+  "vars": {
+    "STRAVA_ATHLETE_ID": "14049141"
+  },
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "STRAVA_SYNC",
+        "class_name": "StravaSync"
+      }
+    ]
+  },
+  "migrations": [
+    {
+      "tag": "strava-sync-v1",
+      "new_sqlite_classes": [
+        "StravaSync"
+      ]
+    }
+  ]
 }
