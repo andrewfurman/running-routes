@@ -36,7 +36,7 @@ On iPhone, open the site in Safari, tap Share, then Add to Home Screen. The app 
 
 ## Data updates
 
-The current public dataset contains 1,874 GPS runs and 547 GPS rides through October 30, 2026. The cycling source has 1,445 records; 898 have no drawable GPS track. Runs exclude rides and walks. Selected D1 metadata also preserves six runs without GPS; unavailable times and distances are not invented.
+The current public dataset contains 1,875 GPS runs and 547 GPS rides through October 31, 2026. The cycling source has 1,445 records; 898 have no drawable GPS track. Runs exclude rides and walks. Selected D1 metadata also preserves six runs without GPS; unavailable times and distances are not invented.
 
 From the app folder, update cycling data using an official Strava export or a manifest of signed-in GPX downloads:
 
@@ -50,6 +50,8 @@ python3 scripts/planning/build_app_data.py
 `raw-data/plans/current-targets.json` supplies upcoming app targets; `history-targets.json` preserves older targets. The calendar synchronization tool uses the dated plan selected by `raw-data/route-research/current-plan.json`. Keep these views consistent when editing a plan, then rebuild app data.
 
 ## Planning and Google Calendar
+
+Use the calendar's numbered address as a destination anchor, not a prescribed loop. Preview nearby purple-line gaps before heading out, allow opportunistic extra streets, then compare the actual GPS with the planned destination before future scheduling. See the [October 31 planned-vs-actual review](docs/run-reviews/2026-10-31-glen-ridge-road.md): full Glen Ridge Road plus extra Windsor Park Lane coverage.
 
 Prioritize unfinished streets within 19083, vary neighborhoods, target entire connected streets, and generally keep the one-way walking approach under two miles unless an exception was approved. GPS proximity does not guarantee CityStrides completion. The boundary is a Census ZCTA approximation, not exact USPS delivery coverage.
 
@@ -133,7 +135,7 @@ The v3 portrait video keeps one Havertown Google Maps background for the entire 
 
 The header uses a compact vector icon and illustrated Runs / Bikes / Videos controls. City selector opens the recorded areas for the active sport. Selecting a city enters exploration mode: closing X dismisses only the picker, preserves that city and viewport, and leaves the route card hidden. **Upcoming run** explicitly returns to the scheduled plan. Opening the picker again keeps the selected area.
 
-Each option shows the total recorded miles and activity count. Clusters sharing the same named region are combined into one city-selector entry and mileage total. Whole activities are assigned to a GPS area; these are regional clusters (roughly 45 km), not mileage clipped to legal city boundaries. GPS-less activities cannot be assigned to a city. Recorded distances are attached to the generated map assets from `raw-data/runs/activities.json` and `raw-data/bikes/recorded-distances.json`; runtime Strava data can update them. Missing mileage is marked as a partial subtotal rather than estimated from simplified geometry. All 1,874 baseline GPS runs and 547 GPS rides currently have recorded distances.
+Each option shows the total recorded miles and activity count. Clusters sharing the same named region are combined into one city-selector entry and mileage total. Whole activities are assigned to a GPS area; these are regional clusters (roughly 45 km), not mileage clipped to legal city boundaries. GPS-less activities cannot be assigned to a city. Recorded distances are attached to the generated map assets from `raw-data/runs/activities.json` and `raw-data/bikes/recorded-distances.json`; runtime Strava data can update them. Missing mileage is marked as a partial subtotal rather than estimated from simplified geometry. All 1,875 current GPS runs and 547 GPS rides currently have recorded distances.
 
 `raw-data/geography/history-places.json` records cached place names, source IDs and distances to the nearest named place. Names that previously appeared as coordinates were resolved offline using [GeoNames cities500](https://download.geonames.org/export/dump/), licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). No activity coordinates are sent to GeoNames. Distant offshore tracks use named coastal regions rather than a claimed exact city. Existing broad regional labels remain approximate. Refresh after importing history in a new region:
 

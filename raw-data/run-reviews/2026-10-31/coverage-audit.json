@@ -1,0 +1,177 @@
+{
+  "activityId": "20800939076",
+  "date": "2026-10-31T09:23:48.000Z",
+  "recordedDistanceMeters": 6336.18,
+  "movingSeconds": 2376,
+  "elapsedSeconds": 2448,
+  "plannedStreet": "Glen Ridge Road",
+  "navigationAddress": "310 Glen Ridge Rd, Havertown, PA 19083",
+  "closestGpsToPinM": 29.1,
+  "plannedTarget": {
+    "lengthM": 414.1,
+    "nearBeforeM": 0.0,
+    "nearTodayM": 414.1,
+    "newNearCoverageM": 414.1,
+    "beforePct": 0.0,
+    "todayPct": 100.0,
+    "afterPct": 100.0
+  },
+  "streets": [
+    {
+      "street": "Windsor Park Lane",
+      "lengthM": 1230.0,
+      "nearBeforeM": 468.1,
+      "nearTodayM": 871.5,
+      "newNearCoverageM": 712.1,
+      "beforePct": 38.1,
+      "todayPct": 70.9,
+      "afterPct": 96.0
+    },
+    {
+      "street": "Glen Ridge Road",
+      "lengthM": 414.1,
+      "nearBeforeM": 0.0,
+      "nearTodayM": 414.1,
+      "newNearCoverageM": 414.1,
+      "beforePct": 0.0,
+      "todayPct": 100.0,
+      "afterPct": 100.0
+    },
+    {
+      "street": "North Eagle Road",
+      "lengthM": 1040.8,
+      "nearBeforeM": 1040.8,
+      "nearTodayM": 209.4,
+      "newNearCoverageM": 0.0,
+      "beforePct": 100.0,
+      "todayPct": 20.1,
+      "afterPct": 100.0
+    },
+    {
+      "street": "Lincoln Avenue",
+      "lengthM": 806.2,
+      "nearBeforeM": 806.2,
+      "nearTodayM": 806.2,
+      "newNearCoverageM": 0.0,
+      "beforePct": 100.0,
+      "todayPct": 100.0,
+      "afterPct": 100.0
+    },
+    {
+      "street": "Princeton Road",
+      "lengthM": 378.1,
+      "nearBeforeM": 378.1,
+      "nearTodayM": 114.4,
+      "newNearCoverageM": 0.0,
+      "beforePct": 100.0,
+      "todayPct": 30.3,
+      "afterPct": 100.0
+    },
+    {
+      "street": "Harvard Road",
+      "lengthM": 550.4,
+      "nearBeforeM": 550.4,
+      "nearTodayM": 188.4,
+      "newNearCoverageM": 0.0,
+      "beforePct": 100.0,
+      "todayPct": 34.2,
+      "afterPct": 100.0
+    },
+    {
+      "street": "Glen Gary Road",
+      "lengthM": 659.2,
+      "nearBeforeM": 659.2,
+      "nearTodayM": 191.0,
+      "newNearCoverageM": 0.0,
+      "beforePct": 100.0,
+      "todayPct": 29.0,
+      "afterPct": 100.0
+    },
+    {
+      "street": "Manor Road",
+      "lengthM": 917.9,
+      "nearBeforeM": 917.9,
+      "nearTodayM": 334.5,
+      "newNearCoverageM": 0.0,
+      "beforePct": 100.0,
+      "todayPct": 36.4,
+      "afterPct": 100.0
+    },
+    {
+      "street": "Pennsy Trail",
+      "lengthM": 1226.4,
+      "nearBeforeM": 1226.4,
+      "nearTodayM": 224.3,
+      "newNearCoverageM": 0.0,
+      "beforePct": 100.0,
+      "todayPct": 18.3,
+      "afterPct": 100.0
+    }
+  ],
+  "futureTargets": [
+    {
+      "date": "2026-11-01",
+      "street": "Gladstone Road",
+      "lengthM": 496.1,
+      "nearBeforeM": 19.8,
+      "nearTodayM": 0.0,
+      "newNearCoverageM": 0.0,
+      "beforePct": 4.0,
+      "todayPct": 0.0,
+      "afterPct": 4.0
+    },
+    {
+      "date": "2026-11-02",
+      "street": "Walnut Place",
+      "lengthM": 645.9,
+      "nearBeforeM": 511.7,
+      "nearTodayM": 0.0,
+      "newNearCoverageM": 0.0,
+      "beforePct": 79.2,
+      "todayPct": 0.0,
+      "afterPct": 79.2
+    },
+    {
+      "date": "2026-11-02",
+      "street": "Covington Road",
+      "lengthM": 432.3,
+      "nearBeforeM": 337.9,
+      "nearTodayM": 0.0,
+      "newNearCoverageM": 0.0,
+      "beforePct": 78.2,
+      "todayPct": 0.0,
+      "afterPct": 78.2
+    },
+    {
+      "date": "2026-11-03",
+      "street": "Wilson Drive",
+      "lengthM": 653.1,
+      "nearBeforeM": 89.7,
+      "nearTodayM": 0.0,
+      "newNearCoverageM": 0.0,
+      "beforePct": 13.7,
+      "todayPct": 0.0,
+      "afterPct": 13.7
+    },
+    {
+      "date": "2026-11-04",
+      "street": "Grove Place",
+      "lengthM": 293.5,
+      "nearBeforeM": 129.3,
+      "nearTodayM": 0.0,
+      "newNearCoverageM": 0.0,
+      "beforePct": 44.1,
+      "todayPct": 0.0,
+      "afterPct": 44.1
+    }
+  ],
+  "method": {
+    "crs": "EPSG:26918",
+    "sampleSpacingMeters": 5,
+    "proximityMeters": 25,
+    "beforeRunCount": 1874,
+    "historySourceSha256": "58d1afbe247207faee1a5ccef4aaf538f4ac9ccfce5d8a36d57fe470224f0d59",
+    "streetGraphSource": "raw-data/route-research/2026-10-26-spread-plan/street-graph-2026-10-26.json",
+    "notes": "GPS proximity estimate; intersections and parallel streets can create incidental matches. Not official CityStrides completion."
+  }
+}

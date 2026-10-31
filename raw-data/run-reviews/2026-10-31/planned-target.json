@@ -1,0 +1,79 @@
+{
+  "date": "2026-10-31",
+  "number": 1,
+  "street": "Glen Ridge Road",
+  "direction": "SW",
+  "bearing": 246.8,
+  "target_label": "Windsor Park Lane to Windsor Park Lane",
+  "target_coordinates": [
+    [
+      -75.3345273,
+      39.9727579
+    ],
+    [
+      -75.3329309,
+      39.9732973
+    ],
+    [
+      -75.3318408,
+      39.9737248
+    ],
+    [
+      -75.3314117,
+      39.9740208
+    ],
+    [
+      -75.3309759,
+      39.9743453
+    ],
+    [
+      -75.3305705,
+      39.9747838
+    ]
+  ],
+  "target_midpoint": [
+    -75.33232409770024,
+    39.97353526906537
+  ],
+  "target_miles": 0.257,
+  "navigation_address": "310 Glen Ridge Rd, Havertown, PA 19083",
+  "navigation_coordinates": [
+    -75.3324892,
+    39.9736829
+  ],
+  "navigation_url": "https://maps.apple.com/?daddr=310%20Glen%20Ridge%20Rd%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+  "one_way_miles": 1.7,
+  "walking_metres": 2756,
+  "routing_source": "Google walking directions checked October 30, 2026",
+  "coverage_audit_running": {
+    "length_m": 414.1,
+    "covered_25m_pct": 0.0,
+    "sample_spacing_m": 5,
+    "running_track_count": 1874
+  },
+  "citystrides_url": "https://citystrides.com/users/7315/map",
+  "citystrides_status": "19083 priority \u00b7 0.0% near recorded runs; finish the remaining gaps.",
+  "time_label": "5:30\u20136:15 AM",
+  "first_waypoint": {
+    "intersection": "Glen Ridge Road & Windsor Park Lane",
+    "coordinates": [
+      -75.3345273,
+      39.9727579
+    ],
+    "apple_maps": "https://maps.apple.com/?daddr=39.9727579,-75.3345273&dirflg=w"
+  },
+  "second_waypoint": {
+    "intersection": "Glen Ridge Road & Windsor Park Lane",
+    "coordinates": [
+      -75.3305705,
+      39.9747838
+    ],
+    "apple_maps": "https://maps.apple.com/?daddr=39.9747838,-75.3305705&dirflg=w"
+  },
+  "display_date": "Sat Oct 31",
+  "target_scope": "Complete connected street; inside Census ZCTA 19083.",
+  "whole_street": true,
+  "distance_limit_exception": false,
+  "start_time": "05:30",
+  "end_time": "06:15"
+}

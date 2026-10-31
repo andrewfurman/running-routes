@@ -1,12 +1,12 @@
 {
   "year": 2026,
   "units": "meters",
-  "stravaDistanceRecords": 201,
+  "stravaDistanceRecords": 202,
   "stravaCsvRecords": 189,
   "stravaDisplayedRecords": 0,
-  "stravaWebRecords": 12,
+  "stravaWebRecords": 13,
   "gpsEstimatedRecords": 0,
-  "trackSourceSha256": "58d1afbe247207faee1a5ccef4aaf538f4ac9ccfce5d8a36d57fe470224f0d59",
+  "trackSourceSha256": "8058a5ecedca31e91352291a5103dc32dc44de214e3b0d4b3d6bc2d7c6eee44e",
   "stravaSource": "Official account export activities.csv; numeric Distance field in meters",
   "gpsMethod": "Great-circle distance within each saved GPS line; never bridge separate lines. Saved tracks may be simplified.",
   "records": [
@@ -1214,6 +1214,12 @@
       "activityId": "20788741058",
       "date": "2026-10-30",
       "distanceMeters": 6035.69,
+      "distanceSource": "strava_web"
+    },
+    {
+      "activityId": "20800939076",
+      "date": "2026-10-31",
+      "distanceMeters": 6336.18,
       "distanceSource": "strava_web"
     }
   ]

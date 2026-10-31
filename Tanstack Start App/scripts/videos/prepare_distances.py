@@ -12,7 +12,9 @@ def main():
   names=[n for n in z.namelist() if n.endswith('activities.csv')];assert len(names)==1
   rows=list(csv.reader(io.StringIO(z.read(names[0]).decode('utf-8-sig'))));headers=rows[0];distance_columns=[i for i,h in enumerate(headers) if h=='Distance'];assert len(distance_columns)==2,'Expected human-readable km and numeric meter fields in Strava export';di=distance_columns[-1];ai=headers.index('Activity ID');ti=headers.index('Activity Type');official={r[ai]:float(r[di]) for r in rows[1:] if r[ai] in ids and r[di] and r[ti] in {'Run','Trail Run','Virtual Run'}}
  recorded=args.recorded or ROOT/f'raw-data/runs/{args.year}-strava-recorded-backfill.json'
- overrides={r['activityId']:r for r in json.loads(recorded.read_text())['records']} if recorded.exists() else {}
+ snapshot=ROOT/'raw-data/runs/activities.json'
+ overrides={r['activityId']:r for r in json.loads(snapshot.read_text())['runs'] if r.get('distanceSource') in {'strava_export','strava_web','strava_api'}} if snapshot.exists() else {}
+ if recorded.exists():overrides.update({r['activityId']:r for r in json.loads(recorded.read_text())['records']})
  records=[]
  for f in features:
   p=f['properties'];assert p['activity_type'] in {'Run','TrailRun','Trail Run','VirtualRun','Virtual Run'};aid=str(p['activity_id']);lines=f['geometry']['coordinates'] if f['geometry']['type']=='MultiLineString' else [f['geometry']['coordinates']];distance=official.get(aid);origin='strava_export' if aid in official else 'gps_estimate'
