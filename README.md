@@ -170,3 +170,5 @@ The November 4–5 adjustment is logged in `raw-data/route-research/2026-10-31-r
 ## 19083 street progress
 
 Runs → Info shows estimated street coverage, streets run on, partial/untouched counts and streets outstanding. It recalculates in a background worker using the map's latest running GPS, including delayed runtime imports. See [coverage method and reproducible source](docs/19083-street-coverage.md); the result is separate from official CityStrides completion. The remaining Philadelphia-region bucket is split into nearby towns using offline public place names, while preserving single-run destinations elsewhere.
+
+The app uses five bottom tabs: Runs (default), Bikes, Time Lapses, City Stats and Havertown coverage. City Stats combines run count/miles and ride count/miles; city names open running maps when available, while ride-count links open cycling maps. The large route arrows move backward from the first upcoming day through recorded GPS activities and forward into scheduled days. Recorded activity navigation highlights the full saved route. Missing recording days are skipped rather than inventing routes.
