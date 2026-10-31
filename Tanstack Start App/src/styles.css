@@ -20,3 +20,7 @@
 .city-selector-button{min-height:40px;white-space:nowrap}.city-selector-button[aria-expanded=true]{background:#f6f0fc;border-color:#cab7e1;color:var(--purple-dark)}
 @media(max-width:700px){.app-header{grid-template-columns:minmax(0,1fr) auto auto auto}.sport-switch{grid-column:1 / 5}.city-selector-button{grid-row:1;grid-column:3;min-height:36px;font-size:10px;padding:6px 8px}.info-button{grid-column:4}.header-stat{grid-column:2}}
 @media(max-width:380px){.app-header>.header-stat{display:none}}
+
+/* Keep the header below the iPhone status area when viewport-fit=cover is active.
+   Browsers without a top inset retain the existing header and map dimensions. */
+.app-shell{padding-top:env(safe-area-inset-top,0px);background:#fff}
