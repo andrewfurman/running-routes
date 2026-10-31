@@ -28,3 +28,5 @@ python scripts/planning/prepare_local_towns.py --cities /private/path/to/cities5
 ```
 
 The lookup sends no workout coordinates to GeoNames. Public source and CC BY 4.0 attribution are retained in `raw-data/geography/local-towns-source.json` and the Info panel.
+
+The city table fills its tab and scrolls beneath pinned column headers. City names are visually capped at roughly “New York City, NY” width, with full names retained in the button title and accessible name. City-map views link back to City Stats for both sports. Census town boundaries classify residual activity 578893310 as Wilton, CT: its median is in Wilton and about 79.4% of route geometry lies there, versus 20.6% in Ridgefield. The activity still counts once.
