@@ -15,3 +15,8 @@ for label,state,name in [('New York City, NY','36','New York'),('Philadelphia, P
 from shapely.geometry import shape,mapping
 for r in regions:r['geometry']=mapping(shape(r['geometry']).simplify(.00005,preserve_topology=True))
 root=Path(__file__).resolve().parents[3];(root/'raw-data/geography/city-regions.json').write_text(json.dumps({'source':'US Census TIGERweb BAS 2026 / Census 2020 ZCTA','method':'Postal areas for named suburbs; incorporated city boundaries for NYC and Philadelphia. Activities assigned by median GPS coordinate once; mileage is whole recorded activity distance.','regions':regions},indent=2)+'\n');(root/'Tanstack Start App/src/components/city-regions.json').write_text(json.dumps([{'label':r['label'],'geometry':r['geometry']} for r in regions],separators=(',',':'))+'\n');print([(r['label'],len(str(r['geometry']))) for r in regions])
+
+# Keep verified Connecticut town boundaries alongside postal regions.
+extra=root/'raw-data/geography/ct-town-boundaries.json'
+if extra.exists():
+ current=json.loads((root/'Tanstack Start App/src/components/city-regions.json').read_text());current.extend({'label':f['properties']['BASENAME']+', CT','geometry':f['geometry']} for f in json.loads(extra.read_text())['features']);(root/'Tanstack Start App/src/components/city-regions.json').write_text(json.dumps(current,separators=(',',':'))+'\n')
