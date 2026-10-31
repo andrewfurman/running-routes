@@ -36,7 +36,7 @@ On iPhone, open the site in Safari, tap Share, then Add to Home Screen. The app 
 
 ## Data updates
 
-The current public dataset contains 1,875 GPS runs and 547 GPS rides through October 31, 2026. The cycling source has 1,445 records; 898 have no drawable GPS track. Runs exclude rides and walks. Selected D1 metadata also preserves six runs without GPS; unavailable times and distances are not invented.
+The current public dataset contains 1,876 GPS runs and 547 GPS rides through October 31, 2026. The cycling source has 1,445 records; 898 have no drawable GPS track. Runs exclude rides and walks. Selected D1 metadata also preserves six runs without GPS; unavailable times and distances are not invented.
 
 From the app folder, update cycling data using an official Strava export or a manifest of signed-in GPX downloads:
 
@@ -135,7 +135,7 @@ The v3 portrait video keeps one Havertown Google Maps background for the entire 
 
 The header uses a map-pin icon, Running Routes title, illustrated Runs / Bikes / Videos controls, mapped-activity counts and total recorded GPS miles. Video mode hides those activity metrics. City selector opens the recorded areas for the active sport. Selecting a city enters exploration mode: closing X dismisses only the picker, preserves that city and viewport, and leaves the route card hidden. **Upcoming run** explicitly returns to the scheduled plan. Opening the picker again keeps the selected area.
 
-Each option shows the total recorded miles and activity count. Clusters sharing the same named region are combined into one city-selector entry and mileage total. Whole activities are assigned to a GPS area; these are regional clusters (roughly 45 km), not mileage clipped to legal city boundaries. GPS-less activities cannot be assigned to a city. Recorded distances are attached to the generated map assets from `raw-data/runs/activities.json` and `raw-data/bikes/recorded-distances.json`; runtime Strava data can update them. Missing mileage is marked as a partial subtotal rather than estimated from simplified geometry. All 1,875 current GPS runs and 547 GPS rides currently have recorded distances.
+Each option shows the total recorded miles and activity count. Clusters sharing the same named region are combined into one city-selector entry and mileage total. Whole activities are assigned to a GPS area; these are regional clusters (roughly 45 km), not mileage clipped to legal city boundaries. GPS-less activities cannot be assigned to a city. Recorded distances are attached to the generated map assets from `raw-data/runs/activities.json` and `raw-data/bikes/recorded-distances.json`; runtime Strava data can update them. Missing mileage is marked as a partial subtotal rather than estimated from simplified geometry. All 1,876 current GPS runs and 547 GPS rides currently have recorded distances.
 
 `raw-data/geography/history-places.json` records cached place names, source IDs and distances to the nearest named place. Names that previously appeared as coordinates were resolved offline using [GeoNames cities500](https://download.geonames.org/export/dump/), licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). No activity coordinates are sent to GeoNames. Distant offshore tracks use named coastal regions rather than a claimed exact city. Existing broad regional labels remain approximate. Refresh after importing history in a new region:
 
@@ -153,7 +153,7 @@ The selected GeoNames names used by the browser are generated into `src/componen
 
 The header’s circular-arrow **Refresh** button reloads the entire document, not just map data. HTML is served with `Cache-Control: no-store`, so a Home Screen launch/refresh picks up current code and its versioned JS/CSS URLs. Hashed assets and saved videos retain their own caching. Reopen the app once to receive the release that adds the button.
 
-[Open the latest recorded run](https://runningroutes.aifurman.com/?activity=latest), or use **Info → Show latest run**. The requested run is fitted and highlighted in pink; a linked planned street is orange. Upcoming run returns to the schedule. Numeric `?activity=<id>` links select a particular imported activity. Cold launches without an activity query still open today’s upcoming plan.
+[Open the latest recorded run](https://runningroutes.aifurman.com/?activity=latest), or use **Info → Show latest run**. The requested run is fitted and highlighted in bright gold with a dark navy outline; a linked planned street is orange. Upcoming run returns to the schedule. Numeric `?activity=<id>` links select a particular imported activity. Cold launches without an activity query still open today’s upcoming plan.
 
 See [iPhone Home Screen blur research](docs/ios-home-screen-blur.md) for the distinction between the app’s layout and iOS’s status-area fade. The iPhone-only extra 16px clearance is a mitigation requiring a native-device check; Chrome emulation is not proof that the iOS compositor blur is gone.
 
@@ -178,3 +178,7 @@ City Stats uses TanStack Table with three columns: City, Runs and Bike rides. Co
 The Running Routes header remains visible on every tab, including City Stats. Sort controls use Lucide arrow icons; the table header’s accessible sort state continues to indicate ascending or descending order.
 
 Bikes opens on the latest imported ride. Large arrows browse saved cycling activities in recording order, highlighting each full GPS route; the newest ride has no forward planning action. The 8 AM Eastern cloud importer currently handles runs; cycling remains an explicitly refreshed snapshot.
+
+Historical run cards show the recorded Eastern start time and average moving pace. Header mileage totals round to whole miles. Atlantic Ocean clusters share one city entry with their combined counts and recorded mileage.
+
+The weekly video uses Sunday–Saturday calendar boxes showing each run’s start time, miles and pace. The active day highlights in gold while its route draws; completed routes turn dark blue over light-purple earlier history. The October 31 revision includes all six imported runs, including the recovered Tuesday workout.
