@@ -1,6 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router'
 import videos from '../components/timelapses.json'
-const allowed = new Set([...videos.flatMap(v=>[v.videoUrl.split('/').pop()!,v.posterUrl.split('/').pop()!]), 'runs-2026-10-31-week-v3.mp4', 'runs-2026-10-31-week-v3.jpg', 'runs-2026-10-31-week-v2.mp4', 'runs-2026-10-31-week-v2.jpg', 'runs-2026-10-31-week.mp4', 'runs-2026-10-31-week.jpg', 'runs-2026-story-v3.mp4', 'runs-2026-story-v3.jpg', 'runs-2026-story-v2.mp4', 'runs-2026-story-v2.jpg', 'runs-2026.mp4', 'runs-2026.jpg', 'runs-2026-google.mp4', 'runs-2026-google.jpg', 'runs-2026-story-v1.mp4', 'runs-2026-story-v1.jpg'])
+const allowed = new Set([...videos.flatMap(v=>[v.videoUrl.split('/').pop()!,v.posterUrl.split('/').pop()!]), 'runs-2026-10-31-week-v4.mp4', 'runs-2026-10-31-week-v4.jpg', 'runs-2026-10-31-week-v3.mp4', 'runs-2026-10-31-week-v3.jpg', 'runs-2026-10-31-week-v2.mp4', 'runs-2026-10-31-week-v2.jpg', 'runs-2026-10-31-week.mp4', 'runs-2026-10-31-week.jpg', 'runs-2026-story-v3.mp4', 'runs-2026-story-v3.jpg', 'runs-2026-story-v2.mp4', 'runs-2026-story-v2.jpg', 'runs-2026.mp4', 'runs-2026.jpg', 'runs-2026-google.mp4', 'runs-2026-google.jpg', 'runs-2026-story-v1.mp4', 'runs-2026-story-v1.jpg'])
 export const Route = createFileRoute('/media/$file')({
  server: { handlers: { GET: async ({ request, params }) => {
   if (!allowed.has(params.file)) return new Response('Not found', {status:404})
