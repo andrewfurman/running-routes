@@ -19,6 +19,6 @@ Tanstack Start App/dist/
 Tanstack Start App/.output/
 Tanstack Start App/.tanstack/
 
-sample.env
+# The blank root sample.env is tracked; real credentials stay in .env.
 
 *.mp4

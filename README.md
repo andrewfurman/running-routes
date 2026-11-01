@@ -8,13 +8,19 @@ A mobile-friendly TanStack Start app for Andrew Furman's running history, upcomi
 
 - `Tanstack Start App/` contains the entire web app: source, icons, manifest, dependencies and lockfile, Vite/TypeScript/Wrangler configuration, deployment and import/planning/calendar scripts. `legacy/` preserves the earlier HTML visualizations and tools.
 - `raw-data/` contains public GPS tracks, original recent ride GPX exports, boundaries, current targets and dated research.
-- Local `sample.env` documents credential placeholders; local `.env` contains real deployment credentials. Both are ignored and must remain uncommitted.
+- The root [`sample.env`](sample.env) is a committed template with blank Cloudflare, Google Maps and Strava settings. Copy it to root `.env` and fill in credentials locally; `.env` is ignored and must never be committed.
 
 `.nojekyll` was a GitHub Pages marker, unrelated to npm packages. It is no longer needed: this app runs on a Cloudflare Worker.
 
 ## Development and deployment
 
 Use Node.js 22.12 or newer and Python 3. From the repository root:
+
+```sh
+cp -n sample.env .env
+```
+
+Fill in the root `.env` locally. `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` authorize deployment; `GOOGLE_MAPS_API_KEY` configures Maps; `STRAVA_WEB_COOKIE` stores the private browser session, and `STRAVA_SYNC_ADMIN_TOKEN` protects manual imports. These values are deployed as needed by the existing scripts. Do not put real values into `sample.env`. Google Workspace CLI credentials remain in its local credentials file, outside Git.
 
 ```sh
 cd "Tanstack Start App"
@@ -69,7 +75,7 @@ The tool checks unrelated conflicts and preserves existing event reminders. `GOO
 
 ## Public repository and change tracking
 
-This repository is public and includes precise GPS traces and dated destinations with the owner's approval. Never commit environment files, OAuth credentials, refresh tokens or Cloudflare tokens. Run `python3 "Tanstack Start App/scripts/checks/check_public_commit.py"` before every commit; CI checks tracked content too. The ignored `sample.env` uses placeholders only.
+This repository is public and includes precise GPS traces and dated destinations with the owner's approval. Only the blank root `sample.env` template may be committed. Never commit real environment files, OAuth credentials, refresh tokens or Cloudflare tokens. Run `python3 "Tanstack Start App/scripts/checks/check_public_commit.py"` before every commit; CI checks tracked content too. The credential check permits root `sample.env` only with blank assignments; it blocks populated values and all real environment files.
 
 All changes, including new drafts, go through a pull request for tracking. Merge each PR into `main` as soon as the draft works and applicable checks pass, then continue through new PRs. Do not leave draft PRs open. Deploy the merged app with the command above.
 
@@ -102,7 +108,7 @@ The Story mileage source is `raw-data/runs/2026-distances.json`: 189 recorded St
 
 The Worker imports at **08:00 America/New_York**. Cloudflare cron `0 12,13 * * *` covers both UTC offsets; the handler acts only at 08:00 Eastern, including DST transitions. One Durable Object serializes imports and skips a second successful scheduled import on the same day.
 
-The current connection uses the owner's explicitly authorized **private browser session** with Strava's signed-in website, not the official OAuth API. Set `STRAVA_WEB_COOKIE` and `STRAVA_SYNC_ADMIN_TOKEN` only in the ignored root `.env` (blank placeholders in ignored `sample.env`), then run `npm run deploy` inside the app. The deploy helper installs them as private Worker secrets. The session is limited to requests to `www.strava.com`; redirects are not followed. Its signed-in athlete ID must match `STRAVA_ATHLETE_ID=14049141`. Cookies never enter D1, public JSON, Git or logs. When Strava expires the session, status becomes `needs_browser_login`; replace the private secret after signing in again. OAuth remains an optional alternative using private `STRAVA_CLIENT_ID`, `STRAVA_CLIENT_SECRET`, and `STRAVA_REFRESH_TOKEN`.
+The current connection uses the owner's explicitly authorized **private browser session** with Strava's signed-in website, not the official OAuth API. Set `STRAVA_WEB_COOKIE` and `STRAVA_SYNC_ADMIN_TOKEN` only in the ignored root `.env` (blank placeholders in committed root `sample.env`), then run `npm run deploy` inside the app. The deploy helper installs them as private Worker secrets. The session is limited to requests to `www.strava.com`; redirects are not followed. Its signed-in athlete ID must match `STRAVA_ATHLETE_ID=14049141`. Cookies never enter D1, public JSON, Git or logs. When Strava expires the session, status becomes `needs_browser_login`; replace the private secret after signing in again. OAuth remains an optional alternative using private `STRAVA_CLIENT_ID`, `STRAVA_CLIENT_SECRET`, and `STRAVA_REFRESH_TOKEN`.
 
 Every import reconciles at least the previous 30 days, overlapping the last successful checkpoint by 30 days too. This catches workouts that Apple Health uploads to Strava several days after recording; successful sync status does not prove every Watch workout has reached Strava. All pages of matching running activities are read until the cutoff, and IDs are upserted. Numeric recorded distances are used, bikes are excluded, and newly discovered GPS runs download their original GPX. Disconnected GPX segments stay separate. Failures preserve the previous success checkpoint. Website changes or expired sessions can interrupt this integration; check `/api/strava-sync/status` for the last successful import.
 
