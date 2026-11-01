@@ -209,6 +209,6 @@ The sample environment lists only the current browser-session Strava setup (`STR
 
 ### Collapsed map controls and sync credentials
 
-Close the paging card to hide planned orange streets and weekday pins while preserving recorded tracks, the ZIP outline and the current camera. The small Show controls pill floats at the bottom of the map and restores the plan.
+Close the paging card to hide the selected gold activity highlight, planned orange streets and weekday pins while preserving the purple recorded tracks, the ZIP outline and the current camera. Show controls restores the selected activity highlight. The small Show controls pill floats at the bottom of the map and restores the plan.
 
 `STRAVA_WEB_COOKIE` authenticates the Worker to Strava; it is never required from public visitors. `STRAVA_SYNC_ADMIN_TOKEN` separately protects the public manual-import endpoint. Keeping the cookie private does not authenticate callers of that endpoint. The scheduled 8 AM import does not need the admin token, but manual imports do. Keep both private; do not reuse the Strava cookie as an endpoint password.
