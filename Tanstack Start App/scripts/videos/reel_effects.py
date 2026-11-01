@@ -13,7 +13,7 @@ def celebration(image, progress, center, footer_height=48):
     layer=Image.new('RGBA',image.size);draw=ImageDraw.Draw(layer)
     cx,cy=center
     # Expanding, overlapping flame lobes: orange edges, gold body, pale hot core.
-    growth=math.sin(min(1,t/.42)*math.pi/2)
+    growth=math.sin(min(1,t/.13)*math.pi/2)
     radius=350*growth
     fade=min(1,t/.12)*max(0,min(1,(1-t)/.48))
     for scale,color in [(1.25,(227,63,13)),(1,(255,119,13)),(.7,(255,195,38)),(.38,(255,242,171))]:

@@ -30,7 +30,8 @@ def text(draw,pos,value,size=24,color=MUTED):draw.text(pos,value,fill=color,font
 def lines_of(feature):return feature['geometry']['coordinates'] if feature['geometry']['type']=='MultiLineString' else [feature['geometry']['coordinates']]
 def clear_attribution(layer):layer.paste((0,0,0,0),(0,MAP_H-48,W,MAP_H))
 def main():
- ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('--as-of',default=None);ap.add_argument('--version',default='v8');ap.add_argument('--output',type=Path,required=True);ap.add_argument('--basemaps',type=Path,required=True);args=ap.parse_args();args.output.mkdir(parents=True,exist_ok=True)
+ ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('--as-of',default=None);ap.add_argument('--version',default='v9');ap.add_argument('--output',type=Path,required=True);ap.add_argument('--basemaps',type=Path,required=True);ap.add_argument('--audio-cues',type=Path,help='Timing and pulse values only; output stays silent');ap.add_argument('--stats-hold',type=float,default=8);args=ap.parse_args();args.output.mkdir(parents=True,exist_ok=True)
+ cues=json.loads(args.audio_cues.read_text()) if args.audio_cues else None
  metadata_path=ROOT/'raw-data/runs/activities.json';data=json.loads(metadata_path.read_text());as_of=args.as_of or datetime.now(ZONE).date().isoformat();_,calendar_end=calendar_week(as_of);stats=weekly_stats([r for r in data['runs'] if r['localDate']<=as_of],calendar_end.isoformat());start=date.fromisoformat(stats['windowStart']);end=date.fromisoformat(stats['windowEnd']);tracks_path=ROOT/'raw-data/runs/tracks.geojson';source=tracks_path.read_bytes();assert hashlib.sha256(source).hexdigest()==data['trackSourceSha256'];features=json.loads(source)['features'];lookup={str(f['properties']['activity_id']):f for f in features};records={r['activityId']:r for r in data['runs']};area=next(a for a in json.loads(args.basemaps.read_text()) if a['id']=='havertown');base=Image.open(args.basemaps.parent/area['file']).convert('RGBA');assert base.size==(W,MAP_H)
  # Slightly tighten the map while keeping the original provider footer intact.
  footer=base.crop((0,MAP_H-48,W,MAP_H));crop_w=W/MAP_ZOOM;crop_h=MAP_H/MAP_ZOOM
@@ -49,7 +50,7 @@ def main():
  start_labels=progressive_average_starts(rows,end.isoformat())
  name=f'runs-{as_of}-week-{args.version}';video=args.output/(name+'.mp4');encoder=subprocess.Popen([imageio_ffmpeg.get_ffmpeg_exe(),'-y','-loglevel','error','-f','rawvideo','-vcodec','rawvideo','-s',f'{W}x{H}','-pix_fmt','rgb24','-r',str(FPS),'-i','-','-an','-c:v','libx264','-preset','fast','-crf','20','-pix_fmt','yuv420p','-movflags','+faststart',str(video)],stdin=subprocess.PIPE);frames=0
  period=f'{start.strftime("%b")} {start.day} – {end.strftime("%b")} {end.day}, {end.year}'
- def frame(index,fraction,cumulative,seconds,active=True,final=False,highlight_position=None,shown_count=None,completed_count=None,boundary_fraction=1,celebration_progress=None,stats_alpha=1):
+ def frame(index,fraction,cumulative,seconds,active=True,final=False,highlight_position=None,shown_count=None,completed_count=None,boundary_fraction=1,celebration_progress=None,stats_alpha=1,stats_pulse=0):
   record=rows[index];current=Image.alpha_composite(old_map,blue);layer=Image.new('RGBA',(W,MAP_H))
   border=outline
   if boundary_fraction<1:
@@ -94,9 +95,12 @@ def main():
   draw.rounded_rectangle((highlight_x,1332,highlight_x+136,1578),radius=10,outline=GOLD,width=3)
   # All summary values share the same horizontal baseline.
   metrics=[('WEEKLY MILES' if final else 'MILES DRAWN',f'{stats["totalMiles"] if final else cumulative:,.1f}'),('TOTAL RUNNING TIME',running_time(stats['movingSeconds'] if final else seconds)),('AVERAGE START',start_labels[shown_count])]
+  if final and stats_alpha>0:
+   tint=round(70+100*stats_pulse);draw.rounded_rectangle((38,1604,1042,1762),radius=20,fill='#1a2333',outline=(tint,round(tint*.82),48),width=2+round(2*stats_pulse))
   for x,(label,value) in zip((60,400,740),metrics):
+   if stats_alpha<=0:continue
    def faded(color):return tuple(round(b+(v-b)*stats_alpha) for b,v in zip(ImageColor.getrgb(BG),ImageColor.getrgb(color)))
-   text(draw,(x,1630),label,20,faded(MUTED));text(draw,(x,1670),value,44,faded(WHITE))
+   text(draw,(x,1630-round(3*stats_pulse)),label,20,faded(MUTED));text(draw,(x,1670-round(4*stats_pulse)),value,44+round(2*stats_pulse),faded(WHITE))
   return image
  def emit(image,count=1):
   nonlocal frames
@@ -115,13 +119,23 @@ def main():
     emit(frame(index,0,cumulative,seconds,active=False,highlight_position=previous_day+(next_day-previous_day)*eased,shown_count=index,completed_count=index))
   previous_day=next_day
   miles=record['distanceMeters']/1609.344
-  for step in range(48):
-   fraction=(step+1)/48;emit(frame(index,fraction,cumulative+miles*fraction,seconds+record['movingSeconds']*fraction))
+  draw_frames=64 if cues else 48
+  for step in range(draw_frames):
+   fraction=(step+1)/draw_frames;emit(frame(index,fraction,cumulative+miles*fraction,seconds+record['movingSeconds']*fraction))
   cumulative+=miles;seconds+=record['movingSeconds'];draw_track(ImageDraw.Draw(blue),week_lines[record['activityId']],area,BLUE,5);clear_attribution(blue);emit(frame(index,1,cumulative,seconds,active=False),8);print(f'Drawn {index+1}/{len(rows)} · {record["localDate"]}',flush=True)
+ # Stretch the final map hold so the fireball begins on the reference bass drop.
+ if cues:
+  cue_frame=round(cues['dropSeconds']*FPS)
+  if frames>cue_frame:raise ValueError('Audio drop is earlier than the completed week; choose a later cue')
+  emit(frame(len(rows)-1,1,cumulative,seconds,active=False),cue_frame-frames)
+ explosion_start=frames/FPS
  celebration_frames=36 if rows[-1]['localDate']==end.isoformat() else 0
  for step in range(celebration_frames):emit(frame(len(rows)-1,1,cumulative,seconds,active=False,final=True,celebration_progress=(step+1)/celebration_frames,stats_alpha=0))
- for step in range(96):emit(frame(len(rows)-1,1,cumulative,seconds,active=False,final=True,stats_alpha=min(1,(step+1)/12)))
+ for step in range(round(args.stats_hold*FPS)):
+  pulse_index=round(frames/FPS*cues['sampleRate']) if cues else -1
+  pulse=cues['pulse'][pulse_index] if cues and 0<=pulse_index<len(cues['pulse']) else 0
+  emit(frame(len(rows)-1,1,cumulative,seconds,active=False,final=True,stats_alpha=min(1,(step+1)/12),stats_pulse=pulse))
  final=frame(len(rows)-1,1,cumulative,seconds,active=False,final=True);encoder.stdin.close();assert encoder.wait()==0;poster=args.output/(name+'.jpg');intro.save(poster,quality=93);final.save(args.output/(name+'-final.jpg'),quality=93)
- public={k:v for k,v in stats.items() if k!='records'};public.update(id=name,title='Week ending '+end.strftime('%B')+' '+str(end.day)+('th' if 10<=end.day%100<=20 else {1:'st',2:'nd',3:'rd'}.get(end.day%10,'th')),period='calendar-week',asOf=as_of,width=W,height=H,mapHeight=MAP_H,mapZoomFactor=MAP_ZOOM,introTitle='October 31st progress: trying to run every road in Havertown',introSeconds=0,celebrationSeconds=celebration_frames/FPS,statsRevealSeconds=.5,audio='silent master; add music in Instagram',posterFrame='map header',boundary='Census 2020 ZCTA 19083',boundarySourceSha256=hashlib.sha256(boundary_source).hexdigest(),dayTransitionSeconds=16/FPS,progressiveAverageStart=True,aspectRatio='9:16',durationSeconds=frames/FPS,finalStatsHoldSeconds=4,mappedRunCount=mapped,allWeekRoutesFit=all_fit,priorLocalHistoryRunCount=prior_count,firstDate=stats['windowStart'],lastDate=stats['windowEnd'],basemapProvider='Google Maps',mapArea='Havertown',palette={'earlierHistory':LAVENDER,'completedWeek':BLUE,'activeRun':GOLD},sourceSha256=hashlib.sha256(source).hexdigest(),metadataSourceSha256=hashlib.sha256(metadata_path.read_bytes()).hexdigest(),videoSha256=hashlib.sha256(video.read_bytes()).hexdigest(),videoBytes=video.stat().st_size,videoUrl=f'/media/{name}.mp4',posterUrl=f'/media/{name}.jpg',description='The progress goal is overlaid on the map from the first frame. Saturday ends with a large animated fireball and map shake that clear before the final stats fade in. Silent Reel master: add music in Instagram when posting. Sunday–Saturday calendar snapshot: older GPS history stays light purple, each active run draws in gold then turns dark blue. The teal 19083 ZIP outline draws in at the start. A gold day outline slides smoothly across the Sunday–Saturday calendar before each route begins. Average start updates using only the runs revealed so far. The map is zoomed in 12%. Weekly mileage, total running time and average start share one row and linger for four seconds. Mileage and pace use recorded Strava distance and moving time; average start is the circular mean in America/New_York. All weekly mileage is counted even if a run is outside the fixed Havertown map.')
+ public={k:v for k,v in stats.items() if k!='records'};public.update(id=name,title='Week ending '+end.strftime('%B')+' '+str(end.day)+('th' if 10<=end.day%100<=20 else {1:'st',2:'nd',3:'rd'}.get(end.day%10,'th')),period='calendar-week',asOf=as_of,width=W,height=H,mapHeight=MAP_H,mapZoomFactor=MAP_ZOOM,introTitle='October 31st progress: trying to run every road in Havertown',introSeconds=0,celebrationSeconds=celebration_frames/FPS,statsRevealSeconds=.5,audio='silent master; add music in Instagram',posterFrame='map header',boundary='Census 2020 ZCTA 19083',boundarySourceSha256=hashlib.sha256(boundary_source).hexdigest(),dayTransitionSeconds=16/FPS,progressiveAverageStart=True,aspectRatio='9:16',durationSeconds=frames/FPS,finalStatsHoldSeconds=args.stats_hold,explosionOnsetSeconds=explosion_start,musicTiming={'referenceUrl':cues['referenceUrl'],'songStartSeconds':cues['songStartSeconds'],'dropSeconds':cues['dropSeconds'],'frameRoundingErrorSeconds':round(explosion_start-cues['dropSeconds'],4),'audioIncluded':False,'statsPulse':'derived bass attacks'} if cues else None,mappedRunCount=mapped,allWeekRoutesFit=all_fit,priorLocalHistoryRunCount=prior_count,firstDate=stats['windowStart'],lastDate=stats['windowEnd'],basemapProvider='Google Maps',mapArea='Havertown',palette={'earlierHistory':LAVENDER,'completedWeek':BLUE,'activeRun':GOLD},sourceSha256=hashlib.sha256(source).hexdigest(),metadataSourceSha256=hashlib.sha256(metadata_path.read_bytes()).hexdigest(),videoSha256=hashlib.sha256(video.read_bytes()).hexdigest(),videoBytes=video.stat().st_size,videoUrl=f'/media/{name}.mp4',posterUrl=f'/media/{name}.jpg',description='The progress goal is overlaid on the map from the first frame. Saturday ends with a large animated fireball and map shake that clear before the final stats fade in. Silent Reel master: add music in Instagram when posting. Sunday–Saturday calendar snapshot: older GPS history stays light purple, each active run draws in gold then turns dark blue. The teal 19083 ZIP outline draws in at the start. A gold day outline slides smoothly across the Sunday–Saturday calendar before each route begins. Average start updates using only the runs revealed so far. The map is zoomed in 12%. Weekly mileage, total running time and average start share one row and linger for eight seconds with an audio-derived bass pulse. The fireball begins at the reference song drop; add the original audio from its beginning in Instagram and check alignment because platform trims can differ. Mileage and pace use recorded Strava distance and moving time; average start is the circular mean in America/New_York. All weekly mileage is counted even if a run is outside the fixed Havertown map.')
  (args.output/(name+'.json')).write_text(json.dumps(public,indent=2)+'\n');print(f'Created {video}: {frames/FPS:.2f}s · {stats["totalMiles"]:.2f} mi · {stats["averageStartLabel"]} average start · {pace(stats["averagePaceSecondsPerMile"])}')
 if __name__=='__main__':main()

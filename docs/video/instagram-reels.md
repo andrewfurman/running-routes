@@ -69,3 +69,11 @@ All script paths in the final two steps are relative to `Tanstack Start App/`. E
 ## Map-first update (November 1)
 
 The weekly Reel begins directly on the map with the progress date and the goal of running every road in Havertown as a light text overlay. Do not prepend a separate dark title card. After the final Saturday route, use a large orange/gold fireball with a hot pale core and sparks, then let it clear before the weekly statistics fade in. Preserve the map attribution throughout. The v8 master is silent and 24.5 seconds long.
+
+## FE!N timing edit (v9)
+
+Use the original studio recording of **FE!N (feat. Playboi Carti)**, not the remix, live version or official music-video edit. Reference: [official artist audio](https://www.youtube.com/watch?v=U-l4ya3ejko). A private first-40-second excerpt was used for analysis. The sustained bass entrance is at approximately **23.44 s** in that reference. The silent master begins the fireball at **23.458 s** (24 fps frame rounding), completes the explosion, and holds weekly stats for **eight seconds** with a restrained bass-attack pulse. The full video is about **32.96 seconds**.
+
+In Instagram, add the original song starting at **0:00**, and check that the strong bass entrance lands on the fireball at **0:23.46**. Instagram's available trim/version can differ; if necessary slide its audio until those two cues coincide. The public file has no embedded music. No Instagram post was made.
+
+`raw-data/videos/fen-timing-cues.json` contains only derived bass-attack strengths and timing metadata, not audio. Original reference audio stays outside Git. Rebuild cues from a local reference with `scripts/videos/build_audio_cues.py`, then render with `--audio-cues raw-data/videos/fen-timing-cues.json --stats-hold 8`. Do not substitute a guessed BPM for the measured pulse.
