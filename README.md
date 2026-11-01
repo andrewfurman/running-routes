@@ -206,3 +206,9 @@ Historical run and ride cards show only the date and a compact distance/pace/sta
 On desktop (1024 px and wider), navigation sits in the header; mobile retains bottom tabs. Runs and Rides open with the paging card visible. Close its X to explore without the card, keeping the selected map view; Show controls restores it.
 
 The sample environment lists only the current browser-session Strava setup (`STRAVA_WEB_COOKIE` and `STRAVA_SYNC_ADMIN_TOKEN`), with no unused OAuth client/refresh-token placeholders. Selecting a city’s rides explicitly clears the latest-ride selection so the map opens that city; the Rides tab itself still defaults to the latest ride.
+
+### Collapsed map controls and sync credentials
+
+Close the paging card to hide planned orange streets and weekday pins while preserving recorded tracks, the ZIP outline and the current camera. The small Show controls pill floats at the bottom of the map and restores the plan.
+
+`STRAVA_WEB_COOKIE` authenticates the Worker to Strava; it is never required from public visitors. `STRAVA_SYNC_ADMIN_TOKEN` separately protects the public manual-import endpoint. Keeping the cookie private does not authenticate callers of that endpoint. The scheduled 8 AM import does not need the admin token, but manual imports do. Keep both private; do not reuse the Strava cookie as an endpoint password.
