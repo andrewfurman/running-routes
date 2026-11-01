@@ -1,5 +1,5 @@
 import unittest
-from weekly_stats import weekly_stats,calendar_week
+from weekly_stats import weekly_stats,calendar_week,progressive_average_starts
 class WeeklyStatsTests(unittest.TestCase):
  def record(self,id,date,miles,seconds):return {'activityId':id,'date':date,'distanceMeters':miles*1609.344,'movingSeconds':seconds,'elapsedSeconds':seconds+60}
  def test_inclusive_eastern_week_and_weighted_pace(self):
@@ -9,6 +9,9 @@ class WeeklyStatsTests(unittest.TestCase):
   rows=[self.record('a','2026-10-27T03:50:00Z',1,600),self.record('b','2026-10-27T04:10:00Z',1,600)];self.assertEqual(weekly_stats(rows,'2026-10-31')['averageStartLabel'],'12:00 AM')
  def test_average_start_uses_local_clock_across_dst(self):
   rows=[self.record('a','2026-10-31T09:00:00Z',1,600),self.record('b','2026-11-01T10:00:00Z',1,600)];self.assertEqual(weekly_stats(rows,'2026-11-01')['averageStartLabel'],'5:00 AM')
+ def test_progressive_start_uses_only_revealed_runs(self):
+  rows=[self.record('a','2026-10-26T09:00:00Z',1,600),self.record('b','2026-10-27T10:00:00Z',1,600),self.record('c','2026-10-28T11:00:00Z',1,600)]
+  self.assertEqual(progressive_average_starts(rows,'2026-10-31'),['—','5:00 AM','5:30 AM','6:00 AM'])
  def test_missing_time_cannot_produce_false_pace(self):
   with self.assertRaises(ValueError):weekly_stats([self.record('a','2026-10-31T09:00:00Z',3,0)],'2026-10-31')
 class CalendarWeekTests(unittest.TestCase):

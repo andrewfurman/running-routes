@@ -23,3 +23,7 @@ def pace(seconds):return duration(seconds)+' /mi' if seconds is not None else 'â
 def calendar_week(as_of):
  day=date.fromisoformat(as_of);end=day+timedelta(days=(5-day.weekday())%7)
  return end-timedelta(days=6),end
+
+def progressive_average_starts(records,as_of):
+ """Average only revealed runs, never future days; preserve Eastern/DST handling."""
+ return ['â€”']+[weekly_stats(records[:count],as_of)['averageStartLabel'] for count in range(1,len(records)+1)]
