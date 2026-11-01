@@ -26,7 +26,7 @@ function points(collection?: FeatureCollection): Position[] {
   }
   return result
 }
-interface Props { missingRoads?: FeatureCollection; coverageMode?: boolean; activityCardVisible?: boolean; provider: MapProvider; mapsKey: string; tracks?: FeatureCollection; targets: Target[]; boundary?: any; selected: number; focusRequest: number; historyRequest: number; historyArea?: Position[]; activityId?: string; onSelect: (index: number) => void; onProviderFailure: (reason: string) => void }
+interface Props { plansVisible?: boolean; missingRoads?: FeatureCollection; coverageMode?: boolean; activityCardVisible?: boolean; provider: MapProvider; mapsKey: string; tracks?: FeatureCollection; targets: Target[]; boundary?: any; selected: number; focusRequest: number; historyRequest: number; historyArea?: Position[]; activityId?: string; onSelect: (index: number) => void; onProviderFailure: (reason: string) => void }
 export function MapView(props: Props) {
   const host = useRef<HTMLDivElement>(null)
   const engine = useRef<any>(null)
@@ -83,6 +83,7 @@ export function MapView(props: Props) {
     for(const l of e.routeLines)e.type==='google'?l.setMap(null):e.map.removeLayer(l)
     for(const m of e.markers)e.type==='google'?m.setMap(null):e.map.removeLayer(m)
     e.routeLines=[];e.markers=[]
+    if(props.plansVisible===false)return
     props.targets.forEach((t,i)=>{
       const pos=t.navigation_coordinates||t.target_midpoint||t.target_coordinates[0]
       const day=new Date(`${t.date}T12:00:00`).toLocaleDateString('en-US',{weekday:'short'})
@@ -101,7 +102,7 @@ export function MapView(props: Props) {
     if(ps.length)e.fit(ps)
     else if(props.coverageMode){const outline=props.boundary?.type==='FeatureCollection'?props.boundary:{type:'FeatureCollection',features:props.boundary?[props.boundary]:[]};e.fit(points(outline),35)}
     else e.fit(points(props.tracks).filter(([lng,lat])=>lng>-75.39&&lng< -75.24&&lat>39.92&&lat<40.04))
-  },[ready,props.targets,props.coverageMode,props.boundary,props.activityId,props.historyArea])
+  },[ready,props.targets,props.plansVisible,props.coverageMode,props.boundary,props.activityId,props.historyArea])
   useEffect(()=>{
     const e=engine.current;if(!e||!props.missingRoads)return
     if(e.type==='google'){
@@ -115,7 +116,7 @@ export function MapView(props: Props) {
     return()=>{e.map.removeLayer(layer)}
   },[ready,props.missingRoads])
   useEffect(()=>{const e=engine.current;if(!e)return;e.routeLines.forEach((line:any,i:number)=>e.type==='google'?line.setOptions({strokeColor:i===props.selected?'#e96b1d':'#e8a364',strokeWeight:i===props.selected?7:4}):line.setStyle({color:i===props.selected?'#e96b1d':'#e8a364',weight:i===props.selected?7:4}))},[ready,props.selected,props.targets])
-  useEffect(()=>{if(!props.historyArea&&!props.activityId&&props.focusRequest&&props.targets[props.selected])engine.current?.fit(props.targets.filter(t=>t.date===props.targets[props.selected].date).flatMap(t=>t.target_coordinates),100,true)},[props.focusRequest,ready,props.targets,props.selected,props.historyArea,props.activityId])
+  useEffect(()=>{if(props.plansVisible!==false&&!props.historyArea&&!props.activityId&&props.focusRequest&&props.targets[props.selected])engine.current?.fit(props.targets.filter(t=>t.date===props.targets[props.selected].date).flatMap(t=>t.target_coordinates),100,true)},[props.focusRequest,ready,props.targets,props.selected,props.historyArea,props.activityId])
   useEffect(()=>{if(props.historyRequest&&props.historyArea?.length)engine.current?.fit(props.historyArea)},[props.historyRequest,props.historyArea,ready])
   useEffect(()=>{
     const e=engine.current;if(!e||props.historyArea||!props.activityId||!props.tracks)return

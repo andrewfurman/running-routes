@@ -65,3 +65,7 @@ The environment needs Pillow, `imageio_ffmpeg`, and the renderer’s existing Py
 7. Download the current master, preview it in Instagram, select the soundtrack excerpt, check title/stats visibility and choose the intro as the cover. Publishing requires a separate user request.
 
 All script paths in the final two steps are relative to `Tanstack Start App/`. Each rendition records source hashes, recorded totals, duration, palette and edit settings in its metadata so later edits are reproducible.
+
+## Map-first update (November 1)
+
+The weekly Reel begins directly on the map with the progress date and the goal of running every road in Havertown as a light text overlay. Do not prepend a separate dark title card. After the final Saturday route, use a large orange/gold fireball with a hot pale core and sparks, then let it clear before the weekly statistics fade in. Preserve the map attribution throughout. The v8 master is silent and 24.5 seconds long.

@@ -9,7 +9,7 @@ from render_year import ROOT,mercator
 from render_year import font
 from reel_effects import celebration
 from weekly_stats import weekly_stats,duration,pace,ZONE,calendar_week,progressive_average_starts
-W,H,MAP_H,MAP_Y,FPS=1080,1920,1200,150,24
+W,H,MAP_H,MAP_Y,FPS=1080,1920,1200,0,24
 MAP_ZOOM=1.12
 BG='#141c2b';WHITE='#f7f9ff';MUTED='#acb8cb';GOLD='#f6c553';BLUE='#174f9c';LAVENDER='#ad91cf'
 def xy(area,p):
@@ -30,7 +30,7 @@ def text(draw,pos,value,size=24,color=MUTED):draw.text(pos,value,fill=color,font
 def lines_of(feature):return feature['geometry']['coordinates'] if feature['geometry']['type']=='MultiLineString' else [feature['geometry']['coordinates']]
 def clear_attribution(layer):layer.paste((0,0,0,0),(0,MAP_H-48,W,MAP_H))
 def main():
- ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('--as-of',default=None);ap.add_argument('--version',default='v7');ap.add_argument('--output',type=Path,required=True);ap.add_argument('--basemaps',type=Path,required=True);args=ap.parse_args();args.output.mkdir(parents=True,exist_ok=True)
+ ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('--as-of',default=None);ap.add_argument('--version',default='v8');ap.add_argument('--output',type=Path,required=True);ap.add_argument('--basemaps',type=Path,required=True);args=ap.parse_args();args.output.mkdir(parents=True,exist_ok=True)
  metadata_path=ROOT/'raw-data/runs/activities.json';data=json.loads(metadata_path.read_text());as_of=args.as_of or datetime.now(ZONE).date().isoformat();_,calendar_end=calendar_week(as_of);stats=weekly_stats([r for r in data['runs'] if r['localDate']<=as_of],calendar_end.isoformat());start=date.fromisoformat(stats['windowStart']);end=date.fromisoformat(stats['windowEnd']);tracks_path=ROOT/'raw-data/runs/tracks.geojson';source=tracks_path.read_bytes();assert hashlib.sha256(source).hexdigest()==data['trackSourceSha256'];features=json.loads(source)['features'];lookup={str(f['properties']['activity_id']):f for f in features};records={r['activityId']:r for r in data['runs']};area=next(a for a in json.loads(args.basemaps.read_text()) if a['id']=='havertown');base=Image.open(args.basemaps.parent/area['file']).convert('RGBA');assert base.size==(W,MAP_H)
  # Slightly tighten the map while keeping the original provider footer intact.
  footer=base.crop((0,MAP_H-48,W,MAP_H));crop_w=W/MAP_ZOOM;crop_h=MAP_H/MAP_ZOOM
@@ -68,49 +68,42 @@ def main():
    current=celebration(current,celebration_progress,center)
   image=Image.new('RGB',(W,H),BG);draw=ImageDraw.Draw(image)
   suffix='th' if 10<=end.day%100<=20 else {1:'st',2:'nd',3:'rd'}.get(end.day%10,'th')
-  text(draw,(60,60),f'Week ending {end.strftime("%B")} {end.day}{suffix}',49,WHITE)
   image.paste(current.convert('RGB'),(0,MAP_Y));draw=ImageDraw.Draw(image)
-  for x,color,label in [(60,LAVENDER,'BEFORE THIS WEEK'),(415,BLUE,'COMPLETED THIS WEEK'),(830,GOLD,'DRAWING NOW')]:draw.line((x,1400,x+28,1400),fill=color,width=5);text(draw,(x+40,1388),label,16,MUTED)
+  # The goal belongs on the real map, with a light panel for legibility.
+  draw.rounded_rectangle((32,MAP_Y+22,1048,MAP_Y+168),radius=22,fill='#fffffff0',outline='#ded4e8',width=2)
+  text(draw,(58,MAP_Y+40),f'{end.strftime("%B")} {end.day}{suffix} progress:',38,'#34244f')
+  text(draw,(58,MAP_Y+92),'Trying to run every road in Havertown',38,'#34244f')
+  for x,color,label in [(60,LAVENDER,'BEFORE THIS WEEK'),(415,BLUE,'COMPLETED THIS WEEK'),(830,GOLD,'DRAWING NOW')]:draw.line((x,1300,x+28,1300),fill=color,width=5);text(draw,(x+40,1288),label,16,MUTED)
   completed={r['localDate'] for r in rows[:completed_count]};active_day=record['localDate'] if active else None
   # A shared weekday header sits above the aligned date/detail cells.
-  draw.rounded_rectangle((50,1430,1030,1680),radius=16,fill='#1a2333',outline='#354155',width=2)
-  draw.rounded_rectangle((50,1430,1030,1478),radius=16,fill='#283449')
-  draw.rectangle((51,1454,1029,1478),fill='#283449')
+  draw.rounded_rectangle((50,1330,1030,1580),radius=16,fill='#1a2333',outline='#354155',width=2)
+  draw.rounded_rectangle((50,1330,1030,1378),radius=16,fill='#283449')
+  draw.rectangle((51,1354,1029,1378),fill='#283449')
   for day in range(7):
    when=start+timedelta(days=day);x=50+day*140;key=when.isoformat();day_runs=[r for r in rows if r['localDate']==key];is_active=key==active_day;color=GOLD if is_active else BLUE if key in completed else '#354155';fill='#3b3422' if is_active else '#1d2b43' if key in completed else '#1a2333'
-   if day:draw.line((x,1430,x,1680),fill='#354155',width=2)
+   if day:draw.line((x,1330,x,1580),fill='#354155',width=2)
    heading=when.strftime('%a').upper();font_heading=font(20);heading_w=draw.textlength(heading,font=font_heading)
-   text(draw,(x+(140-heading_w)/2,1441),heading,20,GOLD if is_active else WHITE)
-   draw.rectangle((x+2,1480,x+138,1678),fill=fill)
-   text(draw,(x+14,1489),str(when.day),28,GOLD if is_active else WHITE)
-   if not day_runs:text(draw,(x+14,1565),'No run',20,MUTED)
+   text(draw,(x+(140-heading_w)/2,1341),heading,20,GOLD if is_active else WHITE)
+   draw.rectangle((x+2,1380,x+138,1578),fill=fill)
+   text(draw,(x+14,1389),str(when.day),28,GOLD if is_active else WHITE)
+   if not day_runs:text(draw,(x+14,1465),'No run',20,MUTED)
    for slot,run in enumerate(day_runs):
-    stamp=datetime.fromisoformat(run['date'].replace('Z','+00:00')).astimezone(ZONE);clock=f'{stamp.hour%12 or 12}:{stamp.minute:02d} '+('AM' if stamp.hour<12 else 'PM');miles=run['distanceMeters']/1609.344;y=1535+slot*(92 if len(day_runs)==1 else 65)
+    stamp=datetime.fromisoformat(run['date'].replace('Z','+00:00')).astimezone(ZONE);clock=f'{stamp.hour%12 or 12}:{stamp.minute:02d} '+('AM' if stamp.hour<12 else 'PM');miles=run['distanceMeters']/1609.344;y=1435+slot*(92 if len(day_runs)==1 else 65)
     text(draw,(x+14,y),clock,20 if len(day_runs)==1 else 16,WHITE);text(draw,(x+14,y+(32 if len(day_runs)==1 else 21)),f'{miles:.1f} mi',24 if len(day_runs)==1 else 17,WHITE);text(draw,(x+14,y+(65 if len(day_runs)==1 else 43)),pace(run['movingSeconds']/miles if miles else None).replace(' /mi','/mi'),18,GOLD if is_active else MUTED)
   highlight_x=52+highlight_position*140
-  draw.rounded_rectangle((highlight_x,1432,highlight_x+136,1678),radius=10,outline=GOLD,width=3)
+  draw.rounded_rectangle((highlight_x,1332,highlight_x+136,1578),radius=10,outline=GOLD,width=3)
   # All summary values share the same horizontal baseline.
   metrics=[('WEEKLY MILES' if final else 'MILES DRAWN',f'{stats["totalMiles"] if final else cumulative:,.1f}'),('TOTAL RUNNING TIME',running_time(stats['movingSeconds'] if final else seconds)),('AVERAGE START',start_labels[shown_count])]
   for x,(label,value) in zip((60,400,740),metrics):
    def faded(color):return tuple(round(b+(v-b)*stats_alpha) for b,v in zip(ImageColor.getrgb(BG),ImageColor.getrgb(color)))
-   text(draw,(x,1730),label,20,faded(MUTED));text(draw,(x,1770),value,44,faded(WHITE))
+   text(draw,(x,1630),label,20,faded(MUTED));text(draw,(x,1670),value,44,faded(WHITE))
   return image
  def emit(image,count=1):
   nonlocal frames
   raw=image.tobytes()
   for _ in range(count):encoder.stdin.write(raw);frames+=1
- # Original GPS artwork only on the intro: no hidden/cropped basemap credits.
- intro=Image.new('RGB',(W,H),BG);pattern=Image.new('RGBA',(W,MAP_H))
- for lines in week_lines.values():draw_track(ImageDraw.Draw(pattern),lines,area,(173,145,207,45),5)
- draw_track(ImageDraw.Draw(pattern),boundary_lines,area,(22,185,172,70),3)
- intro.paste(Image.alpha_composite(Image.new('RGBA',(W,MAP_H),BG),pattern).convert('RGB'),(0,240))
- d=ImageDraw.Draw(intro);d.rounded_rectangle((72,172,312,218),radius=12,fill='#283449');text(d,(90,182),'WEEKLY RUN RECAP',18,WHITE)
- text(d,(72,630),'TRYING TO RUN',72,WHITE);text(d,(65,725),'EVERY ROAD',110,GOLD);text(d,(72,870),'IN HAVERTOWN',76,WHITE);text(d,(76,975),'PENNSYLVANIA',34,MUTED)
- d.line((76,1090,225,1090),fill='#16b9ac',width=6)
- text(d,(76,1160),f'{start.strftime("%B")} {start.day}–{end.day}, {end.year}',35,WHITE)
- text(d,(76,1230),f'{stats["runCount"]} RUNS  ·  {stats["totalMiles"]:.1f} MILES',28,MUTED)
- text(d,(76,1660),'One street at a time.',34,WHITE)
- emit(intro,48)
+ # Begin directly on the map rather than a separate title card.
+ intro=frame(0,0,0,0,active=False,highlight_position=0,shown_count=0,completed_count=0,boundary_fraction=0)
  cumulative=0;seconds=0
  for step in range(24):emit(frame(0,0,0,0,active=False,highlight_position=0,shown_count=0,completed_count=0,boundary_fraction=(step+1)/24))
  previous_day=0
@@ -125,10 +118,10 @@ def main():
   for step in range(48):
    fraction=(step+1)/48;emit(frame(index,fraction,cumulative+miles*fraction,seconds+record['movingSeconds']*fraction))
   cumulative+=miles;seconds+=record['movingSeconds'];draw_track(ImageDraw.Draw(blue),week_lines[record['activityId']],area,BLUE,5);clear_attribution(blue);emit(frame(index,1,cumulative,seconds,active=False),8);print(f'Drawn {index+1}/{len(rows)} · {record["localDate"]}',flush=True)
- celebration_frames=18 if rows[-1]['localDate']==end.isoformat() else 0
+ celebration_frames=36 if rows[-1]['localDate']==end.isoformat() else 0
  for step in range(celebration_frames):emit(frame(len(rows)-1,1,cumulative,seconds,active=False,final=True,celebration_progress=(step+1)/celebration_frames,stats_alpha=0))
  for step in range(96):emit(frame(len(rows)-1,1,cumulative,seconds,active=False,final=True,stats_alpha=min(1,(step+1)/12)))
  final=frame(len(rows)-1,1,cumulative,seconds,active=False,final=True);encoder.stdin.close();assert encoder.wait()==0;poster=args.output/(name+'.jpg');intro.save(poster,quality=93);final.save(args.output/(name+'-final.jpg'),quality=93)
- public={k:v for k,v in stats.items() if k!='records'};public.update(id=name,title='Week ending '+end.strftime('%B')+' '+str(end.day)+('th' if 10<=end.day%100<=20 else {1:'st',2:'nd',3:'rd'}.get(end.day%10,'th')),period='calendar-week',asOf=as_of,width=W,height=H,mapHeight=MAP_H,mapZoomFactor=MAP_ZOOM,introTitle='Trying to run every road in Havertown, Pennsylvania',introSeconds=2,celebrationSeconds=celebration_frames/FPS,statsRevealSeconds=.5,audio='silent master; add music in Instagram',posterFrame='intro',boundary='Census 2020 ZCTA 19083',boundarySourceSha256=hashlib.sha256(boundary_source).hexdigest(),dayTransitionSeconds=16/FPS,progressiveAverageStart=True,aspectRatio='9:16',durationSeconds=frames/FPS,finalStatsHoldSeconds=4,mappedRunCount=mapped,allWeekRoutesFit=all_fit,priorLocalHistoryRunCount=prior_count,firstDate=stats['windowStart'],lastDate=stats['windowEnd'],basemapProvider='Google Maps',mapArea='Havertown',palette={'earlierHistory':LAVENDER,'completedWeek':BLUE,'activeRun':GOLD},sourceSha256=hashlib.sha256(source).hexdigest(),metadataSourceSha256=hashlib.sha256(metadata_path.read_bytes()).hexdigest(),videoSha256=hashlib.sha256(video.read_bytes()).hexdigest(),videoBytes=video.stat().st_size,videoUrl=f'/media/{name}.mp4',posterUrl=f'/media/{name}.jpg',description='A two-second goal card introduces the attempt to run every road in Havertown, Pennsylvania. Saturday ends with a brief gold burst and gentle map shake before the final stats fade in. Silent Reel master: add music in Instagram when posting. Sunday–Saturday calendar snapshot: older GPS history stays light purple, each active run draws in gold then turns dark blue. The teal 19083 ZIP outline draws in at the start. A gold day outline slides smoothly across the Sunday–Saturday calendar before each route begins. Average start updates using only the runs revealed so far. The map is zoomed in 12%. Weekly mileage, total running time and average start share one row and linger for four seconds. Mileage and pace use recorded Strava distance and moving time; average start is the circular mean in America/New_York. All weekly mileage is counted even if a run is outside the fixed Havertown map.')
+ public={k:v for k,v in stats.items() if k!='records'};public.update(id=name,title='Week ending '+end.strftime('%B')+' '+str(end.day)+('th' if 10<=end.day%100<=20 else {1:'st',2:'nd',3:'rd'}.get(end.day%10,'th')),period='calendar-week',asOf=as_of,width=W,height=H,mapHeight=MAP_H,mapZoomFactor=MAP_ZOOM,introTitle='October 31st progress: trying to run every road in Havertown',introSeconds=0,celebrationSeconds=celebration_frames/FPS,statsRevealSeconds=.5,audio='silent master; add music in Instagram',posterFrame='map header',boundary='Census 2020 ZCTA 19083',boundarySourceSha256=hashlib.sha256(boundary_source).hexdigest(),dayTransitionSeconds=16/FPS,progressiveAverageStart=True,aspectRatio='9:16',durationSeconds=frames/FPS,finalStatsHoldSeconds=4,mappedRunCount=mapped,allWeekRoutesFit=all_fit,priorLocalHistoryRunCount=prior_count,firstDate=stats['windowStart'],lastDate=stats['windowEnd'],basemapProvider='Google Maps',mapArea='Havertown',palette={'earlierHistory':LAVENDER,'completedWeek':BLUE,'activeRun':GOLD},sourceSha256=hashlib.sha256(source).hexdigest(),metadataSourceSha256=hashlib.sha256(metadata_path.read_bytes()).hexdigest(),videoSha256=hashlib.sha256(video.read_bytes()).hexdigest(),videoBytes=video.stat().st_size,videoUrl=f'/media/{name}.mp4',posterUrl=f'/media/{name}.jpg',description='The progress goal is overlaid on the map from the first frame. Saturday ends with a large animated fireball and map shake that clear before the final stats fade in. Silent Reel master: add music in Instagram when posting. Sunday–Saturday calendar snapshot: older GPS history stays light purple, each active run draws in gold then turns dark blue. The teal 19083 ZIP outline draws in at the start. A gold day outline slides smoothly across the Sunday–Saturday calendar before each route begins. Average start updates using only the runs revealed so far. The map is zoomed in 12%. Weekly mileage, total running time and average start share one row and linger for four seconds. Mileage and pace use recorded Strava distance and moving time; average start is the circular mean in America/New_York. All weekly mileage is counted even if a run is outside the fixed Havertown map.')
  (args.output/(name+'.json')).write_text(json.dumps(public,indent=2)+'\n');print(f'Created {video}: {frames/FPS:.2f}s · {stats["totalMiles"]:.2f} mi · {stats["averageStartLabel"]} average start · {pace(stats["averagePaceSecondsPerMile"])}')
 if __name__=='__main__':main()
