@@ -22,3 +22,9 @@ Tanstack Start App/.tanstack/
 # The blank root sample.env is tracked; real credentials stay in .env.
 
 *.mp4
+
+# Private soundtrack references; publish silent Reel masters.
+*.m4a
+*.webm
+*.wav
+*.mp3

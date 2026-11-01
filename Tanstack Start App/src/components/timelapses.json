@@ -21,7 +21,7 @@
       "20788741058",
       "20800939076"
     ],
-    "id": "runs-2026-10-31-week-v8",
+    "id": "runs-2026-10-31-week-v9",
     "title": "Week ending October 31st",
     "period": "calendar-week",
     "asOf": "2026-10-31",
@@ -40,8 +40,17 @@
     "dayTransitionSeconds": 0.6666666666666666,
     "progressiveAverageStart": true,
     "aspectRatio": "9:16",
-    "durationSeconds": 24.5,
-    "finalStatsHoldSeconds": 4,
+    "durationSeconds": 32.958333333333336,
+    "finalStatsHoldSeconds": 8.0,
+    "explosionOnsetSeconds": 23.458333333333332,
+    "musicTiming": {
+      "referenceUrl": "https://www.youtube.com/watch?v=U-l4ya3ejko",
+      "songStartSeconds": 0,
+      "dropSeconds": 23.44,
+      "frameRoundingErrorSeconds": 0.0183,
+      "audioIncluded": false,
+      "statsPulse": "derived bass attacks"
+    },
     "mappedRunCount": 6,
     "allWeekRoutesFit": true,
     "priorLocalHistoryRunCount": 841,
@@ -56,11 +65,11 @@
     },
     "sourceSha256": "340c4c71ac3bef45183114e86737bbd3bcc2827c7fa48508d64b8d4b3f68d054",
     "metadataSourceSha256": "55a3bc6f37bc3eb7b32630b2b3d6e037296e61b3f55e6d2ea93e42a43e28606c",
-    "videoSha256": "8c36c4412ac8012f4ec3a59775d7408795d9bc8382068a9ab76e7156d5c5e6dd",
-    "videoBytes": 2990942,
-    "videoUrl": "/media/runs-2026-10-31-week-v8.mp4",
-    "posterUrl": "/media/runs-2026-10-31-week-v8.jpg",
-    "description": "The progress goal is overlaid on the map from the first frame. Saturday ends with a large animated fireball and map shake that clear before the final stats fade in. Silent Reel master: add music in Instagram when posting. Sunday\u2013Saturday calendar snapshot: older GPS history stays light purple, each active run draws in gold then turns dark blue. The teal 19083 ZIP outline draws in at the start. A gold day outline slides smoothly across the Sunday\u2013Saturday calendar before each route begins. Average start updates using only the runs revealed so far. The map is zoomed in 12%. Weekly mileage, total running time and average start share one row and linger for four seconds. Mileage and pace use recorded Strava distance and moving time; average start is the circular mean in America/New_York. All weekly mileage is counted even if a run is outside the fixed Havertown map."
+    "videoSha256": "396becc5c2a0ab4f66883801ff430d598b62e5a42067ea66c6ade0c6b232e87b",
+    "videoBytes": 3699274,
+    "videoUrl": "/media/runs-2026-10-31-week-v9.mp4",
+    "posterUrl": "/media/runs-2026-10-31-week-v9.jpg",
+    "description": "The progress goal is overlaid on the map from the first frame. Saturday ends with a large animated fireball and map shake that clear before the final stats fade in. Silent Reel master: add music in Instagram when posting. Sunday\u2013Saturday calendar snapshot: older GPS history stays light purple, each active run draws in gold then turns dark blue. The teal 19083 ZIP outline draws in at the start. A gold day outline slides smoothly across the Sunday\u2013Saturday calendar before each route begins. Average start updates using only the runs revealed so far. The map is zoomed in 12%. Weekly mileage, total running time and average start share one row and linger for eight seconds with an audio-derived bass pulse. The fireball begins at the reference song drop; add the original audio from its beginning in Instagram and check alignment because platform trims can differ. Mileage and pace use recorded Strava distance and moving time; average start is the circular mean in America/New_York. All weekly mileage is counted even if a run is outside the fixed Havertown map."
   },
   {
     "id": "runs-2026-story-v4",
