@@ -1,0 +1,12 @@
+{
+  "activityId": "20815407143",
+  "date": "2026-11-01T10:26:55.000Z",
+  "localDate": "2026-11-01",
+  "distanceMeters": 6492.91,
+  "movingSeconds": 2472,
+  "elapsedSeconds": 2490,
+  "sportType": "Run",
+  "distanceSource": "strava_web",
+  "hasGps": true,
+  "geometryKey": "strava/tracks/20815407143.geojson"
+}

@@ -1,0 +1,174 @@
+[
+  {
+    "date": "2026-10-31",
+    "number": 1,
+    "street": "Glen Ridge Road",
+    "direction": "SW",
+    "bearing": 246.8,
+    "target_label": "Windsor Park Lane to Windsor Park Lane",
+    "target_coordinates": [
+      [
+        -75.3345273,
+        39.9727579
+      ],
+      [
+        -75.3329309,
+        39.9732973
+      ],
+      [
+        -75.3318408,
+        39.9737248
+      ],
+      [
+        -75.3314117,
+        39.9740208
+      ],
+      [
+        -75.3309759,
+        39.9743453
+      ],
+      [
+        -75.3305705,
+        39.9747838
+      ]
+    ],
+    "target_midpoint": [
+      -75.33232409770024,
+      39.97353526906537
+    ],
+    "target_miles": 0.257,
+    "navigation_address": "310 Glen Ridge Rd, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.3324892,
+      39.9736829
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=310%20Glen%20Ridge%20Rd%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "one_way_miles": 1.7,
+    "walking_metres": 2756,
+    "routing_source": "Google walking directions checked October 30, 2026",
+    "coverage_audit_running": {
+      "length_m": 414.1,
+      "covered_25m_pct": 0.0,
+      "sample_spacing_m": 5,
+      "running_track_count": 1874
+    },
+    "citystrides_url": "https://citystrides.com/users/7315/map",
+    "citystrides_status": "19083 priority \u00b7 0.0% near recorded runs; finish the remaining gaps.",
+    "time_label": "5:30\u20136:15 AM",
+    "first_waypoint": {
+      "intersection": "Glen Ridge Road & Windsor Park Lane",
+      "coordinates": [
+        -75.3345273,
+        39.9727579
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9727579,-75.3345273&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Glen Ridge Road & Windsor Park Lane",
+      "coordinates": [
+        -75.3305705,
+        39.9747838
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9747838,-75.3305705&dirflg=w"
+    },
+    "display_date": "Sat Oct 31",
+    "target_scope": "Complete connected street; inside Census ZCTA 19083.",
+    "whole_street": true,
+    "distance_limit_exception": false,
+    "start_time": "05:30",
+    "end_time": "06:15",
+    "past": true,
+    "completed_activity": "20800939076",
+    "recorded_run_miles": 3.9371,
+    "completion_review": {
+      "review": "docs/run-reviews/2026-10-31-glen-ridge-road.md",
+      "sampled_target_near_gps_pct": 100.0,
+      "proximity_m": 25,
+      "official_citystrides_credit_verified": false
+    }
+  },
+  {
+    "date": "2026-11-01",
+    "number": 2,
+    "street": "Gladstone Road",
+    "direction": "S",
+    "bearing": 187.5,
+    "target_label": "Edmonds Avenue to North Drexel Avenue",
+    "target_coordinates": [
+      [
+        -75.3104673,
+        39.9637641
+      ],
+      [
+        -75.311456,
+        39.9632986
+      ],
+      [
+        -75.3124345,
+        39.9628776
+      ],
+      [
+        -75.3135074,
+        39.9625092
+      ],
+      [
+        -75.3144878,
+        39.9620706
+      ],
+      [
+        -75.3155129,
+        39.9615628
+      ]
+    ],
+    "target_midpoint": [
+      -75.31300431549731,
+      39.96268194506963
+    ],
+    "target_miles": 0.308,
+    "navigation_address": "215a Gladstone Rd, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.3126547,
+      39.96269789999999
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=215a%20Gladstone%20Rd%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "one_way_miles": 1.9,
+    "walking_metres": 2989,
+    "routing_source": "Google walking directions checked October 30, 2026",
+    "coverage_audit_running": {
+      "length_m": 496.1,
+      "covered_25m_pct": 5.0,
+      "sample_spacing_m": 5,
+      "running_track_count": 1874
+    },
+    "citystrides_url": "https://citystrides.com/users/7315/map",
+    "citystrides_status": "19083 priority \u00b7 5.0% near recorded runs; finish the remaining gaps.",
+    "time_label": "4:00\u20134:45 AM",
+    "first_waypoint": {
+      "intersection": "Gladstone Road & Edmonds Avenue",
+      "coordinates": [
+        -75.3104673,
+        39.9637641
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9637641,-75.3104673&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Gladstone Road & North Drexel Avenue",
+      "coordinates": [
+        -75.3155129,
+        39.9615628
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9615628,-75.3155129&dirflg=w"
+    },
+    "display_date": "Sun Nov 1",
+    "target_scope": "Complete connected street; inside Census ZCTA 19083.",
+    "whole_street": true,
+    "distance_limit_exception": false,
+    "start_time": "04:00",
+    "end_time": "04:45",
+    "past": true,
+    "actual_activity": "20815407143",
+    "recorded_run_miles": 4.0345,
+    "outcome_note": "Ran a different 4.03-mile route; Gladstone was not reached and is rescheduled for Wednesday November 4.",
+    "review": "docs/run-reviews/2026-11-01-gladstone-deferred.md"
+  }
+]

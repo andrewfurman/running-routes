@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import 'leaflet/dist/leaflet.css'
+import {activityMapInsets,type MapInsets} from './map-framing'
 import type { FeatureCollection, MapProvider, Position, Target } from './types'
 
 declare global { interface Window { google?: any; runningMapReady?: () => void; gm_authFailure?: () => void } }
@@ -47,7 +48,7 @@ export function MapView(props: Props) {
           if (stopped || !host.current) return
           const map = new g.Map(host.current, { center: {lat: 39.979, lng: -75.31}, zoom: 14, gestureHandling: 'greedy', streetViewControl: false, mapTypeControl: false, fullscreenControl: false })
           const e: any = { map, type: 'google', trackLayer: new g.Data(), boundaryLayer: new g.Data(), routeLines: [], markers: [] }
-          e.fit = (ps: Position[], padding = 55, context = false) => { if (!ps.length) return; const b = new g.LatLngBounds(); for (const [lng, lat] of ps) b.extend({lat,lng}); map.fitBounds(b,padding); g.event.addListenerOnce(map,'idle',()=>{if(context)map.setZoom(Math.max(12,Math.min(16,map.getZoom()-1)));else if(map.getZoom()>17)map.setZoom(17)}) }
+          e.fit = (ps: Position[], padding: number | MapInsets = 55, context = false) => { if (!ps.length) return; const b = new g.LatLngBounds(); for (const [lng, lat] of ps) b.extend({lat,lng}); if(e.fitIdle)g.event.removeListener(e.fitIdle);map.fitBounds(b,padding); e.fitIdle=g.event.addListenerOnce(map,'idle',()=>{if(context)map.setZoom(Math.max(12,Math.min(16,map.getZoom()-1)));else if(map.getZoom()>17)map.setZoom(17)}) }
           engine.current = e
           cleanup = () => { e.trackLayer.setMap(null);e.boundaryLayer.setMap(null);for(const line of e.routeLines)line.setMap(null);for(const marker of e.markers)marker.setMap(null);g.event.clearInstanceListeners(map) }
         } else {
@@ -57,7 +58,7 @@ export function MapView(props: Props) {
           L.control.zoom({position:'bottomright'}).addTo(map)
           L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© OpenStreetMap contributors'}).addTo(map)
           const e: any = {map,L,type:'osm',routeLines:[],markers:[]}
-          e.fit = (ps: Position[], padding = 40, context = false) => {if(!ps.length)return;const bounds=L.latLngBounds(ps.map(([lng,lat])=>[lat,lng]));if(context){const zoom=map.getBoundsZoom(bounds,false,L.point(padding*2,padding*2));map.setView(bounds.getCenter(),Math.max(12,Math.min(16,zoom-1)))}else map.fitBounds(bounds,{padding:[padding,padding],maxZoom:17})}
+          e.fit = (ps: Position[], padding: number | MapInsets = 40, context = false) => {if(!ps.length)return;const bounds=L.latLngBounds(ps.map(([lng,lat])=>[lat,lng]));if(context){const zoom=map.getBoundsZoom(bounds,false,L.point(typeof padding==='number'?padding*2:padding.left+padding.right,typeof padding==='number'?padding*2:padding.top+padding.bottom));map.setView(bounds.getCenter(),Math.max(12,Math.min(16,zoom-1)))}else map.fitBounds(bounds,{...(typeof padding==='number'?{padding:[padding,padding]}:{paddingTopLeft:[padding.left,padding.top],paddingBottomRight:[padding.right,padding.bottom]}),maxZoom:17})}
           engine.current=e;cleanup=()=>map.remove()
         }
         if (stopped) {cleanup();return}
@@ -94,11 +95,13 @@ export function MapView(props: Props) {
         const marker=e.L.marker([pos[1],pos[0]],{title:`${day}: ${t.street}`,icon:e.L.divIcon({className:'weekday-marker',html:`<span>${day}</span>`,iconSize:[40,40],iconAnchor:[20,20]})}).addTo(e.map).on('click',()=>select.current(i));e.routeLines.push(line);e.markers.push(marker)
       }
     })
+    // A late boundary or plan update must not replace the selected activity camera.
+    if(props.activityId||props.historyArea)return
     const ps=props.targets.flatMap(t=>t.target_coordinates)
     if(ps.length)e.fit(ps)
     else if(props.coverageMode){const outline=props.boundary?.type==='FeatureCollection'?props.boundary:{type:'FeatureCollection',features:props.boundary?[props.boundary]:[]};e.fit(points(outline),35)}
     else e.fit(points(props.tracks).filter(([lng,lat])=>lng>-75.39&&lng< -75.24&&lat>39.92&&lat<40.04))
-  },[ready,props.targets,props.coverageMode,props.boundary])
+  },[ready,props.targets,props.coverageMode,props.boundary,props.activityId,props.historyArea])
   useEffect(()=>{
     const e=engine.current;if(!e||!props.missingRoads)return
     if(e.type==='google'){
@@ -120,7 +123,16 @@ export function MapView(props: Props) {
     let cleanup=()=>{}
     if(e.type==='google'){const layers=[{color:'#20263a',width:11,z:25},{color:'#ffd54a',width:6,z:26}].map(style=>{const layer=new window.google.maps.Data({map:e.map});layer.addGeoJson(feature);layer.setStyle({strokeColor:style.color,strokeWeight:style.width,strokeOpacity:1,zIndex:style.z});return layer});cleanup=()=>layers.forEach(layer=>layer.setMap(null))}
     else{const layers=[{color:'#20263a',weight:11},{color:'#ffd54a',weight:6}].map(style=>e.L.geoJSON(feature,{style:{...style,opacity:1},interactive:false}).addTo(e.map));cleanup=()=>layers.forEach(layer=>{if(e.map.hasLayer(layer))e.map.removeLayer(layer)})}
-    e.fit(points({type:'FeatureCollection',features:[feature]}),60);return cleanup
+    const routePoints=points({type:'FeatureCollection',features:[feature]})
+    let scheduled=0
+    const dock=host.current?.closest('.map-wrap')?.querySelector('.history-dock')
+    const fit=()=>{scheduled=0;const rect=host.current?.getBoundingClientRect();if(!rect?.width||!rect.height)return;const dockTop=dock?.getBoundingClientRect().top;e.fit(routePoints,activityMapInsets(rect.width,rect.height,dockTop===undefined?undefined:dockTop-rect.top))}
+    const schedule=()=>{cancelAnimationFrame(scheduled);scheduled=requestAnimationFrame(fit)}
+    const observer=new ResizeObserver(schedule)
+    if(host.current)observer.observe(host.current)
+    if(dock)observer.observe(dock)
+    schedule()
+    return()=>{cancelAnimationFrame(scheduled);observer.disconnect();cleanup()}
   },[props.activityId,props.tracks,ready])
   return <div className="map-surface"><div className="map-canvas" ref={host} aria-label="Interactive route map"/>{loading?<div className="map-loading"><span className="spinner"/>Loading street map</div>:null}{error?<div className="map-error" role="alert">{error}</div>:null}<div className="map-credit">{props.provider==='google'?'Google Maps':'OpenStreetMap'}<span>•</span>{props.coverageMode?'Orange: unfinished road sections':'Purple: recorded tracks'}<span>•</span>Teal: 19083</div></div>
 }

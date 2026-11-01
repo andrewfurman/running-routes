@@ -1,6 +1,6 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
-import {latestRunId,latestBikeId,activityTimestamp,averagePaceLabel,requestedRun,gpsActivitySummary} from '../components/activity-summary.ts'
+import {latestRunId,latestBikeId,activityTimestamp,averagePaceLabel,activityCaption,requestedRun,gpsActivitySummary} from '../components/activity-summary.ts'
 import {freshDocument} from './document-cache.ts'
 import type {FeatureCollection} from '../components/types'
 const tracks:FeatureCollection={type:'FeatureCollection',features:[{type:'Feature',properties:{activity_id:'1',activity_type:'Run',date:'2026-10-30T09:00:00Z',distance_meters:1609.344},geometry:{type:'LineString',coordinates:[]}},{type:'Feature',properties:{activity_id:'2',activity_type:'Run',date:'2026-10-31T09:00:00Z',distance_meters:3218.688},geometry:{type:'LineString',coordinates:[]}},{type:'Feature',properties:{activity_id:'3',activity_type:'Ride',date:'2026-11-01T09:00:00Z',distance_meters:1609.344},geometry:{type:'LineString',coordinates:[]}}]}
@@ -11,3 +11,9 @@ test('whole-document reload receives fresh HTML while media/cache headers remain
 test('bike default selects the newest ride and uses the recorded start time within a day',()=>{const data:FeatureCollection={type:'FeatureCollection',features:[...tracks.features,{type:'Feature',properties:{activity_id:'4',activity_type:'Ride',date:'2026-11-01',source_csv_date_utc:'Nov 1, 2026, 1:00:00 PM'},geometry:{type:'LineString',coordinates:[]}}]};assert.equal(latestBikeId(data),'4');assert.equal(activityTimestamp(data.features[3].properties),Date.parse('2026-11-01T13:00:00Z'))})
 
 test('recorded average pace uses moving time and recorded miles with clean rounding',()=>{assert.equal(averagePaceLabel({distance_meters:1609.344,moving_seconds:599.7}),'10:00 /mi');assert.equal(averagePaceLabel({distance_meters:0,moving_seconds:600}),'Unavailable');assert.equal(averagePaceLabel({distance_meters:1609.344}),'Unavailable')})
+
+test('compact caption uses recorded elapsed time for finish and omits unknown times',()=>{
+ assert.equal(activityCaption({date:'2026-10-24T09:33:18Z',distance_meters:4035.81,moving_seconds:1539,elapsed_seconds:1563}),'2.5 mi · 10:14 /mi · 5:33am to 5:59am')
+ assert.equal(activityCaption({date:'2026-10-24',distance_meters:1609.344}),'1.0 mi')
+ assert.equal(activityCaption({date:'2026-10-24T09:33:18Z',distance_meters:1609.344}),'1.0 mi · 5:33am')
+})
