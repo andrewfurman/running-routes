@@ -5,7 +5,7 @@ export function latestRunId(tracks?:FeatureCollection){
  for(const feature of tracks?.features||[]){if(!runTypes.has(feature.properties.activity_type))continue;const stamp=Date.parse(feature.properties.date);if(Number.isFinite(stamp)&&stamp>=time){time=stamp;latest=String(feature.properties.activity_id)}}
  return latest
 }
-export function requestedRun(search:string){const value=new URLSearchParams(search).get('activity');return value==='latest'||/^\d{1,20}$/.test(value||'')?value:undefined}
+export function requestedRun(search:string){const value=new URLSearchParams(search).get('activity');return value==='latest'||/^(?:\d{1,20}|citi-[a-f0-9]{20})$/.test(value||'')?value:undefined}
 export function gpsActivitySummary(tracks?:FeatureCollection){
  if(!tracks)return null
  let meters=0,missing=0;const seen=new Set<string>()
@@ -19,8 +19,8 @@ export function latestBikeId(tracks?:FeatureCollection){return [...(tracks?.feat
 export function averagePaceLabel(properties:Record<string,any>){const miles=properties.distance_meters/1609.344,seconds=properties.moving_seconds;if(!Number.isFinite(miles)||miles<=0||!Number.isFinite(seconds)||seconds<=0)return 'Unavailable';const pace=Math.round(seconds/miles);return `${Math.floor(pace/60)}:${String(pace%60).padStart(2,'0')} /mi`}
 
 export function activityCaption(properties:Record<string,any>){
- const parts:string[]=[];const miles=properties.distance_meters/1609.344
- if(Number.isFinite(miles)&&miles>=0)parts.push(`${miles.toFixed(1)} mi`)
+ const parts:string[]=properties.geometry_source==='station_endpoints'?['Station endpoints only · mileage unavailable']:[];const miles=properties.distance_meters/1609.344
+ if(typeof properties.distance_meters==='number'&&Number.isFinite(miles)&&miles>=0)parts.push(`${miles.toFixed(1)} mi`)
  const pace=averagePaceLabel(properties);if(pace!=='Unavailable')parts.push(pace)
  const hasTime=properties.start_time_utc||properties.source_csv_date_utc||!/^\d{4}-\d{2}-\d{2}$/.test(properties.date||'')
  const start=activityTimestamp(properties)

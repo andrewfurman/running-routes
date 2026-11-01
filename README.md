@@ -212,3 +212,7 @@ The sample environment lists only the current browser-session Strava setup (`STR
 Close the paging card to hide the selected gold activity highlight, planned orange streets and weekday pins while preserving the purple recorded tracks, the ZIP outline and the current camera. Show controls restores the selected activity highlight. The small Show controls pill floats at the bottom of the map and restores the plan.
 
 `STRAVA_WEB_COOKIE` authenticates the Worker to Strava; it is never required from public visitors. `STRAVA_SYNC_ADMIN_TOKEN` separately protects the public manual-import endpoint. Keeping the cookie private does not authenticate callers of that endpoint. The scheduled 8 AM import does not need the admin token, but manual imports do. Keep both private; do not reuse the Strava cookie as an endpoint password.
+
+### Citi Bike history
+
+The official Lyft export contributes 28 completed NYC rentals: six match existing Strava GPS rides and 22 are new station-only trips. See [source and matching notes](raw-data/citi-bike/README.md). Rides and City Stats include the 22 new trips once, as teal endpoint dots, without invented paths or mileage. Select New York City in City Stats to explore. The private full export is not committed.

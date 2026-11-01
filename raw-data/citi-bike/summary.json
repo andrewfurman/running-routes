@@ -1,0 +1,12 @@
+{
+  "sourceRows": 41,
+  "nycCompletedTrips": 28,
+  "excludedNonNycOrIncomplete": 13,
+  "matched": 6,
+  "review": 0,
+  "new": 22,
+  "accountCounterReported": 1862,
+  "accountCounterReconciled": false,
+  "gpsPathsProvided": false,
+  "recordedDistancesProvided": false
+}
