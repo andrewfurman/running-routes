@@ -16,6 +16,7 @@ jobs:
       - run: python3 "Tanstack Start App/scripts/checks/check_public_commit.py" --all
       - run: python3 -m unittest discover -s "Tanstack Start App/scripts/checks" -p test_check_public_commit.py
       - run: python3 -m unittest discover -s "Tanstack Start App/scripts/videos" -p test_weekly_stats.py
+      - run: python3 -m unittest discover -s "Tanstack Start App/scripts/imports" -p test_import_citi_bike.py
       - run: npm ci
         working-directory: Tanstack Start App
       - run: npm run test && npm run typecheck && npm run build

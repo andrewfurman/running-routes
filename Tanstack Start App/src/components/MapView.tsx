@@ -21,6 +21,7 @@ export function loadGoogle(key: string) {
 function points(collection?: FeatureCollection): Position[] {
   const result: Position[] = []
   for (const feature of collection?.features || []) {
+    if(feature.geometry.type==='MultiPoint'){result.push(...feature.geometry.coordinates);continue}
     const lines = feature.geometry.type === 'LineString' ? [feature.geometry.coordinates] : feature.geometry.type === 'Polygon' ? feature.geometry.coordinates : feature.geometry.coordinates
     for (const line of lines) for (const p of line) if (typeof p[0] === 'number') result.push(p)
   }
@@ -70,8 +71,8 @@ export function MapView(props: Props) {
   }, [props.provider, props.mapsKey])
   useEffect(() => {
     const e=engine.current;if(!e)return
-    if(e.type==='google') {e.trackLayer.forEach((f:any)=>e.trackLayer.remove(f));if(props.tracks)e.trackLayer.addGeoJson(props.tracks);e.trackLayer.setStyle({strokeColor:'#7442bb',strokeWeight:3,strokeOpacity:.62});e.trackLayer.setMap(e.map)}
-    else {if(e.trackLayer)e.map.removeLayer(e.trackLayer);e.trackLayer=props.tracks?e.L.geoJSON(props.tracks,{style:{color:'#7442bb',weight:3,opacity:.62}}):null;if(e.trackLayer)e.trackLayer.addTo(e.map)}
+    if(e.type==='google') {e.trackLayer.forEach((f:any)=>e.trackLayer.remove(f));if(props.tracks)e.trackLayer.addGeoJson(props.tracks);e.trackLayer.setStyle({strokeColor:'#7442bb',strokeWeight:3,strokeOpacity:.62,icon:{path:window.google.maps.SymbolPath.CIRCLE,scale:5,fillColor:'#078f8a',fillOpacity:.85,strokeColor:'#fff',strokeWeight:1}});e.trackLayer.setMap(e.map)}
+    else {if(e.trackLayer)e.map.removeLayer(e.trackLayer);e.trackLayer=props.tracks?e.L.geoJSON(props.tracks,{pointToLayer:(_:any,p:any)=>e.L.circleMarker(p,{radius:5,color:'#fff',weight:1,fillColor:'#078f8a',fillOpacity:.85}).bindTooltip('Citi Bike station endpoint · actual route unavailable'),style:{color:'#7442bb',weight:3,opacity:.62}}):null;if(e.trackLayer)e.trackLayer.addTo(e.map)}
   },[ready,props.tracks])
   useEffect(() => {
     const e=engine.current;if(!e)return
@@ -122,8 +123,8 @@ export function MapView(props: Props) {
     const e=engine.current;if(!e||props.activityCardVisible===false||props.historyArea||!props.activityId||!props.tracks)return
     const feature=props.tracks.features.find(f=>String(f.properties.activity_id)===props.activityId);if(!feature)return
     let cleanup=()=>{}
-    if(e.type==='google'){const layers=[{color:'#20263a',width:11,z:25},{color:'#ffd54a',width:6,z:26}].map(style=>{const layer=new window.google.maps.Data({map:e.map});layer.addGeoJson(feature);layer.setStyle({strokeColor:style.color,strokeWeight:style.width,strokeOpacity:1,zIndex:style.z});return layer});cleanup=()=>layers.forEach(layer=>layer.setMap(null))}
-    else{const layers=[{color:'#20263a',weight:11},{color:'#ffd54a',weight:6}].map(style=>e.L.geoJSON(feature,{style:{...style,opacity:1},interactive:false}).addTo(e.map));cleanup=()=>layers.forEach(layer=>{if(e.map.hasLayer(layer))e.map.removeLayer(layer)})}
+    if(e.type==='google'){const layers=[{color:'#20263a',width:11,z:25},{color:'#ffd54a',width:6,z:26}].map(style=>{const layer=new window.google.maps.Data({map:e.map});layer.addGeoJson(feature);layer.setStyle({strokeColor:style.color,strokeWeight:style.width,strokeOpacity:1,zIndex:style.z,icon:{path:window.google.maps.SymbolPath.CIRCLE,scale:style.width,fillColor:style.color,fillOpacity:1,strokeWeight:0}});return layer});cleanup=()=>layers.forEach(layer=>layer.setMap(null))}
+    else{const layers=[{color:'#20263a',weight:11},{color:'#ffd54a',weight:6}].map(style=>e.L.geoJSON(feature,{pointToLayer:(_:any,p:any)=>e.L.circleMarker(p,{radius:style.weight,color:style.color,fillColor:style.color,fillOpacity:1,weight:1}),style:{...style,opacity:1},interactive:false}).addTo(e.map));cleanup=()=>layers.forEach(layer=>{if(e.map.hasLayer(layer))e.map.removeLayer(layer)})}
     const routePoints=points({type:'FeatureCollection',features:[feature]})
     let scheduled=0
     const dock=host.current?.closest('.map-wrap')?.querySelector('.history-dock')

@@ -21,7 +21,7 @@ export function historyAreas(tracks?:FeatureCollection) {
  for(const feature of tracks?.features||[]) {
   const id=feature.properties.activity_id;if(id!=null){if(seen.has(String(id)))continue;seen.add(String(id))}
   const lines=feature.geometry.type==='LineString'?[feature.geometry.coordinates]:feature.geometry.coordinates
-  const points:Position[]=lines.flat().filter((p:Position)=>Number.isFinite(p?.[0])&&Number.isFinite(p?.[1])&&Math.abs(p[0])<=180&&Math.abs(p[1])<=90)
+  const points:Position[]=(feature.geometry.type==='MultiPoint'?feature.geometry.coordinates:lines.flat()).filter((p:Position)=>Number.isFinite(p?.[0])&&Number.isFinite(p?.[1])&&Math.abs(p[0])<=180&&Math.abs(p[1])<=90)
   if(!points.length)continue
   const xs=points.map(p=>p[0]).sort((a,b)=>a-b),ys=points.map(p=>p[1]).sort((a,b)=>a-b)
   const center:Position=[xs[Math.floor(xs.length/2)],ys[Math.floor(ys.length/2)]]

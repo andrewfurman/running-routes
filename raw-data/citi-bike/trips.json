@@ -1,0 +1,522 @@
+{
+  "source": "Lyft privacy export, lyft_bike_scooters.csv; NYC completed trips only",
+  "archiveSha256": "8cf43d40a90f2219f1d08a8512295c443a4ac40ab63db9a8fdd51aa3b61a20a4",
+  "trips": [
+    {
+      "id": "citi-56723b237c3cacaa3e54",
+      "start": "2021-08-16T00:35:21Z",
+      "end": "2021-08-16T00:45:34Z",
+      "startCoordinates": [
+        -73.977706,
+        40.751873
+      ],
+      "endCoordinates": [
+        -73.993934,
+        40.751551
+      ],
+      "elapsedSeconds": 613.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-d7ddc60d8db6efce3064",
+      "start": "2021-09-18T12:27:30Z",
+      "end": "2021-09-18T13:01:00Z",
+      "startCoordinates": [
+        -73.9816324043,
+        40.752062307
+      ],
+      "endCoordinates": [
+        -73.95866,
+        40.73564
+      ],
+      "elapsedSeconds": 2010.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-bbecc1bbad1eadb2c487",
+      "start": "2021-09-18T15:22:24Z",
+      "end": "2021-09-18T15:46:09Z",
+      "startCoordinates": [
+        -73.95394,
+        40.73026
+      ],
+      "endCoordinates": [
+        -73.98517977,
+        40.72066442
+      ],
+      "elapsedSeconds": 1425.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-978eef3dde3dcfe565e7",
+      "start": "2021-09-18T17:18:16Z",
+      "end": "2021-09-18T17:34:24Z",
+      "startCoordinates": [
+        -73.99810231,
+        40.72917025
+      ],
+      "endCoordinates": [
+        -73.9816324043,
+        40.752062307
+      ],
+      "elapsedSeconds": 968.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-852b731b9fa1966486c2",
+      "start": "2021-09-18T18:19:11Z",
+      "end": "2021-09-18T18:26:53Z",
+      "startCoordinates": [
+        -73.9816324043,
+        40.752062307
+      ],
+      "endCoordinates": [
+        -73.97209525108337,
+        40.76302594280519
+      ],
+      "elapsedSeconds": 462.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-39aec4546ecaa1953aac",
+      "start": "2021-09-19T14:55:09Z",
+      "end": "2021-09-19T15:09:42Z",
+      "startCoordinates": [
+        -73.97513,
+        40.75863
+      ],
+      "endCoordinates": [
+        -73.983293,
+        40.741459
+      ],
+      "elapsedSeconds": 873.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-490021d3613b771a6407",
+      "start": "2021-09-30T02:29:18Z",
+      "end": "2021-09-30T02:55:26Z",
+      "startCoordinates": [
+        -73.99422366,
+        40.7158155
+      ],
+      "endCoordinates": [
+        -73.973827958107,
+        40.748033194287665
+      ],
+      "elapsedSeconds": 1568.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-d5ada946ff81bfd132d8",
+      "start": "2021-09-30T19:11:47Z",
+      "end": "2021-09-30T19:20:50Z",
+      "startCoordinates": [
+        -73.97992193698882,
+        40.752165280621966
+      ],
+      "endCoordinates": [
+        -73.98855723,
+        40.7462009
+      ],
+      "elapsedSeconds": 543.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-4bac09afba6dbbc54d24",
+      "start": "2023-03-28T11:48:59Z",
+      "end": "2023-03-28T11:57:59Z",
+      "startCoordinates": [
+        -73.9946848154068,
+        40.7505853470215
+      ],
+      "endCoordinates": [
+        -73.979635,
+        40.752049
+      ],
+      "elapsedSeconds": 540.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-29b88ddeee46a39ef2ff",
+      "start": "2023-03-29T03:55:11Z",
+      "end": "2023-03-29T04:03:31Z",
+      "startCoordinates": [
+        -73.99937599897385,
+        40.753773368360385
+      ],
+      "endCoordinates": [
+        -73.98918628692627,
+        40.74286877312112
+      ],
+      "elapsedSeconds": 500.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-ade50dbd8c5c1e9f0e72",
+      "start": "2023-03-29T11:37:56Z",
+      "end": "2023-03-29T11:45:03Z",
+      "startCoordinates": [
+        -73.98671329021454,
+        40.742684734875695
+      ],
+      "endCoordinates": [
+        -73.979635,
+        40.752049
+      ],
+      "elapsedSeconds": 427.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-dd4177d70f18af2bef22",
+      "start": "2023-03-30T00:04:31Z",
+      "end": "2023-03-30T00:11:19Z",
+      "startCoordinates": [
+        -73.98338988,
+        40.75038009
+      ],
+      "endCoordinates": [
+        -73.9960889518261,
+        40.75414519263519
+      ],
+      "elapsedSeconds": 408.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-991ce982f9c0e7736d1b",
+      "start": "2023-04-14T20:39:08Z",
+      "end": "2023-04-14T20:53:34Z",
+      "startCoordinates": [
+        -73.960876,
+        40.710451
+      ],
+      "endCoordinates": [
+        -73.98517977,
+        40.72066442
+      ],
+      "elapsedSeconds": 866.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-d88883c693526a79b8ae",
+      "start": "2023-04-15T01:57:29Z",
+      "end": "2023-04-15T02:12:09Z",
+      "startCoordinates": [
+        -73.986274,
+        40.720747
+      ],
+      "endCoordinates": [
+        -73.960575,
+        40.712628
+      ],
+      "elapsedSeconds": 880.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-39a568678dd25c879a7e",
+      "start": "2023-10-13T18:00:00Z",
+      "end": "2023-10-13T18:04:59Z",
+      "startCoordinates": [
+        -73.99726235,
+        40.74238787
+      ],
+      "endCoordinates": [
+        -74.000939,
+        40.735918
+      ],
+      "elapsedSeconds": 299.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-f4b3df134c51a736cc56",
+      "start": "2023-10-14T00:30:54Z",
+      "end": "2023-10-14T00:49:57Z",
+      "startCoordinates": [
+        -73.99422366,
+        40.7158155
+      ],
+      "endCoordinates": [
+        -73.98949474096298,
+        40.692418292578466
+      ],
+      "elapsedSeconds": 1143.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-5284ac82c9d902f812a7",
+      "start": "2023-10-14T19:12:01Z",
+      "end": "2023-10-14T19:22:48Z",
+      "startCoordinates": [
+        -73.981575608,
+        40.679224372
+      ],
+      "endCoordinates": [
+        -73.98949474096298,
+        40.692418292578466
+      ],
+      "elapsedSeconds": 647.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-abe72c19f51e47a66752",
+      "start": "2023-12-14T15:12:53Z",
+      "end": "2023-12-14T15:20:52Z",
+      "startCoordinates": [
+        -73.993934,
+        40.751551
+      ],
+      "endCoordinates": [
+        -73.9816324043,
+        40.752062307
+      ],
+      "elapsedSeconds": 479.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-850fefdccb5392db6ece",
+      "start": "2024-09-10T12:32:38Z",
+      "end": "2024-09-10T12:41:13Z",
+      "startCoordinates": [
+        -74.00731853,
+        40.70706456
+      ],
+      "endCoordinates": [
+        -74.009447,
+        40.711066
+      ],
+      "elapsedSeconds": 515.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-470c9bf78eeef0419cca",
+      "start": "2024-12-02T23:37:00Z",
+      "end": "2024-12-02T23:45:25Z",
+      "startCoordinates": [
+        -74.01167797,
+        40.70365182
+      ],
+      "endCoordinates": [
+        -74.00562789,
+        40.71450451
+      ],
+      "elapsedSeconds": 505.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-f7412c057537f5e7a244",
+      "start": "2025-08-30T12:48:11Z",
+      "end": "2025-08-30T12:51:06Z",
+      "startCoordinates": [
+        -73.977706,
+        40.751873
+      ],
+      "endCoordinates": [
+        -73.977706,
+        40.751873
+      ],
+      "elapsedSeconds": 175.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-0e9262fc716cbe28d7fe",
+      "start": "2025-08-30T12:53:56Z",
+      "end": "2025-08-30T13:21:41Z",
+      "startCoordinates": [
+        -73.977706,
+        40.751873
+      ],
+      "endCoordinates": [
+        -74.000939,
+        40.735918
+      ],
+      "elapsedSeconds": 1665.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "matchStatus": "matched",
+      "stravaActivityIds": [
+        "15660909624"
+      ]
+    },
+    {
+      "id": "citi-64d855bd24765ff80fc1",
+      "start": "2025-08-30T14:27:10Z",
+      "end": "2025-08-30T14:36:36Z",
+      "startCoordinates": [
+        -73.99103969335556,
+        40.73972989238724
+      ],
+      "endCoordinates": [
+        -74.000472,
+        40.726378
+      ],
+      "elapsedSeconds": 566.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "matchStatus": "matched",
+      "stravaActivityIds": [
+        "15660910066"
+      ]
+    },
+    {
+      "id": "citi-edc77f1f11671bb1cd76",
+      "start": "2025-08-30T15:30:32Z",
+      "end": "2025-08-30T15:36:28Z",
+      "startCoordinates": [
+        -73.99930492043495,
+        40.72511734422387
+      ],
+      "endCoordinates": [
+        -74.008591,
+        40.728846
+      ],
+      "elapsedSeconds": 356.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "matchStatus": "matched",
+      "stravaActivityIds": [
+        "15660910278"
+      ]
+    },
+    {
+      "id": "citi-697802f063c7b9c3b7fd",
+      "start": "2025-08-30T15:37:14Z",
+      "end": "2025-08-30T15:45:28Z",
+      "startCoordinates": [
+        -74.008591,
+        40.728846
+      ],
+      "endCoordinates": [
+        -74.008119,
+        40.739323
+      ],
+      "elapsedSeconds": 494.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "matchStatus": "matched",
+      "stravaActivityIds": [
+        "15660910278"
+      ]
+    },
+    {
+      "id": "citi-a66768eeec2731780ffa",
+      "start": "2025-08-30T15:54:48Z",
+      "end": "2025-08-30T16:06:33Z",
+      "startCoordinates": [
+        -74.00831580162048,
+        40.741981599940225
+      ],
+      "endCoordinates": [
+        -73.99144871,
+        40.74395411
+      ],
+      "elapsedSeconds": 705.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "matchStatus": "matched",
+      "stravaActivityIds": [
+        "15660909709"
+      ]
+    },
+    {
+      "id": "citi-73dc5e92ef55114176b1",
+      "start": "2025-08-30T16:53:25Z",
+      "end": "2025-08-30T17:01:16Z",
+      "startCoordinates": [
+        -73.99726235,
+        40.74238787
+      ],
+      "endCoordinates": [
+        -74.00293877,
+        40.73401143
+      ],
+      "elapsedSeconds": 471.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "matchStatus": "matched",
+      "stravaActivityIds": [
+        "15660910049"
+      ]
+    },
+    {
+      "id": "citi-20e7a221e8468a268905",
+      "start": "2025-08-30T22:32:39Z",
+      "end": "2025-08-30T22:44:24Z",
+      "startCoordinates": [
+        -73.98751968,
+        40.73827428
+      ],
+      "endCoordinates": [
+        -73.97791,
+        40.751581
+      ],
+      "elapsedSeconds": 705.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    }
+  ]
+}

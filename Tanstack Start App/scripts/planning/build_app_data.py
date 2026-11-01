@@ -33,6 +33,14 @@ if bikepath.exists():write('bikes.geojson',with_recorded_distances(read('raw-dat
 else:
     import re
     bike=json.loads(re.search(r'const bikes=(.*);\n',(ROOT/'Tanstack Start App/legacy/visualization/bikes.html').read_text())[1]);write('bikes.geojson',bike)
+# Station-only rentals are points, never invented GPS lines or estimated mileage.
+citi_path=ROOT/'raw-data/citi-bike/trips.json'
+if citi_path.exists():
+    bike=json.loads((PUBLIC/'bikes.geojson').read_text())
+    for t in json.loads(citi_path.read_text())['trips']:
+        if t['matchStatus']!='new':continue
+        bike['features'].append({'type':'Feature','properties':{'activity_id':t['id'],'activity_type':'Ride','date':t['start'],'start_time_utc':t['start'],'elapsed_seconds':t['elapsedSeconds'],'source':'Lyft Citi Bike privacy export','geometry_source':'station_endpoints','distance_meters':None},'geometry':{'type':'MultiPoint','coordinates':[t['startCoordinates'],t['endCoordinates']]}})
+    write('bikes.geojson',bike)
 shutil.copyfile(ROOT/'raw-data/boundaries/19083.geojson',PUBLIC/'boundary19083.geojson')
 shutil.copyfile(ROOT/'raw-data/geography/19083-streets.json',PUBLIC/'streets19083.json')
 targets=read('raw-data/plans/current-targets.json');write('targets.json',targets)

@@ -17,3 +17,8 @@ test('compact caption uses recorded elapsed time for finish and omits unknown ti
  assert.equal(activityCaption({date:'2026-10-24',distance_meters:1609.344}),'1.0 mi')
  assert.equal(activityCaption({date:'2026-10-24T09:33:18Z',distance_meters:1609.344}),'1.0 mi · 5:33am')
 })
+
+test('station-only rental captions do not invent distance and stable query IDs work',()=>{
+ assert.equal(activityCaption({geometry_source:'station_endpoints',date:'2025-08-30T22:32:39Z',elapsed_seconds:720,distance_meters:null}),'Station endpoints only · mileage unavailable · 6:32pm to 6:44pm')
+ assert.equal(requestedRun('?activity=citi-0123456789abcdef0123'),'citi-0123456789abcdef0123')
+})

@@ -16,3 +16,8 @@ test('towns near existing postal boundaries join Narberth and Ardmore rather tha
 test('the residual Connecticut run is assigned to Wilton rather than New York or Ridgefield',()=>{const areas=historyAreas({type:'FeatureCollection',features:[feature('wilton',[-73.46903,41.24442],1609.344)]});assert.equal(areas[0].label,'Wilton, CT');assert.equal(areas[0].count,1)})
 
 test('Atlantic Ocean coastal activities combine without losing counts or mileage',()=>{const areas=historyAreas({type:'FeatureCollection',features:[feature('ocean-a',[-74.55631, 34.59351],1609.344),feature('ocean-b',[-70.6196, 40.41556],3218.688)]});assert.equal(areas.length,1);assert.equal(areas[0].label,'Atlantic Ocean');assert.equal(areas[0].count,2);assert.equal(areas[0].miles,3)})
+
+test('station endpoints count once in NYC without invented mileage',()=>{
+ const areas=historyAreas({type:'FeatureCollection',features:[{type:'Feature',properties:{activity_id:'citi-one',distance_meters:null},geometry:{type:'MultiPoint',coordinates:[[-73.98,40.75],[-73.97,40.76]]}}]})
+ assert.equal(areas.length,1);assert.equal(areas[0].label,'New York City, NY');assert.equal(areas[0].count,1);assert.equal(areas[0].miles,0);assert.equal(areas[0].distanceMissing,1)
+})
