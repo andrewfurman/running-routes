@@ -17,3 +17,17 @@ export function activityTimestamp(properties:Record<string,any>){const value=pro
 export function latestBikeId(tracks?:FeatureCollection){return [...(tracks?.features||[])].filter(f=>/Ride/.test(f.properties.activity_type)||['Handcycle','Velomobile'].includes(f.properties.activity_type)).sort((a,b)=>activityTimestamp(b.properties)-activityTimestamp(a.properties)||Number(b.properties.activity_id)-Number(a.properties.activity_id))[0]?.properties.activity_id?.toString()}
 
 export function averagePaceLabel(properties:Record<string,any>){const miles=properties.distance_meters/1609.344,seconds=properties.moving_seconds;if(!Number.isFinite(miles)||miles<=0||!Number.isFinite(seconds)||seconds<=0)return 'Unavailable';const pace=Math.round(seconds/miles);return `${Math.floor(pace/60)}:${String(pace%60).padStart(2,'0')} /mi`}
+
+export function activityCaption(properties:Record<string,any>){
+ const parts:string[]=[];const miles=properties.distance_meters/1609.344
+ if(Number.isFinite(miles)&&miles>=0)parts.push(`${miles.toFixed(1)} mi`)
+ const pace=averagePaceLabel(properties);if(pace!=='Unavailable')parts.push(pace)
+ const hasTime=properties.start_time_utc||properties.source_csv_date_utc||!/^\d{4}-\d{2}-\d{2}$/.test(properties.date||'')
+ const start=activityTimestamp(properties)
+ if(hasTime&&Number.isFinite(start)){
+  const clock=(stamp:number)=>new Date(stamp).toLocaleTimeString('en-US',{timeZone:'America/New_York',hour:'numeric',minute:'2-digit'}).replace(/\s/g,'').toLowerCase()
+  const elapsed=properties.elapsed_seconds
+  parts.push(Number.isFinite(elapsed)&&elapsed>=0?`${clock(start)} to ${clock(start+elapsed*1000)}`:clock(start))
+ }
+ return parts.join(' · ')
+}

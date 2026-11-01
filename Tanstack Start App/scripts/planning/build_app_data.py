@@ -24,6 +24,7 @@ def with_recorded_distances(tracks,metadata):
         if row:
             feature['properties'].update(distance_meters=row['distanceMeters'],distance_source=row['distanceSource'])
             if row.get('movingSeconds') is not None:feature['properties']['moving_seconds']=row['movingSeconds']
+            if row.get('elapsedSeconds') is not None:feature['properties']['elapsed_seconds']=row['elapsedSeconds']
             if row.get('date'):feature['properties']['date']=row['date']
     return tracks
 write('runs.geojson',with_recorded_distances(runs,read('raw-data/runs/activities.json')['runs']))

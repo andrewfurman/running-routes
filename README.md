@@ -42,7 +42,7 @@ On iPhone, open the site in Safari, tap Share, then Add to Home Screen. The app 
 
 ## Data updates
 
-The current public dataset contains 1,876 GPS runs and 547 GPS rides through October 31, 2026. The cycling source has 1,445 records; 898 have no drawable GPS track. Runs exclude rides and walks. Selected D1 metadata also preserves six runs without GPS; unavailable times and distances are not invented.
+The current public dataset contains 1,877 GPS runs and 547 GPS rides through November 1, 2026. The cycling source has 1,445 records; 898 have no drawable GPS track. Runs exclude rides and walks. Selected D1 metadata also preserves six runs without GPS; unavailable times and distances are not invented.
 
 From the app folder, update cycling data using an official Strava export or a manifest of signed-in GPX downloads:
 
@@ -141,7 +141,7 @@ The v3 portrait video keeps one Havertown Google Maps background for the entire 
 
 The header uses a map-pin icon, Running Routes title, illustrated Runs / Bikes / Videos controls, mapped-activity counts and total recorded GPS miles. Video mode hides those activity metrics. City selector opens the recorded areas for the active sport. Selecting a city enters exploration mode: closing X dismisses only the picker, preserves that city and viewport, and leaves the route card hidden. **Upcoming run** explicitly returns to the scheduled plan. Opening the picker again keeps the selected area.
 
-Each option shows the total recorded miles and activity count. Clusters sharing the same named region are combined into one city-selector entry and mileage total. Whole activities are assigned to a GPS area; these are regional clusters (roughly 45 km), not mileage clipped to legal city boundaries. GPS-less activities cannot be assigned to a city. Recorded distances are attached to the generated map assets from `raw-data/runs/activities.json` and `raw-data/bikes/recorded-distances.json`; runtime Strava data can update them. Missing mileage is marked as a partial subtotal rather than estimated from simplified geometry. All 1,876 current GPS runs and 547 GPS rides currently have recorded distances.
+Each option shows the total recorded miles and activity count. Clusters sharing the same named region are combined into one city-selector entry and mileage total. Whole activities are assigned to a GPS area; these are regional clusters (roughly 45 km), not mileage clipped to legal city boundaries. GPS-less activities cannot be assigned to a city. Recorded distances are attached to the generated map assets from `raw-data/runs/activities.json` and `raw-data/bikes/recorded-distances.json`; runtime Strava data can update them. Missing mileage is marked as a partial subtotal rather than estimated from simplified geometry. All 1,877 current GPS runs and 547 GPS rides currently have recorded distances.
 
 `raw-data/geography/history-places.json` records cached place names, source IDs and distances to the nearest named place. Names that previously appeared as coordinates were resolved offline using [GeoNames cities500](https://download.geonames.org/export/dump/), licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). No activity coordinates are sent to GeoNames. Distant offshore tracks use named coastal regions rather than a claimed exact city. Existing broad regional labels remain approximate. Refresh after importing history in a new region:
 
@@ -196,3 +196,7 @@ The latest weekly video uses a 1080×1200 Google map (20% taller than the prior 
 The weekly calendar video uses a separate Sunday–Saturday header above date-and-run cells. Its final weekly mileage, running time and average start share one horizontal row. The map is tightened by 12% around the same Havertown center, with provider attribution preserved; all six routes in the October 31 edition still fit.
 
 The weekly video draws the teal Census 19083 ZIP outline during its opening second, then keeps it visible. The gold calendar outline eases to each run’s day over two thirds of a second before that route draws. Average start is shown throughout, calculated only from runs revealed so far, using the existing circular Eastern-time average. Before the first run it displays a dash.
+
+[November 1 planned-versus-actual review](docs/run-reviews/2026-11-01-gladstone-deferred.md): the latest 4.03-mile run missed Gladstone and added partial Wilson Drive coverage. Monday Walnut/Covington and Tuesday Wilson remain; Gladstone moves to Wednesday, Grove stays Thursday and Rodmor moves to Friday.
+
+Historical run and ride cards show only the date and a compact distance/pace/start–finish caption between Previous/Next buttons. Finish uses recorded elapsed time; missing timing is omitted. Selected GPS routes fit the visible map above the floating card and refit on viewport/card resize; late plan or boundary loads do not replace that framing.

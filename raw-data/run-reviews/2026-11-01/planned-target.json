@@ -1,0 +1,79 @@
+{
+  "date": "2026-11-01",
+  "number": 2,
+  "street": "Gladstone Road",
+  "direction": "S",
+  "bearing": 187.5,
+  "target_label": "Edmonds Avenue to North Drexel Avenue",
+  "target_coordinates": [
+    [
+      -75.3104673,
+      39.9637641
+    ],
+    [
+      -75.311456,
+      39.9632986
+    ],
+    [
+      -75.3124345,
+      39.9628776
+    ],
+    [
+      -75.3135074,
+      39.9625092
+    ],
+    [
+      -75.3144878,
+      39.9620706
+    ],
+    [
+      -75.3155129,
+      39.9615628
+    ]
+  ],
+  "target_midpoint": [
+    -75.31300431549731,
+    39.96268194506963
+  ],
+  "target_miles": 0.308,
+  "navigation_address": "215a Gladstone Rd, Havertown, PA 19083",
+  "navigation_coordinates": [
+    -75.3126547,
+    39.96269789999999
+  ],
+  "navigation_url": "https://maps.apple.com/?daddr=215a%20Gladstone%20Rd%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+  "one_way_miles": 1.9,
+  "walking_metres": 2989,
+  "routing_source": "Google walking directions checked October 30, 2026",
+  "coverage_audit_running": {
+    "length_m": 496.1,
+    "covered_25m_pct": 5.0,
+    "sample_spacing_m": 5,
+    "running_track_count": 1874
+  },
+  "citystrides_url": "https://citystrides.com/users/7315/map",
+  "citystrides_status": "19083 priority \u00b7 5.0% near recorded runs; finish the remaining gaps.",
+  "time_label": "4:00\u20134:45 AM",
+  "first_waypoint": {
+    "intersection": "Gladstone Road & Edmonds Avenue",
+    "coordinates": [
+      -75.3104673,
+      39.9637641
+    ],
+    "apple_maps": "https://maps.apple.com/?daddr=39.9637641,-75.3104673&dirflg=w"
+  },
+  "second_waypoint": {
+    "intersection": "Gladstone Road & North Drexel Avenue",
+    "coordinates": [
+      -75.3155129,
+      39.9615628
+    ],
+    "apple_maps": "https://maps.apple.com/?daddr=39.9615628,-75.3155129&dirflg=w"
+  },
+  "display_date": "Sun Nov 1",
+  "target_scope": "Complete connected street; inside Census ZCTA 19083.",
+  "whole_street": true,
+  "distance_limit_exception": false,
+  "start_time": "04:00",
+  "end_time": "04:45"
+}

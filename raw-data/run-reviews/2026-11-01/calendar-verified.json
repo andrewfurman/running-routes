@@ -1,0 +1,90 @@
+{
+  "calendar": "primary",
+  "events": [
+    {
+      "summary": "\ud83c\udfc3 1.4 mi one-way \u00b7 Walnut Place \u00b7 East Manoa Road to Covington Road",
+      "start": {
+        "dateTime": "2026-11-02T05:30:00-05:00",
+        "timeZone": "America/New_York"
+      },
+      "end": {
+        "dateTime": "2026-11-02T05:55:00-05:00",
+        "timeZone": "America/New_York"
+      },
+      "location": "316 Walnut Pl, Havertown, PA 19083"
+    },
+    {
+      "summary": "\ud83c\udfc3 1.6 mi one-way \u00b7 Covington Road \u00b7 Brentwood Road to St Albans Road",
+      "start": {
+        "dateTime": "2026-11-02T05:55:00-05:00",
+        "timeZone": "America/New_York"
+      },
+      "end": {
+        "dateTime": "2026-11-02T06:15:00-05:00",
+        "timeZone": "America/New_York"
+      },
+      "location": "521 Covington Rd, Havertown, PA 19083"
+    },
+    {
+      "summary": "\ud83c\udfc3 2.0 mi one-way \u00b7 Grove Place \u00b7 street end to street end",
+      "start": {
+        "dateTime": "2026-11-05T05:30:00-05:00",
+        "timeZone": "America/New_York"
+      },
+      "end": {
+        "dateTime": "2026-11-05T06:15:00-05:00",
+        "timeZone": "America/New_York"
+      },
+      "location": "19 Grove Pl, Havertown, PA 19083"
+    },
+    {
+      "summary": "\ud83c\udfc3 1.6 mi one-way \u00b7 Wilson Drive \u00b7 Marvine Avenue through the northern loop across Township Line Road",
+      "start": {
+        "dateTime": "2026-11-03T05:30:00-05:00",
+        "timeZone": "America/New_York"
+      },
+      "end": {
+        "dateTime": "2026-11-03T06:15:00-05:00",
+        "timeZone": "America/New_York"
+      },
+      "location": "1239 Wilson Dr, Havertown, PA 19083"
+    },
+    {
+      "summary": "\ud83c\udfc3 1.9 mi one-way \u00b7 Gladstone Road \u00b7 Edmonds Avenue to North Drexel Avenue",
+      "start": {
+        "dateTime": "2026-11-04T05:30:00-05:00",
+        "timeZone": "America/New_York"
+      },
+      "end": {
+        "dateTime": "2026-11-04T06:15:00-05:00",
+        "timeZone": "America/New_York"
+      },
+      "location": "215a Gladstone Rd, Havertown, PA 19083"
+    },
+    {
+      "summary": "\ud83c\udfc3 1.9 mi one-way \u00b7 Rodmor Road \u00b7 Belfield Avenue to Steel Road",
+      "start": {
+        "dateTime": "2026-11-06T05:30:00-05:00",
+        "timeZone": "America/New_York"
+      },
+      "end": {
+        "dateTime": "2026-11-06T06:15:00-05:00",
+        "timeZone": "America/New_York"
+      },
+      "location": "77 Rodmor Rd, Havertown, PA 19083"
+    },
+    {
+      "summary": "\ud83c\udfc3 Recorded run \u00b7 4.03 mi \u00b7 Gladstone deferred",
+      "start": {
+        "dateTime": "2026-11-01T05:26:55-05:00",
+        "timeZone": "America/New_York"
+      },
+      "end": {
+        "dateTime": "2026-11-01T06:08:25-05:00",
+        "timeZone": "America/New_York"
+      },
+      "location": null
+    }
+  ],
+  "unchangedMondayAndTuesdayVerified": true
+}
