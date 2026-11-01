@@ -119,21 +119,21 @@ export function MapView(props: Props) {
   useEffect(()=>{if(props.plansVisible!==false&&!props.historyArea&&!props.activityId&&props.focusRequest&&props.targets[props.selected])engine.current?.fit(props.targets.filter(t=>t.date===props.targets[props.selected].date).flatMap(t=>t.target_coordinates),100,true)},[props.focusRequest,ready,props.targets,props.selected,props.historyArea,props.activityId])
   useEffect(()=>{if(props.historyRequest&&props.historyArea?.length)engine.current?.fit(props.historyArea)},[props.historyRequest,props.historyArea,ready])
   useEffect(()=>{
-    const e=engine.current;if(!e||props.historyArea||!props.activityId||!props.tracks)return
+    const e=engine.current;if(!e||props.activityCardVisible===false||props.historyArea||!props.activityId||!props.tracks)return
     const feature=props.tracks.features.find(f=>String(f.properties.activity_id)===props.activityId);if(!feature)return
     let cleanup=()=>{}
     if(e.type==='google'){const layers=[{color:'#20263a',width:11,z:25},{color:'#ffd54a',width:6,z:26}].map(style=>{const layer=new window.google.maps.Data({map:e.map});layer.addGeoJson(feature);layer.setStyle({strokeColor:style.color,strokeWeight:style.width,strokeOpacity:1,zIndex:style.z});return layer});cleanup=()=>layers.forEach(layer=>layer.setMap(null))}
     else{const layers=[{color:'#20263a',weight:11},{color:'#ffd54a',weight:6}].map(style=>e.L.geoJSON(feature,{style:{...style,opacity:1},interactive:false}).addTo(e.map));cleanup=()=>layers.forEach(layer=>{if(e.map.hasLayer(layer))e.map.removeLayer(layer)})}
     const routePoints=points({type:'FeatureCollection',features:[feature]})
     let scheduled=0
-    const dock=props.activityCardVisible===false?null:host.current?.closest('.map-wrap')?.querySelector('.history-dock')
+    const dock=host.current?.closest('.map-wrap')?.querySelector('.history-dock')
     const fit=()=>{scheduled=0;const rect=host.current?.getBoundingClientRect();if(!rect?.width||!rect.height)return;const dockTop=dock?.isConnected?dock.getBoundingClientRect().top:undefined;e.fit(routePoints,activityMapInsets(rect.width,rect.height,dockTop===undefined?undefined:dockTop-rect.top))}
     const schedule=()=>{cancelAnimationFrame(scheduled);scheduled=requestAnimationFrame(fit)}
     let observing=false
     const observer=new ResizeObserver(()=>{if(observing)schedule();observing=true})
     if(host.current)observer.observe(host.current)
     if(dock)observer.observe(dock)
-    if(props.activityCardVisible!==false)schedule()
+    schedule()
     return()=>{cancelAnimationFrame(scheduled);observer.disconnect();cleanup()}
   },[props.activityId,props.tracks,props.activityCardVisible,props.historyArea,ready])
   return <div className="map-surface"><div className="map-canvas" ref={host} aria-label="Interactive route map"/>{loading?<div className="map-loading"><span className="spinner"/>Loading street map</div>:null}{error?<div className="map-error" role="alert">{error}</div>:null}<div className="map-credit">{props.provider==='google'?'Google Maps':'OpenStreetMap'}<span>•</span>{props.coverageMode?'Orange: unfinished road sections':'Purple: recorded tracks'}<span>•</span>Teal: 19083</div></div>
