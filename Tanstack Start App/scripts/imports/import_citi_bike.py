@@ -3,6 +3,7 @@
 import argparse,csv,hashlib,io,json,math,zipfile
 from datetime import datetime,timezone
 from pathlib import Path
+from zoneinfo import ZoneInfo
 ROOT=Path(__file__).resolve().parents[3]
 def stamp(value):
  if not value:return None
@@ -23,6 +24,19 @@ def normalize(rows):
   result[rid]={'id':rid,'start':datetime.fromtimestamp(start,timezone.utc).isoformat().replace('+00:00','Z'),'end':datetime.fromtimestamp(end,timezone.utc).isoformat().replace('+00:00','Z'),'startCoordinates':a,'endCoordinates':b,'elapsedSeconds':end-start,'distanceMeters':None,'geometrySource':'station endpoints only'}
  return sorted(result.values(),key=lambda r:r['start']),excluded
 
+def legacy_trips(folder):
+ def read(name):return json.loads((folder/name).read_text().split('=',1)[1].strip().rstrip(';'))
+ raw=read('myrides.js');stations={s['stationName']:s for s in read('stations.js')['stationBeanList']};result=[];incomplete=0
+ for row in raw['startDatetime']:
+  if row['EndTime']=='-' or not row['EndLocation']:incomplete+=1;continue
+  start=datetime.strptime(row['StartDateTime'],'%m/%d/%Y %I:%M:%S %p').replace(tzinfo=ZoneInfo('America/New_York'));end=datetime.strptime(row['EndTime'],'%m/%d/%Y %I:%M:%S %p').replace(tzinfo=ZoneInfo('America/New_York'))
+  if end<=start:incomplete+=1;continue
+  def point(name):
+   station=stations.get(name);return [station['longitude'],station['latitude']] if station else None
+  identity=json.dumps([start.isoformat(),end.isoformat(),row['StartStation'],row['EndLocation']],separators=(',',':'))
+  result.append({'id':'citi-'+hashlib.sha256(identity.encode()).hexdigest()[:20],'start':start.astimezone(timezone.utc).isoformat().replace('+00:00','Z'),'end':end.astimezone(timezone.utc).isoformat().replace('+00:00','Z'),'startCoordinates':point(row['StartStation']),'endCoordinates':point(row['EndLocation']),'startStation':row['StartStation'],'endStation':row['EndLocation'],'elapsedSeconds':(end-start).total_seconds(),'distanceMeters':None,'geometrySource':'station endpoints only','source':'andrewfurman/mycitibike archived rides'})
+ return result,{'sourceRecords':len(raw['startDatetime']),'completed':len(result),'incomplete':incomplete,'sourceCommit':'1e06badcf3ec12824171cecc02a07ace2a029552'}
+
 def reconcile(trips,rides,tracks):
  features={str(f['properties']['activity_id']):f for f in tracks['features']};output=[]
  for trip in trips:
@@ -34,7 +48,7 @@ def reconcile(trips,rides,tracks):
    aid=ride['Activity ID'];f=features.get(aid);near=False
    if f:
     lines=f['geometry']['coordinates'];pts=lines if f['geometry']['type']=='LineString' else [p for line in lines for p in line]
-    near=all(any(meters(endpoint,p)<250 for p in pts) for endpoint in (trip['startCoordinates'],trip['endCoordinates']))
+    near=all(endpoint and any(meters(endpoint,p)<250 for p in pts) for endpoint in (trip['startCoordinates'],trip['endCoordinates']))
    overlap=max(0,min(end,re)-max(start,rs))/max(1,end-start)
    strong_time=abs(start-rs)<180 and abs(end-re)<240
    if near and (overlap>=.75 or strong_time):matches.append(aid)
@@ -48,9 +62,9 @@ def main():
  ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('--lyft-archive',type=Path,required=True);ap.add_argument('--strava-archive',type=Path,required=True);args=ap.parse_args()
  with zipfile.ZipFile(args.lyft_archive) as z:rows=list(csv.DictReader(io.StringIO(z.read('lyft_bike_scooters.csv').decode('utf-8-sig'))))
  with zipfile.ZipFile(args.strava_archive) as z:rides=list(csv.DictReader(io.StringIO(z.read('activities.csv').decode('utf-8-sig'))))
- trips,excluded=normalize(rows);result=reconcile(trips,rides,json.loads((ROOT/'raw-data/bikes/tracks.geojson').read_text()))
+ trips,excluded=normalize(rows);legacy,legacy_summary=legacy_trips(ROOT/'raw-data/citi-bike/legacy');trips=sorted({t['id']:t for t in trips+legacy}.values(),key=lambda t:t['start']);result=reconcile(trips,rides,json.loads((ROOT/'raw-data/bikes/tracks.geojson').read_text()))
  out=ROOT/'raw-data/citi-bike';out.mkdir(exist_ok=True)
- (out/'trips.json').write_text(json.dumps({'source':'Lyft privacy export, lyft_bike_scooters.csv; NYC completed trips only','archiveSha256':hashlib.sha256(args.lyft_archive.read_bytes()).hexdigest(),'trips':result},indent=2)+'\n')
- summary={'sourceRows':len(rows),'nycCompletedTrips':len(trips),'excludedNonNycOrIncomplete':excluded,'matched':sum(t['matchStatus']=='matched' for t in result),'review':sum(t['matchStatus']=='review' for t in result),'new':sum(t['matchStatus']=='new' for t in result),'accountCounterReported':1862,'accountCounterReconciled':False,'gpsPathsProvided':False,'recordedDistancesProvided':False}
+ (out/'trips.json').write_text(json.dumps({'source':'Official Lyft privacy export and andrewfurman/mycitibike archive; NYC completed trips only','archiveSha256':hashlib.sha256(args.lyft_archive.read_bytes()).hexdigest(),'trips':result},indent=2)+'\n')
+ summary={'sourceRows':len(rows),'nycCompletedTrips':len(trips),'lyftNycCompletedTrips':len(trips)-len(legacy),'legacy':legacy_summary,'excludedNonNycOrIncomplete':excluded,'matched':sum(t['matchStatus']=='matched' for t in result),'review':sum(t['matchStatus']=='review' for t in result),'new':sum(t['matchStatus']=='new' for t in result),'accountCounterReported':1862,'accountCounterReconciled':False,'gpsPathsProvided':False,'recordedDistancesProvided':False}
  (out/'summary.json').write_text(json.dumps(summary,indent=2)+'\n');print(json.dumps(summary))
 if __name__=='__main__':main()

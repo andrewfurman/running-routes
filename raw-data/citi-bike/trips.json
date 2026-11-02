@@ -1,7 +1,4246 @@
 {
-  "source": "Lyft privacy export, lyft_bike_scooters.csv; NYC completed trips only",
+  "source": "Official Lyft privacy export and andrewfurman/mycitibike archive; NYC completed trips only",
   "archiveSha256": "8cf43d40a90f2219f1d08a8512295c443a4ac40ab63db9a8fdd51aa3b61a20a4",
   "trips": [
+    {
+      "id": "citi-75cfdde8ac7010bece74",
+      "start": "2014-01-02T05:28:52Z",
+      "end": "2014-01-02T05:29:19Z",
+      "startCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "endCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "startStation": "Clinton St & Grand St",
+      "endStation": "Clinton St & Grand St",
+      "elapsedSeconds": 27.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-2922ea67912f96e43aa7",
+      "start": "2014-01-11T20:38:28Z",
+      "end": "2014-01-11T20:50:47Z",
+      "startCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "endCoordinates": [
+        -74.00731853,
+        40.70706456
+      ],
+      "startStation": "Clinton St & Grand St",
+      "endStation": "Maiden Ln & Pearl St",
+      "elapsedSeconds": 739.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-1b5589642eb8f5ab0f4b",
+      "start": "2014-01-11T21:01:30Z",
+      "end": "2014-01-11T21:27:41Z",
+      "startCoordinates": [
+        -74.00530063,
+        40.70823502
+      ],
+      "endCoordinates": [
+        -73.99695094,
+        40.72679454
+      ],
+      "startStation": "Cliff St & Fulton St",
+      "endStation": "Mercer St & Bleecker St",
+      "elapsedSeconds": 1571.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-d6caf0d39d80a5ed6aed",
+      "start": "2014-01-12T17:37:52Z",
+      "end": "2014-01-12T17:52:18Z",
+      "startCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "endCoordinates": [
+        -73.96024116,
+        40.71534825
+      ],
+      "startStation": "Clinton St & Grand St",
+      "endStation": "Metropolitan Ave & Bedford Ave",
+      "elapsedSeconds": 866.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-4e092baf6f7340f1335a",
+      "start": "2014-01-13T01:38:36Z",
+      "end": "2014-01-13T01:51:05Z",
+      "startCoordinates": [
+        -73.98426726,
+        40.72953837
+      ],
+      "endCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "startStation": "E 11 St & 1 Ave",
+      "endStation": "Clinton St & Grand St",
+      "elapsedSeconds": 749.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-979d0ce78eff29f48847",
+      "start": "2014-01-25T05:53:20Z",
+      "end": "2014-01-25T06:07:58Z",
+      "startCoordinates": [
+        -74.0127234,
+        40.70255065
+      ],
+      "endCoordinates": [
+        -73.98990025,
+        40.71427487
+      ],
+      "startStation": "Water - Whitehall Plaza",
+      "endStation": "Canal St & Rutgers St",
+      "elapsedSeconds": 878.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-4f0b3009a7da6057aae0",
+      "start": "2014-01-25T18:56:03Z",
+      "end": "2014-01-25T19:09:43Z",
+      "startCoordinates": [
+        -73.98776323,
+        40.71269042
+      ],
+      "endCoordinates": [
+        -73.99949601,
+        40.72362738
+      ],
+      "startStation": "Madison St & Clinton St",
+      "endStation": "Mercer St & Spring St",
+      "elapsedSeconds": 820.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-d24a0a512e5ff0e209fe",
+      "start": "2014-01-26T13:02:27Z",
+      "end": "2014-01-26T13:12:27Z",
+      "startCoordinates": [
+        -73.976806,
+        40.739445
+      ],
+      "endCoordinates": [
+        -74.005226,
+        40.751396
+      ],
+      "startStation": "E 27 St & 1 Ave",
+      "endStation": "11 Ave & W 27 St",
+      "elapsedSeconds": 600.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-23b1533b7c7e293e743d",
+      "start": "2014-01-26T20:51:23Z",
+      "end": "2014-01-26T20:51:39Z",
+      "startCoordinates": [
+        -73.98517977,
+        40.72066442
+      ],
+      "endCoordinates": [
+        -73.98517977,
+        40.72066442
+      ],
+      "startStation": "Suffolk St & Stanton St",
+      "endStation": "Suffolk St & Stanton St",
+      "elapsedSeconds": 16.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-8a72f893752fd3e824ca",
+      "start": "2014-02-21T01:30:57Z",
+      "end": "2014-02-21T01:36:02Z",
+      "startCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "endCoordinates": [
+        -73.98997825,
+        40.72019576
+      ],
+      "startStation": "Clinton St & Grand St",
+      "endStation": "Allen St & Rivington St",
+      "elapsedSeconds": 305.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-d516f39e31385dfb0acf",
+      "start": "2014-02-22T01:40:39Z",
+      "end": "2014-02-22T01:54:25Z",
+      "startCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "endCoordinates": [
+        -73.99069656,
+        40.72502876
+      ],
+      "startStation": "Clinton St & Grand St",
+      "endStation": "E 2 St & 2 Ave",
+      "elapsedSeconds": 826.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-7e0298512450b740dcec",
+      "start": "2014-02-22T04:15:55Z",
+      "end": "2014-02-22T04:25:15Z",
+      "startCoordinates": [
+        -73.98978041,
+        40.7262807
+      ],
+      "endCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "startStation": "E 4 St & 2 Ave",
+      "endStation": "Clinton St & Grand St",
+      "elapsedSeconds": 560.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-8ab411bd12c8da0fbca6",
+      "start": "2014-02-23T18:47:11Z",
+      "end": "2014-02-23T19:18:46Z",
+      "startCoordinates": [
+        -73.96905301,
+        40.75001986
+      ],
+      "endCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "startStation": "1 Ave & E 44 St",
+      "endStation": "Clinton St & Grand St",
+      "elapsedSeconds": 1895.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-a5d83ad07f7caa8a2eba",
+      "start": "2014-02-23T22:53:20Z",
+      "end": "2014-02-23T23:08:51Z",
+      "startCoordinates": [
+        -74.004704,
+        40.724399
+      ],
+      "endCoordinates": [
+        -73.98656928,
+        40.7014851
+      ],
+      "startStation": "6 Ave & Broome St",
+      "endStation": "York St & Jay St",
+      "elapsedSeconds": 931.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-ccf13b3e5eb5aea3fd82",
+      "start": "2014-02-24T04:28:40Z",
+      "end": "2014-02-24T04:34:02Z",
+      "startCoordinates": [
+        -73.98517977,
+        40.72066442
+      ],
+      "endCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "startStation": "Suffolk St & Stanton St",
+      "endStation": "Clinton St & Grand St",
+      "elapsedSeconds": 322.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-a5cbf7d739b81a83d1b1",
+      "start": "2014-03-01T00:16:52Z",
+      "end": "2014-03-01T00:17:29Z",
+      "startCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "endCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "startStation": "Clinton St & Grand St",
+      "endStation": "Clinton St & Grand St",
+      "elapsedSeconds": 37.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-4f48120c1513138e70c1",
+      "start": "2014-03-01T00:17:44Z",
+      "end": "2014-03-01T00:22:18Z",
+      "startCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "endCoordinates": [
+        -73.98517977,
+        40.72066442
+      ],
+      "startStation": "Clinton St & Grand St",
+      "endStation": "Suffolk St & Stanton St",
+      "elapsedSeconds": 274.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-7a62a9f18064c7270894",
+      "start": "2014-03-01T00:33:56Z",
+      "end": "2014-03-01T00:38:35Z",
+      "startCoordinates": [
+        -73.98517977,
+        40.72066442
+      ],
+      "endCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "startStation": "Suffolk St & Stanton St",
+      "endStation": "Clinton St & Grand St",
+      "elapsedSeconds": 279.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-0e27dcdffab9f2126842",
+      "start": "2014-03-01T00:57:10Z",
+      "end": "2014-03-01T01:00:25Z",
+      "startCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "endCoordinates": [
+        -73.98517977,
+        40.72066442
+      ],
+      "startStation": "Clinton St & Grand St",
+      "endStation": "Suffolk St & Stanton St",
+      "elapsedSeconds": 195.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-b8e3edfa37167554c7f7",
+      "start": "2014-03-01T13:31:38Z",
+      "end": "2014-03-01T13:42:51Z",
+      "startCoordinates": [
+        -73.984844,
+        40.713126
+      ],
+      "endCoordinates": [
+        -74.01234218,
+        40.70122128
+      ],
+      "startStation": "Madison St & Montgomery St",
+      "endStation": "South St & Whitehall St",
+      "elapsedSeconds": 673.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-d8363adc8506c4c99927",
+      "start": "2014-03-02T01:40:03Z",
+      "end": "2014-03-02T01:53:07Z",
+      "startCoordinates": [
+        -74.00887308,
+        40.70717936
+      ],
+      "endCoordinates": [
+        -73.98656928,
+        40.7014851
+      ],
+      "startStation": "William St & Pine St",
+      "endStation": "York St & Jay St",
+      "elapsedSeconds": 784.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-c8d4a6be0d7c6767e567",
+      "start": "2014-03-14T23:38:14Z",
+      "end": "2014-03-15T00:00:35Z",
+      "startCoordinates": [
+        -73.99190759,
+        40.71605866
+      ],
+      "endCoordinates": [
+        -73.97282625,
+        40.75255434
+      ],
+      "startStation": "Allen St & Hester St",
+      "endStation": "E 45 St & 3 Ave",
+      "elapsedSeconds": 1341.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-ba33b18a8dd968d1c32c",
+      "start": "2014-03-16T02:42:25Z",
+      "end": "2014-03-16T03:04:21Z",
+      "startCoordinates": [
+        -73.98758561,
+        40.73524276
+      ],
+      "endCoordinates": [
+        -73.98656928,
+        40.7014851
+      ],
+      "startStation": "E 16 St & Irving Pl",
+      "endStation": "York St & Jay St",
+      "elapsedSeconds": 1316.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-2fcf5958bd66247483f9",
+      "start": "2014-03-16T17:04:21Z",
+      "end": "2014-03-16T17:26:20Z",
+      "startCoordinates": [
+        -73.98802084,
+        40.7172274
+      ],
+      "endCoordinates": [
+        -73.99949601,
+        40.72362738
+      ],
+      "startStation": "Norfolk St & Broome St",
+      "endStation": "Mercer St & Spring St",
+      "elapsedSeconds": 1319.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-cbbb1698943cb830673e",
+      "start": "2014-03-16T18:21:44Z",
+      "end": "2014-03-16T18:29:48Z",
+      "startCoordinates": [
+        -73.99720307,
+        40.7218158
+      ],
+      "endCoordinates": [
+        -73.98656928,
+        40.7014851
+      ],
+      "startStation": "Cleveland Pl & Spring St",
+      "endStation": "York St & Jay St",
+      "elapsedSeconds": 484.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-a4df481be996b9368121",
+      "start": "2014-03-21T21:00:48Z",
+      "end": "2014-03-21T21:13:34Z",
+      "startCoordinates": [
+        -74.013942,
+        40.701907
+      ],
+      "endCoordinates": [
+        -73.984844,
+        40.713126
+      ],
+      "startStation": "Bus Slip & State St",
+      "endStation": "Madison St & Montgomery St",
+      "elapsedSeconds": 766.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-bed5b752b0814e733b5f",
+      "start": "2014-03-21T23:49:17Z",
+      "end": "2014-03-22T00:04:34Z",
+      "startCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "endCoordinates": [
+        -73.976056,
+        40.744023
+      ],
+      "startStation": "Clinton St & Grand St",
+      "endStation": "E 33 St & 2 Ave",
+      "elapsedSeconds": 917.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-7db09d902b67672c2de6",
+      "start": "2014-03-22T03:20:44Z",
+      "end": "2014-03-22T03:39:33Z",
+      "startCoordinates": [
+        -73.97706058,
+        40.74290902
+      ],
+      "endCoordinates": [
+        -73.98990025,
+        40.71427487
+      ],
+      "startStation": "2 Ave & E 31 St",
+      "endStation": "Canal St & Rutgers St",
+      "elapsedSeconds": 1129.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-f7b9ebd6b0786c144d63",
+      "start": "2014-03-22T19:22:29Z",
+      "end": "2014-03-22T19:33:58Z",
+      "startCoordinates": [
+        -74.00451887,
+        40.74691959
+      ],
+      "endCoordinates": [
+        -73.99800419,
+        40.73532427
+      ],
+      "startStation": "W 22 St & 10 Ave",
+      "endStation": "W 11 St & 6 Ave",
+      "elapsedSeconds": 689.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-6b543e3318703ef267a3",
+      "start": "2014-03-22T20:43:44Z",
+      "end": "2014-03-22T20:56:32Z",
+      "startCoordinates": [
+        -73.98672378,
+        40.73047309
+      ],
+      "endCoordinates": [
+        -73.98990025,
+        40.71427487
+      ],
+      "startStation": "E 11 St & 2 Ave",
+      "endStation": "Canal St & Rutgers St",
+      "elapsedSeconds": 768.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-b2c78c57311864b30bef",
+      "start": "2014-03-22T22:55:10Z",
+      "end": "2014-03-22T23:10:43Z",
+      "startCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "endCoordinates": [
+        -73.99510132,
+        40.73331967
+      ],
+      "startStation": "Clinton St & Grand St",
+      "endStation": "E 10 St & 5 Ave",
+      "elapsedSeconds": 933.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-c017518baff1480bbe0c",
+      "start": "2014-03-23T01:12:48Z",
+      "end": "2014-03-23T01:25:31Z",
+      "startCoordinates": [
+        -73.98713956,
+        40.7284186
+      ],
+      "endCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "startStation": "St Marks Pl & 2 Ave",
+      "endStation": "Clinton St & Grand St",
+      "elapsedSeconds": 763.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-c017f56fe21722548d92",
+      "start": "2014-03-23T12:38:23Z",
+      "end": "2014-03-23T12:43:10Z",
+      "startCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "endCoordinates": [
+        -73.98517977,
+        40.72066442
+      ],
+      "startStation": "Clinton St & Grand St",
+      "endStation": "Suffolk St & Stanton St",
+      "elapsedSeconds": 287.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-63e557db5fa7e74194c9",
+      "start": "2014-03-23T22:28:19Z",
+      "end": "2014-03-23T22:37:56Z",
+      "startCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "endCoordinates": [
+        -73.98713956,
+        40.7284186
+      ],
+      "startStation": "Clinton St & Grand St",
+      "endStation": "St Marks Pl & 2 Ave",
+      "elapsedSeconds": 577.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-e5905d66fd5416e97338",
+      "start": "2014-03-23T23:17:46Z",
+      "end": "2014-03-23T23:25:35Z",
+      "startCoordinates": [
+        -73.98978041,
+        40.7262807
+      ],
+      "endCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "startStation": "E 4 St & 2 Ave",
+      "endStation": "Clinton St & Grand St",
+      "elapsedSeconds": 469.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-eb0a177d022851df4565",
+      "start": "2014-04-18T18:39:48Z",
+      "end": "2014-04-18T18:39:51Z",
+      "startCoordinates": [
+        -73.99190759,
+        40.71605866
+      ],
+      "endCoordinates": [
+        -73.99190759,
+        40.71605866
+      ],
+      "startStation": "Allen St & Hester St",
+      "endStation": "Allen St & Hester St",
+      "elapsedSeconds": 3.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-4b6248f15448e6c90b4a",
+      "start": "2014-04-19T22:05:43Z",
+      "end": "2014-04-19T22:26:11Z",
+      "startCoordinates": [
+        -73.97895137,
+        40.68312489
+      ],
+      "endCoordinates": [
+        -73.98990025,
+        40.71427487
+      ],
+      "startStation": "Dean St & 4 Ave",
+      "endStation": "Canal St & Rutgers St",
+      "elapsedSeconds": 1228.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-2639a715060aa1cc0288",
+      "start": "2014-04-20T00:12:45Z",
+      "end": "2014-04-20T00:33:39Z",
+      "startCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "endCoordinates": [
+        -73.97069431,
+        40.75828065
+      ],
+      "startStation": "Clinton St & Grand St",
+      "endStation": "E 53 St & Lexington Ave",
+      "elapsedSeconds": 1254.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-c568db67bb232ca4cbf0",
+      "start": "2014-04-20T22:46:04Z",
+      "end": "2014-04-20T23:01:52Z",
+      "startCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "endCoordinates": [
+        -73.98409214,
+        40.74025878
+      ],
+      "startStation": "Clinton St & Grand St",
+      "endStation": "Lexington Ave & E 24 St",
+      "elapsedSeconds": 948.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-8bd1b009e2a1ab0cc375",
+      "start": "2014-04-21T02:20:50Z",
+      "end": "2014-04-21T02:41:04Z",
+      "startCoordinates": [
+        -73.98205027,
+        40.73587678
+      ],
+      "endCoordinates": [
+        -73.98990025,
+        40.71427487
+      ],
+      "startStation": "E 20 St & 2 Ave",
+      "endStation": "Canal St & Rutgers St",
+      "elapsedSeconds": 1214.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-ad27c335f0a095820b11",
+      "start": "2014-04-26T17:46:36Z",
+      "end": "2014-04-26T18:07:31Z",
+      "startCoordinates": [
+        -73.99293911,
+        40.71406667
+      ],
+      "endCoordinates": [
+        -73.97536082,
+        40.74144387
+      ],
+      "startStation": "Pike St & E Broadway",
+      "endStation": "1 Ave & E 30 St",
+      "elapsedSeconds": 1255.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-7b6a43a483c9936e5fa5",
+      "start": "2014-04-26T18:08:28Z",
+      "end": "2014-04-26T18:08:33Z",
+      "startCoordinates": [
+        -73.97536082,
+        40.74144387
+      ],
+      "endCoordinates": [
+        -73.97536082,
+        40.74144387
+      ],
+      "startStation": "1 Ave & E 30 St",
+      "endStation": "1 Ave & E 30 St",
+      "elapsedSeconds": 5.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-a300a0c45fae5a2a146a",
+      "start": "2014-04-26T18:14:58Z",
+      "end": "2014-04-26T18:19:37Z",
+      "startCoordinates": [
+        -73.976056,
+        40.744023
+      ],
+      "endCoordinates": [
+        -73.97706058,
+        40.74290902
+      ],
+      "startStation": "E 33 St & 2 Ave",
+      "endStation": "2 Ave & E 31 St",
+      "elapsedSeconds": 279.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-5696625a490b578ece69",
+      "start": "2014-04-26T18:20:15Z",
+      "end": "2014-04-26T18:46:10Z",
+      "startCoordinates": [
+        -73.97706058,
+        40.74290902
+      ],
+      "endCoordinates": [
+        -73.96478473,
+        40.76020258
+      ],
+      "startStation": "2 Ave & E 31 St",
+      "endStation": "2 Ave & E 58 St",
+      "elapsedSeconds": 1555.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-85915834f064572036e0",
+      "start": "2014-04-26T23:32:33Z",
+      "end": "2014-04-26T23:36:52Z",
+      "startCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "endCoordinates": [
+        -73.98329859,
+        40.71850211
+      ],
+      "startStation": "Clinton St & Grand St",
+      "endStation": "Rivington St & Ridge St",
+      "elapsedSeconds": 259.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-5094b9623e4d49f6aabe",
+      "start": "2014-05-03T01:46:16Z",
+      "end": "2014-05-03T02:00:47Z",
+      "startCoordinates": [
+        -73.99379025,
+        40.72743423
+      ],
+      "endCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "startStation": "Great Jones St",
+      "endStation": "Clinton St & Grand St",
+      "elapsedSeconds": 871.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-82bb101d7b84cedc487c",
+      "start": "2014-05-03T17:39:25Z",
+      "end": "2014-05-03T18:05:03Z",
+      "startCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "endCoordinates": [
+        -73.993934,
+        40.751551
+      ],
+      "startStation": "Clinton St & Grand St",
+      "endStation": "8 Ave & W 33 St",
+      "elapsedSeconds": 1538.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-c87ba8ef3395496e16cf",
+      "start": "2014-05-04T06:48:13Z",
+      "end": "2014-05-04T07:11:56Z",
+      "startCoordinates": [
+        -73.993934,
+        40.751551
+      ],
+      "endCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "startStation": "8 Ave & W 33 St",
+      "endStation": "Clinton St & Grand St",
+      "elapsedSeconds": 1423.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-94f82c6134bc1753afd5",
+      "start": "2014-05-04T15:40:27Z",
+      "end": "2014-05-04T16:05:18Z",
+      "startCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "endCoordinates": [
+        -73.993934,
+        40.751551
+      ],
+      "startStation": "Clinton St & Grand St",
+      "endStation": "8 Ave & W 33 St",
+      "elapsedSeconds": 1491.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-6ffd81e0c658e4b2cd61",
+      "start": "2014-05-04T23:06:08Z",
+      "end": "2014-05-04T23:09:25Z",
+      "startCoordinates": [
+        -74.00670227,
+        40.70355377
+      ],
+      "endCoordinates": [
+        -74.01234218,
+        40.70122128
+      ],
+      "startStation": "South St & Gouverneur Ln",
+      "endStation": "South St & Whitehall St",
+      "elapsedSeconds": 197.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-f0e31d36029121009a4b",
+      "start": "2014-05-04T23:37:16Z",
+      "end": "2014-05-05T00:10:17Z",
+      "startCoordinates": [
+        -74.01361706,
+        40.70463334
+      ],
+      "endCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "startStation": "Broadway & Battery Pl",
+      "endStation": "Clinton St & Grand St",
+      "elapsedSeconds": 1981.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-025876644c2610f5b9b3",
+      "start": "2014-05-10T00:12:14Z",
+      "end": "2014-05-10T00:26:53Z",
+      "startCoordinates": [
+        -74.00612572,
+        40.70530954
+      ],
+      "endCoordinates": [
+        -73.98990025,
+        40.71427487
+      ],
+      "startStation": "Front St & Maiden Ln",
+      "endStation": "Canal St & Rutgers St",
+      "elapsedSeconds": 879.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-05a69d84cd23d0a53480",
+      "start": "2014-05-12T00:13:47Z",
+      "end": "2014-05-12T00:32:17Z",
+      "startCoordinates": [
+        -74.01713445,
+        40.70834698
+      ],
+      "endCoordinates": [
+        -74.00443172,
+        40.74206539
+      ],
+      "startStation": "West Thames St",
+      "endStation": "9 Ave & W 16 St",
+      "elapsedSeconds": 1110.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-2222edb3aa3979fc6756",
+      "start": "2014-05-12T01:00:53Z",
+      "end": "2014-05-12T01:21:53Z",
+      "startCoordinates": [
+        -74.0026376103,
+        40.7390169121
+      ],
+      "endCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "startStation": "Greenwich Ave & 8 Ave",
+      "endStation": "Clinton St & Grand St",
+      "elapsedSeconds": 1260.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-9ce6ac75b23d5d827a56",
+      "start": "2014-05-18T14:02:39Z",
+      "end": "2014-05-18T14:22:50Z",
+      "startCoordinates": [
+        -73.98997825,
+        40.72019576
+      ],
+      "endCoordinates": [
+        -73.977706,
+        40.751873
+      ],
+      "startStation": "Allen St & Rivington St",
+      "endStation": "Pershing Square North",
+      "elapsedSeconds": 1211.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-e04ec767646dcd93bd67",
+      "start": "2014-05-19T01:20:16Z",
+      "end": "2014-05-19T01:39:33Z",
+      "startCoordinates": [
+        -73.978311,
+        40.748238
+      ],
+      "endCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "startStation": "E 37 St & Lexington Ave",
+      "endStation": "Clinton St & Grand St",
+      "elapsedSeconds": 1157.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-6c1b5a16c78603e2c2ff",
+      "start": "2014-05-26T19:01:19Z",
+      "end": "2014-05-26T19:01:30Z",
+      "startCoordinates": [
+        -73.99069656,
+        40.72502876
+      ],
+      "endCoordinates": [
+        -73.99069656,
+        40.72502876
+      ],
+      "startStation": "E 2 St & 2 Ave",
+      "endStation": "E 2 St & 2 Ave",
+      "elapsedSeconds": 11.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-aedffa6d41c251808c67",
+      "start": "2014-05-30T22:31:43Z",
+      "end": "2014-05-30T22:56:29Z",
+      "startCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "endCoordinates": [
+        -73.994442075491,
+        40.750967348716
+      ],
+      "startStation": "Clinton St & Grand St",
+      "endStation": "8 Ave & W 31 St",
+      "elapsedSeconds": 1486.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-cb69ab96ee34997dabd6",
+      "start": "2014-06-01T16:51:11Z",
+      "end": "2014-06-01T17:07:11Z",
+      "startCoordinates": [
+        -73.96024116,
+        40.71534825
+      ],
+      "endCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "startStation": "Metropolitan Ave & Bedford Ave",
+      "endStation": "Clinton St & Grand St",
+      "elapsedSeconds": 960.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-39bf066c15e0a4e70c82",
+      "start": "2014-06-01T18:55:48Z",
+      "end": "2014-06-01T19:00:23Z",
+      "startCoordinates": [
+        -73.98990025,
+        40.71427487
+      ],
+      "endCoordinates": [
+        -73.98997825,
+        40.72019576
+      ],
+      "startStation": "Canal St & Rutgers St",
+      "endStation": "Allen St & Rivington St",
+      "elapsedSeconds": 275.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-b624928eadcb50d2b966",
+      "start": "2014-06-01T19:11:44Z",
+      "end": "2014-06-01T19:20:41Z",
+      "startCoordinates": [
+        -73.989111,
+        40.722055
+      ],
+      "endCoordinates": [
+        -73.97668709,
+        40.72228087
+      ],
+      "startStation": "Allen St & E Houston St",
+      "endStation": "E 6 St & Avenue D",
+      "elapsedSeconds": 537.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-3e7f6681f8acca3db81d",
+      "start": "2014-06-01T19:57:12Z",
+      "end": "2014-06-01T20:08:00Z",
+      "startCoordinates": [
+        -73.978311,
+        40.748238
+      ],
+      "endCoordinates": [
+        -73.97031366,
+        40.75968085
+      ],
+      "startStation": "E 37 St & Lexington Ave",
+      "endStation": "E 55 St & Lexington Ave",
+      "elapsedSeconds": 648.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-d718349a12e0f4ef974f",
+      "start": "2014-06-01T21:30:24Z",
+      "end": "2014-06-01T21:57:49Z",
+      "startCoordinates": [
+        -73.98191841,
+        40.76915505
+      ],
+      "endCoordinates": [
+        -73.99704374,
+        40.73649403
+      ],
+      "startStation": "Broadway & W 60 St",
+      "endStation": "W 13 St & 6 Ave",
+      "elapsedSeconds": 1645.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-2718a5a1314174a3e71b",
+      "start": "2014-06-01T22:30:30Z",
+      "end": "2014-06-01T22:47:53Z",
+      "startCoordinates": [
+        -74.000271,
+        40.735238
+      ],
+      "endCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "startStation": "Greenwich Ave & Charles St",
+      "endStation": "Clinton St & Grand St",
+      "elapsedSeconds": 1043.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-99c696cdf5020b388a41",
+      "start": "2014-06-02T01:59:25Z",
+      "end": "2014-06-02T02:15:28Z",
+      "startCoordinates": [
+        -73.97706058,
+        40.74290902
+      ],
+      "endCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "startStation": "2 Ave & E 31 St",
+      "endStation": "Clinton St & Grand St",
+      "elapsedSeconds": 963.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-32d7706e2f105aa8afa5",
+      "start": "2014-06-06T22:38:58Z",
+      "end": "2014-06-06T23:02:24Z",
+      "startCoordinates": [
+        -73.98990025,
+        40.71427487
+      ],
+      "endCoordinates": [
+        -73.98683077,
+        40.7451677
+      ],
+      "startStation": "Canal St & Rutgers St",
+      "endStation": "5 Ave & E 29 St",
+      "elapsedSeconds": 1406.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-47a7693bf6d4cf83f65d",
+      "start": "2014-06-07T02:43:46Z",
+      "end": "2014-06-07T03:19:31Z",
+      "startCoordinates": [
+        -73.97706058,
+        40.74290902
+      ],
+      "endCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "startStation": "2 Ave & E 31 St",
+      "endStation": "Clinton St & Grand St",
+      "elapsedSeconds": 2145.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-77219ca7a638b8dd5a26",
+      "start": "2014-06-07T16:11:12Z",
+      "end": "2014-06-07T16:31:27Z",
+      "startCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "endCoordinates": [
+        -73.978311,
+        40.748238
+      ],
+      "startStation": "Clinton St & Grand St",
+      "endStation": "E 37 St & Lexington Ave",
+      "elapsedSeconds": 1215.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-61b93c6cb209e0f0292a",
+      "start": "2014-06-07T16:37:42Z",
+      "end": "2014-06-07T16:59:45Z",
+      "startCoordinates": [
+        -73.978311,
+        40.748238
+      ],
+      "endCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "startStation": "E 37 St & Lexington Ave",
+      "endStation": "Clinton St & Grand St",
+      "elapsedSeconds": 1323.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-aff67641743cdc15b41a",
+      "start": "2014-06-08T11:03:06Z",
+      "end": "2014-06-08T11:26:07Z",
+      "startCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "endCoordinates": [
+        -73.977706,
+        40.751873
+      ],
+      "startStation": "Clinton St & Grand St",
+      "endStation": "Pershing Square North",
+      "elapsedSeconds": 1381.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-adedc89adc14b9981d26",
+      "start": "2014-06-08T18:56:09Z",
+      "end": "2014-06-08T18:56:47Z",
+      "startCoordinates": [
+        -73.977706,
+        40.751873
+      ],
+      "endCoordinates": [
+        -73.9779874,
+        40.75320159
+      ],
+      "startStation": "Pershing Square North",
+      "endStation": "E 43 St & Vanderbilt Ave",
+      "elapsedSeconds": 38.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-c05c07d2dcee6b61438d",
+      "start": "2014-06-08T18:57:31Z",
+      "end": "2014-06-08T19:11:59Z",
+      "startCoordinates": [
+        -73.977706,
+        40.751873
+      ],
+      "endCoordinates": [
+        -73.98409214,
+        40.74025878
+      ],
+      "startStation": "Pershing Square North",
+      "endStation": "Lexington Ave & E 24 St",
+      "elapsedSeconds": 868.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-40544152746ec0efcd10",
+      "start": "2014-06-09T00:12:42Z",
+      "end": "2014-06-09T00:28:07Z",
+      "startCoordinates": [
+        -73.98990025,
+        40.71427487
+      ],
+      "endCoordinates": [
+        -73.989111,
+        40.722055
+      ],
+      "startStation": "Canal St & Rutgers St",
+      "endStation": "Allen St & E Houston St",
+      "elapsedSeconds": 925.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-c48c58a039c8d1f13515",
+      "start": "2014-06-09T00:51:34Z",
+      "end": "2014-06-09T00:54:36Z",
+      "startCoordinates": [
+        -73.99190759,
+        40.71605866
+      ],
+      "endCoordinates": [
+        -73.98990025,
+        40.71427487
+      ],
+      "startStation": "Allen St & Hester St",
+      "endStation": "Canal St & Rutgers St",
+      "elapsedSeconds": 182.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-38918a86ad9c64611d79",
+      "start": "2014-06-13T19:43:49Z",
+      "end": "2014-06-13T19:51:43Z",
+      "startCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "endCoordinates": [
+        -73.98426726,
+        40.72953837
+      ],
+      "startStation": "Clinton St & Grand St",
+      "endStation": "E 11 St & 1 Ave",
+      "elapsedSeconds": 474.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-334033bbca2423153cb8",
+      "start": "2014-06-14T17:05:35Z",
+      "end": "2014-06-14T17:08:26Z",
+      "startCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "endCoordinates": [
+        -73.98802084,
+        40.7172274
+      ],
+      "startStation": "Clinton St & Grand St",
+      "endStation": "Norfolk St & Broome St",
+      "elapsedSeconds": 171.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-7c96b58776dd1d01b963",
+      "start": "2014-06-14T17:08:31Z",
+      "end": "2014-06-14T17:08:44Z",
+      "startCoordinates": [
+        -73.98802084,
+        40.7172274
+      ],
+      "endCoordinates": [
+        -73.98802084,
+        40.7172274
+      ],
+      "startStation": "Norfolk St & Broome St",
+      "endStation": "Norfolk St & Broome St",
+      "elapsedSeconds": 13.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-dfd6b099fe71ae8cf70a",
+      "start": "2014-06-14T17:09:59Z",
+      "end": "2014-06-14T17:58:48Z",
+      "startCoordinates": [
+        -73.98802084,
+        40.7172274
+      ],
+      "endCoordinates": [
+        -73.98169333,
+        40.76695317
+      ],
+      "startStation": "Norfolk St & Broome St",
+      "endStation": "Broadway & W 58 St",
+      "elapsedSeconds": 2929.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-151a8f9b4fbff0a56b64",
+      "start": "2014-06-14T23:13:22Z",
+      "end": "2014-06-14T23:30:20Z",
+      "startCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "endCoordinates": [
+        -73.963198,
+        40.716887
+      ],
+      "startStation": "Clinton St & Grand St",
+      "endStation": "Wythe Ave & Metropolitan Ave",
+      "elapsedSeconds": 1018.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-b041ec8a82eacd33f4ef",
+      "start": "2014-06-15T23:52:53Z",
+      "end": "2014-06-16T00:04:28Z",
+      "startCoordinates": [
+        -73.977706,
+        40.751873
+      ],
+      "endCoordinates": [
+        -73.97966069,
+        40.74394314
+      ],
+      "startStation": "Pershing Square North",
+      "endStation": "E 31 St & 3 Ave",
+      "elapsedSeconds": 695.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-69ab01de536bbcb3e35d",
+      "start": "2014-06-21T00:39:57Z",
+      "end": "2014-06-21T00:56:06Z",
+      "startCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "endCoordinates": [
+        -73.99704374,
+        40.73649403
+      ],
+      "startStation": "Clinton St & Grand St",
+      "endStation": "W 13 St & 6 Ave",
+      "elapsedSeconds": 969.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-e8ce5acd6d498e16780f",
+      "start": "2014-06-21T07:22:23Z",
+      "end": "2014-06-21T07:38:22Z",
+      "startCoordinates": [
+        -73.98889957,
+        40.73223272
+      ],
+      "endCoordinates": [
+        -73.98990025,
+        40.71427487
+      ],
+      "startStation": "E 12 St & 3 Ave",
+      "endStation": "Canal St & Rutgers St",
+      "elapsedSeconds": 959.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-a9b2c261cb11ba74eeb4",
+      "start": "2014-06-21T13:27:44Z",
+      "end": "2014-06-21T13:47:26Z",
+      "startCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "endCoordinates": [
+        -73.994442075491,
+        40.750967348716
+      ],
+      "startStation": "Clinton St & Grand St",
+      "endStation": "8 Ave & W 31 St",
+      "elapsedSeconds": 1182.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-99c1cbb174fd5c341091",
+      "start": "2014-06-22T15:21:53Z",
+      "end": "2014-06-22T15:42:08Z",
+      "startCoordinates": [
+        -73.98802084,
+        40.7172274
+      ],
+      "endCoordinates": [
+        -73.9779874,
+        40.75320159
+      ],
+      "startStation": "Norfolk St & Broome St",
+      "endStation": "E 43 St & Vanderbilt Ave",
+      "elapsedSeconds": 1215.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-b9df6665cd8baf1eb4f3",
+      "start": "2014-06-23T00:27:51Z",
+      "end": "2014-06-23T00:32:03Z",
+      "startCoordinates": [
+        -73.98990025,
+        40.71427487
+      ],
+      "endCoordinates": [
+        -73.9970468,
+        40.71413089
+      ],
+      "startStation": "Canal St & Rutgers St",
+      "endStation": "Division St & Bowery",
+      "elapsedSeconds": 252.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-63b03533a18724481cda",
+      "start": "2014-06-28T04:19:47Z",
+      "end": "2014-06-28T04:41:58Z",
+      "startCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "endCoordinates": [
+        -73.97973776,
+        40.73912601
+      ],
+      "startStation": "Clinton St & Grand St",
+      "endStation": "E 25 St & 2 Ave",
+      "elapsedSeconds": 1331.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-d5b386adee684ef62181",
+      "start": "2014-06-28T07:47:44Z",
+      "end": "2014-06-28T07:50:57Z",
+      "startCoordinates": [
+        -73.99190759,
+        40.71605866
+      ],
+      "endCoordinates": [
+        -73.98990025,
+        40.71427487
+      ],
+      "startStation": "Allen St & Hester St",
+      "endStation": "Canal St & Rutgers St",
+      "elapsedSeconds": 193.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-3b0c145d9b67ea29ff67",
+      "start": "2014-06-28T18:35:59Z",
+      "end": "2014-06-28T18:43:12Z",
+      "startCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "endCoordinates": [
+        -73.99266288,
+        40.71893904
+      ],
+      "startStation": "Clinton St & Grand St",
+      "endStation": "Forsyth St & Broome St",
+      "elapsedSeconds": 433.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-768268e51235cb36c0cd",
+      "start": "2014-06-28T21:58:45Z",
+      "end": "2014-06-28T22:02:28Z",
+      "startCoordinates": [
+        -73.99422366,
+        40.7158155
+      ],
+      "endCoordinates": [
+        -73.98990025,
+        40.71427487
+      ],
+      "startStation": "Forsyth St & Canal St",
+      "endStation": "Canal St & Rutgers St",
+      "elapsedSeconds": 223.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-9e1eee0b920f0bec71fc",
+      "start": "2014-06-28T23:08:44Z",
+      "end": "2014-06-28T23:15:19Z",
+      "startCoordinates": [
+        -73.98990025,
+        40.71427487
+      ],
+      "endCoordinates": [
+        -73.9970468,
+        40.71413089
+      ],
+      "startStation": "Canal St & Rutgers St",
+      "endStation": "Division St & Bowery",
+      "elapsedSeconds": 395.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-c87f4b7530e0eda95c91",
+      "start": "2014-06-29T16:36:35Z",
+      "end": "2014-06-29T16:59:00Z",
+      "startCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "endCoordinates": [
+        -73.98955109,
+        40.7403432
+      ],
+      "startStation": "Clinton St & Grand St",
+      "endStation": "Broadway & E 22 St",
+      "elapsedSeconds": 1345.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-148bf5d4f78ef2241ac9",
+      "start": "2014-06-30T02:19:39Z",
+      "end": "2014-06-30T02:34:17Z",
+      "startCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "endCoordinates": [
+        -73.989111,
+        40.722055
+      ],
+      "startStation": "Clinton St & Grand St",
+      "endStation": "Allen St & E Houston St",
+      "elapsedSeconds": 878.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-a70919abad9e42a1a68c",
+      "start": "2014-06-30T03:00:31Z",
+      "end": "2014-06-30T03:06:19Z",
+      "startCoordinates": [
+        -73.989111,
+        40.722055
+      ],
+      "endCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "startStation": "Allen St & E Houston St",
+      "endStation": "Clinton St & Grand St",
+      "elapsedSeconds": 348.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-22b689b10d5d832fe182",
+      "start": "2014-07-11T17:16:12Z",
+      "end": "2014-07-11T17:20:51Z",
+      "startCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "endCoordinates": [
+        -73.98517977,
+        40.72066442
+      ],
+      "startStation": "Clinton St & Grand St",
+      "endStation": "Suffolk St & Stanton St",
+      "elapsedSeconds": 279.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-b25835a06a81ee98bac9",
+      "start": "2014-07-11T21:49:22Z",
+      "end": "2014-07-11T21:56:41Z",
+      "startCoordinates": [
+        -73.989111,
+        40.722055
+      ],
+      "endCoordinates": [
+        -73.98776323,
+        40.71269042
+      ],
+      "startStation": "Allen St & E Houston St",
+      "endStation": "Madison St & Clinton St",
+      "elapsedSeconds": 439.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-26b565f1b0d9492d5c16",
+      "start": "2014-07-12T05:12:10Z",
+      "end": "2014-07-12T05:24:57Z",
+      "startCoordinates": [
+        -73.98672378,
+        40.73047309
+      ],
+      "endCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "startStation": "E 11 St & 2 Ave",
+      "endStation": "Clinton St & Grand St",
+      "elapsedSeconds": 767.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-e4decb7ad9323c7b25c9",
+      "start": "2014-07-12T11:56:21Z",
+      "end": "2014-07-12T12:18:22Z",
+      "startCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "endCoordinates": [
+        -73.977706,
+        40.751873
+      ],
+      "startStation": "Clinton St & Grand St",
+      "endStation": "Pershing Square North",
+      "elapsedSeconds": 1321.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-28aa8d52ef9f02d060b2",
+      "start": "2014-07-12T20:50:17Z",
+      "end": "2014-07-12T21:15:33Z",
+      "startCoordinates": [
+        -73.977706,
+        40.751873
+      ],
+      "endCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "startStation": "Pershing Square North",
+      "endStation": "Clinton St & Grand St",
+      "elapsedSeconds": 1516.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-3f4dc0e277d8c5e0284e",
+      "start": "2014-07-12T22:05:51Z",
+      "end": "2014-07-12T22:19:03Z",
+      "startCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "endCoordinates": [
+        -73.99906065,
+        40.73047747
+      ],
+      "startStation": "Clinton St & Grand St",
+      "endStation": "Sullivan St & Washington Sq",
+      "elapsedSeconds": 792.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-2732b6db6e431662f8ba",
+      "start": "2014-07-13T04:55:37Z",
+      "end": "2014-07-13T05:08:44Z",
+      "startCoordinates": [
+        -73.98057249,
+        40.72955361
+      ],
+      "endCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "startStation": "E 13 St & Avenue A",
+      "endStation": "Clinton St & Grand St",
+      "elapsedSeconds": 787.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-e0cfa52169f985613a70",
+      "start": "2014-07-13T22:55:17Z",
+      "end": "2014-07-13T23:02:19Z",
+      "startCoordinates": [
+        -73.98990025,
+        40.71427487
+      ],
+      "endCoordinates": [
+        -73.996375,
+        40.71729
+      ],
+      "startStation": "Canal St & Rutgers St",
+      "endStation": "Elizabeth St & Hester St",
+      "elapsedSeconds": 422.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-1e9b7c0cf017b2107010",
+      "start": "2014-08-08T21:22:57Z",
+      "end": "2014-08-08T21:45:50Z",
+      "startCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "endCoordinates": [
+        -73.977706,
+        40.751873
+      ],
+      "startStation": "Clinton St & Grand St",
+      "endStation": "Pershing Square North",
+      "elapsedSeconds": 1373.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-db048bed98bb1779b7f1",
+      "start": "2014-08-09T19:53:19Z",
+      "end": "2014-08-09T20:20:34Z",
+      "startCoordinates": [
+        -73.977706,
+        40.751873
+      ],
+      "endCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "startStation": "Pershing Square North",
+      "endStation": "Clinton St & Grand St",
+      "elapsedSeconds": 1635.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-407535e9071141b49dbe",
+      "start": "2014-08-09T21:52:38Z",
+      "end": "2014-08-09T22:04:09Z",
+      "startCoordinates": [
+        -74.00838676,
+        40.7037992
+      ],
+      "endCoordinates": [
+        -73.98776323,
+        40.71269042
+      ],
+      "startStation": "Old Slip & Front St",
+      "endStation": "Madison St & Clinton St",
+      "elapsedSeconds": 691.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-672c29c094e3147efb2a",
+      "start": "2014-08-10T00:23:32Z",
+      "end": "2014-08-10T00:42:56Z",
+      "startCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "endCoordinates": [
+        -73.963198,
+        40.716887
+      ],
+      "startStation": "Clinton St & Grand St",
+      "endStation": "Wythe Ave & Metropolitan Ave",
+      "elapsedSeconds": 1164.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-78bde2a8f821b5f377b6",
+      "start": "2014-08-10T05:26:32Z",
+      "end": "2014-08-10T05:41:08Z",
+      "startCoordinates": [
+        -73.96024116,
+        40.71534825
+      ],
+      "endCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "startStation": "Metropolitan Ave & Bedford Ave",
+      "endStation": "Clinton St & Grand St",
+      "elapsedSeconds": 876.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-574e52c5f42f3c54af3e",
+      "start": "2014-08-10T16:39:00Z",
+      "end": "2014-08-10T16:56:13Z",
+      "startCoordinates": [
+        -73.97706058,
+        40.74290902
+      ],
+      "endCoordinates": [
+        -73.98517977,
+        40.72066442
+      ],
+      "startStation": "2 Ave & E 31 St",
+      "endStation": "Suffolk St & Stanton St",
+      "elapsedSeconds": 1033.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-376ceebc19b9561735be",
+      "start": "2014-08-15T17:44:19Z",
+      "end": "2014-08-15T17:51:34Z",
+      "startCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "endCoordinates": [
+        -73.989111,
+        40.722055
+      ],
+      "startStation": "Clinton St & Grand St",
+      "endStation": "Allen St & E Houston St",
+      "elapsedSeconds": 435.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-3d14ae50b971b7fa556d",
+      "start": "2014-08-16T16:50:34Z",
+      "end": "2014-08-16T17:12:23Z",
+      "startCoordinates": [
+        -74.01658354,
+        40.7153379
+      ],
+      "endCoordinates": [
+        -73.98990025,
+        40.71427487
+      ],
+      "startStation": "Vesey Pl & River Terrace",
+      "endStation": "Canal St & Rutgers St",
+      "elapsedSeconds": 1309.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-57b30464361b14838b28",
+      "start": "2014-08-18T00:46:28Z",
+      "end": "2014-08-18T00:56:05Z",
+      "startCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "endCoordinates": [
+        -73.98426726,
+        40.72953837
+      ],
+      "startStation": "Clinton St & Grand St",
+      "endStation": "E 11 St & 1 Ave",
+      "elapsedSeconds": 577.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-9a857ed97274cc0371be",
+      "start": "2014-08-22T18:31:15Z",
+      "end": "2014-08-22T18:35:32Z",
+      "startCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "endCoordinates": [
+        -73.98517977,
+        40.72066442
+      ],
+      "startStation": "Clinton St & Grand St",
+      "endStation": "Suffolk St & Stanton St",
+      "elapsedSeconds": 257.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-ccb102a199e79d017303",
+      "start": "2014-08-22T20:20:09Z",
+      "end": "2014-08-22T20:29:53Z",
+      "startCoordinates": [
+        -73.98368779,
+        40.72217444
+      ],
+      "endCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "startStation": "E 2 St & Avenue B",
+      "endStation": "Clinton St & Grand St",
+      "elapsedSeconds": 584.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-c99f590c4f93bbf87781",
+      "start": "2014-08-23T01:24:46Z",
+      "end": "2014-08-23T01:38:06Z",
+      "startCoordinates": [
+        -74.01322069,
+        40.71754834
+      ],
+      "endCoordinates": [
+        -73.98990025,
+        40.71427487
+      ],
+      "startStation": "West St & Chambers St",
+      "endStation": "Canal St & Rutgers St",
+      "elapsedSeconds": 800.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-a6440c810b720f0a745d",
+      "start": "2014-08-24T02:00:16Z",
+      "end": "2014-08-24T02:08:01Z",
+      "startCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "endCoordinates": [
+        -73.98185424,
+        40.72453734
+      ],
+      "startStation": "Clinton St & Grand St",
+      "endStation": "E 6 St & Avenue B",
+      "elapsedSeconds": 465.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-c7dbcde863cce8e0a64b",
+      "start": "2014-08-24T19:40:49Z",
+      "end": "2014-08-24T19:52:21Z",
+      "startCoordinates": [
+        -73.98802084,
+        40.7172274
+      ],
+      "endCoordinates": [
+        -74.00154702,
+        40.72490985
+      ],
+      "startStation": "Norfolk St & Broome St",
+      "endStation": "W Broadway & Spring St",
+      "elapsedSeconds": 692.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-278553a45b7932c3cad3",
+      "start": "2014-08-25T04:25:03Z",
+      "end": "2014-08-25T04:32:15Z",
+      "startCoordinates": [
+        -73.98185424,
+        40.72453734
+      ],
+      "endCoordinates": [
+        -73.9870295,
+        40.71559509
+      ],
+      "startStation": "E 6 St & Avenue B",
+      "endStation": "Clinton St & Grand St",
+      "elapsedSeconds": 432.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-0b7c956ffa57d9b895f0",
+      "start": "2014-09-12T22:14:46Z",
+      "end": "2014-09-12T22:41:06Z",
+      "startCoordinates": [
+        -73.98329859,
+        40.71850211
+      ],
+      "endCoordinates": [
+        -73.977706,
+        40.751873
+      ],
+      "startStation": "Rivington St & Ridge St",
+      "endStation": "Pershing Square North",
+      "elapsedSeconds": 1580.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-7143ccfb30cf69f41d3b",
+      "start": "2014-09-14T18:34:02Z",
+      "end": "2014-09-14T18:55:33Z",
+      "startCoordinates": [
+        -73.98329859,
+        40.71850211
+      ],
+      "endCoordinates": [
+        -73.99456405,
+        40.73971301
+      ],
+      "startStation": "Rivington St & Ridge St",
+      "endStation": "W 18 St & 6 Ave",
+      "elapsedSeconds": 1291.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-8643203766060e160426",
+      "start": "2014-09-14T19:39:22Z",
+      "end": "2014-09-14T20:05:03Z",
+      "startCoordinates": [
+        -73.99456405,
+        40.73971301
+      ],
+      "endCoordinates": [
+        -73.98329859,
+        40.71850211
+      ],
+      "startStation": "W 18 St & 6 Ave",
+      "endStation": "Rivington St & Ridge St",
+      "elapsedSeconds": 1541.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-126a22630dcba7e25d61",
+      "start": "2014-09-14T23:25:53Z",
+      "end": "2014-09-14T23:37:32Z",
+      "startCoordinates": [
+        -73.98329859,
+        40.71850211
+      ],
+      "endCoordinates": [
+        -73.99949601,
+        40.72362738
+      ],
+      "startStation": "Rivington St & Ridge St",
+      "endStation": "Mercer St & Spring St",
+      "elapsedSeconds": 699.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-c7e91b1e39f1ae896972",
+      "start": "2014-09-15T00:18:02Z",
+      "end": "2014-09-15T00:40:09Z",
+      "startCoordinates": [
+        -74.00234737,
+        40.72165481
+      ],
+      "endCoordinates": [
+        -73.98329859,
+        40.71850211
+      ],
+      "startStation": "Grand St & Greene St",
+      "endStation": "Rivington St & Ridge St",
+      "elapsedSeconds": 1327.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-c6267c3db203fd460ac6",
+      "start": "2014-09-20T00:05:48Z",
+      "end": "2014-09-20T00:17:59Z",
+      "startCoordinates": [
+        -73.960876,
+        40.710451
+      ],
+      "endCoordinates": [
+        -73.98329859,
+        40.71850211
+      ],
+      "startStation": "S 5 Pl & S 4 St",
+      "endStation": "Rivington St & Ridge St",
+      "elapsedSeconds": 731.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-7cbdaddf5bcd30aaabda",
+      "start": "2014-09-20T16:21:23Z",
+      "end": "2014-09-20T16:35:31Z",
+      "startCoordinates": [
+        -73.98517977,
+        40.72066442
+      ],
+      "endCoordinates": [
+        -73.98955109,
+        40.7403432
+      ],
+      "startStation": "Suffolk St & Stanton St",
+      "endStation": "Broadway & E 22 St",
+      "elapsedSeconds": 848.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-2433872e6211f7830f87",
+      "start": "2014-09-20T20:12:52Z",
+      "end": "2014-09-20T20:19:22Z",
+      "startCoordinates": [
+        -73.97948148,
+        40.71219906
+      ],
+      "endCoordinates": [
+        -73.98329859,
+        40.71850211
+      ],
+      "startStation": "Cherry St",
+      "endStation": "Rivington St & Ridge St",
+      "elapsedSeconds": 390.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-8129fee0d939445db9eb",
+      "start": "2014-10-06T00:02:27Z",
+      "end": "2014-10-06T00:08:49Z",
+      "startCoordinates": [
+        -73.98329859,
+        40.71850211
+      ],
+      "endCoordinates": [
+        -73.98142006,
+        40.72740794
+      ],
+      "startStation": "Rivington St & Ridge St",
+      "endStation": "E 10 St & Avenue A",
+      "elapsedSeconds": 382.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-c9ccad67f932e5fdaaae",
+      "start": "2014-10-06T02:11:03Z",
+      "end": "2014-10-06T02:17:27Z",
+      "startCoordinates": [
+        -73.98142006,
+        40.72740794
+      ],
+      "endCoordinates": [
+        -73.98329859,
+        40.71850211
+      ],
+      "startStation": "E 10 St & Avenue A",
+      "endStation": "Rivington St & Ridge St",
+      "elapsedSeconds": 384.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-fb0a67bf7219763d4617",
+      "start": "2014-10-12T19:06:36Z",
+      "end": "2014-10-12T19:19:28Z",
+      "startCoordinates": [
+        -73.99720307,
+        40.7218158
+      ],
+      "endCoordinates": [
+        -73.98329859,
+        40.71850211
+      ],
+      "startStation": "Cleveland Pl & Spring St",
+      "endStation": "Rivington St & Ridge St",
+      "elapsedSeconds": 772.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-9d1929f4b3ffee75c569",
+      "start": "2014-10-24T20:30:19Z",
+      "end": "2014-10-24T20:50:49Z",
+      "startCoordinates": [
+        -74.00550867,
+        40.7405826
+      ],
+      "endCoordinates": [
+        -73.98329859,
+        40.71850211
+      ],
+      "startStation": "9 Ave & W 14 St",
+      "endStation": "Rivington St & Ridge St",
+      "elapsedSeconds": 1230.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-e294da55396deca42368",
+      "start": "2014-10-24T23:52:15Z",
+      "end": "2014-10-24T23:57:13Z",
+      "startCoordinates": [
+        -73.98329859,
+        40.71850211
+      ],
+      "endCoordinates": [
+        -73.98379855,
+        40.72621788
+      ],
+      "startStation": "Rivington St & Ridge St",
+      "endStation": "E 7 St & Avenue A",
+      "elapsedSeconds": 298.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-1c2eb54c80e4f5c2b85e",
+      "start": "2014-10-26T19:00:45Z",
+      "end": "2014-10-26T19:12:28Z",
+      "startCoordinates": [
+        -73.99800419,
+        40.73532427
+      ],
+      "endCoordinates": [
+        -74.00859207,
+        40.7361967
+      ],
+      "startStation": "W 11 St & 6 Ave",
+      "endStation": "Bank St & Washington St",
+      "elapsedSeconds": 703.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-c06a56f2de4b2d8c853a",
+      "start": "2014-10-26T20:22:53Z",
+      "end": "2014-10-26T20:45:34Z",
+      "startCoordinates": [
+        -74.0021163,
+        40.75594159
+      ],
+      "endCoordinates": [
+        -74.00214988,
+        40.73038599
+      ],
+      "startStation": "W 34 St & 11 Ave",
+      "endStation": "Carmine St & 6 Ave",
+      "elapsedSeconds": 1361.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-b95b68499f828e4f539e",
+      "start": "2014-11-01T01:04:05Z",
+      "end": "2014-11-01T01:29:40Z",
+      "startCoordinates": [
+        -73.98329859,
+        40.71850211
+      ],
+      "endCoordinates": null,
+      "startStation": "Rivington St & Ridge St",
+      "endStation": "Lexington Ave & E 26 St",
+      "elapsedSeconds": 1535.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-ff8d56f2d844c137e6d3",
+      "start": "2014-11-08T03:09:30Z",
+      "end": "2014-11-08T03:18:38Z",
+      "startCoordinates": [
+        -73.98329859,
+        40.71850211
+      ],
+      "endCoordinates": [
+        -73.98672378,
+        40.73047309
+      ],
+      "startStation": "Rivington St & Ridge St",
+      "endStation": "E 11 St & 2 Ave",
+      "elapsedSeconds": 548.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-31dfe82102e2bdff68c2",
+      "start": "2014-11-08T05:51:27Z",
+      "end": "2014-11-08T05:59:43Z",
+      "startCoordinates": [
+        -73.98672378,
+        40.73047309
+      ],
+      "endCoordinates": [
+        -73.98329859,
+        40.71850211
+      ],
+      "startStation": "E 11 St & 2 Ave",
+      "endStation": "Rivington St & Ridge St",
+      "elapsedSeconds": 496.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-81aa8f1a30c2116e4451",
+      "start": "2014-11-29T18:48:55Z",
+      "end": "2014-11-29T19:03:25Z",
+      "startCoordinates": [
+        -73.960876,
+        40.710451
+      ],
+      "endCoordinates": [
+        -73.98517977,
+        40.72066442
+      ],
+      "startStation": "S 5 Pl & S 4 St",
+      "endStation": "Suffolk St & Stanton St",
+      "elapsedSeconds": 870.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-fb4b1ad8fde83149794c",
+      "start": "2014-12-14T20:37:09Z",
+      "end": "2014-12-14T21:05:08Z",
+      "startCoordinates": [
+        -73.98517977,
+        40.72066442
+      ],
+      "endCoordinates": [
+        -74.00550867,
+        40.7405826
+      ],
+      "startStation": "Suffolk St & Stanton St",
+      "endStation": "9 Ave & W 14 St",
+      "elapsedSeconds": 1679.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-979ce6b195f8fe944085",
+      "start": "2014-12-14T22:47:08Z",
+      "end": "2014-12-14T23:11:38Z",
+      "startCoordinates": [
+        -74.00443172,
+        40.74206539
+      ],
+      "endCoordinates": [
+        -73.98329859,
+        40.71850211
+      ],
+      "startStation": "9 Ave & W 16 St",
+      "endStation": "Rivington St & Ridge St",
+      "elapsedSeconds": 1470.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-bd054abb7a5547f547d0",
+      "start": "2015-01-15T17:04:23Z",
+      "end": "2015-01-15T17:17:28Z",
+      "startCoordinates": [
+        -73.98473765,
+        40.73624527
+      ],
+      "endCoordinates": [
+        -73.98329859,
+        40.71850211
+      ],
+      "startStation": "E 19 St & 3 Ave",
+      "endStation": "Rivington St & Ridge St",
+      "elapsedSeconds": 785.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-3370569d99ad68b7ce2b",
+      "start": "2015-01-18T00:03:10Z",
+      "end": "2015-01-18T00:07:45Z",
+      "startCoordinates": [
+        -73.98517977,
+        40.72066442
+      ],
+      "endCoordinates": [
+        -73.98379855,
+        40.72621788
+      ],
+      "startStation": "Suffolk St & Stanton St",
+      "endStation": "E 7 St & Avenue A",
+      "elapsedSeconds": 275.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-f8b23049375ab6efb95a",
+      "start": "2015-01-19T20:21:33Z",
+      "end": "2015-01-19T20:36:28Z",
+      "startCoordinates": [
+        -73.98517977,
+        40.72066442
+      ],
+      "endCoordinates": [
+        -74.00562789,
+        40.71450451
+      ],
+      "startStation": "Suffolk St & Stanton St",
+      "endStation": "Reade St & Broadway",
+      "elapsedSeconds": 895.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-fa461f93f44a338c618f",
+      "start": "2015-01-19T20:44:19Z",
+      "end": "2015-01-19T20:58:06Z",
+      "startCoordinates": [
+        -74.00562789,
+        40.71450451
+      ],
+      "endCoordinates": [
+        -73.98802084,
+        40.7172274
+      ],
+      "startStation": "Reade St & Broadway",
+      "endStation": "Norfolk St & Broome St",
+      "elapsedSeconds": 827.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-2920ef48080a515e80df",
+      "start": "2015-01-21T19:46:43Z",
+      "end": "2015-01-21T19:55:32Z",
+      "startCoordinates": [
+        -73.996375,
+        40.71729
+      ],
+      "endCoordinates": [
+        -73.98329859,
+        40.71850211
+      ],
+      "startStation": "Elizabeth St & Hester St",
+      "endStation": "Rivington St & Ridge St",
+      "elapsedSeconds": 529.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-908823992f6136b21051",
+      "start": "2015-02-08T20:57:09Z",
+      "end": "2015-02-08T21:10:47Z",
+      "startCoordinates": [
+        -73.98517977,
+        40.72066442
+      ],
+      "endCoordinates": [
+        -73.99949601,
+        40.72362738
+      ],
+      "startStation": "Suffolk St & Stanton St",
+      "endStation": "Mercer St & Spring St",
+      "elapsedSeconds": 818.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-c93505b867ce6108f68a",
+      "start": "2015-02-12T23:41:56Z",
+      "end": "2015-02-13T00:00:04Z",
+      "startCoordinates": [
+        -73.98517977,
+        40.72066442
+      ],
+      "endCoordinates": [
+        -73.98602213,
+        40.74096374
+      ],
+      "startStation": "Suffolk St & Stanton St",
+      "endStation": "E 24 St & Park Ave S",
+      "elapsedSeconds": 1088.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-54c984db4b3ea319041c",
+      "start": "2015-03-13T01:09:08Z",
+      "end": "2015-03-13T01:18:47Z",
+      "startCoordinates": [
+        -73.98329859,
+        40.71850211
+      ],
+      "endCoordinates": [
+        -73.98713956,
+        40.7284186
+      ],
+      "startStation": "Rivington St & Ridge St",
+      "endStation": "St Marks Pl & 2 Ave",
+      "elapsedSeconds": 579.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-c10e3d91f158a53fea63",
+      "start": "2015-03-13T01:36:44Z",
+      "end": "2015-03-13T01:45:55Z",
+      "startCoordinates": [
+        -73.98713956,
+        40.7284186
+      ],
+      "endCoordinates": [
+        -73.98802084,
+        40.7172274
+      ],
+      "startStation": "St Marks Pl & 2 Ave",
+      "endStation": "Norfolk St & Broome St",
+      "elapsedSeconds": 551.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-ad7481db19c0dbf2bd89",
+      "start": "2015-03-13T23:52:06Z",
+      "end": "2015-03-14T00:06:12Z",
+      "startCoordinates": [
+        -73.98329859,
+        40.71850211
+      ],
+      "endCoordinates": [
+        -73.96024116,
+        40.71534825
+      ],
+      "startStation": "Rivington St & Ridge St",
+      "endStation": "Metropolitan Ave & Bedford Ave",
+      "elapsedSeconds": 846.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-16d8cb69593dafb43661",
+      "start": "2015-03-14T20:21:11Z",
+      "end": "2015-03-14T20:39:50Z",
+      "startCoordinates": [
+        -73.96759673,
+        40.75934501
+      ],
+      "endCoordinates": [
+        -73.98713956,
+        40.7284186
+      ],
+      "startStation": "E 56 St & 3 Ave",
+      "endStation": "St Marks Pl & 2 Ave",
+      "elapsedSeconds": 1119.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-dec9cb9a674d1c229cf6",
+      "start": "2015-03-14T23:11:54Z",
+      "end": "2015-03-14T23:29:40Z",
+      "startCoordinates": [
+        -73.97809472,
+        40.736502
+      ],
+      "endCoordinates": [
+        -73.98329859,
+        40.71850211
+      ],
+      "startStation": "E 23 St & 1 Ave",
+      "endStation": "Rivington St & Ridge St",
+      "elapsedSeconds": 1066.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-8d9f2349a610131f9e9e",
+      "start": "2015-03-15T15:31:00Z",
+      "end": "2015-03-15T15:44:22Z",
+      "startCoordinates": [
+        -74.00552427,
+        40.71146364
+      ],
+      "endCoordinates": [
+        -73.98329859,
+        40.71850211
+      ],
+      "startStation": "Spruce St & Nassau St",
+      "endStation": "Rivington St & Ridge St",
+      "elapsedSeconds": 802.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-045dd886edb6a871825c",
+      "start": "2015-03-20T15:34:10Z",
+      "end": "2015-03-20T15:51:05Z",
+      "startCoordinates": [
+        -73.98329859,
+        40.71850211
+      ],
+      "endCoordinates": [
+        -73.99009296,
+        40.73704984
+      ],
+      "startStation": "Rivington St & Ridge St",
+      "endStation": "E 17 St & Broadway",
+      "elapsedSeconds": 1015.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-972f6c050f8c243823b0",
+      "start": "2015-03-20T17:20:47Z",
+      "end": "2015-03-20T17:35:28Z",
+      "startCoordinates": [
+        -73.99009296,
+        40.73704984
+      ],
+      "endCoordinates": [
+        -73.98329859,
+        40.71850211
+      ],
+      "startStation": "E 17 St & Broadway",
+      "endStation": "Rivington St & Ridge St",
+      "elapsedSeconds": 881.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-c1e61e80afe2b3dc2f86",
+      "start": "2015-03-21T21:20:36Z",
+      "end": "2015-03-21T21:46:08Z",
+      "startCoordinates": [
+        -74.01713445,
+        40.70834698
+      ],
+      "endCoordinates": [
+        -73.98802084,
+        40.7172274
+      ],
+      "startStation": "West Thames St",
+      "endStation": "Norfolk St & Broome St",
+      "elapsedSeconds": 1532.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-a845ded969b792e19096",
+      "start": "2015-03-22T20:30:00Z",
+      "end": "2015-03-22T20:47:17Z",
+      "startCoordinates": [
+        -73.98329859,
+        40.71850211
+      ],
+      "endCoordinates": [
+        -73.98855723,
+        40.7462009
+      ],
+      "startStation": "Rivington St & Ridge St",
+      "endStation": "Broadway & W 29 St",
+      "elapsedSeconds": 1037.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-d9ddbbbeea2f0ae675a8",
+      "start": "2015-03-23T01:01:59Z",
+      "end": "2015-03-23T01:19:57Z",
+      "startCoordinates": [
+        -73.98848395,
+        40.74901271
+      ],
+      "endCoordinates": [
+        -73.98517977,
+        40.72066442
+      ],
+      "startStation": "6 Ave & W 33 St",
+      "endStation": "Suffolk St & Stanton St",
+      "elapsedSeconds": 1078.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-f88f7a59acba418d41a7",
+      "start": "2015-03-29T15:26:01Z",
+      "end": "2015-03-29T15:40:29Z",
+      "startCoordinates": [
+        -73.98802084,
+        40.7172274
+      ],
+      "endCoordinates": [
+        -74.004704,
+        40.724399
+      ],
+      "startStation": "Norfolk St & Broome St",
+      "endStation": "6 Ave & Broome St",
+      "elapsedSeconds": 868.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-3fbf5a5f97626699e8b1",
+      "start": "2015-03-30T00:07:53Z",
+      "end": "2015-03-30T00:21:30Z",
+      "startCoordinates": [
+        -73.98329859,
+        40.71850211
+      ],
+      "endCoordinates": [
+        -74.00214988,
+        40.73038599
+      ],
+      "startStation": "Rivington St & Ridge St",
+      "endStation": "Carmine St & 6 Ave",
+      "elapsedSeconds": 817.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-798921ad18d57e990a8f",
+      "start": "2015-03-30T01:19:11Z",
+      "end": "2015-03-30T01:35:52Z",
+      "startCoordinates": [
+        -74.00214988,
+        40.73038599
+      ],
+      "endCoordinates": [
+        -73.98329859,
+        40.71850211
+      ],
+      "startStation": "Carmine St & 6 Ave",
+      "endStation": "Rivington St & Ridge St",
+      "elapsedSeconds": 1001.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-05d0bffa199eba1db6ad",
+      "start": "2015-04-03T14:20:13Z",
+      "end": "2015-04-03T14:28:09Z",
+      "startCoordinates": [
+        -73.98329859,
+        40.71850211
+      ],
+      "endCoordinates": [
+        -73.98142006,
+        40.72740794
+      ],
+      "startStation": "Rivington St & Ridge St",
+      "endStation": "E 10 St & Avenue A",
+      "elapsedSeconds": 476.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-77afa4b90ce4d174bf12",
+      "start": "2015-04-04T15:58:47Z",
+      "end": "2015-04-04T16:11:35Z",
+      "startCoordinates": [
+        -73.98802084,
+        40.7172274
+      ],
+      "endCoordinates": [
+        -74.01121978,
+        40.71542197
+      ],
+      "startStation": "Norfolk St & Broome St",
+      "endStation": "Greenwich St & Warren St",
+      "elapsedSeconds": 768.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-4f2a12f5d6eaac6363e5",
+      "start": "2015-04-04T16:47:36Z",
+      "end": "2015-04-04T17:05:29Z",
+      "startCoordinates": [
+        -74.00666661,
+        40.71911552
+      ],
+      "endCoordinates": [
+        -73.98517977,
+        40.72066442
+      ],
+      "startStation": "Franklin St & W Broadway",
+      "endStation": "Suffolk St & Stanton St",
+      "elapsedSeconds": 1073.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-2c6f39495612fbe91d66",
+      "start": "2015-04-04T18:08:07Z",
+      "end": "2015-04-04T18:13:19Z",
+      "startCoordinates": [
+        -73.98329859,
+        40.71850211
+      ],
+      "endCoordinates": [
+        -73.98379855,
+        40.72621788
+      ],
+      "startStation": "Rivington St & Ridge St",
+      "endStation": "E 7 St & Avenue A",
+      "elapsedSeconds": 312.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-d8f6b04222bbc960072e",
+      "start": "2015-04-05T20:07:43Z",
+      "end": "2015-04-05T20:23:59Z",
+      "startCoordinates": [
+        -73.98329859,
+        40.71850211
+      ],
+      "endCoordinates": [
+        -73.99852205,
+        40.73226398
+      ],
+      "startStation": "Rivington St & Ridge St",
+      "endStation": "MacDougal St & Washington Sq",
+      "elapsedSeconds": 976.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-825cdcd7014597b24aa6",
+      "start": "2015-04-05T21:52:43Z",
+      "end": "2015-04-05T22:05:42Z",
+      "startCoordinates": [
+        -73.9957214,
+        40.73049393
+      ],
+      "endCoordinates": [
+        -73.98802084,
+        40.7172274
+      ],
+      "startStation": "Washington Square E",
+      "endStation": "Norfolk St & Broome St",
+      "elapsedSeconds": 779.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-31ccccf466d4ecb21e58",
+      "start": "2015-04-05T22:52:00Z",
+      "end": "2015-04-05T22:59:15Z",
+      "startCoordinates": [
+        -73.98329859,
+        40.71850211
+      ],
+      "endCoordinates": [
+        -73.98713956,
+        40.7284186
+      ],
+      "startStation": "Rivington St & Ridge St",
+      "endStation": "St Marks Pl & 2 Ave",
+      "elapsedSeconds": 435.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-15854824593078ce3af5",
+      "start": "2015-04-06T00:41:06Z",
+      "end": "2015-04-06T00:46:41Z",
+      "startCoordinates": [
+        -73.98379855,
+        40.72621788
+      ],
+      "endCoordinates": [
+        -73.98517977,
+        40.72066442
+      ],
+      "startStation": "E 7 St & Avenue A",
+      "endStation": "Suffolk St & Stanton St",
+      "elapsedSeconds": 335.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-829039abda3a46219654",
+      "start": "2015-04-06T10:48:19Z",
+      "end": "2015-04-06T11:01:17Z",
+      "startCoordinates": [
+        -73.98329859,
+        40.71850211
+      ],
+      "endCoordinates": [
+        -73.99200509,
+        40.73492695
+      ],
+      "startStation": "Rivington St & Ridge St",
+      "endStation": "University Pl & E 14 St",
+      "elapsedSeconds": 778.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-f59f283b8f52b2bd02f1",
+      "start": "2015-04-10T01:28:14Z",
+      "end": "2015-04-10T01:33:06Z",
+      "startCoordinates": [
+        -73.98329859,
+        40.71850211
+      ],
+      "endCoordinates": [
+        -73.98783413,
+        40.72467721
+      ],
+      "startStation": "Rivington St & Ridge St",
+      "endStation": "E 3 St & 1 Ave",
+      "elapsedSeconds": 292.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-48e2c41fd2c3d885508b",
+      "start": "2015-04-10T01:57:57Z",
+      "end": "2015-04-10T02:05:34Z",
+      "startCoordinates": [
+        -73.98783413,
+        40.72467721
+      ],
+      "endCoordinates": [
+        -73.98517977,
+        40.72066442
+      ],
+      "startStation": "E 3 St & 1 Ave",
+      "endStation": "Suffolk St & Stanton St",
+      "elapsedSeconds": 457.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-a8e6bb9766d506757657",
+      "start": "2015-04-10T18:22:05Z",
+      "end": "2015-04-10T18:38:37Z",
+      "startCoordinates": [
+        -73.98261206,
+        40.71622644
+      ],
+      "endCoordinates": [
+        -74.00748842,
+        40.72873888
+      ],
+      "startStation": "Bialystoker Pl & Delancey St",
+      "endStation": "W Houston St & Hudson St",
+      "elapsedSeconds": 992.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-e046c538dffe524ae004",
+      "start": "2015-04-10T21:09:55Z",
+      "end": "2015-04-10T21:20:24Z",
+      "startCoordinates": [
+        -73.98329859,
+        40.71850211
+      ],
+      "endCoordinates": [
+        -74.00154702,
+        40.72490985
+      ],
+      "startStation": "Rivington St & Ridge St",
+      "endStation": "W Broadway & Spring St",
+      "elapsedSeconds": 629.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-2070f8a5df1be783b3fd",
+      "start": "2015-04-11T13:54:04Z",
+      "end": "2015-04-11T14:04:33Z",
+      "startCoordinates": [
+        -74.00234482,
+        40.71494807
+      ],
+      "endCoordinates": [
+        -73.98329859,
+        40.71850211
+      ],
+      "startStation": "Centre St & Worth St",
+      "endStation": "Rivington St & Ridge St",
+      "elapsedSeconds": 629.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-5fba1f4350f6e2de6d7e",
+      "start": "2015-04-11T16:22:42Z",
+      "end": "2015-04-11T16:33:35Z",
+      "startCoordinates": [
+        -73.98329859,
+        40.71850211
+      ],
+      "endCoordinates": [
+        -73.996375,
+        40.71729
+      ],
+      "startStation": "Rivington St & Ridge St",
+      "endStation": "Elizabeth St & Hester St",
+      "elapsedSeconds": 653.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-e3dae8e895f01710408a",
+      "start": "2015-04-12T19:59:12Z",
+      "end": "2015-04-12T20:26:51Z",
+      "startCoordinates": [
+        -73.99301222,
+        40.76269882
+      ],
+      "endCoordinates": [
+        -74.00451887,
+        40.74691959
+      ],
+      "startStation": "W 47 St & 10 Ave",
+      "endStation": "W 22 St & 10 Ave",
+      "elapsedSeconds": 1659.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-9017ec259b51313d66e6",
+      "start": "2015-04-12T21:14:00Z",
+      "end": "2015-04-12T21:39:44Z",
+      "startCoordinates": [
+        -74.00681753,
+        40.74334935
+      ],
+      "endCoordinates": [
+        -73.98329859,
+        40.71850211
+      ],
+      "startStation": "W 16 St & The High Line",
+      "endStation": "Rivington St & Ridge St",
+      "elapsedSeconds": 1544.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-c24b74c7fd79802c1616",
+      "start": "2015-04-12T23:10:33Z",
+      "end": "2015-04-12T23:15:26Z",
+      "startCoordinates": [
+        -73.98329859,
+        40.71850211
+      ],
+      "endCoordinates": [
+        -73.97768752,
+        40.72521311
+      ],
+      "startStation": "Rivington St & Ridge St",
+      "endStation": "E 9 St & Avenue C",
+      "elapsedSeconds": 293.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-4ced135ce40632863700",
+      "start": "2015-04-13T11:16:02Z",
+      "end": "2015-04-13T11:26:51Z",
+      "startCoordinates": [
+        -73.98329859,
+        40.71850211
+      ],
+      "endCoordinates": [
+        -73.98889957,
+        40.73223272
+      ],
+      "startStation": "Rivington St & Ridge St",
+      "endStation": "E 12 St & 3 Ave",
+      "elapsedSeconds": 649.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-cc45424bb993c6a82cea",
+      "start": "2015-04-16T21:38:55Z",
+      "end": "2015-04-16T21:46:03Z",
+      "startCoordinates": [
+        -73.98713956,
+        40.7284186
+      ],
+      "endCoordinates": [
+        -73.98329859,
+        40.71850211
+      ],
+      "startStation": "St Marks Pl & 2 Ave",
+      "endStation": "Rivington St & Ridge St",
+      "elapsedSeconds": 428.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-3cf98d81bea2a1e4418e",
+      "start": "2015-04-18T00:08:12Z",
+      "end": "2015-04-18T00:31:55Z",
+      "startCoordinates": [
+        -73.98329859,
+        40.71850211
+      ],
+      "endCoordinates": [
+        -73.98683077,
+        40.7451677
+      ],
+      "startStation": "Rivington St & Ridge St",
+      "endStation": "5 Ave & E 29 St",
+      "elapsedSeconds": 1423.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-4a819fe13ec0fada6f58",
+      "start": "2015-04-18T03:19:22Z",
+      "end": "2015-04-18T03:41:36Z",
+      "startCoordinates": [
+        -73.98303529,
+        40.74444921
+      ],
+      "endCoordinates": [
+        -73.98329859,
+        40.71850211
+      ],
+      "startStation": "E 30 St & Park Ave S",
+      "endStation": "Rivington St & Ridge St",
+      "elapsedSeconds": 1334.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-5d47bac2292c6310af0b",
+      "start": "2015-04-19T17:24:21Z",
+      "end": "2015-04-19T17:42:53Z",
+      "startCoordinates": [
+        -73.95698119,
+        40.71286844
+      ],
+      "endCoordinates": [
+        -73.98517977,
+        40.72066442
+      ],
+      "startStation": "Grand St & Havemeyer St",
+      "endStation": "Suffolk St & Stanton St",
+      "elapsedSeconds": 1112.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-154a9fd60b61cfc25310",
+      "start": "2015-04-19T20:37:50Z",
+      "end": "2015-04-19T20:49:46Z",
+      "startCoordinates": [
+        -73.98329859,
+        40.71850211
+      ],
+      "endCoordinates": [
+        -73.99009296,
+        40.73704984
+      ],
+      "startStation": "Rivington St & Ridge St",
+      "endStation": "E 17 St & Broadway",
+      "elapsedSeconds": 716.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-ede1b248e7c06fda07dc",
+      "start": "2015-04-19T21:24:44Z",
+      "end": "2015-04-19T21:32:19Z",
+      "startCoordinates": [
+        -73.98672378,
+        40.73047309
+      ],
+      "endCoordinates": [
+        -73.98329859,
+        40.71850211
+      ],
+      "startStation": "E 11 St & 2 Ave",
+      "endStation": "Rivington St & Ridge St",
+      "elapsedSeconds": 455.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-18ea9f70edb61a5d65fe",
+      "start": "2015-04-24T23:29:43Z",
+      "end": "2015-04-25T00:00:40Z",
+      "startCoordinates": [
+        -73.97809472,
+        40.736502
+      ],
+      "endCoordinates": [
+        -73.98789473,
+        40.76461837
+      ],
+      "startStation": "E 23 St & 1 Ave",
+      "endStation": "W 52 St & 9 Ave",
+      "elapsedSeconds": 1857.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-598393144043e2b5e899",
+      "start": "2015-04-25T23:48:42Z",
+      "end": "2015-04-25T23:58:56Z",
+      "startCoordinates": [
+        -73.98329859,
+        40.71850211
+      ],
+      "endCoordinates": [
+        -73.9970468,
+        40.71413089
+      ],
+      "startStation": "Rivington St & Ridge St",
+      "endStation": "Division St & Bowery",
+      "elapsedSeconds": 614.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-7e5ae3e6cfa2c7102e7d",
+      "start": "2015-04-26T02:14:55Z",
+      "end": "2015-04-26T02:27:27Z",
+      "startCoordinates": [
+        -73.9970468,
+        40.71413089
+      ],
+      "endCoordinates": [
+        -73.98329859,
+        40.71850211
+      ],
+      "startStation": "Division St & Bowery",
+      "endStation": "Rivington St & Ridge St",
+      "elapsedSeconds": 752.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-6639d1381fc67d799d57",
+      "start": "2015-04-26T14:41:13Z",
+      "end": "2015-04-26T15:00:31Z",
+      "startCoordinates": [
+        -73.98329859,
+        40.71850211
+      ],
+      "endCoordinates": [
+        -74.00154702,
+        40.72490985
+      ],
+      "startStation": "Rivington St & Ridge St",
+      "endStation": "W Broadway & Spring St",
+      "elapsedSeconds": 1158.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-7d92ee72c2e34ce9ba70",
+      "start": "2015-04-27T01:40:27Z",
+      "end": "2015-04-27T01:47:21Z",
+      "startCoordinates": [
+        -73.98057249,
+        40.72955361
+      ],
+      "endCoordinates": [
+        -73.98329859,
+        40.71850211
+      ],
+      "startStation": "E 13 St & Avenue A",
+      "endStation": "Rivington St & Ridge St",
+      "elapsedSeconds": 414.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-f42a5580d123cf64681b",
+      "start": "2015-04-28T00:22:21Z",
+      "end": "2015-04-28T00:25:20Z",
+      "startCoordinates": [
+        -73.98329859,
+        40.71850211
+      ],
+      "endCoordinates": [
+        -73.97995466,
+        40.72299208
+      ],
+      "startStation": "Rivington St & Ridge St",
+      "endStation": "E 5 St & Avenue C",
+      "elapsedSeconds": 179.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-6d3d71ccd06423216953",
+      "start": "2015-04-28T00:54:01Z",
+      "end": "2015-04-28T00:54:33Z",
+      "startCoordinates": [
+        -73.97768752,
+        40.72521311
+      ],
+      "endCoordinates": [
+        -73.97768752,
+        40.72521311
+      ],
+      "startStation": "E 9 St & Avenue C",
+      "endStation": "E 9 St & Avenue C",
+      "elapsedSeconds": 32.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-796809869652f6855a1c",
+      "start": "2015-04-28T00:54:59Z",
+      "end": "2015-04-28T01:01:40Z",
+      "startCoordinates": [
+        -73.97768752,
+        40.72521311
+      ],
+      "endCoordinates": [
+        -73.98329859,
+        40.71850211
+      ],
+      "startStation": "E 9 St & Avenue C",
+      "endStation": "Rivington St & Ridge St",
+      "elapsedSeconds": 401.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-bb55b0753e3af75ecd8b",
+      "start": "2015-04-28T12:13:07Z",
+      "end": "2015-04-28T12:22:55Z",
+      "startCoordinates": [
+        -73.98329859,
+        40.71850211
+      ],
+      "endCoordinates": [
+        -74.00297088,
+        40.72710258
+      ],
+      "startStation": "Rivington St & Ridge St",
+      "endStation": "MacDougal St & Prince St",
+      "elapsedSeconds": 588.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-6f9dff76035ac14adb81",
+      "start": "2015-04-28T12:56:03Z",
+      "end": "2015-04-28T13:00:25Z",
+      "startCoordinates": [
+        -73.9919254,
+        40.72110063
+      ],
+      "endCoordinates": [
+        -73.98517977,
+        40.72066442
+      ],
+      "startStation": "Rivington St & Chrystie St",
+      "endStation": "Suffolk St & Stanton St",
+      "elapsedSeconds": 262.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-d0791584ca014167bacc",
+      "start": "2015-04-28T23:25:58Z",
+      "end": "2015-04-28T23:48:28Z",
+      "startCoordinates": [
+        -73.98261206,
+        40.71622644
+      ],
+      "endCoordinates": [
+        -73.98263429,
+        40.68864636
+      ],
+      "startStation": "Bialystoker Pl & Delancey St",
+      "endStation": "Hanover Pl & Livingston St",
+      "elapsedSeconds": 1350.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-bb9311d95dc65d040ba8",
+      "start": "2015-04-29T21:57:48Z",
+      "end": "2015-04-29T22:15:19Z",
+      "startCoordinates": [
+        -73.98329859,
+        40.71850211
+      ],
+      "endCoordinates": [
+        -73.963198,
+        40.716887
+      ],
+      "startStation": "Rivington St & Ridge St",
+      "endStation": "Wythe Ave & Metropolitan Ave",
+      "elapsedSeconds": 1051.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-0e551cf84ef3fc60fe7f",
+      "start": "2015-04-29T23:02:49Z",
+      "end": "2015-04-29T23:24:45Z",
+      "startCoordinates": [
+        -73.963198,
+        40.716887
+      ],
+      "endCoordinates": [
+        -73.98517977,
+        40.72066442
+      ],
+      "startStation": "Wythe Ave & Metropolitan Ave",
+      "endStation": "Suffolk St & Stanton St",
+      "elapsedSeconds": 1316.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-74580f7a04cd4c154993",
+      "start": "2015-04-30T15:34:41Z",
+      "end": "2015-04-30T15:53:21Z",
+      "startCoordinates": [
+        -73.98329859,
+        40.71850211
+      ],
+      "endCoordinates": [
+        -74.00443172,
+        40.74206539
+      ],
+      "startStation": "Rivington St & Ridge St",
+      "endStation": "9 Ave & W 16 St",
+      "elapsedSeconds": 1120.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-3be4cdb69d1d00a264cb",
+      "start": "2015-04-30T16:15:36Z",
+      "end": "2015-04-30T16:35:20Z",
+      "startCoordinates": [
+        -74.00443172,
+        40.74206539
+      ],
+      "endCoordinates": [
+        -73.98517977,
+        40.72066442
+      ],
+      "startStation": "9 Ave & W 16 St",
+      "endStation": "Suffolk St & Stanton St",
+      "elapsedSeconds": 1184.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-809f209f2010a143dc6e",
+      "start": "2015-05-01T00:31:49Z",
+      "end": "2015-05-01T00:37:07Z",
+      "startCoordinates": [
+        -73.98329859,
+        40.71850211
+      ],
+      "endCoordinates": [
+        -73.97768752,
+        40.72521311
+      ],
+      "startStation": "Rivington St & Ridge St",
+      "endStation": "E 9 St & Avenue C",
+      "elapsedSeconds": 318.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-b143018486a53d4a7832",
+      "start": "2015-05-01T01:01:30Z",
+      "end": "2015-05-01T01:09:21Z",
+      "startCoordinates": [
+        -73.97768752,
+        40.72521311
+      ],
+      "endCoordinates": [
+        -73.98517977,
+        40.72066442
+      ],
+      "startStation": "E 9 St & Avenue C",
+      "endStation": "Suffolk St & Stanton St",
+      "elapsedSeconds": 471.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-d55f773add5eb5eb8bd8",
+      "start": "2015-05-02T04:07:32Z",
+      "end": "2015-05-02T04:18:58Z",
+      "startCoordinates": [
+        -73.98057249,
+        40.72955361
+      ],
+      "endCoordinates": [
+        -73.98261206,
+        40.71622644
+      ],
+      "startStation": "E 13 St & Avenue A",
+      "endStation": "Bialystoker Pl & Delancey St",
+      "elapsedSeconds": 686.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
+    {
+      "id": "citi-a154b00d60fcd2c70912",
+      "start": "2015-05-02T16:30:59Z",
+      "end": "2015-05-02T16:57:56Z",
+      "startCoordinates": [
+        -73.98802084,
+        40.7172274
+      ],
+      "endCoordinates": [
+        -73.994442075491,
+        40.750967348716
+      ],
+      "startStation": "Norfolk St & Broome St",
+      "endStation": "8 Ave & W 31 St",
+      "elapsedSeconds": 1617.0,
+      "distanceMeters": null,
+      "geometrySource": "station endpoints only",
+      "source": "andrewfurman/mycitibike archived rides",
+      "matchStatus": "new",
+      "stravaActivityIds": []
+    },
     {
       "id": "citi-56723b237c3cacaa3e54",
       "start": "2021-08-16T00:35:21Z",

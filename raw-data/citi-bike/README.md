@@ -17,3 +17,7 @@ python3 'Tanstack Start App/scripts/imports/import_citi_bike.py' \
 ```
 
 Then build the app, which merges only new endpoint trips into the public ride data. Review the diff and credential scan before committing through a PR.
+
+## Legacy recovery and cycling paths
+
+The `legacy` folder preserves the owner-provided mycitibike snapshot at commit `1e06badcf3ec12824171cecc02a07ace2a029552`: 207 rows, of which 202 have complete start/end times. The combined normalized dataset now contains 230 completed NYC trips: six Strava matches and 224 new rentals. Google cycling directions draw the rentals on the Google map; source data remains station-based. The temporary returned coordinates stay in D1 and expire, outside Git. Earlier counts above describe the initial Lyft-only import. See [recovery research](../../docs/citi-bike-history-recovery.md).
