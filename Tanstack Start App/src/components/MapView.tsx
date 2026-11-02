@@ -86,7 +86,7 @@ export function MapView(props: Props) {
       const bounds=e.map.getBounds();if(started||!bounds||!bounds.intersects({south:40.45,north:41,west:-74.3,east:-73.6}))return
       started=true;let next=0
       const work=async()=>{while(!stopped&&next<rentals.length){const feature=rentals[next++],id=String(feature.properties.activity_id)
-        try{const coordinates=await citiPath(id);if(stopped)return;if(coordinates.length<2)continue;e.citiGeometry.set(id,coordinates);e.trackLayer.addGeoJson({...feature,geometry:{type:'LineString',coordinates}});if(activeActivity.current===id)setCitiRouteReady(n=>n+1)}catch{if(!stopped)setCitiError('Some cycling paths could not load. Station endpoints remain visible.')}
+        try{const coordinates=await citiPath(id);if(stopped)return;if(coordinates.length<2)continue;e.citiGeometry.set(id,coordinates);e.trackLayer.forEach((item:any)=>{if(String(item.getProperty('activity_id'))===id&&item.getGeometry()?.getType()==='MultiPoint')e.trackLayer.overrideStyle(item,{visible:false})});e.trackLayer.addGeoJson({...feature,geometry:{type:'LineString',coordinates}});if(activeActivity.current===id)setCitiRouteReady(n=>n+1)}catch{if(!stopped)setCitiError('Some cycling paths could not load. Station endpoints remain visible.')}
       }}
       void Promise.all(Array.from({length:4},work))
     }
