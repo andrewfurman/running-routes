@@ -1,3 +1,4 @@
+import {purgeCitiRoutes} from './sync/citi-bike-routing'
 import {freshDocument} from './sync/document-cache'
 import {readRuns} from './sync/database'
 import handler from '@tanstack/react-start/server-entry'
@@ -17,6 +18,7 @@ export default {
   return freshDocument(await handler.fetch(request))
  },
  async scheduled(event:{scheduledTime:number},env:SyncEnv){
+  await purgeCitiRoutes(env.RUNS_DB,event.scheduledTime)
   if(!isEightAMEastern(event.scheduledTime))return
   const response=await sync(env).fetch('https://internal/sync',{method:'POST'});if(!response.ok)throw Error('Strava sync handler failed');const status:any=await response.json();if(status.state!=='synced')throw Error(`Strava sync failed: ${status.errorCode}`)
  },

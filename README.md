@@ -216,3 +216,7 @@ Close the paging card to hide the selected gold activity highlight, planned oran
 ### Citi Bike history
 
 The official Lyft export contributes 28 completed NYC rentals: six match existing Strava GPS rides and 22 are new station-only trips. See [source and matching notes](raw-data/citi-bike/README.md). Rides and City Stats include the 22 new trips once, as teal endpoint dots, without invented paths or mileage. Select New York City in City Stats to explore. The private full export is not committed.
+
+### Recovered historical Citi Bike rides
+
+Recovered 202 completed 2014–2015 rides from `andrewfurman/mycitibike`, bringing the combined Citi Bike archive to 230 trips. Six match Strava; 224 new rentals appear in Rides using Google cycling paths between their stations. The 1,862 lifetime account count remains unreconciled. [Recovery sources and importer notes](docs/citi-bike-history-recovery.md).

@@ -1,10 +1,17 @@
 {
   "sourceRows": 41,
-  "nycCompletedTrips": 28,
+  "nycCompletedTrips": 230,
+  "lyftNycCompletedTrips": 28,
+  "legacy": {
+    "sourceRecords": 207,
+    "completed": 202,
+    "incomplete": 5,
+    "sourceCommit": "1e06badcf3ec12824171cecc02a07ace2a029552"
+  },
   "excludedNonNycOrIncomplete": 13,
   "matched": 6,
   "review": 0,
-  "new": 22,
+  "new": 224,
   "accountCounterReported": 1862,
   "accountCounterReconciled": false,
   "gpsPathsProvided": false,

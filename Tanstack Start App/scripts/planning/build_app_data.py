@@ -39,7 +39,7 @@ if citi_path.exists():
     bike=json.loads((PUBLIC/'bikes.geojson').read_text())
     for t in json.loads(citi_path.read_text())['trips']:
         if t['matchStatus']!='new':continue
-        bike['features'].append({'type':'Feature','properties':{'activity_id':t['id'],'activity_type':'Ride','date':t['start'],'start_time_utc':t['start'],'elapsed_seconds':t['elapsedSeconds'],'source':'Lyft Citi Bike privacy export','geometry_source':'station_endpoints','distance_meters':None},'geometry':{'type':'MultiPoint','coordinates':[t['startCoordinates'],t['endCoordinates']]}})
+        bike['features'].append({'type':'Feature','properties':{'activity_id':t['id'],'activity_type':'Ride','date':t['start'],'start_time_utc':t['start'],'elapsed_seconds':t['elapsedSeconds'],'source':t.get('source','Lyft Citi Bike privacy export'),'geometry_source':'station_endpoints','citi_trip_id':t['id'],'start_station':t.get('startStation'),'end_station':t.get('endStation'),'distance_meters':None},'geometry':{'type':'MultiPoint','coordinates':[p for p in [t['startCoordinates'],t['endCoordinates']] if p]}})
     write('bikes.geojson',bike)
 shutil.copyfile(ROOT/'raw-data/boundaries/19083.geojson',PUBLIC/'boundary19083.geojson')
 shutil.copyfile(ROOT/'raw-data/geography/19083-streets.json',PUBLIC/'streets19083.json')

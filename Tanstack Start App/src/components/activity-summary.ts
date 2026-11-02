@@ -19,7 +19,7 @@ export function latestBikeId(tracks?:FeatureCollection){return [...(tracks?.feat
 export function averagePaceLabel(properties:Record<string,any>){const miles=properties.distance_meters/1609.344,seconds=properties.moving_seconds;if(!Number.isFinite(miles)||miles<=0||!Number.isFinite(seconds)||seconds<=0)return 'Unavailable';const pace=Math.round(seconds/miles);return `${Math.floor(pace/60)}:${String(pace%60).padStart(2,'0')} /mi`}
 
 export function activityCaption(properties:Record<string,any>){
- const parts:string[]=properties.geometry_source==='station_endpoints'?['Station endpoints only · mileage unavailable']:[];const miles=properties.distance_meters/1609.344
+ const parts:string[]=properties.geometry_source==='station_endpoints'?['Citi Bike']:[];const miles=properties.distance_meters/1609.344
  if(typeof properties.distance_meters==='number'&&Number.isFinite(miles)&&miles>=0)parts.push(`${miles.toFixed(1)} mi`)
  const pace=averagePaceLabel(properties);if(pace!=='Unavailable')parts.push(pace)
  const hasTime=properties.start_time_utc||properties.source_csv_date_utc||!/^\d{4}-\d{2}-\d{2}$/.test(properties.date||'')
