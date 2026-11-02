@@ -24,3 +24,7 @@ Use Google cycling routes between the original stations, as requested by the own
 Only allowlisted, unmatched Citi Bike IDs may request routing. Repeated directed station pairs share a D1 coordinate cache. Google routing coordinates expire after 28 days; daily cleanup removes expired entries, keeping retention below Google's 30-day limit. Returned Google paths are never committed to Git or drawn over OpenStreetMap. The fallback map retains source station endpoints. See [Google routing terms](https://cloud.google.com/maps-platform/terms/maps-service-terms) and [cycling mode documentation](https://developers.google.com/maps/documentation/routes/vehicles).
 
 Nine rentals return to the same recorded station. They remain station dots: a same-station directions query cannot reconstruct the loop taken in between.
+
+## Batched route loading
+
+Cycling coordinates are stored in D1 and served together as a GeoJSON FeatureCollection at `/api/citi-bike-routes`. The client loads this bundle alongside the normal Strava bike data and adds the complete layer in one operation. It no longer fetches each rental when entering NYC. The client reuses the bundle until its earliest route expiry; unavailable paths retry after a short cache period. Cache misses refresh automatically with bounded concurrency. Original station records remain the durable source, and Google-generated paths retain their 28-day expiry.
