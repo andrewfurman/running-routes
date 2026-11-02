@@ -220,3 +220,5 @@ The official Lyft export contributes 28 completed NYC rentals: six match existin
 ### Recovered historical Citi Bike rides
 
 Recovered 202 completed 2014–2015 rides from `andrewfurman/mycitibike`, bringing the combined Citi Bike archive to 230 trips. Six match Strava; 224 new rentals appear in Rides using Google cycling paths between their stations. The 1,862 lifetime account count remains unreconciled. [Recovery sources and importer notes](docs/citi-bike-history-recovery.md).
+
+Citi Bike paths load together as a cached GeoJSON bundle, alongside Strava history. Selecting NYC reuses that data instead of progressively fetching individual rides. Google-generated coordinates remain in the expiring D1 cache, outside Git.

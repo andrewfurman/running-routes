@@ -1,11 +1,10 @@
 import { useEffect, useRef, useState } from 'react'
 import 'leaflet/dist/leaflet.css'
+import {withCitiRoutes} from './citi-route-bundle'
 import {activityMapInsets,type MapInsets} from './map-framing'
 import type { FeatureCollection, MapProvider, Position, Target } from './types'
 
 declare global { interface Window { google?: any; runningMapReady?: () => void; gm_authFailure?: () => void } }
-const citiPathRequests=new Map<string,Promise<Position[]>>()
-async function citiPath(id:string){if(!citiPathRequests.has(id))citiPathRequests.set(id,fetch(`/api/citi-bike-route?id=${encodeURIComponent(id)}`).then(async r=>{if(!r.ok)throw Error('Cycling paths unavailable');return (await r.json()).coordinates as Position[]}).catch(e=>{citiPathRequests.delete(id);throw e}));return citiPathRequests.get(id)!}
 let googlePromise: Promise<any> | undefined
 export function loadGoogle(key: string) {
   if (window.google?.maps) return Promise.resolve(window.google.maps)
@@ -29,7 +28,7 @@ function points(collection?: FeatureCollection): Position[] {
   }
   return result
 }
-interface Props { plansVisible?: boolean; missingRoads?: FeatureCollection; coverageMode?: boolean; activityCardVisible?: boolean; provider: MapProvider; mapsKey: string; tracks?: FeatureCollection; targets: Target[]; boundary?: any; selected: number; focusRequest: number; historyRequest: number; historyArea?: Position[]; activityId?: string; onSelect: (index: number) => void; onProviderFailure: (reason: string) => void }
+interface Props { citiRoutes?: FeatureCollection; plansVisible?: boolean; missingRoads?: FeatureCollection; coverageMode?: boolean; activityCardVisible?: boolean; provider: MapProvider; mapsKey: string; tracks?: FeatureCollection; targets: Target[]; boundary?: any; selected: number; focusRequest: number; historyRequest: number; historyArea?: Position[]; activityId?: string; onSelect: (index: number) => void; onProviderFailure: (reason: string) => void }
 export function MapView(props: Props) {
   const host = useRef<HTMLDivElement>(null)
   const engine = useRef<any>(null)
@@ -38,7 +37,6 @@ export function MapView(props: Props) {
   const [ready, setReady] = useState(0)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState('')
-  const [citiError,setCitiError]=useState('');const [citiRouteReady,setCitiRouteReady]=useState(0);const activeActivity=useRef(props.activityId);activeActivity.current=props.activityId
   useEffect(() => {
     let stopped = false
     let cleanup = () => {}
@@ -74,25 +72,9 @@ export function MapView(props: Props) {
   }, [props.provider, props.mapsKey])
   useEffect(() => {
     const e=engine.current;if(!e)return
-    if(e.type==='google') {e.trackLayer.forEach((f:any)=>e.trackLayer.remove(f));if(props.tracks)e.trackLayer.addGeoJson(props.tracks);e.trackLayer.setStyle({strokeColor:'#7442bb',strokeWeight:3,strokeOpacity:.62,icon:{path:window.google.maps.SymbolPath.CIRCLE,scale:5,fillColor:'#078f8a',fillOpacity:.85,strokeColor:'#fff',strokeWeight:1}});e.trackLayer.setMap(e.map)}
+    if(e.type==='google') {e.citiGeometry=new Map(props.citiRoutes?.features.map(f=>[String(f.properties.activity_id),f.geometry.coordinates])||[]);e.trackLayer.forEach((f:any)=>e.trackLayer.remove(f));if(props.tracks)e.trackLayer.addGeoJson(withCitiRoutes(props.tracks,props.citiRoutes));e.trackLayer.setStyle({strokeColor:'#7442bb',strokeWeight:3,strokeOpacity:.62,icon:{path:window.google.maps.SymbolPath.CIRCLE,scale:5,fillColor:'#078f8a',fillOpacity:.85,strokeColor:'#fff',strokeWeight:1}});e.trackLayer.setMap(e.map)}
     else {if(e.trackLayer)e.map.removeLayer(e.trackLayer);e.trackLayer=props.tracks?e.L.geoJSON(props.tracks,{pointToLayer:(_:any,p:any)=>e.L.circleMarker(p,{radius:5,color:'#fff',weight:1,fillColor:'#078f8a',fillOpacity:.85}).bindTooltip('Citi Bike station endpoint · actual route unavailable'),style:{color:'#7442bb',weight:3,opacity:.62}}):null;if(e.trackLayer)e.trackLayer.addTo(e.map)}
-  },[ready,props.tracks])
-  useEffect(()=>{
-    const e=engine.current;if(!e||e.type!=='google')return
-    const rentals=props.tracks?.features.filter(f=>f.properties.geometry_source==='station_endpoints')||[]
-    if(!rentals.length)return
-    let stopped=false,started=false;e.citiGeometry=new Map();setCitiError('')
-    const load=()=>{
-      const bounds=e.map.getBounds();if(started||!bounds||!bounds.intersects({south:40.45,north:41,west:-74.3,east:-73.6}))return
-      started=true;let next=0
-      const work=async()=>{while(!stopped&&next<rentals.length){const feature=rentals[next++],id=String(feature.properties.activity_id)
-        try{const coordinates=await citiPath(id);if(stopped)return;if(coordinates.length<2)continue;e.citiGeometry.set(id,coordinates);e.trackLayer.forEach((item:any)=>{if(String(item.getProperty('activity_id'))===id&&item.getGeometry()?.getType()==='MultiPoint')e.trackLayer.overrideStyle(item,{visible:false})});e.trackLayer.addGeoJson({...feature,geometry:{type:'LineString',coordinates}});if(activeActivity.current===id)setCitiRouteReady(n=>n+1)}catch{if(!stopped)setCitiError('Some cycling paths could not load. Station endpoints remain visible.')}
-      }}
-      void Promise.all(Array.from({length:4},work))
-    }
-    const listener=window.google.maps.event.addListener(e.map,'idle',load);load()
-    return()=>{stopped=true;listener.remove()}
-  },[ready,props.tracks])
+  },[ready,props.tracks,props.citiRoutes])
   useEffect(() => {
     const e=engine.current;if(!e)return
     if(e.type==='google'){e.boundaryLayer.forEach((f:any)=>e.boundaryLayer.remove(f));if(props.boundary)e.boundaryLayer.addGeoJson(props.boundary);e.boundaryLayer.setStyle({strokeColor:'#078f8a',strokeWeight:3,fillColor:'#0caba2',fillOpacity:.035,zIndex:20});e.boundaryLayer.setMap(e.map)}
@@ -156,6 +138,6 @@ export function MapView(props: Props) {
     if(dock)observer.observe(dock)
     schedule()
     return()=>{cancelAnimationFrame(scheduled);observer.disconnect();cleanup()}
-  },[props.activityId,props.tracks,props.activityCardVisible,props.historyArea,citiRouteReady,ready])
-  return <div className="map-surface"><div className="map-canvas" ref={host} aria-label="Interactive route map"/>{loading?<div className="map-loading"><span className="spinner"/>Loading street map</div>:null}{citiError?<div className="map-notice">{citiError}</div>:null}{error?<div className="map-error" role="alert">{error}</div>:null}<div className="map-credit">{props.provider==='google'?'Google Maps':'OpenStreetMap'}<span>•</span>{props.coverageMode?'Orange: unfinished road sections':props.tracks?.features.some(f=>f.properties.geometry_source==='station_endpoints')?'Purple: rides':'Purple: recorded tracks'}<span>•</span>Teal: 19083</div></div>
+  },[props.activityId,props.tracks,props.activityCardVisible,props.historyArea,props.citiRoutes,ready])
+  return <div className="map-surface"><div className="map-canvas" ref={host} aria-label="Interactive route map"/>{loading?<div className="map-loading"><span className="spinner"/>Loading street map</div>:null}{error?<div className="map-error" role="alert">{error}</div>:null}<div className="map-credit">{props.provider==='google'?'Google Maps':'OpenStreetMap'}<span>•</span>{props.coverageMode?'Orange: unfinished road sections':props.tracks?.features.some(f=>f.properties.geometry_source==='station_endpoints')?'Purple: rides':'Purple: recorded tracks'}<span>•</span>Teal: 19083</div></div>
 }

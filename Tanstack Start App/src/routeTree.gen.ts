@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as VideoMapRouteImport } from './routes/video-map'
 import { Route as ApiCitiBikeRouteRouteImport } from './routes/api.citi-bike-route'
+import { Route as ApiCitiBikeRoutesRouteImport } from './routes/api.citi-bike-routes'
 import { Route as ApiMapsConfigRouteImport } from './routes/api.maps-config'
 import { Route as MediaFileRouteImport } from './routes/media.$file'
 
@@ -30,6 +31,11 @@ const ApiCitiBikeRouteRoute = ApiCitiBikeRouteRouteImport.update({
   path: '/api/citi-bike-route',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ApiCitiBikeRoutesRoute = ApiCitiBikeRoutesRouteImport.update({
+  id: '/api/citi-bike-routes',
+  path: '/api/citi-bike-routes',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ApiMapsConfigRoute = ApiMapsConfigRouteImport.update({
   id: '/api/maps-config',
   path: '/api/maps-config',
@@ -45,6 +51,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/video-map': typeof VideoMapRoute
   '/api/citi-bike-route': typeof ApiCitiBikeRouteRoute
+  '/api/citi-bike-routes': typeof ApiCitiBikeRoutesRoute
   '/api/maps-config': typeof ApiMapsConfigRoute
   '/media/$file': typeof MediaFileRoute
 }
@@ -52,6 +59,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/video-map': typeof VideoMapRoute
   '/api/citi-bike-route': typeof ApiCitiBikeRouteRoute
+  '/api/citi-bike-routes': typeof ApiCitiBikeRoutesRoute
   '/api/maps-config': typeof ApiMapsConfigRoute
   '/media/$file': typeof MediaFileRoute
 }
@@ -60,6 +68,7 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/video-map': typeof VideoMapRoute
   '/api/citi-bike-route': typeof ApiCitiBikeRouteRoute
+  '/api/citi-bike-routes': typeof ApiCitiBikeRoutesRoute
   '/api/maps-config': typeof ApiMapsConfigRoute
   '/media/$file': typeof MediaFileRoute
 }
@@ -69,6 +78,7 @@ export interface FileRouteTypes {
     | '/'
     | '/video-map'
     | '/api/citi-bike-route'
+    | '/api/citi-bike-routes'
     | '/api/maps-config'
     | '/media/$file'
   fileRoutesByTo: FileRoutesByTo
@@ -76,6 +86,7 @@ export interface FileRouteTypes {
     | '/'
     | '/video-map'
     | '/api/citi-bike-route'
+    | '/api/citi-bike-routes'
     | '/api/maps-config'
     | '/media/$file'
   id:
@@ -83,6 +94,7 @@ export interface FileRouteTypes {
     | '/'
     | '/video-map'
     | '/api/citi-bike-route'
+    | '/api/citi-bike-routes'
     | '/api/maps-config'
     | '/media/$file'
   fileRoutesById: FileRoutesById
@@ -91,6 +103,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   VideoMapRoute: typeof VideoMapRoute
   ApiCitiBikeRouteRoute: typeof ApiCitiBikeRouteRoute
+  ApiCitiBikeRoutesRoute: typeof ApiCitiBikeRoutesRoute
   ApiMapsConfigRoute: typeof ApiMapsConfigRoute
   MediaFileRoute: typeof MediaFileRoute
 }
@@ -118,6 +131,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ApiCitiBikeRouteRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/api/citi-bike-routes': {
+      id: '/api/citi-bike-routes'
+      path: '/api/citi-bike-routes'
+      fullPath: '/api/citi-bike-routes'
+      preLoaderRoute: typeof ApiCitiBikeRoutesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/api/maps-config': {
       id: '/api/maps-config'
       path: '/api/maps-config'
@@ -139,6 +159,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   VideoMapRoute: VideoMapRoute,
   ApiCitiBikeRouteRoute: ApiCitiBikeRouteRoute,
+  ApiCitiBikeRoutesRoute: ApiCitiBikeRoutesRoute,
   ApiMapsConfigRoute: ApiMapsConfigRoute,
   MediaFileRoute: MediaFileRoute,
 }

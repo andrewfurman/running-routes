@@ -25,3 +25,13 @@ export async function cyclingCoordinates(trip:CitiTrip,db:RunDatabase,key:string
  })();pending.set(pair,request)
  try{return await request}finally{pending.delete(pair)}
 }
+export async function citiRouteBundle(trips:CitiTrip[],db:RunDatabase,key:string,fetcher:typeof fetch=fetch,now=Date.now()){
+ const rentals=trips.filter(t=>t.matchStatus==='new');const keys=await Promise.all(rentals.map(routeKey))
+ const read=async()=>new Map((await db.prepare('SELECT pair_key,coordinates,expires_at FROM citi_route_cache WHERE expires_at > ?').bind(now).all<{pair_key:string;coordinates:string;expires_at:number}>()).results.map(r=>[r.pair_key,r]))
+ let rows=await read();const missing=new Map<string,CitiTrip>()
+ rentals.forEach((trip,i)=>{const same=trip.startCoordinates&&trip.endCoordinates&&trip.startCoordinates[0]===trip.endCoordinates[0]&&trip.startCoordinates[1]===trip.endCoordinates[1];if(!same&&!rows.has(keys[i]))missing.set(keys[i],trip)})
+ if(missing.size){const jobs=[...missing.values()];let next=0;const work=async()=>{while(next<jobs.length){const trip=jobs[next++];try{await cyclingCoordinates(trip,db,key,fetcher,now)}catch{/* Return available paths together; unavailable rentals retain their endpoints. */}}};await Promise.all(Array.from({length:4},work));rows=await read()}
+ let expiresAt=now+TTL;const features: {type:'Feature';properties:{activity_id:string};geometry:{type:'LineString';coordinates:Point[]}}[]=[];let unavailable=0
+ rentals.forEach((trip,i)=>{const row=rows.get(keys[i]);if(!row){if(missing.has(keys[i]))unavailable++;return}const coordinates=JSON.parse(row.coordinates) as Point[];if(coordinates.length<2)return;expiresAt=Math.min(expiresAt,row.expires_at);features.push({type:'Feature',properties:{activity_id:trip.id},geometry:{type:'LineString',coordinates}})})
+ return {type:'FeatureCollection' as const,features,expiresAt:unavailable?Math.min(expiresAt,now+60000):expiresAt,unavailable}
+}
