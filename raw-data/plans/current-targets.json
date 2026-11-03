@@ -384,7 +384,7 @@
   },
   {
     "date": "2026-11-04",
-    "number": 4,
+    "number": 1,
     "street": "Gladstone Road",
     "direction": "S",
     "bearing": 187.5,
@@ -461,11 +461,13 @@
     "start_time": "05:30",
     "end_time": "06:15",
     "outing_note": "Rescheduled from Sunday November 1: the actual run went elsewhere and did not reach Gladstone Road. Navigate to the same numbered midpoint, cover the full connected street, and meander home.",
-    "neighborhood": "Richland"
+    "neighborhood": "Richland",
+    "estimated_round_trip_miles": 4.0,
+    "round_trip_estimate_method": "Twice the Google walking approach to the midpoint plus one full target street traversal. Actual mileage depends on the route home."
   },
   {
     "date": "2026-11-05",
-    "number": 5,
+    "number": 2,
     "street": "Grove Place",
     "direction": "E",
     "bearing": 106.3,
@@ -625,11 +627,13 @@
     "distance_limit_exception": false,
     "start_time": "05:30",
     "end_time": "06:15",
-    "neighborhood": "Grange Estate area"
+    "neighborhood": "Grange",
+    "estimated_round_trip_miles": 4.1,
+    "round_trip_estimate_method": "Twice the Google walking approach to the midpoint plus one full target street traversal. Actual mileage depends on the route home."
   },
   {
     "date": "2026-11-06",
-    "number": 6,
+    "number": 3,
     "street": "Rodmor Road",
     "direction": "S",
     "bearing": 190,
@@ -742,11 +746,13 @@
     "start_time": "05:30",
     "end_time": "06:15",
     "outing_note": "Deferred from Wednesday November 4 so Gladstone Road can be completed then. Thursday Grove Place stays unchanged.",
-    "neighborhood": "Pilgrim Gardens"
+    "neighborhood": "Pilgrim Gardens",
+    "estimated_round_trip_miles": 4.2,
+    "round_trip_estimate_method": "Twice the Google walking approach to the midpoint plus one full target street traversal. Actual mileage depends on the route home."
   },
   {
     "date": "2026-11-07",
-    "number": 3,
+    "number": 4,
     "street": "Wilson Drive",
     "direction": "SE",
     "bearing": 145,
@@ -887,6 +893,182 @@
     "start_time": "05:30",
     "end_time": "06:15",
     "outing_note": "Deferred from Tuesday November 3: Tuesday covered Walnut Place and Covington Road instead. Finish Wilson Drive and its northern loop on Saturday.",
-    "neighborhood": "Hillcrest / Llanerch Hills edge"
+    "neighborhood": "Hillcrest",
+    "estimated_round_trip_miles": 3.7,
+    "round_trip_estimate_method": "Twice the Google walking approach to the midpoint plus one full target street traversal. Actual mileage depends on the route home."
+  },
+  {
+    "date": "2026-11-08",
+    "number": 5,
+    "street": "Nancy Drive",
+    "direction": "SW",
+    "bearing": 222.0,
+    "target_label": "street end to Glendale Road",
+    "target_coordinates": [
+      [
+        -75.3276806,
+        39.9663212
+      ],
+      [
+        -75.3274316,
+        39.96642
+      ],
+      [
+        -75.3259957,
+        39.9670944
+      ],
+      [
+        -75.3257726,
+        39.9673378
+      ],
+      [
+        -75.3259185,
+        39.967693
+      ],
+      [
+        -75.3264604,
+        39.9681006
+      ]
+    ],
+    "target_midpoint": [
+      -75.32613798873399,
+      39.967027572551935
+    ],
+    "target_miles": 0.191,
+    "navigation_address": "19 Nancy Dr, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.32626859999999,
+      39.96719969999999
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=19%20Nancy%20Dr%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "one_way_miles": 1.7,
+    "walking_metres": 2697,
+    "routing_source": "Google walking directions checked November 3, 2026",
+    "coverage_audit_running": {
+      "covered_20m_heading_pct": 0,
+      "sample_spacing_m": 10,
+      "running_track_count": 1878,
+      "as_of": "2026-11-03"
+    },
+    "citystrides_url": "https://citystrides.com/users/7315/map",
+    "citystrides_status": "0.0% near recorded running GPS; cover the full street and finish the remaining gaps. GPS proximity does not establish CityStrides credit.",
+    "time_label": "5:30\u20136:15 AM",
+    "first_waypoint": {
+      "intersection": "Nancy Drive & street end",
+      "coordinates": [
+        -75.3276806,
+        39.9663212
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9663212,-75.3276806&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Nancy Drive & Glendale Road",
+      "coordinates": [
+        -75.3264604,
+        39.9681006
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9681006,-75.3264604&dirflg=w"
+    },
+    "display_date": "Sun Nov 8",
+    "target_scope": "Complete connected street; inside Census ZCTA 19083. Keep the numbered address pinned near the midpoint.",
+    "whole_street": true,
+    "distance_limit_exception": false,
+    "neighborhood": "Westgate Hills",
+    "start_time": "05:30",
+    "end_time": "06:15",
+    "outing_note": "New direction for Sunday: navigate to the numbered midpoint, cover all of Nancy Drive, then meander home.",
+    "estimated_round_trip_miles": 3.5,
+    "round_trip_estimate_method": "Twice the Google walking approach to the midpoint plus one full target street traversal. Actual mileage depends on the route home."
+  },
+  {
+    "date": "2026-11-09",
+    "street": "Charles Drive",
+    "target_label": "Frederick Road to David Drive",
+    "target_miles": 0.299,
+    "target_coordinates": [
+      [
+        -75.3257911,
+        39.989831
+      ],
+      [
+        -75.3259568,
+        39.9896486
+      ],
+      [
+        -75.3271542,
+        39.9888086
+      ],
+      [
+        -75.3280327,
+        39.9880671
+      ],
+      [
+        -75.3286864,
+        39.9874812
+      ],
+      [
+        -75.3287935,
+        39.9873093
+      ],
+      [
+        -75.3288389,
+        39.9871471
+      ],
+      [
+        -75.3289961,
+        39.9864282
+      ]
+    ],
+    "target_midpoint": [
+      -75.32776450363919,
+      39.98829347177181
+    ],
+    "first_waypoint": {
+      "intersection": "Charles Drive & Frederick Road, Havertown, PA",
+      "coordinates": [
+        -75.3257911,
+        39.989831
+      ],
+      "apple_maps": "https://maps.apple.com/?q=Charles%20Drive%20%26%20Frederick%20Road%2C%20Havertown%2C%20PA&daddr=39.989831,-75.3257911&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Charles Drive & David Drive, Havertown, PA",
+      "coordinates": [
+        -75.3289961,
+        39.9864282
+      ],
+      "apple_maps": "https://maps.apple.com/?q=Charles%20Drive%20%26%20David%20Drive%2C%20Havertown%2C%20PA&daddr=39.9864282,-75.3289961&dirflg=w"
+    },
+    "citystrides_url": "https://citystrides.com/streets/3296373",
+    "citystrides_status": "85.0% near recorded running GPS; cover the full street and finish the remaining gaps. GPS proximity does not establish CityStrides credit.",
+    "number": 6,
+    "one_way_miles": 1.4,
+    "navigation_address": "148 Charles Dr, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.3281512,
+      39.9883923
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=148%20Charles%20Dr%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "neighborhood": "Lynnewood",
+    "display_date": "Mon Nov 9",
+    "start_time": "05:30",
+    "end_time": "06:15",
+    "time_label": "5:30\u20136:15 AM",
+    "walking_metres": 2206,
+    "routing_source": "Google walking directions checked November 3, 2026",
+    "whole_street": true,
+    "distance_limit_exception": false,
+    "coverage_audit_running": {
+      "covered_20m_heading_pct": 85,
+      "sample_spacing_m": 10,
+      "running_track_count": 1878,
+      "as_of": "2026-11-03"
+    },
+    "target_scope": "Complete connected street; inside Census ZCTA 19083. Keep the numbered address pinned near the midpoint.",
+    "outing_note": "Navigate to the numbered midpoint, cover the full street, then meander home. Earlier coverage is retained; the goal is to collect the remaining gaps.",
+    "direction": "NW",
+    "bearing": 307,
+    "estimated_round_trip_miles": 3.0,
+    "round_trip_estimate_method": "Twice the Google walking approach to the midpoint plus one full target street traversal. Actual mileage depends on the route home."
   }
 ]

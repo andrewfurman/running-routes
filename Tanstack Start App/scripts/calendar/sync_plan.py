@@ -49,9 +49,10 @@ def main():
         a = datetime.fromisoformat(t['date'] + 'T' + t.get('start_time', '05:30')).replace(tzinfo=zone)
         b = datetime.fromisoformat(t['date'] + 'T' + t.get('end_time', '06:15')).replace(tzinfo=zone)
         if b <= a: raise ValueError('Invalid event duration')
-        body = {'summary': f"🏃 {t['one_way_miles']:.1f} mi one-way · {t['street']} · {t['target_label']}" + (f" · {t['neighborhood']}" if t.get('neighborhood') else ''), 'location': t['navigation_address'],
+        round_trip = t.get('estimated_round_trip_miles', round(2 * t['walking_metres'] / 1609.344 + t['target_miles'], 1))
+        body = {'summary': f"{t.get('neighborhood', t['street'])} · {round_trip:.1f} mi", 'location': t['navigation_address'],
             'start': {'dateTime': a.isoformat(), 'timeZone': 'America/New_York'}, 'end': {'dateTime': b.isoformat(), 'timeZone': 'America/New_York'},
-            'description': f"Neighborhood / planning area: {t.get('neighborhood', 'Havertown')}.\n\n{t.get('outing_note', '')}\n\n{t.get('target_scope', '')}\n\nTap the numbered address: {t['navigation_address']}. Google walking distance from home: {t['walking_metres']/1609.344:.2f} miles; target traversal and return add mileage.\n\n{t['citystrides_status']} GPS proximity does not establish CityStrides credit.\n\nMidpoint: {t['navigation_url']}\nEndpoint A: {t['first_waypoint']['apple_maps']}\nEndpoint B: {t['second_waypoint']['apple_maps']}",
+            'description': f"Neighborhood: {t.get('neighborhood', 'Havertown')}.\nStreet target: {t['street']} · {t['target_label']}.\nEstimated round trip: {round_trip:.1f} miles = twice the walking approach to the midpoint plus one full target street traversal. Actual mileage depends on your return meander.\n\n{t.get('outing_note', '')}\n\n{t.get('target_scope', '')}\n\nTap the numbered address: {t['navigation_address']}. Google walking distance from home: {t['walking_metres']/1609.344:.2f} miles; target traversal and return add mileage.\n\n{t['citystrides_status']} GPS proximity does not establish CityStrides credit.\n\nMidpoint: {t['navigation_url']}\nEndpoint A: {t['first_waypoint']['apple_maps']}\nEndpoint B: {t['second_waypoint']['apple_maps']}",
             'extendedProperties': {'private': dict((old or {}).get('extendedProperties', {}).get('private', {}), runningRoutesTarget=stable)}}
         operations.append((t, old, body))
     touched = {old['id'] for _, old, _ in operations if old}

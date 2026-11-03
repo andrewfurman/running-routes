@@ -1,0 +1,18 @@
+[
+  {
+    "street": "Nancy Drive",
+    "address": "19 Nancy Dr, Havertown, PA 19083",
+    "walking_metres": 2697,
+    "one_way_miles": 1.68,
+    "source": "Google walking directions",
+    "checked": "2026-11-03"
+  },
+  {
+    "street": "Charles Drive",
+    "address": "148 Charles Dr, Havertown, PA 19083",
+    "walking_metres": 2206,
+    "one_way_miles": 1.37,
+    "source": "Google walking directions",
+    "checked": "2026-11-03"
+  }
+]
