@@ -31,3 +31,14 @@ export function activityCaption(properties:Record<string,any>){
  }
  return parts.join(' · ')
 }
+
+export function activityCaptionLines(properties:Record<string,any>){
+ const miles=properties.distance_meters/1609.344
+ let stats=typeof properties.distance_meters==='number'&&Number.isFinite(miles)&&miles>=0?`${miles.toFixed(1)} miles`:properties.geometry_source==='station_endpoints'?'Citi Bike':''
+ const pace=averagePaceLabel(properties);if(pace!=='Unavailable')stats+=` at ${pace.replace(' /mi',' per mile')}`
+ const start=activityTimestamp(properties),hasTime=properties.start_time_utc||properties.source_csv_date_utc||!/^\d{4}-\d{2}-\d{2}$/.test(properties.date||'')
+ const clock=(stamp:number)=>new Date(stamp).toLocaleTimeString('en-US',{timeZone:'America/New_York',hour:'numeric',minute:'2-digit'}).replace(/\s+/g,' ').toLowerCase()
+ const elapsed=properties.elapsed_seconds
+ const time=hasTime&&Number.isFinite(start)?Number.isFinite(elapsed)&&elapsed>=0?`${clock(start)} to ${clock(start+elapsed*1000)}`:clock(start):''
+ return {stats,time}
+}

@@ -222,3 +222,10 @@ The official Lyft export contributes 28 completed NYC rentals: six match existin
 Recovered 202 completed 2014–2015 rides from `andrewfurman/mycitibike`, bringing the combined Citi Bike archive to 230 trips. Six match Strava; 224 new rentals appear in Rides using Google cycling paths between their stations. The 1,862 lifetime account count remains unreconciled. [Recovery sources and importer notes](docs/citi-bike-history-recovery.md).
 
 Citi Bike paths load together as a cached GeoJSON bundle, alongside Strava history. Selecting NYC reuses that data instead of progressively fetching individual rides. Google-generated coordinates remain in the expiring D1 cache, outside Git.
+
+
+[November 3 reconciliation](docs/run-reviews/2026-11-03-walnut-covington.md): Monday was skipped, Tuesday completed Walnut/Covington, and Wilson moves to Saturday. Gladstone, Grove and Rodmor retain Wednesday–Friday. Bike rides are retrospective only and must not create Google Calendar events. History cards show distance/pace followed by recorded start/end time on a separate line. Activity deep links preserve their sport so rides reopen in Rides.
+
+Citi Bike rentals with missing export mileage contribute zero miles to displayed totals, at the owner’s request. Raw values remain null to preserve that the distance is unknown. Header and city mileage show plain numbers without ≥ symbols; Google cycling paths are used for visualization, not for inventing recorded mileage.
+
+Future run targets include a `neighborhood` label on map cards and Calendar titles/descriptions. See [neighborhood planning guidance](docs/route-planning-neighborhoods.md). Keep numbered midpoint street addresses in Calendar Location.

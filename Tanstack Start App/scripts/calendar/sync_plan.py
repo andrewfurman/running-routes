@@ -25,7 +25,8 @@ def main():
     parser.add_argument('--calendar', default=os.environ.get('GOOGLE_CALENDAR_ID', 'primary'))
     args = parser.parse_args()
     config = json.loads((ROOT / 'raw-data/route-research/current-plan.json').read_text())
-    targets = json.loads((ROOT / 'raw-data/route-research' / config['snapshot'] / 'targets.json').read_text())
+    targets = [t for t in json.loads((ROOT / 'raw-data/route-research' / config['snapshot'] / 'targets.json').read_text()) if not t.get('past')]
+    if not targets: raise RuntimeError('No future targets to sync')
     zone = ZoneInfo('America/New_York')
     first = min(t['date'] for t in targets)
     last = max(t['date'] for t in targets)
@@ -48,9 +49,9 @@ def main():
         a = datetime.fromisoformat(t['date'] + 'T' + t.get('start_time', '05:30')).replace(tzinfo=zone)
         b = datetime.fromisoformat(t['date'] + 'T' + t.get('end_time', '06:15')).replace(tzinfo=zone)
         if b <= a: raise ValueError('Invalid event duration')
-        body = {'summary': f"🏃 {t['one_way_miles']:.1f} mi one-way · {t['street']} · {t['target_label']}", 'location': t['navigation_address'],
+        body = {'summary': f"🏃 {t['one_way_miles']:.1f} mi one-way · {t['street']} · {t['target_label']}" + (f" · {t['neighborhood']}" if t.get('neighborhood') else ''), 'location': t['navigation_address'],
             'start': {'dateTime': a.isoformat(), 'timeZone': 'America/New_York'}, 'end': {'dateTime': b.isoformat(), 'timeZone': 'America/New_York'},
-            'description': f"{t.get('outing_note', '')}\n\n{t.get('target_scope', '')}\n\nTap the numbered address: {t['navigation_address']}. Google walking distance from home: {t['walking_metres']/1609.344:.2f} miles; target traversal and return add mileage.\n\n{t['citystrides_status']} GPS proximity does not establish CityStrides credit.\n\nMidpoint: {t['navigation_url']}\nEndpoint A: {t['first_waypoint']['apple_maps']}\nEndpoint B: {t['second_waypoint']['apple_maps']}",
+            'description': f"Neighborhood / planning area: {t.get('neighborhood', 'Havertown')}.\n\n{t.get('outing_note', '')}\n\n{t.get('target_scope', '')}\n\nTap the numbered address: {t['navigation_address']}. Google walking distance from home: {t['walking_metres']/1609.344:.2f} miles; target traversal and return add mileage.\n\n{t['citystrides_status']} GPS proximity does not establish CityStrides credit.\n\nMidpoint: {t['navigation_url']}\nEndpoint A: {t['first_waypoint']['apple_maps']}\nEndpoint B: {t['second_waypoint']['apple_maps']}",
             'extendedProperties': {'private': dict((old or {}).get('extendedProperties', {}).get('private', {}), runningRoutesTarget=stable)}}
         operations.append((t, old, body))
     touched = {old['id'] for _, old, _ in operations if old}

@@ -1,0 +1,73 @@
+{
+  "activity": [
+    {
+      "activityId": "20841048512",
+      "date": "2026-11-03T10:35:12.000Z",
+      "distanceMeters": 5899,
+      "movingSeconds": 2191,
+      "elapsedSeconds": 2340,
+      "sportType": "Run",
+      "distanceSource": "strava_web",
+      "hasGps": true,
+      "geometryKey": "strava/tracks/20841048512.geojson"
+    }
+  ],
+  "coverage": [
+    {
+      "name": "Glen Ridge Road",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 413.64083976026427
+    },
+    {
+      "name": "Gladstone Road",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 495.2923173735076
+    },
+    {
+      "name": "Walnut Place",
+      "percent": 57.6,
+      "status": "partial",
+      "coveredMeters": 372.7106114001944,
+      "lengthMeters": 646.7306380014768
+    },
+    {
+      "name": "Covington Road",
+      "percent": 69,
+      "status": "partial",
+      "coveredMeters": 298.25808923574175,
+      "lengthMeters": 432.3111912487971
+    },
+    {
+      "name": "Wilson Drive",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 653.5824115294575
+    },
+    {
+      "name": "Gladstone Road",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 495.2923173735076
+    },
+    {
+      "name": "Grove Place",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 293.3814939255841
+    },
+    {
+      "name": "Rodmor Road",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 727.5929489442368
+    }
+  ]
+}
