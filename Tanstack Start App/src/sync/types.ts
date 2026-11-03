@@ -10,7 +10,7 @@ export interface SyncEnv {
 }
 export interface SyncedRun {activityId:string;date:string;distanceMeters:number;distanceSource:'strava_api'|'strava_web'|'strava_export';sportType:string;movingSeconds:number;elapsedSeconds:number;geometry:{type:'LineString';coordinates:[number,number][]}|{type:'MultiLineString';coordinates:[number,number][][]}|null;geometryKey?:string|null;hasGps?:boolean}
 export interface RunSnapshot {updatedAt:string;runs:SyncedRun[]}
-export interface SyncStatus {state:'needs_connection'|'needs_browser_login'|'synced'|'error';schedule:string;authMode?:string;lastAttemptAt?:string;lastSuccessAt?:string;lastSuccessDay?:string;importedRuns?:number;errorCode?:string}
+export interface SyncStatus {state:'needs_connection'|'needs_browser_login'|'synced'|'error';schedule:string;authMode?:string;lastAttemptAt?:string;lastSuccessAt?:string;lastSuccessDay?:string;lastSuccessSlot?:string;importedRuns?:number;importedRides?:number;errorCode?:string}
 
 export interface RunStatement {bind(...values:unknown[]):RunStatement;run():Promise<unknown>;all<T>():Promise<{results:T[]}>}
 export interface RunDatabase {prepare(sql:string):RunStatement;batch(statements:RunStatement[]):Promise<unknown>}

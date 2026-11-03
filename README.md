@@ -106,11 +106,11 @@ The Story mileage source is `raw-data/runs/2026-distances.json`: 189 recorded St
 
 ## Daily Strava import and D1 storage
 
-The Worker imports at **08:00 America/New_York**. Cloudflare cron `0 12,13 * * *` covers both UTC offsets; the handler acts only at 08:00 Eastern, including DST transitions. One Durable Object serializes imports and skips a second successful scheduled import on the same day.
+The Worker imports **runs and rides at 7 AM, 10 AM, and 7 PM America/New_York**. Cloudflare cron `0 11,12,14,15,23,0 * * *` covers both UTC offsets; the handler checks Eastern local time, including daylight saving transitions. One Durable Object serializes imports and skips duplicates only within the same scheduled time slot, allowing all three daily imports. Each poll reconciles the previous 30 days, upserts activities by Strava ID into D1, and stores GPS paths in R2. Both maps and City Stats merge the live records without counting existing Strava IDs twice. This imports workouts already available in Strava; Apple Health must still send them to Strava first.
 
 The current connection uses the owner's explicitly authorized **private browser session** with Strava's signed-in website, not the official OAuth API. Set `STRAVA_WEB_COOKIE` and `STRAVA_SYNC_ADMIN_TOKEN` only in the ignored root `.env` (blank placeholders in committed root `sample.env`), then run `npm run deploy` inside the app. The deploy helper installs them as private Worker secrets. The session is limited to requests to `www.strava.com`; redirects are not followed. Its signed-in athlete ID must match `STRAVA_ATHLETE_ID=14049141`. Cookies never enter D1, public JSON, Git or logs. When Strava expires the session, status becomes `needs_browser_login`; replace the private secret after signing in again. OAuth client credentials are not configured for the current browser-session setup. Strava’s [current API setup guide](https://developers.strava.com/docs/getting-started/) requires a subscription to create an API app (checked November 1, 2026).
 
-Every import reconciles at least the previous 30 days, overlapping the last successful checkpoint by 30 days too. This catches workouts that Apple Health uploads to Strava several days after recording; successful sync status does not prove every Watch workout has reached Strava. All pages of matching running activities are read until the cutoff, and IDs are upserted. Numeric recorded distances are used, bikes are excluded, and newly discovered GPS runs download their original GPX. Disconnected GPX segments stay separate. Failures preserve the previous success checkpoint. Website changes or expired sessions can interrupt this integration; check `/api/strava-sync/status` for the last successful import.
+Every import reconciles at least the previous 30 days, overlapping the last successful checkpoint by 30 days too. This catches workouts that Apple Health uploads to Strava several days after recording; successful sync status does not prove every Watch workout has reached Strava. All pages of activities are read until the cutoff, and supported runs and cycling activities are upserted by ID. Numeric recorded distances are used, other sports are excluded, and newly discovered GPS activities download their original GPX. Runs and rides stay separate in their respective maps and running street coverage. Disconnected GPX segments stay separate. Failures preserve the previous success checkpoint. Website changes or expired sessions can interrupt this integration; check `/api/strava-sync/status` for the last successful import.
 
 Storage is intentionally duplicated for now:
 
@@ -118,7 +118,7 @@ Storage is intentionally duplicated for now:
 - **R2 `running-routes-media`:** baseline `runs/history.geojson`, new `strava/tracks/<id>.geojson`, normalized incremental `strava/latest-runs.json`, and videos.
 - **Repo `raw-data/runs`:** retained GPS files, selected activity metadata in `activities.json`, distance provenance and explicit snapshots. The original private all-sport export and FIT sensor files remain outside Git.
 
-The public run endpoint reads D1 metadata and merges incremental GPS with the detailed checked-in tracks. Only selected distance, time and GPS fields are exposed. Heart rate, notes and authentication data are excluded. The runtime importer does not push to GitHub: refresh repo snapshots explicitly and use a tracking PR, immediately merged after validation. This keeps runtime updates separate from versioned snapshots while retaining both copies.
+The public `/api/strava-sync/runs` endpoint retains its original name for compatibility but returns both runs and rides. It reads D1 metadata and merges incremental GPS with the detailed checked-in tracks. Only selected distance, time and GPS fields are exposed. Heart rate, notes and authentication data are excluded. The runtime importer does not push to GitHub: refresh repo snapshots explicitly and use a tracking PR, immediately merged after validation. This keeps runtime updates separate from versioned snapshots while retaining both copies.
 
 ```sh
 # From Tanstack Start App
@@ -183,7 +183,7 @@ City Stats uses TanStack Table with three columns: City, Runs and Bike rides. Co
 
 The Running Routes header remains visible on every tab, including City Stats. Sort controls use Lucide arrow icons; the table header’s accessible sort state continues to indicate ascending or descending order.
 
-Bikes opens on the latest imported ride. Large arrows browse saved cycling activities in recording order, highlighting each full GPS route; the newest ride has no forward planning action. The 8 AM Eastern cloud importer currently handles runs; cycling remains an explicitly refreshed snapshot.
+Bikes opens on the latest imported ride. Large arrows browse saved cycling activities in recording order, highlighting each full GPS route; the newest ride has no forward planning action. The cloud importer updates both runs and rides three times daily; Rides opens on the latest imported ride.
 
 Historical run cards show the recorded Eastern start time and average moving pace. Header mileage totals round to whole miles. Atlantic Ocean clusters share one city entry with their combined counts and recorded mileage.
 
@@ -211,7 +211,7 @@ The sample environment lists only the current browser-session Strava setup (`STR
 
 Close the paging card to hide the selected gold activity highlight, planned orange streets and weekday pins while preserving the purple recorded tracks, the ZIP outline and the current camera. Show controls restores the selected activity highlight. The small Show controls pill floats at the bottom of the map and restores the plan.
 
-`STRAVA_WEB_COOKIE` authenticates the Worker to Strava; it is never required from public visitors. `STRAVA_SYNC_ADMIN_TOKEN` separately protects the public manual-import endpoint. Keeping the cookie private does not authenticate callers of that endpoint. The scheduled 8 AM import does not need the admin token, but manual imports do. Keep both private; do not reuse the Strava cookie as an endpoint password.
+`STRAVA_WEB_COOKIE` authenticates the Worker to Strava; it is never required from public visitors. `STRAVA_SYNC_ADMIN_TOKEN` separately protects the public manual-import endpoint. Keeping the cookie private does not authenticate callers of that endpoint. The scheduled imports does not need the admin token, but manual imports do. Keep both private; do not reuse the Strava cookie as an endpoint password.
 
 ### Citi Bike history
 
