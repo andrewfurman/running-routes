@@ -461,7 +461,9 @@
     "start_time": "05:30",
     "end_time": "06:15",
     "outing_note": "Rescheduled from Sunday November 1: the actual run went elsewhere and did not reach Gladstone Road. Navigate to the same numbered midpoint, cover the full connected street, and meander home.",
-    "neighborhood": "Richland"
+    "neighborhood": "Richland",
+    "estimated_round_trip_miles": 4.0,
+    "round_trip_estimate_method": "Twice the Google walking approach to the midpoint plus one full target street traversal. Actual mileage depends on the route home."
   },
   {
     "date": "2026-11-05",
@@ -625,7 +627,9 @@
     "distance_limit_exception": false,
     "start_time": "05:30",
     "end_time": "06:15",
-    "neighborhood": "Grange"
+    "neighborhood": "Grange",
+    "estimated_round_trip_miles": 4.1,
+    "round_trip_estimate_method": "Twice the Google walking approach to the midpoint plus one full target street traversal. Actual mileage depends on the route home."
   },
   {
     "date": "2026-11-06",
@@ -742,7 +746,9 @@
     "start_time": "05:30",
     "end_time": "06:15",
     "outing_note": "Deferred from Wednesday November 4 so Gladstone Road can be completed then. Thursday Grove Place stays unchanged.",
-    "neighborhood": "Pilgrim Gardens"
+    "neighborhood": "Pilgrim Gardens",
+    "estimated_round_trip_miles": 4.2,
+    "round_trip_estimate_method": "Twice the Google walking approach to the midpoint plus one full target street traversal. Actual mileage depends on the route home."
   },
   {
     "date": "2026-11-07",
@@ -887,7 +893,9 @@
     "start_time": "05:30",
     "end_time": "06:15",
     "outing_note": "Deferred from Tuesday November 3: Tuesday covered Walnut Place and Covington Road instead. Finish Wilson Drive and its northern loop on Saturday.",
-    "neighborhood": "Hillcrest"
+    "neighborhood": "Hillcrest",
+    "estimated_round_trip_miles": 3.7,
+    "round_trip_estimate_method": "Twice the Google walking approach to the midpoint plus one full target street traversal. Actual mileage depends on the route home."
   },
   {
     "date": "2026-11-08",
@@ -968,7 +976,9 @@
     "neighborhood": "Westgate Hills",
     "start_time": "05:30",
     "end_time": "06:15",
-    "outing_note": "New direction for Sunday: navigate to the numbered midpoint, cover all of Nancy Drive, then meander home."
+    "outing_note": "New direction for Sunday: navigate to the numbered midpoint, cover all of Nancy Drive, then meander home.",
+    "estimated_round_trip_miles": 3.5,
+    "round_trip_estimate_method": "Twice the Google walking approach to the midpoint plus one full target street traversal. Actual mileage depends on the route home."
   },
   {
     "date": "2026-11-09",
@@ -1057,6 +1067,8 @@
     "target_scope": "Complete connected street; inside Census ZCTA 19083. Keep the numbered address pinned near the midpoint.",
     "outing_note": "Navigate to the numbered midpoint, cover the full street, then meander home. Earlier coverage is retained; the goal is to collect the remaining gaps.",
     "direction": "NW",
-    "bearing": 307
+    "bearing": 307,
+    "estimated_round_trip_miles": 3.0,
+    "round_trip_estimate_method": "Twice the Google walking approach to the midpoint plus one full target street traversal. Actual mileage depends on the route home."
   }
 ]

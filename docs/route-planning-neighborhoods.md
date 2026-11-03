@@ -25,3 +25,5 @@ Sources checked November 3, 2026:
 Bike rides remain retrospective and must not create Google Calendar entries. Future planning uses running GPS only.
 
 Use simple neighborhood titles in the app and Calendar: **Pilgrim Gardens**, **Hillcrest**, **Richland**, **Grange**, **Westgate Hills**, and **Lynnewood**. Keep qualifiers and boundary notes in descriptions, not in the neighborhood title. Nancy Drive uses Westgate Hills; Charles Drive uses Lynnewood as practical planning-area labels, not surveyed boundaries.
+
+Calendar titles must be compact for Apple Watch: **Neighborhood · 3.7 mi**. The distance is an estimated round trip: twice the Google walking approach plus one full target-street traversal, rounded to a tenth. Keep the street name, cross streets, formula and one-way approach in the description; keep the exact numbered midpoint address in Location. No date, emoji, street name or extra qualifier in the title. Actual meander-home mileage can differ.
