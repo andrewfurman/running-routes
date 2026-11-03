@@ -1,6 +1,6 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
-import {latestRunId,latestBikeId,activityTimestamp,averagePaceLabel,activityCaption,requestedRun,gpsActivitySummary} from '../components/activity-summary.ts'
+import {latestRunId,latestBikeId,activityTimestamp,averagePaceLabel,activityCaptionLines,activityCaption,requestedRun,gpsActivitySummary} from '../components/activity-summary.ts'
 import {freshDocument} from './document-cache.ts'
 import type {FeatureCollection} from '../components/types'
 const tracks:FeatureCollection={type:'FeatureCollection',features:[{type:'Feature',properties:{activity_id:'1',activity_type:'Run',date:'2026-10-30T09:00:00Z',distance_meters:1609.344},geometry:{type:'LineString',coordinates:[]}},{type:'Feature',properties:{activity_id:'2',activity_type:'Run',date:'2026-10-31T09:00:00Z',distance_meters:3218.688},geometry:{type:'LineString',coordinates:[]}},{type:'Feature',properties:{activity_id:'3',activity_type:'Ride',date:'2026-11-01T09:00:00Z',distance_meters:1609.344},geometry:{type:'LineString',coordinates:[]}}]}
@@ -21,4 +21,10 @@ test('compact caption uses recorded elapsed time for finish and omits unknown ti
 test('station-only rental captions do not invent distance and stable query IDs work',()=>{
  assert.equal(activityCaption({geometry_source:'station_endpoints',date:'2025-08-30T22:32:39Z',elapsed_seconds:720,distance_meters:null}),'Citi Bike · 6:32pm to 6:44pm')
  assert.equal(requestedRun('?activity=citi-0123456789abcdef0123'),'citi-0123456789abcdef0123')
+})
+
+test('past runs and rides use distance and pace first, start/end on a separate line',()=>{
+ for(const sport of ['Run','Ride'])assert.deepEqual(activityCaptionLines({activity_type:sport,date:'2026-11-03T10:35:12Z',distance_meters:5899,moving_seconds:2191,elapsed_seconds:2340}),{stats:'3.7 miles at 9:58 per mile',time:'5:35 am to 6:14 am'})
+ assert.deepEqual(activityCaptionLines({date:'2026-11-03',distance_meters:1609.344}),{stats:'1.0 miles',time:''})
+ assert.deepEqual(activityCaptionLines({geometry_source:'station_endpoints',date:'2025-08-30T22:32:39Z',elapsed_seconds:720,distance_meters:null}),{stats:'Citi Bike',time:'6:32 pm to 6:44 pm'})
 })

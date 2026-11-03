@@ -4,7 +4,7 @@ Imported November 1, 2026 from the official Lyft privacy export. The full ZIP re
 
 The archive has 41 bike/scooter rows: 28 completed NYC trips, 12 completed trips outside NYC, and one incomplete record. The reported 1,862 account counter is not reconciled by this export. Do not describe this as 1,862 imported Citi Bike rides.
 
-Six NYC trips match Strava using time overlap and proximity of both stations to recorded GPS. They use the existing Strava activity and are not added twice. The other 22 appear as teal station endpoint dots in Rides and count in New York City stats. No route is drawn between station endpoints, and no mileage is inferred. All distance fields are blank in the source. Mileage totals with ≥ are incomplete.
+Six NYC trips match Strava using time overlap and proximity of both stations to recorded GPS. They use the existing Strava activity and are not added twice. The initial 22 unmatched Lyft rentals and 202 completed legacy rentals are added once. The current combined archive contains 230 completed NYC rentals: six matched to existing Strava activities and 224 new records. Google cycling paths visualize 215 rentals; nine same-station rentals retain station dots. Raw distances remain unknown. At the owner’s request, missing Citi Bike mileage contributes zero to displayed totals, which no longer use ≥. This does not establish actual mileage ridden.
 
 `trips.json` preserves times, coordinates, stable hashed IDs and match decisions. `summary.json` records reconciliation counts. Uncertain matches are retained for review but omitted from app totals; reruns replace files deterministically. One Strava activity can match multiple rentals without counting the Strava ride more than once.
 

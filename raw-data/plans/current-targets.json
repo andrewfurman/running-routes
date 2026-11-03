@@ -169,10 +169,11 @@
     "actual_activity": "20815407143",
     "recorded_run_miles": 4.0345,
     "outcome_note": "Ran a different 4.03-mile route; Gladstone was not reached and is rescheduled for Wednesday November 4.",
-    "review": "docs/run-reviews/2026-11-01-gladstone-deferred.md"
+    "review": "docs/run-reviews/2026-11-01-gladstone-deferred.md",
+    "neighborhood": "Richland"
   },
   {
-    "date": "2026-11-02",
+    "date": "2026-11-03",
     "number": 1,
     "street": "Walnut Place",
     "direction": "E",
@@ -237,8 +238,8 @@
       "running_track_count": 1874
     },
     "citystrides_url": "https://citystrides.com/users/7315/map",
-    "citystrides_status": "19083 priority \u00b7 80.0% near recorded runs; finish the remaining gaps.",
-    "time_label": "5:30\u20135:55 AM",
+    "citystrides_status": "100% of the saved target is near cumulative running GPS after November 3; not official CityStrides credit.",
+    "time_label": "5:35\u20136:14 AM",
     "first_waypoint": {
       "intersection": "Walnut Place & East Manoa Road",
       "coordinates": [
@@ -255,17 +256,21 @@
       ],
       "apple_maps": "https://maps.apple.com/?daddr=39.9751672,-75.2875343&dirflg=w"
     },
-    "display_date": "Mon Nov 2",
+    "display_date": "Tue Nov 3",
     "target_scope": "Complete connected street; inside Census ZCTA 19083.",
     "whole_street": true,
     "distance_limit_exception": false,
-    "start_time": "05:30",
-    "end_time": "05:55",
-    "outing_id": "2026-11-02-walnut-covington",
-    "outing_note": "First part of one Monday outing: cover Walnut Place, continue onto Covington Road, then return home."
+    "start_time": "05:35",
+    "end_time": "06:14",
+    "outing_id": "2026-11-03-walnut-covington",
+    "outing_note": "Monday November 2 was skipped. Completed the remaining gaps during the same Tuesday November 3 run, 5:35\u20136:14 AM Eastern. The 3.67 miles are the total outing, not mileage per target. Cumulative GPS proximity covers this target; this is not official CityStrides credit.",
+    "past": true,
+    "completed_activity": "20841048512",
+    "recorded_run_miles": 3.67,
+    "neighborhood": "Manoa / Grange Estate area"
   },
   {
-    "date": "2026-11-02",
+    "date": "2026-11-03",
     "number": 2,
     "street": "Covington Road",
     "direction": "E",
@@ -346,8 +351,8 @@
       "running_track_count": 1874
     },
     "citystrides_url": "https://citystrides.com/users/7315/map",
-    "citystrides_status": "19083 priority \u00b7 78.2% near recorded runs; finish the remaining gaps.",
-    "time_label": "5:55\u20136:15 AM",
+    "citystrides_status": "100% of the saved target is near cumulative running GPS after November 3; not official CityStrides credit.",
+    "time_label": "5:35\u20136:14 AM",
     "first_waypoint": {
       "intersection": "Covington Road & Brentwood Road",
       "coordinates": [
@@ -364,157 +369,18 @@
       ],
       "apple_maps": "https://maps.apple.com/?daddr=39.9774561,-75.2872597&dirflg=w"
     },
-    "display_date": "Mon Nov 2",
+    "display_date": "Tue Nov 3",
     "target_scope": "Complete connected Covington section from Brentwood to St Albans; the offset Heatherwood-to-Brentwood section is already 100% near saved runs.",
     "whole_street": true,
     "distance_limit_exception": false,
-    "start_time": "05:55",
-    "end_time": "06:15",
-    "outing_id": "2026-11-02-walnut-covington",
-    "outing_note": "Second part of the same Monday outing; continue from Walnut Place to Covington. The home-to-midpoint distance is reference only, not a second approach from home."
-  },
-  {
-    "date": "2026-11-03",
-    "number": 3,
-    "street": "Wilson Drive",
-    "direction": "SE",
-    "bearing": 145,
-    "target_label": "Marvine Avenue through the northern loop across Township Line Road",
-    "target_coordinates": [
-      [
-        -75.2977029,
-        39.9625906
-      ],
-      [
-        -75.2988462,
-        39.9641051
-      ],
-      [
-        -75.2992009,
-        39.9645884
-      ],
-      [
-        -75.3000784,
-        39.9657179
-      ],
-      [
-        -75.3001358,
-        39.9657919
-      ],
-      [
-        -75.3002095,
-        39.9658867
-      ],
-      [
-        -75.3002576,
-        39.9659908
-      ],
-      [
-        -75.300286,
-        39.9660527
-      ],
-      [
-        -75.3003999,
-        39.9662078
-      ],
-      [
-        -75.3005316,
-        39.9663873
-      ],
-      [
-        -75.3005565,
-        39.9664133
-      ],
-      [
-        -75.3006106,
-        39.9664824
-      ],
-      [
-        -75.3008303,
-        39.9667294
-      ],
-      [
-        -75.3008766,
-        39.9667766
-      ],
-      [
-        -75.3008504,
-        39.9667218
-      ],
-      [
-        -75.3007625,
-        39.9665381
-      ],
-      [
-        -75.3007243,
-        39.9664739
-      ],
-      [
-        -75.3006085,
-        39.9663356
-      ],
-      [
-        -75.300443,
-        39.9661378
-      ],
-      [
-        -75.3003487,
-        39.9660252
-      ],
-      [
-        -75.3002986,
-        39.9659754
-      ],
-      [
-        -75.3002095,
-        39.9658867
-      ]
-    ],
-    "target_midpoint": [
-      -75.2996248103211,
-      39.96513405419342
-    ],
-    "target_miles": 0.406,
-    "navigation_address": "1239 Wilson Dr, Havertown, PA 19083",
-    "navigation_coordinates": [
-      -75.2994607,
-      39.9652397
-    ],
-    "navigation_url": "https://maps.apple.com/?daddr=1239%20Wilson%20Dr%2C%20Havertown%2C%20PA%2019083&dirflg=w",
-    "one_way_miles": 1.6,
-    "walking_metres": 2619,
-    "routing_source": "Google walking directions checked October 30, 2026",
-    "coverage_audit_running": {
-      "covered_20m_heading_pct": 32.3,
-      "sample_spacing_m": 10,
-      "running_track_count": 1877,
-      "review": "docs/run-reviews/2026-11-01-gladstone-deferred.md"
-    },
-    "citystrides_url": "https://citystrides.com/users/7315/map",
-    "citystrides_status": "Wilson Drive \u00b7 32.3% covered by the heading-aware running GPS estimate after Sunday; finish the remaining sections and northern loop.",
-    "time_label": "5:30\u20136:15 AM",
-    "first_waypoint": {
-      "intersection": "Wilson Drive & Marvine Avenue",
-      "coordinates": [
-        -75.2977029,
-        39.9625906
-      ],
-      "apple_maps": "https://maps.apple.com/?daddr=39.9625906,-75.2977029&dirflg=w"
-    },
-    "second_waypoint": {
-      "intersection": "Wilson Drive northern loop",
-      "coordinates": [
-        -75.3008766,
-        39.9667766
-      ],
-      "apple_maps": "https://maps.apple.com/?daddr=39.9667766,-75.3008766&dirflg=w"
-    },
-    "display_date": "Tue Nov 3",
-    "target_scope": "Complete Wilson Drive including its northern loop across Township Line Road. User-requested exception: part of the loop lies outside Census ZCTA 19083.",
-    "whole_street": true,
-    "distance_limit_exception": false,
-    "start_time": "05:30",
-    "end_time": "06:15"
+    "start_time": "05:35",
+    "end_time": "06:14",
+    "outing_id": "2026-11-03-walnut-covington",
+    "outing_note": "Monday November 2 was skipped. Completed the remaining gaps during the same Tuesday November 3 run, 5:35\u20136:14 AM Eastern. The 3.67 miles are the total outing, not mileage per target. Cumulative GPS proximity covers this target; this is not official CityStrides credit.",
+    "past": true,
+    "completed_activity": "20841048512",
+    "recorded_run_miles": 3.67,
+    "neighborhood": "Manoa / Grange Estate area"
   },
   {
     "date": "2026-11-04",
@@ -594,7 +460,8 @@
     "distance_limit_exception": false,
     "start_time": "05:30",
     "end_time": "06:15",
-    "outing_note": "Rescheduled from Sunday November 1: the actual run went elsewhere and did not reach Gladstone Road. Navigate to the same numbered midpoint, cover the full connected street, and meander home."
+    "outing_note": "Rescheduled from Sunday November 1: the actual run went elsewhere and did not reach Gladstone Road. Navigate to the same numbered midpoint, cover the full connected street, and meander home.",
+    "neighborhood": "Richland"
   },
   {
     "date": "2026-11-05",
@@ -757,7 +624,8 @@
     "whole_street": true,
     "distance_limit_exception": false,
     "start_time": "05:30",
-    "end_time": "06:15"
+    "end_time": "06:15",
+    "neighborhood": "Grange Estate area"
   },
   {
     "date": "2026-11-06",
@@ -873,6 +741,152 @@
     "distance_limit_exception": false,
     "start_time": "05:30",
     "end_time": "06:15",
-    "outing_note": "Deferred from Wednesday November 4 so Gladstone Road can be completed then. Thursday Grove Place stays unchanged."
+    "outing_note": "Deferred from Wednesday November 4 so Gladstone Road can be completed then. Thursday Grove Place stays unchanged.",
+    "neighborhood": "Pilgrim Gardens"
+  },
+  {
+    "date": "2026-11-07",
+    "number": 3,
+    "street": "Wilson Drive",
+    "direction": "SE",
+    "bearing": 145,
+    "target_label": "Marvine Avenue through the northern loop across Township Line Road",
+    "target_coordinates": [
+      [
+        -75.2977029,
+        39.9625906
+      ],
+      [
+        -75.2988462,
+        39.9641051
+      ],
+      [
+        -75.2992009,
+        39.9645884
+      ],
+      [
+        -75.3000784,
+        39.9657179
+      ],
+      [
+        -75.3001358,
+        39.9657919
+      ],
+      [
+        -75.3002095,
+        39.9658867
+      ],
+      [
+        -75.3002576,
+        39.9659908
+      ],
+      [
+        -75.300286,
+        39.9660527
+      ],
+      [
+        -75.3003999,
+        39.9662078
+      ],
+      [
+        -75.3005316,
+        39.9663873
+      ],
+      [
+        -75.3005565,
+        39.9664133
+      ],
+      [
+        -75.3006106,
+        39.9664824
+      ],
+      [
+        -75.3008303,
+        39.9667294
+      ],
+      [
+        -75.3008766,
+        39.9667766
+      ],
+      [
+        -75.3008504,
+        39.9667218
+      ],
+      [
+        -75.3007625,
+        39.9665381
+      ],
+      [
+        -75.3007243,
+        39.9664739
+      ],
+      [
+        -75.3006085,
+        39.9663356
+      ],
+      [
+        -75.300443,
+        39.9661378
+      ],
+      [
+        -75.3003487,
+        39.9660252
+      ],
+      [
+        -75.3002986,
+        39.9659754
+      ],
+      [
+        -75.3002095,
+        39.9658867
+      ]
+    ],
+    "target_midpoint": [
+      -75.2996248103211,
+      39.96513405419342
+    ],
+    "target_miles": 0.406,
+    "navigation_address": "1239 Wilson Dr, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.2994607,
+      39.9652397
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=1239%20Wilson%20Dr%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "one_way_miles": 1.6,
+    "walking_metres": 2619,
+    "routing_source": "Google walking directions checked October 30, 2026",
+    "coverage_audit_running": {
+      "covered_20m_heading_pct": 32.3,
+      "sample_spacing_m": 10,
+      "running_track_count": 1877,
+      "review": "docs/run-reviews/2026-11-01-gladstone-deferred.md"
+    },
+    "citystrides_url": "https://citystrides.com/users/7315/map",
+    "citystrides_status": "Wilson Drive \u00b7 32.3% covered by the heading-aware running GPS estimate after Sunday; finish the remaining sections and northern loop.",
+    "time_label": "5:30\u20136:15 AM",
+    "first_waypoint": {
+      "intersection": "Wilson Drive & Marvine Avenue",
+      "coordinates": [
+        -75.2977029,
+        39.9625906
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9625906,-75.2977029&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Wilson Drive northern loop",
+      "coordinates": [
+        -75.3008766,
+        39.9667766
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9667766,-75.3008766&dirflg=w"
+    },
+    "display_date": "Sat Nov 7",
+    "target_scope": "Complete Wilson Drive including its northern loop across Township Line Road. User-requested exception: part of the loop lies outside Census ZCTA 19083.",
+    "whole_street": true,
+    "distance_limit_exception": false,
+    "start_time": "05:30",
+    "end_time": "06:15",
+    "outing_note": "Deferred from Tuesday November 3: Tuesday covered Walnut Place and Covington Road instead. Finish Wilson Drive and its northern loop on Saturday.",
+    "neighborhood": "Hillcrest / Llanerch Hills edge"
   }
 ]
