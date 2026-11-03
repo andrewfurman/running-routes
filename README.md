@@ -229,3 +229,5 @@ Citi Bike paths load together as a cached GeoJSON bundle, alongside Strava histo
 Citi Bike rentals with missing export mileage contribute zero miles to displayed totals, at the owner’s request. Raw values remain null to preserve that the distance is unknown. Header and city mileage show plain numbers without ≥ symbols; Google cycling paths are used for visualization, not for inventing recorded mileage.
 
 Future run targets include a `neighborhood` label on map cards and Calendar titles/descriptions. See [neighborhood planning guidance](docs/route-planning-neighborhoods.md). Keep numbered midpoint street addresses in Calendar Location.
+
+[November 4–9 plan](docs/run-reviews/2026-11-04-to-09-plan.md) extends upcoming runs through Monday with six simple neighborhood names. Add Nancy Drive Sunday and full Charles Drive Monday; all six approaches remain below two miles.

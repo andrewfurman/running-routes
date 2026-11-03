@@ -1,0 +1,49 @@
+{
+  "as_of": "2026-11-03",
+  "gps_runs": 1878,
+  "method": "20 m proximity with heading agreement, 10 m samples; running only, not official CityStrides credit",
+  "streets": [
+    {
+      "name": "Gladstone Road",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 495.2923173735076
+    },
+    {
+      "name": "Grove Place",
+      "percent": 63.3,
+      "status": "partial",
+      "coveredMeters": 307.6393914557495,
+      "lengthMeters": 486.2001885315523
+    },
+    {
+      "name": "Rodmor Road",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 727.5929489442368
+    },
+    {
+      "name": "Wilson Drive",
+      "percent": 32.3,
+      "status": "partial",
+      "coveredMeters": 210.8986811808084,
+      "lengthMeters": 652.7641154385586
+    },
+    {
+      "name": "Nancy Drive",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 306.52152660515594
+    },
+    {
+      "name": "Charles Drive",
+      "percent": 85,
+      "status": "partial",
+      "coveredMeters": 408.69064869640135,
+      "lengthMeters": 480.73671820059093
+    }
+  ]
+}
