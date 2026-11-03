@@ -2,7 +2,7 @@ import {purgeCitiRoutes} from './sync/citi-bike-routing'
 import {freshDocument} from './sync/document-cache'
 import {readRuns} from './sync/database'
 import handler from '@tanstack/react-start/server-entry'
-import {isEightAMEastern} from './sync/strava-sync'
+import {isScheduledEastern} from './sync/strava-sync'
 import type {SyncEnv} from './sync/types'
 export {StravaSync} from './sync/strava-sync'
 function sync(env:SyncEnv){return env.STRAVA_SYNC.get(env.STRAVA_SYNC.idFromName('andrew-furman'))}
@@ -19,7 +19,7 @@ export default {
  },
  async scheduled(event:{scheduledTime:number},env:SyncEnv){
   await purgeCitiRoutes(env.RUNS_DB,event.scheduledTime)
-  if(!isEightAMEastern(event.scheduledTime))return
+  if(!isScheduledEastern(event.scheduledTime))return
   const response=await sync(env).fetch('https://internal/sync',{method:'POST'});if(!response.ok)throw Error('Strava sync handler failed');const status:any=await response.json();if(status.state!=='synced')throw Error(`Strava sync failed: ${status.errorCode}`)
  },
 }

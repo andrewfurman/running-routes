@@ -8,6 +8,7 @@ def main():
  with urllib.request.urlopen(urllib.request.Request(args.url.rstrip('/')+'/api/strava-sync/runs',headers={'User-Agent':'RunningRoutesSync/1.0'}),timeout=60) as response:data=json.load(response)
  source=ROOT/'raw-data/runs/tracks.geojson';tracks=json.loads(source.read_text());features={str(f['properties']['activity_id']):f for f in tracks['features']};rows=[]
  for r in data['runs']:
+  if r['sportType'] not in {'Run','TrailRun','VirtualRun'}:continue
   aid=r['activityId'];geometry=r.get('geometry')
   if aid not in features and geometry:features[aid]={'type':'Feature','properties':{'activity_id':aid,'date':r['date'],'activity_type':r['sportType'],'distance_meters':r['distanceMeters'],'source':r['distanceSource']},'geometry':geometry}
   rows.append({k:r.get(k) for k in ['activityId','date','distanceMeters','movingSeconds','elapsedSeconds','sportType','distanceSource','hasGps','geometryKey']})

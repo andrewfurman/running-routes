@@ -1,7 +1,8 @@
+import {RUN_SPORTS,RIDE_SPORTS,supportedSport} from './sports.ts'
 import {fetchWebRuns} from './strava-web.ts'
 import {saveRuns} from './database.ts'
 import type {SyncEnv,SyncStorage,SyncStatus,SyncedRun,RunSnapshot} from './types'
-const SCHEDULE='08:00 America/New_York'
+const SCHEDULE='07:00, 10:00, 19:00 America/New_York'
 const LOOKBACK_MS=30*86400000
 // Apple Health can upload older workouts later; keep reconciling its full import window.
 export function syncSince(now:number,lastSuccessAt?:string){return Math.min(now-LOOKBACK_MS,lastSuccessAt?Date.parse(lastSuccessAt)-LOOKBACK_MS:now-LOOKBACK_MS)}
@@ -10,7 +11,9 @@ export function easternClock(time:number) {
  const get=(t:string)=>p.find(x=>x.type===t)!.value
  return {day:`${get('year')}-${get('month')}-${get('day')}`,hour:Number(get('hour')),minute:Number(get('minute'))}
 }
-export function isEightAMEastern(time:number){const t=easternClock(time);return t.hour===8&&t.minute===0}
+export function isScheduledEastern(time:number){const t=easternClock(time);return [7,10,19].includes(t.hour)&&t.minute===0}
+export function syncSlot(time:number){const t=easternClock(time);const hour=t.hour>=19?19:t.hour>=10?10:t.hour>=7?7:0;return `${t.day}:${hour}`}
+
 export function decodePolyline(encoded:string):[number,number][] {
  let index=0,lat=0,lng=0;const points:[number,number][]=[]
  const read=()=>{let result=0,shift=0,b=0;do{if(index>=encoded.length||shift>30)throw Error('invalid_polyline');b=encoded.charCodeAt(index++)-63;if(b<0||b>63)throw Error('invalid_polyline');result|=(b&31)<<shift;shift+=5}while(b>=32);return result&1?~(result>>1):result>>1}
@@ -18,7 +21,7 @@ export function decodePolyline(encoded:string):[number,number][] {
  return points
 }
 export function normalizeRun(activity:any):SyncedRun|null {
- if(!['Run','TrailRun','VirtualRun'].includes(activity.sport_type||activity.type))return null
+ if(!supportedSport(activity.sport_type||activity.type))return null
  if(!Number.isSafeInteger(activity.id)||!Number.isFinite(activity.distance)||activity.distance<0||!Number.isFinite(Date.parse(activity.start_date)))throw Error('invalid_activity')
  let coordinates:[number,number][]=[]
  if(activity.map?.summary_polyline){try{coordinates=decodePolyline(activity.map.summary_polyline)}catch{/* Preserve recorded mileage even when a GPS route is unavailable. */}}
@@ -30,14 +33,14 @@ export class StravaSync {
  private storage:SyncStorage;private env:SyncEnv;private queue:Promise<unknown>=Promise.resolve()
  constructor(state:{storage:SyncStorage},env:SyncEnv){this.storage=state.storage;this.env=env}
  async fetch(request:Request){const url=new URL(request.url)
-  if(request.method==='GET'&&url.pathname==='/status'){const status=await this.storage.get<SyncStatus>('status');return Response.json(configured(this.env)?status||{state:'needs_connection',schedule:SCHEDULE}:{...status,state:'needs_connection',schedule:SCHEDULE})}
+  if(request.method==='GET'&&url.pathname==='/status'){const status=await this.storage.get<SyncStatus>('status');return Response.json(configured(this.env)?{...status,state:status?.state||'needs_connection',schedule:SCHEDULE}:{...status,state:'needs_connection',schedule:SCHEDULE})}
   if(request.method!=='POST'||url.pathname!=='/sync')return new Response('Not found',{status:404})
   const task=this.queue.then(()=>this.run(Date.now(),url.searchParams.get('force')==='1'));this.queue=task.catch(()=>{});return Response.json(await task)
  }
  async run(now:number,force=false,fetcher:typeof fetch=fetch):Promise<SyncStatus>{
   const before=await this.storage.get<SyncStatus>('status');const attempted=new Date(now).toISOString();const day=easternClock(now).day
   if(!configured(this.env)){const status:SyncStatus={...before,state:'needs_connection',schedule:SCHEDULE,lastAttemptAt:attempted};await this.storage.put('status',status);return status}
-  if(!force&&before?.state==='synced'&&before.lastSuccessDay===day)return before
+  if(!force&&before?.state==='synced'&&before.lastSuccessSlot===syncSlot(now))return before
   try{
    let fetched:SyncedRun[]=[]
    if(this.env.STRAVA_WEB_COOKIE){fetched=await fetchWebRuns(this.env,syncSince(now,before?.lastSuccessAt),fetcher)}else{
@@ -64,7 +67,7 @@ export class StravaSync {
    const object=await this.env.TIMELAPSE_MEDIA.get('strava/latest-runs.json');const old=object?await object.json<RunSnapshot>():null;const byId=new Map((old?.runs||[]).map(r=>[r.activityId,r]));for(const run of fetched)byId.set(run.activityId,{...run,geometry:run.geometry||byId.get(run.activityId)?.geometry||null})
    const runs=[...byId.values()].sort((a,b)=>a.date.localeCompare(b.date)||a.activityId.localeCompare(b.activityId));await this.env.TIMELAPSE_MEDIA.put('strava/latest-runs.json',JSON.stringify({updatedAt:attempted,runs}),{httpMetadata:{contentType:'application/json'}})
    await saveRuns(this.env,fetched,attempted)
-   const status:SyncStatus={authMode:this.env.STRAVA_WEB_COOKIE?'browser_session':'oauth',state:'synced',schedule:SCHEDULE,lastAttemptAt:attempted,lastSuccessAt:attempted,lastSuccessDay:day,importedRuns:runs.length};await this.storage.put('status',status);return status
+   const status:SyncStatus={authMode:this.env.STRAVA_WEB_COOKIE?'browser_session':'oauth',state:'synced',schedule:SCHEDULE,lastAttemptAt:attempted,lastSuccessAt:attempted,lastSuccessDay:day,lastSuccessSlot:syncSlot(now),importedRuns:runs.filter(r=>RUN_SPORTS.includes(r.sportType)).length,importedRides:runs.filter(r=>RIDE_SPORTS.includes(r.sportType)).length};await this.storage.put('status',status);return status
   }catch(e){const code=e instanceof Error?e.message:'sync_failed';const status:SyncStatus={...before,state:code==='browser_login_required'?'needs_browser_login':'error',schedule:SCHEDULE,lastAttemptAt:attempted,errorCode:/^(strava_(oauth|api|web)_\d{3}|invalid_[a-z_]+|athlete_mismatch|activity_owner_mismatch|pagination_limit|browser_login_required)$/.test(code)?code:'sync_failed'};await this.storage.put('status',status);return status}
  }
 }
