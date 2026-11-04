@@ -52,3 +52,9 @@ test('Broomall joins Mainline for runs and rides without changing the underlying
  const [area]=historyAreas({type:'FeatureCollection',features:[a,b,a]});assert.equal(area.label,'Mainline Pennsylvania');assert.equal(area.count,2);assert.equal(area.miles,3);assert.deepEqual(area.activities,[a,b])
  }
 })
+
+test('Penn Wynne combines with Mainline while Drexel Hill remains separate',()=>{
+ const a=feature('penn-wynne',[-75.275,39.986],3218.688),b=feature('havertown',[-75.31,39.98],1609.344),c=feature('drexel-hill',[-75.292,39.947],1609.344)
+ const areas=historyAreas({type:'FeatureCollection',features:[a,b,c,a]}),mainline=areas.find(a=>a.label==='Mainline Pennsylvania')!
+ assert.equal(mainline.count,2);assert.equal(mainline.miles,3);assert.deepEqual(mainline.activities,[a,b]);assert.equal(areas.length,2);assert.equal(areas.find(a=>a.label==='Drexel Hill, PA')?.count,1)
+})

@@ -59,7 +59,7 @@ python3 scripts/planning/build_app_data.py
 
 Reviewed Uber/JUMP/Lime and Lyft/Divvy receipts add 45 bike rides across Seattle, Chicago, Milan, Washington DC and Berlin. Confirmed matches keep their original Strava/Citi Bike record; unresolved cases and scooters stay out. [Receipt facts and repeatable import](raw-data/bike-receipts/README.md) document recorded mileage, deduplication and endpoint routing. Google cycling paths share the existing temporary D1 cache; private email bodies and payment data are never published.
 
-The Rides map also shows [local Census reference outlines](docs/local-reference-boundaries.md) for Ardmore, Penn Wynne, Bryn Mawr, Narberth and Drexel Hill, alongside Havertown's teal 19083 outline. These outlines preserve current city membership and counts.
+City Stats combines Havertown, Narberth, Bryn Mawr, Ardmore, Broomall and Penn Wynne as **Mainline Pennsylvania** for runs and rides. Local town-border overlays have been removed; Havertown's teal 19083 outline remains. [Grouping and archived boundary sources](docs/local-reference-boundaries.md).
 
 ## Planning and Google Calendar
 
