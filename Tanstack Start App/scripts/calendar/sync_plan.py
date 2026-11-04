@@ -26,7 +26,7 @@ def main():
     parser.add_argument('--calendar', default=os.environ.get('GOOGLE_CALENDAR_ID', 'primary'))
     args = parser.parse_args()
     config = json.loads((ROOT / 'raw-data/route-research/current-plan.json').read_text())
-    targets = [t for t in json.loads((ROOT / 'raw-data/route-research' / config['snapshot'] / 'targets.json').read_text()) if not t.get('past')]
+    targets = [t for t in json.loads((ROOT / 'raw-data/route-research' / config['snapshot'] / 'targets.json').read_text()) if not t.get('past') and not t.get('unscheduled')]
     if not targets: raise RuntimeError('No future targets to sync')
     zone = ZoneInfo('America/New_York')
     first = min(t['date'] for t in targets)

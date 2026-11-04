@@ -21,3 +21,5 @@ Review the output, update numbered addresses and one-way walking distances, then
 The app also recomputes highlights in a Web Worker against the latest merged running history, so a new run can remove covered orange sections. It does not silently move Calendar addresses; reconcile the pin and event when replanning. Both Google Maps and the fallback map draw only the separate missing lines and frame the gaps plus their navigation pin.
 
 Example: November 9 Charles Drive is about 85% covered. Highlight only its approximately 72 m David Drive-end gap and navigate to 205 Charles Dr, rather than the old full-street midpoint at 148 Charles Dr. November 5 Grove Place has two gaps, approximately 113 m and 66 m, with a numbered pin at 11 Grove Pl near the main gap.
+
+An `unscheduled` target is an optional map target, labeled **Opt** / **Unscheduled option**, never a Calendar appointment. Exclude it from scheduled outing counts and generated Calendar data. Only assign a date/time when requested. Wednesday November 11 is unscheduled; Wexford is retained as an option after the late flight.

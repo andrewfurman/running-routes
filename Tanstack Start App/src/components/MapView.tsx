@@ -90,7 +90,7 @@ export function MapView(props: Props) {
     props.targets.forEach((t,i)=>{
       const lines=plannedLines(t);if(!lines.length)return
       const pos=t.navigation_coordinates||t.target_midpoint||t.target_coordinates[0]
-      const day=new Date(`${t.date}T12:00:00`).toLocaleDateString('en-US',{weekday:'short'})
+      const day=t.unscheduled?'Opt':new Date(`${t.date}T12:00:00`).toLocaleDateString('en-US',{weekday:'short'})
       if(e.type==='google'){
         const g=window.google.maps; for(const path of lines){const line=new g.Polyline({map:e.map,path:path.map(([lng,lat])=>({lng,lat})),strokeColor:'#ed8d39',strokeWeight:5,zIndex:30});e.routeLines.push(line)}
         const marker=new g.Marker({map:e.map,position:{lng:pos[0],lat:pos[1]},label:{text:day,color:'#fff',fontWeight:'700',fontSize:'10px'},title:`${day}: ${t.street}`,icon:{path:g.SymbolPath.CIRCLE,fillColor:'#6840a8',fillOpacity:1,strokeColor:'#fff',strokeWeight:3,scale:19},zIndex:40})
@@ -120,7 +120,7 @@ export function MapView(props: Props) {
     return()=>{e.map.removeLayer(layer)}
   },[ready,props.missingRoads])
   useEffect(()=>{const e=engine.current;if(!e)return;e.routeLines.forEach((line:any,i:number)=>e.type==='google'?line.setOptions({strokeColor:i===props.selected?'#e96b1d':'#e8a364',strokeWeight:i===props.selected?7:4}):line.setStyle({color:i===props.selected?'#e96b1d':'#e8a364',weight:i===props.selected?7:4}))},[ready,props.selected,props.targets])
-  useEffect(()=>{if(props.plansVisible!==false&&!props.historyArea&&!props.activityId&&props.focusRequest&&props.targets[props.selected])engine.current?.fit(props.targets.filter(t=>t.date===props.targets[props.selected].date).flatMap(plannedPoints),100,true)},[props.focusRequest,ready,props.targets,props.selected,props.historyArea,props.activityId])
+  useEffect(()=>{if(props.plansVisible!==false&&!props.historyArea&&!props.activityId&&props.focusRequest&&props.targets[props.selected])engine.current?.fit(props.targets.filter(t=>t.unscheduled===props.targets[props.selected].unscheduled&&(t.unscheduled?t.street===props.targets[props.selected].street:t.date===props.targets[props.selected].date)).flatMap(plannedPoints),100,true)},[props.focusRequest,ready,props.targets,props.selected,props.historyArea,props.activityId])
   useEffect(()=>{if(props.historyRequest&&props.historyArea?.length)engine.current?.fit(props.historyArea)},[props.historyRequest,props.historyArea,ready])
   useEffect(()=>{
     const e=engine.current;if(!e||props.activityCardVisible===false||props.historyArea||!props.activityId||!props.tracks)return
