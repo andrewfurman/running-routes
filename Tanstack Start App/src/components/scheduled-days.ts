@@ -16,7 +16,7 @@ const distance=(a:Position,b:Position)=>Math.hypot((a[0]-b[0])*Math.cos((a[1]+b[
 function inRing(point:Position,ring:number[][]){let inside=false;for(let i=0,j=ring.length-1;i<ring.length;j=i++){const a=ring[i],b=ring[j];if((a[1]>point[1])!==(b[1]>point[1])&&point[0]<(b[0]-a[0])*(point[1]-a[1])/(b[1]-a[1])+a[0])inside=!inside}return inside}
 function regionFor(point:Position){return cityRegions.find(region=>{const polygons=region.geometry.type==='MultiPolygon'?region.geometry.coordinates:[region.geometry.coordinates];return (polygons as number[][][][]).some(p=>inRing(point,p[0])&&!p.slice(1).some(hole=>inRing(point,hole)))})?.label}
 export function historyAreas(tracks?:FeatureCollection) {
- const areas:{center:Position;points:Position[];count:number;label:string;fallbackLabel:string;miles:number;distanceMissing:number;region?:string}[]=[]
+ const areas:{center:Position;points:Position[];count:number;label:string;fallbackLabel:string;miles:number;distanceMissing:number;region?:string;activities:FeatureCollection['features']}[]=[]
  const seen=new Set<string>()
  for(const feature of tracks?.features||[]) {
   const id=feature.properties.activity_id;if(id!=null){if(seen.has(String(id)))continue;seen.add(String(id))}
@@ -29,9 +29,9 @@ export function historyAreas(tracks?:FeatureCollection) {
   const nearbyTown=!boundaryRegion&&distance(center,[-75.3,39.98])<90?[...localTowns].sort((a,b)=>distance(a.center as Position,center)-distance(b.center as Position,center))[0]:undefined
   const region=boundaryRegion||(nearbyTown&&distance(nearbyTown.center as Position,center)<12?nearbyTown.label:undefined)
   let area=areas.find(a=>region?a.region===region:!a.region&&distance(a.center,center)<45)
-  if(!area){area={center,region,points:[],count:0,label:'',fallbackLabel:'',miles:0,distanceMissing:0};areas.push(area)}
+  if(!area){area={center,region,points:[],count:0,label:'',fallbackLabel:'',miles:0,distanceMissing:0,activities:[]};areas.push(area)}
   area.center=[(area.center[0]*area.count+center[0])/(area.count+1),(area.center[1]*area.count+center[1])/(area.count+1)]
-  area.count++;area.points.push(...points);const meters=feature.properties.distance_meters;if(typeof meters==='number'&&Number.isFinite(meters)&&meters>=0)area.miles+=meters/1609.344;else area.distanceMissing++
+  area.count++;area.activities.push(feature);area.points.push(...points);const meters=feature.properties.distance_meters;if(typeof meters==='number'&&Number.isFinite(meters)&&meters>=0)area.miles+=meters/1609.344;else area.distanceMissing++
  }
  for(const area of areas){if(area.region){area.label=area.region;area.fallbackLabel=area.region;continue}const nearest=[...anchors].sort((a,b)=>distance([a[1],a[2]],area.center)-distance([b[1],b[2]],area.center))[0];area.fallbackLabel=distance([nearest[1],nearest[2]],area.center)<100?nearest[0]:`${area.center[1].toFixed(2)}°, ${area.center[0].toFixed(2)}°`;const named=[...cityNames].sort((a,b)=>distance(a.center as Position,area.center)-distance(b.center as Position,area.center))[0];area.label=named&&distance(named.center as Position,area.center)<15?named.label:area.fallbackLabel.includes('°')?'New activity area':area.fallbackLabel}
  for(const area of areas)if(!area.region&&['Havertown / Philadelphia','New York / New Jersey'].includes(area.label))area.label='Other '+area.label+' area'
@@ -40,7 +40,7 @@ export function historyAreas(tracks?:FeatureCollection) {
  for(const [index,area] of areas.entries()){
   const key=area.label==='New activity area'?`unresolved-${index}`:area.label;const existing=combined.get(key)
   if(!existing){combined.set(key,{...area});continue}
-  const count=existing.count+area.count;existing.center=[(existing.center[0]*existing.count+area.center[0]*area.count)/count,(existing.center[1]*existing.count+area.center[1]*area.count)/count];existing.count=count;existing.miles+=area.miles;existing.distanceMissing+=area.distanceMissing;existing.points=existing.points.concat(area.points)
+  const count=existing.count+area.count;existing.center=[(existing.center[0]*existing.count+area.center[0]*area.count)/count,(existing.center[1]*existing.count+area.center[1]*area.count)/count];existing.count=count;existing.miles+=area.miles;existing.distanceMissing+=area.distanceMissing;existing.points=existing.points.concat(area.points);existing.activities=existing.activities.concat(area.activities)
  }
  return [...combined.values()].sort((a,b)=>b.count-a.count)
 }

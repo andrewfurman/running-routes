@@ -74,3 +74,26 @@ html,body{background:#fff}
 .history-time{margin-top:3px!important;color:var(--muted)}
 
 .route-neighborhood{display:block;font-size:11px;font-weight:700;letter-spacing:.03em;color:var(--purple);margin:5px 0}
+
+.city-label-desktop,.city-location-icon{display:none}
+@media(min-width:1024px){
+ .city-stats-page{padding:26px 32px!important;align-items:center;background:#f7f5fa}
+ .city-stats-page .city-table-wrap{width:100%;max-width:1120px;border:1px solid #e6dfed;border-radius:18px;box-shadow:0 8px 32px #39224a06;background:#fff}
+ .city-table{table-layout:fixed}
+ .city-table th:first-child,.city-table thead th:first-child{width:56%;max-width:none}
+ .city-table th,.city-table td{padding:6px 22px}
+ .city-table thead th{padding:10px 22px;background:#f1edf6;color:#70617e;box-shadow:0 1px 0 #e4dcec}
+ .city-table thead button{width:100%;justify-content:flex-end;padding:10px 12px;font-size:13px}
+ .city-table thead th:first-child button{justify-content:flex-start}
+ .city-table tbody tr:nth-child(even){background:#fdfcfe}
+ .city-table tbody tr:hover{background:#f7f3fc}
+ .city-table .city-name-button{display:flex;align-items:center;gap:13px;width:100%;max-width:none;white-space:normal;min-height:72px;padding:14px 12px;font-size:16px;font-weight:650;color:#30263b;border-radius:12px;line-height:1.4}
+ .city-label-mobile{display:none}
+ .city-label-desktop{display:inline}
+ .city-location-icon{display:block;flex-shrink:0;width:20px;height:20px;color:#8c70ae;stroke-width:1.7}
+ .city-activity-button{min-height:72px;padding:12px;border:1px solid transparent!important;border-radius:12px;gap:5px}
+ .city-activity-button:not(:disabled):hover,.city-name-button:hover{background:#eee6f8;border-color:#dfd1ec!important}
+ .city-activity-button strong{font-size:23px;font-weight:750;color:#68409c}
+ .city-activity-button small{font-size:12px;color:#82738e}
+ .city-activity-button:disabled strong,.city-activity-button:disabled small{color:#b9afc2}
+}
