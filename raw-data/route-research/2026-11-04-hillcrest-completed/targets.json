@@ -1,0 +1,1077 @@
+[
+  {
+    "date": "2026-10-31",
+    "number": 1,
+    "street": "Glen Ridge Road",
+    "direction": "SW",
+    "bearing": 246.8,
+    "target_label": "Windsor Park Lane to Windsor Park Lane",
+    "target_coordinates": [
+      [
+        -75.3345273,
+        39.9727579
+      ],
+      [
+        -75.3329309,
+        39.9732973
+      ],
+      [
+        -75.3318408,
+        39.9737248
+      ],
+      [
+        -75.3314117,
+        39.9740208
+      ],
+      [
+        -75.3309759,
+        39.9743453
+      ],
+      [
+        -75.3305705,
+        39.9747838
+      ]
+    ],
+    "target_midpoint": [
+      -75.33232409770024,
+      39.97353526906537
+    ],
+    "target_miles": 0.257,
+    "navigation_address": "310 Glen Ridge Rd, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.3324892,
+      39.9736829
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=310%20Glen%20Ridge%20Rd%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "one_way_miles": 1.7,
+    "walking_metres": 2756,
+    "routing_source": "Google walking directions checked October 30, 2026",
+    "coverage_audit_running": {
+      "length_m": 414.1,
+      "covered_25m_pct": 0.0,
+      "sample_spacing_m": 5,
+      "running_track_count": 1874
+    },
+    "citystrides_url": "https://citystrides.com/users/7315/map",
+    "citystrides_status": "19083 priority \u00b7 0.0% near recorded runs; finish the remaining gaps.",
+    "time_label": "5:30\u20136:15 AM",
+    "first_waypoint": {
+      "intersection": "Glen Ridge Road & Windsor Park Lane",
+      "coordinates": [
+        -75.3345273,
+        39.9727579
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9727579,-75.3345273&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Glen Ridge Road & Windsor Park Lane",
+      "coordinates": [
+        -75.3305705,
+        39.9747838
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9747838,-75.3305705&dirflg=w"
+    },
+    "display_date": "Sat Oct 31",
+    "target_scope": "Complete connected street; inside Census ZCTA 19083.",
+    "whole_street": true,
+    "distance_limit_exception": false,
+    "start_time": "05:30",
+    "end_time": "06:15",
+    "past": true,
+    "completed_activity": "20800939076",
+    "recorded_run_miles": 3.9371,
+    "completion_review": {
+      "review": "docs/run-reviews/2026-10-31-glen-ridge-road.md",
+      "sampled_target_near_gps_pct": 100.0,
+      "proximity_m": 25,
+      "official_citystrides_credit_verified": false
+    }
+  },
+  {
+    "date": "2026-11-01",
+    "number": 2,
+    "street": "Gladstone Road",
+    "direction": "S",
+    "bearing": 187.5,
+    "target_label": "Edmonds Avenue to North Drexel Avenue",
+    "target_coordinates": [
+      [
+        -75.3104673,
+        39.9637641
+      ],
+      [
+        -75.311456,
+        39.9632986
+      ],
+      [
+        -75.3124345,
+        39.9628776
+      ],
+      [
+        -75.3135074,
+        39.9625092
+      ],
+      [
+        -75.3144878,
+        39.9620706
+      ],
+      [
+        -75.3155129,
+        39.9615628
+      ]
+    ],
+    "target_midpoint": [
+      -75.31300431549731,
+      39.96268194506963
+    ],
+    "target_miles": 0.308,
+    "navigation_address": "215a Gladstone Rd, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.3126547,
+      39.96269789999999
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=215a%20Gladstone%20Rd%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "one_way_miles": 1.9,
+    "walking_metres": 2989,
+    "routing_source": "Google walking directions checked October 30, 2026",
+    "coverage_audit_running": {
+      "length_m": 496.1,
+      "covered_25m_pct": 5.0,
+      "sample_spacing_m": 5,
+      "running_track_count": 1874
+    },
+    "citystrides_url": "https://citystrides.com/users/7315/map",
+    "citystrides_status": "19083 priority \u00b7 5.0% near recorded runs; finish the remaining gaps.",
+    "time_label": "4:00\u20134:45 AM",
+    "first_waypoint": {
+      "intersection": "Gladstone Road & Edmonds Avenue",
+      "coordinates": [
+        -75.3104673,
+        39.9637641
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9637641,-75.3104673&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Gladstone Road & North Drexel Avenue",
+      "coordinates": [
+        -75.3155129,
+        39.9615628
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9615628,-75.3155129&dirflg=w"
+    },
+    "display_date": "Sun Nov 1",
+    "target_scope": "Complete connected street; inside Census ZCTA 19083.",
+    "whole_street": true,
+    "distance_limit_exception": false,
+    "start_time": "04:00",
+    "end_time": "04:45",
+    "past": true,
+    "actual_activity": "20815407143",
+    "recorded_run_miles": 4.0345,
+    "outcome_note": "Ran a different 4.03-mile route; Gladstone was not reached and is rescheduled for Wednesday November 4.",
+    "review": "docs/run-reviews/2026-11-01-gladstone-deferred.md",
+    "neighborhood": "Richland"
+  },
+  {
+    "date": "2026-11-03",
+    "number": 1,
+    "street": "Walnut Place",
+    "direction": "E",
+    "bearing": 101.5,
+    "target_label": "East Manoa Road to Covington Road",
+    "target_coordinates": [
+      [
+        -75.2893454,
+        39.9806262
+      ],
+      [
+        -75.2894312,
+        39.9798962
+      ],
+      [
+        -75.2894593,
+        39.9797
+      ],
+      [
+        -75.2895428,
+        39.9789635
+      ],
+      [
+        -75.2895771,
+        39.9786597
+      ],
+      [
+        -75.2895342,
+        39.9783966
+      ],
+      [
+        -75.2894054,
+        39.9781138
+      ],
+      [
+        -75.2884441,
+        39.9766471
+      ],
+      [
+        -75.2875343,
+        39.9751672
+      ]
+    ],
+    "target_midpoint": [
+      -75.28918878508443,
+      39.97778330680877
+    ],
+    "target_miles": 0.401,
+    "navigation_address": "316 Walnut Pl, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.2894122,
+      39.9776746
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=316%20Walnut%20Pl%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "one_way_miles": 1.4,
+    "walking_metres": 2330,
+    "routing_source": "Google walking directions checked October 30, 2026",
+    "coverage_audit_running": {
+      "length_m": 645.9,
+      "covered_25m_pct": 80.0,
+      "sample_spacing_m": 5,
+      "running_track_count": 1874
+    },
+    "citystrides_url": "https://citystrides.com/users/7315/map",
+    "citystrides_status": "100% of the saved target is near cumulative running GPS after November 3; not official CityStrides credit.",
+    "time_label": "5:35\u20136:14 AM",
+    "first_waypoint": {
+      "intersection": "Walnut Place & East Manoa Road",
+      "coordinates": [
+        -75.2893454,
+        39.9806262
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9806262,-75.2893454&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Walnut Place & Covington Road",
+      "coordinates": [
+        -75.2875343,
+        39.9751672
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9751672,-75.2875343&dirflg=w"
+    },
+    "display_date": "Tue Nov 3",
+    "target_scope": "Complete connected street; inside Census ZCTA 19083.",
+    "whole_street": true,
+    "distance_limit_exception": false,
+    "start_time": "05:35",
+    "end_time": "06:14",
+    "outing_id": "2026-11-03-walnut-covington",
+    "outing_note": "Monday November 2 was skipped. Completed the remaining gaps during the same Tuesday November 3 run, 5:35\u20136:14 AM Eastern. The 3.67 miles are the total outing, not mileage per target. Cumulative GPS proximity covers this target; this is not official CityStrides credit.",
+    "past": true,
+    "completed_activity": "20841048512",
+    "recorded_run_miles": 3.67,
+    "neighborhood": "Manoa / Grange Estate area"
+  },
+  {
+    "date": "2026-11-03",
+    "number": 2,
+    "street": "Covington Road",
+    "direction": "E",
+    "bearing": 106.9,
+    "target_label": "Brentwood Road to St Albans Road",
+    "target_coordinates": [
+      [
+        -75.2890364,
+        39.9746739
+      ],
+      [
+        -75.2887587,
+        39.9747198
+      ],
+      [
+        -75.2882811,
+        39.9747988
+      ],
+      [
+        -75.2879034,
+        39.9749238
+      ],
+      [
+        -75.2875343,
+        39.9751672
+      ],
+      [
+        -75.2872511,
+        39.9754105
+      ],
+      [
+        -75.2869593,
+        39.9757855
+      ],
+      [
+        -75.2866846,
+        39.9763248
+      ],
+      [
+        -75.286676,
+        39.976601
+      ],
+      [
+        -75.2867275,
+        39.9768575
+      ],
+      [
+        -75.2868648,
+        39.9770878
+      ],
+      [
+        -75.2870623,
+        39.9772916
+      ],
+      [
+        -75.2872597,
+        39.9774561
+      ]
+    ],
+    "target_midpoint": [
+      -75.28702668520266,
+      39.9756989018997
+    ],
+    "target_miles": 0.269,
+    "navigation_address": "521 Covington Rd, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.2868762,
+      39.9756796
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=521%20Covington%20Rd%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "one_way_miles": 1.6,
+    "walking_metres": 2522,
+    "routing_source": "Google walking directions checked October 30, 2026",
+    "coverage_audit_running": {
+      "length_m": 432.3,
+      "covered_25m_pct": 78.2,
+      "sample_spacing_m": 5,
+      "running_track_count": 1874
+    },
+    "citystrides_url": "https://citystrides.com/users/7315/map",
+    "citystrides_status": "100% of the saved target is near cumulative running GPS after November 3; not official CityStrides credit.",
+    "time_label": "5:35\u20136:14 AM",
+    "first_waypoint": {
+      "intersection": "Covington Road & Brentwood Road",
+      "coordinates": [
+        -75.2890364,
+        39.9746739
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9746739,-75.2890364&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Covington Road & St Albans Road",
+      "coordinates": [
+        -75.2872597,
+        39.9774561
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9774561,-75.2872597&dirflg=w"
+    },
+    "display_date": "Tue Nov 3",
+    "target_scope": "Complete connected Covington section from Brentwood to St Albans; the offset Heatherwood-to-Brentwood section is already 100% near saved runs.",
+    "whole_street": true,
+    "distance_limit_exception": false,
+    "start_time": "05:35",
+    "end_time": "06:14",
+    "outing_id": "2026-11-03-walnut-covington",
+    "outing_note": "Monday November 2 was skipped. Completed the remaining gaps during the same Tuesday November 3 run, 5:35\u20136:14 AM Eastern. The 3.67 miles are the total outing, not mileage per target. Cumulative GPS proximity covers this target; this is not official CityStrides credit.",
+    "past": true,
+    "completed_activity": "20841048512",
+    "recorded_run_miles": 3.67,
+    "neighborhood": "Manoa / Grange Estate area"
+  },
+  {
+    "date": "2026-11-07",
+    "number": 3,
+    "street": "Gladstone Road",
+    "direction": "S",
+    "bearing": 187.5,
+    "target_label": "Edmonds Avenue to North Drexel Avenue",
+    "target_coordinates": [
+      [
+        -75.3104673,
+        39.9637641
+      ],
+      [
+        -75.311456,
+        39.9632986
+      ],
+      [
+        -75.3124345,
+        39.9628776
+      ],
+      [
+        -75.3135074,
+        39.9625092
+      ],
+      [
+        -75.3144878,
+        39.9620706
+      ],
+      [
+        -75.3155129,
+        39.9615628
+      ]
+    ],
+    "target_midpoint": [
+      -75.31300431549731,
+      39.96268194506963
+    ],
+    "target_miles": 0.308,
+    "navigation_address": "215a Gladstone Rd, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.3126547,
+      39.96269789999999
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=215a%20Gladstone%20Rd%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "one_way_miles": 1.9,
+    "walking_metres": 2989,
+    "routing_source": "Google walking directions checked October 30, 2026",
+    "coverage_audit_running": {
+      "covered_20m_heading_pct": 0,
+      "sample_spacing_m": 10,
+      "as_of": "2026-11-04",
+      "review": "docs/run-reviews/2026-11-04-hillcrest-completed.md"
+    },
+    "citystrides_url": "https://citystrides.com/users/7315/map",
+    "citystrides_status": "19083 priority \u00b7 5.0% near recorded runs; finish the remaining gaps.",
+    "time_label": "5:30\u20136:15 AM",
+    "first_waypoint": {
+      "intersection": "Gladstone Road & Edmonds Avenue",
+      "coordinates": [
+        -75.3104673,
+        39.9637641
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9637641,-75.3104673&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Gladstone Road & North Drexel Avenue",
+      "coordinates": [
+        -75.3155129,
+        39.9615628
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9615628,-75.3155129&dirflg=w"
+    },
+    "display_date": "Sat Nov 7",
+    "target_scope": "Complete connected street; inside Census ZCTA 19083.",
+    "whole_street": true,
+    "distance_limit_exception": false,
+    "start_time": "05:30",
+    "end_time": "06:15",
+    "outing_note": "Moved from Wednesday November 4 to Saturday November 7 because Wednesday completed Hillcrest/Wilson Drive instead. Gladstone remains untouched in recorded running GPS.",
+    "neighborhood": "Richland",
+    "estimated_round_trip_miles": 4.0,
+    "round_trip_estimate_method": "Twice the Google walking approach to the midpoint plus one full target street traversal. Actual mileage depends on the route home."
+  },
+  {
+    "date": "2026-11-05",
+    "number": 1,
+    "street": "Grove Place",
+    "direction": "E",
+    "bearing": 106.3,
+    "target_label": "street end to street end",
+    "target_coordinates": [
+      [
+        -75.283999,
+        39.9760781
+      ],
+      [
+        -75.2840017,
+        39.9759938
+      ],
+      [
+        -75.2840017,
+        39.9758123
+      ],
+      [
+        -75.2840017,
+        39.9757999
+      ],
+      [
+        -75.2840017,
+        39.9757957
+      ],
+      [
+        -75.2839978,
+        39.9757825
+      ],
+      [
+        -75.2839416,
+        39.9755918
+      ],
+      [
+        -75.2838841,
+        39.9755037
+      ],
+      [
+        -75.2838437,
+        39.975469
+      ],
+      [
+        -75.283583,
+        39.9752497
+      ],
+      [
+        -75.2835573,
+        39.9752299
+      ],
+      [
+        -75.2835347,
+        39.9752126
+      ],
+      [
+        -75.28329,
+        39.9750713
+      ],
+      [
+        -75.283256,
+        39.9750516
+      ],
+      [
+        -75.283243,
+        39.9750459
+      ],
+      [
+        -75.282975,
+        39.9749285
+      ],
+      [
+        -75.2829232,
+        39.9749133
+      ],
+      [
+        -75.2825367,
+        39.9748001
+      ],
+      [
+        -75.2823738,
+        39.9747524
+      ],
+      [
+        -75.2822743,
+        39.9747174
+      ],
+      [
+        -75.2821723,
+        39.9746691
+      ],
+      [
+        -75.2821218,
+        39.9746373
+      ],
+      [
+        -75.2820744,
+        39.9746074
+      ],
+      [
+        -75.2819699,
+        39.9745283
+      ],
+      [
+        -75.2818713,
+        39.9744379
+      ],
+      [
+        -75.2818363,
+        39.9743993
+      ],
+      [
+        -75.2817664,
+        39.9743216
+      ]
+    ],
+    "target_midpoint": [
+      -75.28317962011617,
+      39.97501813591962
+    ],
+    "target_miles": 0.182,
+    "navigation_address": "19 Grove Pl, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.2830499,
+      39.9751841
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=19%20Grove%20Pl%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "one_way_miles": 2.0,
+    "walking_metres": 3147,
+    "routing_source": "Google walking directions checked October 30, 2026",
+    "coverage_audit_running": {
+      "covered_20m_heading_pct": 39.1,
+      "sample_spacing_m": 10,
+      "as_of": "2026-11-04",
+      "review": "docs/run-reviews/2026-11-04-hillcrest-completed.md"
+    },
+    "citystrides_url": "https://citystrides.com/users/7315/map",
+    "citystrides_status": "19083 priority \u00b7 44.1% near recorded runs; finish the remaining gaps.",
+    "time_label": "5:30\u20136:15 AM",
+    "first_waypoint": {
+      "intersection": "Grove Place & street end",
+      "coordinates": [
+        -75.283999,
+        39.9760781
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9760781,-75.283999&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Grove Place & street end",
+      "coordinates": [
+        -75.2817664,
+        39.9743216
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9743216,-75.2817664&dirflg=w"
+    },
+    "display_date": "Thu Nov 5",
+    "target_scope": "Complete southern connected Grove Place section; the separate northern section near East Manoa is already 100% near saved runs.",
+    "whole_street": true,
+    "distance_limit_exception": false,
+    "start_time": "05:30",
+    "end_time": "06:15",
+    "neighborhood": "Grange",
+    "estimated_round_trip_miles": 4.1,
+    "round_trip_estimate_method": "Twice the Google walking approach to the midpoint plus one full target street traversal. Actual mileage depends on the route home."
+  },
+  {
+    "date": "2026-11-06",
+    "number": 2,
+    "street": "Rodmor Road",
+    "direction": "S",
+    "bearing": 190,
+    "target_label": "Belfield Avenue to Steel Road",
+    "target_coordinates": [
+      [
+        -75.3179276,
+        39.9590619
+      ],
+      [
+        -75.3176979,
+        39.9591233
+      ],
+      [
+        -75.3174747,
+        39.9591891
+      ],
+      [
+        -75.3172344,
+        39.9592286
+      ],
+      [
+        -75.3168633,
+        39.9592725
+      ],
+      [
+        -75.3166079,
+        39.9593141
+      ],
+      [
+        -75.3164362,
+        39.959426
+      ],
+      [
+        -75.3163075,
+        39.9595904
+      ],
+      [
+        -75.3162216,
+        39.9598207
+      ],
+      [
+        -75.316213,
+        39.9599917
+      ],
+      [
+        -75.3165993,
+        39.9613338
+      ],
+      [
+        -75.3167194,
+        39.9615904
+      ],
+      [
+        -75.3168911,
+        39.9618075
+      ],
+      [
+        -75.3174556,
+        39.9625092
+      ],
+      [
+        -75.3186738,
+        39.9642757
+      ]
+    ],
+    "target_midpoint": [
+      -75.31663267005152,
+      39.96140509708705
+    ],
+    "target_miles": 0.452,
+    "navigation_address": "77 Rodmor Rd, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.3163581,
+      39.96141129999999
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=77%20Rodmor%20Rd%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "one_way_miles": 1.9,
+    "walking_metres": 3056,
+    "routing_source": "Google walking directions checked October 31, 2026",
+    "coverage_audit_running": {
+      "covered_20m_heading_pct": 0,
+      "sample_spacing_m": 10,
+      "as_of": "2026-11-04",
+      "review": "docs/run-reviews/2026-11-04-hillcrest-completed.md"
+    },
+    "citystrides_url": "https://citystrides.com/users/7315/map",
+    "citystrides_status": "0.0% near recorded runs; cover the full street. GPS proximity is not official CityStrides credit.",
+    "time_label": "5:30\u20136:15 AM",
+    "first_waypoint": {
+      "intersection": "Rodmor Road & Belfield Avenue",
+      "coordinates": [
+        -75.3179276,
+        39.9590619
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9590619,-75.3179276&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Rodmor Road & Steel Road",
+      "coordinates": [
+        -75.3186738,
+        39.9642757
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9642757,-75.3186738&dirflg=w"
+    },
+    "display_date": "Fri Nov 6",
+    "target_scope": "Complete connected Rodmor Road from Belfield Avenue to Steel Road; numbered midpoint navigation address.",
+    "whole_street": true,
+    "distance_limit_exception": false,
+    "start_time": "05:30",
+    "end_time": "06:15",
+    "outing_note": "Deferred from Wednesday November 4 so Gladstone Road can be completed then. Thursday Grove Place stays unchanged.",
+    "neighborhood": "Pilgrim Gardens",
+    "estimated_round_trip_miles": 4.2,
+    "round_trip_estimate_method": "Twice the Google walking approach to the midpoint plus one full target street traversal. Actual mileage depends on the route home."
+  },
+  {
+    "date": "2026-11-04",
+    "number": 4,
+    "street": "Wilson Drive",
+    "direction": "SE",
+    "bearing": 145,
+    "target_label": "Marvine Avenue through the northern loop across Township Line Road",
+    "target_coordinates": [
+      [
+        -75.2977029,
+        39.9625906
+      ],
+      [
+        -75.2988462,
+        39.9641051
+      ],
+      [
+        -75.2992009,
+        39.9645884
+      ],
+      [
+        -75.3000784,
+        39.9657179
+      ],
+      [
+        -75.3001358,
+        39.9657919
+      ],
+      [
+        -75.3002095,
+        39.9658867
+      ],
+      [
+        -75.3002576,
+        39.9659908
+      ],
+      [
+        -75.300286,
+        39.9660527
+      ],
+      [
+        -75.3003999,
+        39.9662078
+      ],
+      [
+        -75.3005316,
+        39.9663873
+      ],
+      [
+        -75.3005565,
+        39.9664133
+      ],
+      [
+        -75.3006106,
+        39.9664824
+      ],
+      [
+        -75.3008303,
+        39.9667294
+      ],
+      [
+        -75.3008766,
+        39.9667766
+      ],
+      [
+        -75.3008504,
+        39.9667218
+      ],
+      [
+        -75.3007625,
+        39.9665381
+      ],
+      [
+        -75.3007243,
+        39.9664739
+      ],
+      [
+        -75.3006085,
+        39.9663356
+      ],
+      [
+        -75.300443,
+        39.9661378
+      ],
+      [
+        -75.3003487,
+        39.9660252
+      ],
+      [
+        -75.3002986,
+        39.9659754
+      ],
+      [
+        -75.3002095,
+        39.9658867
+      ]
+    ],
+    "target_midpoint": [
+      -75.2996248103211,
+      39.96513405419342
+    ],
+    "target_miles": 0.406,
+    "navigation_address": "1239 Wilson Dr, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.2994607,
+      39.9652397
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=1239%20Wilson%20Dr%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "one_way_miles": 1.6,
+    "walking_metres": 2619,
+    "routing_source": "Google walking directions checked October 30, 2026",
+    "coverage_audit_running": {
+      "covered_20m_heading_pct": 100,
+      "sample_spacing_m": 10,
+      "as_of": "2026-11-04",
+      "review": "docs/run-reviews/2026-11-04-hillcrest-completed.md"
+    },
+    "citystrides_url": "https://citystrides.com/users/7315/map",
+    "citystrides_status": "100% of the full Wilson Drive target is near November 4 running GPS; not official CityStrides credit.",
+    "time_label": "5:21\u20135:56 AM",
+    "first_waypoint": {
+      "intersection": "Wilson Drive & Marvine Avenue",
+      "coordinates": [
+        -75.2977029,
+        39.9625906
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9625906,-75.2977029&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Wilson Drive northern loop",
+      "coordinates": [
+        -75.3008766,
+        39.9667766
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9667766,-75.3008766&dirflg=w"
+    },
+    "display_date": "Wed Nov 4",
+    "target_scope": "Complete Wilson Drive including its northern loop across Township Line Road. User-requested exception: part of the loop lies outside Census ZCTA 19083.",
+    "whole_street": true,
+    "distance_limit_exception": false,
+    "start_time": "05:21",
+    "end_time": "05:56",
+    "outing_note": "Completed Wednesday November 4 instead of planned Richland/Gladstone. Actual recorded run: 3.49 miles, 5:21:36\u20135:56:35 AM Eastern. Full Wilson target covered by running GPS; not official CityStrides credit.",
+    "neighborhood": "Hillcrest",
+    "estimated_round_trip_miles": 3.7,
+    "round_trip_estimate_method": "Twice the Google walking approach to the midpoint plus one full target street traversal. Actual mileage depends on the route home.",
+    "past": true,
+    "completed_activity": "20854660988",
+    "recorded_run_miles": 3.49
+  },
+  {
+    "date": "2026-11-08",
+    "number": 4,
+    "street": "Nancy Drive",
+    "direction": "SW",
+    "bearing": 222.0,
+    "target_label": "street end to Glendale Road",
+    "target_coordinates": [
+      [
+        -75.3276806,
+        39.9663212
+      ],
+      [
+        -75.3274316,
+        39.96642
+      ],
+      [
+        -75.3259957,
+        39.9670944
+      ],
+      [
+        -75.3257726,
+        39.9673378
+      ],
+      [
+        -75.3259185,
+        39.967693
+      ],
+      [
+        -75.3264604,
+        39.9681006
+      ]
+    ],
+    "target_midpoint": [
+      -75.32613798873399,
+      39.967027572551935
+    ],
+    "target_miles": 0.191,
+    "navigation_address": "19 Nancy Dr, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.32626859999999,
+      39.96719969999999
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=19%20Nancy%20Dr%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "one_way_miles": 1.7,
+    "walking_metres": 2697,
+    "routing_source": "Google walking directions checked November 3, 2026",
+    "coverage_audit_running": {
+      "covered_20m_heading_pct": 0,
+      "sample_spacing_m": 10,
+      "as_of": "2026-11-04",
+      "review": "docs/run-reviews/2026-11-04-hillcrest-completed.md"
+    },
+    "citystrides_url": "https://citystrides.com/users/7315/map",
+    "citystrides_status": "0.0% near recorded running GPS; cover the full street and finish the remaining gaps. GPS proximity does not establish CityStrides credit.",
+    "time_label": "5:30\u20136:15 AM",
+    "first_waypoint": {
+      "intersection": "Nancy Drive & street end",
+      "coordinates": [
+        -75.3276806,
+        39.9663212
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9663212,-75.3276806&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Nancy Drive & Glendale Road",
+      "coordinates": [
+        -75.3264604,
+        39.9681006
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9681006,-75.3264604&dirflg=w"
+    },
+    "display_date": "Sun Nov 8",
+    "target_scope": "Complete connected street; inside Census ZCTA 19083. Keep the numbered address pinned near the midpoint.",
+    "whole_street": true,
+    "distance_limit_exception": false,
+    "neighborhood": "Westgate Hills",
+    "start_time": "05:30",
+    "end_time": "06:15",
+    "outing_note": "New direction for Sunday: navigate to the numbered midpoint, cover all of Nancy Drive, then meander home.",
+    "estimated_round_trip_miles": 3.5,
+    "round_trip_estimate_method": "Twice the Google walking approach to the midpoint plus one full target street traversal. Actual mileage depends on the route home."
+  },
+  {
+    "date": "2026-11-09",
+    "street": "Charles Drive",
+    "target_label": "Frederick Road to David Drive",
+    "target_miles": 0.299,
+    "target_coordinates": [
+      [
+        -75.3257911,
+        39.989831
+      ],
+      [
+        -75.3259568,
+        39.9896486
+      ],
+      [
+        -75.3271542,
+        39.9888086
+      ],
+      [
+        -75.3280327,
+        39.9880671
+      ],
+      [
+        -75.3286864,
+        39.9874812
+      ],
+      [
+        -75.3287935,
+        39.9873093
+      ],
+      [
+        -75.3288389,
+        39.9871471
+      ],
+      [
+        -75.3289961,
+        39.9864282
+      ]
+    ],
+    "target_midpoint": [
+      -75.32776450363919,
+      39.98829347177181
+    ],
+    "first_waypoint": {
+      "intersection": "Charles Drive & Frederick Road, Havertown, PA",
+      "coordinates": [
+        -75.3257911,
+        39.989831
+      ],
+      "apple_maps": "https://maps.apple.com/?q=Charles%20Drive%20%26%20Frederick%20Road%2C%20Havertown%2C%20PA&daddr=39.989831,-75.3257911&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Charles Drive & David Drive, Havertown, PA",
+      "coordinates": [
+        -75.3289961,
+        39.9864282
+      ],
+      "apple_maps": "https://maps.apple.com/?q=Charles%20Drive%20%26%20David%20Drive%2C%20Havertown%2C%20PA&daddr=39.9864282,-75.3289961&dirflg=w"
+    },
+    "citystrides_url": "https://citystrides.com/streets/3296373",
+    "citystrides_status": "85.0% near recorded running GPS; cover the full street and finish the remaining gaps. GPS proximity does not establish CityStrides credit.",
+    "number": 5,
+    "one_way_miles": 1.4,
+    "navigation_address": "148 Charles Dr, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.3281512,
+      39.9883923
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=148%20Charles%20Dr%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "neighborhood": "Lynnewood",
+    "display_date": "Mon Nov 9",
+    "start_time": "05:30",
+    "end_time": "06:15",
+    "time_label": "5:30\u20136:15 AM",
+    "walking_metres": 2206,
+    "routing_source": "Google walking directions checked November 3, 2026",
+    "whole_street": true,
+    "distance_limit_exception": false,
+    "coverage_audit_running": {
+      "covered_20m_heading_pct": 85,
+      "sample_spacing_m": 10,
+      "as_of": "2026-11-04",
+      "review": "docs/run-reviews/2026-11-04-hillcrest-completed.md"
+    },
+    "target_scope": "Complete connected street; inside Census ZCTA 19083. Keep the numbered address pinned near the midpoint.",
+    "outing_note": "Navigate to the numbered midpoint, cover the full street, then meander home. Earlier coverage is retained; the goal is to collect the remaining gaps.",
+    "direction": "NW",
+    "bearing": 307,
+    "estimated_round_trip_miles": 3.0,
+    "round_trip_estimate_method": "Twice the Google walking approach to the midpoint plus one full target street traversal. Actual mileage depends on the route home."
+  }
+]

@@ -1,0 +1,103 @@
+{
+  "activities": [
+    {
+      "activityId": "20854660988",
+      "date": "2026-11-04T10:21:36.000Z",
+      "distanceMeters": 5618.85,
+      "movingSeconds": 2034,
+      "elapsedSeconds": 2099,
+      "sportType": "Run",
+      "distanceSource": "strava_web",
+      "hasGps": true,
+      "geometryKey": "strava/tracks/20854660988.geojson"
+    }
+  ],
+  "today": [
+    {
+      "name": "Gladstone Road",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 495.2923173735076
+    },
+    {
+      "name": "Grove Place",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 293.3814939255841
+    },
+    {
+      "name": "Rodmor Road",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 727.5929489442368
+    },
+    {
+      "name": "Wilson Drive",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 653.5824115294577,
+      "lengthMeters": 653.5824115294575
+    },
+    {
+      "name": "Nancy Drive",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 306.52152660515594
+    },
+    {
+      "name": "Charles Drive",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 480.73671820059093
+    }
+  ],
+  "cumulative": [
+    {
+      "name": "Gladstone Road",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 495.2923173735076
+    },
+    {
+      "name": "Grove Place",
+      "percent": 39.1,
+      "status": "partial",
+      "coveredMeters": 114.8206968497813,
+      "lengthMeters": 293.3814939255841
+    },
+    {
+      "name": "Rodmor Road",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 727.5929489442368
+    },
+    {
+      "name": "Wilson Drive",
+      "percent": 100,
+      "status": "complete",
+      "coveredMeters": 653.5824115294577,
+      "lengthMeters": 653.5824115294575
+    },
+    {
+      "name": "Nancy Drive",
+      "percent": 0,
+      "status": "untouched",
+      "coveredMeters": 0,
+      "lengthMeters": 306.52152660515594
+    },
+    {
+      "name": "Charles Drive",
+      "percent": 85,
+      "status": "partial",
+      "coveredMeters": 408.69064869640135,
+      "lengthMeters": 480.73671820059093
+    }
+  ]
+}
