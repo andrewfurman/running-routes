@@ -28,3 +28,11 @@ test('old geometry is never used as an unaudited full-street orange fallback',()
 })
 
 test('unscheduled options stay separate from dated days and remain available without a Calendar date',()=>{const optional={...target,date:'2026-11-11',unscheduled:true};const scheduled={...target,street:'Other Road',date:'2026-11-11'};const result=upcomingTargets([optional,scheduled,{...target,past:true}],'2026-11-04');assert.deepEqual(result,[scheduled,optional]);assert.notEqual(planDayKey(optional),planDayKey(scheduled));assert.equal(upcomingTargets([optional],'2026-11-20').length,1)})
+
+test('on-deck date picks the next scheduled unfinished day and ignores past and optional targets',async()=>{
+ const {nextPlannedDate}=await import('../components/planned-gaps.ts')
+ const target=(date:string,extra={})=>({date,missing_coordinates:[[[0,0],[1,1]]],...extra}) as any
+ assert.equal(nextPlannedDate([target('2026-11-06'),target('2026-11-04',{unscheduled:true}),target('2026-11-03'),target('2026-11-04',{missing_coordinates:[]}),target('2026-11-05'),target('2026-11-04',{past:true})],'2026-11-04'),'2026-11-05')
+ assert.equal(nextPlannedDate([target('2026-11-05'),target('2026-11-05')],'2026-11-05'),'2026-11-05')
+ assert.equal(nextPlannedDate([],'2026-11-04'),undefined)
+})
