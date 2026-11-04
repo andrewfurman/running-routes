@@ -43,6 +43,8 @@ if citi_path.exists():
     write('bikes.geojson',bike)
 shutil.copyfile(ROOT/'raw-data/boundaries/19083.geojson',PUBLIC/'boundary19083.geojson')
 shutil.copyfile(ROOT/'raw-data/geography/19083-streets.json',PUBLIC/'streets19083.json')
+# Reference community borders are deliberately separate from activity-classification regions.
+shutil.copyfile(ROOT/'raw-data/geography/philadelphia-reference-boundaries.geojson',PUBLIC/'local-reference-boundaries.geojson')
 targets=read('raw-data/plans/current-targets.json');write('targets.json',targets)
 pending_targets=[t for t in targets if not t.get('past') and not t.get('unscheduled')]
 events=[]
