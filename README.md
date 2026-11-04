@@ -233,3 +233,5 @@ Future run targets include a `neighborhood` label on map cards and Calendar titl
 [November 4–9 plan](docs/run-reviews/2026-11-04-to-09-plan.md) extends upcoming runs through Monday with six simple neighborhood names. Add Nancy Drive Sunday and full Charles Drive Monday; all six approaches remain below two miles.
 
 Upcoming Calendar titles use **Neighborhood · 3.7 mi** for Apple Watch. This is estimated round-trip mileage (twice the midpoint walking approach plus one full target traversal), not the one-way approach. Street/cross-street detail stays in the description; the exact numbered navigation address stays in Location.
+
+[November 4 reconciliation](docs/run-reviews/2026-11-04-hillcrest-completed.md): Hillcrest/Wilson was completed Wednesday instead of Richland/Gladstone. Richland moves to Saturday; the remaining Thursday–Monday plan is preserved.
