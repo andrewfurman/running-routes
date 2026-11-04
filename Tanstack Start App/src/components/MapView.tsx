@@ -29,7 +29,7 @@ function points(collection?: FeatureCollection): Position[] {
   }
   return result
 }
-interface Props { nextRunDate?: string; showLocalBoundaries?: boolean; citiRoutes?: FeatureCollection; plansVisible?: boolean; missingRoads?: FeatureCollection; coverageMode?: boolean; activityCardVisible?: boolean; provider: MapProvider; mapsKey: string; tracks?: FeatureCollection; targets: Target[]; boundary?: any; selected: number; focusRequest: number; historyRequest: number; historyArea?: Position[]; activityId?: string; onSelect: (index: number) => void; onProviderFailure: (reason: string) => void }
+interface Props { nextRunDate?: string; citiRoutes?: FeatureCollection; plansVisible?: boolean; missingRoads?: FeatureCollection; coverageMode?: boolean; activityCardVisible?: boolean; provider: MapProvider; mapsKey: string; tracks?: FeatureCollection; targets: Target[]; boundary?: any; selected: number; focusRequest: number; historyRequest: number; historyArea?: Position[]; activityId?: string; onSelect: (index: number) => void; onProviderFailure: (reason: string) => void }
 export function MapView(props: Props) {
   const host = useRef<HTMLDivElement>(null)
   const engine = useRef<any>(null)
@@ -38,15 +38,6 @@ export function MapView(props: Props) {
   const [ready, setReady] = useState(0)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState('')
-  const [localBoundaries,setLocalBoundaries]=useState<FeatureCollection>()
-  useEffect(()=>{
-    if(!props.showLocalBoundaries)return
-    let stopped=false
-    fetch('/data/local-reference-boundaries.geojson').then(response=>{if(!response.ok)throw Error('Reference boundaries unavailable');return response.json() as Promise<FeatureCollection>}).then(collection=>{
-      if(!stopped&&collection.type==='FeatureCollection')setLocalBoundaries({...collection,features:collection.features.filter(f=>f.properties.GEOID!=='19083'&&f.properties.label!=='Havertown, PA')})
-    }).catch(()=>{if(!stopped)setLocalBoundaries(undefined)})
-    return()=>{stopped=true}
-  },[props.showLocalBoundaries])
   useEffect(() => {
     let stopped = false
     let cleanup = () => {}
@@ -90,24 +81,6 @@ export function MapView(props: Props) {
     if(e.type==='google'){e.boundaryLayer.forEach((f:any)=>e.boundaryLayer.remove(f));if(props.boundary)e.boundaryLayer.addGeoJson(props.boundary);e.boundaryLayer.setStyle({strokeColor:'#078f8a',strokeWeight:3,fillColor:'#0caba2',fillOpacity:.035,zIndex:20});e.boundaryLayer.setMap(e.map)}
     else {if(e.boundaryLayer)e.map.removeLayer(e.boundaryLayer);e.boundaryLayer=props.boundary?e.L.geoJSON(props.boundary,{style:{color:'#078f8a',weight:3,fillOpacity:.035}}):null;if(e.boundaryLayer)e.boundaryLayer.addTo(e.map)}
   },[ready,props.boundary])
-  useEffect(()=>{
-    const e=engine.current;if(!e||!props.showLocalBoundaries||!localBoundaries)return
-    const label=(properties:Record<string,any>)=>{
-      const text=document.createElement('span')
-      text.textContent=`${properties.label} · Census ${properties.geographyType==='incorporated_borough'?'borough':'community'} reference boundary. Activity groups are unchanged and may extend beyond this outline.`
-      return text
-    }
-    if(e.type==='google'){
-      const layer=new window.google.maps.Data({map:e.map});layer.addGeoJson(localBoundaries)
-      layer.setStyle({strokeColor:'#526a83',strokeOpacity:.8,strokeWeight:2,fillOpacity:0,zIndex:1})
-      const popup=new window.google.maps.InfoWindow()
-      const listener=layer.addListener('click',(event:any)=>{popup.setContent(label({label:event.feature.getProperty('label'),geographyType:event.feature.getProperty('geographyType')}));popup.setPosition(event.latLng);popup.open(e.map)})
-      return()=>{listener.remove();popup.close();layer.setMap(null)}
-    }
-    const layer=e.L.geoJSON(localBoundaries,{style:{color:'#526a83',weight:2,opacity:.8,fillOpacity:0},onEachFeature:(feature:any,line:any)=>line.bindTooltip(label(feature.properties))}).addTo(e.map)
-    layer.bringToBack()
-    return()=>{if(e.map.hasLayer(layer))e.map.removeLayer(layer)}
-  },[ready,props.showLocalBoundaries,localBoundaries])
   useEffect(() => {
     const e=engine.current;if(!e)return
     for(const l of e.routeLines)e.type==='google'?l.setMap(null):e.map.removeLayer(l)
@@ -171,5 +144,5 @@ export function MapView(props: Props) {
     schedule()
     return()=>{cancelAnimationFrame(scheduled);observer.disconnect();cleanup()}
   },[props.activityId,props.tracks,props.activityCardVisible,props.historyArea,props.citiRoutes,ready])
-  return <div className="map-surface"><div className="map-canvas" ref={host} aria-label="Interactive route map"/>{loading?<div className="map-loading"><span className="spinner"/>Loading street map</div>:null}{error?<div className="map-error" role="alert">{error}</div>:null}<div className="map-credit">{props.provider==='google'?'Google Maps':'OpenStreetMap'}<span>•</span>{props.coverageMode?'Orange: unfinished road sections':props.tracks?.features.some(f=>['station_endpoints','receipt_endpoints'].includes(f.properties.geometry_source))?'Purple: rides':'Purple: recorded tracks'}<span>•</span>Teal: 19083{props.showLocalBoundaries&&localBoundaries?<><span>•</span>Gray: Census reference borders</>:null}</div></div>
+  return <div className="map-surface"><div className="map-canvas" ref={host} aria-label="Interactive route map"/>{loading?<div className="map-loading"><span className="spinner"/>Loading street map</div>:null}{error?<div className="map-error" role="alert">{error}</div>:null}<div className="map-credit">{props.provider==='google'?'Google Maps':'OpenStreetMap'}<span>•</span>{props.coverageMode?'Orange: unfinished road sections':props.tracks?.features.some(f=>['station_endpoints','receipt_endpoints'].includes(f.properties.geometry_source))?'Purple: rides':'Purple: recorded tracks'}<span>•</span>Teal: 19083</div></div>
 }
