@@ -45,3 +45,10 @@ test('Mainline combines all four requested towns and preserves missing mileage a
  const areas=historyAreas({type:'FeatureCollection',features:[...features,features[0]]}),group=areas.find(a=>a.label==='Mainline Pennsylvania')!
  assert.equal(group.count,4);assert.equal(group.miles,4);assert.equal(group.distanceMissing,1);assert.deepEqual(group.activities.map(f=>f.properties.activity_id).sort(),['a','b','h','n']);assert.equal(areas.length,2);assert.equal(areas.reduce((n,a)=>n+a.count,0),5)
 })
+
+test('Broomall joins Mainline for runs and rides without changing the underlying routes',()=>{
+ for(const activity_type of ['Run','Ride']){
+ const a=feature('broomall',[-75.35658,39.9815],3218.688),b=feature('havertown',[-75.31,39.98],1609.344);a.properties={...a.properties,activity_type} as any;b.properties={...b.properties,activity_type} as any
+ const [area]=historyAreas({type:'FeatureCollection',features:[a,b,a]});assert.equal(area.label,'Mainline Pennsylvania');assert.equal(area.count,2);assert.equal(area.miles,3);assert.deepEqual(area.activities,[a,b])
+ }
+})
