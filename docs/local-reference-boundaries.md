@@ -1,6 +1,6 @@
 # Philadelphia-area reference outlines
 
-The Rides map can show gray Census reference outlines for **Ardmore, Penn Wynne, Bryn Mawr, Drexel Hill and Narberth**. The existing teal **19083 ZCTA** outline supplies the Havertown reference, so it is not drawn a second time in gray. These borders are reference geography. Individual activity assignment is retained, with the four requested towns combined in the Mainline presentation group below. Google Maps and the OpenStreetMap fallback use the same reference polygons.
+The Rides map can show gray Census reference outlines for **Ardmore, Penn Wynne, Bryn Mawr, Drexel Hill and Narberth**. The existing teal **19083 ZCTA** outline supplies the Havertown reference, so it is not drawn a second time in gray. These borders are reference geography. Individual activity assignment is retained, with the requested towns combined in the Mainline presentation group below. Google Maps and the OpenStreetMap fallback use the same reference polygons.
 
 `raw-data/geography/philadelphia-reference-boundaries.geojson` retains all five newly fetched official geometries plus the existing 19083 reference, with labels, GEOIDs, source query URLs, geography types and vintage metadata. The build copies it to `/data/local-reference-boundaries.geojson`; MapView loads it only when `showLocalBoundaries` is enabled and excludes the duplicate Havertown reference. Gray borders do not independently alter activity filtering, counts, mileage or map framing. Click a Google outline or hover a fallback outline for its name and reference-boundary explanation.
 
@@ -18,4 +18,4 @@ Sources checked November4,2026:
 
 ## Mainline presentation group
 
-City Stats combines the existing Havertown, Narberth, Bryn Mawr and Ardmore groups under **Mainline Pennsylvania**, for both runs and rides. It sums counts and recorded mileage and retains every counted activity for map drill-down. Original midpoint assignment and source outlines remain unchanged; this is a regional display group, not a new municipal boundary. Other towns keep their existing groups.
+City Stats combines the existing Havertown, Narberth, Bryn Mawr, Ardmore and Broomall groups under **Mainline Pennsylvania**, for both runs and rides. It sums counts and recorded mileage and retains every counted activity for map drill-down. Original midpoint assignment and source outlines remain unchanged; this is a regional display group, not a new municipal boundary. Other towns keep their existing groups.
