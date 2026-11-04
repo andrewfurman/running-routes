@@ -55,6 +55,12 @@ python3 scripts/planning/build_app_data.py
 
 `raw-data/plans/current-targets.json` supplies upcoming app targets; `history-targets.json` preserves older targets. The calendar synchronization tool uses the dated plan selected by `raw-data/route-research/current-plan.json`. Keep these views consistent when editing a plan, then rebuild app data.
 
+## Bike-share receipt history
+
+Reviewed Uber/JUMP/Lime and Lyft/Divvy receipts add 45 bike rides across Seattle, Chicago, Milan, Washington DC and Berlin. Confirmed matches keep their original Strava/Citi Bike record; unresolved cases and scooters stay out. [Receipt facts and repeatable import](raw-data/bike-receipts/README.md) document recorded mileage, deduplication and endpoint routing. Google cycling paths share the existing temporary D1 cache; private email bodies and payment data are never published.
+
+The Rides map also shows [local Census reference outlines](docs/local-reference-boundaries.md) for Ardmore, Penn Wynne, Bryn Mawr, Narberth and Drexel Hill, alongside Havertown's teal 19083 outline. These outlines preserve current city membership and counts.
+
 ## Planning and Google Calendar
 
 Use the calendar's numbered address as a destination anchor, not a prescribed loop. Preview nearby purple-line gaps before heading out, allow opportunistic extra streets, then compare the actual GPS with the planned destination before future scheduling. See the [October 31 planned-vs-actual review](docs/run-reviews/2026-10-31-glen-ridge-road.md): full Glen Ridge Road plus extra Windsor Park Lane coverage.

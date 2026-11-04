@@ -95,7 +95,7 @@
       -87.451285,
       20.204790000000003
     ],
-    "label": "Cancún / Riviera Maya"
+    "label": "Canc\u00fan / Riviera Maya"
   },
   {
     "center": [
@@ -284,7 +284,7 @@
       -74.55631,
       34.59351
     ],
-    "label": "Atlantic Ocean · Outer Banks coast, NC"
+    "label": "Atlantic Ocean \u00b7 Outer Banks coast, NC"
   },
   {
     "center": [
@@ -298,7 +298,7 @@
       -70.6196,
       40.41556
     ],
-    "label": "Atlantic Ocean · Martha’s Vineyard coast, MA"
+    "label": "Atlantic Ocean \u00b7 Martha\u2019s Vineyard coast, MA"
   },
   {
     "center": [
@@ -341,5 +341,13 @@
       33.42294
     ],
     "label": "Tempe, AZ"
+  },
+  {
+    "center": [
+      13.41053,
+      52.52437
+    ],
+    "label": "Berlin",
+    "source": "https://www.geonames.org/2950159/berlin.html"
   }
 ]

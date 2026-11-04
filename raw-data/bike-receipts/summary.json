@@ -1,0 +1,20 @@
+{
+  "source": "Reviewed selected bike receipt facts; no full emails or payment data",
+  "preparedAt": "2026-11-04T20:15:25.181775Z",
+  "inputSha256": "77bf9718de2bbd085a44d128094c8435efbdeea39782cfcaaabfafa717ed2ff5",
+  "candidateRecords": 73,
+  "new": 45,
+  "matched": 23,
+  "review": 5,
+  "excludedScooterRides": 4,
+  "newByCity": {
+    "Berlin": 1,
+    "Chicago, IL": 4,
+    "Milan": 3,
+    "Seattle": 35,
+    "Washington DC": 2
+  },
+  "singleEndpointRides": 1,
+  "recordedMiles": 72.8647804819852,
+  "mileageMissing": 4
+}

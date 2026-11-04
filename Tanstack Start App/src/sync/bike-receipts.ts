@@ -1,0 +1,3 @@
+import type {CitiTrip} from './citi-bike-routing'
+export interface ReceiptTrip extends CitiTrip {provider:string;source:string;city:string;start:string;end:string;timeZone:string;distanceMeters:number|null;elapsedSeconds:number;receiptDurationSeconds?:number|null;timestampPrecision:string}
+export function receiptRouteProperties(trip:ReceiptTrip){return {activity_id:trip.id,receipt_id:trip.id,activity_type:'Ride',date:trip.start,start_time_utc:trip.start,time_zone:trip.timeZone,distance_meters:trip.distanceMeters,elapsed_seconds:trip.elapsedSeconds,receipt_duration_seconds:trip.receiptDurationSeconds,geometry_source:'receipt_endpoints',source:trip.source,provider:trip.provider,timestamp_precision:trip.timestampPrecision}}
