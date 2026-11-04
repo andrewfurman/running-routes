@@ -1,0 +1,27 @@
+import test from 'node:test'
+import assert from 'node:assert/strict'
+import {auditPlannedGaps,plannedLines,plannedPoints,lineMidpoint,lineMeters} from '../components/planned-gaps.ts'
+import type {Target,FeatureCollection,Position} from '../components/types'
+const a:Position=[-75.31,39.98],b:Position=[-75.30,39.98]
+const target:Target={street:'Test Road',date:'2026-11-09',number:1,target_label:'remaining section',target_coordinates:[a,b],navigation_address:'10 Test Rd',navigation_url:'',target_miles:.53}
+const tracks=(points:Position[],type='Run'):FeatureCollection=>{const dense:Position[]=[];for(let i=1;i<points.length;i++){const steps=Math.ceil(lineMeters([points[i-1],points[i]])/100);for(let n=0;n<steps;n++){const f=n/steps;dense.push([points[i-1][0]+f*(points[i][0]-points[i-1][0]),points[i-1][1]+f*(points[i][1]-points[i-1][1])])}}dense.push(points[points.length-1]);return {type:'FeatureCollection',features:[{type:'Feature',properties:{activity_id:'one',activity_type:type},geometry:{type:'LineString',coordinates:dense}}]}}
+
+test('covered middle is removed without bridging separate unfinished sections',()=>{
+ const [result]=auditPlannedGaps([target],tracks([[-75.307,39.98],[-75.303,39.98]]))
+ assert.equal(result.missing_coordinates?.length,2)
+ assert.ok(result.missing_coordinates!.every(line=>line.every(p=>p[0]<-75.307||p[0]>-75.303)))
+ assert.ok(result.missing_miles!<target.target_miles);assert.equal(result.target_coordinates,target.target_coordinates)
+ assert.deepEqual(target.missing_coordinates,undefined)
+ assert.ok(result.primary_gap_midpoint)
+})
+test('a covered street has no orange lines and a ride cannot complete a running target',()=>{
+ assert.deepEqual(plannedLines(auditPlannedGaps([target],tracks([a,b]))[0]),[])
+ const [rideOnly]=auditPlannedGaps([target],tracks([a,b],'Ride'));assert.equal(rideOnly.gap_coverage_pct,0);assert.equal(plannedLines(rideOnly).length,1)
+ assert.ok(Math.abs(rideOnly.missing_miles!*1609.344-lineMeters([a,b]))<.01)
+})
+test('old geometry is never used as an unaudited full-street orange fallback',()=>{
+ assert.deepEqual(plannedLines(target),[])
+ assert.deepEqual(plannedLines({...target,past:true,missing_coordinates:[[a,b]]}),[])
+ assert.deepEqual(lineMidpoint([a,b]),[-75.305,39.98])
+ assert.deepEqual(plannedPoints({...target,missing_coordinates:[[a,b]],navigation_coordinates:a}),[a,b,a])
+})

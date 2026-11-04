@@ -5,6 +5,7 @@ from datetime import datetime, timedelta
 import hashlib
 import json
 import os
+import re
 from pathlib import Path
 import subprocess
 from zoneinfo import ZoneInfo
@@ -40,6 +41,8 @@ def main():
         events.extend(listing.get('items', []))
     operations = []
     for t in targets:
+        if not t.get('missing_coordinates'): raise RuntimeError('Audit unfinished target gaps before scheduling: ' + t['street'])
+        if not re.match(r'^\d+', t['navigation_address']): raise RuntimeError('Numbered gap address required: ' + t['street'])
         stable = hashlib.sha256(t['street'].encode()).hexdigest()[:24]
         matches = [e for e in events if e.get('extendedProperties', {}).get('private', {}).get('runningRoutesTarget') == stable]
         if not matches:
@@ -49,10 +52,11 @@ def main():
         a = datetime.fromisoformat(t['date'] + 'T' + t.get('start_time', '05:30')).replace(tzinfo=zone)
         b = datetime.fromisoformat(t['date'] + 'T' + t.get('end_time', '06:15')).replace(tzinfo=zone)
         if b <= a: raise ValueError('Invalid event duration')
-        round_trip = t.get('estimated_round_trip_miles', round(2 * t['walking_metres'] / 1609.344 + t['target_miles'], 1))
+        round_trip = t.get('estimated_round_trip_miles', round(2 * t['walking_metres'] / 1609.344 + t.get('missing_miles', t['target_miles']), 1))
+        gap_details = '\n'.join(f"Section {i+1}: {section['length_metres']:.0f} m · {section['start_url']} → {section['end_url']}" for i, section in enumerate(t.get('unfinished_sections', [])))
         body = {'summary': f"{t.get('neighborhood', t['street'])} · {round_trip:.1f} mi", 'location': t['navigation_address'],
             'start': {'dateTime': a.isoformat(), 'timeZone': 'America/New_York'}, 'end': {'dateTime': b.isoformat(), 'timeZone': 'America/New_York'},
-            'description': f"Neighborhood: {t.get('neighborhood', 'Havertown')}.\nStreet target: {t['street']} · {t['target_label']}.\nEstimated round trip: {round_trip:.1f} miles = twice the walking approach to the midpoint plus one full target street traversal. Actual mileage depends on your return meander.\n\n{t.get('outing_note', '')}\n\n{t.get('target_scope', '')}\n\nTap the numbered address: {t['navigation_address']}. Google walking distance from home: {t['walking_metres']/1609.344:.2f} miles; target traversal and return add mileage.\n\n{t['citystrides_status']} GPS proximity does not establish CityStrides credit.\n\nMidpoint: {t['navigation_url']}\nEndpoint A: {t['first_waypoint']['apple_maps']}\nEndpoint B: {t['second_waypoint']['apple_maps']}",
+            'description': f"Neighborhood: {t.get('neighborhood', 'Havertown')}.\nStreet target: {t['street']} · {t['target_label']}.\nEstimated round trip: {round_trip:.1f} miles = twice the walking approach to the gap address plus the unfinished target length. Connections and your return meander can add mileage.\n\n{t.get('outing_note', '')}\n\n{t.get('target_scope', '')}\n\n{gap_details}\n\nTap the numbered address: {t['navigation_address']}. Google walking distance from home: {t['walking_metres']/1609.344:.2f} miles; target traversal and return add mileage.\n\n{t['citystrides_status']} GPS proximity does not establish CityStrides credit.\n\nGap pin: {t['navigation_url']}\nEndpoint A: {t['first_waypoint']['apple_maps']}\nEndpoint B: {t['second_waypoint']['apple_maps']}",
             'extendedProperties': {'private': dict((old or {}).get('extendedProperties', {}).get('private', {}), runningRoutesTarget=stable)}}
         operations.append((t, old, body))
     touched = {old['id'] for _, old, _ in operations if old}
