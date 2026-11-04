@@ -21,3 +21,21 @@ test('station endpoints count once in NYC without invented mileage',()=>{
  const areas=historyAreas({type:'FeatureCollection',features:[{type:'Feature',properties:{activity_id:'citi-one',distance_meters:null},geometry:{type:'MultiPoint',coordinates:[[-73.98,40.75],[-73.97,40.76]]}}]})
  assert.equal(areas.length,1);assert.equal(areas[0].label,'New York City, NY');assert.equal(areas[0].count,1);assert.equal(areas[0].miles,0);assert.equal(areas[0].distanceMissing,1)
 })
+
+test('city drill-down retains exactly the counted activities, including whole cross-boundary runs and rides',()=>{
+ for(const sport of ['Run','Ride']){
+  const crossing=feature('narberth',[-75.262,40.009],3218.688);crossing.properties={...crossing.properties,activity_type:sport} as any
+  crossing.geometry.coordinates=[[-75.31,39.98],[-75.262,40.009],[-75.2621,40.0091],[-75.2622,40.0092],[-75.31,39.98]]
+  const ardmore=feature('ardmore',[-75.29,40.007],1609.344),havertown=feature('havertown',[-75.31,39.98],1609.344)
+  const areas=historyAreas({type:'FeatureCollection',features:[crossing,ardmore,havertown,crossing]})
+  const narberth=areas.find(a=>a.label==='Narberth, PA')!
+  assert.deepEqual(narberth.activities.map(f=>f.properties.activity_id),['narberth'])
+  assert.equal(narberth.count,narberth.activities.length);assert.equal(narberth.miles,2)
+  assert.equal(narberth.activities[0],crossing);assert.deepEqual(narberth.activities[0].geometry.coordinates[0],[-75.31,39.98])
+  assert.deepEqual(areas.flatMap(a=>a.activities.map(f=>f.properties.activity_id)).sort(),['ardmore','havertown','narberth'])
+ }
+})
+test('combined ocean area keeps every counted route for the map',()=>{
+ const a=feature('ocean-a',[-74.55631,34.59351],1609.344),b=feature('ocean-b',[-70.6196,40.41556],3218.688)
+ const [area]=historyAreas({type:'FeatureCollection',features:[a,b,a]});assert.deepEqual(area.activities,[a,b]);assert.equal(area.activities.length,area.count)
+})
