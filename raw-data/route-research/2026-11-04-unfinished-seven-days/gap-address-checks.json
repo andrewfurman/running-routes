@@ -1,0 +1,54 @@
+[
+  {
+    "address": "11 Grove Pl, Havertown, PA 19083",
+    "formatted_address": "11 Grove Pl, Havertown, PA 19083, USA",
+    "number": "11",
+    "street": "Grove Place",
+    "zip": "19083",
+    "coordinates": [
+      -75.282386,
+      39.9749867
+    ],
+    "location_type": "ROOFTOP",
+    "walking_metres": 3195
+  },
+  {
+    "address": "205 Charles Dr, Havertown, PA 19083",
+    "formatted_address": "205 Charles Dr, Havertown, PA 19083, USA",
+    "number": "205",
+    "street": "Charles Drive",
+    "zip": "19083",
+    "coordinates": [
+      -75.3286203,
+      39.9867491
+    ],
+    "location_type": "ROOFTOP",
+    "walking_metres": 2204
+  },
+  {
+    "address": "600 Willowbrook Rd, Havertown, PA 19083",
+    "formatted_address": "600 Willowbrook Rd, Havertown, PA 19083, USA",
+    "number": "600",
+    "street": "Willowbrook Road",
+    "zip": "19083",
+    "coordinates": [
+      -75.308334,
+      39.9701466
+    ],
+    "location_type": "ROOFTOP",
+    "walking_metres": 1859
+  },
+  {
+    "address": "1362 Wexford Rd, Havertown, PA 19083",
+    "formatted_address": "1362 Wexford Rd, Havertown, PA 19083, USA",
+    "number": "1362",
+    "street": "Wexford Road",
+    "zip": "19083",
+    "coordinates": [
+      -75.29619679999999,
+      39.9829277
+    ],
+    "location_type": "RANGE_INTERPOLATED",
+    "walking_metres": 1507
+  }
+]
