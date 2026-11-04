@@ -29,7 +29,7 @@ function points(collection?: FeatureCollection): Position[] {
   }
   return result
 }
-interface Props { showLocalBoundaries?: boolean; citiRoutes?: FeatureCollection; plansVisible?: boolean; missingRoads?: FeatureCollection; coverageMode?: boolean; activityCardVisible?: boolean; provider: MapProvider; mapsKey: string; tracks?: FeatureCollection; targets: Target[]; boundary?: any; selected: number; focusRequest: number; historyRequest: number; historyArea?: Position[]; activityId?: string; onSelect: (index: number) => void; onProviderFailure: (reason: string) => void }
+interface Props { nextRunDate?: string; showLocalBoundaries?: boolean; citiRoutes?: FeatureCollection; plansVisible?: boolean; missingRoads?: FeatureCollection; coverageMode?: boolean; activityCardVisible?: boolean; provider: MapProvider; mapsKey: string; tracks?: FeatureCollection; targets: Target[]; boundary?: any; selected: number; focusRequest: number; historyRequest: number; historyArea?: Position[]; activityId?: string; onSelect: (index: number) => void; onProviderFailure: (reason: string) => void }
 export function MapView(props: Props) {
   const host = useRef<HTMLDivElement>(null)
   const engine = useRef<any>(null)
@@ -117,14 +117,15 @@ export function MapView(props: Props) {
     props.targets.forEach((t,i)=>{
       const lines=plannedLines(t);if(!lines.length)return
       const pos=t.navigation_coordinates||t.target_midpoint||t.target_coordinates[0]
+      const onDeck=!t.unscheduled&&t.date===props.nextRunDate
       const day=t.unscheduled?'Opt':new Date(`${t.date}T12:00:00`).toLocaleDateString('en-US',{weekday:'short'})
       if(e.type==='google'){
         const g=window.google.maps; for(const path of lines){const line=new g.Polyline({map:e.map,path:path.map(([lng,lat])=>({lng,lat})),strokeColor:'#ed8d39',strokeWeight:5,zIndex:30});e.routeLines.push(line)}
-        const marker=new g.Marker({map:e.map,position:{lng:pos[0],lat:pos[1]},label:{text:day,color:'#fff',fontWeight:'700',fontSize:'10px'},title:`${day}: ${t.street}`,icon:{path:g.SymbolPath.CIRCLE,fillColor:'#6840a8',fillOpacity:1,strokeColor:'#fff',strokeWeight:3,scale:19},zIndex:40})
+        const marker=new g.Marker({map:e.map,position:{lng:pos[0],lat:pos[1]},label:{text:day,color:onDeck?'#20263a':'#fff',fontWeight:'700',fontSize:'10px'},title:`${day}${onDeck?' · Next run':''}: ${t.street}`,icon:{path:g.SymbolPath.CIRCLE,fillColor:onDeck?'#e96b1d':'#6840a8',fillOpacity:1,strokeColor:'#fff',strokeWeight:3,scale:19},zIndex:onDeck?45:40})
         marker.addListener('click',()=>select.current(i));e.markers.push(marker)
       }else{
         for(const path of lines)e.routeLines.push(e.L.polyline(path.map(([lng,lat])=>[lat,lng]),{color:'#ed8d39',weight:5}).addTo(e.map))
-        const marker=e.L.marker([pos[1],pos[0]],{title:`${day}: ${t.street}`,icon:e.L.divIcon({className:'weekday-marker',html:`<span>${day}</span>`,iconSize:[40,40],iconAnchor:[20,20]})}).addTo(e.map).on('click',()=>select.current(i));e.markers.push(marker)
+        const marker=e.L.marker([pos[1],pos[0]],{title:`${day}${onDeck?' · Next run':''}: ${t.street}`,icon:e.L.divIcon({className:`weekday-marker${onDeck?' on-deck':''}`,html:`<span${onDeck?' style="background:#e96b1d;color:#20263a"':''}>${day}</span>`,iconSize:[40,40],iconAnchor:[20,20]})}).addTo(e.map).on('click',()=>select.current(i));e.markers.push(marker)
       }
     })
     // A late boundary or plan update must not replace the selected activity camera.
@@ -133,7 +134,7 @@ export function MapView(props: Props) {
     if(ps.length)e.fit(ps)
     else if(props.coverageMode){const outline=props.boundary?.type==='FeatureCollection'?props.boundary:{type:'FeatureCollection',features:props.boundary?[props.boundary]:[]};e.fit(points(outline),35)}
     else e.fit(points(props.tracks).filter(([lng,lat])=>lng>-75.39&&lng< -75.24&&lat>39.92&&lat<40.04))
-  },[ready,props.targets,props.plansVisible,props.coverageMode,props.boundary,props.activityId,props.historyArea])
+  },[ready,props.targets,props.nextRunDate,props.plansVisible,props.coverageMode,props.boundary,props.activityId,props.historyArea])
   useEffect(()=>{
     const e=engine.current;if(!e||!props.missingRoads)return
     if(e.type==='google'){

@@ -12,3 +12,5 @@ export function auditPlannedGaps(targets:Target[],tracks:FeatureCollection):Targ
  const metadata=new Map(pending.map((t,i)=>{const lines=(audit.missingRoads.features.find(f=>f.properties.name===String(i))?.geometry.coordinates||[]) as Position[][];const sorted=[...lines].sort((a,b)=>lineMeters(b)-lineMeters(a));return [t,{missing_coordinates:sorted,missing_miles:sorted.reduce((n,l)=>n+lineMeters(l),0)/1609.344,gap_coverage_pct:audit.streets[i].percent,primary_gap_midpoint:sorted.length?lineMidpoint(sorted[0]):undefined}]}))
  return targets.map(t=>({...t,...(metadata.get(t)||{missing_coordinates:[],missing_miles:0})}))
 }
+
+export function nextPlannedDate(targets:Target[],today:string):string|undefined{return targets.filter(t=>!t.unscheduled&&!t.past&&t.date>=today&&plannedLines(t).length>0).map(t=>t.date).sort()[0]}
