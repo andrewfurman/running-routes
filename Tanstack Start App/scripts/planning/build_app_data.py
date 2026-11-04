@@ -44,11 +44,12 @@ if citi_path.exists():
 shutil.copyfile(ROOT/'raw-data/boundaries/19083.geojson',PUBLIC/'boundary19083.geojson')
 shutil.copyfile(ROOT/'raw-data/geography/19083-streets.json',PUBLIC/'streets19083.json')
 targets=read('raw-data/plans/current-targets.json');write('targets.json',targets)
-pending_targets=[t for t in targets if not t.get('past')]
+pending_targets=[t for t in targets if not t.get('past') and not t.get('unscheduled')]
 events=[]
 for f in runs['features']:
     p=f['properties'];day=day_of(p['date']);aid=str(p['activity_id']);events.append({'id':'strava-'+aid,'title':'Recorded run','start':day,'end':(date.fromisoformat(day)+timedelta(days=1)).isoformat(),'allDay':True,'type':'past','activityId':aid,'street':'','url':'https://www.strava.com/activities/'+aid})
 for i,t in enumerate(targets):
+    if t.get('unscheduled'):continue
     a=t.get('start_time','04:00' if t['date']=='2026-11-01' else '05:30');b=t.get('end_time','04:45' if t['date']=='2026-11-01' else '06:15');z=ZoneInfo('America/New_York');events.append({'id':'plan-'+t['date']+'-'+t['street'],'title':t['street'],'street':t['street'],'start':datetime.fromisoformat(t['date']+'T'+a).replace(tzinfo=z).isoformat(),'end':datetime.fromisoformat(t['date']+'T'+b).replace(tzinfo=z).isoformat(),'type':'planned','targetIndex':i,'address':t['navigation_address'],'outingId':t.get('outing_id')})
 write('calendar.json',events)
 bikes=json.loads((PUBLIC/'bikes.geojson').read_text());bike_summary=read('raw-data/bikes/summary.json') if (ROOT/'raw-data/bikes/summary.json').exists() else {'gps_ride_count':len(bikes['features']),'total_ride_count':1428,'without_gps_count':898,'as_of':'2026-10-17'}

@@ -1,3 +1,4 @@
+import {upcomingTargets,planDayKey} from '../components/scheduled-days.ts'
 import test from 'node:test'
 import assert from 'node:assert/strict'
 import {auditPlannedGaps,plannedLines,plannedPoints,lineMidpoint,lineMeters} from '../components/planned-gaps.ts'
@@ -25,3 +26,5 @@ test('old geometry is never used as an unaudited full-street orange fallback',()
  assert.deepEqual(lineMidpoint([a,b]),[-75.305,39.98])
  assert.deepEqual(plannedPoints({...target,missing_coordinates:[[a,b]],navigation_coordinates:a}),[a,b,a])
 })
+
+test('unscheduled options stay separate from dated days and remain available without a Calendar date',()=>{const optional={...target,date:'2026-11-11',unscheduled:true};const scheduled={...target,street:'Other Road',date:'2026-11-11'};const result=upcomingTargets([optional,scheduled,{...target,past:true}],'2026-11-04');assert.deepEqual(result,[scheduled,optional]);assert.notEqual(planDayKey(optional),planDayKey(scheduled));assert.equal(upcomingTargets([optional],'2026-11-20').length,1)})

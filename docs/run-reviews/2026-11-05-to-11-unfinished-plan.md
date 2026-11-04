@@ -10,6 +10,6 @@ Orange highlights exclude previously covered road sections. Existing full-street
 | Sun Nov 8 | Westgate Hills · 3.5 mi | Nancy Drive | 307 m | 19 Nancy Dr, Havertown, PA 19083 | 5:30–6:15 AM |
 | Mon Nov 9 | Lynnewood · 2.8 mi | Charles Drive | 72 m | 205 Charles Dr, Havertown, PA 19083 | 5:30–6:15 AM |
 | Tue Nov 10 | Manoa · 2.5 mi | Willowbrook Road | 288 m | 600 Willowbrook Rd, Havertown, PA 19083 | 5:30–6:15 AM |
-| Wed Nov 11 | Brookline · 1.9 mi | Wexford Road | 72 m | 1362 Wexford Rd, Havertown, PA 19083 | 9:30–10:15 AM |
+| Unscheduled option | Brookline · 1.9 mi | Wexford Road | 72 m | 1362 Wexford Rd, Havertown, PA 19083 | Not booked |
 
-Wednesday uses a later 9:30 AM block after the 1:36 AM flight arrival; Tuesday is before the 8:40 AM outbound flight. All seven walking approaches remain under two miles. Google address/distance checks and prior/current targets are retained in `raw-data/route-research/2026-11-04-unfinished-seven-days/`. Calendar updates are read back after saving. Current gap policy is documented in `docs/route-planning.md`.
+Andrew chose to keep Wednesday November 11 unscheduled after the 1:36 AM flight arrival; Tuesday is before the 8:40 AM outbound flight. All seven walking approaches remain under two miles. Google address/distance checks and prior/current targets are retained in `raw-data/route-research/2026-11-04-unfinished-seven-days/`. Calendar updates are read back after saving. Current gap policy is documented in `docs/route-planning.md`.

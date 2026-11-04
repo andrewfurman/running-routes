@@ -1,13 +1,13 @@
 {
-  "snapshot": "2026-11-04-unfinished-seven-days",
+  "snapshot": "2026-11-04-six-runs-wexford-option",
   "as_of_label": "November 4",
   "focus_start": "2026-11-05",
-  "focus_end": "2026-11-11",
-  "heading": "Havertown \u00b7 Seven unfinished-road outings \u00b7 Nov 5\u201311",
-  "focus_label": "7 outings \u00b7 Nov 5\u201311",
+  "focus_end": "2026-11-10",
+  "heading": "Havertown \u00b7 Six upcoming runs and one unscheduled option",
+  "focus_label": "6 runs \u00b7 Nov 5\u201310 \u00b7 Wexford optional",
   "history_heading": "Havertown \u00b7 Plan and history \u00b7 October 17\u2013November 3",
   "track_count": 1879,
-  "summary": "Orange targets only unfinished street sections, audited against running GPS. Grove has two gaps; Charles pin moves to its small David Drive-end gap. Add Willowbrook Tuesday and Wexford Wednesday, with Wednesday at 9:30 AM after the late return flight.",
+  "summary": "Keep Wednesday November 11 unscheduled after the late return flight. Wexford remains a map option; only Thursday\u2013Tuesday are booked. Orange shows unfinished gaps only.",
   "planning_priorities": [
     "Finish unfinished streets inside Census ZCTA 19083 before expanding outside it.",
     "Mix neighborhoods within 19083; include Westgate Hills without clustering every day there.",

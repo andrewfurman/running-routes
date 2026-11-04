@@ -2381,10 +2381,8 @@
       -75.29603911999999,
       39.983006540000005
     ],
-    "display_date": "Wed Nov 11",
-    "start_time": "09:30",
-    "end_time": "10:15",
-    "time_label": "9:30\u201310:15 AM",
+    "display_date": "Unscheduled option",
+    "time_label": "Unscheduled",
     "navigation_coordinates": [
       -75.29619679999999,
       39.9829277
@@ -2405,7 +2403,7 @@
     "citystrides_status": "84.8% of the reference street is near running GPS. Orange highlights only the remaining sections; not official CityStrides credit.",
     "estimated_round_trip_miles": 1.9,
     "round_trip_estimate_method": "Twice the Google walking approach to the gap address plus the unfinished target length; actual meander and connections can add mileage.",
-    "outing_note": "Navigate to the numbered address beside the main unfinished gap, cover the orange section(s), then meander home. Later 9:30 AM block after the 1:36 AM return-flight arrival. Targets the unfinished section on the southern connected Wexford segment; the separate northern section is already covered.",
+    "outing_note": "Unscheduled option: Andrew chose no Wednesday November 11 run after the late return flight. Keep the unfinished Wexford gap available for a future date; do not create a Calendar event.",
     "direction": "NE",
     "bearing": 80,
     "unfinished_sections": [
@@ -2445,6 +2443,7 @@
       "running_track_count": 1879,
       "sample_spacing_m": 10
     },
-    "number": 7
+    "number": 7,
+    "unscheduled": true
   }
 ]
