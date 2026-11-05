@@ -27,7 +27,12 @@ test('old geometry is never used as an unaudited full-street orange fallback',()
  assert.deepEqual(plannedPoints({...target,missing_coordinates:[[a,b]],navigation_coordinates:a}),[a,b,a])
 })
 
-test('unscheduled options stay separate from dated days and remain available without a Calendar date',()=>{const optional={...target,date:'2026-11-11',unscheduled:true};const scheduled={...target,street:'Other Road',date:'2026-11-11'};const result=upcomingTargets([optional,scheduled,{...target,past:true}],'2026-11-04');assert.deepEqual(result,[scheduled,optional]);assert.notEqual(planDayKey(optional),planDayKey(scheduled));assert.equal(upcomingTargets([optional],'2026-11-20').length,1)})
+test('upcoming view excludes unscheduled options and limits to seven scheduled dates with combined-day targets intact',()=>{
+ const optional={...target,date:'2026-11-11',unscheduled:true},scheduled={...target,date:'2026-11-11'},combined={...scheduled,street:'Second Street'}
+ const later=Array.from({length:9},(_,i)=>({...target,date:`2026-11-${String(i+12).padStart(2,'0')}`}))
+ const result=upcomingTargets([optional,...later,scheduled,combined,{...target,past:true}],'2026-11-11')
+ assert.equal(new Set(result.map(t=>t.date)).size,7);assert.equal(result.length,8);assert.deepEqual(result.slice(0,2),[scheduled,combined]);assert.equal(result.at(-1)?.date,'2026-11-17');assert.equal(upcomingTargets([optional],'2026-11-20').length,0)
+})
 
 test('on-deck date picks the next scheduled unfinished day and ignores past and optional targets',async()=>{
  const {nextPlannedDate}=await import('../components/planned-gaps.ts')
