@@ -37,3 +37,13 @@ Public, runnable roads along the 19083 border are part of the goal, including se
 The 19083 outline belongs on Runs and Havertown coverage, never Rides. Map paging uses one continuous camera flight with a small zoom arc; honor reduced-motion preferences.
 
 Camera implementation references: [Google Maps camera methods](https://developers.google.com/maps/documentation/javascript/reference/map) and [fractional/vector maps](https://developers.google.com/maps/documentation/javascript/vector-map). Camera fitting retains room above the activity card; paging uses a 720 ms continuous flight and a small 0.12-level zoom arc instead of an additional full zoom level.
+
+## Daily automatic planning
+
+The active local Codex automation **Maintain upcoming running week** (`maintain-upcoming-running-week`) runs daily at **8:00 AM Eastern**, after the 7:00 AM Strava poll. It returns to the existing running-routes chat and checks the latest synced runs, reconciles completed targets, chooses verified unfinished streets for eligible open days, and updates the canonical plan, Google Calendar, and deployed map.
+
+The one-calendar-week rule above still applies: today plus six days, never seven booked runs. Leave travel/rest days empty, including November 11, 2026. Do not extend the window just to fill a count. Preserve reviewed runs that remain applicable and check Calendar conflicts before filling new dates. Use numbered addresses near the longest missing gap, walking approaches under two miles unless an exception is documented, varied neighborhoods, running-only coverage, and the compact neighborhood/mileage Calendar title. No bike-ride Calendar events.
+
+Use Google Workspace CLI and read back every Calendar mutation. Keep credentials private. Publish necessary repository changes through a passing tracking PR, merge immediately, deploy, and verify the result. If there are no changes, leave the repository and Calendar untouched. If sync, address verification, candidate availability, Calendar conflicts, checks, or deployment blocks progress, report the problem rather than inventing a plan.
+
+This planner runs locally and needs the Mac on with the desktop app running; the existing Cloudflare Strava polling continues independently. Creating the schedule is not evidence that a scheduled planning run has already completed. See the [official scheduled-task guidance](https://learn.chatgpt.com/docs/automations).
