@@ -9,7 +9,7 @@
   "track_count": 1879,
   "summary": "Only today plus six days. Days off stay empty; never add next-week routes to reach seven runs. November 5 Grove Place is complete. Upcoming runs November 6\u201310; November 11 remains off. Remove November 12\u201313 bookings.",
   "planning_priorities": [
-    "Finish unfinished streets inside Census ZCTA 19083, including connected public streets that follow its boundary, before expanding elsewhere.",
+    "Finish unfinished streets inside Census ZCTA 19083, including only the in-boundary portions of public streets that follow it, before expanding elsewhere.",
     "Mix neighborhoods within 19083; include Westgate Hills without clustering every day there.",
     "Keep full street reference geometry for auditing, but highlight only unfinished gaps; use a numbered address near the midpoint of the main gap.",
     "Prefer one-way walking approaches under 2 miles unless explicitly approved."

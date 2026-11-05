@@ -30,9 +30,9 @@ Preserve explicit travel/rest exceptions. Wednesday November 11 stays off. The a
 
 Runs opens the Havertown running-history overview on a normal cold load, Runs click and app resume. No planned day is selected in this overview. The first Next press selects the earliest scheduled date after today (tomorrow when booked, otherwise the next booked day within the week). Subsequent arrows move between scheduled dates. Previous from the overview opens the most recent recorded run; Previous from the first planned date returns to the overview. Explicit activity links retain their requested historical activity.
 
-## Boundary roads count too
+## Boundary streets — only the portions inside the displayed outline
 
-Public, runnable roads along the 19083 border are part of the goal, including sections where the boundary follows the road. Do not omit a boundary street merely because the road centerline falls just outside the Census outline. A way that follows the boundary for at least 100 m and 40% of its length within a 30 m corridor seeds inclusion of the full connected same-name public street from the cached OSM source. Include its outside sections too; do not include disconnected same-name roads. Marvine Avenue is the initial example. Preserve separate lines and highlight only unfinished portions. This is a ZIP approximation, not a legal township-border inventory. Private/no-foot-access roads remain excluded.
+Boundary streets count, but **clip orange missing-road geometry and coverage totals to the displayed Census ZCTA 19083 outline**. Do not highlight outside segments merely because the street continues from or follows the boundary. Marvine Avenue and Burmont Road must use their in-boundary sections only. The polygon includes its boundary line; roads with no in-boundary geometry do not become coverage targets. Keep disconnected clipped sections separate and exclude private/no-foot-access roads. This ZIP approximation is not a legal township-boundary dataset.
 
 The 19083 outline belongs on Runs and Havertown coverage, never Rides. Map paging uses one continuous camera flight with a small zoom arc; honor reduced-motion preferences.
 
