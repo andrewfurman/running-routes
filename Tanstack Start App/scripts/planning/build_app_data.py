@@ -47,9 +47,10 @@ shutil.copyfile(ROOT/'raw-data/geography/19083-streets.json',PUBLIC/'streets1908
 (PUBLIC/'local-reference-boundaries.geojson').unlink(missing_ok=True)
 targets=read('raw-data/plans/current-targets.json');write('targets.json',targets)
 plan=read('raw-data/route-research/current-plan.json')
-if plan.get('minimum_scheduled_days'):
-    days={t['date'] for t in targets if not t.get('past') and not t.get('unscheduled') and t['date']>=plan['reviewed_on']}
-    if len(days)<plan['minimum_scheduled_days']:raise RuntimeError('Replenish the reviewed plan to seven scheduled run days before publishing')
+if plan.get('planning_horizon_days'):
+    start=date.fromisoformat(plan['reviewed_on']);end=start+timedelta(days=plan['planning_horizon_days'])
+    outside=[t['street'] for t in targets if not t.get('past') and not t.get('unscheduled') and not start<=date.fromisoformat(t['date'])<end]
+    if outside:raise RuntimeError('Keep active runs inside one calendar-week window: '+', '.join(outside))
 pending_targets=[t for t in targets if not t.get('past') and not t.get('unscheduled')]
 events=[]
 for f in runs['features']:

@@ -1,0 +1,13 @@
+{
+  "reviewedOn": "2026-11-05",
+  "policy": "Include full connected public boundary streets",
+  "inventoryStreets": 334,
+  "inventoryMiles": 112.20234954199506,
+  "marvine": {
+    "name": "Marvine Avenue",
+    "percent": 5.6,
+    "status": "partial",
+    "coveredMeters": 103.64299603237691,
+    "lengthMeters": 1850.0132300411744
+  }
+}
