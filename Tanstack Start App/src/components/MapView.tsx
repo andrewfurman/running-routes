@@ -3,7 +3,7 @@ import {plannedLines,plannedPoints} from './planned-gaps'
 import { useEffect, useRef, useState } from 'react'
 import 'leaflet/dist/leaflet.css'
 import {withCitiRoutes,fallbackTracks} from './citi-route-bundle'
-import {activityMapInsets,type MapInsets} from './map-framing'
+import {activityMapInsets,havertownOverviewPoints,type MapInsets} from './map-framing'
 import type { FeatureCollection, MapProvider, Position, Target } from './types'
 
 declare global { interface Window { google?: any; runningMapReady?: () => void; gm_authFailure?: () => void } }
@@ -109,7 +109,7 @@ export function MapView(props: Props) {
       }
     })
     // A late boundary or plan update must not replace the selected activity camera.
-    if(props.activityId||props.historyArea||props.focusRequest)return
+    if(props.activityId||props.historyArea||props.focusRequest||props.selected<0)return
     const ps=props.targets.flatMap(plannedPoints)
     if(ps.length)e.fit(ps)
     else if(props.coverageMode){const outline=props.boundary?.type==='FeatureCollection'?props.boundary:{type:'FeatureCollection',features:props.boundary?[props.boundary]:[]};e.fit(points(outline),35)}
@@ -129,7 +129,7 @@ export function MapView(props: Props) {
   },[ready,props.missingRoads])
   useEffect(()=>{const e=engine.current;if(!e)return;e.routeLines.forEach((line:any,i:number)=>e.type==='google'?line.setOptions({strokeColor:i===props.selected?'#e96b1d':'#e8a364',strokeWeight:i===props.selected?7:4}):line.setStyle({color:i===props.selected?'#e96b1d':'#e8a364',weight:i===props.selected?7:4}))},[ready,props.selected,props.targets])
   useEffect(()=>{if(props.plansVisible!==false&&!props.historyArea&&!props.activityId&&props.focusRequest&&props.targets[props.selected])engine.current?.fit(props.targets.filter(t=>t.unscheduled===props.targets[props.selected].unscheduled&&(t.unscheduled?t.street===props.targets[props.selected].street:t.date===props.targets[props.selected].date)).flatMap(plannedPoints),100,true)},[props.focusRequest,ready,props.targets,props.selected,props.historyArea,props.activityId])
-  useEffect(()=>{if(props.overviewRequest&&!props.focusRequest&&props.plansVisible!==false&&!props.historyArea&&!props.activityId){const points=props.targets.flatMap(plannedPoints);if(points.length)engine.current?.fit(points)}},[props.overviewRequest,props.focusRequest,ready,props.targets,props.plansVisible,props.historyArea,props.activityId])
+  useEffect(()=>{if(props.overviewRequest&&props.tracks&&props.selected<0&&!props.focusRequest&&props.plansVisible!==false&&!props.historyArea&&!props.activityId){const ps=havertownOverviewPoints(props.tracks,props.boundary);if(ps.length){const rect=host.current?.getBoundingClientRect(),dock=host.current?.closest('.map-wrap')?.querySelector('.overview-dock')?.getBoundingClientRect();engine.current?.fit(ps,rect?activityMapInsets(rect.width,rect.height,dock?dock.top-rect.top:undefined):55)}}},[props.overviewRequest,props.selected,props.focusRequest,ready,props.tracks,props.boundary,props.plansVisible,props.historyArea,props.activityId])
   useEffect(()=>{if(props.historyRequest&&props.historyArea?.length)engine.current?.fit(props.historyArea)},[props.historyRequest,props.historyArea,ready])
   useEffect(()=>{
     const e=engine.current;if(!e||props.activityCardVisible===false||props.historyArea||!props.activityId||!props.tracks)return

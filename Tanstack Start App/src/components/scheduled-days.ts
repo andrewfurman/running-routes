@@ -52,3 +52,6 @@ export function historyAreas(tracks?:FeatureCollection) {
 }
 
 export function planDayKey(target:Target){return target.unscheduled?`option:${target.street}`:target.date}
+
+/** From the history overview, Next starts after today and skips rest days. */
+export function firstFutureTargetIndex(targets:Target[],today:string){return targets.findIndex(t=>t.date>today&&!t.unscheduled&&!t.past)}

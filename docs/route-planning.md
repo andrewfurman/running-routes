@@ -28,7 +28,7 @@ Example: November 9 Charles Drive is about 85% covered. Highlight only its appro
 
 Preserve explicit travel/rest exceptions. Wednesday November 11 stays off. The app excludes unscheduled suggestions, completed targets and dates outside this window. Combined streets can share one date, but do not create another occurrence of that weekday. The build rejects active plans beyond the reviewed week's horizon. Keep Calendar and the active map plan aligned; future street ideas remain research, not scheduled events.
 
-Runs opens the week overview on a normal cold load, Runs click and app resume. Arrows move to each scheduled date and back through recorded history. Explicit activity links retain their requested historical activity.
+Runs opens the Havertown running-history overview on a normal cold load, Runs click and app resume. No planned day is selected in this overview. The first Next press selects the earliest scheduled date after today (tomorrow when booked, otherwise the next booked day within the week). Subsequent arrows move between scheduled dates. Previous from the overview opens the most recent recorded run; Previous from the first planned date returns to the overview. Explicit activity links retain their requested historical activity.
 
 ## Boundary roads count too
 

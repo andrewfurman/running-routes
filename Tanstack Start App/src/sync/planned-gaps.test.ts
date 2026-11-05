@@ -47,3 +47,11 @@ test('a rest day leaves six days rather than pulling the same weekday from next 
  const window=upcomingTargets(days,'2026-11-05');assert.equal(window.length,6);assert.equal(window.at(-1)?.date,'2026-11-10');assert.equal(new Set(window.map(t=>new Date(t.date+'T12:00:00Z').getUTCDay())).size,6)
  assert.deepEqual(upcomingTargets(days,''),[])
 })
+
+test('first Next from the overview selects tomorrow instead of skipping it or selecting today',async()=>{
+ const {firstFutureTargetIndex}=await import('../components/scheduled-days.ts')
+ const targets=[{...target,date:'2026-11-05'},{...target,date:'2026-11-06'},{...target,date:'2026-11-07'}]
+ assert.equal(firstFutureTargetIndex(targets,'2026-11-05'),1);assert.equal(firstFutureTargetIndex(targets.slice(1),'2026-11-05'),0)
+ assert.equal(firstFutureTargetIndex([{...target,date:'2026-11-08'}],'2026-11-06'),0)
+ assert.equal(firstFutureTargetIndex([{...target,date:'2026-11-05'}],'2026-11-05'),-1)
+})
