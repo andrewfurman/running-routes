@@ -17,3 +17,10 @@ test('map framing preserves a usable area on short screens and works without a c
  assert.equal(open.top,open.bottom)
  assert.equal(open.left,open.right)
 })
+
+test('Havertown overview includes local recorded history rather than planned destinations or distant cities',async()=>{
+ const {havertownOverviewPoints}=await import('../components/map-framing.ts')
+ const local:[number,number]=[-75.31,39.98],seattle:[number,number]=[-122.3,47.6]
+ const points=havertownOverviewPoints({type:'FeatureCollection',features:[{type:'Feature',properties:{activity_id:'local'},geometry:{type:'LineString',coordinates:[local,[-75.32,39.97]]}},{type:'Feature',properties:{activity_id:'seattle'},geometry:{type:'LineString',coordinates:[seattle,[-122.31,47.61]]}}]},{type:'Feature',geometry:{type:'Polygon',coordinates:[[[-75.34,39.95],[-75.27,39.95],[-75.27,40],[-75.34,40],[-75.34,39.95]]]},properties:{}})
+ assert.ok(points.includes(local));assert.ok(!points.includes(seattle));assert.ok(points.every(p=>p[0]>-76&&p[0]<-75));assert.deepEqual(havertownOverviewPoints(),[])
+})
