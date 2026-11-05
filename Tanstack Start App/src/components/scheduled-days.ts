@@ -40,7 +40,7 @@ export function historyAreas(tracks?:FeatureCollection) {
  // Regional presentation group: preserve the existing midpoint assignment and sum whole activities.
  const mainlineTowns=new Set(['Havertown, PA','Narberth, PA','Bryn Mawr, PA','Ardmore, PA','Broomall, PA','Penn Wynne, PA'])
  for(const area of areas){if(mainlineTowns.has(area.label))area.label='Mainline Pennsylvania';if(area.label.startsWith('Atlantic Ocean'))area.label='Atlantic Ocean'}
- const labels:Record<string,string>={'Mainline Pennsylvania':'Mainline, PA','San Francisco Bay Area':'SF Bay, CA','Chicago / Milwaukee':'Chicago area, IL','Cancún / Riviera Maya':'Cancun, MX','New Orleans / Louisiana':'New Orleans, LA','Maple Glen, PA':'Willow Grove, PA','Horsham, PA':'Willow Grove, PA','Wilton, CT':'Ridgefield, CT'}
+ const labels:Record<string,string>={'Mainline Pennsylvania':'Mainline, PA','San Francisco Bay Area':'SF Bay, CA','Chicago / Milwaukee':'Chicago area, IL','Cancún / Riviera Maya':'Cancun, MX','New Orleans / Louisiana':'New Orleans, LA','Maple Glen, PA':'outer Philly suburbs','Horsham, PA':'outer Philly suburbs','Willow Grove, PA':'outer Philly suburbs','West Conshohocken, PA':'outer Philly suburbs','Wilton, CT':'Ridgefield, CT'}
  for(const area of areas)area.label=labels[area.label]||area.label
  const combined=new Map<string,(typeof areas)[number]>()
  for(const [index,area] of areas.entries()){

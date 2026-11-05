@@ -10,4 +10,4 @@ The five community polygons were fetched from the official [TIGERweb BAS 2026 se
 
 ## Compact city names and requested groups
 
-Use Mainline, PA; SF Bay, CA; Chicago area, IL; Cancun, MX; and New Orleans, LA. Maple Glen and Horsham combine as Willow Grove, PA. Wilton combines with Ridgefield, CT. Combined groups retain all their counted activities and mileage for map drill-down. Mobile city names wrap when necessary and are never shortened with an ellipsis; Charlottesville, VA remains fully readable.
+Use Mainline, PA; SF Bay, CA; Chicago area, IL; Cancun, MX; and New Orleans, LA. Willow Grove, including the existing Maple Glen/Horsham grouping, combines with West Conshohocken as **outer Philly suburbs**. Mainline, PA remains separate. Wilton combines with Ridgefield, CT. Combined groups retain all their counted activities and mileage for map drill-down. Mobile city names wrap when necessary and are never shortened with an ellipsis; Charlottesville, VA remains fully readable.
