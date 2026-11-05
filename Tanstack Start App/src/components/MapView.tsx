@@ -29,7 +29,7 @@ function points(collection?: FeatureCollection): Position[] {
   }
   return result
 }
-interface Props { nextRunDate?: string; citiRoutes?: FeatureCollection; plansVisible?: boolean; missingRoads?: FeatureCollection; coverageMode?: boolean; activityCardVisible?: boolean; provider: MapProvider; mapsKey: string; tracks?: FeatureCollection; targets: Target[]; boundary?: any; selected: number; focusRequest: number; historyRequest: number; historyArea?: Position[]; activityId?: string; onSelect: (index: number) => void; onProviderFailure: (reason: string) => void }
+interface Props { overviewRequest?:number; nextRunDate?: string; citiRoutes?: FeatureCollection; plansVisible?: boolean; missingRoads?: FeatureCollection; coverageMode?: boolean; activityCardVisible?: boolean; provider: MapProvider; mapsKey: string; tracks?: FeatureCollection; targets: Target[]; boundary?: any; selected: number; focusRequest: number; historyRequest: number; historyArea?: Position[]; activityId?: string; onSelect: (index: number) => void; onProviderFailure: (reason: string) => void }
 export function MapView(props: Props) {
   const host = useRef<HTMLDivElement>(null)
   const engine = useRef<any>(null)
@@ -124,6 +124,7 @@ export function MapView(props: Props) {
   },[ready,props.missingRoads])
   useEffect(()=>{const e=engine.current;if(!e)return;e.routeLines.forEach((line:any,i:number)=>e.type==='google'?line.setOptions({strokeColor:i===props.selected?'#e96b1d':'#e8a364',strokeWeight:i===props.selected?7:4}):line.setStyle({color:i===props.selected?'#e96b1d':'#e8a364',weight:i===props.selected?7:4}))},[ready,props.selected,props.targets])
   useEffect(()=>{if(props.plansVisible!==false&&!props.historyArea&&!props.activityId&&props.focusRequest&&props.targets[props.selected])engine.current?.fit(props.targets.filter(t=>t.unscheduled===props.targets[props.selected].unscheduled&&(t.unscheduled?t.street===props.targets[props.selected].street:t.date===props.targets[props.selected].date)).flatMap(plannedPoints),100,true)},[props.focusRequest,ready,props.targets,props.selected,props.historyArea,props.activityId])
+  useEffect(()=>{if(props.overviewRequest&&props.plansVisible!==false&&!props.historyArea&&!props.activityId){const points=props.targets.flatMap(plannedPoints);if(points.length)engine.current?.fit(points)}},[props.overviewRequest,ready,props.targets,props.plansVisible,props.historyArea,props.activityId])
   useEffect(()=>{if(props.historyRequest&&props.historyArea?.length)engine.current?.fit(props.historyArea)},[props.historyRequest,props.historyArea,ready])
   useEffect(()=>{
     const e=engine.current;if(!e||props.activityCardVisible===false||props.historyArea||!props.activityId||!props.tracks)return

@@ -22,4 +22,10 @@ The app also recomputes highlights in a Web Worker against the latest merged run
 
 Example: November 9 Charles Drive is about 85% covered. Highlight only its approximately 72 m David Drive-end gap and navigate to 205 Charles Dr, rather than the old full-street midpoint at 148 Charles Dr. November 5 Grove Place has two gaps, approximately 113 m and 66 m, with a numbered pin at 11 Grove Pl near the main gap.
 
-An `unscheduled` target is an optional map target, labeled **Opt** / **Unscheduled option**, never a Calendar appointment. Exclude it from scheduled outing counts and generated Calendar data. Only assign a date/time when requested. Wednesday November 11 is unscheduled; Wexford is retained as an option after the late flight.
+## Seven-day reviewed planning window
+
+Maintain at least seven upcoming **scheduled run days** whenever reviewing progress or publishing a new plan. Preserve explicit travel/rest exceptions, replenish with reviewed unfinished streets, and verify addresses, approach mileage and Calendar conflicts before booking. Do not pad the view with unscheduled options or duplicate already-complete targets. The build checks the saved plan against its review date.
+
+Runs cold-loads on the overview of the next seven scheduled dates and resets there whenever Runs is clicked or the app resumes. Previous/Next focuses a day and can still page back through recorded runs. Combined street targets share one day. Fully covered targets and unscheduled suggestions are excluded from the upcoming view. Explicit activity links still open their requested historical activity.
+
+November 11 remains a travel exception. Wexford is removed from the active plan. Automatic daily route selection and unattended Calendar editing are not enabled; future planning updates must replenish reviewed routes.

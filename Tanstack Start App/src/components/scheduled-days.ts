@@ -8,7 +8,9 @@ export function easternDay(now = new Date()) {
  return `${part('year')}-${part('month')}-${part('day')}`
 }
 export function upcomingTargets(targets:Target[], today:string) {
- return targets.filter(t=>!t.past&&(t.unscheduled||t.date>=today)).sort((a,b)=>Number(Boolean(a.unscheduled))-Number(Boolean(b.unscheduled))||a.date.localeCompare(b.date)||(a.start_time||'05:30').localeCompare(b.start_time||'05:30'))
+ const scheduled=targets.filter(t=>!t.past&&!t.unscheduled&&t.date>=today&&(t.missing_coordinates===undefined||t.missing_coordinates.length>0)).sort((a,b)=>a.date.localeCompare(b.date)||(a.start_time||'05:30').localeCompare(b.start_time||'05:30'))
+ const days=new Set([...new Set(scheduled.map(t=>t.date))].slice(0,7))
+ return scheduled.filter(t=>days.has(t.date))
 }
 const anchors:[string,number,number][]=[['Havertown / Philadelphia',-75.3,39.98],['New York / New Jersey',-74,40.7],['Seattle',-122.3,47.6],['Fargo',-96.8,46.9],['Indianapolis',-86.16,39.77],['St. Louis',-90.2,38.63],['Toronto / Niagara',-79.1,43.2],['San Francisco Bay Area',-122.3,37.7],['Chicago / Milwaukee',-87.8,42.1],['Charleston',-79.93,32.78],['Savannah',-81.1,32.08],['Cancún / Riviera Maya',-87,20.5],['Grand Cayman',-81.3,19.3],['Seychelles',55.45,-4.6],['London',-.1,51.5],['Japan',136,35],['South Korea',126.98,37.5],['Milan',9.19,45.46],['Portland',-122.68,45.52],['Lake Tahoe',-120,39.1],['Boise',-116.2,43.6],['San Diego',-117.16,32.7],['Washington, DC',-77,38.9],['Boston / New England',-71.1,42.3],['Minneapolis',-93.3,45],['New Orleans / Louisiana',-91,30]]
 const distance=(a:Position,b:Position)=>Math.hypot((a[0]-b[0])*Math.cos((a[1]+b[1])*Math.PI/360),a[1]-b[1])*111

@@ -1,17 +1,19 @@
 {
-  "snapshot": "2026-11-04-six-runs-wexford-option",
-  "as_of_label": "November 4",
-  "focus_start": "2026-11-05",
-  "focus_end": "2026-11-10",
-  "heading": "Havertown \u00b7 Six upcoming runs and one unscheduled option",
-  "focus_label": "6 runs \u00b7 Nov 5\u201310 \u00b7 Wexford optional",
+  "snapshot": "2026-11-05-seven-reviewed-runs",
+  "as_of_label": "November 5",
+  "focus_start": "2026-11-06",
+  "focus_end": "2026-11-13",
+  "heading": "Havertown \u00b7 Seven upcoming scheduled run days",
+  "focus_label": "7 runs \u00b7 Nov 6\u201313 \u00b7 Nov 11 travel exception",
   "history_heading": "Havertown \u00b7 Plan and history \u00b7 October 17\u2013November 3",
   "track_count": 1879,
-  "summary": "Keep Wednesday November 11 unscheduled after the late return flight. Wexford remains a map option; only Thursday\u2013Tuesday are booked. Orange shows unfinished gaps only.",
+  "summary": "Remove Wexford optional target. Grove Place completed November 5. Retain November 11 travel exception; extend the reviewed plan through November 13 with Marilyn Drive and Dermond Avenue.",
   "planning_priorities": [
     "Finish unfinished streets inside Census ZCTA 19083 before expanding outside it.",
     "Mix neighborhoods within 19083; include Westgate Hills without clustering every day there.",
     "Keep full street reference geometry for auditing, but highlight only unfinished gaps; use a numbered address near the midpoint of the main gap.",
     "Prefer one-way walking approaches under 2 miles unless explicitly approved."
-  ]
+  ],
+  "reviewed_on": "2026-11-05",
+  "minimum_scheduled_days": 7
 }

@@ -46,6 +46,10 @@ shutil.copyfile(ROOT/'raw-data/geography/19083-streets.json',PUBLIC/'streets1908
 # Retire the previous town-border overlay; keep the 19083 boundary above.
 (PUBLIC/'local-reference-boundaries.geojson').unlink(missing_ok=True)
 targets=read('raw-data/plans/current-targets.json');write('targets.json',targets)
+plan=read('raw-data/route-research/current-plan.json')
+if plan.get('minimum_scheduled_days'):
+    days={t['date'] for t in targets if not t.get('past') and not t.get('unscheduled') and t['date']>=plan['reviewed_on']}
+    if len(days)<plan['minimum_scheduled_days']:raise RuntimeError('Replenish the reviewed plan to seven scheduled run days before publishing')
 pending_targets=[t for t in targets if not t.get('past') and not t.get('unscheduled')]
 events=[]
 for f in runs['features']:
