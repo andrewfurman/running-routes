@@ -1,4 +1,4 @@
-import {RUN_SPORTS,RIDE_SPORTS,supportedSport} from './sports.ts'
+import {RUN_SPORTS,RIDE_SPORTS,WALK_SPORTS,supportedSport} from './sports.ts'
 import {fetchWebRuns} from './strava-web.ts'
 import {saveRuns} from './database.ts'
 import type {SyncEnv,SyncStorage,SyncStatus,SyncedRun,RunSnapshot} from './types'
@@ -67,7 +67,7 @@ export class StravaSync {
    const object=await this.env.TIMELAPSE_MEDIA.get('strava/latest-runs.json');const old=object?await object.json<RunSnapshot>():null;const byId=new Map((old?.runs||[]).map(r=>[r.activityId,r]));for(const run of fetched)byId.set(run.activityId,{...run,geometry:run.geometry||byId.get(run.activityId)?.geometry||null})
    const runs=[...byId.values()].sort((a,b)=>a.date.localeCompare(b.date)||a.activityId.localeCompare(b.activityId));await this.env.TIMELAPSE_MEDIA.put('strava/latest-runs.json',JSON.stringify({updatedAt:attempted,runs}),{httpMetadata:{contentType:'application/json'}})
    await saveRuns(this.env,fetched,attempted)
-   const status:SyncStatus={authMode:this.env.STRAVA_WEB_COOKIE?'browser_session':'oauth',state:'synced',schedule:SCHEDULE,lastAttemptAt:attempted,lastSuccessAt:attempted,lastSuccessDay:day,lastSuccessSlot:syncSlot(now),importedRuns:runs.filter(r=>RUN_SPORTS.includes(r.sportType)).length,importedRides:runs.filter(r=>RIDE_SPORTS.includes(r.sportType)).length};await this.storage.put('status',status);return status
+   const status:SyncStatus={authMode:this.env.STRAVA_WEB_COOKIE?'browser_session':'oauth',state:'synced',schedule:SCHEDULE,lastAttemptAt:attempted,lastSuccessAt:attempted,lastSuccessDay:day,lastSuccessSlot:syncSlot(now),importedRuns:runs.filter(r=>RUN_SPORTS.includes(r.sportType)).length,importedRides:runs.filter(r=>RIDE_SPORTS.includes(r.sportType)).length,importedWalks:runs.filter(r=>WALK_SPORTS.includes(r.sportType)).length};await this.storage.put('status',status);return status
   }catch(e){const code=e instanceof Error?e.message:'sync_failed';const status:SyncStatus={...before,state:code==='browser_login_required'?'needs_browser_login':'error',schedule:SCHEDULE,lastAttemptAt:attempted,errorCode:/^(strava_(oauth|api|web)_\d{3}|invalid_[a-z_]+|athlete_mismatch|activity_owner_mismatch|pagination_limit|browser_login_required)$/.test(code)?code:'sync_failed'};await this.storage.put('status',status);return status}
  }
 }

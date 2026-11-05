@@ -45,6 +45,7 @@ shutil.copyfile(ROOT/'raw-data/boundaries/19083.geojson',PUBLIC/'boundary19083.g
 shutil.copyfile(ROOT/'raw-data/geography/19083-streets.json',PUBLIC/'streets19083.json')
 # Retire the previous town-border overlay; keep the 19083 boundary above.
 (PUBLIC/'local-reference-boundaries.geojson').unlink(missing_ok=True)
+walks=read('raw-data/walks/tracks.geojson');walk_summary=read('raw-data/walks/summary.json');write('walks.geojson',walks)
 targets=read('raw-data/plans/current-targets.json');write('targets.json',targets)
 plan=read('raw-data/route-research/current-plan.json')
 if plan.get('planning_horizon_days'):
@@ -61,5 +62,5 @@ for i,t in enumerate(targets):
 write('calendar.json',events)
 bikes=json.loads((PUBLIC/'bikes.geojson').read_text());bike_summary=read('raw-data/bikes/summary.json') if (ROOT/'raw-data/bikes/summary.json').exists() else {'gps_ride_count':len(bikes['features']),'total_ride_count':1428,'without_gps_count':898,'as_of':'2026-10-17'}
 bike_summary=dict(bike_summary,gps_ride_count=len(bikes['features']),total_ride_count=bike_summary.get('cycling_records',1428),without_gps_count=bike_summary.get('records_without_drawable_gps',898))
-write('summary.json',{'runCount':len(runs['features']),'bikeCount':len(bikes['features']),'gpsRuns':len(runs['features']),'gpsRides':len(bikes['features']),'plannedTargets':len(pending_targets),'plannedOutings':len({t['date'] for t in pending_targets}),'asOf':max(r['localDate'] for r in read('raw-data/runs/activities.json')['runs']),'bikes':bike_summary});write('bikes-summary.json',bike_summary)
+write('summary.json',{'runCount':len(runs['features']),'bikeCount':len(bikes['features']),'gpsRuns':len(runs['features']),'gpsRides':len(bikes['features']),'gpsWalks':len(walks['features']),'walkCount':walk_summary['walkRecords'],'walks':walk_summary,'plannedTargets':len(pending_targets),'plannedOutings':len({t['date'] for t in pending_targets}),'asOf':max(r['localDate'] for r in read('raw-data/runs/activities.json')['runs']),'bikes':bike_summary});write('bikes-summary.json',bike_summary)
 print(f'Prepared {len(runs["features"])} runs, {len(bikes["features"])} rides and {len(events)} calendar events')

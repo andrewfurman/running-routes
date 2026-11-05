@@ -247,3 +247,9 @@ City Stats uses a spacious desktop table with full city names while retaining th
 Current planning rule: [highlight and target unfinished sections only](docs/route-planning.md), with a numbered pin near the main remaining gap. The [November 5–11 plan](docs/run-reviews/2026-11-05-to-11-unfinished-plan.md) moves Grove/Charles pins and adds Willowbrook/Wexford. Runtime highlights refresh from running GPS in a Web Worker; Calendar addresses are reconciled when replanning.
 
 Wednesday November 11 is unscheduled. Wexford is retained as an optional map target, marked Opt and excluded from Calendar appointments and scheduled-day counts.
+
+## Walks and shareable views
+
+The Walks tab and City Stats walking column use [selected Strava walking history](raw-data/walks/README.md), separate from running coverage. The existing daily Strava polls now import runs, rides and walks. The account archive remains private; only walking IDs, dates, recorded distance/time and sanitized GPS are published.
+
+Tabs, planned streets, recorded activities and city maps have [shareable query URLs](docs/view-urls.md), restored on reload and Back/Forward. Existing `sport=bikes&activity=<ID>` links remain supported; runs and walks use the same sport/activity pattern.

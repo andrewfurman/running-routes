@@ -349,5 +349,139 @@
     ],
     "label": "Berlin",
     "source": "https://www.geonames.org/2950159/berlin.html"
+  },
+  {
+    "center": [
+      -65.90074666666666,
+      18.43523666666667
+    ],
+    "label": "Lo\u00edza, PR",
+    "source": "https://www.geonames.org/4566022",
+    "geonamesId": "4566022",
+    "nearestPlaceDistanceKm": 2.2,
+    "placeCenter": [
+      -65.88016,
+      18.43134
+    ]
+  },
+  {
+    "center": [
+      -74.61327666666666,
+      39.217499999999994
+    ],
+    "label": "Ocean City, NJ",
+    "source": "https://www.geonames.org/4503351",
+    "geonamesId": "4503351",
+    "nearestPlaceDistanceKm": 7.5,
+    "placeCenter": [
+      -74.5746,
+      39.27762
+    ]
+  },
+  {
+    "center": [
+      -80.23295999999999,
+      25.957115
+    ],
+    "label": "Lake Lucerne, FL",
+    "source": "https://www.geonames.org/4161298",
+    "geonamesId": "4161298",
+    "nearestPlaceDistanceKm": 1.2,
+    "placeCenter": [
+      -80.24144,
+      25.96509
+    ]
+  },
+  {
+    "center": [
+      -97.040525,
+      32.901295000000005
+    ],
+    "label": "Grapevine, TX",
+    "source": "https://www.geonames.org/4694568",
+    "geonamesId": "4694568",
+    "nearestPlaceDistanceKm": 5.1,
+    "placeCenter": [
+      -97.07807,
+      32.93429
+    ]
+  },
+  {
+    "center": [
+      -73.78803,
+      42.25065
+    ],
+    "label": "Hudson, NY",
+    "source": "https://www.geonames.org/5121509",
+    "geonamesId": "5121509",
+    "nearestPlaceDistanceKm": 0.3,
+    "placeCenter": [
+      -73.79096,
+      42.25286
+    ]
+  },
+  {
+    "center": [
+      -73.17286,
+      42.54372
+    ],
+    "label": "Cheshire, MA",
+    "source": "https://www.geonames.org/4932915",
+    "geonamesId": "4932915",
+    "nearestPlaceDistanceKm": 2.2,
+    "placeCenter": [
+      -73.16288,
+      42.56203
+    ]
+  },
+  {
+    "center": [
+      -74.95378,
+      41.72778
+    ],
+    "label": "Kenoza Lake, NY",
+    "source": "https://extapps.dec.ny.gov/data/IF/CSLAP/1401KEN0232/2023_Lake_Report_Kenoza%20Lake_1401KEN0232.html"
+  },
+  {
+    "center": [
+      -70.25036,
+      43.66027
+    ],
+    "label": "Portland, ME",
+    "source": "https://www.geonames.org/4975802",
+    "geonamesId": "4975802",
+    "nearestPlaceDistanceKm": 0.8,
+    "placeCenter": [
+      -70.2589,
+      43.65737
+    ]
+  },
+  {
+    "center": [
+      -79.51699,
+      28.78596
+    ],
+    "label": "Atlantic Ocean, US",
+    "source": "Existing US-coast Atlantic Ocean grouping",
+    "geonamesId": null,
+    "nearestPlaceDistanceKm": 113.9,
+    "placeCenter": [
+      -80.60477,
+      28.40584
+    ]
+  },
+  {
+    "center": [
+      -74.47188,
+      34.92394
+    ],
+    "label": "Atlantic Ocean, US",
+    "source": "Existing US-coast Atlantic Ocean grouping",
+    "geonamesId": null,
+    "nearestPlaceDistanceKm": 104.6,
+    "placeCenter": [
+      -75.54237,
+      35.26768
+    ]
   }
 ]

@@ -28,7 +28,7 @@ Example: November 9 Charles Drive is about 85% covered. Highlight only its appro
 
 Preserve explicit travel/rest exceptions. Wednesday November 11 stays off. The app excludes unscheduled suggestions, completed targets and dates outside this window. Combined streets can share one date, but do not create another occurrence of that weekday. The build rejects active plans beyond the reviewed week's horizon. Keep Calendar and the active map plan aligned; future street ideas remain research, not scheduled events.
 
-Runs opens the Havertown running-history overview on a normal cold load, Runs click and app resume. No planned day is selected in this overview. The first Next press selects the earliest scheduled date after today (tomorrow when booked, otherwise the next booked day within the week). Subsequent arrows move between scheduled dates. Previous from the overview opens the most recent recorded run; Previous from the first planned date returns to the overview. Explicit activity links retain their requested historical activity.
+Runs opens the Havertown running-history overview on a normal cold load, Runs click. No planned day is selected in this overview. The first Next press selects the earliest scheduled date after today (tomorrow when booked, otherwise the next booked day within the week). Subsequent arrows move between scheduled dates. Previous from the overview opens the most recent recorded run; Previous from the first planned date returns to the overview. Explicit activity links retain their requested historical activity.
 
 ## Boundary streets — only the portions inside the displayed outline
 
@@ -47,3 +47,5 @@ The one-calendar-week rule above still applies: today plus six days, never seven
 Use Google Workspace CLI and read back every Calendar mutation. Keep credentials private. Publish necessary repository changes through a passing tracking PR, merge immediately, deploy, and verify the result. If there are no changes, leave the repository and Calendar untouched. If sync, address verification, candidate availability, Calendar conflicts, checks, or deployment blocks progress, report the problem rather than inventing a plan.
 
 This planner runs locally and needs the Mac on with the desktop app running; the existing Cloudflare Strava polling continues independently. Creating the schedule is not evidence that a scheduled planning run has already completed. See the [official scheduled-task guidance](https://learn.chatgpt.com/docs/automations).
+
+Explicit view/activity/city URLs restore that selection on reload and browser history navigation. Returning from background refreshes activity data while preserving the selected URL/view; clicking Runs explicitly returns to the Havertown overview. Walks never contribute to running coverage or planned-run completion.

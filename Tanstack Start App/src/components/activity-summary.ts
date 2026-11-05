@@ -42,3 +42,5 @@ export function activityCaptionLines(properties:Record<string,any>){
  const time=hasTime&&Number.isFinite(start)?Number.isFinite(elapsed)&&elapsed>=0?`${clock(start)} to ${clock(start+elapsed*1000)}`:clock(start):''
  return {stats,time}
 }
+
+export function latestWalkId(tracks?:FeatureCollection){return [...(tracks?.features||[])].filter(f=>['Walk','VirtualWalk','Virtual Walk'].includes(f.properties.activity_type)).sort((a,b)=>activityTimestamp(b.properties)-activityTimestamp(a.properties))[0]?.properties.activity_id?.toString()}
