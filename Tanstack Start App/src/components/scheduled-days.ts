@@ -1,3 +1,4 @@
+import {cityLabel} from './city-labels.ts'
 import localTowns from './local-towns.json' with {type:'json'}
 import cityRegions from './city-regions.json' with {type:'json'}
 import cityNames from './city-names.json' with {type:'json'}
@@ -38,10 +39,9 @@ export function historyAreas(tracks?:FeatureCollection) {
  for(const area of areas){if(area.region){area.label=area.region;area.fallbackLabel=area.region;continue}const nearest=[...anchors].sort((a,b)=>distance([a[1],a[2]],area.center)-distance([b[1],b[2]],area.center))[0];area.fallbackLabel=distance([nearest[1],nearest[2]],area.center)<100?nearest[0]:`${area.center[1].toFixed(2)}°, ${area.center[0].toFixed(2)}°`;const named=[...cityNames].sort((a,b)=>distance(a.center as Position,area.center)-distance(b.center as Position,area.center))[0];area.label=named&&distance(named.center as Position,area.center)<15?named.label:area.fallbackLabel.includes('°')?'New activity area':area.fallbackLabel}
  for(const area of areas)if(!area.region&&['Havertown / Philadelphia','New York / New Jersey'].includes(area.label))area.label='Other '+area.label+' area'
  // Regional presentation group: preserve the existing midpoint assignment and sum whole activities.
- const mainlineTowns=new Set(['Havertown, PA','Narberth, PA','Bryn Mawr, PA','Ardmore, PA','Broomall, PA','Penn Wynne, PA'])
+ const mainlineTowns=new Set(['Havertown, PA','Narberth, PA','Bryn Mawr, PA','Ardmore, PA','Broomall, PA','Penn Wynne, PA','Drexel Hill, PA'])
  for(const area of areas){if(mainlineTowns.has(area.label))area.label='Mainline Pennsylvania';if(area.label.startsWith('Atlantic Ocean'))area.label='Atlantic Ocean'}
- const labels:Record<string,string>={'Mainline Pennsylvania':'Mainline, PA','San Francisco Bay Area':'SF Bay, CA','Chicago / Milwaukee':'Chicago area, IL','Cancún / Riviera Maya':'Cancun, MX','New Orleans / Louisiana':'New Orleans, LA','Maple Glen, PA':'outer Philly suburbs','Horsham, PA':'outer Philly suburbs','Willow Grove, PA':'outer Philly suburbs','West Conshohocken, PA':'outer Philly suburbs','Wilton, CT':'Ridgefield, CT'}
- for(const area of areas)area.label=labels[area.label]||area.label
+ for(const area of areas)area.label=cityLabel(area.label)
  const combined=new Map<string,(typeof areas)[number]>()
  for(const [index,area] of areas.entries()){
   const key=area.label==='New activity area'?`unresolved-${index}`:area.label;const existing=combined.get(key)
