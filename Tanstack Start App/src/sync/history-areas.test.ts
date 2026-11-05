@@ -8,7 +8,7 @@ test('missing mileage is marked incomplete rather than fabricated from simplifie
 test('previously coordinate-only regions use cached place names',()=>{const areas=historyAreas({type:'FeatureCollection',features:[feature('a',[-77.56,43.13],1000),feature('b',[-109.58,38.6],2000)]});assert.ok(areas.some(a=>a.label==='Rochester, NY'));assert.ok(areas.some(a=>a.label==='Moab, UT'));assert.ok(areas.every(a=>!a.label.includes('°')))})
 
 test('New York and Ridgefield stay separate even though the older regional name was shared',()=>{const areas=historyAreas({type:'FeatureCollection',features:[feature('a',[-74.01,40.71],1609.344),feature('b',[-73.5,41.28],3218.688)]});assert.equal(areas.length,2);assert.equal(areas.find(a=>a.label==='New York City, NY')?.miles,1);assert.equal(areas.find(a=>a.label==='Ridgefield, CT')?.miles,2)})
-test('Mainline towns combine while other Philadelphia suburbs remain separate',()=>{const places:[string,[number,number]][]=[['Havertown, PA',[-75.31,39.98]],['Ardmore, PA',[-75.29,40.007]],['Narberth, PA',[-75.262,40.009]],['Willow Grove, PA',[-75.14,40.18]],['Coopersburg, PA',[-75.39,40.51]],['Philadelphia, PA',[-75.16,39.95]]];const areas=historyAreas({type:'FeatureCollection',features:places.map(([_,point],i)=>feature(String(i),point,1609.344))});assert.equal(areas.length,4);assert.equal(areas.find(a=>a.label==='Mainline, PA')?.miles,3);for(const [label]of places.slice(3))assert.equal(areas.find(a=>a.label===label)?.miles,1);assert.equal(areas.reduce((n,a)=>n+a.count,0),places.length)})
+test('Mainline towns combine while other Philadelphia suburbs remain separate',()=>{const places:[string,[number,number]][]=[['Havertown, PA',[-75.31,39.98]],['Ardmore, PA',[-75.29,40.007]],['Narberth, PA',[-75.262,40.009]],['outer Philly suburbs',[-75.14,40.18]],['Coopersburg, PA',[-75.39,40.51]],['Philadelphia, PA',[-75.16,39.95]]];const areas=historyAreas({type:'FeatureCollection',features:places.map(([_,point],i)=>feature(String(i),point,1609.344))});assert.equal(areas.length,4);assert.equal(areas.find(a=>a.label==='Mainline, PA')?.miles,3);for(const [label]of places.slice(3))assert.equal(areas.find(a=>a.label===label)?.miles,1);assert.equal(areas.reduce((n,a)=>n+a.count,0),places.length)})
 test('unresolved distant regions stay separate instead of fitting the whole world',()=>{const areas=historyAreas({type:'FeatureCollection',features:[feature('a',[-30,0],1000),feature('b',[80,0],2000)]});assert.equal(areas.length,2)})
 
 test('nearby Narberth and Ardmore activities join Mainline while distant cities stay separate',()=>{const areas=historyAreas({type:'FeatureCollection',features:[feature('a',[-75.25295,40.00334],1609.344),feature('b',[-75.27394,40.00241],1609.344),feature('c',[-75.26312,39.99743],1609.344),feature('d',[-75.27417,40.00553],1609.344),feature('e',[126.98,37.5],1609.344)]});assert.equal(areas.find(a=>a.label==='Mainline, PA')?.count,4);assert.equal(areas.find(a=>a.label==='South Korea')?.count,1);assert.equal(areas.reduce((n,a)=>n+a.count,0),5);assert.equal(areas.some(a=>a.label==='Other Havertown / Philadelphia area'),false)})
@@ -61,5 +61,14 @@ test('Penn Wynne combines with Mainline while Drexel Hill remains separate',()=>
 
 test('nearby requested city groups combine their exact activity membership and miles',()=>{
  const f=[feature('ridgefield',[-73.5,41.28],1609.344),feature('wilton',[-73.46903,41.24442],1609.344),feature('horsham',[-75.14,40.18],1609.344),feature('maple-glen',[-75.18046,40.179],1609.344)]
- const areas=historyAreas({type:'FeatureCollection',features:f});assert.equal(areas.length,2);assert.equal(areas.find(a=>a.label==='Ridgefield, CT')?.count,2);assert.equal(areas.find(a=>a.label==='Willow Grove, PA')?.miles,2);assert.equal(areas.flatMap(a=>a.activities).length,4)
+ const areas=historyAreas({type:'FeatureCollection',features:f});assert.equal(areas.length,2);assert.equal(areas.find(a=>a.label==='Ridgefield, CT')?.count,2);assert.equal(areas.find(a=>a.label==='outer Philly suburbs')?.miles,2);assert.equal(areas.flatMap(a=>a.activities).length,4)
+})
+
+test('Willow Grove and West Conshohocken combine as outer Philly suburbs while Mainline stays separate',()=>{
+ for(const activity_type of ['Run','Ride']){
+ const a=feature('willow-grove',[-75.11795,40.144],1609.344),b=feature('west-conshohocken',[-75.3163,40.06983],3218.688),c=feature('mainline',[-75.31,39.98],1609.344)
+ for(const f of [a,b,c])f.properties={...f.properties,activity_type} as any
+ const areas=historyAreas({type:'FeatureCollection',features:[a,b,c,a]}),outer=areas.find(a=>a.label==='outer Philly suburbs')!
+ assert.equal(areas.length,2);assert.equal(outer.count,2);assert.equal(outer.miles,3);assert.deepEqual(outer.activities,[a,b]);assert.equal(areas.find(a=>a.label==='Mainline, PA')?.count,1)
+ }
 })
