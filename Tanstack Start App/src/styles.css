@@ -99,3 +99,9 @@ html,body{background:#fff}
 }
 
 .city-column-title{display:flex;flex-direction:column;align-items:flex-start;gap:3px;text-align:left;line-height:1.25;white-space:normal}.city-column-title small{font-size:9px;font-weight:500;color:#81728e}@media(min-width:1024px){.city-column-title small{font-size:11px}}
+
+/* Full city names stay readable on phones; long names wrap instead of truncating. */
+@media(max-width:899px){
+ .city-table th:first-child,.city-table thead th:first-child{width:52%;max-width:none}
+ .city-table .city-name-button{width:100%;max-width:100%;white-space:normal;overflow:visible;text-overflow:clip;overflow-wrap:anywhere;font-size:13px;line-height:1.35}
+}

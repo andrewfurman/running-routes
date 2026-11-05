@@ -27,11 +27,11 @@ test('old geometry is never used as an unaudited full-street orange fallback',()
  assert.deepEqual(plannedPoints({...target,missing_coordinates:[[a,b]],navigation_coordinates:a}),[a,b,a])
 })
 
-test('upcoming view excludes unscheduled options and limits to seven scheduled dates with combined-day targets intact',()=>{
+test('upcoming view excludes unscheduled options and uses only one calendar-week window with combined-day targets intact',()=>{
  const optional={...target,date:'2026-11-11',unscheduled:true},scheduled={...target,date:'2026-11-11'},combined={...scheduled,street:'Second Street'}
  const later=Array.from({length:9},(_,i)=>({...target,date:`2026-11-${String(i+12).padStart(2,'0')}`}))
  const result=upcomingTargets([optional,...later,scheduled,combined,{...target,past:true}],'2026-11-11')
- assert.equal(new Set(result.map(t=>t.date)).size,7);assert.equal(result.length,8);assert.deepEqual(result.slice(0,2),[scheduled,combined]);assert.equal(result.at(-1)?.date,'2026-11-17');assert.equal(upcomingTargets([optional],'2026-11-20').length,0)
+ assert.equal(new Set(result.map(t=>t.date)).size,7);assert.equal(result.length,8);assert.deepEqual(result.slice(0,2),[scheduled,combined]);assert.equal(result.at(-1)?.date,'2026-11-17');assert.equal(upcomingTargets([optional],'2026-11-20').length,0);assert.equal(upcomingTargets([scheduled,...later],'2026-11-12').at(-1)?.date,'2026-11-18')
 })
 
 test('on-deck date picks the next scheduled unfinished day and ignores past and optional targets',async()=>{
@@ -40,4 +40,10 @@ test('on-deck date picks the next scheduled unfinished day and ignores past and 
  assert.equal(nextPlannedDate([target('2026-11-06'),target('2026-11-04',{unscheduled:true}),target('2026-11-03'),target('2026-11-04',{missing_coordinates:[]}),target('2026-11-05'),target('2026-11-04',{past:true})],'2026-11-04'),'2026-11-05')
  assert.equal(nextPlannedDate([target('2026-11-05'),target('2026-11-05')],'2026-11-05'),'2026-11-05')
  assert.equal(nextPlannedDate([],'2026-11-04'),undefined)
+})
+
+test('a rest day leaves six days rather than pulling the same weekday from next week',()=>{
+ const days=Array.from({length:9},(_,i)=>({...target,date:`2026-11-${String(i+5).padStart(2,'0')}`})).filter(t=>t.date!=='2026-11-11')
+ const window=upcomingTargets(days,'2026-11-05');assert.equal(window.length,6);assert.equal(window.at(-1)?.date,'2026-11-10');assert.equal(new Set(window.map(t=>new Date(t.date+'T12:00:00Z').getUTCDay())).size,6)
+ assert.deepEqual(upcomingTargets(days,''),[])
 })

@@ -1,3 +1,4 @@
+import {cameraForPoints,createCameraFlight} from './map-camera'
 import {plannedLines,plannedPoints} from './planned-gaps'
 import { useEffect, useRef, useState } from 'react'
 import 'leaflet/dist/leaflet.css'
@@ -49,20 +50,24 @@ export function MapView(props: Props) {
           const g = await loadGoogle(props.mapsKey)
           window.gm_authFailure = () => { if(!stopped)props.onProviderFailure('Google Maps is unavailable for this site. Showing OpenStreetMap.') }
           if (stopped || !host.current) return
-          const map = new g.Map(host.current, { center: {lat: 39.979, lng: -75.31}, zoom: 14, gestureHandling: 'greedy', streetViewControl: false, mapTypeControl: false, fullscreenControl: false })
+          const map = new g.Map(host.current, { center: {lat: 39.979, lng: -75.31}, zoom: 14, isFractionalZoomEnabled:true, renderingType:g.RenderingType.VECTOR, gestureHandling: 'greedy', streetViewControl: false, mapTypeControl: false, fullscreenControl: false })
           const e: any = { map, type: 'google', trackLayer: new g.Data(), boundaryLayer: new g.Data(), routeLines: [], markers: [] }
-          e.fit = (ps: Position[], padding: number | MapInsets = 55, context = false) => { if (!ps.length) return; const b = new g.LatLngBounds(); for (const [lng, lat] of ps) b.extend({lat,lng}); if(e.fitIdle)g.event.removeListener(e.fitIdle);map.fitBounds(b,padding); e.fitIdle=g.event.addListenerOnce(map,'idle',()=>{if(context)map.setZoom(Math.max(12,Math.min(16,map.getZoom()-1)));else if(map.getZoom()>17)map.setZoom(17)}) }
+          e.flight=createCameraFlight(()=>{const center=map.getCenter();return {lng:center.lng(),lat:center.lat(),zoom:map.getZoom()}},camera=>map.moveCamera({center:{lng:camera.lng,lat:camera.lat},zoom:camera.zoom}))
+          e.fit=(ps:Position[],padding:number|MapInsets=55,context=false)=>{const camera=cameraForPoints(ps,host.current?.clientWidth||0,host.current?.clientHeight||0,padding,context);if(!camera)return;e.flight.fly(camera,!e.hasFit||window.matchMedia('(prefers-reduced-motion: reduce)').matches);e.hasFit=true}
+          map.addListener('dragstart',()=>e.flight.cancel())
           engine.current = e
-          cleanup = () => { e.trackLayer.setMap(null);e.boundaryLayer.setMap(null);for(const line of e.routeLines)line.setMap(null);for(const marker of e.markers)marker.setMap(null);g.event.clearInstanceListeners(map) }
+          cleanup = () => { e.flight.cancel();e.trackLayer.setMap(null);e.boundaryLayer.setMap(null);for(const line of e.routeLines)line.setMap(null);for(const marker of e.markers)marker.setMap(null);g.event.clearInstanceListeners(map) }
         } else {
           const mod = await import('leaflet'); const L = mod.default || mod
           if (stopped || !host.current) return
-          const map = L.map(host.current, {center: [39.979,-75.31], zoom:14, preferCanvas:true, zoomControl:false})
+          const map = L.map(host.current, {center: [39.979,-75.31], zoom:14, zoomSnap:0, preferCanvas:true, zoomControl:false})
           L.control.zoom({position:'bottomright'}).addTo(map)
           L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© OpenStreetMap contributors'}).addTo(map)
           const e: any = {map,L,type:'osm',routeLines:[],markers:[]}
-          e.fit = (ps: Position[], padding: number | MapInsets = 40, context = false) => {if(!ps.length)return;const bounds=L.latLngBounds(ps.map(([lng,lat])=>[lat,lng]));if(context){const zoom=map.getBoundsZoom(bounds,false,L.point(typeof padding==='number'?padding*2:padding.left+padding.right,typeof padding==='number'?padding*2:padding.top+padding.bottom));map.setView(bounds.getCenter(),Math.max(12,Math.min(16,zoom-1)))}else map.fitBounds(bounds,{...(typeof padding==='number'?{padding:[padding,padding]}:{paddingTopLeft:[padding.left,padding.top],paddingBottomRight:[padding.right,padding.bottom]}),maxZoom:17})}
-          engine.current=e;cleanup=()=>map.remove()
+          e.flight=createCameraFlight(()=>({lng:map.getCenter().lng,lat:map.getCenter().lat,zoom:map.getZoom()}),camera=>map.setView([camera.lat,camera.lng],camera.zoom,{animate:false}))
+          e.fit=(ps:Position[],padding:number|MapInsets=40,context=false)=>{const camera=cameraForPoints(ps,host.current?.clientWidth||0,host.current?.clientHeight||0,padding,context);if(!camera)return;e.flight.fly(camera,!e.hasFit||window.matchMedia('(prefers-reduced-motion: reduce)').matches);e.hasFit=true}
+          map.on('dragstart',()=>e.flight.cancel())
+          engine.current=e;cleanup=()=>{e.flight.cancel();map.remove()}
         }
         if (stopped) {cleanup();return}
         setReady(x=>x+1);setLoading(false)
@@ -104,7 +109,7 @@ export function MapView(props: Props) {
       }
     })
     // A late boundary or plan update must not replace the selected activity camera.
-    if(props.activityId||props.historyArea)return
+    if(props.activityId||props.historyArea||props.focusRequest)return
     const ps=props.targets.flatMap(plannedPoints)
     if(ps.length)e.fit(ps)
     else if(props.coverageMode){const outline=props.boundary?.type==='FeatureCollection'?props.boundary:{type:'FeatureCollection',features:props.boundary?[props.boundary]:[]};e.fit(points(outline),35)}
@@ -124,7 +129,7 @@ export function MapView(props: Props) {
   },[ready,props.missingRoads])
   useEffect(()=>{const e=engine.current;if(!e)return;e.routeLines.forEach((line:any,i:number)=>e.type==='google'?line.setOptions({strokeColor:i===props.selected?'#e96b1d':'#e8a364',strokeWeight:i===props.selected?7:4}):line.setStyle({color:i===props.selected?'#e96b1d':'#e8a364',weight:i===props.selected?7:4}))},[ready,props.selected,props.targets])
   useEffect(()=>{if(props.plansVisible!==false&&!props.historyArea&&!props.activityId&&props.focusRequest&&props.targets[props.selected])engine.current?.fit(props.targets.filter(t=>t.unscheduled===props.targets[props.selected].unscheduled&&(t.unscheduled?t.street===props.targets[props.selected].street:t.date===props.targets[props.selected].date)).flatMap(plannedPoints),100,true)},[props.focusRequest,ready,props.targets,props.selected,props.historyArea,props.activityId])
-  useEffect(()=>{if(props.overviewRequest&&props.plansVisible!==false&&!props.historyArea&&!props.activityId){const points=props.targets.flatMap(plannedPoints);if(points.length)engine.current?.fit(points)}},[props.overviewRequest,ready,props.targets,props.plansVisible,props.historyArea,props.activityId])
+  useEffect(()=>{if(props.overviewRequest&&!props.focusRequest&&props.plansVisible!==false&&!props.historyArea&&!props.activityId){const points=props.targets.flatMap(plannedPoints);if(points.length)engine.current?.fit(points)}},[props.overviewRequest,props.focusRequest,ready,props.targets,props.plansVisible,props.historyArea,props.activityId])
   useEffect(()=>{if(props.historyRequest&&props.historyArea?.length)engine.current?.fit(props.historyArea)},[props.historyRequest,props.historyArea,ready])
   useEffect(()=>{
     const e=engine.current;if(!e||props.activityCardVisible===false||props.historyArea||!props.activityId||!props.tracks)return
@@ -143,7 +148,7 @@ export function MapView(props: Props) {
     if(host.current)observer.observe(host.current)
     if(dock)observer.observe(dock)
     schedule()
-    return()=>{cancelAnimationFrame(scheduled);observer.disconnect();cleanup()}
+    return()=>{cancelAnimationFrame(scheduled);e.flight.cancel();observer.disconnect();cleanup()}
   },[props.activityId,props.tracks,props.activityCardVisible,props.historyArea,props.citiRoutes,ready])
   return <div className="map-surface"><div className="map-canvas" ref={host} aria-label="Interactive route map"/>{loading?<div className="map-loading"><span className="spinner"/>Loading street map</div>:null}{error?<div className="map-error" role="alert">{error}</div>:null}<div className="map-credit">{props.provider==='google'?'Google Maps':'OpenStreetMap'}<span>•</span>{props.coverageMode?'Orange: unfinished road sections':props.tracks?.features.some(f=>['station_endpoints','receipt_endpoints'].includes(f.properties.geometry_source))?'Purple: rides':'Purple: recorded tracks'}<span>•</span>Teal: 19083</div></div>
 }

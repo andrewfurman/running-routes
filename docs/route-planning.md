@@ -22,10 +22,18 @@ The app also recomputes highlights in a Web Worker against the latest merged run
 
 Example: November 9 Charles Drive is about 85% covered. Highlight only its approximately 72 m David Drive-end gap and navigate to 205 Charles Dr, rather than the old full-street midpoint at 148 Charles Dr. November 5 Grove Place has two gaps, approximately 113 m and 66 m, with a numbered pin at 11 Grove Pl near the main gap.
 
-## Seven-day reviewed planning window
+## One calendar week ahead — never seven booked runs
 
-Maintain at least seven upcoming **scheduled run days** whenever reviewing progress or publishing a new plan. Preserve explicit travel/rest exceptions, replenish with reviewed unfinished streets, and verify addresses, approach mileage and Calendar conflicts before booking. Do not pad the view with unscheduled options or duplicate already-complete targets. The build checks the saved plan against its review date.
+**Only plan today and the next six calendar days, using America/New_York dates.** There must be at most one date for each weekday in the upcoming plan. If a day is off, leave it empty: six booked days are fine, and fewer are fine when there are more rest days or today's run is already complete. Never pull next Thursday or next Friday into the current window to reach seven runs.
 
-Runs cold-loads on the overview of the next seven scheduled dates and resets there whenever Runs is clicked or the app resumes. Previous/Next focuses a day and can still page back through recorded runs. Combined street targets share one day. Fully covered targets and unscheduled suggestions are excluded from the upcoming view. Explicit activity links still open their requested historical activity.
+Preserve explicit travel/rest exceptions. Wednesday November 11 stays off. The app excludes unscheduled suggestions, completed targets and dates outside this window. Combined streets can share one date, but do not create another occurrence of that weekday. The build rejects active plans beyond the reviewed week's horizon. Keep Calendar and the active map plan aligned; future street ideas remain research, not scheduled events.
 
-November 11 remains a travel exception. Wexford is removed from the active plan. Automatic daily route selection and unattended Calendar editing are not enabled; future planning updates must replenish reviewed routes.
+Runs opens the week overview on a normal cold load, Runs click and app resume. Arrows move to each scheduled date and back through recorded history. Explicit activity links retain their requested historical activity.
+
+## Boundary roads count too
+
+Public, runnable roads along the 19083 border are part of the goal, including sections where the boundary follows the road. Do not omit a boundary street merely because the road centerline falls just outside the Census outline. A way that follows the boundary for at least 100 m and 40% of its length within a 30 m corridor seeds inclusion of the full connected same-name public street from the cached OSM source. Include its outside sections too; do not include disconnected same-name roads. Marvine Avenue is the initial example. Preserve separate lines and highlight only unfinished portions. This is a ZIP approximation, not a legal township-border inventory. Private/no-foot-access roads remain excluded.
+
+The 19083 outline belongs on Runs and Havertown coverage, never Rides. Map paging uses one continuous camera flight with a small zoom arc; honor reduced-motion preferences.
+
+Camera implementation references: [Google Maps camera methods](https://developers.google.com/maps/documentation/javascript/reference/map) and [fractional/vector maps](https://developers.google.com/maps/documentation/javascript/vector-map). Camera fitting retains room above the activity card; paging uses a 720 ms continuous flight and a small 0.12-level zoom arc instead of an additional full zoom level.

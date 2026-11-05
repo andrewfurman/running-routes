@@ -8,9 +8,9 @@ export function easternDay(now = new Date()) {
  return `${part('year')}-${part('month')}-${part('day')}`
 }
 export function upcomingTargets(targets:Target[], today:string) {
- const scheduled=targets.filter(t=>!t.past&&!t.unscheduled&&t.date>=today&&(t.missing_coordinates===undefined||t.missing_coordinates.length>0)).sort((a,b)=>a.date.localeCompare(b.date)||(a.start_time||'05:30').localeCompare(b.start_time||'05:30'))
- const days=new Set([...new Set(scheduled.map(t=>t.date))].slice(0,7))
- return scheduled.filter(t=>days.has(t.date))
+ if(!today)return []
+ const end=new Date(today+'T12:00:00Z');end.setUTCDate(end.getUTCDate()+7);const endExclusive=end.toISOString().slice(0,10)
+ return targets.filter(t=>!t.past&&!t.unscheduled&&t.date>=today&&t.date<endExclusive&&(t.missing_coordinates===undefined||t.missing_coordinates.length>0)).sort((a,b)=>a.date.localeCompare(b.date)||(a.start_time||'05:30').localeCompare(b.start_time||'05:30'))
 }
 const anchors:[string,number,number][]=[['Havertown / Philadelphia',-75.3,39.98],['New York / New Jersey',-74,40.7],['Seattle',-122.3,47.6],['Fargo',-96.8,46.9],['Indianapolis',-86.16,39.77],['St. Louis',-90.2,38.63],['Toronto / Niagara',-79.1,43.2],['San Francisco Bay Area',-122.3,37.7],['Chicago / Milwaukee',-87.8,42.1],['Charleston',-79.93,32.78],['Savannah',-81.1,32.08],['Cancún / Riviera Maya',-87,20.5],['Grand Cayman',-81.3,19.3],['Seychelles',55.45,-4.6],['London',-.1,51.5],['Japan',136,35],['South Korea',126.98,37.5],['Milan',9.19,45.46],['Portland',-122.68,45.52],['Lake Tahoe',-120,39.1],['Boise',-116.2,43.6],['San Diego',-117.16,32.7],['Washington, DC',-77,38.9],['Boston / New England',-71.1,42.3],['Minneapolis',-93.3,45],['New Orleans / Louisiana',-91,30]]
 const distance=(a:Position,b:Position)=>Math.hypot((a[0]-b[0])*Math.cos((a[1]+b[1])*Math.PI/360),a[1]-b[1])*111
@@ -40,6 +40,8 @@ export function historyAreas(tracks?:FeatureCollection) {
  // Regional presentation group: preserve the existing midpoint assignment and sum whole activities.
  const mainlineTowns=new Set(['Havertown, PA','Narberth, PA','Bryn Mawr, PA','Ardmore, PA','Broomall, PA','Penn Wynne, PA'])
  for(const area of areas){if(mainlineTowns.has(area.label))area.label='Mainline Pennsylvania';if(area.label.startsWith('Atlantic Ocean'))area.label='Atlantic Ocean'}
+ const labels:Record<string,string>={'Mainline Pennsylvania':'Mainline, PA','San Francisco Bay Area':'SF Bay, CA','Chicago / Milwaukee':'Chicago area, IL','Cancún / Riviera Maya':'Cancun, MX','New Orleans / Louisiana':'New Orleans, LA','Maple Glen, PA':'Willow Grove, PA','Horsham, PA':'Willow Grove, PA','Wilton, CT':'Ridgefield, CT'}
+ for(const area of areas)area.label=labels[area.label]||area.label
  const combined=new Map<string,(typeof areas)[number]>()
  for(const [index,area] of areas.entries()){
   const key=area.label==='New activity area'?`unresolved-${index}`:area.label;const existing=combined.get(key)
