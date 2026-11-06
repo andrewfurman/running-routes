@@ -19,6 +19,20 @@ def gws(action, params, body=None):
     if 'error' in data: raise RuntimeError(data['error'].get('message', 'Calendar request failed'))
     return data
 
+def insert_or_restore(params, body):
+    """Reuse our cancelled deterministic event instead of duplicating a restored plan."""
+    try:
+        return gws('insert', params, body)
+    except subprocess.CalledProcessError:
+        existing = gws('get', {'calendarId': params['calendarId'], 'eventId': body['id']})
+        identity = body.get('extendedProperties', {}).get('private', {}).get('runningRoutesTarget')
+        saved_identity = existing.get('extendedProperties', {}).get('private', {}).get('runningRoutesTarget')
+        if existing.get('status') != 'cancelled' or not identity or identity != saved_identity:
+            raise RuntimeError('Calendar insert failed; refusing to overwrite a nonmatching or active event')
+        patch = {key: value for key, value in body.items() if key != 'id'}
+        patch['status'] = 'confirmed'
+        return gws('patch', dict(params, eventId=body['id']), patch)
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--apply', action='store_true')
@@ -80,7 +94,7 @@ def main():
         else:
             body['id'] = 'run' + hashlib.sha256((t['date'] + t['street']).encode()).hexdigest()[:32]
             body['reminders'] = {'useDefault': False, 'overrides': [{'method': 'popup', 'minutes': 0}]}
-            eid = gws('insert', params, body)['id']
+            eid = insert_or_restore(params, body)['id']
         actual = gws('get', {'calendarId': args.calendar, 'eventId': eid})
         for field in ('summary', 'location', 'description', 'start', 'end'):
             if actual.get(field) != body[field]: raise RuntimeError('Read-back mismatch: ' + field)

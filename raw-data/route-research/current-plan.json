@@ -1,19 +1,19 @@
 {
-  "snapshot": "2026-11-05-one-calendar-week",
-  "as_of_label": "November 5",
-  "focus_start": "2026-11-06",
-  "focus_end": "2026-11-11",
+  "snapshot": "2026-11-06-shorter-run-week",
+  "as_of_label": "November 6",
+  "focus_start": "2026-11-07",
+  "focus_end": "2026-11-12",
   "heading": "Havertown \u00b7 One calendar week ahead",
-  "focus_label": "Nov 5\u201311 \u00b7 Wednesday off",
+  "focus_label": "Nov 6\u201312 \u00b7 Wednesday off",
   "history_heading": "Havertown \u00b7 Plan and history \u00b7 October 17\u2013November 3",
-  "track_count": 1879,
-  "summary": "Only today plus six days. Days off stay empty; never add next-week routes to reach seven runs. November 5 Grove Place is complete. Upcoming runs November 6\u201310; November 11 remains off. Remove November 12\u201313 bookings.",
+  "track_count": 1881,
+  "summary": "November 6 shorter run completed Willowbrook Road. Preserve Gladstone Saturday, Nancy Sunday and Charles Monday; move Rodmor to Tuesday and add Marilyn Thursday. November 11 stays off. Only today plus six calendar days.",
   "planning_priorities": [
     "Finish unfinished streets inside Census ZCTA 19083, including only the in-boundary portions of public streets that follow it, before expanding elsewhere.",
     "Mix neighborhoods within 19083; include Westgate Hills without clustering every day there.",
     "Keep full street reference geometry for auditing, but highlight only unfinished gaps; use a numbered address near the midpoint of the main gap.",
     "Prefer one-way walking approaches under 2 miles unless explicitly approved."
   ],
-  "reviewed_on": "2026-11-05",
+  "reviewed_on": "2026-11-06",
   "planning_horizon_days": 7
 }

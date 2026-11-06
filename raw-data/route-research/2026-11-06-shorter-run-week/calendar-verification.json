@@ -1,0 +1,168 @@
+{
+  "verifiedOn": "2026-11-06",
+  "method": "Google Workspace CLI list/get after patch/restore; no bike or walk events",
+  "events": [
+    {
+      "id": "run4a832d22438f96141fc35f45e014e99e",
+      "summary": "Manoa \u00b7 2.3 mi",
+      "start": {
+        "dateTime": "2026-11-06T05:09:22-05:00",
+        "timeZone": "America/New_York"
+      },
+      "end": {
+        "dateTime": "2026-11-06T05:33:05-05:00",
+        "timeZone": "America/New_York"
+      },
+      "location": "600 Willowbrook Rd, Havertown, PA 19083",
+      "description": "Recorded run, November 6: 2.3 miles; 23 minutes moving; 9:58/mi. Started 5:09 AM and finished 5:33 AM Eastern.\n\nOriginally planned: Rodmor Road, navigating to 77 Rodmor Rd. Andrew chose a shorter route and completed Willowbrook Road instead. Running-only GPS covers 100% of the 288 m Willowbrook target; this is not official CityStrides credit.\n\nThis event was moved from Tuesday to reflect the actual run. Rodmor is rescheduled for Tuesday November 10. Numbered location is the completed target navigation anchor.\n\nhttps://www.strava.com/activities/20880609276",
+      "extendedProperties": {
+        "private": {
+          "runningRoutesTarget": "384e555b9ee63e9546bd41f2"
+        }
+      },
+      "reminders": {
+        "overrides": [
+          {
+            "method": "popup",
+            "minutes": 0
+          }
+        ],
+        "useDefault": false
+      }
+    },
+    {
+      "id": "runfc851bc2044e903330b68dcebfba",
+      "summary": "Richland \u00b7 4.0 mi",
+      "start": {
+        "dateTime": "2026-11-07T05:30:00-05:00",
+        "timeZone": "America/New_York"
+      },
+      "end": {
+        "dateTime": "2026-11-07T06:15:00-05:00",
+        "timeZone": "America/New_York"
+      },
+      "location": "215a Gladstone Rd, Havertown, PA 19083",
+      "description": "Neighborhood: Richland.\nStreet target: Gladstone Road \u00b7 Finish the unfinished street section.\nEstimated round trip: 4.0 miles = twice the walking approach to the gap address plus the unfinished target length. Connections and your return meander can add mileage.\n\nNavigate to the numbered address beside the main unfinished gap, cover the orange section(s), then meander home.\n\nInside 19083. Run only the orange unfinished sections; already-covered pavement may connect them. Navigate to the numbered gap address, then meander home.\n\nSection 1: 495 m \u00b7 https://maps.apple.com/?daddr=39.9637641,-75.3104673&dirflg=w \u2192 https://maps.apple.com/?daddr=39.9615628,-75.3155129&dirflg=w\n\nTap the numbered address: 215a Gladstone Rd, Havertown, PA 19083. Google walking distance from home: 1.86 miles; target traversal and return add mileage.\n\nNovember 6 running-only GPS audit: 0.0% covered; orange highlights only remaining gaps. Not official CityStrides credit. GPS proximity does not establish CityStrides credit.\n\nGap pin: https://maps.apple.com/?daddr=215a%20Gladstone%20Rd%2C%20Havertown%2C%20PA%2019083&dirflg=w\nEndpoint A: https://maps.apple.com/?daddr=39.9637641,-75.3104673&dirflg=w\nEndpoint B: https://maps.apple.com/?daddr=39.9615628,-75.3155129&dirflg=w",
+      "extendedProperties": {
+        "private": {
+          "runningRoutesTarget": "f011d62b6f62145f1af734e7"
+        }
+      },
+      "reminders": {
+        "useDefault": false
+      }
+    },
+    {
+      "id": "run96ac5e1253c621ef4ea3bc9b93782288",
+      "summary": "Westgate Hills \u00b7 3.5 mi",
+      "start": {
+        "dateTime": "2026-11-08T05:30:00-05:00",
+        "timeZone": "America/New_York"
+      },
+      "end": {
+        "dateTime": "2026-11-08T06:15:00-05:00",
+        "timeZone": "America/New_York"
+      },
+      "location": "19 Nancy Dr, Havertown, PA 19083",
+      "description": "Neighborhood: Westgate Hills.\nStreet target: Nancy Drive \u00b7 Finish the unfinished street section.\nEstimated round trip: 3.5 miles = twice the walking approach to the gap address plus the unfinished target length. Connections and your return meander can add mileage.\n\nNavigate to the numbered address beside the main unfinished gap, cover the orange section(s), then meander home.\n\nInside 19083. Run only the orange unfinished sections; already-covered pavement may connect them. Navigate to the numbered gap address, then meander home.\n\nSection 1: 306 m \u00b7 https://maps.apple.com/?daddr=39.9663212,-75.3276806&dirflg=w \u2192 https://maps.apple.com/?daddr=39.9681006,-75.3264604&dirflg=w\n\nTap the numbered address: 19 Nancy Dr, Havertown, PA 19083. Google walking distance from home: 1.68 miles; target traversal and return add mileage.\n\nNovember 6 running-only GPS audit: 0.0% covered; orange highlights only remaining gaps. Not official CityStrides credit. GPS proximity does not establish CityStrides credit.\n\nGap pin: https://maps.apple.com/?daddr=19%20Nancy%20Dr%2C%20Havertown%2C%20PA%2019083&dirflg=w\nEndpoint A: https://maps.apple.com/?daddr=39.9663212,-75.3276806&dirflg=w\nEndpoint B: https://maps.apple.com/?daddr=39.9681006,-75.3264604&dirflg=w",
+      "extendedProperties": {
+        "private": {
+          "runningRoutesTarget": "4dd17bdd3f61c96fbbd8a877"
+        }
+      },
+      "reminders": {
+        "overrides": [
+          {
+            "method": "popup",
+            "minutes": 0
+          }
+        ],
+        "useDefault": false
+      }
+    },
+    {
+      "id": "run93337b9b3ac98f0119a0879470d22e50",
+      "summary": "Lynnewood \u00b7 2.8 mi",
+      "start": {
+        "dateTime": "2026-11-09T05:30:00-05:00",
+        "timeZone": "America/New_York"
+      },
+      "end": {
+        "dateTime": "2026-11-09T06:15:00-05:00",
+        "timeZone": "America/New_York"
+      },
+      "location": "205 Charles Dr, Havertown, PA 19083",
+      "description": "Neighborhood: Lynnewood.\nStreet target: Charles Drive \u00b7 Finish the remaining section near David Drive.\nEstimated round trip: 2.8 miles = twice the walking approach to the gap address plus the unfinished target length. Connections and your return meander can add mileage.\n\nNavigate to the numbered address beside the main unfinished gap, cover the orange section(s), then meander home. Pin moved from 148 Charles Drive to 205 Charles Drive beside the approximately 72-metre gap near David Drive; the rest is already covered.\n\nInside 19083. Run only the orange unfinished sections; already-covered pavement may connect them. Navigate to the numbered gap address, then meander home.\n\nSection 1: 72 m \u00b7 https://maps.apple.com/?daddr=39.98706722222222,-75.32885636666666&dirflg=w \u2192 https://maps.apple.com/?daddr=39.9864282,-75.3289961&dirflg=w\n\nTap the numbered address: 205 Charles Dr, Havertown, PA 19083. Google walking distance from home: 1.37 miles; target traversal and return add mileage.\n\nNovember 6 running-only GPS audit: 85.0% covered; orange highlights only remaining gaps. Not official CityStrides credit. GPS proximity does not establish CityStrides credit.\n\nGap pin: https://maps.apple.com/?daddr=205%20Charles%20Dr%2C%20Havertown%2C%20PA%2019083&dirflg=w\nEndpoint A: https://maps.apple.com/?daddr=39.98706722222222,-75.32885636666666&dirflg=w\nEndpoint B: https://maps.apple.com/?daddr=39.9864282,-75.3289961&dirflg=w",
+      "extendedProperties": {
+        "private": {
+          "runningRoutesTarget": "db37ed7b9ff371da0c7f16af"
+        }
+      },
+      "reminders": {
+        "overrides": [
+          {
+            "method": "popup",
+            "minutes": 0
+          }
+        ],
+        "useDefault": false
+      }
+    },
+    {
+      "id": "run0513eb75453a2f6248ea0b458c5b7216",
+      "summary": "Pilgrim Gardens \u00b7 4.2 mi",
+      "start": {
+        "dateTime": "2026-11-10T05:30:00-05:00",
+        "timeZone": "America/New_York"
+      },
+      "end": {
+        "dateTime": "2026-11-10T06:15:00-05:00",
+        "timeZone": "America/New_York"
+      },
+      "location": "77 Rodmor Rd, Havertown, PA 19083",
+      "description": "Neighborhood: Pilgrim Gardens.\nStreet target: Rodmor Road \u00b7 Finish the unfinished street section.\nEstimated round trip: 4.2 miles = twice the walking approach to the gap address plus the unfinished target length. Connections and your return meander can add mileage.\n\nMoved from Friday November 6: today was a shorter Willowbrook run. Cover the remaining Rodmor section Tuesday before the outbound flight.\n\nInside 19083. Run only the orange unfinished sections; already-covered pavement may connect them. Navigate to the numbered gap address, then meander home.\n\nSection 1: 728 m \u00b7 https://maps.apple.com/?daddr=39.9590619,-75.3179276&dirflg=w \u2192 https://maps.apple.com/?daddr=39.9642757,-75.3186738&dirflg=w\n\nTap the numbered address: 77 Rodmor Rd, Havertown, PA 19083. Google walking distance from home: 1.90 miles; target traversal and return add mileage.\n\nNovember 6 running-only GPS audit: 0.0% covered; orange highlights only remaining gaps. Not official CityStrides credit. GPS proximity does not establish CityStrides credit.\n\nGap pin: https://maps.apple.com/?daddr=77%20Rodmor%20Rd%2C%20Havertown%2C%20PA%2019083&dirflg=w\nEndpoint A: https://maps.apple.com/?daddr=39.9590619,-75.3179276&dirflg=w\nEndpoint B: https://maps.apple.com/?daddr=39.9642757,-75.3186738&dirflg=w",
+      "extendedProperties": {
+        "private": {
+          "runningRoutesTarget": "68da8acdf79511fb66267df4"
+        }
+      },
+      "reminders": {
+        "overrides": [
+          {
+            "method": "popup",
+            "minutes": 0
+          }
+        ],
+        "useDefault": false
+      }
+    },
+    {
+      "id": "rune0895ec63c6b591ed8746f0557ff9cab",
+      "summary": "Lawrence Road \u00b7 2.9 mi",
+      "start": {
+        "dateTime": "2026-11-12T05:30:00-05:00",
+        "timeZone": "America/New_York"
+      },
+      "end": {
+        "dateTime": "2026-11-12T06:15:00-05:00",
+        "timeZone": "America/New_York"
+      },
+      "location": "1732 Marilyn Dr, Havertown, PA 19083",
+      "description": "Neighborhood: Lawrence Road.\nStreet target: Marilyn Drive \u00b7 Jacalyn Drive to Lawrence Road.\nEstimated round trip: 2.9 miles = twice the walking approach to the gap address plus the unfinished target length. Connections and your return meander can add mileage.\n\nThursday target reintroduced now that November 12 is inside the reviewed seven-calendar-day window. Numbered address and walking approach were verified November 5.\n\nInside 19083. Run only the orange unfinished sections; already-covered pavement may connect them. Navigate to the numbered gap address, then meander home.\n\nSection 1: 411 m \u00b7 https://maps.apple.com/?daddr=39.983221,-75.3275772&dirflg=w \u2192 https://maps.apple.com/?daddr=39.9812344,-75.3308135&dirflg=w\n\nTap the numbered address: 1732 Marilyn Dr, Havertown, PA 19083. Google walking distance from home: 1.34 miles; target traversal and return add mileage.\n\nNovember 6 running-only GPS audit: 0.0% covered; orange highlights only remaining gaps. Not official CityStrides credit. GPS proximity does not establish CityStrides credit.\n\nGap pin: https://maps.apple.com/?daddr=1732%20Marilyn%20Dr%2C%20Havertown%2C%20PA%2019083&dirflg=w\nEndpoint A: https://maps.apple.com/?q=Marilyn%20Drive%20%26%20Jacalyn%20Drive%2C%20Havertown%2C%20PA&daddr=39.983221,-75.3275772&dirflg=w\nEndpoint B: https://maps.apple.com/?q=Marilyn%20Drive%20%26%20Lawrence%20Road%2C%20Havertown%2C%20PA&daddr=39.9812344,-75.3308135&dirflg=w",
+      "extendedProperties": {
+        "private": {
+          "runningRoutesTarget": "964da7c8907b391607c71f9a"
+        }
+      },
+      "reminders": {
+        "overrides": [
+          {
+            "method": "popup",
+            "minutes": 0
+          }
+        ],
+        "useDefault": false
+      }
+    }
+  ]
+}
