@@ -46,12 +46,19 @@ shutil.copyfile(ROOT/'raw-data/geography/19083-streets.json',PUBLIC/'streets1908
 # Retire the previous town-border overlay; keep the 19083 boundary above.
 (PUBLIC/'local-reference-boundaries.geojson').unlink(missing_ok=True)
 walks=read('raw-data/walks/tracks.geojson');walk_summary=read('raw-data/walks/summary.json');write('walks.geojson',walks)
-targets=read('raw-data/plans/current-targets.json');write('targets.json',targets)
+targets=read('raw-data/plans/current-targets.json')
 plan=read('raw-data/route-research/current-plan.json')
 if plan.get('planning_horizon_days'):
     start=date.fromisoformat(plan['reviewed_on']);end=start+timedelta(days=plan['planning_horizon_days'])
     outside=[t['street'] for t in targets if not t.get('past') and not t.get('unscheduled') and not start<=date.fromisoformat(t['date'])<end]
     if outside:raise RuntimeError('Keep active runs inside one calendar-week window: '+', '.join(outside))
+# Explicit travel/race plans survive the local rolling-week filter without padding that week.
+special_path=ROOT/'raw-data/plans/special-events.json'
+special=read('raw-data/plans/special-events.json') if special_path.exists() else []
+if any(t.get('schedule_scope')!='special_event' or t.get('planning_mode')!='full_route' for t in special):
+    raise RuntimeError('Special plans must be explicit full-route events')
+targets=targets+special
+write('targets.json',targets)
 pending_targets=[t for t in targets if not t.get('past') and not t.get('unscheduled')]
 events=[]
 for f in runs['features']:

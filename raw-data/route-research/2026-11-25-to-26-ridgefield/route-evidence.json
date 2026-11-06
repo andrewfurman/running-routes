@@ -1,0 +1,44 @@
+{
+  "checkedOn": "2026-11-06",
+  "raceSource": "https://runsignup.com/Race/CT/Ridgefield/RidgefieldTurkeyTrot",
+  "courseMapSource": "https://d368g9lw5ileu7.cloudfront.net/races/race102066-customSectionAttachment633b30a73b7a87.92749733.pdf",
+  "raceStreetOsmWayIds": {
+    "East Ridge Street": [
+      10181548
+    ],
+    "Prospect Street": [
+      10186824,
+      289184191,
+      1028706258,
+      1028706259
+    ],
+    "Prospect Ridge": [
+      10166433,
+      74501181,
+      1332926267
+    ],
+    "Ivy Hill Road": [
+      10173570,
+      289885372,
+      660071211
+    ],
+    "Branchville Road": [
+      10173008,
+      660071212,
+      1423867897
+    ],
+    "Governor Street": [
+      10179474
+    ]
+  },
+  "racePreviewMeters": 5031.356561532071,
+  "officialRaceMeters": 5000,
+  "raceGeometryNote": "OSM road alignment traced from the published schematic; approximate painted start/finish positions. Google walking directions detour around race-only Branchville, so that detour was rejected.",
+  "easySourceActivity": "9291046316",
+  "sourceRecordedMeters": 4831,
+  "sourceGeometryMeters": 4834.473029347888,
+  "plannedGeometryMeters": 4828.032000000322,
+  "distanceMethod": "WGS84 geodesic segment lengths, interpolated final point at exactly 4828.032 m",
+  "distanceNotSentToGoogle": true,
+  "osmAttribution": "\u00a9 OpenStreetMap contributors, ODbL"
+}

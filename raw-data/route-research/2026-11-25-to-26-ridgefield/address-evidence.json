@@ -1,0 +1,20 @@
+{
+  "raceVenue": -73.50442,
+  "easyRunStart": {
+    "source": "OpenStreetMap public address inventory, downloaded by fixed town-area box; matched locally, no historical GPS sent",
+    "osmType": "node",
+    "osmId": 8875537520,
+    "tags": {
+      "addr:city": "Ridgefield",
+      "addr:housenumber": "215",
+      "addr:postcode": "06877",
+      "addr:state": "CT",
+      "addr:street": "High Ridge"
+    },
+    "coordinates": [
+      -73.5050427,
+      41.2846637
+    ],
+    "distanceToPriorStartMeters": 23.1
+  }
+}

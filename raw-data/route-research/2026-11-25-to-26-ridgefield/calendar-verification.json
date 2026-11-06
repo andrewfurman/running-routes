@@ -1,0 +1,34 @@
+{
+  "verifiedOn": "2026-11-06",
+  "existingRaceUpdatedInPlace": true,
+  "raceGuestsOrganizerRemindersPreserved": true,
+  "originalRegistrationDescriptionPreserved": true,
+  "events": [
+    {
+      "id": "run9e1f2c6f0b0932f9bbc7b37d4d729cc7",
+      "summary": "Ridgefield \u00b7 3.0 mi",
+      "start": {
+        "dateTime": "2026-11-25T05:30:00-05:00",
+        "timeZone": "America/New_York"
+      },
+      "end": {
+        "dateTime": "2026-11-25T06:15:00-05:00",
+        "timeZone": "America/New_York"
+      },
+      "location": "215 High Ridge Ave, Ridgefield, CT 06877"
+    },
+    {
+      "id": "t7cmtjhb22kfkpvrta1s2v5hic",
+      "summary": "\ud83e\udd83 Ridgefield Turkey Trot 5K",
+      "start": {
+        "dateTime": "2026-11-26T08:30:00-05:00",
+        "timeZone": "America/New_York"
+      },
+      "end": {
+        "dateTime": "2026-11-26T10:00:00-05:00",
+        "timeZone": "America/New_York"
+      },
+      "location": "41 Governor St, Ridgefield, CT 06877"
+    }
+  ]
+}

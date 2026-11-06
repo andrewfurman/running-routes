@@ -49,3 +49,13 @@ Use Google Workspace CLI and read back every Calendar mutation. Keep credentials
 This planner runs locally and needs the Mac on with the desktop app running; the existing Cloudflare Strava polling continues independently. Creating the schedule is not evidence that a scheduled planning run has already completed. See the [official scheduled-task guidance](https://learn.chatgpt.com/docs/automations).
 
 Explicit view/activity/city URLs restore that selection on reload and browser history navigation. Returning from background refreshes activity data while preserving the selected URL/view; clicking Runs explicitly returns to the Havertown overview. Walks never contribute to running coverage or planned-run completion.
+
+## Explicit travel and race dates
+
+Keep reviewed travel/race routes in `raw-data/plans/special-events.json`, separate from the rolling Havertown snapshot. These are the only exceptions to the seven-calendar-day limit. Both `schedule_scope: special_event` and `planning_mode: full_route` are required. Keep the full route highlighted even on familiar streets; GPS gap audits must not erase a training route or race course. Ordinary local streets still stop at today plus six days. Expired special dates disappear from upcoming paging.
+
+The build combines the two sources, and Next pages chronologically through the local week and then the dated special events. Show their full calendar dates and route-total mileage, rather than distance from the Havertown home. Preserve these reviewed dates during daily local planning; do not add intervening local runs to fill the calendar gap.
+
+Use `python3 "Tanstack Start App/scripts/calendar/sync_plan.py" --special-events` to preview those events, then `--special-events --apply` and `--special-events --verify`. An existing race's explicit `calendar_event_id` prevents duplicates. Preserve its registration details, attendees, organizer, and reminders; append the route instructions idempotently. Normal Calendar sync continues to handle only the local snapshot.
+
+For Ridgefield Thanksgiving 2026, November 25 is a familiar 3.0-mile training loop and November 26 is the registered 8:30 AM Turkey Trot. Route research and source limitations are in `raw-data/route-research/2026-11-25-to-26-ridgefield/`.

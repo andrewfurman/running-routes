@@ -35,12 +35,14 @@ def insert_or_restore(params, body):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--special-events', action='store_true', help='Sync explicitly reviewed travel/race routes instead of the Havertown week')
     parser.add_argument('--apply', action='store_true')
     parser.add_argument('--verify', action='store_true', help='Verify saved events without writing')
     parser.add_argument('--calendar', default=os.environ.get('GOOGLE_CALENDAR_ID', 'primary'))
     args = parser.parse_args()
     config = json.loads((ROOT / 'raw-data/route-research/current-plan.json').read_text())
-    targets = [t for t in json.loads((ROOT / 'raw-data/route-research' / config['snapshot'] / 'targets.json').read_text()) if not t.get('past') and not t.get('unscheduled')]
+    source = ROOT / 'raw-data/plans/special-events.json' if args.special_events else ROOT / 'raw-data/route-research' / config['snapshot'] / 'targets.json'
+    targets = [t for t in json.loads(source.read_text()) if not t.get('past') and not t.get('unscheduled')]
     if not targets: raise RuntimeError('No future targets to sync')
     zone = ZoneInfo('America/New_York')
     first = min(t['date'] for t in targets)
@@ -55,23 +57,36 @@ def main():
         events.extend(listing.get('items', []))
     operations = []
     for t in targets:
-        if not t.get('missing_coordinates'): raise RuntimeError('Audit unfinished target gaps before scheduling: ' + t['street'])
+        if t.get('planning_mode') != 'full_route' and not t.get('missing_coordinates'): raise RuntimeError('Audit unfinished target gaps before scheduling: ' + t['street'])
+        if t.get('planning_mode') == 'full_route' and len(t.get('target_coordinates', [])) < 2: raise RuntimeError('Complete route geometry required')
         if not re.match(r'^\d+', t['navigation_address']): raise RuntimeError('Numbered gap address required: ' + t['street'])
         stable = hashlib.sha256(t['street'].encode()).hexdigest()[:24]
         matches = [e for e in events if e.get('extendedProperties', {}).get('private', {}).get('runningRoutesTarget') == stable]
         if not matches:
             matches = [e for e in events if e.get('summary', '').startswith('🏃') and (' · ' + t['street'] + ' · ') in e['summary']]
+        if t.get('calendar_event_id'):
+            explicit = gws('get', {'calendarId': args.calendar, 'eventId': t['calendar_event_id']})
+            matches = [explicit]
         if len(matches) > 1: raise RuntimeError('Ambiguous event matches for ' + t['street'])
         old = matches[0] if matches else None
         a = datetime.fromisoformat(t['date'] + 'T' + t.get('start_time', '05:30')).replace(tzinfo=zone)
         b = datetime.fromisoformat(t['date'] + 'T' + t.get('end_time', '06:15')).replace(tzinfo=zone)
         if b <= a: raise ValueError('Invalid event duration')
-        round_trip = t.get('estimated_round_trip_miles', round(2 * t['walking_metres'] / 1609.344 + t.get('missing_miles', t['target_miles']), 1))
-        gap_details = '\n'.join(f"Section {i+1}: {section['length_metres']:.0f} m · {section['start_url']} → {section['end_url']}" for i, section in enumerate(t.get('unfinished_sections', [])))
-        body = {'summary': f"{t.get('neighborhood', t['street'])} · {round_trip:.1f} mi", 'location': t['navigation_address'],
-            'start': {'dateTime': a.isoformat(), 'timeZone': 'America/New_York'}, 'end': {'dateTime': b.isoformat(), 'timeZone': 'America/New_York'},
-            'description': f"Neighborhood: {t.get('neighborhood', 'Havertown')}.\nStreet target: {t['street']} · {t['target_label']}.\nEstimated round trip: {round_trip:.1f} miles = twice the walking approach to the gap address plus the unfinished target length. Connections and your return meander can add mileage.\n\n{t.get('outing_note', '')}\n\n{t.get('target_scope', '')}\n\n{gap_details}\n\nTap the numbered address: {t['navigation_address']}. Google walking distance from home: {t['walking_metres']/1609.344:.2f} miles; target traversal and return add mileage.\n\n{t['citystrides_status']} GPS proximity does not establish CityStrides credit.\n\nGap pin: {t['navigation_url']}\nEndpoint A: {t['first_waypoint']['apple_maps']}\nEndpoint B: {t['second_waypoint']['apple_maps']}",
-            'extendedProperties': {'private': dict((old or {}).get('extendedProperties', {}).get('private', {}), runningRoutesTarget=stable)}}
+        if t.get('planning_mode') == 'full_route':
+            marker = '\n\n--- Running Routes plan ---\n'
+            existing_description = (old or {}).get('description', '').split(marker)[0]
+            body = {'summary': t.get('calendar_title', f"{t.get('neighborhood', t['street'])} · {t['route_distance_miles']:.1f} mi"),
+                'location': t['navigation_address'], 'start': {'dateTime': a.isoformat(), 'timeZone': 'America/New_York'},
+                'end': {'dateTime': b.isoformat(), 'timeZone': 'America/New_York'},
+                'description': existing_description + marker + t['calendar_description'],
+                'extendedProperties': {'private': dict((old or {}).get('extendedProperties', {}).get('private', {}), runningRoutesTarget=stable)}}
+        else:
+            round_trip = t.get('estimated_round_trip_miles', round(2 * t['walking_metres'] / 1609.344 + t.get('missing_miles', t['target_miles']), 1))
+            gap_details = '\n'.join(f"Section {i+1}: {section['length_metres']:.0f} m · {section['start_url']} → {section['end_url']}" for i, section in enumerate(t.get('unfinished_sections', [])))
+            body = {'summary': f"{t.get('neighborhood', t['street'])} · {round_trip:.1f} mi", 'location': t['navigation_address'],
+                'start': {'dateTime': a.isoformat(), 'timeZone': 'America/New_York'}, 'end': {'dateTime': b.isoformat(), 'timeZone': 'America/New_York'},
+                'description': f"Neighborhood: {t.get('neighborhood', 'Havertown')}.\nStreet target: {t['street']} · {t['target_label']}.\nEstimated round trip: {round_trip:.1f} miles = twice the walking approach to the gap address plus the unfinished target length. Connections and your return meander can add mileage.\n\n{t.get('outing_note', '')}\n\n{t.get('target_scope', '')}\n\n{gap_details}\n\nTap the numbered address: {t['navigation_address']}. Google walking distance from home: {t['walking_metres']/1609.344:.2f} miles; target traversal and return add mileage.\n\n{t['citystrides_status']} GPS proximity does not establish CityStrides credit.\n\nGap pin: {t['navigation_url']}\nEndpoint A: {t['first_waypoint']['apple_maps']}\nEndpoint B: {t['second_waypoint']['apple_maps']}",
+                'extendedProperties': {'private': dict((old or {}).get('extendedProperties', {}).get('private', {}), runningRoutesTarget=stable)}}
         operations.append((t, old, body))
     touched = {old['id'] for _, old, _ in operations if old}
     for t, old, body in operations:
