@@ -1,0 +1,52 @@
+{
+  "method": "Running-only heading-aware GPS proximity; 20 m radius, 10 m sampling. Not official CityStrides credit.",
+  "activityId": "20880609276",
+  "gainedStreets": [
+    {
+      "name": "Willowbrook Road",
+      "previousPercent": 0,
+      "currentPercent": 100,
+      "newCoveredMeters": 288
+    }
+  ],
+  "targets": [
+    {
+      "street": "Gladstone Road",
+      "coveredPercent": 0,
+      "remainingMeters": 495
+    },
+    {
+      "street": "Rodmor Road",
+      "coveredPercent": 0,
+      "remainingMeters": 728
+    },
+    {
+      "street": "Nancy Drive",
+      "coveredPercent": 0,
+      "remainingMeters": 307
+    },
+    {
+      "street": "Charles Drive",
+      "coveredPercent": 85,
+      "remainingMeters": 72
+    },
+    {
+      "street": "Willowbrook Road",
+      "coveredPercent": 100,
+      "remainingMeters": 0
+    },
+    {
+      "street": "Marilyn Drive",
+      "coveredPercent": 0,
+      "remainingMeters": 411
+    }
+  ],
+  "before": {
+    "complete": 241,
+    "outstanding": 92
+  },
+  "after": {
+    "complete": 242,
+    "outstanding": 91
+  }
+}
