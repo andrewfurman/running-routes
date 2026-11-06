@@ -55,3 +55,24 @@ test('first Next from the overview selects tomorrow instead of skipping it or se
  assert.equal(firstFutureTargetIndex([{...target,date:'2026-11-08'}],'2026-11-06'),0)
  assert.equal(firstFutureTargetIndex([{...target,date:'2026-11-05'}],'2026-11-05'),-1)
 })
+
+test('explicit travel/race dates page after the local week without admitting ordinary next-week streets',()=>{
+ const local={...target,date:'2026-11-07'},outside={...target,date:'2026-11-20'}
+ const easy:Target={...target,street:'Ridgefield easy loop',date:'2026-11-25',schedule_scope:'special_event',planning_mode:'full_route',route_distance_miles:3}
+ const race:Target={...easy,street:'Turkey Trot',date:'2026-11-26'}
+ assert.deepEqual(upcomingTargets([race,outside,local,easy],'2026-11-06'),[local,easy,race])
+ assert.deepEqual(upcomingTargets([easy,race],'2026-11-26'),[race])
+ assert.deepEqual(upcomingTargets([easy,race],'2026-11-27'),[])
+ assert.deepEqual(upcomingTargets([{...outside,schedule_scope:'special_event'}],'2026-11-06'),[])
+})
+
+test('familiar full routes remain visible after GPS coverage audits, alone and mixed with street targets',()=>{
+ const full:Target={...target,schedule_scope:'special_event',planning_mode:'full_route'}
+ for(const candidates of [[full],[target,full]]){
+  const result=auditPlannedGaps(candidates,tracks([a,b]));const saved=result.find(t=>t.planning_mode==='full_route')!
+  assert.deepEqual(plannedLines(saved),[[a,b]])
+  assert.deepEqual(saved,full)
+  if(result.length>1)assert.deepEqual(plannedLines(result[0]),[])
+ }
+ assert.deepEqual(plannedLines({...full,past:true}),[])
+})
