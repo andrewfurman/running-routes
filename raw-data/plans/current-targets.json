@@ -470,230 +470,11 @@
     "end_time": "06:15",
     "outing_note": "Navigate to the numbered address beside the main unfinished gap, cover the orange section(s), then meander home.",
     "neighborhood": "Richland",
-    "estimated_round_trip_miles": 4.0,
+    "estimated_round_trip_miles": 4,
     "round_trip_estimate_method": "Twice the Google walking approach to the gap address plus the unfinished target length; actual meander and connections can add mileage.",
-    "missing_coordinates": [
-      [
-        [
-          -75.3104673,
-          39.9637641
-        ],
-        [
-          -75.31056617,
-          39.96371755
-        ],
-        [
-          -75.31066504,
-          39.963671
-        ],
-        [
-          -75.31076391,
-          39.96362445
-        ],
-        [
-          -75.31086278000001,
-          39.9635779
-        ],
-        [
-          -75.31096165,
-          39.96353135
-        ],
-        [
-          -75.31106052,
-          39.9634848
-        ],
-        [
-          -75.31115939,
-          39.96343825
-        ],
-        [
-          -75.31125826,
-          39.9633917
-        ],
-        [
-          -75.31135713,
-          39.96334515
-        ],
-        [
-          -75.311456,
-          39.9632986
-        ],
-        [
-          -75.31155385000001,
-          39.9632565
-        ],
-        [
-          -75.3116517,
-          39.9632144
-        ],
-        [
-          -75.31174955,
-          39.963172300000004
-        ],
-        [
-          -75.3118474,
-          39.9631302
-        ],
-        [
-          -75.31194525000001,
-          39.9630881
-        ],
-        [
-          -75.3120431,
-          39.963046
-        ],
-        [
-          -75.31214095,
-          39.9630039
-        ],
-        [
-          -75.3122388,
-          39.9629618
-        ],
-        [
-          -75.31233664999999,
-          39.9629197
-        ],
-        [
-          -75.3124345,
-          39.9628776
-        ],
-        [
-          -75.31253203636363,
-          39.96284410909091
-        ],
-        [
-          -75.31262957272727,
-          39.96281061818182
-        ],
-        [
-          -75.3127271090909,
-          39.96277712727272
-        ],
-        [
-          -75.31282464545454,
-          39.96274363636363
-        ],
-        [
-          -75.31292218181818,
-          39.962710145454544
-        ],
-        [
-          -75.31301971818182,
-          39.962676654545454
-        ],
-        [
-          -75.31311725454546,
-          39.962643163636365
-        ],
-        [
-          -75.3132147909091,
-          39.962609672727275
-        ],
-        [
-          -75.31331232727273,
-          39.96257618181818
-        ],
-        [
-          -75.31340986363637,
-          39.96254269090909
-        ],
-        [
-          -75.3135074,
-          39.9625092
-        ],
-        [
-          -75.31360544,
-          39.96246534
-        ],
-        [
-          -75.31370348,
-          39.962421479999996
-        ],
-        [
-          -75.31380152,
-          39.96237762
-        ],
-        [
-          -75.31389956,
-          39.96233376
-        ],
-        [
-          -75.3139976,
-          39.9622899
-        ],
-        [
-          -75.31409564,
-          39.96224604
-        ],
-        [
-          -75.31419368,
-          39.96220218
-        ],
-        [
-          -75.31429172,
-          39.96215832
-        ],
-        [
-          -75.31438976,
-          39.962114459999995
-        ],
-        [
-          -75.3144878,
-          39.9620706
-        ],
-        [
-          -75.31458099090909,
-          39.962024436363635
-        ],
-        [
-          -75.31467418181818,
-          39.96197827272727
-        ],
-        [
-          -75.31476737272727,
-          39.96193210909091
-        ],
-        [
-          -75.31486056363636,
-          39.96188594545455
-        ],
-        [
-          -75.31495375454546,
-          39.961839781818185
-        ],
-        [
-          -75.31504694545454,
-          39.961793618181815
-        ],
-        [
-          -75.31514013636364,
-          39.96174745454545
-        ],
-        [
-          -75.31523332727272,
-          39.96170129090909
-        ],
-        [
-          -75.31532651818182,
-          39.96165512727273
-        ],
-        [
-          -75.3154197090909,
-          39.961608963636365
-        ],
-        [
-          -75.3155129,
-          39.9615628
-        ]
-      ]
-    ],
-    "missing_miles": 0.3077603777523685,
-    "gap_coverage_pct": 0,
-    "primary_gap_midpoint": [
-      -75.31300440021283,
-      39.962681914252585
-    ],
+    "missing_coordinates": [],
+    "missing_miles": 0,
+    "gap_coverage_pct": 100,
     "reference_street_miles": 0.308,
     "planning_mode": "unfinished_sections",
     "unfinished_sections": [
@@ -710,7 +491,10 @@
         "start_url": "https://maps.apple.com/?daddr=39.9637641,-75.3104673&dirflg=w",
         "end_url": "https://maps.apple.com/?daddr=39.9615628,-75.3155129&dirflg=w"
       }
-    ]
+    ],
+    "past": true,
+    "completed_activity": "20893882623",
+    "recorded_run_miles": 4.399152698242265
   },
   {
     "date": "2026-11-05",
@@ -1940,7 +1724,7 @@
     "planning_mode": "unfinished_sections",
     "unfinished_sections": [
       {
-        "length_metres": 72.0,
+        "length_metres": 72,
         "start": [
           -75.32885636666666,
           39.98706722222222
@@ -2369,5 +2153,160 @@
       }
     ],
     "outing_note": "Thursday target reintroduced now that November 12 is inside the reviewed seven-calendar-day window. Numbered address and walking approach were verified November 5."
+  },
+  {
+    "street": "Wexford Road",
+    "date": "2026-11-13",
+    "neighborhood": "Brookline",
+    "target_coordinates": [
+      [
+        -75.2934602,
+        39.9795842
+      ],
+      [
+        -75.2939752,
+        39.9802747
+      ],
+      [
+        -75.294516,
+        39.9809916
+      ],
+      [
+        -75.295068,
+        39.98171
+      ],
+      [
+        -75.2955976,
+        39.9824281
+      ],
+      [
+        -75.2956489,
+        39.9824977
+      ],
+      [
+        -75.295718,
+        39.9825842
+      ],
+      [
+        -75.2962532,
+        39.9832881
+      ]
+    ],
+    "target_label": "Finish the unfinished street section",
+    "target_miles": 0.296,
+    "navigation_address": "1362 Wexford Rd, Havertown, PA 19083",
+    "navigation_url": "https://maps.apple.com/?daddr=1362%20Wexford%20Rd%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "missing_coordinates": [
+      [
+        [
+          -75.29582504,
+          39.98272498
+        ],
+        [
+          -75.29587855999999,
+          39.98279537
+        ],
+        [
+          -75.29593208,
+          39.98286576
+        ],
+        [
+          -75.2959856,
+          39.98293615
+        ],
+        [
+          -75.29603911999999,
+          39.98300654
+        ],
+        [
+          -75.29609264,
+          39.98307693
+        ],
+        [
+          -75.29614615999999,
+          39.98314732
+        ],
+        [
+          -75.29619968,
+          39.983217710000005
+        ],
+        [
+          -75.2962532,
+          39.9832881
+        ]
+      ]
+    ],
+    "missing_miles": 0.04502647467805429,
+    "gap_coverage_pct": 84.8,
+    "primary_gap_midpoint": [
+      -75.29603911999999,
+      39.983006540000005
+    ],
+    "display_date": "Fri Nov 13",
+    "start_time": "09:30",
+    "end_time": "10:15",
+    "time_label": "9:30\u201310:15 AM",
+    "navigation_coordinates": [
+      -75.29619679999999,
+      39.9829277
+    ],
+    "walking_metres": 1507,
+    "one_way_miles": 0.9,
+    "routing_source": "Google walking directions and address checked November 4, 2026",
+    "reference_street_miles": 0.296,
+    "target_midpoint": [
+      -75.29603911999999,
+      39.983006540000005
+    ],
+    "whole_street": false,
+    "planning_mode": "unfinished_sections",
+    "distance_limit_exception": false,
+    "target_scope": "Run the orange unfinished sections only. Use already-covered road as needed to reach or connect them; the full street is kept only as reference geometry.",
+    "citystrides_url": "https://citystrides.com/users/7315/map",
+    "citystrides_status": "November 7 running GPS audit: approximately 72 meters remain unfinished.",
+    "estimated_round_trip_miles": 1.9,
+    "round_trip_estimate_method": "Twice the Google walking approach to the gap address plus the unfinished target length; actual meander and connections can add mileage.",
+    "outing_note": "Navigate to the numbered address beside the main unfinished gap, cover the orange section(s), then meander home. Later 9:30 AM block after the 1:36 AM return-flight arrival. Targets the unfinished section on the southern connected Wexford segment; the separate northern section is already covered.",
+    "direction": "NE",
+    "bearing": 80,
+    "unfinished_sections": [
+      {
+        "length_metres": 72.5,
+        "start": [
+          -75.29582504,
+          39.98272498
+        ],
+        "end": [
+          -75.2962532,
+          39.9832881
+        ],
+        "start_url": "https://maps.apple.com/?daddr=39.98272498,-75.29582504&dirflg=w",
+        "end_url": "https://maps.apple.com/?daddr=39.9832881,-75.2962532&dirflg=w"
+      }
+    ],
+    "first_waypoint": {
+      "intersection": "Wexford Road \u00b7 main unfinished section start",
+      "coordinates": [
+        -75.29582504,
+        39.98272498
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.98272498,-75.29582504&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Wexford Road \u00b7 main unfinished section end",
+      "coordinates": [
+        -75.2962532,
+        39.9832881
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9832881,-75.2962532&dirflg=w"
+    },
+    "coverage_audit_running": {
+      "covered_20m_heading_pct": 84.8,
+      "as_of": "2026-11-04",
+      "running_track_count": 1879,
+      "sample_spacing_m": 10
+    },
+    "number": 5,
+    "past": false
   }
 ]

@@ -1,10 +1,10 @@
 {
-  "asOf": "2026-11-06",
+  "asOf": "2026-11-07",
   "timeZone": "America/New_York",
-  "recordCount": 1887,
-  "gpsRecordCount": 1881,
+  "recordCount": 1888,
+  "gpsRecordCount": 1882,
   "source": "Cloudflare D1 selected public run records",
-  "trackSourceSha256": "89ca56c04ebfa31fc3debcb13e70522c8e1de844ce568ce394a0879a15c166e7",
+  "trackSourceSha256": "39ce63f56d8ed859805a01518fcdc037d1b150f968cf4dac4762d624a98f7e84",
   "runs": [
     {
       "activityId": "523592505",
@@ -22649,7 +22649,19 @@
       "distanceSource": "strava_web",
       "hasGps": true,
       "geometryKey": "strava/tracks/20880609276.geojson"
+    },
+    {
+      "activityId": "20893882623",
+      "date": "2026-11-07T11:03:08.000Z",
+      "localDate": "2026-11-07",
+      "distanceMeters": 7079.75,
+      "movingSeconds": 2775,
+      "elapsedSeconds": 2858,
+      "sportType": "Run",
+      "distanceSource": "strava_web",
+      "hasGps": true,
+      "geometryKey": "strava/tracks/20893882623.geojson"
     }
   ],
-  "updatedAt": "2026-11-06T11:10:42.152Z"
+  "updatedAt": "2026-11-07T12:00:04.636Z"
 }
