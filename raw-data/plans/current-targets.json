@@ -2266,7 +2266,7 @@
     "citystrides_status": "November 7 running GPS audit: approximately 72 meters remain unfinished.",
     "estimated_round_trip_miles": 1.9,
     "round_trip_estimate_method": "Twice the Google walking approach to the gap address plus the unfinished target length; actual meander and connections can add mileage.",
-    "outing_note": "Navigate to the numbered address beside the main unfinished gap, cover the orange section(s), then meander home. Later 9:30 AM block after the 1:36 AM return-flight arrival. Targets the unfinished section on the southern connected Wexford segment; the separate northern section is already covered.",
+    "outing_note": "Navigate to the numbered address beside the unfinished gap on the southern connected Wexford section, cover the orange segment, then meander home.",
     "direction": "NE",
     "bearing": 80,
     "unfinished_sections": [
