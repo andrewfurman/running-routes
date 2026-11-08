@@ -2308,5 +2308,167 @@
     },
     "number": 5,
     "past": false
+  },
+  {
+    "street": "Rose Tree Lane",
+    "target_label": "Glen Ridge Road to Windsor Park Lane",
+    "target_coordinates": [
+      [
+        -75.3314117,
+        39.9740208
+      ],
+      [
+        -75.3319867,
+        39.9752179
+      ]
+    ],
+    "target_miles": 0.088,
+    "target_midpoint": [
+      -75.33169919747641,
+      39.974619350397724
+    ],
+    "navigation_address": "1837 Rose Tree Ln, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.33147679999999,
+      39.9746612
+    ],
+    "citystrides_url": "https://citystrides.com/users/7315/map",
+    "coverage_audit_running": {
+      "street": "Rose Tree Lane",
+      "cross_a": "Glen Ridge Road",
+      "cross_b": "Windsor Park Lane",
+      "coordinates": [
+        [
+          -75.3314117,
+          39.9740208
+        ],
+        [
+          -75.3319867,
+          39.9752179
+        ]
+      ],
+      "home_straight_m": 1987,
+      "midpoint": [
+        -75.33169919747641,
+        39.974619350397724
+      ],
+      "length_m": 141.6,
+      "covered_15m_pct": 0,
+      "covered_25m_pct": 0,
+      "max_gap_m": 150.8,
+      "core_min_distance_m": 92.4
+    },
+    "first_waypoint": {
+      "intersection": "Rose Tree Lane & Glen Ridge Road, Havertown, PA",
+      "coordinates": [
+        -75.3314117,
+        39.9740208
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9740208,-75.3314117&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Rose Tree Lane & Windsor Park Lane, Havertown, PA",
+      "coordinates": [
+        -75.3319867,
+        39.9752179
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9752179,-75.3319867&dirflg=w"
+    },
+    "date": "2026-11-14",
+    "number": 6,
+    "one_way_miles": 1.7,
+    "navigation_url": "https://maps.apple.com/?daddr=1837%20Rose%20Tree%20Ln%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "routing_source": "Google Directions walking checked 2026-10-26",
+    "walking_metres": 2733,
+    "citystrides_status": "November 8 running GPS audit: the reviewed 142-meter section remains unfinished.",
+    "time_label": "5:30\u20136:15 AM",
+    "missing_coordinates": [
+      [
+        [
+          -75.3314117,
+          39.9740208
+        ],
+        [
+          -75.33145003333334,
+          39.97410060666667
+        ],
+        [
+          -75.33148836666668,
+          39.97418041333333
+        ],
+        [
+          -75.3315267,
+          39.97426022
+        ],
+        [
+          -75.33156503333333,
+          39.97434002666667
+        ],
+        [
+          -75.33160336666667,
+          39.97441983333333
+        ],
+        [
+          -75.3316417,
+          39.97449964
+        ],
+        [
+          -75.33168003333334,
+          39.97457944666667
+        ],
+        [
+          -75.33171836666666,
+          39.97465925333333
+        ],
+        [
+          -75.3317567,
+          39.97473906
+        ],
+        [
+          -75.33179503333334,
+          39.974818866666666
+        ],
+        [
+          -75.33183336666667,
+          39.97489867333333
+        ],
+        [
+          -75.33187170000001,
+          39.97497848
+        ],
+        [
+          -75.33191003333333,
+          39.975058286666666
+        ],
+        [
+          -75.33194836666667,
+          39.97513809333333
+        ],
+        [
+          -75.3319867,
+          39.9752179
+        ]
+      ]
+    ],
+    "missing_miles": 0.0881331127247993,
+    "gap_coverage_pct": 0,
+    "primary_gap_midpoint": [
+      -75.3316992,
+      39.97461935
+    ],
+    "display_date": "Sat Nov 14",
+    "neighborhood": "Westgate Hills",
+    "start_time": "05:30",
+    "end_time": "06:15",
+    "planning_mode": "unfinished_sections",
+    "estimated_round_trip_miles": 3.5,
+    "target_scope": "Run the unfinished section between Glen Ridge Road and Windsor Park Lane inside 19083.",
+    "unfinished_sections": [
+      {
+        "length_metres": 141.83649616497942,
+        "start_url": "https://maps.apple.com/?daddr=39.9740208,-75.3314117&dirflg=w",
+        "end_url": "https://maps.apple.com/?daddr=39.9752179,-75.3319867&dirflg=w"
+      }
+    ]
   }
 ]

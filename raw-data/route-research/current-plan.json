@@ -1,19 +1,19 @@
 {
-  "snapshot": "2026-11-07-gladstone-wexford",
-  "as_of_label": "November 7",
+  "snapshot": "2026-11-08-rose-tree",
+  "as_of_label": "November 8",
   "focus_start": "2026-11-08",
-  "focus_end": "2026-11-13",
+  "focus_end": "2026-11-14",
   "heading": "Havertown \u00b7 One calendar week ahead",
-  "focus_label": "Nov 7\u201313 \u00b7 Wednesday off",
+  "focus_label": "Nov 8\u201314 \u00b7 Wednesday off",
   "history_heading": "Havertown \u00b7 Plan and history \u00b7 October 17\u2013November 3",
   "track_count": 1882,
-  "summary": "November 7 run completed Gladstone Road. Keep the reviewed Sunday through Thursday targets and add Wexford Road Friday. Wednesday November 11 stays off.",
+  "summary": "Keep the reviewed November 8\u201313 plan and add Rose Tree Lane for Saturday November 14. November 11 stays off.",
   "planning_priorities": [
     "Finish unfinished streets inside Census ZCTA 19083, including only the in-boundary portions of public streets that follow it, before expanding elsewhere.",
     "Mix neighborhoods within 19083; include Westgate Hills without clustering every day there.",
     "Keep full street reference geometry for auditing, but highlight only unfinished gaps; use a numbered address near the midpoint of the main gap.",
     "Prefer one-way walking approaches under 2 miles unless explicitly approved."
   ],
-  "reviewed_on": "2026-11-07",
+  "reviewed_on": "2026-11-08",
   "planning_horizon_days": 7
 }
