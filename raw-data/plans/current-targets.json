@@ -1251,7 +1251,7 @@
     },
     "citystrides_url": "https://citystrides.com/streets/3296377",
     "citystrides_status": "November 6 running-only GPS audit: 0.0% covered; orange highlights only remaining gaps. Not official CityStrides credit.",
-    "number": 2,
+    "number": 1,
     "one_way_miles": 1.33781217688698,
     "navigation_address": "1732 Marilyn Dr, Havertown, PA 19083",
     "navigation_coordinates": [
@@ -1489,6 +1489,120 @@
       }
     ],
     "outing_note": "Thursday target reintroduced now that November 12 is inside the reviewed seven-calendar-day window. Numbered address and walking approach were verified November 5."
+  },
+  {
+    "street": "North Brierwood Road",
+    "date": "2026-11-11",
+    "display_date": "Wed Nov 11",
+    "neighborhood": "Havertown",
+    "planning_mode": "unfinished_sections",
+    "start_time": "06:45",
+    "end_time": "07:30",
+    "time_label": "6:45\u20137:30 AM",
+    "target_label": "Finish the orange street section",
+    "target_coordinates": [
+      [
+        -75.3245414,
+        39.9781568
+      ],
+      [
+        -75.3247539,
+        39.9784546
+      ],
+      [
+        -75.325234,
+        39.9791105
+      ],
+      [
+        -75.3256948,
+        39.9797663
+      ]
+    ],
+    "target_midpoint": [
+      -75.32548999999999,
+      39.979474833333335
+    ],
+    "target_miles": 0.12686419587911993,
+    "missing_coordinates": [
+      [
+        [
+          -75.3252852,
+          39.97918336666667
+        ],
+        [
+          -75.3253364,
+          39.97925623333333
+        ],
+        [
+          -75.3253876,
+          39.9793291
+        ],
+        [
+          -75.3254388,
+          39.979401966666664
+        ],
+        [
+          -75.32548999999999,
+          39.979474833333335
+        ],
+        [
+          -75.32554119999999,
+          39.9795477
+        ],
+        [
+          -75.32559239999999,
+          39.97962056666667
+        ],
+        [
+          -75.32564359999999,
+          39.97969343333333
+        ],
+        [
+          -75.3256948,
+          39.9797663
+        ]
+      ]
+    ],
+    "missing_miles": 0.04574085528650019,
+    "gap_coverage_pct": 63.9,
+    "primary_gap_midpoint": [
+      -75.32548999999999,
+      39.979474833333335
+    ],
+    "navigation_address": "458 N Brierwood Rd, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.32566299999999,
+      39.9793867
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=458%20N%20Brierwood%20Rd%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "walking_metres": 2034,
+    "one_way_miles": 1.2638690050107373,
+    "estimated_round_trip_miles": 2.6,
+    "routing_source": "Google walking directions verified November 8, 2026",
+    "citystrides_status": "November 9 running GPS audit identified the remaining orange section.",
+    "target_scope": "Run the remaining orange section inside 19083.",
+    "unfinished_sections": [
+      {
+        "length_metres": 73.61271046848105,
+        "start_url": "https://maps.apple.com/?daddr=39.97918336666667,-75.3252852&dirflg=w",
+        "end_url": "https://maps.apple.com/?daddr=39.9797663,-75.3256948&dirflg=w"
+      }
+    ],
+    "first_waypoint": {
+      "coordinates": [
+        -75.3245414,
+        39.9781568
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9781568,-75.3245414&dirflg=w"
+    },
+    "second_waypoint": {
+      "coordinates": [
+        -75.3256948,
+        39.9797663
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9797663,-75.3256948&dirflg=w"
+    },
+    "number": 2
   },
   {
     "date": "2026-11-12",
@@ -1922,5 +2036,199 @@
       ],
       "apple_maps": "https://maps.apple.com/?daddr=39.9928985,-75.298947&dirflg=w"
     }
+  },
+  {
+    "street": "Howell Lane",
+    "date": "2026-11-16",
+    "display_date": "Mon Nov 16",
+    "neighborhood": "Lawrence Road",
+    "planning_mode": "unfinished_sections",
+    "start_time": "05:30",
+    "end_time": "06:15",
+    "time_label": "5:30\u20136:15 AM",
+    "target_label": "Finish the orange street section",
+    "target_coordinates": [
+      [
+        -75.3276218,
+        39.9797581
+      ],
+      [
+        -75.3276891,
+        39.9797899
+      ],
+      [
+        -75.3277374,
+        39.9798084
+      ],
+      [
+        -75.3278125,
+        39.9798356
+      ],
+      [
+        -75.3294359,
+        39.9804627
+      ],
+      [
+        -75.3295832,
+        39.980535
+      ],
+      [
+        -75.3296865,
+        39.9806271
+      ],
+      [
+        -75.3298347,
+        39.9808977
+      ]
+    ],
+    "target_midpoint": [
+      -75.32894409313982,
+      39.980272720893176
+    ],
+    "target_miles": 0.14559520975683737,
+    "missing_coordinates": [
+      [
+        [
+          -75.3278125,
+          39.9798356
+        ],
+        [
+          -75.32791396249999,
+          39.97987479375
+        ],
+        [
+          -75.32801542499999,
+          39.9799139875
+        ],
+        [
+          -75.32811688749999,
+          39.97995318125
+        ],
+        [
+          -75.32821834999999,
+          39.979992375
+        ],
+        [
+          -75.3283198125,
+          39.98003156875
+        ],
+        [
+          -75.328421275,
+          39.9800707625
+        ],
+        [
+          -75.3285227375,
+          39.98010995625
+        ],
+        [
+          -75.3286242,
+          39.98014915
+        ],
+        [
+          -75.32872566249999,
+          39.98018834375
+        ],
+        [
+          -75.32882712499999,
+          39.9802275375
+        ],
+        [
+          -75.32892858749999,
+          39.98026673125
+        ],
+        [
+          -75.32903005,
+          39.980305924999996
+        ],
+        [
+          -75.3291315125,
+          39.980345118749995
+        ],
+        [
+          -75.329232975,
+          39.9803843125
+        ],
+        [
+          -75.3293344375,
+          39.98042350625
+        ],
+        [
+          -75.3294359,
+          39.9804627
+        ],
+        [
+          -75.32950955,
+          39.980498850000004
+        ],
+        [
+          -75.3295832,
+          39.980535
+        ],
+        [
+          -75.32963484999999,
+          39.98058105
+        ],
+        [
+          -75.3296865,
+          39.9806271
+        ],
+        [
+          -75.32972355,
+          39.98069475
+        ],
+        [
+          -75.3297606,
+          39.9807624
+        ],
+        [
+          -75.32979765,
+          39.98083005
+        ],
+        [
+          -75.3298347,
+          39.9808977
+        ]
+      ]
+    ],
+    "missing_miles": 0.13415532938793265,
+    "gap_coverage_pct": 7.9,
+    "primary_gap_midpoint": [
+      -75.32894409261256,
+      39.980272720689506
+    ],
+    "navigation_address": "508 Howell Ln, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.3290449,
+      39.9800865
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=508%20Howell%20Ln%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "walking_metres": 2177,
+    "one_way_miles": 1.352725085500676,
+    "estimated_round_trip_miles": 2.8,
+    "routing_source": "Google walking directions verified November 8, 2026",
+    "citystrides_status": "November 9 running GPS audit identified the remaining orange section.",
+    "target_scope": "Run the remaining orange section inside 19083.",
+    "unfinished_sections": [
+      {
+        "length_metres": 215.90154482690895,
+        "start_url": "https://maps.apple.com/?daddr=39.9798356,-75.3278125&dirflg=w",
+        "end_url": "https://maps.apple.com/?daddr=39.9808977,-75.3298347&dirflg=w"
+      }
+    ],
+    "first_waypoint": {
+      "coordinates": [
+        -75.3276218,
+        39.9797581
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9797581,-75.3276218&dirflg=w"
+    },
+    "second_waypoint": {
+      "coordinates": [
+        -75.3298347,
+        39.9808977
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9808977,-75.3298347&dirflg=w"
+    },
+    "number": 6
   }
 ]
