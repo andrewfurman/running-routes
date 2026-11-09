@@ -8,7 +8,7 @@ const xml='<gpx><trk><trkseg><trkpt lat="40" lon="-75"/><trkpt lon="-75.1" lat="
 const activity={id:123,sport_type:'Run',start_time:'2026-10-30T09:22:23+0000',distance_raw:6035.69,moving_time_raw:2467,elapsed_time_raw:2485,has_latlng:true,description:'private note',average_heartrate:160}
 function fixture(){const objects=new Map<string,string>();const data=new Map<string,unknown>();const storage={get:async<T>(k:string)=>data.get(k) as T|undefined,put:async<T>(k:string,v:T)=>{data.set(k,v)}};const env:SyncEnv={STRAVA_WEB_COOKIE:'test-session',STRAVA_ATHLETE_ID:'7',STRAVA_SYNC:{idFromName:x=>x,get:()=>({fetch:async()=>Response.json({})})},TIMELAPSE_MEDIA:{get:async k=>objects.has(k)?{json:async<T>()=>JSON.parse(objects.get(k)!) as T}:null,put:async(k,v)=>{objects.set(k,v)}}};return {objects,storage,env}}
 test('GPX preserves disconnected segments and excludes sensor values',()=>{const g=parseGpx(xml);assert.equal(g?.type,'MultiLineString');assert.equal(g?.coordinates.length,2);assert.throws(()=>parseGpx('<gpx><trkpt lat="999" lon="1"/></gpx>'),/invalid_coordinates/);assert.throws(()=>parseGpx('<html>login</html>'),/invalid_gpx/)})
-test('website normalization uses numeric meters, imports bikes and excludes notes',()=>{const run=normalizeWebRun(activity)!;assert.equal(run.distanceMeters,6035.69);assert.equal(run.date,'2026-10-30T09:22:23.000Z');assert.equal('description' in run,false);assert.equal('average_heartrate' in run,false);assert.equal(normalizeWebRun({...activity,sport_type:'Ride'})?.sportType,'Ride');assert.equal(normalizeWebRun({...activity,sport_type:'Walk'})?.sportType,'Walk');assert.equal(normalizeWebRun({...activity,sport_type:'Hike'}),null)})
+test('website normalization uses numeric meters, imports bikes and excludes notes',()=>{const run=normalizeWebRun(activity)!;assert.equal(run.distanceMeters,6035.69);assert.equal(run.date,'2026-10-30T09:22:23.000Z');assert.equal('description' in run,false);assert.equal('average_heartrate' in run,false);assert.equal(normalizeWebRun({...activity,sport_type:'Ride'})?.sportType,'Ride');assert.equal(normalizeWebRun({...activity,sport_type:'Walk'})?.sportType,'Walk');assert.equal(normalizeWebRun({...activity,sport_type:'Hike'})?.sportType,'Hike')})
 test('browser session uses only Strava, manual redirects, pagination and original GPX',async()=>{const f=fixture();let pages=0;const runs=await fetchWebRuns(f.env,Date.parse('2026-10-29'),async(input,init)=>{const u=new URL(String(input));assert.equal(u.origin,'https://www.strava.com');assert.equal(init?.redirect,'manual');assert.equal((init?.headers as any).Cookie,'test-session');if(u.pathname==='/athlete/training'){assert.equal('X-Requested-With' in (init?.headers as any),false);return new Response('athlete_id: 7,')};if(u.pathname.endsWith('/export_gpx'))return new Response(xml);pages++;return Response.json({models:pages===1?[activity]:[],page:pages,perPage:1,total:2})});assert.equal(pages,2);assert.equal(runs.length,1);assert.equal(runs[0].geometry?.type,'MultiLineString');assert.ok(f.objects.has('strava/tracks/123.geojson'))})
 test('expired browser session does not follow login or advance success checkpoint',async()=>{const f=fixture();const before={state:'synced',schedule:'08:00 America/New_York',lastSuccessAt:'2026-10-29T12:00:00Z'};await f.storage.put('status',before);const state=await new StravaSync({storage:f.storage},f.env).run(Date.parse('2026-10-30T12:00Z'),true,async()=>new Response(null,{status:302,headers:{Location:'https://example.com/login'}}));assert.equal(state.state,'needs_browser_login');assert.equal(state.lastSuccessAt,before.lastSuccessAt);assert.equal(f.objects.size,0);assert.equal(JSON.stringify(state).includes('test-session'),false)})
 test('wrong website athlete fails before publishing GPS',async()=>{const f=fixture();const state=await new StravaSync({storage:f.storage},f.env).run(Date.now(),true,async()=>new Response('athlete_id: 999,'));assert.equal(state.errorCode,'athlete_mismatch');assert.equal(f.objects.size,0)})
@@ -22,4 +22,19 @@ test('cached ride GPS remains present on later polls without exporting again',as
 test('the existing browser poll also imports new walks with independent sport and GPS',async()=>{
  const f=fixture();const records=await fetchWebRuns(f.env,Date.parse('2026-10-01'),async input=>{const u=new URL(String(input));if(u.pathname==='/athlete/training')return new Response('athlete_id: 7,');if(u.pathname.endsWith('/export_gpx'))return new Response(xml);return Response.json({models:[activity,{...activity,id:126,sport_type:'Walk'}],perPage:3,total:2})})
  assert.deepEqual(records.map(r=>r.sportType),['Run','Walk']);assert.ok(f.objects.has('strava/tracks/126.geojson'));assert.equal(records[1].activityId,'126')
+})
+
+test('archived hikes survive live sync and share IDs with newer metadata',async()=>{
+ const f=fixture()
+ const archived={...normalizeWebRun({...activity,sport_type:'Hike'})!,distanceSource:'strava_export',geometry:parseGpx(xml)}
+ f.objects.set('strava/archive-hikes.json',JSON.stringify([archived,{...archived,activityId:'456'}]))
+ f.env.RUNS_DB={prepare:()=>({
+  bind(){return this},run:async()=>({}),
+  all:async<T>()=>({results:[{activity_id:'123',start_date:archived.date,distance_meters:6000,sport_type:'Hike',distance_source:'strava_web',has_gps:1}] as T[]}),
+ }),batch:async()=>({})}
+ const {runs}=await readRuns(f.env)
+ assert.equal(runs.length,2)
+ assert.equal(runs[0].distanceMeters,6000)
+ assert.deepEqual(runs[0].geometry,archived.geometry)
+ assert.equal(runs[1].activityId,'456')
 })

@@ -1,3 +1,4 @@
+import {WALK_SPORTS} from '../sync/sports.ts'
 import type {FeatureCollection} from './types'
 const runTypes=new Set(['Run','TrailRun','Trail Run','VirtualRun','Virtual Run'])
 export function latestRunId(tracks?:FeatureCollection){
@@ -43,4 +44,4 @@ export function activityCaptionLines(properties:Record<string,any>){
  return {stats,time}
 }
 
-export function latestWalkId(tracks?:FeatureCollection){return [...(tracks?.features||[])].filter(f=>['Walk','VirtualWalk','Virtual Walk'].includes(f.properties.activity_type)).sort((a,b)=>activityTimestamp(b.properties)-activityTimestamp(a.properties))[0]?.properties.activity_id?.toString()}
+export function latestWalkId(tracks?:FeatureCollection){return [...(tracks?.features||[])].filter(f=>WALK_SPORTS.includes(String(f.properties.activity_type).replace(/ /g,''))).sort((a,b)=>activityTimestamp(b.properties)-activityTimestamp(a.properties))[0]?.properties.activity_id?.toString()}
