@@ -5,8 +5,29 @@ export async function saveRuns(env:SyncEnv,runs:SyncedRun[],updatedAt:string){
  for(let i=0;i<statements.length;i+=100)await env.RUNS_DB.batch(statements.slice(i,i+100))
 }
 export async function readRuns(env:SyncEnv):Promise<{updatedAt:string|null;runs:SyncedRun[]}>{
- const obj=await env.TIMELAPSE_MEDIA.get('strava/latest-runs.json');const live=obj?await obj.json<{updatedAt:string;runs:SyncedRun[]}>():{updatedAt:null,runs:[]}
- if(!env.RUNS_DB)return live
- const rows=await env.RUNS_DB.prepare('SELECT * FROM runs ORDER BY start_date,activity_id').all<any>();const geometry=new Map(live.runs.map(r=>[r.activityId,r.geometry]));
- return {updatedAt:live.updatedAt,runs:rows.results.map(r=>({activityId:r.activity_id,date:r.start_date,distanceMeters:r.distance_meters,movingSeconds:r.moving_seconds,elapsedSeconds:r.elapsed_seconds,sportType:r.sport_type,distanceSource:r.distance_source,hasGps:Boolean(r.has_gps),geometryKey:r.geometry_key,geometry:geometry.get(r.activity_id)||null}))}
+ const [liveObject,hikeObject]=await Promise.all([
+  env.TIMELAPSE_MEDIA.get('strava/latest-runs.json'),
+  env.TIMELAPSE_MEDIA.get('strava/archive-hikes.json'),
+ ])
+ const live=liveObject?await liveObject.json<{updatedAt:string;runs:SyncedRun[]}>():{updatedAt:null,runs:[]}
+ const archived=hikeObject?await hikeObject.json<SyncedRun[]>():[]
+ const byId=new Map(archived.map(hike=>[hike.activityId,hike]))
+ const liveGeometry=new Map(live.runs.map(activity=>[activity.activityId,activity.geometry]))
+ if(env.RUNS_DB){
+  const rows=await env.RUNS_DB.prepare('SELECT * FROM runs ORDER BY start_date,activity_id').all<any>()
+  for(const row of rows.results){
+   byId.set(row.activity_id,{
+    activityId:row.activity_id,date:row.start_date,distanceMeters:row.distance_meters,
+    movingSeconds:row.moving_seconds,elapsedSeconds:row.elapsed_seconds,sportType:row.sport_type,
+    distanceSource:row.distance_source,hasGps:Boolean(row.has_gps),geometryKey:row.geometry_key,
+    geometry:liveGeometry.get(row.activity_id)??byId.get(row.activity_id)?.geometry??null,
+   })
+  }
+ }else{
+  for(const activity of live.runs){
+   byId.set(activity.activityId,{...activity,geometry:activity.geometry??byId.get(activity.activityId)?.geometry??null})
+  }
+ }
+ const runs=[...byId.values()].sort((a,b)=>a.date.localeCompare(b.date)||a.activityId.localeCompare(b.activityId))
+ return {updatedAt:live.updatedAt,runs}
 }

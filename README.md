@@ -250,6 +250,6 @@ Wednesday November 11 is unscheduled. Wexford is retained as an optional map tar
 
 ## Walks and shareable views
 
-The Walks tab and City Stats walking column use [selected Strava walking history](raw-data/walks/README.md), separate from running coverage. The existing daily Strava polls now import runs, rides and walks. The account archive remains private; only walking IDs, dates, recorded distance/time and sanitized GPS are published.
+The Walks tab and Cities walking column combine Strava walks and hikes. Older hikes are imported into the existing Cloudflare media bucket from the private export and merged by activity ID with newer synced records. Walks use [selected Strava walking history](raw-data/walks/README.md), separate from running coverage. The existing daily Strava polls now import runs, rides, walks and hikes. The account archive remains private; only walking IDs, dates, recorded distance/time and sanitized GPS are published.
 
 Tabs, planned streets, recorded activities and city maps have [shareable query URLs](docs/view-urls.md), restored on reload and Back/Forward. Existing `sport=bikes&activity=<ID>` links remain supported; runs and walks use the same sport/activity pattern.

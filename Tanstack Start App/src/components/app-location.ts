@@ -1,3 +1,4 @@
+import {cityLabel} from './city-labels.ts'
 import type {Sport,Target} from './types'
 import {requestedRun} from './activity-summary.ts'
 export type AppView='map'|'timelapses'|'cities'|'coverage'
@@ -8,7 +9,7 @@ export function readAppLocation(search:string):AppLocation{
  const s=q.get('sport'),sport:Sport=view==='coverage'?'runs':s==='bikes'||s==='walks'?s:'runs'
  if(view!=='map')return {view,sport}
  const city=q.get('city')?.slice(0,160)||undefined,target=q.get('target')?.slice(0,200)||undefined,activity=requestedRun(search)||undefined
- if(city)return {view,sport,city}
+ if(city)return {view,sport,city:cityLabel(city)}
  if(target&&/^\d{4}-\d{2}-\d{2}-[a-z0-9-]+$/.test(target))return {view,sport:'runs',target}
  return {view,sport,...(activity?{activity,inferSport:!s&&activity!=='latest'}:{})}
 }

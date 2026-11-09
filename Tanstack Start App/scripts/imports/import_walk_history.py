@@ -14,12 +14,12 @@ def number(value):
  result=float(value)
  if not math.isfinite(result) or result<0:raise ValueError('Invalid recorded numeric field')
  return result
-def import_walks(archive,output):
+def import_walks(archive,output,activity_types=WALK_TYPES):
  records=[];features=[];provenance=[]
  with ZipFile(archive) as zipped:
   rows=list(csv.reader(io.StringIO(zipped.read('activities.csv').decode('utf-8-sig'))));columns={name:i for i,name in enumerate(rows.pop(0))};seen=set()
   for row in rows:
-   if row[columns['Activity Type']] not in WALK_TYPES:continue
+   if row[columns['Activity Type']] not in activity_types:continue
    aid=row[columns['Activity ID']]
    if not aid.isdigit() or aid in seen:raise ValueError('Invalid or duplicate walk ID')
    seen.add(aid);kind=row[columns['Activity Type']];stamp=datetime.strptime(row[columns['Activity Date']],'%b %d, %Y, %I:%M:%S %p').replace(tzinfo=timezone.utc).isoformat().replace('+00:00','Z')
