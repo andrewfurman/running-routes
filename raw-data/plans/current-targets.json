@@ -1156,69 +1156,19 @@
     "bearing": 307,
     "estimated_round_trip_miles": 2.8,
     "round_trip_estimate_method": "Twice the Google walking approach to the gap address plus the unfinished target length; actual meander and connections can add mileage.",
-    "missing_coordinates": [
-      [
-        [
-          -75.32885636666666,
-          39.98706722222222
-        ],
-        [
-          -75.32887383333333,
-          39.986987344444444
-        ],
-        [
-          -75.3288913,
-          39.986907466666665
-        ],
-        [
-          -75.32890876666666,
-          39.986827588888886
-        ],
-        [
-          -75.32892623333333,
-          39.986747711111114
-        ],
-        [
-          -75.3289437,
-          39.986667833333335
-        ],
-        [
-          -75.32896116666666,
-          39.98658795555556
-        ],
-        [
-          -75.32897863333334,
-          39.98650807777778
-        ],
-        [
-          -75.3289961,
-          39.9864282
-        ]
-      ]
-    ],
-    "missing_miles": 0.04476735210381978,
-    "gap_coverage_pct": 85,
+    "missing_coordinates": [],
+    "missing_miles": 0,
+    "gap_coverage_pct": 100,
     "primary_gap_midpoint": [
       -75.32892623333333,
       39.986747711111114
     ],
     "reference_street_miles": 0.299,
     "planning_mode": "unfinished_sections",
-    "unfinished_sections": [
-      {
-        "length_metres": 72,
-        "start": [
-          -75.32885636666666,
-          39.98706722222222
-        ],
-        "end": [
-          -75.3289961,
-          39.9864282
-        ],
-        "start_url": "https://maps.apple.com/?daddr=39.98706722222222,-75.32885636666666&dirflg=w",
-        "end_url": "https://maps.apple.com/?daddr=39.9864282,-75.3289961&dirflg=w"
-      }
-    ]
+    "unfinished_sections": [],
+    "past": true,
+    "completed_activity": "20918318052",
+    "recorded_run_miles": 2.8100269426548956
   },
   {
     "date": "2026-11-10",
