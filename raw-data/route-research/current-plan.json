@@ -1,19 +1,19 @@
 {
-  "snapshot": "2026-11-10-marilyn-completed",
+  "snapshot": "2026-11-10-next-seven-days",
   "as_of_label": "November 10",
   "focus_start": "2026-11-11",
-  "focus_end": "2026-11-16",
+  "focus_end": "2026-11-17",
   "heading": "Havertown \u00b7 One calendar week ahead",
-  "focus_label": "Nov 10\u201316 \u00b7 Runs scheduled",
+  "focus_label": "Nov 11\u201317 \u00b7 Runs scheduled",
   "history_heading": "Havertown \u00b7 Plan and history \u00b7 October 17\u2013November 3",
   "track_count": 1885,
-  "summary": "November 10 run completed Marilyn Drive. Keep Wednesday through Monday as reviewed, including Sunday RUN x LIFT.",
+  "summary": "Preserve the reviewed Wednesday through Monday plan and Sunday RUN x LIFT. Add the unfinished Melrose Avenue section on Tuesday.",
   "planning_priorities": [
     "Finish unfinished streets inside Census ZCTA 19083, including only the in-boundary portions of public streets that follow it, before expanding elsewhere.",
     "Mix neighborhoods within 19083; include Westgate Hills without clustering every day there.",
     "Keep full street reference geometry for auditing, but highlight only unfinished gaps; use a numbered address near the midpoint of the main gap.",
-    "Prefer one-way walking approaches under 2 miles unless explicitly approved."
+    "Keep one-way walking approaches under 1.5 miles until Andrew changes the limit."
   ],
-  "reviewed_on": "2026-11-10",
+  "reviewed_on": "2026-11-11",
   "planning_horizon_days": 7
 }
