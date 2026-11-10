@@ -1,0 +1,2027 @@
+[
+  {
+    "date": "2026-10-31",
+    "number": 1,
+    "street": "Glen Ridge Road",
+    "direction": "SW",
+    "bearing": 246.8,
+    "target_label": "Windsor Park Lane to Windsor Park Lane",
+    "target_coordinates": [
+      [
+        -75.3345273,
+        39.9727579
+      ],
+      [
+        -75.3329309,
+        39.9732973
+      ],
+      [
+        -75.3318408,
+        39.9737248
+      ],
+      [
+        -75.3314117,
+        39.9740208
+      ],
+      [
+        -75.3309759,
+        39.9743453
+      ],
+      [
+        -75.3305705,
+        39.9747838
+      ]
+    ],
+    "target_midpoint": [
+      -75.33232409770024,
+      39.97353526906537
+    ],
+    "target_miles": 0.257,
+    "navigation_address": "310 Glen Ridge Rd, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.3324892,
+      39.9736829
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=310%20Glen%20Ridge%20Rd%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "one_way_miles": 1.7,
+    "walking_metres": 2756,
+    "routing_source": "Google walking directions checked October 30, 2026",
+    "coverage_audit_running": {
+      "length_m": 414.1,
+      "covered_25m_pct": 0,
+      "sample_spacing_m": 5,
+      "running_track_count": 1874
+    },
+    "citystrides_url": "https://citystrides.com/users/7315/map",
+    "citystrides_status": "19083 priority \u00b7 0.0% near recorded runs; finish the remaining gaps.",
+    "time_label": "5:30\u20136:15 AM",
+    "first_waypoint": {
+      "intersection": "Glen Ridge Road & Windsor Park Lane",
+      "coordinates": [
+        -75.3345273,
+        39.9727579
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9727579,-75.3345273&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Glen Ridge Road & Windsor Park Lane",
+      "coordinates": [
+        -75.3305705,
+        39.9747838
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9747838,-75.3305705&dirflg=w"
+    },
+    "display_date": "Sat Oct 31",
+    "target_scope": "Complete connected street; inside Census ZCTA 19083.",
+    "whole_street": true,
+    "distance_limit_exception": false,
+    "start_time": "05:30",
+    "end_time": "06:15",
+    "past": true,
+    "completed_activity": "20800939076",
+    "recorded_run_miles": 3.9371,
+    "completion_review": {
+      "review": "docs/run-reviews/2026-10-31-glen-ridge-road.md",
+      "sampled_target_near_gps_pct": 100,
+      "proximity_m": 25,
+      "official_citystrides_credit_verified": false
+    },
+    "missing_coordinates": [],
+    "missing_miles": 0
+  },
+  {
+    "date": "2026-11-01",
+    "number": 2,
+    "street": "Gladstone Road",
+    "direction": "S",
+    "bearing": 187.5,
+    "target_label": "Edmonds Avenue to North Drexel Avenue",
+    "target_coordinates": [
+      [
+        -75.3104673,
+        39.9637641
+      ],
+      [
+        -75.311456,
+        39.9632986
+      ],
+      [
+        -75.3124345,
+        39.9628776
+      ],
+      [
+        -75.3135074,
+        39.9625092
+      ],
+      [
+        -75.3144878,
+        39.9620706
+      ],
+      [
+        -75.3155129,
+        39.9615628
+      ]
+    ],
+    "target_midpoint": [
+      -75.31300431549731,
+      39.96268194506963
+    ],
+    "target_miles": 0.308,
+    "navigation_address": "215a Gladstone Rd, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.3126547,
+      39.96269789999999
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=215a%20Gladstone%20Rd%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "one_way_miles": 1.9,
+    "walking_metres": 2989,
+    "routing_source": "Google walking directions checked October 30, 2026",
+    "coverage_audit_running": {
+      "length_m": 496.1,
+      "covered_25m_pct": 5,
+      "sample_spacing_m": 5,
+      "running_track_count": 1874
+    },
+    "citystrides_url": "https://citystrides.com/users/7315/map",
+    "citystrides_status": "19083 priority \u00b7 5.0% near recorded runs; finish the remaining gaps.",
+    "time_label": "4:00\u20134:45 AM",
+    "first_waypoint": {
+      "intersection": "Gladstone Road & Edmonds Avenue",
+      "coordinates": [
+        -75.3104673,
+        39.9637641
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9637641,-75.3104673&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Gladstone Road & North Drexel Avenue",
+      "coordinates": [
+        -75.3155129,
+        39.9615628
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9615628,-75.3155129&dirflg=w"
+    },
+    "display_date": "Sun Nov 1",
+    "target_scope": "Complete connected street; inside Census ZCTA 19083.",
+    "whole_street": true,
+    "distance_limit_exception": false,
+    "start_time": "04:00",
+    "end_time": "04:45",
+    "past": true,
+    "actual_activity": "20815407143",
+    "recorded_run_miles": 4.0345,
+    "outcome_note": "Ran a different 4.03-mile route; Gladstone was not reached and is rescheduled for Wednesday November 4.",
+    "review": "docs/run-reviews/2026-11-01-gladstone-deferred.md",
+    "neighborhood": "Richland",
+    "missing_coordinates": [],
+    "missing_miles": 0
+  },
+  {
+    "date": "2026-11-03",
+    "number": 1,
+    "street": "Walnut Place",
+    "direction": "E",
+    "bearing": 101.5,
+    "target_label": "East Manoa Road to Covington Road",
+    "target_coordinates": [
+      [
+        -75.2893454,
+        39.9806262
+      ],
+      [
+        -75.2894312,
+        39.9798962
+      ],
+      [
+        -75.2894593,
+        39.9797
+      ],
+      [
+        -75.2895428,
+        39.9789635
+      ],
+      [
+        -75.2895771,
+        39.9786597
+      ],
+      [
+        -75.2895342,
+        39.9783966
+      ],
+      [
+        -75.2894054,
+        39.9781138
+      ],
+      [
+        -75.2884441,
+        39.9766471
+      ],
+      [
+        -75.2875343,
+        39.9751672
+      ]
+    ],
+    "target_midpoint": [
+      -75.28918878508443,
+      39.97778330680877
+    ],
+    "target_miles": 0.401,
+    "navigation_address": "316 Walnut Pl, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.2894122,
+      39.9776746
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=316%20Walnut%20Pl%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "one_way_miles": 1.4,
+    "walking_metres": 2330,
+    "routing_source": "Google walking directions checked October 30, 2026",
+    "coverage_audit_running": {
+      "length_m": 645.9,
+      "covered_25m_pct": 80,
+      "sample_spacing_m": 5,
+      "running_track_count": 1874
+    },
+    "citystrides_url": "https://citystrides.com/users/7315/map",
+    "citystrides_status": "100% of the saved target is near cumulative running GPS after November 3; not official CityStrides credit.",
+    "time_label": "5:35\u20136:14 AM",
+    "first_waypoint": {
+      "intersection": "Walnut Place & East Manoa Road",
+      "coordinates": [
+        -75.2893454,
+        39.9806262
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9806262,-75.2893454&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Walnut Place & Covington Road",
+      "coordinates": [
+        -75.2875343,
+        39.9751672
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9751672,-75.2875343&dirflg=w"
+    },
+    "display_date": "Tue Nov 3",
+    "target_scope": "Complete connected street; inside Census ZCTA 19083.",
+    "whole_street": true,
+    "distance_limit_exception": false,
+    "start_time": "05:35",
+    "end_time": "06:14",
+    "outing_id": "2026-11-03-walnut-covington",
+    "outing_note": "Monday November 2 was skipped. Completed the remaining gaps during the same Tuesday November 3 run, 5:35\u20136:14 AM Eastern. The 3.67 miles are the total outing, not mileage per target. Cumulative GPS proximity covers this target; this is not official CityStrides credit.",
+    "past": true,
+    "completed_activity": "20841048512",
+    "recorded_run_miles": 3.67,
+    "neighborhood": "Manoa / Grange Estate area",
+    "missing_coordinates": [],
+    "missing_miles": 0
+  },
+  {
+    "date": "2026-11-03",
+    "number": 2,
+    "street": "Covington Road",
+    "direction": "E",
+    "bearing": 106.9,
+    "target_label": "Brentwood Road to St Albans Road",
+    "target_coordinates": [
+      [
+        -75.2890364,
+        39.9746739
+      ],
+      [
+        -75.2887587,
+        39.9747198
+      ],
+      [
+        -75.2882811,
+        39.9747988
+      ],
+      [
+        -75.2879034,
+        39.9749238
+      ],
+      [
+        -75.2875343,
+        39.9751672
+      ],
+      [
+        -75.2872511,
+        39.9754105
+      ],
+      [
+        -75.2869593,
+        39.9757855
+      ],
+      [
+        -75.2866846,
+        39.9763248
+      ],
+      [
+        -75.286676,
+        39.976601
+      ],
+      [
+        -75.2867275,
+        39.9768575
+      ],
+      [
+        -75.2868648,
+        39.9770878
+      ],
+      [
+        -75.2870623,
+        39.9772916
+      ],
+      [
+        -75.2872597,
+        39.9774561
+      ]
+    ],
+    "target_midpoint": [
+      -75.28702668520266,
+      39.9756989018997
+    ],
+    "target_miles": 0.269,
+    "navigation_address": "521 Covington Rd, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.2868762,
+      39.9756796
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=521%20Covington%20Rd%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "one_way_miles": 1.6,
+    "walking_metres": 2522,
+    "routing_source": "Google walking directions checked October 30, 2026",
+    "coverage_audit_running": {
+      "length_m": 432.3,
+      "covered_25m_pct": 78.2,
+      "sample_spacing_m": 5,
+      "running_track_count": 1874
+    },
+    "citystrides_url": "https://citystrides.com/users/7315/map",
+    "citystrides_status": "100% of the saved target is near cumulative running GPS after November 3; not official CityStrides credit.",
+    "time_label": "5:35\u20136:14 AM",
+    "first_waypoint": {
+      "intersection": "Covington Road & Brentwood Road",
+      "coordinates": [
+        -75.2890364,
+        39.9746739
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9746739,-75.2890364&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Covington Road & St Albans Road",
+      "coordinates": [
+        -75.2872597,
+        39.9774561
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9774561,-75.2872597&dirflg=w"
+    },
+    "display_date": "Tue Nov 3",
+    "target_scope": "Complete connected Covington section from Brentwood to St Albans; the offset Heatherwood-to-Brentwood section is already 100% near saved runs.",
+    "whole_street": true,
+    "distance_limit_exception": false,
+    "start_time": "05:35",
+    "end_time": "06:14",
+    "outing_id": "2026-11-03-walnut-covington",
+    "outing_note": "Monday November 2 was skipped. Completed the remaining gaps during the same Tuesday November 3 run, 5:35\u20136:14 AM Eastern. The 3.67 miles are the total outing, not mileage per target. Cumulative GPS proximity covers this target; this is not official CityStrides credit.",
+    "past": true,
+    "completed_activity": "20841048512",
+    "recorded_run_miles": 3.67,
+    "neighborhood": "Manoa / Grange Estate area",
+    "missing_coordinates": [],
+    "missing_miles": 0
+  },
+  {
+    "date": "2026-11-07",
+    "number": 1,
+    "street": "Gladstone Road",
+    "direction": "S",
+    "bearing": 187.5,
+    "target_label": "Finish the unfinished street section",
+    "target_coordinates": [
+      [
+        -75.3104673,
+        39.9637641
+      ],
+      [
+        -75.311456,
+        39.9632986
+      ],
+      [
+        -75.3124345,
+        39.9628776
+      ],
+      [
+        -75.3135074,
+        39.9625092
+      ],
+      [
+        -75.3144878,
+        39.9620706
+      ],
+      [
+        -75.3155129,
+        39.9615628
+      ]
+    ],
+    "target_midpoint": [
+      -75.31300440021283,
+      39.962681914252585
+    ],
+    "target_miles": 0.308,
+    "navigation_address": "215a Gladstone Rd, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.3126547,
+      39.96269789999999
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=215a%20Gladstone%20Rd%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "one_way_miles": 1.9,
+    "walking_metres": 2989,
+    "routing_source": "Google walking directions checked October 30, 2026",
+    "coverage_audit_running": {
+      "covered_20m_heading_pct": 0,
+      "as_of": "2026-11-04",
+      "running_track_count": 1879,
+      "sample_spacing_m": 10
+    },
+    "citystrides_url": "https://citystrides.com/users/7315/map",
+    "citystrides_status": "November 6 running-only GPS audit: 0.0% covered; orange highlights only remaining gaps. Not official CityStrides credit.",
+    "time_label": "5:30\u20136:15 AM",
+    "first_waypoint": {
+      "intersection": "Gladstone Road \u00b7 main unfinished section start",
+      "coordinates": [
+        -75.3104673,
+        39.9637641
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9637641,-75.3104673&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Gladstone Road \u00b7 main unfinished section end",
+      "coordinates": [
+        -75.3155129,
+        39.9615628
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9615628,-75.3155129&dirflg=w"
+    },
+    "display_date": "Sat Nov 7",
+    "target_scope": "Inside 19083. Run only the orange unfinished sections; already-covered pavement may connect them. Navigate to the numbered gap address, then meander home.",
+    "whole_street": false,
+    "distance_limit_exception": false,
+    "start_time": "05:30",
+    "end_time": "06:15",
+    "outing_note": "Navigate to the numbered address beside the main unfinished gap, cover the orange section(s), then meander home.",
+    "neighborhood": "Richland",
+    "estimated_round_trip_miles": 4,
+    "round_trip_estimate_method": "Twice the Google walking approach to the gap address plus the unfinished target length; actual meander and connections can add mileage.",
+    "missing_coordinates": [],
+    "missing_miles": 0,
+    "gap_coverage_pct": 100,
+    "reference_street_miles": 0.308,
+    "planning_mode": "unfinished_sections",
+    "unfinished_sections": [
+      {
+        "length_metres": 495.3,
+        "start": [
+          -75.3104673,
+          39.9637641
+        ],
+        "end": [
+          -75.3155129,
+          39.9615628
+        ],
+        "start_url": "https://maps.apple.com/?daddr=39.9637641,-75.3104673&dirflg=w",
+        "end_url": "https://maps.apple.com/?daddr=39.9615628,-75.3155129&dirflg=w"
+      }
+    ],
+    "past": true,
+    "completed_activity": "20893882623",
+    "recorded_run_miles": 4.399152698242265
+  },
+  {
+    "date": "2026-11-05",
+    "number": 1,
+    "street": "Grove Place",
+    "direction": "E",
+    "bearing": 106.3,
+    "target_label": "Finish 2 unfinished sections",
+    "target_coordinates": [
+      [
+        -75.283999,
+        39.9760781
+      ],
+      [
+        -75.2840017,
+        39.9759938
+      ],
+      [
+        -75.2840017,
+        39.9758123
+      ],
+      [
+        -75.2840017,
+        39.9757999
+      ],
+      [
+        -75.2840017,
+        39.9757957
+      ],
+      [
+        -75.2839978,
+        39.9757825
+      ],
+      [
+        -75.2839416,
+        39.9755918
+      ],
+      [
+        -75.2838841,
+        39.9755037
+      ],
+      [
+        -75.2838437,
+        39.975469
+      ],
+      [
+        -75.283583,
+        39.9752497
+      ],
+      [
+        -75.2835573,
+        39.9752299
+      ],
+      [
+        -75.2835347,
+        39.9752126
+      ],
+      [
+        -75.28329,
+        39.9750713
+      ],
+      [
+        -75.283256,
+        39.9750516
+      ],
+      [
+        -75.283243,
+        39.9750459
+      ],
+      [
+        -75.282975,
+        39.9749285
+      ],
+      [
+        -75.2829232,
+        39.9749133
+      ],
+      [
+        -75.2825367,
+        39.9748001
+      ],
+      [
+        -75.2823738,
+        39.9747524
+      ],
+      [
+        -75.2822743,
+        39.9747174
+      ],
+      [
+        -75.2821723,
+        39.9746691
+      ],
+      [
+        -75.2821218,
+        39.9746373
+      ],
+      [
+        -75.2820744,
+        39.9746074
+      ],
+      [
+        -75.2819699,
+        39.9745283
+      ],
+      [
+        -75.2818713,
+        39.9744379
+      ],
+      [
+        -75.2818363,
+        39.9743993
+      ],
+      [
+        -75.2817664,
+        39.9743216
+      ]
+    ],
+    "target_midpoint": [
+      -75.28221574053404,
+      39.97468967037053
+    ],
+    "target_miles": 0.182,
+    "navigation_address": "11 Grove Pl, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.282386,
+      39.9749867
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=11%20Grove%20Pl%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "one_way_miles": 2,
+    "walking_metres": 3195,
+    "routing_source": "Google walking directions and address checked November 4, 2026",
+    "coverage_audit_running": {
+      "covered_20m_heading_pct": 39.1,
+      "as_of": "2026-11-04",
+      "running_track_count": 1879,
+      "sample_spacing_m": 10
+    },
+    "citystrides_url": "https://citystrides.com/users/7315/map",
+    "citystrides_status": "39.1% of the reference street is near running GPS. Orange highlights only the remaining sections; not official CityStrides credit.",
+    "time_label": "5:30\u20136:15 AM",
+    "first_waypoint": {
+      "intersection": "Grove Place \u00b7 main unfinished section start",
+      "coordinates": [
+        -75.282826575,
+        39.974885
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.974885,-75.282826575&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Grove Place \u00b7 main unfinished section end",
+      "coordinates": [
+        -75.2817664,
+        39.9743216
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9743216,-75.2817664&dirflg=w"
+    },
+    "display_date": "Thu Nov 5",
+    "target_scope": "Run the orange unfinished sections only. Use already-covered road as needed to reach or connect them; the full street is kept only as reference geometry.",
+    "whole_street": false,
+    "distance_limit_exception": false,
+    "start_time": "05:30",
+    "end_time": "06:15",
+    "neighborhood": "Grange",
+    "estimated_round_trip_miles": 4.1,
+    "round_trip_estimate_method": "Twice the Google walking approach to the gap address plus the unfinished target length; actual meander and connections can add mileage.",
+    "missing_coordinates": [],
+    "missing_miles": 0,
+    "gap_coverage_pct": 39.1,
+    "primary_gap_midpoint": [
+      -75.28221574053404,
+      39.97468967037053
+    ],
+    "reference_street_miles": 0.182,
+    "planning_mode": "unfinished_sections",
+    "outing_note": "Navigate to the numbered address beside the main unfinished gap, cover the orange section(s), then meander home. There are two gaps: the main southern section and a separate upper section. Covered pavement between them is a connector, not an orange target.",
+    "unfinished_sections": [
+      {
+        "length_metres": 113,
+        "start": [
+          -75.282826575,
+          39.974885
+        ],
+        "end": [
+          -75.2817664,
+          39.9743216
+        ],
+        "start_url": "https://maps.apple.com/?daddr=39.974885,-75.282826575&dirflg=w",
+        "end_url": "https://maps.apple.com/?daddr=39.9743216,-75.2817664&dirflg=w"
+      },
+      {
+        "length_metres": 65.6,
+        "start": [
+          -75.283999,
+          39.9760781
+        ],
+        "end": [
+          -75.2838841,
+          39.9755037
+        ],
+        "start_url": "https://maps.apple.com/?daddr=39.9760781,-75.283999&dirflg=w",
+        "end_url": "https://maps.apple.com/?daddr=39.9755037,-75.2838841&dirflg=w"
+      }
+    ],
+    "past": true,
+    "completed_activity": "20868244376",
+    "recorded_run_miles": 4.412729658792651,
+    "outcome_note": "November 5 synced run covers the Grove Place target; retain as history."
+  },
+  {
+    "date": "2026-11-04",
+    "number": 4,
+    "street": "Wilson Drive",
+    "direction": "SE",
+    "bearing": 145,
+    "target_label": "Marvine Avenue through the northern loop across Township Line Road",
+    "target_coordinates": [
+      [
+        -75.2977029,
+        39.9625906
+      ],
+      [
+        -75.2988462,
+        39.9641051
+      ],
+      [
+        -75.2992009,
+        39.9645884
+      ],
+      [
+        -75.3000784,
+        39.9657179
+      ],
+      [
+        -75.3001358,
+        39.9657919
+      ],
+      [
+        -75.3002095,
+        39.9658867
+      ],
+      [
+        -75.3002576,
+        39.9659908
+      ],
+      [
+        -75.300286,
+        39.9660527
+      ],
+      [
+        -75.3003999,
+        39.9662078
+      ],
+      [
+        -75.3005316,
+        39.9663873
+      ],
+      [
+        -75.3005565,
+        39.9664133
+      ],
+      [
+        -75.3006106,
+        39.9664824
+      ],
+      [
+        -75.3008303,
+        39.9667294
+      ],
+      [
+        -75.3008766,
+        39.9667766
+      ],
+      [
+        -75.3008504,
+        39.9667218
+      ],
+      [
+        -75.3007625,
+        39.9665381
+      ],
+      [
+        -75.3007243,
+        39.9664739
+      ],
+      [
+        -75.3006085,
+        39.9663356
+      ],
+      [
+        -75.300443,
+        39.9661378
+      ],
+      [
+        -75.3003487,
+        39.9660252
+      ],
+      [
+        -75.3002986,
+        39.9659754
+      ],
+      [
+        -75.3002095,
+        39.9658867
+      ]
+    ],
+    "target_midpoint": [
+      -75.2996248103211,
+      39.96513405419342
+    ],
+    "target_miles": 0.406,
+    "navigation_address": "1239 Wilson Dr, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.2994607,
+      39.9652397
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=1239%20Wilson%20Dr%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "one_way_miles": 1.6,
+    "walking_metres": 2619,
+    "routing_source": "Google walking directions checked October 30, 2026",
+    "coverage_audit_running": {
+      "covered_20m_heading_pct": 100,
+      "sample_spacing_m": 10,
+      "as_of": "2026-11-04",
+      "review": "docs/run-reviews/2026-11-04-hillcrest-completed.md"
+    },
+    "citystrides_url": "https://citystrides.com/users/7315/map",
+    "citystrides_status": "100% of the full Wilson Drive target is near November 4 running GPS; not official CityStrides credit.",
+    "time_label": "5:21\u20135:56 AM",
+    "first_waypoint": {
+      "intersection": "Wilson Drive & Marvine Avenue",
+      "coordinates": [
+        -75.2977029,
+        39.9625906
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9625906,-75.2977029&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Wilson Drive northern loop",
+      "coordinates": [
+        -75.3008766,
+        39.9667766
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9667766,-75.3008766&dirflg=w"
+    },
+    "display_date": "Wed Nov 4",
+    "target_scope": "Complete Wilson Drive including its northern loop across Township Line Road. User-requested exception: part of the loop lies outside Census ZCTA 19083.",
+    "whole_street": true,
+    "distance_limit_exception": false,
+    "start_time": "05:21",
+    "end_time": "05:56",
+    "outing_note": "Completed Wednesday November 4 instead of planned Richland/Gladstone. Actual recorded run: 3.49 miles, 5:21:36\u20135:56:35 AM Eastern. Full Wilson target covered by running GPS; not official CityStrides credit.",
+    "neighborhood": "Hillcrest",
+    "estimated_round_trip_miles": 3.7,
+    "round_trip_estimate_method": "Twice the Google walking approach to the midpoint plus one full target street traversal. Actual mileage depends on the route home.",
+    "past": true,
+    "completed_activity": "20854660988",
+    "recorded_run_miles": 3.49,
+    "missing_coordinates": [],
+    "missing_miles": 0
+  },
+  {
+    "street": "Willowbrook Road",
+    "date": "2026-11-06",
+    "neighborhood": "Manoa",
+    "target_coordinates": [
+      [
+        -75.3066098,
+        39.9700364
+      ],
+      [
+        -75.3099072,
+        39.9706058
+      ]
+    ],
+    "target_label": "Finish the unfinished street section",
+    "target_miles": 0.179,
+    "navigation_address": "600 Willowbrook Rd, Havertown, PA 19083",
+    "navigation_url": "https://maps.apple.com/?daddr=600%20Willowbrook%20Rd%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "missing_coordinates": [],
+    "missing_miles": 0,
+    "gap_coverage_pct": 100,
+    "display_date": "Fri Nov 6",
+    "start_time": "05:30",
+    "end_time": "06:15",
+    "time_label": "5:30\u20136:15 AM",
+    "navigation_coordinates": [
+      -75.308334,
+      39.9701466
+    ],
+    "walking_metres": 1859,
+    "one_way_miles": 1.2,
+    "routing_source": "Google walking directions and address checked November 4, 2026",
+    "reference_street_miles": 0.179,
+    "target_midpoint": [
+      -75.30825850000001,
+      39.9703211
+    ],
+    "whole_street": false,
+    "planning_mode": "unfinished_sections",
+    "distance_limit_exception": false,
+    "target_scope": "Run the orange unfinished sections only. Use already-covered road as needed to reach or connect them; the full street is kept only as reference geometry.",
+    "citystrides_url": "https://citystrides.com/users/7315/map",
+    "citystrides_status": "0.0% of the reference street is near running GPS. Orange highlights only the remaining sections; not official CityStrides credit.",
+    "estimated_round_trip_miles": 2.5,
+    "round_trip_estimate_method": "Twice the Google walking approach to the gap address plus the unfinished target length; actual meander and connections can add mileage.",
+    "outing_note": "Navigate to the numbered address beside the main unfinished gap, cover the orange section(s), then meander home. Early run before the 8:40 AM flight to Providence; retain time for airport travel.",
+    "direction": "SE",
+    "bearing": 174,
+    "unfinished_sections": [
+      {
+        "length_metres": 287.9,
+        "start": [
+          -75.3066098,
+          39.9700364
+        ],
+        "end": [
+          -75.3099072,
+          39.9706058
+        ],
+        "start_url": "https://maps.apple.com/?daddr=39.9700364,-75.3066098&dirflg=w",
+        "end_url": "https://maps.apple.com/?daddr=39.9706058,-75.3099072&dirflg=w"
+      }
+    ],
+    "first_waypoint": {
+      "intersection": "Willowbrook Road \u00b7 main unfinished section start",
+      "coordinates": [
+        -75.3066098,
+        39.9700364
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9700364,-75.3066098&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Willowbrook Road \u00b7 main unfinished section end",
+      "coordinates": [
+        -75.3099072,
+        39.9706058
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9706058,-75.3099072&dirflg=w"
+    },
+    "coverage_audit_running": {
+      "covered_20m_heading_pct": 0,
+      "as_of": "2026-11-04",
+      "running_track_count": 1879,
+      "sample_spacing_m": 10
+    },
+    "number": 5,
+    "past": true,
+    "completed_activity": "20880609276",
+    "recorded_run_miles": 2.3072941521514356,
+    "completion_review": {
+      "review": "docs/run-reviews/2026-11-06-shorter-run-week.md",
+      "sampled_target_near_gps_pct": 100,
+      "proximity_m": 20,
+      "official_citystrides_credit_verified": false
+    }
+  },
+  {
+    "street": "Wexford Road",
+    "date": "2026-11-08",
+    "neighborhood": "Brookline",
+    "target_coordinates": [
+      [
+        -75.2934602,
+        39.9795842
+      ],
+      [
+        -75.2939752,
+        39.9802747
+      ],
+      [
+        -75.294516,
+        39.9809916
+      ],
+      [
+        -75.295068,
+        39.98171
+      ],
+      [
+        -75.2955976,
+        39.9824281
+      ],
+      [
+        -75.2956489,
+        39.9824977
+      ],
+      [
+        -75.295718,
+        39.9825842
+      ],
+      [
+        -75.2962532,
+        39.9832881
+      ]
+    ],
+    "target_label": "Finish the unfinished street section",
+    "target_miles": 0.296,
+    "navigation_address": "1362 Wexford Rd, Havertown, PA 19083",
+    "navigation_url": "https://maps.apple.com/?daddr=1362%20Wexford%20Rd%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "missing_coordinates": [],
+    "missing_miles": 0,
+    "gap_coverage_pct": 100,
+    "display_date": "Sun Nov 8",
+    "start_time": "05:30",
+    "end_time": "06:15",
+    "time_label": "5:30\u20136:15 AM",
+    "navigation_coordinates": [
+      -75.29619679999999,
+      39.9829277
+    ],
+    "walking_metres": 1507,
+    "one_way_miles": 0.9,
+    "routing_source": "Google walking directions and address checked November 4, 2026",
+    "reference_street_miles": 0.296,
+    "target_midpoint": [
+      -75.29603911999999,
+      39.983006540000005
+    ],
+    "whole_street": false,
+    "planning_mode": "unfinished_sections",
+    "distance_limit_exception": false,
+    "target_scope": "Run the orange unfinished sections only. Use already-covered road as needed to reach or connect them; the full street is kept only as reference geometry.",
+    "citystrides_url": "https://citystrides.com/users/7315/map",
+    "citystrides_status": "November 7 running GPS audit: approximately 72 meters remain unfinished.",
+    "estimated_round_trip_miles": 1.9,
+    "round_trip_estimate_method": "Twice the Google walking approach to the gap address plus the unfinished target length; actual meander and connections can add mileage.",
+    "outing_note": "Navigate to the numbered address beside the unfinished gap on the southern connected Wexford section, cover the orange segment, then meander home.",
+    "direction": "NE",
+    "bearing": 80,
+    "unfinished_sections": [
+      {
+        "length_metres": 72.5,
+        "start": [
+          -75.29582504,
+          39.98272498
+        ],
+        "end": [
+          -75.2962532,
+          39.9832881
+        ],
+        "start_url": "https://maps.apple.com/?daddr=39.98272498,-75.29582504&dirflg=w",
+        "end_url": "https://maps.apple.com/?daddr=39.9832881,-75.2962532&dirflg=w"
+      }
+    ],
+    "first_waypoint": {
+      "intersection": "Wexford Road \u00b7 main unfinished section start",
+      "coordinates": [
+        -75.29582504,
+        39.98272498
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.98272498,-75.29582504&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Wexford Road \u00b7 main unfinished section end",
+      "coordinates": [
+        -75.2962532,
+        39.9832881
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9832881,-75.2962532&dirflg=w"
+    },
+    "coverage_audit_running": {
+      "covered_20m_heading_pct": 84.8,
+      "as_of": "2026-11-04",
+      "running_track_count": 1879,
+      "sample_spacing_m": 10
+    },
+    "number": 5,
+    "past": true,
+    "completed_activity": "20907280098",
+    "recorded_run_miles": 1.9943591923168695
+  },
+  {
+    "date": "2026-11-09",
+    "street": "Charles Drive",
+    "target_label": "Finish the remaining section near David Drive",
+    "target_miles": 0.299,
+    "target_coordinates": [
+      [
+        -75.3257911,
+        39.989831
+      ],
+      [
+        -75.3259568,
+        39.9896486
+      ],
+      [
+        -75.3271542,
+        39.9888086
+      ],
+      [
+        -75.3280327,
+        39.9880671
+      ],
+      [
+        -75.3286864,
+        39.9874812
+      ],
+      [
+        -75.3287935,
+        39.9873093
+      ],
+      [
+        -75.3288389,
+        39.9871471
+      ],
+      [
+        -75.3289961,
+        39.9864282
+      ]
+    ],
+    "target_midpoint": [
+      -75.32892623333333,
+      39.986747711111114
+    ],
+    "first_waypoint": {
+      "intersection": "Charles Drive \u00b7 main unfinished section start",
+      "coordinates": [
+        -75.32885636666666,
+        39.98706722222222
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.98706722222222,-75.32885636666666&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Charles Drive \u00b7 main unfinished section end",
+      "coordinates": [
+        -75.3289961,
+        39.9864282
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9864282,-75.3289961&dirflg=w"
+    },
+    "citystrides_url": "https://citystrides.com/streets/3296373",
+    "citystrides_status": "November 6 running-only GPS audit: 85.0% covered; orange highlights only remaining gaps. Not official CityStrides credit.",
+    "number": 1,
+    "one_way_miles": 1.4,
+    "navigation_address": "205 Charles Dr, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.3286203,
+      39.9867491
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=205%20Charles%20Dr%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "neighborhood": "Lynnewood",
+    "display_date": "Mon Nov 9",
+    "start_time": "05:30",
+    "end_time": "06:15",
+    "time_label": "5:30\u20136:15 AM",
+    "walking_metres": 2204,
+    "routing_source": "Google walking directions and address checked November 4, 2026",
+    "whole_street": false,
+    "distance_limit_exception": false,
+    "coverage_audit_running": {
+      "covered_20m_heading_pct": 85,
+      "as_of": "2026-11-04",
+      "running_track_count": 1879,
+      "sample_spacing_m": 10
+    },
+    "target_scope": "Inside 19083. Run only the orange unfinished sections; already-covered pavement may connect them. Navigate to the numbered gap address, then meander home.",
+    "outing_note": "Navigate to the numbered address beside the main unfinished gap, cover the orange section(s), then meander home. Pin moved from 148 Charles Drive to 205 Charles Drive beside the approximately 72-metre gap near David Drive; the rest is already covered.",
+    "direction": "NW",
+    "bearing": 307,
+    "estimated_round_trip_miles": 2.8,
+    "round_trip_estimate_method": "Twice the Google walking approach to the gap address plus the unfinished target length; actual meander and connections can add mileage.",
+    "missing_coordinates": [],
+    "missing_miles": 0,
+    "gap_coverage_pct": 100,
+    "primary_gap_midpoint": [
+      -75.32892623333333,
+      39.986747711111114
+    ],
+    "reference_street_miles": 0.299,
+    "planning_mode": "unfinished_sections",
+    "unfinished_sections": [],
+    "past": true,
+    "completed_activity": "20918318052",
+    "recorded_run_miles": 2.8100269426548956
+  },
+  {
+    "date": "2026-11-10",
+    "street": "Marilyn Drive",
+    "target_label": "Jacalyn Drive to Lawrence Road",
+    "target_miles": 0.255,
+    "target_coordinates": [
+      [
+        -75.3275772,
+        39.983221
+      ],
+      [
+        -75.3278837,
+        39.9830411
+      ],
+      [
+        -75.3282271,
+        39.982903
+      ],
+      [
+        -75.3295746,
+        39.9824032
+      ],
+      [
+        -75.3298235,
+        39.9823243
+      ],
+      [
+        -75.3301754,
+        39.9822322
+      ],
+      [
+        -75.3306475,
+        39.9821467
+      ],
+      [
+        -75.3308363,
+        39.9820809
+      ],
+      [
+        -75.3309736,
+        39.9819823
+      ],
+      [
+        -75.3310423,
+        39.9818573
+      ],
+      [
+        -75.3310251,
+        39.9816929
+      ],
+      [
+        -75.3309736,
+        39.9815482
+      ],
+      [
+        -75.3308135,
+        39.9812344
+      ]
+    ],
+    "target_midpoint": [
+      -75.32970334363112,
+      39.98236238894136
+    ],
+    "first_waypoint": {
+      "intersection": "Marilyn Drive & Jacalyn Drive, Havertown, PA",
+      "coordinates": [
+        -75.3275772,
+        39.983221
+      ],
+      "apple_maps": "https://maps.apple.com/?q=Marilyn%20Drive%20%26%20Jacalyn%20Drive%2C%20Havertown%2C%20PA&daddr=39.983221,-75.3275772&dirflg=w"
+    },
+    "second_waypoint": {
+      "intersection": "Marilyn Drive & Lawrence Road, Havertown, PA",
+      "coordinates": [
+        -75.3308135,
+        39.9812344
+      ],
+      "apple_maps": "https://maps.apple.com/?q=Marilyn%20Drive%20%26%20Lawrence%20Road%2C%20Havertown%2C%20PA&daddr=39.9812344,-75.3308135&dirflg=w"
+    },
+    "citystrides_url": "https://citystrides.com/streets/3296377",
+    "citystrides_status": "November 6 running-only GPS audit: 0.0% covered; orange highlights only remaining gaps. Not official CityStrides credit.",
+    "number": 1,
+    "one_way_miles": 1.33781217688698,
+    "navigation_address": "1732 Marilyn Dr, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.3295842,
+      39.9821684
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=1732%20Marilyn%20Dr%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "past": true,
+    "missing_coordinates": [],
+    "missing_miles": 0,
+    "gap_coverage_pct": 100,
+    "primary_gap_midpoint": [
+      -75.32970340899436,
+      39.98236236822156
+    ],
+    "neighborhood": "Lawrence Road",
+    "start_time": "05:30",
+    "end_time": "06:15",
+    "time_label": "5:30\u20136:15 AM",
+    "display_date": "Tue Nov 10",
+    "walking_metres": 2153,
+    "estimated_round_trip_miles": 2.9,
+    "target_scope": "Inside 19083. Run only the orange unfinished sections; already-covered pavement may connect them. Navigate to the numbered gap address, then meander home.",
+    "routing_source": "Google walking distance rechecked November 5, 2026",
+    "planning_mode": "unfinished_sections",
+    "whole_street": false,
+    "unfinished_sections": [],
+    "outing_note": "Thursday target reintroduced now that November 12 is inside the reviewed seven-calendar-day window. Numbered address and walking approach were verified November 5.",
+    "completed_activity": "20931233966",
+    "recorded_run_miles": 2.8151532549908533
+  },
+  {
+    "street": "North Brierwood Road",
+    "date": "2026-11-11",
+    "display_date": "Wed Nov 11",
+    "neighborhood": "Havertown",
+    "planning_mode": "unfinished_sections",
+    "start_time": "06:45",
+    "end_time": "07:30",
+    "time_label": "6:45\u20137:30 AM",
+    "target_label": "Finish the orange street section",
+    "target_coordinates": [
+      [
+        -75.3245414,
+        39.9781568
+      ],
+      [
+        -75.3247539,
+        39.9784546
+      ],
+      [
+        -75.325234,
+        39.9791105
+      ],
+      [
+        -75.3256948,
+        39.9797663
+      ]
+    ],
+    "target_midpoint": [
+      -75.32548999999999,
+      39.979474833333335
+    ],
+    "target_miles": 0.12686419587911993,
+    "missing_coordinates": [
+      [
+        [
+          -75.3252852,
+          39.97918336666667
+        ],
+        [
+          -75.3253364,
+          39.97925623333333
+        ],
+        [
+          -75.3253876,
+          39.9793291
+        ],
+        [
+          -75.3254388,
+          39.979401966666664
+        ],
+        [
+          -75.32548999999999,
+          39.979474833333335
+        ],
+        [
+          -75.32554119999999,
+          39.9795477
+        ],
+        [
+          -75.32559239999999,
+          39.97962056666667
+        ],
+        [
+          -75.32564359999999,
+          39.97969343333333
+        ],
+        [
+          -75.3256948,
+          39.9797663
+        ]
+      ]
+    ],
+    "missing_miles": 0.04574085528650019,
+    "gap_coverage_pct": 63.9,
+    "primary_gap_midpoint": [
+      -75.32548999999999,
+      39.979474833333335
+    ],
+    "navigation_address": "458 N Brierwood Rd, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.32566299999999,
+      39.9793867
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=458%20N%20Brierwood%20Rd%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "walking_metres": 2034,
+    "one_way_miles": 1.2638690050107373,
+    "estimated_round_trip_miles": 2.6,
+    "routing_source": "Google walking directions verified November 8, 2026",
+    "citystrides_status": "November 9 running GPS audit identified the remaining orange section.",
+    "target_scope": "Run the remaining orange section inside 19083.",
+    "unfinished_sections": [
+      {
+        "length_metres": 73.61271046848105,
+        "start_url": "https://maps.apple.com/?daddr=39.97918336666667,-75.3252852&dirflg=w",
+        "end_url": "https://maps.apple.com/?daddr=39.9797663,-75.3256948&dirflg=w"
+      }
+    ],
+    "first_waypoint": {
+      "coordinates": [
+        -75.3245414,
+        39.9781568
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9781568,-75.3245414&dirflg=w"
+    },
+    "second_waypoint": {
+      "coordinates": [
+        -75.3256948,
+        39.9797663
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9797663,-75.3256948&dirflg=w"
+    },
+    "number": 2
+  },
+  {
+    "date": "2026-11-12",
+    "display_date": "Thu Nov 12",
+    "number": 3,
+    "street": "Chester Avenue",
+    "neighborhood": "Llanerch",
+    "calendar_event_id": "run0513eb75453a2f6248ea0b458c5b7216",
+    "planning_mode": "unfinished_sections",
+    "start_time": "05:30",
+    "end_time": "06:15",
+    "time_label": "5:30\u20136:15 AM",
+    "target_label": "Finish the orange street section",
+    "target_coordinates": [
+      [
+        -75.3200572,
+        39.9818661
+      ],
+      [
+        -75.3199352,
+        39.9821731
+      ],
+      [
+        -75.3197642,
+        39.9827523
+      ]
+    ],
+    "target_midpoint": [
+      -75.31989590496018,
+      39.98230619758518
+    ],
+    "target_miles": 0.06320233895731846,
+    "missing_coordinates": [
+      [
+        [
+          -75.3200572,
+          39.9818661
+        ],
+        [
+          -75.3200267,
+          39.981942849999996
+        ],
+        [
+          -75.31999619999999,
+          39.9820196
+        ],
+        [
+          -75.3199657,
+          39.98209635
+        ],
+        [
+          -75.3199352,
+          39.9821731
+        ],
+        [
+          -75.31991077142857,
+          39.98225584285714
+        ],
+        [
+          -75.31988634285715,
+          39.98233858571428
+        ],
+        [
+          -75.31986191428571,
+          39.98242132857143
+        ],
+        [
+          -75.31983748571429,
+          39.98250407142857
+        ],
+        [
+          -75.31981305714285,
+          39.98258681428572
+        ],
+        [
+          -75.31978862857143,
+          39.982669557142856
+        ],
+        [
+          -75.3197642,
+          39.9827523
+        ]
+      ]
+    ],
+    "missing_miles": 0.06320235315155448,
+    "gap_coverage_pct": 0,
+    "primary_gap_midpoint": [
+      -75.31989590496629,
+      39.98230619756447
+    ],
+    "navigation_address": "713 Chester Ave, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.31968049999999,
+      39.9823108
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=713%20Chester%20Ave%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "walking_metres": 1253,
+    "one_way_miles": 0.7785781038733794,
+    "estimated_round_trip_miles": 1.6,
+    "routing_source": "Google walking directions verified November 8, 2026",
+    "citystrides_status": "November 8 running GPS audit identified the remaining orange section.",
+    "target_scope": "Run the remaining orange section inside 19083.",
+    "unfinished_sections": [
+      {
+        "length_metres": 101.71430498692672,
+        "start_url": "https://maps.apple.com/?daddr=39.9818661,-75.3200572&dirflg=w",
+        "end_url": "https://maps.apple.com/?daddr=39.9827523,-75.3197642&dirflg=w"
+      }
+    ],
+    "first_waypoint": {
+      "coordinates": [
+        -75.3200572,
+        39.9818661
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9818661,-75.3200572&dirflg=w"
+    },
+    "second_waypoint": {
+      "coordinates": [
+        -75.3197642,
+        39.9827523
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9827523,-75.3197642&dirflg=w"
+    }
+  },
+  {
+    "date": "2026-11-13",
+    "display_date": "Fri Nov 13",
+    "number": 4,
+    "street": "Olympic Avenue",
+    "neighborhood": "Manoa",
+    "calendar_event_id": "run7bd0a54e379eda96a440517d2784065b",
+    "planning_mode": "unfinished_sections",
+    "start_time": "05:30",
+    "end_time": "06:15",
+    "time_label": "5:30\u20136:15 AM",
+    "target_label": "Finish the orange street section",
+    "target_coordinates": [
+      [
+        -75.3012765,
+        39.9687126
+      ],
+      [
+        -75.3016713,
+        39.9688968
+      ],
+      [
+        -75.3018341,
+        39.968992
+      ],
+      [
+        -75.3019975,
+        39.9690283
+      ],
+      [
+        -75.3027012,
+        39.9691531
+      ],
+      [
+        -75.3036025,
+        39.9692717
+      ],
+      [
+        -75.3044093,
+        39.9694164
+      ],
+      [
+        -75.3051217,
+        39.9695546
+      ],
+      [
+        -75.3054822,
+        39.9695874
+      ],
+      [
+        -75.3057225,
+        39.969548
+      ],
+      [
+        -75.3071731,
+        39.9689165
+      ]
+    ],
+    "target_midpoint": [
+      -75.30600061109978,
+      39.96942692791983
+    ],
+    "target_miles": 0.3342312842002922,
+    "missing_coordinates": [
+      [
+        [
+          -75.30471461428571,
+          39.96947562857143
+        ],
+        [
+          -75.30481638571429,
+          39.96949537142857
+        ],
+        [
+          -75.30491815714286,
+          39.96951511428571
+        ],
+        [
+          -75.30501992857143,
+          39.96953485714286
+        ],
+        [
+          -75.3051217,
+          39.9695546
+        ],
+        [
+          -75.305211825,
+          39.969562800000006
+        ],
+        [
+          -75.30530195,
+          39.969571
+        ],
+        [
+          -75.305392075,
+          39.9695792
+        ],
+        [
+          -75.3054822,
+          39.9695874
+        ],
+        [
+          -75.3055623,
+          39.96957426666667
+        ],
+        [
+          -75.3056424,
+          39.969561133333336
+        ],
+        [
+          -75.3057225,
+          39.969548
+        ],
+        [
+          -75.30581920666667,
+          39.9695059
+        ],
+        [
+          -75.30591591333334,
+          39.9694638
+        ],
+        [
+          -75.30601262,
+          39.969421700000005
+        ],
+        [
+          -75.30610932666667,
+          39.9693796
+        ],
+        [
+          -75.30620603333334,
+          39.9693375
+        ],
+        [
+          -75.30630274,
+          39.9692954
+        ],
+        [
+          -75.30639944666667,
+          39.9692533
+        ],
+        [
+          -75.30649615333333,
+          39.969211200000004
+        ],
+        [
+          -75.30659286,
+          39.9691691
+        ],
+        [
+          -75.30668956666666,
+          39.969127
+        ],
+        [
+          -75.30678627333333,
+          39.9690849
+        ],
+        [
+          -75.30688298,
+          39.9690428
+        ],
+        [
+          -75.30697968666666,
+          39.9690007
+        ],
+        [
+          -75.30707639333333,
+          39.9689586
+        ],
+        [
+          -75.3071731,
+          39.9689165
+        ]
+      ]
+    ],
+    "missing_miles": 0.142758477971766,
+    "gap_coverage_pct": 57.3,
+    "primary_gap_midpoint": [
+      -75.30600061076555,
+      39.969426928065324
+    ],
+    "navigation_address": "462 Olympic Ave, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.30597929999999,
+      39.9692483
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=462%20Olympic%20Ave%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "walking_metres": 1900,
+    "one_way_miles": 1.1806052652509345,
+    "estimated_round_trip_miles": 2.5,
+    "routing_source": "Google walking directions verified November 8, 2026",
+    "citystrides_status": "November 8 running GPS audit identified the remaining orange section.",
+    "target_scope": "Run the remaining orange section inside 19083.",
+    "unfinished_sections": [
+      {
+        "length_metres": 229.74679869019874,
+        "start_url": "https://maps.apple.com/?daddr=39.96947562857143,-75.30471461428571&dirflg=w",
+        "end_url": "https://maps.apple.com/?daddr=39.9689165,-75.3071731&dirflg=w"
+      }
+    ],
+    "first_waypoint": {
+      "coordinates": [
+        -75.3012765,
+        39.9687126
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9687126,-75.3012765&dirflg=w"
+    },
+    "second_waypoint": {
+      "coordinates": [
+        -75.3071731,
+        39.9689165
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9689165,-75.3071731&dirflg=w"
+    }
+  },
+  {
+    "date": "2026-11-14",
+    "display_date": "Sat Nov 14",
+    "number": 5,
+    "street": "Dogwood Circle",
+    "neighborhood": "Brookline",
+    "calendar_event_id": "run0a8cf3c1a35701a7ff0be02aa1399425",
+    "planning_mode": "unfinished_sections",
+    "start_time": "05:30",
+    "end_time": "06:15",
+    "time_label": "5:30\u20136:15 AM",
+    "target_label": "Finish the orange street section",
+    "target_coordinates": [
+      [
+        -75.299373,
+        39.9926636
+      ],
+      [
+        -75.298947,
+        39.9928985
+      ]
+    ],
+    "target_midpoint": [
+      -75.29916,
+      39.992781050000005
+    ],
+    "target_miles": 0.027781353551560473,
+    "missing_coordinates": [
+      [
+        [
+          -75.299373,
+          39.9926636
+        ],
+        [
+          -75.2992878,
+          39.99271058
+        ],
+        [
+          -75.2992026,
+          39.99275756
+        ],
+        [
+          -75.2991174,
+          39.99280454
+        ],
+        [
+          -75.2990322,
+          39.99285152
+        ],
+        [
+          -75.298947,
+          39.9928985
+        ]
+      ]
+    ],
+    "missing_miles": 0.027781420548555383,
+    "gap_coverage_pct": 0,
+    "primary_gap_midpoint": [
+      -75.29916,
+      39.992781050000005
+    ],
+    "navigation_address": "553 Dogwood Cir, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.29915439999999,
+      39.9927749
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=553%20Dogwood%20Cir%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "walking_metres": 2144,
+    "one_way_miles": 1.332219836156844,
+    "estimated_round_trip_miles": 2.7,
+    "routing_source": "Google walking directions verified November 8, 2026",
+    "citystrides_status": "November 8 running GPS audit identified the remaining orange section.",
+    "target_scope": "Run the remaining orange section inside 19083.",
+    "unfinished_sections": [
+      {
+        "length_metres": 44.709754650082544,
+        "start_url": "https://maps.apple.com/?daddr=39.9926636,-75.299373&dirflg=w",
+        "end_url": "https://maps.apple.com/?daddr=39.9928985,-75.298947&dirflg=w"
+      }
+    ],
+    "first_waypoint": {
+      "coordinates": [
+        -75.299373,
+        39.9926636
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9926636,-75.299373&dirflg=w"
+    },
+    "second_waypoint": {
+      "coordinates": [
+        -75.298947,
+        39.9928985
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9928985,-75.298947&dirflg=w"
+    }
+  },
+  {
+    "street": "Howell Lane",
+    "date": "2026-11-16",
+    "display_date": "Mon Nov 16",
+    "neighborhood": "Lawrence Road",
+    "planning_mode": "unfinished_sections",
+    "start_time": "05:30",
+    "end_time": "06:15",
+    "time_label": "5:30\u20136:15 AM",
+    "target_label": "Finish the orange street section",
+    "target_coordinates": [
+      [
+        -75.3276218,
+        39.9797581
+      ],
+      [
+        -75.3276891,
+        39.9797899
+      ],
+      [
+        -75.3277374,
+        39.9798084
+      ],
+      [
+        -75.3278125,
+        39.9798356
+      ],
+      [
+        -75.3294359,
+        39.9804627
+      ],
+      [
+        -75.3295832,
+        39.980535
+      ],
+      [
+        -75.3296865,
+        39.9806271
+      ],
+      [
+        -75.3298347,
+        39.9808977
+      ]
+    ],
+    "target_midpoint": [
+      -75.32894409313982,
+      39.980272720893176
+    ],
+    "target_miles": 0.14559520975683737,
+    "missing_coordinates": [
+      [
+        [
+          -75.3278125,
+          39.9798356
+        ],
+        [
+          -75.32791396249999,
+          39.97987479375
+        ],
+        [
+          -75.32801542499999,
+          39.9799139875
+        ],
+        [
+          -75.32811688749999,
+          39.97995318125
+        ],
+        [
+          -75.32821834999999,
+          39.979992375
+        ],
+        [
+          -75.3283198125,
+          39.98003156875
+        ],
+        [
+          -75.328421275,
+          39.9800707625
+        ],
+        [
+          -75.3285227375,
+          39.98010995625
+        ],
+        [
+          -75.3286242,
+          39.98014915
+        ],
+        [
+          -75.32872566249999,
+          39.98018834375
+        ],
+        [
+          -75.32882712499999,
+          39.9802275375
+        ],
+        [
+          -75.32892858749999,
+          39.98026673125
+        ],
+        [
+          -75.32903005,
+          39.980305924999996
+        ],
+        [
+          -75.3291315125,
+          39.980345118749995
+        ],
+        [
+          -75.329232975,
+          39.9803843125
+        ],
+        [
+          -75.3293344375,
+          39.98042350625
+        ],
+        [
+          -75.3294359,
+          39.9804627
+        ],
+        [
+          -75.32950955,
+          39.980498850000004
+        ],
+        [
+          -75.3295832,
+          39.980535
+        ],
+        [
+          -75.32963484999999,
+          39.98058105
+        ],
+        [
+          -75.3296865,
+          39.9806271
+        ],
+        [
+          -75.32972355,
+          39.98069475
+        ],
+        [
+          -75.3297606,
+          39.9807624
+        ],
+        [
+          -75.32979765,
+          39.98083005
+        ],
+        [
+          -75.3298347,
+          39.9808977
+        ]
+      ]
+    ],
+    "missing_miles": 0.13415532938793265,
+    "gap_coverage_pct": 7.9,
+    "primary_gap_midpoint": [
+      -75.32894409261256,
+      39.980272720689506
+    ],
+    "navigation_address": "508 Howell Ln, Havertown, PA 19083",
+    "navigation_coordinates": [
+      -75.3290449,
+      39.9800865
+    ],
+    "navigation_url": "https://maps.apple.com/?daddr=508%20Howell%20Ln%2C%20Havertown%2C%20PA%2019083&dirflg=w",
+    "walking_metres": 2177,
+    "one_way_miles": 1.352725085500676,
+    "estimated_round_trip_miles": 2.8,
+    "routing_source": "Google walking directions verified November 8, 2026",
+    "citystrides_status": "November 9 running GPS audit identified the remaining orange section.",
+    "target_scope": "Run the remaining orange section inside 19083.",
+    "unfinished_sections": [
+      {
+        "length_metres": 215.90154482690895,
+        "start_url": "https://maps.apple.com/?daddr=39.9798356,-75.3278125&dirflg=w",
+        "end_url": "https://maps.apple.com/?daddr=39.9808977,-75.3298347&dirflg=w"
+      }
+    ],
+    "first_waypoint": {
+      "coordinates": [
+        -75.3276218,
+        39.9797581
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9797581,-75.3276218&dirflg=w"
+    },
+    "second_waypoint": {
+      "coordinates": [
+        -75.3298347,
+        39.9808977
+      ],
+      "apple_maps": "https://maps.apple.com/?daddr=39.9808977,-75.3298347&dirflg=w"
+    },
+    "number": 6
+  }
+]

@@ -1,19 +1,19 @@
 {
-  "snapshot": "2026-11-09-next-seven-days",
-  "as_of_label": "November 9",
-  "focus_start": "2026-11-10",
+  "snapshot": "2026-11-10-marilyn-completed",
+  "as_of_label": "November 10",
+  "focus_start": "2026-11-11",
   "focus_end": "2026-11-16",
   "heading": "Havertown \u00b7 One calendar week ahead",
   "focus_label": "Nov 10\u201316 \u00b7 Runs scheduled",
   "history_heading": "Havertown \u00b7 Plan and history \u00b7 October 17\u2013November 3",
-  "track_count": 1884,
-  "summary": "Schedule the next seven mornings, November 10\u201316. Add North Brierwood on Wednesday and Howell on Monday. Sunday has the existing RUN x LIFT workout. Each street route is under 1.5 miles one way.",
+  "track_count": 1885,
+  "summary": "November 10 run completed Marilyn Drive. Keep Wednesday through Monday as reviewed, including Sunday RUN x LIFT.",
   "planning_priorities": [
     "Finish unfinished streets inside Census ZCTA 19083, including only the in-boundary portions of public streets that follow it, before expanding elsewhere.",
     "Mix neighborhoods within 19083; include Westgate Hills without clustering every day there.",
     "Keep full street reference geometry for auditing, but highlight only unfinished gaps; use a numbered address near the midpoint of the main gap.",
     "Prefer one-way walking approaches under 2 miles unless explicitly approved."
   ],
-  "reviewed_on": "2026-11-09",
-  "planning_horizon_days": 8
+  "reviewed_on": "2026-11-10",
+  "planning_horizon_days": 7
 }
