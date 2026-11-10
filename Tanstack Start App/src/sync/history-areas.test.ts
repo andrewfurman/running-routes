@@ -72,3 +72,16 @@ test('Willow Grove and West Conshohocken combine as Outer Philly Suburbs, PA whi
  assert.equal(areas.length,2);assert.equal(outer.count,2);assert.equal(outer.miles,3);assert.deepEqual(outer.activities,[a,b]);assert.equal(areas.find(a=>a.label==='Mainline, PA')?.count,1)
  }
 })
+
+test('Seattle-area workouts and hikes elsewhere in Washington have separate city rows',()=>{
+ const seattle=feature('seattle',[-122.35,47.62],1609.344)
+ const eastside=feature('eastside',[-122.20,47.61],1609.344)
+ const cascades=feature('cascades',[-120.82,47.53],3218.688)
+ const spokane=feature('spokane',[-117.43,47.66],1609.344)
+ const portland=feature('portland',[-122.67,45.52],1609.344)
+ const areas=historyAreas({type:'FeatureCollection',features:[seattle,eastside,cascades,spokane,portland]})
+ assert.deepEqual(areas.find(a=>a.label==='Seattle, WA')?.activities,[seattle,eastside])
+ assert.deepEqual(areas.find(a=>a.label==='Washington State, WA')?.activities,[cascades,spokane])
+ assert.equal(areas.find(a=>a.label==='Washington State, WA')?.miles,3)
+ assert.deepEqual(areas.find(a=>a.label==='Portland, OR')?.activities,[portland])
+})

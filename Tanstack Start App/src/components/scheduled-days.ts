@@ -2,6 +2,7 @@ import {cityLabel} from './city-labels.ts'
 import localTowns from './local-towns.json' with {type:'json'}
 import cityRegions from './city-regions.json' with {type:'json'}
 import cityNames from './city-names.json' with {type:'json'}
+import washington from './washington-boundary.json' with {type:'json'}
 import type { Target, FeatureCollection, Position } from './types'
 export function easternDay(now = new Date()) {
  const parts = new Intl.DateTimeFormat('en-US', {timeZone:'America/New_York',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(now)
@@ -18,6 +19,14 @@ const distance=(a:Position,b:Position)=>Math.hypot((a[0]-b[0])*Math.cos((a[1]+b[
 // Postal boundaries match suburban place names; city limits distinguish NYC and Philadelphia.
 function inRing(point:Position,ring:number[][]){let inside=false;for(let i=0,j=ring.length-1;i<ring.length;j=i++){const a=ring[i],b=ring[j];if((a[1]>point[1])!==(b[1]>point[1])&&point[0]<(b[0]-a[0])*(point[1]-a[1])/(b[1]-a[1])+a[0])inside=!inside}return inside}
 function regionFor(point:Position){return cityRegions.find(region=>{const polygons=region.geometry.type==='MultiPolygon'?region.geometry.coordinates:[region.geometry.coordinates];return (polygons as number[][][][]).some(p=>inRing(point,p[0])&&!p.slice(1).some(hole=>inRing(point,hole)))})?.label}
+// Seattle keeps its existing 45 km city-area radius; the rest uses the Census state boundary.
+function washingtonRegion(point:Position){
+ const [lon,lat]=point
+ if(lon < -125 || lon > -116 || lat < 45.5 || lat > 49.1)return undefined
+ const [outer,...holes]=washington.geometry.coordinates
+ if(!inRing(point,outer)||holes.some(hole=>inRing(point,hole)))return undefined
+ return distance(point,[-122.33,47.61])<45?'Seattle, WA':'Washington State, WA'
+}
 export function historyAreas(tracks?:FeatureCollection) {
  const areas:{center:Position;points:Position[];count:number;label:string;fallbackLabel:string;miles:number;distanceMissing:number;region?:string;activities:FeatureCollection['features']}[]=[]
  const seen=new Set<string>()
@@ -28,7 +37,7 @@ export function historyAreas(tracks?:FeatureCollection) {
   if(!points.length)continue
   const xs=points.map(p=>p[0]).sort((a,b)=>a-b),ys=points.map(p=>p[1]).sort((a,b)=>a-b)
   const center:Position=[xs[Math.floor(xs.length/2)],ys[Math.floor(ys.length/2)]]
-  const boundaryRegion=regionFor(center)
+  const boundaryRegion=washingtonRegion(center)||regionFor(center)
   const nearbyTown=!boundaryRegion&&distance(center,[-75.3,39.98])<90?[...localTowns].sort((a,b)=>distance(a.center as Position,center)-distance(b.center as Position,center))[0]:undefined
   const region=boundaryRegion||(nearbyTown&&distance(nearbyTown.center as Position,center)<12?nearbyTown.label:undefined)
   let area=areas.find(a=>region?a.region===region:!a.region&&distance(a.center,center)<45)
